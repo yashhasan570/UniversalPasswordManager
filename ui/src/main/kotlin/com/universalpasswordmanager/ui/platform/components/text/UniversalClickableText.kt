@@ -1,0 +1,124 @@
+package com.universalpasswordmanager.ui.platform.components.text
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.focusable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Icon
+import androidx.compose.material3.Text
+import androidx.compose.material3.ripple
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.hideFromAccessibility
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
+import com.universalpasswordmanager.ui.platform.components.button.UniversalTextButton
+import com.universalpasswordmanager.ui.platform.resource.UniversalString
+import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
+
+/**
+ * Represents a Universal-styled clickable text.
+ *
+ * @param label The label for the button.
+ * @param onClick The callback when the button is clicked.
+ * @param modifier The [Modifier] to be applied to the button.
+ * @param interactionSource A [MutableInteractionSource] for observing and emitting interactions
+ * for this component.
+ * @param isExternalLink Indicates that this button launches an external link.
+ */
+@Composable
+fun UniversalClickableText(
+    label: String,
+    onClick: () -> Unit,
+    style: TextStyle,
+    modifier: Modifier = Modifier,
+    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
+    isExternalLink: Boolean = false,
+    leadingIcon: Painter? = null,
+    innerPadding: PaddingValues = PaddingValues(vertical = 4.dp, horizontal = 16.dp),
+    isEnabled: Boolean = true,
+    shape: Shape = UniversalTheme.shapes.button,
+    color: Color = UniversalTheme.colorScheme.text.interaction,
+) {
+    val formattedAccessibilityString = if (isExternalLink) {
+        stringResource(
+            id = UniversalString.external_link_format,
+            formatArgs = arrayOf(label),
+        )
+    } else {
+        label
+    }
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = modifier
+            .defaultMinSize(minHeight = 48.dp)
+            .clip(shape = shape)
+            .focusable(enabled = isEnabled)
+            .clickable(
+                indication = ripple(color = UniversalTheme.colorScheme.background.pressed),
+                interactionSource = interactionSource,
+                enabled = isEnabled,
+                onClick = onClick,
+                role = Role.Button,
+            )
+            .interactiveBorder(
+                interactionSource = interactionSource,
+                shape = shape,
+                color = color,
+            )
+            .padding(paddingValues = innerPadding)
+            .semantics(mergeDescendants = true) {
+                contentDescription = formattedAccessibilityString
+            },
+    ) {
+        val foregroundColor = if (isEnabled) {
+            color
+        } else {
+            UniversalTheme.colorScheme.filledButton.foregroundDisabled
+        }
+        leadingIcon?.let {
+            Icon(
+                painter = leadingIcon,
+                contentDescription = null,
+                tint = foregroundColor,
+                modifier = Modifier.size(size = 16.dp),
+            )
+            Spacer(modifier = Modifier.width(width = 8.dp))
+        }
+        Text(
+            text = label,
+            textAlign = TextAlign.Start,
+            color = foregroundColor,
+            style = style,
+            modifier = Modifier.semantics { hideFromAccessibility() },
+        )
+    }
+}
+
+@Preview
+@Composable
+private fun UniversalTextButton_preview() {
+    UniversalTextButton(
+        label = "Label",
+        onClick = {},
+    )
+}

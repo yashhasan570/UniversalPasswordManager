@@ -1,0 +1,552 @@
+package com.universalpasswordmanager.data.platform.manager.di
+
+import android.app.Application
+import android.content.Context
+import androidx.core.content.getSystemService
+import com.universalpasswordmanager.core.data.manager.BuildInfoManager
+import com.universalpasswordmanager.core.data.manager.dispatcher.DispatcherManager
+import com.universalpasswordmanager.core.data.manager.dispatcher.DispatcherManagerImpl
+import com.universalpasswordmanager.core.data.manager.realtime.RealtimeManager
+import com.universalpasswordmanager.core.data.manager.realtime.RealtimeManagerImpl
+import com.universalpasswordmanager.core.data.manager.toast.ToastManager
+import com.universalpasswordmanager.core.data.manager.toast.ToastManagerImpl
+import com.universalpasswordmanager.cxf.registry.CredentialExchangeRegistry
+import com.universalpasswordmanager.cxf.registry.dsl.credentialExchangeRegistry
+import com.universalpasswordmanager.data.datasource.disk.ConfigDiskSource
+import com.universalpasswordmanager.data.manager.NativeLibraryManager
+import com.universalpasswordmanager.data.repository.ServerConfigRepository
+import com.universalpasswordmanager.network.UniversalServiceClient
+import com.universalpasswordmanager.network.model.UniversalServiceClientConfig
+import com.universalpasswordmanager.network.service.EventService
+import com.universalpasswordmanager.network.service.PushService
+import com.universalpasswordmanager.data.auth.datasource.disk.AuthDiskSource
+import com.universalpasswordmanager.data.auth.datasource.sdk.AuthSdkSource
+import com.universalpasswordmanager.data.auth.manager.AddTotpItemFromAuthenticatorManager
+import com.universalpasswordmanager.data.auth.manager.AuthStateManager
+import com.universalpasswordmanager.data.auth.manager.OrganizationManager
+import com.universalpasswordmanager.data.auth.repository.AuthRepository
+import com.universalpasswordmanager.data.autofill.accessibility.manager.AccessibilityEnabledManager
+import com.universalpasswordmanager.data.autofill.manager.AutofillEnabledManager
+import com.universalpasswordmanager.data.autofill.manager.browser.BrowserThirdPartyAutofillEnabledManager
+import com.universalpasswordmanager.data.platform.datasource.disk.CookieDiskSource
+import com.universalpasswordmanager.data.platform.datasource.disk.EventDiskSource
+import com.universalpasswordmanager.data.platform.datasource.disk.PushDiskSource
+import com.universalpasswordmanager.data.platform.datasource.disk.SettingsDiskSource
+import com.universalpasswordmanager.data.platform.datasource.disk.legacy.LegacyAppCenterMigrator
+import com.universalpasswordmanager.data.platform.manager.AppResumeManager
+import com.universalpasswordmanager.data.platform.manager.AppResumeManagerImpl
+import com.universalpasswordmanager.data.platform.manager.AssetManager
+import com.universalpasswordmanager.data.platform.manager.AssetManagerImpl
+import com.universalpasswordmanager.data.platform.manager.BiometricsEncryptionManager
+import com.universalpasswordmanager.data.platform.manager.BiometricsEncryptionManagerImpl
+import com.universalpasswordmanager.data.platform.manager.CertificateManager
+import com.universalpasswordmanager.data.platform.manager.CertificateManagerImpl
+import com.universalpasswordmanager.data.platform.manager.CookieAcquisitionRequestManager
+import com.universalpasswordmanager.data.platform.manager.CookieAcquisitionRequestManagerImpl
+import com.universalpasswordmanager.data.platform.manager.CredentialExchangeRegistryManager
+import com.universalpasswordmanager.data.platform.manager.CredentialExchangeRegistryManagerImpl
+import com.universalpasswordmanager.data.platform.manager.DatabaseSchemeManager
+import com.universalpasswordmanager.data.platform.manager.DatabaseSchemeManagerImpl
+import com.universalpasswordmanager.data.platform.manager.DebugMenuFeatureFlagManagerImpl
+import com.universalpasswordmanager.data.platform.manager.FeatureFlagManager
+import com.universalpasswordmanager.data.platform.manager.FeatureFlagManagerImpl
+import com.universalpasswordmanager.data.platform.manager.FirstTimeActionManager
+import com.universalpasswordmanager.data.platform.manager.FirstTimeActionManagerImpl
+import com.universalpasswordmanager.data.platform.manager.LogsManager
+import com.universalpasswordmanager.data.platform.manager.LogsManagerImpl
+import com.universalpasswordmanager.data.platform.manager.PolicyManager
+import com.universalpasswordmanager.data.platform.manager.PolicyManagerImpl
+import com.universalpasswordmanager.data.platform.manager.PushManager
+import com.universalpasswordmanager.data.platform.manager.PushManagerImpl
+import com.universalpasswordmanager.data.platform.manager.ResourceCacheManager
+import com.universalpasswordmanager.data.platform.manager.ResourceCacheManagerImpl
+import com.universalpasswordmanager.data.platform.manager.ReviewPromptManager
+import com.universalpasswordmanager.data.platform.manager.ReviewPromptManagerImpl
+import com.universalpasswordmanager.data.platform.manager.SdkClientManager
+import com.universalpasswordmanager.data.platform.manager.SdkClientManagerImpl
+import com.universalpasswordmanager.data.platform.manager.ciphermatching.CipherMatchingManager
+import com.universalpasswordmanager.data.platform.manager.ciphermatching.CipherMatchingManagerImpl
+import com.universalpasswordmanager.data.platform.manager.clipboard.UniversalClipboardManager
+import com.universalpasswordmanager.data.platform.manager.clipboard.UniversalClipboardManagerImpl
+import com.universalpasswordmanager.data.platform.manager.event.OrganizationEventManager
+import com.universalpasswordmanager.data.platform.manager.event.OrganizationEventManagerImpl
+import com.universalpasswordmanager.data.platform.manager.garbage.GarbageCollectionManager
+import com.universalpasswordmanager.data.platform.manager.garbage.GarbageCollectionManagerImpl
+import com.universalpasswordmanager.data.platform.manager.keyrotation.KeyRotationManager
+import com.universalpasswordmanager.data.platform.manager.keyrotation.KeyRotationManagerImpl
+import com.universalpasswordmanager.data.platform.manager.log.SettingsLogManager
+import com.universalpasswordmanager.data.platform.manager.log.SettingsLogManagerImpl
+import com.universalpasswordmanager.data.platform.manager.network.NetworkConfigManager
+import com.universalpasswordmanager.data.platform.manager.network.NetworkConfigManagerImpl
+import com.universalpasswordmanager.data.platform.manager.network.NetworkConnectionManager
+import com.universalpasswordmanager.data.platform.manager.network.NetworkConnectionManagerImpl
+import com.universalpasswordmanager.data.platform.manager.network.NetworkCookieManager
+import com.universalpasswordmanager.data.platform.manager.network.NetworkCookieManagerImpl
+import com.universalpasswordmanager.data.platform.manager.network.NetworkPermissionManager
+import com.universalpasswordmanager.data.platform.manager.network.NetworkPermissionManagerImpl
+import com.universalpasswordmanager.data.platform.manager.policy.PasswordPolicyManager
+import com.universalpasswordmanager.data.platform.manager.policy.PasswordPolicyManagerImpl
+import com.universalpasswordmanager.data.platform.manager.policy.UserNotificationPolicyManager
+import com.universalpasswordmanager.data.platform.manager.policy.UserNotificationPolicyManagerImpl
+import com.universalpasswordmanager.data.platform.manager.restriction.RestrictionManager
+import com.universalpasswordmanager.data.platform.manager.restriction.RestrictionManagerImpl
+import com.universalpasswordmanager.data.platform.manager.sdk.SdkPlatformApiFactory
+import com.universalpasswordmanager.data.platform.manager.sdk.SdkPlatformApiFactoryImpl
+import com.universalpasswordmanager.data.platform.manager.sdk.SdkRepositoryFactory
+import com.universalpasswordmanager.data.platform.manager.sdk.SdkRepositoryFactoryImpl
+import com.universalpasswordmanager.data.platform.manager.sdk.log.SdkLoggerFactory
+import com.universalpasswordmanager.data.platform.manager.sdk.log.SdkLoggerFactoryImpl
+import com.universalpasswordmanager.data.platform.processor.AuthenticatorBridgeProcessor
+import com.universalpasswordmanager.data.platform.processor.AuthenticatorBridgeProcessorImpl
+import com.universalpasswordmanager.data.platform.repository.AuthenticatorBridgeRepository
+import com.universalpasswordmanager.data.platform.repository.DebugMenuRepository
+import com.universalpasswordmanager.data.platform.repository.EnvironmentRepository
+import com.universalpasswordmanager.data.platform.repository.SettingsRepository
+import com.universalpasswordmanager.data.vault.datasource.disk.VaultDiskSource
+import com.universalpasswordmanager.data.vault.datasource.sdk.VaultSdkSource
+import com.universalpasswordmanager.data.vault.manager.VaultLockManager
+import com.universalpasswordmanager.data.vault.repository.VaultRepository
+import com.universalpasswordmanager.ui.platform.manager.resource.ResourceManager
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
+import kotlinx.serialization.json.Json
+import java.time.Clock
+import javax.inject.Singleton
+
+/**
+ * Provides managers in the platform package.
+ */
+@Module
+@InstallIn(SingletonComponent::class)
+object PlatformManagerModule {
+
+    @Provides
+    @Singleton
+    fun provideAuthenticatorBridgeProcessor(
+        authenticatorBridgeRepository: AuthenticatorBridgeRepository,
+        addTotpItemFromAuthenticatorManager: AddTotpItemFromAuthenticatorManager,
+        @ApplicationContext context: Context,
+        dispatcherManager: DispatcherManager,
+    ): AuthenticatorBridgeProcessor = AuthenticatorBridgeProcessorImpl(
+        authenticatorBridgeRepository = authenticatorBridgeRepository,
+        addTotpItemFromAuthenticatorManager = addTotpItemFromAuthenticatorManager,
+        context = context,
+        dispatcherManager = dispatcherManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideOrganizationEventManager(
+        authStateManager: AuthStateManager,
+        organizationManager: OrganizationManager,
+        vaultRepository: VaultRepository,
+        authDiskSource: AuthDiskSource,
+        clock: Clock,
+        dispatcherManager: DispatcherManager,
+        eventDiskSource: EventDiskSource,
+        eventService: EventService,
+    ): OrganizationEventManager = OrganizationEventManagerImpl(
+        authStateManager = authStateManager,
+        authDiskSource = authDiskSource,
+        organizationManager = organizationManager,
+        vaultRepository = vaultRepository,
+        clock = clock,
+        dispatcherManager = dispatcherManager,
+        eventDiskSource = eventDiskSource,
+        eventService = eventService,
+    )
+
+    @Provides
+    @Singleton
+    fun providesCipherMatchingManager(
+        resourceCacheManager: ResourceCacheManager,
+        settingsRepository: SettingsRepository,
+        vaultRepository: VaultRepository,
+    ): CipherMatchingManager =
+        CipherMatchingManagerImpl(
+            resourceCacheManager = resourceCacheManager,
+            settingsRepository = settingsRepository,
+            vaultRepository = vaultRepository,
+        )
+
+    @Provides
+    @Singleton
+    fun provideBiometricsEncryptionManager(
+        authDiskSource: AuthDiskSource,
+        settingsDiskSource: SettingsDiskSource,
+    ): BiometricsEncryptionManager = BiometricsEncryptionManagerImpl(
+        authDiskSource = authDiskSource,
+        settingsDiskSource = settingsDiskSource,
+    )
+
+    @Provides
+    @Singleton
+    fun provideUniversalClipboardManager(
+        @ApplicationContext context: Context,
+        settingsRepository: SettingsRepository,
+        toastManager: ToastManager,
+    ): UniversalClipboardManager = UniversalClipboardManagerImpl(
+        context = context,
+        settingsRepository = settingsRepository,
+        toastManager = toastManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideRealtimeManager(): RealtimeManager = RealtimeManagerImpl()
+
+    @Provides
+    @Singleton
+    fun provideToastManager(
+        @ApplicationContext context: Context,
+    ): ToastManager = ToastManagerImpl(
+        context = context,
+    )
+
+    @Provides
+    @Singleton
+    fun provideUniversalDispatchers(): DispatcherManager = DispatcherManagerImpl()
+
+    @Provides
+    @Singleton
+    fun provideGarbageCollectionManager(
+        dispatcherManager: DispatcherManager,
+    ): GarbageCollectionManager = GarbageCollectionManagerImpl(
+        dispatcherManager = dispatcherManager,
+    )
+
+    @Provides
+    @Singleton
+    fun providesFeatureFlagManager(
+        debugMenuRepository: DebugMenuRepository,
+        serverConfigRepository: ServerConfigRepository,
+    ): FeatureFlagManager = if (debugMenuRepository.isDebugMenuEnabled) {
+        DebugMenuFeatureFlagManagerImpl(
+            debugMenuRepository = debugMenuRepository,
+            defaultFeatureFlagManager = FeatureFlagManagerImpl(
+                serverConfigRepository = serverConfigRepository,
+            ),
+        )
+    } else {
+        FeatureFlagManagerImpl(
+            serverConfigRepository = serverConfigRepository,
+        )
+    }
+
+    @Provides
+    @Singleton
+    fun provideSdkClientManager(
+        dispatcherManager: DispatcherManager,
+        featureFlagManager: FeatureFlagManager,
+        nativeLibraryManager: NativeLibraryManager,
+        sdkRepositoryFactory: SdkRepositoryFactory,
+        sdkPlatformApiFactory: SdkPlatformApiFactory,
+        sdkLoggerFactory: SdkLoggerFactory,
+    ): SdkClientManager = SdkClientManagerImpl(
+        dispatcherManager = dispatcherManager,
+        featureFlagManager = featureFlagManager,
+        nativeLibraryManager = nativeLibraryManager,
+        sdkRepoFactory = sdkRepositoryFactory,
+        sdkPlatformApiFactory = sdkPlatformApiFactory,
+        sdkLoggerFactory = sdkLoggerFactory,
+    )
+
+    @Provides
+    @Singleton
+    fun provideNetworkConfigManager(
+        authRepository: AuthRepository,
+        environmentRepository: EnvironmentRepository,
+        serverConfigRepository: ServerConfigRepository,
+        bitwardenServiceClient: UniversalServiceClient,
+        dispatcherManager: DispatcherManager,
+    ): NetworkConfigManager =
+        NetworkConfigManagerImpl(
+            authRepository = authRepository,
+            environmentRepository = environmentRepository,
+            serverConfigRepository = serverConfigRepository,
+            bitwardenServiceClient = bitwardenServiceClient,
+            dispatcherManager = dispatcherManager,
+        )
+
+    @Provides
+    @Singleton
+    fun provideNetworkConnectionManager(
+        application: Application,
+        dispatcherManager: DispatcherManager,
+    ): NetworkConnectionManager = NetworkConnectionManagerImpl(
+        context = application.applicationContext,
+        dispatcherManager = dispatcherManager,
+    )
+
+    @Provides
+    @Singleton
+    fun providePolicyManager(
+        authDiskSource: AuthDiskSource,
+        authSdkSource: AuthSdkSource,
+        featureFlagManager: FeatureFlagManager,
+    ): PolicyManager = PolicyManagerImpl(
+        authDiskSource = authDiskSource,
+        authSdkSource = authSdkSource,
+        featureFlagManager = featureFlagManager,
+    )
+
+    @Provides
+    @Singleton
+    fun providePasswordPolicyManager(
+        authDiskSource: AuthDiskSource,
+        authSdkSource: AuthSdkSource,
+        policyManager: PolicyManager,
+    ): PasswordPolicyManager = PasswordPolicyManagerImpl(
+        authDiskSource = authDiskSource,
+        authSdkSource = authSdkSource,
+        policyManager = policyManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideUserNotificationPolicyManager(
+        authDiskSource: AuthDiskSource,
+        settingsDiskSource: SettingsDiskSource,
+        policyManager: PolicyManager,
+        dispatcherManager: DispatcherManager,
+    ): UserNotificationPolicyManager = UserNotificationPolicyManagerImpl(
+        authDiskSource = authDiskSource,
+        settingsDiskSource = settingsDiskSource,
+        policyManager = policyManager,
+        dispatcherManager = dispatcherManager,
+    )
+
+    @Provides
+    @Singleton
+    fun providePushManager(
+        authDiskSource: AuthDiskSource,
+        pushDiskSource: PushDiskSource,
+        pushService: PushService,
+        dispatcherManager: DispatcherManager,
+        clock: Clock,
+        json: Json,
+        featureFlagManager: FeatureFlagManager,
+    ): PushManager = PushManagerImpl(
+        authDiskSource = authDiskSource,
+        pushDiskSource = pushDiskSource,
+        pushService = pushService,
+        dispatcherManager = dispatcherManager,
+        clock = clock,
+        json = json,
+        featureFlagManager = featureFlagManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideLogsManager(
+        legacyAppCenterMigrator: LegacyAppCenterMigrator,
+        settingsRepository: SettingsRepository,
+    ): LogsManager = LogsManagerImpl(
+        settingsRepository = settingsRepository,
+        legacyAppCenterMigrator = legacyAppCenterMigrator,
+    )
+
+    @Provides
+    @Singleton
+    fun provideAssetManager(
+        @ApplicationContext context: Context,
+        dispatcherManager: DispatcherManager,
+    ): AssetManager = AssetManagerImpl(
+        context = context,
+        dispatcherManager = dispatcherManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideRestrictionManager(
+        @ApplicationContext context: Context,
+        environmentRepository: EnvironmentRepository,
+    ): RestrictionManager = RestrictionManagerImpl(
+        environmentRepository = environmentRepository,
+        restrictionsManager = requireNotNull(context.getSystemService()),
+    )
+
+    @Provides
+    @Singleton
+    fun provideResourceCacheManager(
+        @ApplicationContext context: Context,
+    ): ResourceCacheManager = ResourceCacheManagerImpl(context = context)
+
+    @Provides
+    @Singleton
+    fun provideFirstTimeActionManager(
+        authDiskSource: AuthDiskSource,
+        settingsDiskSource: SettingsDiskSource,
+        vaultDiskSource: VaultDiskSource,
+        dispatcherManager: DispatcherManager,
+        autofillEnabledManager: AutofillEnabledManager,
+        thirdPartyAutofillEnabledManager: BrowserThirdPartyAutofillEnabledManager,
+    ): FirstTimeActionManager = FirstTimeActionManagerImpl(
+        authDiskSource = authDiskSource,
+        settingsDiskSource = settingsDiskSource,
+        vaultDiskSource = vaultDiskSource,
+        dispatcherManager = dispatcherManager,
+        autofillEnabledManager = autofillEnabledManager,
+        thirdPartyAutofillEnabledManager = thirdPartyAutofillEnabledManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideDatabaseSchemeManager(
+        authDiskSource: AuthDiskSource,
+        settingsDiskSource: SettingsDiskSource,
+    ): DatabaseSchemeManager = DatabaseSchemeManagerImpl(
+        authDiskSource = authDiskSource,
+        settingsDiskSource = settingsDiskSource,
+    )
+
+    @Provides
+    @Singleton
+    fun provideReviewPromptManager(
+        authDiskSource: AuthDiskSource,
+        settingsDiskSource: SettingsDiskSource,
+        autofillEnabledManager: AutofillEnabledManager,
+        accessibilityEnabledManager: AccessibilityEnabledManager,
+    ): ReviewPromptManager = ReviewPromptManagerImpl(
+        authDiskSource = authDiskSource,
+        settingsDiskSource = settingsDiskSource,
+        autofillEnabledManager = autofillEnabledManager,
+        accessibilityEnabledManager = accessibilityEnabledManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideSdkRepositoryFactory(
+        vaultDiskSource: VaultDiskSource,
+        cookieDiskSource: CookieDiskSource,
+        configDiskSource: ConfigDiskSource,
+        authDiskSource: AuthDiskSource,
+        serviceClientConfig: UniversalServiceClientConfig,
+    ): SdkRepositoryFactory = SdkRepositoryFactoryImpl(
+        vaultDiskSource = vaultDiskSource,
+        cookieDiskSource = cookieDiskSource,
+        configDiskSource = configDiskSource,
+        authDiskSource = authDiskSource,
+        serviceClientConfig = serviceClientConfig,
+    )
+
+    @Provides
+    @Singleton
+    fun provideSdkPlatformApiFactory(
+        serverCommConfigManager: CookieAcquisitionRequestManager,
+    ): SdkPlatformApiFactory = SdkPlatformApiFactoryImpl(
+        serverCommConfigManager = serverCommConfigManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideSdkLoggerFactory(
+        buildInfoManager: BuildInfoManager,
+    ): SdkLoggerFactory = SdkLoggerFactoryImpl(
+        buildInfoManager = buildInfoManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideKeyManager(
+        @ApplicationContext context: Context,
+        environmentRepository: EnvironmentRepository,
+    ): CertificateManager = CertificateManagerImpl(
+        context = context,
+        environmentRepository = environmentRepository,
+    )
+
+    @Provides
+    @Singleton
+    fun provideAppResumeManager(
+        settingsDiskSource: SettingsDiskSource,
+        authDiskSource: AuthDiskSource,
+        authRepository: AuthRepository,
+        vaultLockManager: VaultLockManager,
+        clock: Clock,
+    ): AppResumeManager {
+        return AppResumeManagerImpl(
+            settingsDiskSource = settingsDiskSource,
+            authDiskSource = authDiskSource,
+            authRepository = authRepository,
+            vaultLockManager = vaultLockManager,
+            clock = clock,
+        )
+    }
+
+    @Provides
+    @Singleton
+    fun provideCredentialExchangeRegistry(
+        application: Application,
+    ): CredentialExchangeRegistry = credentialExchangeRegistry(
+        application = application,
+    )
+
+    @Provides
+    @Singleton
+    fun provideCredentialExchangeRegistryManager(
+        credentialExchangeRegistry: CredentialExchangeRegistry,
+        settingsDiskSource: SettingsDiskSource,
+    ): CredentialExchangeRegistryManager = CredentialExchangeRegistryManagerImpl(
+        credentialExchangeRegistry = credentialExchangeRegistry,
+        settingsDiskSource = settingsDiskSource,
+    )
+
+    @Provides
+    @Singleton
+    fun provideServerCommunicationConfigManager(): CookieAcquisitionRequestManager =
+        CookieAcquisitionRequestManagerImpl()
+
+    @Provides
+    @Singleton
+    fun provideNetworkCookieManager(
+        resourceManager: ResourceManager,
+        configDiskSource: ConfigDiskSource,
+        cookieDiskSource: CookieDiskSource,
+        cookieAcquisitionRequestManager: CookieAcquisitionRequestManager,
+    ): NetworkCookieManager = NetworkCookieManagerImpl(
+        resourceManager = resourceManager,
+        configDiskSource = configDiskSource,
+        cookieDiskSource = cookieDiskSource,
+        cookieAcquisitionRequestManager = cookieAcquisitionRequestManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideNetworkPermissionManager(
+        @ApplicationContext context: Context,
+        resourceManager: ResourceManager,
+    ): NetworkPermissionManager = NetworkPermissionManagerImpl(
+        context = context,
+        resourceManager = resourceManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideSettingsLogManager(
+        settingsRepository: SettingsRepository,
+        logsManager: LogsManager,
+        autofillEnabledManager: AutofillEnabledManager,
+        accessibilityEnabledManager: AccessibilityEnabledManager,
+        browserThirdPartyAutofillEnabledManager: BrowserThirdPartyAutofillEnabledManager,
+    ): SettingsLogManager = SettingsLogManagerImpl(
+        settingsRepository = settingsRepository,
+        logsManager = logsManager,
+        autofillEnabledManager = autofillEnabledManager,
+        accessibilityEnabledManager = accessibilityEnabledManager,
+        browserThirdPartyAutofillEnabledManager = browserThirdPartyAutofillEnabledManager,
+    )
+
+    @Provides
+    @Singleton
+    fun provideKeyRotationManager(
+        authDiskSource: AuthDiskSource,
+        vaultSdkSource: VaultSdkSource,
+    ): KeyRotationManager = KeyRotationManagerImpl(
+        authDiskSource = authDiskSource,
+        vaultSdkSource = vaultSdkSource,
+    )
+}

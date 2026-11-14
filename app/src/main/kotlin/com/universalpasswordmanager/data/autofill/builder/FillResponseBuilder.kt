@@ -1,0 +1,20 @@
+package com.universalpasswordmanager.data.autofill.builder
+
+import android.service.autofill.FillResponse
+import android.service.autofill.SaveInfo
+import com.universalpasswordmanager.data.autofill.model.AutofillAppInfo
+import com.universalpasswordmanager.data.autofill.model.FilledData
+
+/**
+ * A component for building fill responses out of fulfilled internal models.
+ */
+interface FillResponseBuilder {
+    /**
+     * Build the [filledData] into a [FillResponse]. Return null if not possible.
+     */
+    fun build(
+        autofillAppInfo: AutofillAppInfo,
+        filledData: FilledData,
+        saveInfo: SaveInfo?,
+    ): FillResponse?
+}

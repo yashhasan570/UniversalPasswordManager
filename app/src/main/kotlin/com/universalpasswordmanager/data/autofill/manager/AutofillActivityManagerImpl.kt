@@ -1,0 +1,77 @@
+package com.universalpasswordmanager.data.autofill.manager
+
+import android.view.autofill.AutofillManager
+import androidx.lifecycle.LifecycleCoroutineScope
+import com.universalpasswordmanager.data.manager.appstate.AppStateManager
+import com.universalpasswordmanager.data.autofill.manager.browser.BrowserThirdPartyAutofillEnabledManager
+import com.universalpasswordmanager.data.autofill.manager.browser.BrowserThirdPartyAutofillManager
+import com.universalpasswordmanager.data.autofill.model.browser.BrowserThirdPartyAutofillStatus
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
+import timber.log.Timber
+
+/**
+ * Primary implementation of [AutofillActivityManager].
+ */
+class AutofillActivityManagerImpl(
+    private val autofillManager: AutofillManager,
+    private val browserThirdPartyAutofillManager: BrowserThirdPartyAutofillManager,
+    autofillEnabledManager: AutofillEnabledManager,
+    appStateManager: AppStateManager,
+    lifecycleScope: LifecycleCoroutineScope,
+    browserThirdPartyAutofillEnabledManager: BrowserThirdPartyAutofillEnabledManager,
+) : AutofillActivityManager {
+    private val autofillManagerIsEnabled: Boolean
+        get() = try {
+            autofillManager.isEnabled
+        } catch (@Suppress("TooGenericExceptionCaught") e: RuntimeException) {
+            Timber.e(e, "autofillManager.isEnabled failed")
+            false
+        }
+
+    private val autofillManagerHasEnabledAutofillServices: Boolean
+        get() = try {
+            autofillManager.hasEnabledAutofillServices()
+        } catch (@Suppress("TooGenericExceptionCaught") e: RuntimeException) {
+            Timber.e(e, "autofillManager.hasEnabledAutofillServices() failed")
+            false
+        }
+
+    private val autofillManagerIsAutofillSupported: Boolean
+        get() = try {
+            autofillManager.isAutofillSupported
+        } catch (@Suppress("TooGenericExceptionCaught") e: RuntimeException) {
+            Timber.e(e, "autofillManager.isAutofillSupported() failed")
+            false
+        }
+
+    private val isAutofillEnabledAndSupported: Boolean
+        get() = autofillManagerIsEnabled &&
+            autofillManagerHasEnabledAutofillServices &&
+            autofillManagerIsAutofillSupported
+
+    private suspend fun getBrowserAutofillStatus(): BrowserThirdPartyAutofillStatus =
+        BrowserThirdPartyAutofillStatus(
+            braveStableStatusData = browserThirdPartyAutofillManager
+                .getStableBraveAutofillStatus(),
+            chromeStableStatusData = browserThirdPartyAutofillManager
+                .getStableChromeAutofillStatus(),
+            chromeBetaChannelStatusData = browserThirdPartyAutofillManager
+                .getBetaChromeAutofillStatus(),
+            vivaldiStableChannelStatusData = browserThirdPartyAutofillManager
+                .getStableVivaldiAutofillStatus(),
+            defaultBrowserPackageName = browserThirdPartyAutofillManager
+                .getDefaultBrowserPackageName(),
+        )
+
+    init {
+        appStateManager
+            .appForegroundStateFlow
+            .onEach {
+                autofillEnabledManager.isAutofillEnabled = isAutofillEnabledAndSupported
+                browserThirdPartyAutofillEnabledManager.browserThirdPartyAutofillStatus =
+                    getBrowserAutofillStatus()
+            }
+            .launchIn(lifecycleScope)
+    }
+}

@@ -1,0 +1,31 @@
+package com.universalpasswordmanager.data.autofill.provider
+
+import com.universalpasswordmanager.data.autofill.model.AutofillCipher
+
+/**
+ * A service for getting [AutofillCipher]s.
+ */
+interface AutofillCipherProvider {
+    /**
+     * Returns `true` if the vault for the current user is locked. This suspends in order to return
+     * a value only after any unlocking vaults have fully unlocked (or failed to do so).
+     */
+    suspend fun isVaultLocked(): Boolean
+
+    /**
+     * Get all [AutofillCipher.Card]s for the current user.
+     */
+    suspend fun getCardAutofillCiphers(): List<AutofillCipher.Card>
+
+    /**
+     * Get all [AutofillCipher.Login]s for the current user.
+     */
+    suspend fun getLoginAutofillCiphers(
+        uri: String,
+    ): List<AutofillCipher.Login>
+
+    /**
+     * Get all [AutofillCipher.Identity]s for the current user.
+     */
+    suspend fun getIdentityAutofillCiphers(): List<AutofillCipher.Identity>
+}

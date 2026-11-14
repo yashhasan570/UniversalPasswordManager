@@ -1,0 +1,275 @@
+package com.universalpasswordmanager.data.repository
+
+import app.cash.turbine.test
+import com.universalpasswordmanager.core.data.manager.dispatcher.FakeDispatcherManager
+import com.universalpasswordmanager.core.data.util.asSuccess
+import com.universalpasswordmanager.data.datasource.disk.model.ServerConfig
+import com.universalpasswordmanager.data.datasource.disk.util.FakeConfigDiskSource
+import com.universalpasswordmanager.network.model.ConfigResponseJson
+import com.universalpasswordmanager.network.model.ConfigResponseJson.EnvironmentJson
+import com.universalpasswordmanager.network.model.ConfigResponseJson.ServerJson
+import com.universalpasswordmanager.network.service.ConfigService
+import io.mockk.coEvery
+import io.mockk.mockk
+import kotlinx.coroutines.test.runTest
+import kotlinx.serialization.json.JsonPrimitive
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotEquals
+import org.junit.jupiter.api.Assertions.assertNull
+import org.junit.jupiter.api.Assertions.assertSame
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+import java.time.Clock
+import java.time.Instant
+import java.time.ZoneOffset
+
+class ServerConfigRepositoryTest {
+    private val fakeDispatcherManager: FakeDispatcherManager = FakeDispatcherManager()
+    private val fakeConfigDiskSource = FakeConfigDiskSource()
+    private val configService: ConfigService = mockk {
+        coEvery {
+            getConfig()
+        } returns CONFIG_RESPONSE_JSON.asSuccess()
+    }
+
+    private val fixedClock: Clock = Clock.fixed(
+        Instant.parse("2023-10-27T12:00:00Z"),
+        ZoneOffset.UTC,
+    )
+
+    private val repository = ServerConfigRepositoryImpl(
+        configDiskSource = fakeConfigDiskSource,
+        configService = configService,
+        clock = fixedClock,
+        dispatcherManager = fakeDispatcherManager,
+    )
+
+    @BeforeEach
+    fun setUp() {
+        fakeConfigDiskSource.serverConfig = null
+    }
+
+    @Test
+    fun `getServerConfig should fetch a new server configuration with force refresh as true`() =
+        runTest {
+            coEvery {
+                configService.getConfig()
+            } returns CONFIG_RESPONSE_JSON.copy(version = "NEW VERSION").asSuccess()
+
+            fakeConfigDiskSource.serverConfig = SERVER_CONFIG.copy(
+                lastSync = fixedClock.instant().toEpochMilli(),
+            )
+
+            assertEquals(
+                fakeConfigDiskSource.serverConfig,
+                SERVER_CONFIG,
+            )
+
+            repository.getServerConfig(forceRefresh = true)
+
+            assertNotEquals(
+                fakeConfigDiskSource.serverConfig,
+                SERVER_CONFIG,
+            )
+        }
+
+    @Test
+    fun `getServerConfig should fetch a new server configuration if there is none in state`() =
+        runTest {
+            assertNull(
+                fakeConfigDiskSource.serverConfig,
+            )
+
+            repository.getServerConfig(forceRefresh = false)
+
+            assertEquals(
+                fakeConfigDiskSource.serverConfig,
+                SERVER_CONFIG,
+            )
+        }
+
+    @Test
+    fun `getServerConfig should return state server config if refresh is not necessary`() =
+        runTest {
+            val testConfig = SERVER_CONFIG.copy(
+                lastSync = fixedClock.instant().plusSeconds(1000L).toEpochMilli(),
+                serverData = CONFIG_RESPONSE_JSON.copy(
+                    version = "new version!!",
+                ),
+            )
+            fakeConfigDiskSource.serverConfig = testConfig
+
+            coEvery {
+                configService.getConfig()
+            } returns CONFIG_RESPONSE_JSON.asSuccess()
+
+            repository.getServerConfig(forceRefresh = false)
+
+            assertEquals(
+                fakeConfigDiskSource.serverConfig,
+                testConfig,
+            )
+        }
+
+    @Test
+    fun `serverConfigStateFlow should react to new server configurations`() = runTest {
+        repository.getServerConfig(forceRefresh = true)
+
+        repository.serverConfigStateFlow.test {
+            assertEquals(fakeConfigDiskSource.serverConfig, awaitItem())
+        }
+    }
+
+    @Test
+    fun `serverConfigStateFlow should return the same instance on every access`() {
+        assertSame(repository.serverConfigStateFlow, repository.serverConfigStateFlow)
+    }
+
+    @Test
+    fun `serverConfigStateFlow should be seeded from the disk source at creation`() {
+        fakeConfigDiskSource.serverConfig = SERVER_CONFIG
+
+        val newRepository = ServerConfigRepositoryImpl(
+            configDiskSource = fakeConfigDiskSource,
+            configService = configService,
+            clock = fixedClock,
+            dispatcherManager = fakeDispatcherManager,
+        )
+
+        assertEquals(SERVER_CONFIG, newRepository.serverConfigStateFlow.value)
+    }
+
+    @Test
+    fun `serverConfigStateFlow value should reflect disk source writes without collectors`() {
+        val stateFlow = repository.serverConfigStateFlow
+        assertNull(stateFlow.value)
+
+        fakeConfigDiskSource.serverConfig = SERVER_CONFIG
+        assertEquals(SERVER_CONFIG, stateFlow.value)
+
+        fakeConfigDiskSource.serverConfig = null
+        assertNull(stateFlow.value)
+    }
+
+    @Test
+    fun `serverConfigStateFlow should emit disk source updates to a single collector`() =
+        runTest {
+            val updatedConfig = SERVER_CONFIG.copy(lastSync = 1L)
+
+            repository.serverConfigStateFlow.test {
+                assertNull(awaitItem())
+
+                fakeConfigDiskSource.serverConfig = SERVER_CONFIG
+                assertEquals(SERVER_CONFIG, awaitItem())
+
+                fakeConfigDiskSource.serverConfig = updatedConfig
+                assertEquals(updatedConfig, awaitItem())
+
+                fakeConfigDiskSource.serverConfig = null
+                assertNull(awaitItem())
+            }
+        }
+
+    @Test
+    fun `serverConfigStateFlow collectors should observe the same updates`() = runTest {
+        repository.serverConfigStateFlow.test {
+            assertNull(awaitItem())
+
+            // A later access must share state with the first one rather than start over.
+            repository.serverConfigStateFlow.test {
+                assertNull(awaitItem())
+                fakeConfigDiskSource.serverConfig = SERVER_CONFIG
+                assertEquals(SERVER_CONFIG, awaitItem())
+            }
+
+            assertEquals(SERVER_CONFIG, awaitItem())
+        }
+    }
+
+    @Test
+    fun `getServerConfig should update the shared serverConfigStateFlow value`() = runTest {
+        val stateFlow = repository.serverConfigStateFlow
+        assertNull(stateFlow.value)
+
+        repository.getServerConfig(forceRefresh = true)
+
+        assertEquals(SERVER_CONFIG, stateFlow.value)
+    }
+
+    @Suppress("MaxLineLength")
+    @Test
+    fun `serverConfigStateFlow should fetch new server configurations when minimum config sync interval is reached `() =
+        runTest {
+
+            val testConfig = SERVER_CONFIG.copy(
+                lastSync = fixedClock.instant().minusSeconds(60 * 60 + 1).toEpochMilli(),
+                serverData = CONFIG_RESPONSE_JSON.copy(
+                    version = "old version!!",
+                ),
+            )
+            fakeConfigDiskSource.serverConfig = testConfig
+
+            coEvery {
+                configService.getConfig()
+            } returns CONFIG_RESPONSE_JSON.asSuccess()
+
+            repository.getServerConfig(forceRefresh = false)
+
+            repository.serverConfigStateFlow.test {
+                assertNotEquals(testConfig, awaitItem())
+            }
+        }
+}
+
+private val SERVER_CONFIG = ServerConfig(
+    lastSync = Instant.parse("2023-10-27T12:00:00Z").toEpochMilli(),
+    serverData = ConfigResponseJson(
+        type = null,
+        version = "2024.7.0",
+        gitHash = "25cf6119-dirty",
+        server = ServerJson(
+            name = "example",
+            url = "https://localhost:8080",
+        ),
+        environment = EnvironmentJson(
+            cloudRegion = null,
+            vaultUrl = "https://localhost:8080",
+            apiUrl = "http://localhost:4000",
+            identityUrl = "http://localhost:33656",
+            notificationsUrl = "http://localhost:61840",
+            ssoUrl = "http://localhost:51822",
+            fillAssistRulesUrl = null,
+        ),
+        featureStates = mapOf(
+            "duo-redirect" to JsonPrimitive(true),
+            "flexible-collections-v-1" to JsonPrimitive(false),
+        ),
+        communication = null,
+        settings = null,
+    ),
+)
+
+private val CONFIG_RESPONSE_JSON = ConfigResponseJson(
+    type = null,
+    version = "2024.7.0",
+    gitHash = "25cf6119-dirty",
+    server = ServerJson(
+        name = "example",
+        url = "https://localhost:8080",
+    ),
+    environment = EnvironmentJson(
+        cloudRegion = null,
+        vaultUrl = "https://localhost:8080",
+        apiUrl = "http://localhost:4000",
+        identityUrl = "http://localhost:33656",
+        notificationsUrl = "http://localhost:61840",
+        ssoUrl = "http://localhost:51822",
+        fillAssistRulesUrl = null,
+    ),
+    featureStates = mapOf(
+        "duo-redirect" to JsonPrimitive(true),
+        "flexible-collections-v-1" to JsonPrimitive(false),
+    ),
+    communication = null,
+    settings = null,
+)

@@ -1,0 +1,91 @@
+package com.universalpasswordmanager.data.auth.repository.util
+
+import com.universalpasswordmanager.data.datasource.disk.model.EnvironmentUrlDataJson
+import com.universalpasswordmanager.network.model.GetTokenResponseJson
+import com.universalpasswordmanager.network.util.parseJwtTokenDataOrNull
+import com.universalpasswordmanager.data.auth.datasource.disk.model.AccountJson
+import com.universalpasswordmanager.data.auth.datasource.disk.model.ForcePasswordResetReason
+import com.universalpasswordmanager.data.auth.datasource.disk.model.UserStateJson
+
+/**
+ * Converts the given [GetTokenResponseJson.Success] to a [UserStateJson], given the following
+ * additional information:
+ *
+ * - the [previousUserState]
+ * - the current [environmentUrlData]
+ */
+fun GetTokenResponseJson.Success.toUserState(
+    previousUserState: UserStateJson?,
+    environmentUrlData: EnvironmentUrlDataJson,
+    passwordPassesPolicy: Boolean,
+): UserStateJson {
+    val jwtTokenData = requireNotNull(parseJwtTokenDataOrNull(jwtToken = this.accessToken))
+    val userId = jwtTokenData.userId
+
+    val account = AccountJson(
+        profile = AccountJson.Profile(
+            userId = userId,
+            email = jwtTokenData.email,
+            isEmailVerified = jwtTokenData.isEmailVerified,
+            isTwoFactorEnabled = null,
+            name = jwtTokenData.name,
+            stamp = null,
+            organizationId = null,
+            avatarColorHex = null,
+            hasPremiumPersonally = jwtTokenData.hasPremium,
+            hasPremiumFromOrganization = null,
+            forcePasswordResetReason = this.toForcePasswordResetReason(
+                passwordPassesPolicy = passwordPassesPolicy,
+            ),
+            kdfType = this.kdfType,
+            kdfIterations = this.kdfIterations,
+            kdfMemory = this.kdfMemory,
+            kdfParallelism = this.kdfParallelism,
+            userDecryptionOptions = this.userDecryptionOptions,
+            creationDate = null,
+        ),
+        settings = AccountJson.Settings(
+            environmentUrlData = environmentUrlData,
+        ),
+    )
+
+    // Create a new UserState with the updated info or update the existing one.
+    return previousUserState
+        ?.copy(
+            activeUserId = userId,
+            accounts = previousUserState
+                .accounts
+                .toMutableMap()
+                .apply {
+                    put(userId, account)
+                },
+        )
+        ?: UserStateJson(
+            activeUserId = userId,
+            accounts = mapOf(userId to account),
+        )
+}
+
+/**
+ * Determines the [ForcePasswordResetReason] from the [GetTokenResponseJson.Success].
+ */
+private fun GetTokenResponseJson.Success.toForcePasswordResetReason(
+    passwordPassesPolicy: Boolean,
+): ForcePasswordResetReason? =
+    this
+        .userDecryptionOptions
+        ?.let { decryptionOptionsJson ->
+            decryptionOptionsJson
+                .trustedDeviceUserDecryptionOptions
+                ?.let { options ->
+                    ForcePasswordResetReason.TDE_USER_WITHOUT_PASSWORD_HAS_PASSWORD_RESET_PERMISSION
+                        .takeIf {
+                            !decryptionOptionsJson.hasMasterPassword &&
+                                options.hasManageResetPasswordPermission
+                        }
+                }
+                ?: ForcePasswordResetReason.ADMIN_FORCE_PASSWORD_RESET
+                    .takeIf { this.shouldForcePasswordReset }
+        }
+        ?: ForcePasswordResetReason.WEAK_MASTER_PASSWORD_ON_LOGIN
+            .takeUnless { passwordPassesPolicy }

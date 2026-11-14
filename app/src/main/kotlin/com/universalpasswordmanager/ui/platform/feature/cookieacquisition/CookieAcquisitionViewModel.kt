@@ -1,0 +1,207 @@
+package com.universalpasswordmanager.ui.platform.feature.cookieacquisition
+
+import android.os.Parcelable
+import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.viewModelScope
+import com.universalpasswordmanager.data.repository.util.baseWebVaultUrlOrDefault
+import com.universalpasswordmanager.ui.platform.base.BackgroundEvent
+import com.universalpasswordmanager.ui.platform.base.BaseViewModel
+import com.universalpasswordmanager.ui.platform.base.util.prefixHttpsIfNecessary
+import com.universalpasswordmanager.ui.platform.manager.intent.model.AuthTabData
+import com.universalpasswordmanager.ui.platform.resource.UniversalString
+import com.universalpasswordmanager.ui.util.Text
+import com.universalpasswordmanager.ui.util.asText
+import com.universalpasswordmanager.data.auth.repository.AuthRepository
+import com.universalpasswordmanager.data.auth.repository.util.CookieCallbackResult
+import com.universalpasswordmanager.data.platform.manager.CookieAcquisitionRequestManager
+import com.universalpasswordmanager.data.platform.manager.network.NetworkCookieManager
+import com.universalpasswordmanager.data.platform.repository.EnvironmentRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.update
+import kotlinx.parcelize.Parcelize
+import javax.inject.Inject
+
+private const val KEY_STATE = "state"
+private const val PROXY_URL = "/proxy-cookie-redirect-connector.html"
+private const val COOKIE_CALLBACK_URL = "bitwarden://sso-cookie-vendor"
+
+/**
+ * ViewModel for the Cookie Acquisition screen.
+ */
+@HiltViewModel
+class CookieAcquisitionViewModel @Inject constructor(
+    private val cookieAcquisitionRequestManager: CookieAcquisitionRequestManager,
+    private val networkCookieManager: NetworkCookieManager,
+    authRepository: AuthRepository,
+    environmentRepository: EnvironmentRepository,
+    savedStateHandle: SavedStateHandle,
+) : BaseViewModel<CookieAcquisitionState, CookieAcquisitionEvent, CookieAcquisitionAction>(
+    initialState = savedStateHandle[KEY_STATE]
+        ?: run {
+            val environmentUrl = environmentRepository.environment.baseWebVaultUrlOrDefault
+            val hostname = requireNotNull(
+                cookieAcquisitionRequestManager
+                    .cookieAcquisitionRequestFlow
+                    .value
+                    ?.hostname,
+            )
+            CookieAcquisitionState(
+                environmentUrl = environmentUrl,
+                hostname = hostname,
+                dialogState = null,
+            )
+        },
+) {
+
+    init {
+        stateFlow
+            .onEach { savedStateHandle[KEY_STATE] = it }
+            .launchIn(viewModelScope)
+
+        authRepository
+            .cookieCallbackResultFlow
+            .map { CookieAcquisitionAction.Internal.CookieAcquisitionResultReceived(result = it) }
+            .onEach(::sendAction)
+            .launchIn(viewModelScope)
+    }
+
+    override fun handleAction(action: CookieAcquisitionAction) {
+        when (action) {
+            CookieAcquisitionAction.LaunchBrowserClick -> handleLaunchBrowserClick()
+            CookieAcquisitionAction.ContinueWithoutSyncingClick -> {
+                handleContinueWithoutSyncingClick()
+            }
+
+            CookieAcquisitionAction.DismissDialogClick -> handleDismissDialogClick()
+            is CookieAcquisitionAction.Internal.CookieAcquisitionResultReceived -> {
+                handleCookieAcquisitionResultReceived(action)
+            }
+        }
+    }
+
+    private fun handleLaunchBrowserClick() {
+        sendEvent(
+            CookieAcquisitionEvent.LaunchBrowser(
+                uri = "${state.hostname.prefixHttpsIfNecessary()}$PROXY_URL",
+                authTabData = AuthTabData.CustomScheme(
+                    callbackUrl = COOKIE_CALLBACK_URL,
+                ),
+            ),
+        )
+    }
+
+    private fun handleContinueWithoutSyncingClick() {
+        cookieAcquisitionRequestManager.setPendingCookieAcquisition(data = null)
+        sendEvent(CookieAcquisitionEvent.NavigateBack)
+    }
+
+    private fun handleDismissDialogClick() {
+        mutableStateFlow.update { it.copy(dialogState = null) }
+    }
+
+    private fun handleCookieAcquisitionResultReceived(
+        action: CookieAcquisitionAction.Internal.CookieAcquisitionResultReceived,
+    ) {
+        when (action.result) {
+            is CookieCallbackResult.Success -> {
+                networkCookieManager.storeCookies(
+                    hostname = state.hostname,
+                    cookies = action.result.cookies,
+                )
+                cookieAcquisitionRequestManager.setPendingCookieAcquisition(data = null)
+                sendEvent(CookieAcquisitionEvent.NavigateBack)
+            }
+
+            is CookieCallbackResult.MissingCookie -> {
+                mutableStateFlow.update {
+                    it.copy(
+                        dialogState = CookieAcquisitionDialogState.Error(
+                            title = UniversalString.an_error_has_occurred.asText(),
+                            message = UniversalString.generic_error_message.asText(),
+                        ),
+                    )
+                }
+            }
+        }
+    }
+}
+
+/**
+ * State for the Cookie Acquisition screen.
+ */
+@Parcelize
+data class CookieAcquisitionState(
+    val environmentUrl: String,
+    val hostname: String,
+    val dialogState: CookieAcquisitionDialogState?,
+) : Parcelable
+
+/**
+ * Dialog states for the Cookie Acquisition screen.
+ */
+sealed class CookieAcquisitionDialogState : Parcelable {
+    /**
+     * Error dialog when cookie acquisition fails.
+     */
+    @Parcelize
+    data class Error(
+        val title: Text,
+        val message: Text,
+    ) : CookieAcquisitionDialogState()
+}
+
+/**
+ * Events for the Cookie Acquisition screen.
+ */
+sealed class CookieAcquisitionEvent {
+    /**
+     * Launch a browser to acquire cookies.
+     */
+    data class LaunchBrowser(
+        val uri: String,
+        val authTabData: AuthTabData,
+    ) : CookieAcquisitionEvent()
+
+    /**
+     * Navigate back, dismissing the cookie acquisition screen.
+     *
+     * Implements [BackgroundEvent] because the cookie callback result may arrive while
+     * the screen is not resumed (e.g. returning from a Custom Tab browser session).
+     */
+    data object NavigateBack : CookieAcquisitionEvent(), BackgroundEvent
+}
+
+/**
+ * Actions for the Cookie Acquisition screen.
+ */
+sealed class CookieAcquisitionAction {
+    /**
+     * User clicked the "Launch browser" button.
+     */
+    data object LaunchBrowserClick : CookieAcquisitionAction()
+
+    /**
+     * User clicked the "Continue without syncing" button.
+     */
+    data object ContinueWithoutSyncingClick : CookieAcquisitionAction()
+
+    /**
+     * User dismissed the error dialog.
+     */
+    data object DismissDialogClick : CookieAcquisitionAction()
+
+    /**
+     * Internal actions for ViewModel processing.
+     */
+    sealed class Internal : CookieAcquisitionAction() {
+        /**
+         * Cookie acquisition result received from the auth repository.
+         */
+        data class CookieAcquisitionResultReceived(
+            val result: CookieCallbackResult,
+        ) : Internal()
+    }
+}

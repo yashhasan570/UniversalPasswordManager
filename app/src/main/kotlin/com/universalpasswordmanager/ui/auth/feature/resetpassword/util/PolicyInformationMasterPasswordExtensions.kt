@@ -1,0 +1,42 @@
+package com.universalpasswordmanager.ui.auth.feature.resetpassword.util
+
+import com.universalpasswordmanager.ui.platform.resource.UniversalString
+import com.universalpasswordmanager.ui.util.Text
+import com.universalpasswordmanager.ui.util.asText
+import com.universalpasswordmanager.data.auth.repository.model.PolicyInformation
+import kotlinx.collections.immutable.ImmutableList
+import kotlinx.collections.immutable.toImmutableList
+
+/**
+ * Convert a list of master password policies into a list of text instructions
+ * for the user about what requirements the password must meet.
+ */
+fun List<PolicyInformation.MasterPassword>.toDisplayLabels(): ImmutableList<Text> {
+    val list = mutableListOf<Text>()
+
+    mapNotNull { it.minLength }.maxOrNull()?.let {
+        list.add(UniversalString.policy_in_effect_min_length.asText(it))
+    }
+
+    mapNotNull { it.minComplexity }.maxOrNull()?.let {
+        list.add(UniversalString.policy_in_effect_min_complexity.asText(it))
+    }
+
+    if (mapNotNull { it.requireUpper }.any { it }) {
+        list.add(UniversalString.policy_in_effect_uppercase.asText())
+    }
+
+    if (mapNotNull { it.requireLower }.any { it }) {
+        list.add(UniversalString.policy_in_effect_lowercase.asText())
+    }
+
+    if (mapNotNull { it.requireNumbers }.any { it }) {
+        list.add(UniversalString.policy_in_effect_numbers.asText())
+    }
+
+    if (mapNotNull { it.requireSpecial }.any { it }) {
+        list.add(UniversalString.policy_in_effect_special.asText())
+    }
+
+    return list.toImmutableList()
+}

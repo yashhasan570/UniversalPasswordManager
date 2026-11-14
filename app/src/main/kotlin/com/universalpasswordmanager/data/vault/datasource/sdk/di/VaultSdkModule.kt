@@ -1,0 +1,68 @@
+package com.universalpasswordmanager.data.vault.datasource.sdk.di
+
+import com.universalpasswordmanager.core.data.manager.dispatcher.DispatcherManager
+import com.universalpasswordmanager.sdk.Fido2CredentialStore
+import com.universalpasswordmanager.data.auth.repository.AuthRepository
+import com.universalpasswordmanager.data.platform.manager.FeatureFlagManager
+import com.universalpasswordmanager.data.platform.manager.SdkClientManager
+import com.universalpasswordmanager.data.platform.manager.sdk.SdkPlatformApiFactory
+import com.universalpasswordmanager.data.platform.manager.sdk.SdkRepositoryFactory
+import com.universalpasswordmanager.data.platform.manager.sdk.log.SdkLoggerFactory
+import com.universalpasswordmanager.data.vault.datasource.sdk.ScopedVaultSdkSource
+import com.universalpasswordmanager.data.vault.datasource.sdk.ScopedVaultSdkSourceImpl
+import com.universalpasswordmanager.data.vault.datasource.sdk.VaultSdkSource
+import com.universalpasswordmanager.data.vault.datasource.sdk.VaultSdkSourceImpl
+import com.universalpasswordmanager.data.vault.datasource.sdk.model.Fido2CredentialStoreImpl
+import com.universalpasswordmanager.data.vault.repository.VaultRepository
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
+
+/**
+ * Provides SDK-related dependencies for the vault package.
+ */
+@Module
+@InstallIn(SingletonComponent::class)
+object VaultSdkModule {
+
+    @Provides
+    @Singleton
+    fun providesVaultSdkSource(
+        sdkClientManager: SdkClientManager,
+        dispatcherManager: DispatcherManager,
+    ): VaultSdkSource =
+        VaultSdkSourceImpl(
+            sdkClientManager = sdkClientManager,
+            dispatcherManager = dispatcherManager,
+        )
+
+    @Provides
+    fun providesScopedVaultSdkSource(
+        dispatcherManager: DispatcherManager,
+        featureFlagManager: FeatureFlagManager,
+        sdkRepositoryFactory: SdkRepositoryFactory,
+        sdkPlatformApiFactory: SdkPlatformApiFactory,
+        sdkLoggerFactory: SdkLoggerFactory,
+    ): ScopedVaultSdkSource =
+        ScopedVaultSdkSourceImpl(
+            dispatcherManager = dispatcherManager,
+            featureFlagManager = featureFlagManager,
+            sdkRepositoryFactory = sdkRepositoryFactory,
+            sdkPlatformApiFactory = sdkPlatformApiFactory,
+            sdkLoggerFactory = sdkLoggerFactory,
+        )
+
+    @Provides
+    @Singleton
+    fun providesFido2CredentialStore(
+        authRepository: AuthRepository,
+        vaultSdkSource: VaultSdkSource,
+        vaultRepository: VaultRepository,
+    ): Fido2CredentialStore = Fido2CredentialStoreImpl(
+        authRepository = authRepository,
+        vaultSdkSource = vaultSdkSource,
+        vaultRepository = vaultRepository,
+    )
+}
