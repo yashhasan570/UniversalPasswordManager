@@ -3,7 +3,7 @@ package com.universalpasswordmanager.ui.platform.components.radio
 import androidx.compose.material3.RadioButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.universalpasswordmanager.ui.platform.components.radio.color.bitwardenRadioButtonColors
+import com.universalpasswordmanager.ui.platform.components.radio.color.universalpasswordmanagerRadioButtonColors
 
 /**
  * A custom Universal-themed radio button.
@@ -22,6 +22,6 @@ fun UniversalRadioButton(
         modifier = modifier,
         selected = isSelected,
         onClick = onClick,
-        colors = bitwardenRadioButtonColors(),
+        colors = universalpasswordmanagerRadioButtonColors(),
     )
 }

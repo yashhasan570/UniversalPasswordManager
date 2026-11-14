@@ -119,7 +119,7 @@ class MigrateToMyItemsScreenTest : UniversalComposeTest() {
 
     @Test
     fun `LaunchUri event should launch URI via intent manager`() {
-        val testUri = "https://bitwarden.com/help/transfer-ownership/"
+        val testUri = "https:///help/transfer-ownership/"
         mutableEventFlow.tryEmit(MigrateToMyItemsEvent.LaunchUri(testUri))
         verify {
             intentManager.launchUri(testUri.toUri())

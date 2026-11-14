@@ -67,7 +67,7 @@ fun SetupBrowserAutofillScreen(
 
             SetupBrowserAutofillEvent.NavigateToBrowserIntegrationsInfo -> {
                 intentManager.launchUri(
-                    "https://bitwarden.com/help/auto-fill-android/#browser-integrations/".toUri(),
+                    "https:///help/auto-fill-android/#browser-integrations/".toUri(),
                 )
             }
         }

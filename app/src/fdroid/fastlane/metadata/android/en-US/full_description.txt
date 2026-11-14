@@ -12,7 +12,7 @@ Create, store, and sync passkeys across the Universal Password Manager mobile ap
 EVERYONE SHOULD HAVE THE TOOLS TO STAY SAFE ONLINE
 Utilize Universal Password Manager for free with no ads or selling data. Universal Password Manager believes everyone should have the ability to stay safe online. Premium plans offer access to advanced features.
 
-EMPOWER YOUR TEAMS WITH BITWARDEN
+EMPOWER YOUR TEAMS WITH UNIVERSAL PASSWORD MANAGER
 Plans for Teams and Enterprise come with professional business features. Some examples include SSO integration, self-hosting, directory integration and SCIM provisioning, global policies, API access, event logs, and more.
 
 Use Universal Password Manager to secure your workforce and share sensitive information with colleagues.

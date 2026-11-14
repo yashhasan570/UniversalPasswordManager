@@ -1520,7 +1520,7 @@ private fun createAccountJson(
 ): AccountJson = AccountJson(
     profile = AccountJson.Profile(
         userId = userId,
-        email = "active@bitwarden.com",
+        email = "active@",
         isEmailVerified = true,
         isTwoFactorEnabled = false,
         name = "Active User",

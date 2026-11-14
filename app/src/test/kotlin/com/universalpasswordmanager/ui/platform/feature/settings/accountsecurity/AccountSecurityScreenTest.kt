@@ -1600,7 +1600,7 @@ class AccountSecurityScreenTest : UniversalComposeTest() {
     fun `on NavigateToFingerprintPhrase should call launchUri on intentManager`() {
         mutableEventFlow.tryEmit(AccountSecurityEvent.NavigateToFingerprintPhrase)
         verify {
-            intentManager.launchUri("http://bitwarden.com/help/fingerprint-phrase".toUri())
+            intentManager.launchUri("http:///help/fingerprint-phrase".toUri())
         }
     }
 

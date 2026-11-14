@@ -350,7 +350,7 @@ class ExportVaultViewModel @Inject constructor(
                     clock = clock,
                 )
                 val extension = state.exportFormat.fileExtension
-                val fileName = "bitwarden_export_$date.$extension"
+                val fileName = "universalpasswordmanager_export_$date.$extension"
 
                 mutableStateFlow.update {
                     it.copy(

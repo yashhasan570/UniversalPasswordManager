@@ -11,7 +11,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenStandardIconButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerStandardIconButtonColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.feature.settings.appearance.model.AppTheme
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
@@ -34,7 +34,7 @@ fun UniversalPlaceholderAccountActionItem(
 ) {
     IconButton(
         onClick = onClick,
-        colors = bitwardenStandardIconButtonColors(),
+        colors = universalpasswordmanagerStandardIconButtonColors(),
         shape = UniversalTheme.shapes.button,
         interactionSource = interactionSource,
         modifier = modifier

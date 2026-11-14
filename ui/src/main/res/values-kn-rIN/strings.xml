@@ -75,9 +75,9 @@
     <string name="yes">ಹೌದು</string>
     <string name="account">ಖಾತೆ</string>
     <string name="account_created_success">ನಿಮ್ಮ ಹೊಸ ಖಾತೆಯನ್ನು ರಚಿಸಲಾಗಿದೆ!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">ಸಾಧನ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ Universal Password Manager ಅನ್ನು ನಿಮ್ಮ ಪಾಸ್ಕೀ ಪೂರೈಕೆದಾರರಾಗಿ ಹೊಂದಿಸಿ.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">ಸಾಧನ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ Universal Password Manager ಅನ್ನು ನಿಮ್ಮ ಪಾಸ್ಕೀ ಪೂರೈಕೆದಾರರಾಗಿ ಹೊಂದಿಸಿ.</string>
     <string name="avoid_ambiguous_characters">ಅಸ್ಪಷ್ಟ ಅಕ್ಷರಗಳನ್ನು ತಪ್ಪಿಸಿ</string>
-    <string name="bitwarden_autofill_service">ಬಿಟ್ವಾರ್ಡೆನ್ ಸ್ವಯಂ ಭರ್ತಿ ಸೇವೆ</string>
+    <string name="universalpasswordmanager_autofill_service">ಬಿಟ್ವಾರ್ಡೆನ್ ಸ್ವಯಂ ಭರ್ತಿ ಸೇವೆ</string>
     <string name="change_master_password">ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಬದಲಾಯಿಸಿ</string>
     <string name="close">ಮುಚ್ಚಿ</string>
     <string name="close_app">ಅಪ್ಲಿಕೇಶನ್ ಮುಚ್ಚಿ</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">ಸೆಷನ್ ಸಮಯ ಮೀರುವಿಕೆಯನ್ನು “ಲಾಗ್ ಔಟ್” ಗೆ ಹೊಂದಿಸುವುದೇ?</string>
     <string name="vault_timeout_log_out_confirmation_message">ಸಮಯ ಮೀರಿದ ನಂತರ, ನಿಮ್ಮನ್ನು ಲಾಗ್ ಔಟ್ ಮಾಡಲಾಗುತ್ತದೆ. ಮತ್ತೆ ಲಾಗಿನ್ ಆಗಲು ಮತ್ತು ನಿಮ್ಮ ವಾಲ್ಟ್ ಅನ್ನು ಪ್ರವೇಶಿಸಲು ನೀವು ಇಂಟರ್ನೆಟ್ಗೆ ಸಂಪರ್ಕ ಹೊಂದಿರಬೇಕು. ಈ ಸಾಧನದಲ್ಲಿ ಉಳಿಸಿದ ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್ಗಳು ಮತ್ತು PIN ಬದಲಾಗುವುದಿಲ್ಲ.</string>
     <string name="logging_in">ಲಾಗಿನ್ ಆಗುತ್ತಿದೆ…</string>
-    <string name="login_to_bitwarden">Universal Password Manager ಗೆ ಲಾಗಿನ್ ಮಾಡಿ</string>
+    <string name="login_to_universalpasswordmanager">Universal Password Manager ಗೆ ಲಾಗಿನ್ ಮಾಡಿ</string>
     <string name="master_password_confirmation_val_message">ಪಾಸ್ವರ್ಡ್ ದೃಢೀಕರಣ ಸರಿಯಾಗಿಲ್ಲ.</string>
     <string name="master_password_description">ನಿಮ್ಮ ವಾಲ್ಟ್ ಅನ್ನು ಪ್ರವೇಶಿಸಲು ನೀವು ಬಳಸುವ ಪಾಸ್ವರ್ಡ್ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಆಗಿದೆ. ನಿಮ್ಮ ಮಾಸ್ಟರ್ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ನೀವು ಮರೆಯದಿರುವುದು ಬಹಳ ಮುಖ್ಯ. ನೀವು ಅದನ್ನು ಮರೆತ ಸಂದರ್ಭದಲ್ಲಿ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಮರುಪಡೆಯಲು ಯಾವುದೇ ಮಾರ್ಗವಿಲ್ಲ.</string>
     <string name="master_password_hint">ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಸುಳಿವು (ಐಚ್ಛಿಕ)</string>
@@ -176,7 +176,7 @@
     <string name="no_items_for_vault">ನಿಮ್ಮ ವಾಲ್ಟ್ನಲ್ಲಿ “%1$s” ಗೆ ಹೊಂದಿಕೆಯಾಗುವ ಯಾವುದೇ ಐಟಂಗಳಿಲ್ಲ</string>
     <string name="search_for_a_login_or_add_a_new_login">ಲಾಗಿನ್ಗಾಗಿ ಹುಡುಕಿ ಅಥವಾ ಹೊಸ ಲಾಗಿನ್ ಸೇರಿಸಿ</string>
     <string name="disabled">ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
-    <string name="bitwarden_autofill_service_alert2">ನಿಮ್ಮ ವಾಲ್ಟ್ಗೆ ಹೊಸ ಲಾಗಿನ್ಗಳನ್ನು ಸೇರಿಸಲು ಸುಲಭವಾದ ಮಾರ್ಗವೆಂದರೆ Universal Password Manager ಸ್ವಯಂ ಭರ್ತಿ ಸೇವೆಯಿಂದ. “ಸೆಟ್ಟಿಂಗ್ಗಳು” ಪರದೆಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡುವ ಮೂಲಕ Universal Password Manager ಸ್ವಯಂ ಭರ್ತಿ ಸೇವೆಯನ್ನು ಬಳಸುವುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">ನಿಮ್ಮ ವಾಲ್ಟ್ಗೆ ಹೊಸ ಲಾಗಿನ್ಗಳನ್ನು ಸೇರಿಸಲು ಸುಲಭವಾದ ಮಾರ್ಗವೆಂದರೆ Universal Password Manager ಸ್ವಯಂ ಭರ್ತಿ ಸೇವೆಯಿಂದ. “ಸೆಟ್ಟಿಂಗ್ಗಳು” ಪರದೆಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡುವ ಮೂಲಕ Universal Password Manager ಸ್ವಯಂ ಭರ್ತಿ ಸೇವೆಯನ್ನು ಬಳಸುವುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
     <string name="autofill_noun">ಸ್ವಯಂ ಭರ್ತಿ</string>
     <string name="autofill_verb">ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡು</string>
     <string name="autofill_or_view">ಈ ಐಟಂ ಅನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ಅಥವಾ ವೀಕ್ಷಿಸಲು ನೀವು ಬಯಸುವಿರಾ?</string>
@@ -299,7 +299,7 @@
     <string name="no_items_trash">ಅನುಪಯುಕ್ತದಲ್ಲಿ ಯಾವುದೇ ವಸ್ತುಗಳು ಇಲ್ಲ.</string>
     <string name="autofill_accessibility_summary">ಇತರ ಅಪ್ಲಿಕೇಶನ್ಗಳು ಮತ್ತು ವೆಬ್ನಲ್ಲಿ ಬಳಕೆದಾರಹೆಸರು ಮತ್ತು ಪಾಸ್ವರ್ಡ್ ಕ್ಷೇತ್ರಗಳನ್ನು ಭರ್ತಿ ಮಾಡಲು ಸಹಾಯ ಮಾಡಿ.</string>
     <string name="autofill_service_description">ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿನ ಇತರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗೆ ಲಾಗಿನ್‌ಗಳು, ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ಗುರುತಿನ ಮಾಹಿತಿಯನ್ನು ಭರ್ತಿ ಮಾಡಲು ಸಹಾಯ ಮಾಡಲು ಬಿಟ್‌ವಾರ್ಡೆನ್ ಸ್ವಯಂ-ಭರ್ತಿ ಸೇವೆ ಆಂಡ್ರಾಯ್ಡ್ ಆಟೋಫಿಲ್ ಫ್ರೇಮ್‌ವರ್ಕ್ ಅನ್ನು ಬಳಸುತ್ತದೆ.</string>
-    <string name="bitwarden_autofill_go_to_settings">ನಿಮಗಾಗಿ Android ಆಟೋಫಿಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಮೆನುವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತೆರೆಯಲು ನಮಗೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನೀವು Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಂದ ಹಸ್ತಚಾಲಿತವಾಗಿ ಆಟೋಫಿಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಮೆನುಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಬಹುದು &gt; ಸಿಸ್ಟಮ್ &gt; ಭಾಷೆಗಳು ಮತ್ತು ಇನ್ಪುಟ್ &gt; ಸುಧಾರಿತ &gt; ಆಟೋಫಿಲ್ ಸೇವೆ.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">ನಿಮಗಾಗಿ Android ಆಟೋಫಿಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಮೆನುವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತೆರೆಯಲು ನಮಗೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನೀವು Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಂದ ಹಸ್ತಚಾಲಿತವಾಗಿ ಆಟೋಫಿಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಮೆನುಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಬಹುದು &gt; ಸಿಸ್ಟಮ್ &gt; ಭಾಷೆಗಳು ಮತ್ತು ಇನ್ಪುಟ್ &gt; ಸುಧಾರಿತ &gt; ಆಟೋಫಿಲ್ ಸೇವೆ.</string>
     <string name="custom_field_name">ಕಸ್ಟಮ್ಫೀಲ್ಡ್ ನೇಮ್</string>
     <string name="field_type_boolean">ಬೂಲಿಯನ್</string>
     <string name="field_type_hidden">ಮರೆಮಾಡಲಾಗಿದೆ</string>
@@ -649,14 +649,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Universal Password Manager ಗೆ ಹೊಸಬರೇ?</string>
+    <string name="new_to_universalpasswordmanager">Universal Password Manager ಗೆ ಹೊಸಬರೇ?</string>
     <string name="get_master_passwordword_hint">ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಸುಳಿವು ಪಡೆಯಿರಿ</string>
     <string name="logging_in_as_x_on_y">%2$s ನಲ್ಲಿ %1$s ಆಗಿ ಲಾಗಿನ್ ಆಗುತ್ತಿದೆ</string>
     <string name="not_you">ನೀವಲ್ಲವೇ?</string>
     <string name="log_in_with_master_password">ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ನೊಂದಿಗೆ ಲಾಗಿನ್ ಮಾಡಿ</string>
     <string name="log_in_initiated">ಲಾಗಿನ್ ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">ಅಧಿಸೂಚನೆಯನ್ನು ಮರುಕಳುಹಿಸಿ</string>
     <string name="view_all_login_options">ಎಲ್ಲಾ ಲಾಗಿನ್ ಆಯ್ಕೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
@@ -714,7 +714,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">ವಾಲ್ಟ್ ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="appearance">ನೋಟ</string>
     <string name="account_security">ಖಾತೆ ಸುರಕ್ಷತೆ</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">ಈಗ ಸಿಂಕ್ ಮಾಡಿ</string>
     <string name="unlock_options">ಅನ್ಲಾಕ್ ಆಯ್ಕೆಗಳು</string>
     <string name="session_timeout">ಸೆಷನ್ ಸಮಯ ಮೀರುವಿಕೆ</string>
@@ -731,10 +731,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">ಸಾಧನ ಸೆಟ್ಟಿಂಗ್ಗಳಿಗೆ ಮುಂದುವರಿಸುವುದೇ?</string>
     <string name="two_step_login_description_long">Universal Password Manager ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ಎರಡು-ಹಂತದ ಲಾಗಿನ್ ಅನ್ನು ಹೊಂದಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಹೆಚ್ಚು ಸುರಕ್ಷಿತವಾಗಿಸಿ.</string>
     <string name="change_master_password_description_long">ನಿಮ್ಮ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ನೀವು Universal Password Manager ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ಬದಲಾಯಿಸಬಹುದು.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">ಸಹಾಯ ಕೇಂದ್ರದಲ್ಲಿ Universal Password Manager ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಎಂಬುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
-    <string name="privacy_policy_description_long">bitwarden.com ನಲ್ಲಿ ನಮ್ಮ ಗೌಪ್ಯತಾ ನೀತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ನಿಮ್ಮ Universal Password Manager ಖಾತೆಯ ಹೆಚ್ಚಿನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager ಸಂಸ್ಥೆಯನ್ನು ಬಳಸುವ ಮೂಲಕ ನಿಮ್ಮ ವಾಲ್ಟ್ ಐಟಂಗಳನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಅನುಮತಿಸುತ್ತದೆ. bitwarden.com ವೆಬ್ಸೈಟ್ನಲ್ಲಿ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">ಸಹಾಯ ಕೇಂದ್ರದಲ್ಲಿ Universal Password Manager ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಎಂಬುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
+    <string name="privacy_policy_description_long"> ನಲ್ಲಿ ನಮ್ಮ ಗೌಪ್ಯತಾ ನೀತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ನಿಮ್ಮ Universal Password Manager ಖಾತೆಯ ಹೆಚ್ಚಿನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager ಸಂಸ್ಥೆಯನ್ನು ಬಳಸುವ ಮೂಲಕ ನಿಮ್ಮ ವಾಲ್ಟ್ ಐಟಂಗಳನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಅನುಮತಿಸುತ್ತದೆ.  ವೆಬ್ಸೈಟ್ನಲ್ಲಿ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
     <string name="created_x">ರಚಿಸಲಾಗಿದೆ %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">ನಿಮ್ಮ ಸಂಸ್ಥೆಯು ನೀವು ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಹೊಂದಿಸಬೇಕಾಗುತ್ತದೆ.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">ನಿಮ್ಮ ವಾಲ್ಟ್ ಸಮಯ ಮೀರುವಿಕೆ ಕ್ರಿಯೆಯನ್ನು ಬದಲಾಯಿಸಲು ಅನ್ಲಾಕ್ ಆಯ್ಕೆಯನ್ನು ಹೊಂದಿಸಿ.</string>
@@ -744,8 +744,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">ನಿಮ್ಮ ಖಾತೆಗೆ Duo ಎರಡು-ಹಂತದ ಲಾಗಿನ್ ಅಗತ್ಯವಿದೆ.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">ಲಾಗಿನ್ ಪೂರ್ಣಗೊಳಿಸಲು Duo ನ ಹಂತಗಳನ್ನು ಅನುಸರಿಸಿ.</string>
     <string name="launch_duo">Duo ಪ್ರಾರಂಭಿಸಿ</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">ನಿಮ್ಮ ಪಾಸ್ಕೀಯನ್ನು %1$s ಗಾಗಿ ನಿಮ್ಮ Universal Password Manager ವಾಲ್ಟ್ಗೆ ಉಳಿಸಲಾಗುತ್ತದೆ</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು %1$s ಗಾಗಿ ನಿಮ್ಮ Universal Password Manager ವಾಲ್ಟ್ಗೆ ಉಳಿಸಲಾಗುತ್ತದೆ</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">ನಿಮ್ಮ ಪಾಸ್ಕೀಯನ್ನು %1$s ಗಾಗಿ ನಿಮ್ಮ Universal Password Manager ವಾಲ್ಟ್ಗೆ ಉಳಿಸಲಾಗುತ್ತದೆ</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು %1$s ಗಾಗಿ ನಿಮ್ಮ Universal Password Manager ವಾಲ್ಟ್ಗೆ ಉಳಿಸಲಾಗುತ್ತದೆ</string>
     <string name="passkeys_not_supported_for_this_app">ಈ ಅಪ್ಲಿಕೇಶನ್ಗೆ ಪಾಸ್ಕೀಗಳು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">ಬ್ರೌಸರ್ ವಿಶೇಷಾಧಿಕಾರ ಹೊಂದಿಲ್ಲದ ಕಾರಣ ಪಾಸ್ಕೀ ಕಾರ್ಯಾಚರಣೆ ವಿಫಲವಾಗಿದೆ</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">ಬ್ರೌಸರ್ ಸಹಿ ಹೊಂದಾಣಿಕೆಯಾಗದ ಕಾರಣ ಪಾಸ್ಕೀ ಕಾರ್ಯಾಚರಣೆ ವಿಫಲವಾಗಿದೆ</string>
@@ -771,7 +771,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ</string>
     <string name="open_email_app">ಇಮೇಲ್ ಅಪ್ಲಿಕೇಶನ್ ತೆರೆಯಿರಿ</string>
     <string name="email_verified">ಇಮೇಲ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">ಘೋಷಣೆಗಳು, ಸಲಹೆ ಮತ್ತು ಸಂಶೋಧನಾ ಅವಕಾಶಗಳಿಗಾಗಿ Universal Password Manager ನಿಂದ ಇಮೇಲ್ಗಳನ್ನು ಪಡೆಯಿರಿ. ಯಾವುದೇ ಸಮಯದಲ್ಲಿ <annotation link="unsubscribe">ಅನ್ಸಬ್ಸ್ಕ್ರೈಬ್</annotation> ಮಾಡಿ.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">ಘೋಷಣೆಗಳು, ಸಲಹೆ ಮತ್ತು ಸಂಶೋಧನಾ ಅವಕಾಶಗಳಿಗಾಗಿ Universal Password Manager ನಿಂದ ಇಮೇಲ್ಗಳನ್ನು ಪಡೆಯಿರಿ. ಯಾವುದೇ ಸಮಯದಲ್ಲಿ <annotation link="unsubscribe">ಅನ್ಸಬ್ಸ್ಕ್ರೈಬ್</annotation> ಮಾಡಿ.</string>
     <string name="security_prioritized">ಸುರಕ್ಷತೆ, ಆದ್ಯತೆ</string>
     <string name="welcome_message_1">ಲಾಗಿನ್ಗಳು, ಕಾರ್ಡ್ಗಳು ಮತ್ತು ಗುರುತುಗಳನ್ನು ನಿಮ್ಮ ಸುರಕ್ಷಿತ ವಾಲ್ಟ್ಗೆ ಉಳಿಸಿ. Universal Password Manager ನಿಮಗೆ ಮುಖ್ಯವಾದುದನ್ನು ರಕ್ಷಿಸಲು ಶೂನ್ಯ-ಜ್ಞಾನ, ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಬಳಸುತ್ತದೆ.</string>
     <string name="welcome_message_2">ಒಂದೇ ಅಕ್ಷರವನ್ನು ಟೈಪ್ ಮಾಡದೆಯೇ ನಿಮ್ಮ ಖಾತೆಗಳಿಗೆ ಲಾಗಿನ್ ಆಗಲು ಬಯೋಮೆಟ್ರಿಕ್ ಅನ್ಲಾಕ್ ಮತ್ತು ಸ್ವಯಂ ಭರ್ತಿ ಹೊಂದಿಸಿ.</string>
@@ -809,8 +809,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಚಿಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ಇಮೇಲ್ನಲ್ಲಿನ ಲಿಂಕ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
     <string name="change_email_address">ಇಮೇಲ್ ವಿಳಾಸ ಬದಲಾಯಿಸಿ</string>
     <string name="next">ಮುಂದೆ</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager ಕಳೆದುಹೋದ ಅಥವಾ ಮರೆತುಹೋದ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager ಕಳೆದುಹೋದ ಅಥವಾ ಮರೆತುಹೋದ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಮರುಹೊಂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager ಕಳೆದುಹೋದ ಅಥವಾ ಮರೆತುಹೋದ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager ಕಳೆದುಹೋದ ಅಥವಾ ಮರೆತುಹೋದ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಮರುಹೊಂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
     <string name="choose_your_master_password">ನಿಮ್ಮ ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಲು ಅನನ್ಯ ಮತ್ತು ಬಲವಾದ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಆರಿಸಿ.</string>
     <plurals name="minimum_characters">
@@ -821,13 +821,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">ದಯವಿಟ್ಟು ನೋಂದಣಿಯನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ ಅಥವಾ ಲಾಗಿನ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ. ನೀವು ಈಗಾಗಲೇ ಖಾತೆಯನ್ನು ಹೊಂದಿರಬಹುದು.</string>
     <string name="restart_registration">ನೋಂದಣಿಯನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ</string>
     <string name="authenticator_sync">ಅಧಿಕೃತ ಸಿಂಕ್</string>
-    <string name="allow_bitwarden_authenticator_syncing">ಅಧಿಕೃತ ಸಿಂಕ್ ಅನ್ನು ಅನುಮತಿಸಿ</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">ಅಧಿಕೃತ ಸಿಂಕ್ ಅನ್ನು ಅನುಮತಿಸಿ</string>
     <string name="there_was_an_issue_validating_the_registration_token">ನೋಂದಣಿ ಟೋಕನ್ ಅನ್ನು ಮೌಲ್ಯೀಕರಿಸುವಲ್ಲಿ ಸಮಸ್ಯೆ ಇತ್ತು.</string>
     <string name="turn_on_autofill">ಸ್ವಯಂ ಭರ್ತಿ ಆನ್ ಮಾಡಿ</string>
     <string name="autofill_setup">ಸ್ವಯಂ ಭರ್ತಿ ಸೆಟಪ್</string>
     <string name="turn_on_browser_autofill_integration">ಬ್ರೌಸರ್ ಸ್ವಯಂ ಭರ್ತಿ ಏಕೀಕರಣವನ್ನು ಆನ್ ಮಾಡಿ</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Universal Password Manager ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ವಿಶೇಷ ಅನುಮತಿಗಳ ಅಗತ್ಯವಿರುವ ಬ್ರೌಸರ್ ಅನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದೀರಿ.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Universal Password Manager ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ವಿಶೇಷ ಅನುಮತಿಗಳ ಅಗತ್ಯವಿರುವ ಬ್ರೌಸರ್ಗಳನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದೀರಿ.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Universal Password Manager ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ವಿಶೇಷ ಅನುಮತಿಗಳ ಅಗತ್ಯವಿರುವ ಬ್ರೌಸರ್ ಅನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದೀರಿ.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Universal Password Manager ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ವಿಶೇಷ ಅನುಮತಿಗಳ ಅಗತ್ಯವಿರುವ ಬ್ರೌಸರ್ಗಳನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದೀರಿ.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Universal Password Manager ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ವಿಶೇಷ ಅನುಮತಿಗಳ ಅಗತ್ಯವಿರುವ ಬ್ರೌಸರ್ ಅನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದೀರಿ. ಕೆಳಗೆ ನಿಮ್ಮ ಆದ್ಯತೆಯ ಸ್ವಯಂ ಭರ್ತಿ ಏಕೀಕರಣವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Universal Password Manager ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಲು ವಿಶೇಷ ಅನುಮತಿಗಳ ಅಗತ್ಯವಿರುವ ಬ್ರೌಸರ್ಗಳನ್ನು ನೀವು ಬಳಸುತ್ತಿದ್ದೀರಿ. ಮುಂದುವರಿಯಲು ನಿಮ್ಮ ಎಲ್ಲಾ ಸ್ಥಾಪಿಸಿದ ಬ್ರೌಸರ್ಗಳಿಗೆ ಸ್ವಯಂ ಭರ್ತಿಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.</string>
     <string name="use_autofill_to_log_into_your_accounts">ಒಂದೇ ಟ್ಯಾಪ್ನೊಂದಿಗೆ ನಿಮ್ಮ ಖಾತೆಗಳಿಗೆ ಲಾಗಿನ್ ಆಗಲು ಸ್ವಯಂ ಭರ್ತಿ ಬಳಸಿ.</string>
@@ -835,7 +835,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">ಸ್ವಯಂ ಭರ್ತಿಯನ್ನು ನಂತರ ಆನ್ ಮಾಡುವುದೇ?</string>
     <string name="turn_on_browser_autofill_integration_later">ನಂತರ ಬ್ರೌಸರ್ ಸ್ವಯಂ ಭರ್ತಿ ಏಕೀಕರಣವನ್ನು ಆನ್ ಮಾಡುವುದೇ?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನೀವು ಈ ಹಂತವನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಹಿಂತಿರುಗಬಹುದು.</string>
-    <string name="what_bitwarden_has_to_offer">ನೀವು ಈಗ Universal Password Manager ನೀಡುವ ಎಲ್ಲವನ್ನೂ ಅನ್ವೇಷಿಸಬಹುದು ಮತ್ತು ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ನಿರ್ವಹಿಸಲು ಪ್ರಾರಂಭಿಸಬಹುದು.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">ನೀವು ಈಗ Universal Password Manager ನೀಡುವ ಎಲ್ಲವನ್ನೂ ಅನ್ವೇಷಿಸಬಹುದು ಮತ್ತು ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ನಿರ್ವಹಿಸಲು ಪ್ರಾರಂಭಿಸಬಹುದು.</string>
     <string name="youre_all_set">ನೀವು ಸಿದ್ಧರಾಗಿದ್ದೀರಿ!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Duo ಸೇವೆಯೊಂದಿಗೆ ಸಂಪರ್ಕಿಸುವಲ್ಲಿ ದೋಷ. ಬೇರೆ ಎರಡು-ಹಂತದ ಲಾಗಿನ್ ವಿಧಾನವನ್ನು ಬಳಸಿ ಅಥವಾ ಸಹಾಯಕ್ಕಾಗಿ Duo ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
     <string name="master_password_hint_not_specified">ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್ ಸುಳಿವು</string>
@@ -864,29 +864,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">3 ರಲ್ಲಿ ಹಂತ 1</string>
     <string name="export_your_saved_logins">ನಿಮ್ಮ ಉಳಿಸಿದ ಲಾಗಿನ್ಗಳನ್ನು ರಫ್ತು ಮಾಡಿ</string>
     <string name="delete_this_file_after_import_is_complete">ಆಮದು ಪೂರ್ಣಗೊಂಡ ನಂತರ ನೀವು ಈ ಫೈಲ್ ಅನ್ನು ಅಳಿಸುತ್ತೀರಿ.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ನಲ್ಲಿ, ಹೊಸ ಬ್ರೌಸರ್ ಟ್ಯಾಬ್ ತೆರೆಯಿರಿ ಮತ್ತು <annotation emphasis="bold"><annotation arg="0">%1$s</annotation> ಗೆ ಹೋಗಿ</annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Universal Password Manager ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ಗೆ ಲಾಗಿನ್ ಮಾಡಿ.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ನಲ್ಲಿ, ಹೊಸ ಬ್ರೌಸರ್ ಟ್ಯಾಬ್ ತೆರೆಯಿರಿ ಮತ್ತು <annotation emphasis="bold"><annotation arg="0">%1$s</annotation> ಗೆ ಹೋಗಿ</annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Universal Password Manager ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ಗೆ ಲಾಗಿನ್ ಮಾಡಿ.</string>
     <string name="step_2_of_3">3 ರಲ್ಲಿ ಹಂತ 2</string>
-    <string name="log_in_to_bitwarden">Universal Password Manager ಗೆ ಲಾಗಿನ್ ಮಾಡಿ</string>
+    <string name="log_in_to_universalpasswordmanager">Universal Password Manager ಗೆ ಲಾಗಿನ್ ಮಾಡಿ</string>
     <string name="step_3_of_3">3 ರಲ್ಲಿ ಹಂತ 3</string>
-    <string name="import_logins_to_bitwarden">Universal Password Manager ಗೆ ಲಾಗಿನ್ಗಳನ್ನು ಆಮದು ಮಾಡಿ</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager ನ್ಯಾವಿಗೇಷನ್ನಲ್ಲಿ, <annotation emphasis="bold">Tools ಆಯ್ಕೆಯನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ</annotation> ಮತ್ತು <annotation emphasis="bold">Import data ಆಯ್ಕೆಮಾಡಿ.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Universal Password Manager ಗೆ ಲಾಗಿನ್ಗಳನ್ನು ಆಮದು ಮಾಡಿ</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager ನ್ಯಾವಿಗೇಷನ್ನಲ್ಲಿ, <annotation emphasis="bold">Tools ಆಯ್ಕೆಯನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ</annotation> ಮತ್ತು <annotation emphasis="bold">Import data ಆಯ್ಕೆಮಾಡಿ.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ ಮತ್ತು <annotation emphasis="bold">ನಿಮ್ಮ ಉಳಿಸಿದ ಪಾಸ್ವರ್ಡ್ ಫೈಲ್ ಅನ್ನು ಆಮದು ಮಾಡಿ.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">ನಿಮ್ಮ ಸುರಕ್ಷತೆಗಾಗಿ, <annotation emphasis="bold">ನಿಮ್ಮ ಉಳಿಸಿದ ಪಾಸ್ವರ್ಡ್ ಫೈಲ್ ಅನ್ನು ಅಳಿಸಲು</annotation> ಮರೆಯದಿರಿ.</string>
     <string name="need_help_check_out_import_help">ಸಹಾಯ ಬೇಕೇ? <annotation link="importHelp">ಆಮದು ಸಹಾಯ</annotation> ವನ್ನು ಪರಿಶೀಲಿಸಿ.</string>
     <string name="import_help">ಆಮದು ಸಹಾಯ</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">ರಫ್ತು ಮಾಡಿದ ಫೈಲ್ ಅನ್ನು</annotation> ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ನಲ್ಲಿ ನೀವು ಸುಲಭವಾಗಿ ಕಂಡುಹಿಡಿಯಬಹುದಾದ ಸ್ಥಳದಲ್ಲಿ ಉಳಿಸಿ.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">ಇದು ಗುರುತಿಸಲ್ಪಟ್ಟ Universal Password Manager ಸರ್ವರ್ ಅಲ್ಲ. ನೀವು ನಿಮ್ಮ ಪೂರೈಕೆದಾರರೊಂದಿಗೆ ಪರಿಶೀಲಿಸಬೇಕಾಗಬಹುದು ಅಥವಾ ನಿಮ್ಮ ಸರ್ವರ್ ಅನ್ನು ನವೀಕರಿಸಬೇಕಾಗಬಹುದು.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">ಇದು ಗುರುತಿಸಲ್ಪಟ್ಟ Universal Password Manager ಸರ್ವರ್ ಅಲ್ಲ. ನೀವು ನಿಮ್ಮ ಪೂರೈಕೆದಾರರೊಂದಿಗೆ ಪರಿಶೀಲಿಸಬೇಕಾಗಬಹುದು ಅಥವಾ ನಿಮ್ಮ ಸರ್ವರ್ ಅನ್ನು ನವೀಕರಿಸಬೇಕಾಗಬಹುದು.</string>
     <string name="syncing_logins_loading_message">ಲಾಗಿನ್ಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ…</string>
     <string name="download_the_browser_extension">ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆಯನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">ತಡೆರಹಿತ ಅನುಭವಕ್ಕಾಗಿ ನಿಮ್ಮ ನೆಚ್ಚಿನ ಬ್ರೌಸರ್ಗೆ Universal Password Manager ಅನ್ನು ಸಂಯೋಜಿಸಲು bitwarden.com/download ಗೆ ಹೋಗಿ.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">ತಡೆರಹಿತ ಅನುಭವಕ್ಕಾಗಿ ನಿಮ್ಮ ನೆಚ್ಚಿನ ಬ್ರೌಸರ್ಗೆ Universal Password Manager ಅನ್ನು ಸಂಯೋಜಿಸಲು /download ಗೆ ಹೋಗಿ.</string>
     <string name="use_the_web_app">ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಿ</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ನವೀಕರಿಸಲು bitwarden.com ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ನವೀಕರಿಸಲು  ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ.</string>
     <string name="autofill_passwords">ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಸ್ವಯಂ ಭರ್ತಿ ಮಾಡಿ</string>
     <string name="set_up_autofill_on_all_your_devices">ಎಲ್ಲಿಯಾದರೂ ಒಂದೇ ಟ್ಯಾಪ್ನೊಂದಿಗೆ ಲಾಗಿನ್ ಮಾಡಲು ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ ಸ್ವಯಂ ಭರ್ತಿ ಹೊಂದಿಸಿ.</string>
     <string name="import_successful">ಆಮದು ಯಶಸ್ವಿಯಾಗಿದೆ!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">ವೆಬ್ ಮತ್ತು ಡೆಸ್ಕ್ಟಾಪ್ಗಾಗಿ Universal Password Manager ಉಪಕರಣಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಲಾಗಿನ್ಗಳನ್ನು ಎಲ್ಲಿಂದಲಾದರೂ ನಿರ್ವಹಿಸಿ.</string>
-    <string name="bitwarden_tools">Universal Password Manager ಉಪಕರಣಗಳು</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">ವೆಬ್ ಮತ್ತು ಡೆಸ್ಕ್ಟಾಪ್ಗಾಗಿ Universal Password Manager ಉಪಕರಣಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಲಾಗಿನ್ಗಳನ್ನು ಎಲ್ಲಿಂದಲಾದರೂ ನಿರ್ವಹಿಸಿ.</string>
+    <string name="universalpasswordmanager_tools">Universal Password Manager ಉಪಕರಣಗಳು</string>
     <string name="got_it">ಅರ್ಥವಾಯಿತು</string>
     <string name="no_logins_were_imported">ಯಾವುದೇ ಲಾಗಿನ್ಗಳನ್ನು ಆಮದು ಮಾಡಲಾಗಿಲ್ಲ</string>
     <string name="import_error">ಆಮದು ದೋಷ</string>
@@ -904,7 +904,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d ಅಧಿಸೂಚನೆಗಳು</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">ಸಾಧನಗಳಾದ್ಯಂತ ತ್ವರಿತವಾಗಿ ಮತ್ತು ಸುಲಭವಾಗಿ ಲಾಗಿನ್ ಮಾಡಿ</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">ಇತರ ಸಾಧನದಿಂದ ನೀವು ಹೊಸ ಲಾಗಿನ್ ವಿನಂತಿಯನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ마다 Universal Password Manager ನಿಮಗೆ ಸೂಚಿಸಬಹುದು.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">ಇತರ ಸಾಧನದಿಂದ ನೀವು ಹೊಸ ಲಾಗಿನ್ ವಿನಂತಿಯನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ마다 Universal Password Manager ನಿಮಗೆ ಸೂಚಿಸಬಹುದು.</string>
     <string name="skip_for_now">ಈಗ ಬಿಟ್ಟುಬಿಡಿ</string>
     <string name="done_text">ಮುಗಿದಿದೆ</string>
     <string name="page_number_x_of_y">%2$s ರಲ್ಲಿ %1$s</string>
@@ -956,7 +956,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">6 ರಲ್ಲಿ 5</string>
     <string name="coachmark_6_of_6">6 ರಲ್ಲಿ 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">ನಿಮ್ಮ ಖಾತೆಯ ವೆಬ್ಸೈಟ್ನ ಅವಶ್ಯಕತೆಗಳನ್ನು ಪೂರೈಸಲು ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಸರಿಹೊಂದಿಸಲು ಈ ಆಯ್ಕೆಗಳನ್ನು ಬಳಸಿ.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">ನಿಮ್ಮ ಹೊಸ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು Universal Password Manager ನಲ್ಲಿ ಉಳಿಸಿದ ನಂತರ, ಅದನ್ನು ನಿಮ್ಮ ಖಾತೆಯ ವೆಬ್ಸೈಟ್ನಲ್ಲಿ ಅಪ್ಡೇಟ್ ಮಾಡಲು ಮರೆಯಬೇಡಿ.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">ನಿಮ್ಮ ಹೊಸ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು Universal Password Manager ನಲ್ಲಿ ಉಳಿಸಿದ ನಂತರ, ಅದನ್ನು ನಿಮ್ಮ ಖಾತೆಯ ವೆಬ್ಸೈಟ್ನಲ್ಲಿ ಅಪ್ಡೇಟ್ ಮಾಡಲು ಮರೆಯಬೇಡಿ.</string>
     <string name="verify_your_identity">ನಿಮ್ಮ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಿ</string>
     <string name="error_loading_certificate">ಪ್ರಮಾಣಪತ್ರವನ್ನು ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ದೋಷ</string>
     <string name="certificate_alias">ಪ್ರಮಾಣಪತ್ರ ಉಪನಾಮ</string>
@@ -967,7 +967,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">ಬೆಂಬಲಿತವಲ್ಲದ ಪ್ರಮಾಣಪತ್ರ ಪ್ರಕಾರ</string>
     <string name="certificate_password_incorrect">ಪ್ರಮಾಣಪತ್ರದ ಪಾಸ್ವರ್ಡ್ ತಪ್ಪಾಗಿದೆ</string>
     <string name="invalid_certificate_chain">ಅಮಾನ್ಯ ಪ್ರಮಾಣಪತ್ರ ಸರಪಳಿ</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">ಸಿಸ್ಟಮ್ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಬಳಸುವುದು Universal Password Manager ನೊಂದಿಗೆ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸಂಗ್ರಹಿಸುವುದಕ್ಕಿಂತ ಕಡಿಮೆ ಸುರಕ್ಷಿತವಾಗಿದೆ. ಮುಂದುವರಿಯುವುದು ಈಗಾಗಲೇ ಸ್ಥಾಪಿಸಲಾಗಿದ್ದರೆ ಲಭ್ಯವಿರುವ ಸಿಸ್ಟಮ್ ಪ್ರಮಾಣಪತ್ರಗಳ ಪಟ್ಟಿಯನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">ಸಿಸ್ಟಮ್ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಬಳಸುವುದು Universal Password Manager ನೊಂದಿಗೆ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸಂಗ್ರಹಿಸುವುದಕ್ಕಿಂತ ಕಡಿಮೆ ಸುರಕ್ಷಿತವಾಗಿದೆ. ಮುಂದುವರಿಯುವುದು ಈಗಾಗಲೇ ಸ್ಥಾಪಿಸಲಾಗಿದ್ದರೆ ಲಭ್ಯವಿರುವ ಸಿಸ್ಟಮ್ ಪ್ರಮಾಣಪತ್ರಗಳ ಪಟ್ಟಿಯನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ.</string>
     <string name="link">ಲಿಂಕ್</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">ಹೋಸ್ಟ್ URL ವಿನಂತಿಯಲ್ಲಿ ಇಲ್ಲದ ಕಾರಣ ಪಾಸ್ಕೀ ಕಾರ್ಯಾಚರಣೆ ವಿಫಲವಾಗಿದೆ.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">ಅಪ್ಲಿಕೇಶನ್ ಸಹಿ ಅಮಾನ್ಯವಾಗಿರುವ ಕಾರಣ ಪಾಸ್ಕೀ ಕಾರ್ಯಾಚರಣೆ ವಿಫಲವಾಗಿದೆ.</string>
@@ -1037,7 +1037,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">ಪ್ರಮಾಣಪತ್ರವನ್ನು ಓದಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ.</string>
     <string name="cannot_delete_your_account">ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
     <string name="cannot_delete_your_account_explanation">ನಿಮ್ಮ ಖಾತೆಯು ಸಂಸ್ಥೆಯ ಮಾಲೀಕತ್ವದಲ್ಲಿರುವುದರಿಂದ ಈ ಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">ಈ ಖಾತೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಳಿಸಲಾಗುತ್ತದೆ. Universal Password Manager ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು %1$s ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">ಈ ಖಾತೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಳಿಸಲಾಗುತ್ತದೆ. Universal Password Manager ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು %1$s ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ.</string>
     <string name="view_file_send">ಫೈಲ್ ಕಳುಹಿಸುವಿಕೆಯನ್ನು ವೀಕ್ಷಿಸಿ</string>
     <string name="view_text_send">ಪಠ್ಯ ಕಳುಹಿಸುವಿಕೆಯನ್ನು ವೀಕ್ಷಿಸಿ</string>
     <string name="delete_send">ಅಳಿಸಿ ಕಳುಹಿಸಿ</string>
@@ -1059,7 +1059,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">ವಿಶೇಷಾಧಿಕಾರ ಅಪ್ಲಿಕೇಶನ್ಗಳ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string>
     <string name="privileged_apps">ವಿಶೇಷಾಧಿಕಾರ ಅಪ್ಲಿಕೇಶನ್ಗಳು</string>
     <string name="unrecognized_browser">ಗುರುತಿಸಲಾಗದ ಬ್ರೌಸರ್</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Universal Password Manager ನೊಂದಿಗೆ ಪಾಸ್ಕೀಗಳನ್ನು ಬಳಸುವುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Universal Password Manager ನೊಂದಿಗೆ ಪಾಸ್ಕೀಗಳನ್ನು ಬಳಸುವುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
     <string name="all_trusted_apps">ಎಲ್ಲಾ ವಿಶ್ವಾಸಾರ್ಹ ಅಪ್ಲಿಕೇಶನ್ಗಳು</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">ನೀವು %s ಅನ್ನು ನಂಬುವುದನ್ನು ನಿಲ್ಲಿಸಲು ಖಚಿತವಾಗಿದ್ದೀರಾ?</string>
     <string name="installed_apps">ಸ್ಥಾಪಿಸಿದ ಅಪ್ಲಿಕೇಶನ್ಗಳು</string>
@@ -1087,7 +1087,7 @@ Do you want to switch to this account?</string>
     <string name="information">ಮಾಹಿತಿ</string>
     <string name="otp_type">OTP ಪ್ರಕಾರ</string>
     <string name="search_codes">ಕೋಡ್ಗಳನ್ನು ಹುಡುಕು</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Bitwarden Authenticator ನೊಂದಿಗೆ ನಿಮ್ಮ ಖಾತೆಗಳನ್ನು ಸುರಕ್ಷಿತಗೊಳಿಸಿ</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Universal Password Manager Authenticator ನೊಂದಿಗೆ ನಿಮ್ಮ ಖಾತೆಗಳನ್ನು ಸುರಕ್ಷಿತಗೊಳಿಸಿ</string>
     <string name="get_verification_codes_for_all_your_accounts">2-ಹಂತದ ಪರಿಶೀಲನೆಯನ್ನು ಬೆಂಬಲಿಸುವ ನಿಮ್ಮ ಎಲ್ಲಾ ಖಾತೆಗಳಿಗೆ ಪರಿಶೀಲನಾ ಕೋಡ್ಗಳನ್ನು ಪಡೆಯಿರಿ.</string>
     <string name="use_your_device_camera_to_scan_codes">ಕೋಡ್ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲು ನಿಮ್ಮ ಸಾಧನದ ಕ್ಯಾಮೆರಾವನ್ನು ಬಳಸಿ</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">ಯಾವುದೇ ಖಾತೆಗಾಗಿ ನಿಮ್ಮ 2-ಹಂತದ ಪರಿಶೀಲನಾ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.</string>
@@ -1108,7 +1108,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">ಹಲವಾರು ವಿಫಲ ಬಯೋಮೆಟ್ರಿಕ್ ಪ್ರಯತ್ನಗಳು.</string>
     <string name="version">ಆವೃತ್ತಿ</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">ಆವೃತ್ತಿ: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">ಸಹಾಯ ಕೇಂದ್ರದಲ್ಲಿ Bitwarden Authenticator ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಎಂಬುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">ಸಹಾಯ ಕೇಂದ್ರದಲ್ಲಿ Universal Password Manager Authenticator ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಎಂಬುದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</string>
     <string name="key">ಕೀ</string>
     <string name="create_verification_code">ಪರಿಶೀಲನಾ ಕೋಡ್ ರಚಿಸಿ</string>
     <string name="key_is_required">ಕೀಲಿ ಅಗತ್ಯವಿದೆ.</string>
@@ -1119,41 +1119,41 @@ Do you want to switch to this account?</string>
     <string name="key_is_invalid">ಕೀಲಿ ಅಮಾನ್ಯವಾಗಿದೆ.</string>
     <string name="backup">ಬ್ಯಾಕಪ್</string>
     <string name="data_backup_title">ಡೇಟಾ ಬ್ಯಾಕಪ್</string>
-    <string name="data_backup_message">Bitwarden Authenticator ಡೇಟಾವನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ನಿಮ್ಮ ನಿಯಮಿತವಾಗಿ ನಿಗದಿಪಡಿಸಿದ ಸಾಧನ ಬ್ಯಾಕಪ್ಗಳೊಂದಿಗೆ ಮರುಸ್ಥಾಪಿಸಬಹುದು.</string>
+    <string name="data_backup_message">Universal Password Manager Authenticator ಡೇಟಾವನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ನಿಮ್ಮ ನಿಯಮಿತವಾಗಿ ನಿಗದಿಪಡಿಸಿದ ಸಾಧನ ಬ್ಯಾಕಪ್ಗಳೊಂದಿಗೆ ಮರುಸ್ಥಾಪಿಸಬಹುದು.</string>
     <string name="import_2fas_password_protected_not_supported">2FAS ಪಾಸ್ವರ್ಡ್-ರಕ್ಷಿತ ಫೈಲ್ಗಳಿಂದ ಆಮದು ಮಾಡುವುದು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ. ಪಾಸ್ವರ್ಡ್-ರಕ್ಷಿತವಾಗಿಲ್ಲದ ರಫ್ತು ಮಾಡಿದ ಫೈಲ್ನೊಂದಿಗೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
-    <string name="import_bitwarden_unsupported_format">Universal Password Manager CSV ಫೈಲ್ಗಳನ್ನು ಆಮದು ಮಾಡುವುದು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ. ರಫ್ತು ಮಾಡಿದ JSON ಫೈಲ್ನೊಂದಿಗೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
-    <string name="download_bitwarden_card_title">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ ಡೌನ್ಲೋಡ್ ಮಾಡಿ</string>
-    <string name="download_bitwarden_card_message">ನಿಮ್ಮ ಎಲ್ಲಾ ಲಾಗಿನ್ಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಪರಿಶೀಲನಾ ಕೋಡ್ಗಳನ್ನು Authenticator ಅಪ್ಲಿಕೇಶನ್ನೊಂದಿಗೆ ನೇರವಾಗಿ ಸಿಂಕ್ ಮಾಡಿ.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Universal Password Manager CSV ಫೈಲ್ಗಳನ್ನು ಆಮದು ಮಾಡುವುದು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ. ರಫ್ತು ಮಾಡಿದ JSON ಫೈಲ್ನೊಂದಿಗೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="download_universalpasswordmanager_card_title">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ ಡೌನ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="download_universalpasswordmanager_card_message">ನಿಮ್ಮ ಎಲ್ಲಾ ಲಾಗಿನ್ಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಪರಿಶೀಲನಾ ಕೋಡ್ಗಳನ್ನು Authenticator ಅಪ್ಲಿಕೇಶನ್ನೊಂದಿಗೆ ನೇರವಾಗಿ ಸಿಂಕ್ ಮಾಡಿ.</string>
     <string name="download_now">ಈಗ ಡೌನ್ಲೋಡ್ ಮಾಡಿ</string>
-    <string name="sync_with_bitwarden_app">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಿ</string>
+    <string name="sync_with_universalpasswordmanager_app">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಿ</string>
     <string name="learn_more_link"><annotation link="learnMore">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</annotation></string>
     <string name="shared_codes_error">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನಿಂದ ಕೋಡ್ಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ಎರಡೂ ಅಪ್ಲಿಕೇಶನ್ಗಳು ನವೀಕೃತವಾಗಿವೆಯೆಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ನೀವು ಇನ್ನೂ Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ನಿಮ್ಮ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಕೋಡ್ಗಳನ್ನು ಪ್ರವೇಶಿಸಬಹುದು.</string>
-    <string name="sync_with_the_bitwarden_app">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಿ</string>
-    <string name="sync_with_bitwarden_action_card_message">ನಿಮ್ಮ ಎಲ್ಲಾ ಪರಿಶೀಲನಾ ಕೋಡ್ಗಳನ್ನು ಇಲ್ಲಿ ವೀಕ್ಷಿಸಲು ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ Authenticator ಅಪ್ಲಿಕೇಶನ್ ಸಿಂಕ್ ಅನ್ನು ಅನುಮತಿಸಿ.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಿ</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">ನಿಮ್ಮ ಎಲ್ಲಾ ಪರಿಶೀಲನಾ ಕೋಡ್ಗಳನ್ನು ಇಲ್ಲಿ ವೀಕ್ಷಿಸಲು ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ Authenticator ಅಪ್ಲಿಕೇಶನ್ ಸಿಂಕ್ ಅನ್ನು ಅನುಮತಿಸಿ.</string>
     <string name="take_me_to_app_settings">ನನ್ನನ್ನು ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್ಗಳಿಗೆ ಕರೆದೊಯ್ಯಿರಿ</string>
     <string name="something_went_wrong">ಏನೋ ತಪ್ಪಾಗಿದೆ</string>
     <string name="please_try_again">ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
-    <string name="copy_to_bitwarden_vault">Universal Password Manager ವಾಲ್ಟ್ಗೆ ನಕಲಿಸಿ</string>
+    <string name="copy_to_universalpasswordmanager_vault">Universal Password Manager ವಾಲ್ಟ್ಗೆ ನಕಲಿಸಿ</string>
     <string name="default_save_option">ಡೀಫಾಲ್ಟ್ ಉಳಿಸುವ ಆಯ್ಕೆ</string>
-    <string name="save_to_bitwarden">Universal Password Manager ಗೆ ಉಳಿಸು</string>
+    <string name="save_to_universalpasswordmanager">Universal Password Manager ಗೆ ಉಳಿಸು</string>
     <string name="save_here">ಇಲ್ಲಿ ಉಳಿಸು</string>
     <string name="none">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="default_save_options_subtitle">ಹೊಸ ಪರಿಶೀಲನಾ ಕೋಡ್ಗಳನ್ನು ನೀವು ಎಲ್ಲಿ ಉಳಿಸಲು ಬಯಸುತ್ತೀರಿ ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
     <string name="verification_code_created">ಪರಿಶೀಲನಾ ಕೋಡ್ ರಚಿಸಲಾಗಿದೆ</string>
     <string name="choose_save_location_message">ಈ ಅಧಿಕೃತ ಕೀಲಿಯನ್ನು ಇಲ್ಲಿ ಉಳಿಸಿ, ಅಥವಾ ಅದನ್ನು ನಿಮ್ಮ Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿನ ಲಾಗಿನ್ಗೆ ಸೇರಿಸಿ.</string>
     <string name="save_option_as_default">ಉಳಿಸುವ ಆಯ್ಕೆಯನ್ನು ಡೀಫಾಲ್ಟ್ ಆಗಿ ಹೊಂದಿಸಿ</string>
-    <string name="account_synced_from_bitwarden_app">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನಿಂದ ಸಿಂಕ್ ಮಾಡಿದ ಖಾತೆ</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Universal Password Manager ಅಪ್ಲಿಕೇಶನ್ನಿಂದ ಸಿಂಕ್ ಮಾಡಿದ ಖಾತೆ</string>
     <string name="local_codes">ಸ್ಥಳೀಯ ಕೋಡ್ಗಳು (%1$d)</string>
     <string name="local_codes_header">ಸ್ಥಳೀಯ ಕೋಡ್ಗಳು</string>
     <string name="required_information_missing">ಅಗತ್ಯ ಮಾಹಿತಿ ಕಾಣೆಯಾಗಿದೆ</string>
-    <string name="required_information_missing_message">ಅಗತ್ಯ ಮಾಹಿತಿ ಕಾಣೆಯಾಗಿದೆ (ಉದಾ, ‘services’ ಅಥವಾ ‘secret’). ನಿಮ್ಮ ಫೈಲ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. ಬೆಂಬಲಕ್ಕಾಗಿ bitwarden.com/help ಗೆ ಭೇಟಿ ನೀಡಿ</string>
+    <string name="required_information_missing_message">ಅಗತ್ಯ ಮಾಹಿತಿ ಕಾಣೆಯಾಗಿದೆ (ಉದಾ, ‘services’ ಅಥವಾ ‘secret’). ನಿಮ್ಮ ಫೈಲ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. ಬೆಂಬಲಕ್ಕಾಗಿ /help ಗೆ ಭೇಟಿ ನೀಡಿ</string>
     <string name="file_could_not_be_processed">ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ</string>
-    <string name="file_could_not_be_processed_message">ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಇದು ಮಾನ್ಯ JSON ಆಗಿದೆಯೆಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. ಸಹಾಯ ಬೇಕೇ? bitwarden.com/help ಗೆ ಭೇಟಿ ನೀಡಿ</string>
+    <string name="file_could_not_be_processed_message">ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಇದು ಮಾನ್ಯ JSON ಆಗಿದೆಯೆಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. ಸಹಾಯ ಬೇಕೇ? /help ಗೆ ಭೇಟಿ ನೀಡಿ</string>
     <string name="get_help">ಸಹಾಯ ಪಡೆ</string>
     <string name="error_cannot_decrypt">[ದೋಷ: ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ]</string>
     <string name="copy_error_report">ದೋಷ ವರದಿಯನ್ನು ನಕಲಿಸಿ</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager ಈ ವಾಲ್ಟ್ ಐಟಂ ಅನ್ನು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಹೆಚ್ಚುವರಿ ಡೇಟಾ ನಷ್ಟವನ್ನು ತಪ್ಪಿಸಲು ಈ ದೋಷ ವರದಿಯನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಗ್ರಾಹಕ ಯಶಸ್ಸಿನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager ಈ ವಾಲ್ಟ್ ಐಟಂ ಅನ್ನು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಹೆಚ್ಚುವರಿ ಡೇಟಾ ನಷ್ಟವನ್ನು ತಪ್ಪಿಸಲು ಈ ದೋಷ ವರದಿಯನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಗ್ರಾಹಕ ಯಶಸ್ಸಿನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager %1$d ವಾಲ್ಟ್ ಐಟಂ ಅನ್ನು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಹೆಚ್ಚುವರಿ ಡೇಟಾ ನಷ್ಟವನ್ನು ತಪ್ಪಿಸಲು ಈ ದೋಷ ವರದಿಯನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಗ್ರಾಹಕ ಯಶಸ್ಸಿನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.</item>
         <item quantity="other">Universal Password Manager %1$d ವಾಲ್ಟ್ ಐಟಂಗಳನ್ನು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಹೆಚ್ಚುವರಿ ಡೇಟಾ ನಷ್ಟವನ್ನು ತಪ್ಪಿಸಲು ಈ ದೋಷ ವರದಿಯನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಗ್ರಾಹಕ ಯಶಸ್ಸಿನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.</item>
     </plurals>
@@ -1192,7 +1192,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಭರ್ತಿ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಲು ಬ್ರೌಸರ್ ಸ್ವಯಂ ಭರ್ತಿಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">ನಿಮ್ಮ ಬ್ರೌಸರ್ ಇತ್ತೀಚೆಗೆ ನವೀಕರಿಸಲಾಗಿದೆ, ಇದು Universal Password Manager ಸ್ವಯಂ ಭರ್ತಿಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದೆ. Universal Password Manager ನೊಂದಿಗೆ ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ಗಳನ್ನು ಭರ್ತಿ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಲು, ಸ್ವಯಂ ಭರ್ತಿ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ ಬ್ರೌಸರ್ ಸ್ವಯಂ ಭರ್ತಿಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.</string>
     <string name="not_now">ಈಗ ಅಲ್ಲ</string>
-    <string name="import_from_bitwarden">Universal Password Manager ನಿಂದ ಆಮದು ಮಾಡಿ</string>
+    <string name="import_from_universalpasswordmanager">Universal Password Manager ನಿಂದ ಆಮದು ಮಾಡಿ</string>
     <string name="select_account">ಖಾತೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="no_accounts_available">ಯಾವುದೇ ಖಾತೆಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">ನೀವು ಆಮದು ಮಾಡಬಹುದಾದ ಯಾವುದೇ ಖಾತೆಗಳನ್ನು ಹೊಂದಿಲ್ಲ. ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ಸುರಕ್ಷತಾ ನೀತಿಯು Universal Password Manager ನಿಂದ ಇನ್ನೊಂದು ಅಪ್ಲಿಕೇಶನ್ಗೆ ಐಟಂಗಳನ್ನು ಆಮದು ಮಾಡುವುದನ್ನು ನಿರ್ಬಂಧಿಸಬಹುದು.</string>
@@ -1290,7 +1290,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">ವಿಶ್ವಾಸಾರ್ಹ</string>
     <string name="preview_not_available_for_files">%1$s ಫೈಲ್ಗಳಿಗೆ ಮುನ್ನೋಟ ಲಭ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ವೀಕ್ಷಿಸಲು ನೀವು ಇನ್ನೂ ಅದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಬಹುದು.</string>
     <string name="this_file_is_too_large_to_preview">ಈ ಫೈಲ್ ಮುನ್ನೋಟಕ್ಕೆ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ವೀಕ್ಷಿಸಲು ನೀವು ಇನ್ನೂ ಅದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಬಹುದು.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager ಈ ಫೈಲ್ ಅನ್ನು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಆದ್ದರಿಂದ ಮುನ್ನೋಟವನ್ನು ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager ಈ ಫೈಲ್ ಅನ್ನು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಆದ್ದರಿಂದ ಮುನ್ನೋಟವನ್ನು ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
     <string name="preview_unavailable_for_this_file">ಈ ಫೈಲ್ಗೆ ಮುನ್ನೋಟ ಲಭ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ವೀಕ್ಷಿಸಲು ನೀವು ಇನ್ನೂ ಅದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಬಹುದು.</string>
     <string name="preview_unavailable">ಮುನ್ನೋಟ ಲಭ್ಯವಿಲ್ಲ</string>
     <string name="download_attachment">ಲಗತ್ತು ಡೌನ್ಲೋಡ್ ಮಾಡಿ</string>
@@ -1332,7 +1332,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / ವರ್ಷ</string>
     <string name="billing_rate_per_month">%1$s / ತಿಂಗಳು</string>
     <string name="manage_plan">ಯೋಜನೆಯನ್ನು ನಿರ್ವಹಿಸಿ</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Universal Password Manager ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಯೋಜನೆಯನ್ನು ನಿರ್ವಹಿಸಿ.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Universal Password Manager ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಯೋಜನೆಯನ್ನು ನಿರ್ವಹಿಸಿ.</string>
     <string name="cancel_premium">ಪ್ರೀಮಿಯಂ ರದ್ದುಗೊಳಿಸಿ</string>
     <string name="subscription_status_active">ಸಕ್ರಿಯ</string>
     <string name="subscription_status_canceled">ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ</string>
@@ -1423,8 +1423,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">ಸ್ಥಳೀಯ ನೆಟ್ವರ್ಕ್ ಪ್ರವೇಶದ ಅಗತ್ಯವಿದೆ</string>
     <string name="ask_again_later">ನಂತರ ಮತ್ತೆ ಕೇಳಿ</string>
     <string name="enable_local_network_access">ಸ್ಥಳೀಯ ನೆಟ್ವರ್ಕ್ ಪ್ರವೇಶವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">ನಿಮ್ಮ ಸರ್ವರ್ನೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಲು Universal Password Manager ಗೆ ಸ್ಥಳೀಯ ನೆಟ್ವರ್ಕ್ ಪ್ರವೇಶದ ಅಗತ್ಯವಿದೆ. ಈ ಅನುಮತಿಯಿಲ್ಲದೆ, ಅಪ್ಲಿಕೇಶನ್ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">ಈ ಅನುಮತಿಯಿಲ್ಲದೆ, Universal Password Manager ನಿಮ್ಮ ಸರ್ವರ್ನೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ಸಿಂಕ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಸಾಧನ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">ನಿಮ್ಮ ಸರ್ವರ್ನೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಲು Universal Password Manager ಗೆ ಸ್ಥಳೀಯ ನೆಟ್ವರ್ಕ್ ಪ್ರವೇಶದ ಅಗತ್ಯವಿದೆ. ಈ ಅನುಮತಿಯಿಲ್ಲದೆ, ಅಪ್ಲಿಕೇಶನ್ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">ಈ ಅನುಮತಿಯಿಲ್ಲದೆ, Universal Password Manager ನಿಮ್ಮ ಸರ್ವರ್ನೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ಸಿಂಕ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಸಾಧನ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">ಅಪ್ಲಿಕೇಶನ್ಗೆ ಸ್ಥಳೀಯ ನೆಟ್ವರ್ಕ್ ಪ್ರವೇಶದ ಅಗತ್ಯವಿರುವ ಕಾರಣ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಅಡ್ಡಿಪಡಿಸಲಾಯಿತು. ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಸಾಧನ ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು.</string>
     <string name="continue_to_stripe">Stripe ಗೆ ಮುಂದುವರಿಸುವುದೇ?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ರದ್ದತಿಯನ್ನು ನಿರ್ವಹಿಸಲು ನಿಮ್ಮನ್ನು Stripe ಗೆ ಕರೆದೊಯ್ಯಲಾಗುತ್ತದೆ.</string>

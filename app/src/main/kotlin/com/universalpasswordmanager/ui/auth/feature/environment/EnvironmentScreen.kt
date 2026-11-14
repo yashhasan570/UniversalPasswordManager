@@ -123,7 +123,7 @@ fun EnvironmentScreen(
             UniversalTwoButtonDialog(
                 title = stringResource(UniversalString.warning),
                 message = stringResource(
-                    UniversalString.system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden,
+                    UniversalString.system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager,
                 ),
                 confirmButtonText = stringResource(UniversalString.continue_text),
                 onConfirmClick = {
@@ -177,7 +177,7 @@ fun EnvironmentScreen(
             )
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         Column(
@@ -199,7 +199,7 @@ fun EnvironmentScreen(
             UniversalTextField(
                 label = stringResource(id = UniversalString.server_url),
                 value = state.serverUrl,
-                placeholder = "ex. https://bitwarden.company.com",
+                placeholder = "ex. https://pany.com",
                 supportingText = stringResource(
                     id = UniversalString.self_hosted_environment_footer,
                 ),

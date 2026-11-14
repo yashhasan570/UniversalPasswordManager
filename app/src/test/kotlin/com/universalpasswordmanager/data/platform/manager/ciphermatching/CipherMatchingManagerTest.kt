@@ -406,7 +406,7 @@ class CipherMatchingManagerTest {
         } returns uri
         every {
             DEFAULT_LOGIN_VIEW_URI_FOUR.getDomainOrNull(resourceCacheManager = resourceCacheManager)
-        } returns "bitwarden.com"
+        } returns ""
         every {
             DEFAULT_LOGIN_VIEW_URI_FIVE.getDomainOrNull(resourceCacheManager = resourceCacheManager)
         } returns null
@@ -431,8 +431,8 @@ private val EQUIVALENT_DOMAINS = listOf(
     "google.co.uk",
 )
 private val GLOBAL_EQUIVALENT_DOMAINS_DATA = listOf(
-    "bitwarden.com",
-    "bitwarden.co.uk",
+    "",
+    "universalpasswordmanager.co.uk",
     ANDROID_APP_WEB_URL,
 )
 private val GLOBAL_EQUIVALENT_DOMAINS = DomainsData.GlobalEquivalentDomain(

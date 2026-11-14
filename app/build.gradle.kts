@@ -74,7 +74,7 @@ configure<ApplicationExtension> {
         buildConfigField(
             type = "String",
             name = "SDK_VERSION",
-            value = "\"${libs.versions.bitwardenSdk.get()}\"",
+            value = "\"${libs.versions.universalpasswordmanagerSdk.get()}\"",
         )
     }
 
@@ -219,8 +219,8 @@ kotlin {
 configurations.all {
     resolutionStrategy.dependencySubstitution {
         if ((userProperties["localSdk"] as String?).toBoolean()) {
-            substitute(module("com.bitwarden:sdk-android"))
-                .using(module("com.bitwarden:sdk-android:LOCAL"))
+            substitute(module(":sdk-android"))
+                .using(module(":sdk-android:LOCAL"))
         }
     }
 }
@@ -268,7 +268,7 @@ dependencies {
     implementation(libs.androidx.security.crypto)
     implementation(libs.androidx.splashscreen)
     implementation(libs.androidx.work.runtime.ktx)
-    implementation(libs.bitwarden.sdk)
+    implementation(libs.universalpasswordmanager.sdk)
     implementation(libs.coil.coil)
     implementation(libs.coil.coil.network.okhttp)
     implementation(libs.google.hilt.android)

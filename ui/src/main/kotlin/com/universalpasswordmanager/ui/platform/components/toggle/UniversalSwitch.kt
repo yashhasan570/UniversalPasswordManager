@@ -41,7 +41,7 @@ import com.universalpasswordmanager.ui.platform.components.divider.UniversalHori
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
 import com.universalpasswordmanager.ui.platform.components.row.UniversalRowOfActions
 import com.universalpasswordmanager.ui.platform.components.support.UniversalSupportingContent
-import com.universalpasswordmanager.ui.platform.components.toggle.color.bitwardenSwitchColors
+import com.universalpasswordmanager.ui.platform.components.toggle.color.universalpasswordmanagerSwitchColors
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
 
@@ -329,7 +329,7 @@ fun UniversalSwitch(
                 enabled = enabled,
                 checked = isChecked,
                 onCheckedChange = null,
-                colors = bitwardenSwitchColors(),
+                colors = universalpasswordmanagerSwitchColors(),
             )
             actions?.let { UniversalRowOfActions(actions = it) }
             Spacer(modifier = Modifier.width(width = if (actions == null) 16.dp else 4.dp))

@@ -18,7 +18,7 @@ class BaseUrlsProviderTest {
     fun `getBaseApiUrl should return correct api URL when preAuthEnvironmentUrlData is set`() {
         fakeEnvironmentDiskSource.preAuthEnvironmentUrlData = Environment.Prod.Eu.environmentUrlData
         assertEquals(
-            "https://api.bitwarden.eu",
+            "https://api.",
             baseUrlsManager.getBaseApiUrl(),
         )
     }
@@ -27,7 +27,7 @@ class BaseUrlsProviderTest {
     fun `getBaseApiUrl should return default value when preAuthEnvironmentUrlData is null`() {
         fakeEnvironmentDiskSource.preAuthEnvironmentUrlData = null
         assertEquals(
-            "https://api.bitwarden.com",
+            "https://api.",
             baseUrlsManager.getBaseApiUrl(),
         )
     }
@@ -36,7 +36,7 @@ class BaseUrlsProviderTest {
     fun `getBaseIdentityUrl should return correct api URL when preAuthEnvironmentUrlData is set`() {
         fakeEnvironmentDiskSource.preAuthEnvironmentUrlData = Environment.Prod.Eu.environmentUrlData
         assertEquals(
-            "https://identity.bitwarden.eu",
+            "https://identity.",
             baseUrlsManager.getBaseIdentityUrl(),
         )
     }
@@ -45,7 +45,7 @@ class BaseUrlsProviderTest {
     fun `getBaseIdentityUrl should return default value when preAuthEnvironmentUrlData is null`() {
         fakeEnvironmentDiskSource.preAuthEnvironmentUrlData = null
         assertEquals(
-            "https://identity.bitwarden.com",
+            "https://identity.",
             baseUrlsManager.getBaseIdentityUrl(),
         )
     }
@@ -54,7 +54,7 @@ class BaseUrlsProviderTest {
     fun `getBaseEventsUrl should return correct api URL when preAuthEnvironmentUrlData is set`() {
         fakeEnvironmentDiskSource.preAuthEnvironmentUrlData = Environment.Prod.Eu.environmentUrlData
         assertEquals(
-            "https://events.bitwarden.eu",
+            "https://events.",
             baseUrlsManager.getBaseEventsUrl(),
         )
     }
@@ -63,7 +63,7 @@ class BaseUrlsProviderTest {
     fun `getBaseEventsUrl should return default value when preAuthEnvironmentUrlData is null`() {
         fakeEnvironmentDiskSource.preAuthEnvironmentUrlData = null
         assertEquals(
-            "https://events.bitwarden.com",
+            "https://events.",
             baseUrlsManager.getBaseEventsUrl(),
         )
     }

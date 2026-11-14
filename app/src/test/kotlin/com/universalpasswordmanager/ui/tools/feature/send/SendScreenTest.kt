@@ -151,7 +151,7 @@ class SendScreenTest : UniversalComposeTest() {
     fun `on NavigateToAboutSend should call launchUri on intentManager`() {
         mutableEventFlow.tryEmit(SendEvent.NavigateToAboutSend)
         verify {
-            intentManager.launchUri("https://bitwarden.com/products/send".toUri())
+            intentManager.launchUri("https:///products/send".toUri())
         }
     }
 

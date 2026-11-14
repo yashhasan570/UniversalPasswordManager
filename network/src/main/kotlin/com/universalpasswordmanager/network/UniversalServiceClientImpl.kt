@@ -54,40 +54,40 @@ import retrofit2.create
  */
 @OmitFromCoverage
 internal class UniversalServiceClientImpl(
-    private val bitwardenServiceClientConfig: UniversalServiceClientConfig,
+    private val universalpasswordmanagerServiceClientConfig: UniversalServiceClientConfig,
     private val clientJson: Json,
 ) : UniversalServiceClient {
 
     private val authTokenManager: AuthTokenManager = AuthTokenManager(
-        clock = bitwardenServiceClientConfig.clock,
-        authTokenProvider = bitwardenServiceClientConfig.authTokenProvider,
+        clock = universalpasswordmanagerServiceClientConfig.clock,
+        authTokenProvider = universalpasswordmanagerServiceClientConfig.authTokenProvider,
     )
     override val tokenProvider: TokenProvider = authTokenManager
 
-    override val cookieProvider: CookieProvider = bitwardenServiceClientConfig.cookieProvider
+    override val cookieProvider: CookieProvider = universalpasswordmanagerServiceClientConfig.cookieProvider
 
     private val retrofits: Retrofits by lazy {
         RetrofitsImpl(
             authTokenManager = authTokenManager,
             baseUrlInterceptors = BaseUrlInterceptors(
-                baseUrlsProvider = bitwardenServiceClientConfig.baseUrlsProvider,
+                baseUrlsProvider = universalpasswordmanagerServiceClientConfig.baseUrlsProvider,
             ),
             cookieInterceptor = CookieInterceptor(
                 cookieProvider = cookieProvider,
             ),
             deviceIdentifierInterceptor = DeviceIdentifierInterceptor(
-                appIdProvider = bitwardenServiceClientConfig.appIdProvider,
+                appIdProvider = universalpasswordmanagerServiceClientConfig.appIdProvider,
             ),
             permissionInterceptor = PermissionInterceptor(
-                permissionProvider = bitwardenServiceClientConfig.permissionProvider,
+                permissionProvider = universalpasswordmanagerServiceClientConfig.permissionProvider,
             ),
             headersInterceptor = HeadersInterceptor(
-                userAgent = bitwardenServiceClientConfig.clientData.userAgent,
-                clientName = bitwardenServiceClientConfig.clientData.clientName,
-                clientVersion = bitwardenServiceClientConfig.clientData.clientVersion,
+                userAgent = universalpasswordmanagerServiceClientConfig.clientData.userAgent,
+                clientName = universalpasswordmanagerServiceClientConfig.clientData.clientName,
+                clientVersion = universalpasswordmanagerServiceClientConfig.clientData.clientVersion,
             ),
-            logHttpBody = bitwardenServiceClientConfig.enableHttpBodyLogging,
-            certificateProvider = bitwardenServiceClientConfig.certificateProvider,
+            logHttpBody = universalpasswordmanagerServiceClientConfig.enableHttpBodyLogging,
+            certificateProvider = universalpasswordmanagerServiceClientConfig.certificateProvider,
             json = clientJson,
         )
     }
@@ -121,7 +121,7 @@ internal class UniversalServiceClientImpl(
             azureApi = retrofits.createStaticRetrofit().create(),
             ciphersApi = retrofits.authenticatedApiRetrofit.create(),
             json = clientJson,
-            clock = bitwardenServiceClientConfig.clock,
+            clock = universalpasswordmanagerServiceClientConfig.clock,
         )
     }
 
@@ -197,7 +197,7 @@ internal class UniversalServiceClientImpl(
     override val pushService: PushService by lazy {
         PushServiceImpl(
             pushApi = retrofits.authenticatedApiRetrofit.create(),
-            appId = bitwardenServiceClientConfig.appIdProvider.uniqueAppId,
+            appId = universalpasswordmanagerServiceClientConfig.appIdProvider.uniqueAppId,
         )
     }
 
@@ -206,7 +206,7 @@ internal class UniversalServiceClientImpl(
             sendsApi = retrofits.authenticatedApiRetrofit.create(),
             azureApi = retrofits.createStaticRetrofit().create(),
             json = clientJson,
-            clock = bitwardenServiceClientConfig.clock,
+            clock = universalpasswordmanagerServiceClientConfig.clock,
         )
     }
 

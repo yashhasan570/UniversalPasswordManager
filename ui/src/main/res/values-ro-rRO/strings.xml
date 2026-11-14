@@ -75,9 +75,9 @@
     <string name="yes">Da</string>
     <string name="account">Cont</string>
     <string name="account_created_success">Noul tău cont a fost creat!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Setează Universal Password Manager ca furnizor de cheie de acces în setările dispozitivului.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Setează Universal Password Manager ca furnizor de cheie de acces în setările dispozitivului.</string>
     <string name="avoid_ambiguous_characters">Evitare de caractere ambigue</string>
-    <string name="bitwarden_autofill_service">Serviciul de completare automată Universal Password Manager</string>
+    <string name="universalpasswordmanager_autofill_service">Serviciul de completare automată Universal Password Manager</string>
     <string name="change_master_password">Modificare parolă principală</string>
     <string name="close">Închidere</string>
     <string name="close_app">Închide aplicația</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Setezi timeout-ul sesiunii la „Deconectare”?</string>
     <string name="vault_timeout_log_out_confirmation_message">După perioada de timeout, vei fi deconectat. Va trebui să fii conectat la internet pentru a te autentifica și a accesa din nou seiful. Setările și PIN-ul salvate pe acest dispozitiv nu se vor schimba.</string>
     <string name="logging_in">Autentificare în curs…</string>
-    <string name="login_to_bitwarden">Autentifică-te în Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">Autentifică-te în Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">Confirmarea parolei nu este corectă.</string>
     <string name="master_password_description">Parola principală este parola pe care o utilizați pentru a vă accesa seiful. Este foarte important să nu uitați această parolă. Nu există nicio modalitate de a recupera parola în cazul în care ați uitat-o.</string>
     <string name="master_password_hint">Indiciu pentru parola principală (opțional)</string>
@@ -177,7 +177,7 @@
     <string name="no_items_for_vault">Nu există elemente în seif care să corespundă cu „%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">Caută o autentificare sau adaugă o nouă autentificare</string>
     <string name="disabled">Dezactivat</string>
-    <string name="bitwarden_autofill_service_alert2">Cel mai simplu mod de a adăuga noi autentificări în seiful tău este prin Serviciul de Completare Automată Universal Password Manager. Află mai multe despre utilizarea Serviciului de Completare Automată Universal Password Manager navigând la ecranul „Setări”.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Cel mai simplu mod de a adăuga noi autentificări în seiful tău este prin Serviciul de Completare Automată Universal Password Manager. Află mai multe despre utilizarea Serviciului de Completare Automată Universal Password Manager navigând la ecranul „Setări”.</string>
     <string name="autofill_noun">Completare automată</string>
     <string name="autofill_verb">Completează automat</string>
     <string name="autofill_or_view">Doriți să auto-completați sau să vizualizați acest articol?</string>
@@ -300,7 +300,7 @@ Scanarea se va face automat.</string>
     <string name="no_items_trash">Nu există articole în coșul de reciclare.</string>
     <string name="autofill_accessibility_summary">Asistă la completarea câmpurilor numelui de utilizator și a parolei în alte aplicații și pe web.</string>
     <string name="autofill_service_description">Serviciul de autocompletare Universal Password Manager folosește Android Autofill Framework pentru a ajuta la completarea informațiilor de autentificare în alte aplicații de pe dispozitivul dumneavoastră.</string>
-    <string name="bitwarden_autofill_go_to_settings">Nu am reușit să deschidem automat meniul setărilor pentru auto-completare. Puteți să navigați manual la acesta din Setările Android &gt; Sistem &gt; Limbi și introducere text &gt; Avansate &gt; Serviciul de auto-completare.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Nu am reușit să deschidem automat meniul setărilor pentru auto-completare. Puteți să navigați manual la acesta din Setările Android &gt; Sistem &gt; Limbi și introducere text &gt; Avansate &gt; Serviciul de auto-completare.</string>
     <string name="custom_field_name">Numele câmpului personalizat</string>
     <string name="field_type_boolean">Valoare logică</string>
     <string name="field_type_hidden">Ascuns</string>
@@ -653,14 +653,14 @@ selectați „Adăugare TOTP” pentru a stoca cheia în siguranță</string>
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Nou în Universal Password Manager?</string>
+    <string name="new_to_universalpasswordmanager">Nou în Universal Password Manager?</string>
     <string name="get_master_passwordword_hint">Obțineți indiciul parolei principale</string>
     <string name="logging_in_as_x_on_y">Autentificare ca %1$s pe %2$s</string>
     <string name="not_you">Nu sunteți dvs.?</string>
     <string name="log_in_with_master_password">Autentificați-vă cu parola principală</string>
     <string name="log_in_initiated">Autentificare inițiată</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">Retrimitere notificare</string>
     <string name="view_all_login_options">Vedeți toate opțiunile de autentificare</string>
@@ -718,7 +718,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Select vault</string>
     <string name="appearance">Aspect</string>
     <string name="account_security">Securitate cont</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">Sincronizează acum</string>
     <string name="unlock_options">Opțiuni de deblocare</string>
     <string name="session_timeout">Expirarea sesiunii</string>
@@ -735,10 +735,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">Continui la setările dispozitivului?</string>
     <string name="two_step_login_description_long">Fă contul mai sigur prin configurarea unei autentificări în doi pași în aplicația web Universal Password Manager.</string>
     <string name="change_master_password_description_long">Poți schimba parola principală în aplicația web Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Află mai multe despre cum să utilizezi Universal Password Manager în centrul de ajutor.</string>
-    <string name="privacy_policy_description_long">Consultați politica noastră de confidențialitate pe bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Explorați mai multe caracteristici ale contului dvs. Universal Password Manager pe aplicația web.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager vă permite să partajați elementele din seif cu alte persoane utilizând o organizație. Aflați mai multe pe site-ul bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Află mai multe despre cum să utilizezi Universal Password Manager în centrul de ajutor.</string>
+    <string name="privacy_policy_description_long">Consultați politica noastră de confidențialitate pe .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Explorați mai multe caracteristici ale contului dvs. Universal Password Manager pe aplicația web.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager vă permite să partajați elementele din seif cu alte persoane utilizând o organizație. Aflați mai multe pe site-ul .</string>
     <string name="created_x">Creat %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Organizația dvs. vă solicită să setați o parolă principală.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Configurați o opțiune de deblocare pentru a vă schimba acțiunea de expirare a seifului.</string>
@@ -748,8 +748,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">Pentru contul tău este necesară autentificarea în doi pași.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Urmați pașii indicați de Duo pentru a finaliza conectarea.</string>
     <string name="launch_duo">Lansare Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Cheia de acces va fi salvată în seiful Universal Password Manager pentru %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Parola ta va fi salvată în seiful Universal Password Manager pentru %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Cheia de acces va fi salvată în seiful Universal Password Manager pentru %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Parola ta va fi salvată în seiful Universal Password Manager pentru %1$s</string>
     <string name="passkeys_not_supported_for_this_app">Cheile de acces nu sunt acceptate pentru această aplicație</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Operațiunea cheie de acces a eșuat deoarece browserul nu este privilegiat</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Operațiunea cheie de acces a eșuat deoarece semnătura browserului nu corespunde</string>
@@ -775,7 +775,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">Verifică-ți e-mailul</string>
     <string name="open_email_app">Deschide aplicația de email</string>
     <string name="email_verified">E-mail verificat</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Primește e-mailuri de la Universal Password Manager pentru anunțuri, sfaturi și oportunități de cercetare. <annotation link="unsubscribe">Dezabonează-te</annotation> în orice moment.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Primește e-mailuri de la Universal Password Manager pentru anunțuri, sfaturi și oportunități de cercetare. <annotation link="unsubscribe">Dezabonează-te</annotation> în orice moment.</string>
     <string name="security_prioritized">Securitate, prioritară</string>
     <string name="welcome_message_1">Salvează autentificări, carduri și identități în seiful tău securizat. Universal Password Manager utilizează criptare end-to-end cu cunoștințe zero pentru a proteja ceea ce este important pentru tine.</string>
     <string name="welcome_message_2">Configurează deblocarea biometrică și completarea automată pentru a te autentifica în conturile tale fără a tasta nici o literă.</string>
@@ -813,8 +813,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Selectează linkul din e-mail pentru a-ți verifica adresa de e-mail și a continua crearea contului.</string>
     <string name="change_email_address">Schimbă adresa de e-mail</string>
     <string name="next">Înainte</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager nu poate recupera o parolă master pierdută sau uitată.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager nu poate reseta o parolă master pierdută sau uitată.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager nu poate recupera o parolă master pierdută sau uitată.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager nu poate reseta o parolă master pierdută sau uitată.</string>
     <string name="choose_your_master_password">Alege-ți parola master</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Alege o parolă unică și puternică pentru a-ți menține informațiile în siguranță.</string>
     <plurals name="minimum_characters">
@@ -826,13 +826,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">Te rugăm să repornești înregistrarea sau să încerci să te autentifici. Este posibil să ai deja un cont.</string>
     <string name="restart_registration">Reporniți înregistrarea</string>
     <string name="authenticator_sync">Sincronizare Authenticator</string>
-    <string name="allow_bitwarden_authenticator_syncing">Permite sincronizarea Authenticator</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Permite sincronizarea Authenticator</string>
     <string name="there_was_an_issue_validating_the_registration_token">A apărut o problemă la validarea token-ului de înregistrare.</string>
     <string name="turn_on_autofill">Activează completarea automată</string>
     <string name="autofill_setup">Configurare completare automată</string>
     <string name="turn_on_browser_autofill_integration">Activează integrarea completării automate în browser</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Folosești un browser care necesită permisiuni speciale pentru ca Universal Password Manager să completeze automat parolele.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Folosești browsere care necesită permisiuni speciale pentru ca Universal Password Manager să completeze automat parolele.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Folosești un browser care necesită permisiuni speciale pentru ca Universal Password Manager să completeze automat parolele.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Folosești browsere care necesită permisiuni speciale pentru ca Universal Password Manager să completeze automat parolele.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Folosești un browser care necesită permisiuni speciale pentru ca Universal Password Manager să completeze automat parolele. Activează mai jos integrarea preferată de completare automată.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Folosești browsere care necesită permisiuni speciale pentru ca Universal Password Manager să completeze automat parolele. Activează completarea automată pentru toate browserele instalate pentru a continua.</string>
     <string name="use_autofill_to_log_into_your_accounts">Folosește completarea automată pentru a te autentifica în conturile tale cu o singură atingere.</string>
@@ -840,7 +840,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">Activezi completarea automată mai târziu?</string>
     <string name="turn_on_browser_autofill_integration_later">Activezi integrarea completării automate în browser mai târziu?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Poți reveni pentru a finaliza acest pas oricând în Setări.</string>
-    <string name="what_bitwarden_has_to_offer">Acum poți explora tot ceea ce Universal Password Manager are de oferit și poți începe să îți gestionezi parolele în siguranță.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Acum poți explora tot ceea ce Universal Password Manager are de oferit și poți începe să îți gestionezi parolele în siguranță.</string>
     <string name="youre_all_set">Totul este gata!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Eroare la conectarea cu serviciul Duo. Folosește o altă metodă de autentificare în doi pași sau contactează Duo pentru asistență.</string>
     <string name="master_password_hint_not_specified">Indiciu pentru parola principală</string>
@@ -869,29 +869,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">Pasul 1 din 3</string>
     <string name="export_your_saved_logins">Exportă autentificările salvate</string>
     <string name="delete_this_file_after_import_is_complete">Vei șterge acest fișier după finalizarea importului.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">Pe computerul tău, deschide o filă nouă în browser și <annotation emphasis="bold">accesează <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Autentifică-te în aplicația web Universal Password Manager.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">Pe computerul tău, deschide o filă nouă în browser și <annotation emphasis="bold">accesează <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Autentifică-te în aplicația web Universal Password Manager.</string>
     <string name="step_2_of_3">Pasul 2 din 3</string>
-    <string name="log_in_to_bitwarden">Autentifică-te în Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">Autentifică-te în Universal Password Manager</string>
     <string name="step_3_of_3">Pasul 3 din 3</string>
-    <string name="import_logins_to_bitwarden">Importă autentificări în Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">În navigația Universal Password Manager, <annotation emphasis="bold">găsește opțiunea Tools</annotation> și <annotation emphasis="bold">selectează Import data.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Importă autentificări în Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">În navigația Universal Password Manager, <annotation emphasis="bold">găsește opțiunea Tools</annotation> și <annotation emphasis="bold">selectează Import data.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Completează formularul și <annotation emphasis="bold">importă fișierul cu parolele salvate.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Pentru siguranța ta, asigură-te că <annotation emphasis="bold">ștergi fișierul cu parolele salvate.</annotation></string>
     <string name="need_help_check_out_import_help">Ai nevoie de ajutor? Vezi <annotation link="importHelp">ajutor pentru import</annotation>.</string>
     <string name="import_help">ajutor pentru import</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Salvează fișierul exportat</annotation> într-un loc pe computerul tău unde îl poți găsi ușor.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Acesta nu este un server Universal Password Manager recunoscut. Poate fi necesar să verifici cu furnizorul tău sau să îți actualizezi serverul.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Acesta nu este un server Universal Password Manager recunoscut. Poate fi necesar să verifici cu furnizorul tău sau să îți actualizezi serverul.</string>
     <string name="syncing_logins_loading_message">Se sincronizează autentificările…</string>
     <string name="download_the_browser_extension">Descarcă extensia pentru browser</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Accesează bitwarden.com/download pentru a integra Universal Password Manager în browserul tău preferat pentru o experiență perfectă.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Accesează /download pentru a integra Universal Password Manager în browserul tău preferat pentru o experiență perfectă.</string>
     <string name="use_the_web_app">Folosește aplicația web</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Autentifică-te pe bitwarden.com pentru a-ți gestiona cu ușurință contul și a actualiza setările.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Autentifică-te pe  pentru a-ți gestiona cu ușurință contul și a actualiza setările.</string>
     <string name="autofill_passwords">Completează automat parolele</string>
     <string name="set_up_autofill_on_all_your_devices">Configurează completarea automată pe toate dispozitivele tale pentru a te autentifica cu o singură atingere oriunde.</string>
     <string name="import_successful">Import reușit!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Gestionați-vă autentificările de oriunde cu instrumentele Universal Password Manager pentru web și desktop.</string>
-    <string name="bitwarden_tools">Instrumente Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Gestionați-vă autentificările de oriunde cu instrumentele Universal Password Manager pentru web și desktop.</string>
+    <string name="universalpasswordmanager_tools">Instrumente Universal Password Manager</string>
     <string name="got_it">Am înțeles</string>
     <string name="no_logins_were_imported">Nu au fost importate autentificări</string>
     <string name="import_error">Eroare de importare</string>
@@ -910,7 +910,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d notificări</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Autentifică-te rapid și ușor pe mai multe dispozitive</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager te poate notifica de fiecare dată când primești o nouă cerere de autentificare de pe un alt dispozitiv.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager te poate notifica de fiecare dată când primești o nouă cerere de autentificare de pe un alt dispozitiv.</string>
     <string name="skip_for_now">Sari peste pentru moment</string>
     <string name="done_text">Făcut</string>
     <string name="page_number_x_of_y">%1$s din %2$s</string>
@@ -962,7 +962,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 DIN 6</string>
     <string name="coachmark_6_of_6">6 DIN 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Folosește aceste opțiuni pentru a ajusta parola ta astfel încât să îndeplinească cerințele site-ului contului tău.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">După ce salvezi noua parolă în Universal Password Manager, nu uita să o actualizezi și pe site-ul contului tău.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">După ce salvezi noua parolă în Universal Password Manager, nu uita să o actualizezi și pe site-ul contului tău.</string>
     <string name="verify_your_identity">Verificați- vă identitatea</string>
     <string name="error_loading_certificate">Eroare la încărcarea certificatului</string>
     <string name="certificate_alias">Alias certificat</string>
@@ -973,7 +973,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">Tip de certificat neacceptat</string>
     <string name="certificate_password_incorrect">Parola certificatului este incorectă</string>
     <string name="invalid_certificate_chain">Lanț de certificate invalid</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Utilizarea unui certificat de sistem este mai puțin sigură decât stocarea certificatului cu Universal Password Manager. Continuarea va afișa o listă de certificate de sistem disponibile dacă unul este deja instalat.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Utilizarea unui certificat de sistem este mai puțin sigură decât stocarea certificatului cu Universal Password Manager. Continuarea va afișa o listă de certificate de sistem disponibile dacă unul este deja instalat.</string>
     <string name="link">Link</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Operațiunea cu cheia de acces a eșuat deoarece URL-ul gazdei nu este prezent în cerere.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Operațiunea cu cheia de acces a eșuat deoarece semnătura aplicației este invalidă.</string>
@@ -1043,7 +1043,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">Nu s-a putut citi certificatul.</string>
     <string name="cannot_delete_your_account">Nu se poate șterge contul tău</string>
     <string name="cannot_delete_your_account_explanation">Această acțiune nu poate fi finalizată deoarece contul tău este deținut de o organizație. Contactează administratorul organizației pentru detalii suplimentare.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Acest cont va fi în curând șters. Autentifică-te la %1$s pentru a continua să folosești Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Acest cont va fi în curând șters. Autentifică-te la %1$s pentru a continua să folosești Universal Password Manager.</string>
     <string name="view_file_send">Vezi Send fișier</string>
     <string name="view_text_send">Vezi Send text</string>
     <string name="delete_send">Ștergere Send</string>
@@ -1065,7 +1065,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">Află mai multe despre aplicațiile privilegiate</string>
     <string name="privileged_apps">Aplicații privilegiate</string>
     <string name="unrecognized_browser">Browser nerecunoscut</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Află mai multe despre utilizarea cheilor de acces cu Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Află mai multe despre utilizarea cheilor de acces cu Universal Password Manager.</string>
     <string name="all_trusted_apps">Toate aplicațiile de încredere</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Ești sigur că nu mai ai încredere în %s?</string>
     <string name="installed_apps">Aplicații instalate</string>
@@ -1094,7 +1094,7 @@ Do you want to switch to this account?</string>
     <string name="information">Informații</string>
     <string name="otp_type">Tip OTP</string>
     <string name="search_codes">Caută coduri</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Securizează-ți conturile cu Bitwarden Authenticator</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Securizează-ți conturile cu Universal Password Manager Authenticator</string>
     <string name="get_verification_codes_for_all_your_accounts">Obține coduri de verificare pentru toate conturile tale care acceptă verificarea în doi pași.</string>
     <string name="use_your_device_camera_to_scan_codes">Folosește camera dispozitivului pentru a scana coduri</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Scanează codul QR din setările de verificare în doi pași pentru orice cont.</string>
@@ -1115,7 +1115,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">Prea multe încercări biometrice eșuate.</string>
     <string name="version">Versiune</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Versiune: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Află mai multe despre cum să folosești Bitwarden Authenticator în Centrul de ajutor.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Află mai multe despre cum să folosești Universal Password Manager Authenticator în Centrul de ajutor.</string>
     <string name="key">Cheie</string>
     <string name="create_verification_code">Creează cod de verificare</string>
     <string name="key_is_required">Cheia este obligatorie.</string>
@@ -1126,41 +1126,41 @@ Do you want to switch to this account?</string>
     <string name="key_is_invalid">Cheia este invalidă.</string>
     <string name="backup">Backup</string>
     <string name="data_backup_title">Backup date</string>
-    <string name="data_backup_message">Datele Bitwarden Authenticator sunt salvate prin backup și pot fi restaurate cu backup-urile regulate ale dispozitivului.</string>
+    <string name="data_backup_message">Datele Universal Password Manager Authenticator sunt salvate prin backup și pot fi restaurate cu backup-urile regulate ale dispozitivului.</string>
     <string name="import_2fas_password_protected_not_supported">Importul din fișiere protejate cu parolă 2FAS nu este acceptat. Încearcă din nou cu un fișier exportat care nu este protejat cu parolă.</string>
-    <string name="import_bitwarden_unsupported_format">Importul fișierelor CSV Universal Password Manager nu este acceptat. Încearcă din nou cu un fișier JSON exportat.</string>
-    <string name="download_bitwarden_card_title">Descarcă aplicația Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">Stochează toate autentificările și sincronizează codurile de verificare direct cu aplicația Authenticator.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Importul fișierelor CSV Universal Password Manager nu este acceptat. Încearcă din nou cu un fișier JSON exportat.</string>
+    <string name="download_universalpasswordmanager_card_title">Descarcă aplicația Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">Stochează toate autentificările și sincronizează codurile de verificare direct cu aplicația Authenticator.</string>
     <string name="download_now">Descarcă acum</string>
-    <string name="sync_with_bitwarden_app">Sincronizează cu aplicația Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">Sincronizează cu aplicația Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">Află mai multe</annotation></string>
     <string name="shared_codes_error">Nu se pot sincroniza codurile din aplicația Universal Password Manager. Asigură-te că ambele aplicații sunt actualizate. Poți accesa în continuare codurile existente în aplicația Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">Sincronizează cu aplicația Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">Permite sincronizarea aplicației Authenticator în setări pentru a vedea toate codurile de verificare aici.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Sincronizează cu aplicația Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Permite sincronizarea aplicației Authenticator în setări pentru a vedea toate codurile de verificare aici.</string>
     <string name="take_me_to_app_settings">Du-mă la setările aplicației</string>
     <string name="something_went_wrong">Ceva nu a funcționat</string>
     <string name="please_try_again">Te rugăm să încerci din nou</string>
-    <string name="copy_to_bitwarden_vault">Copiază în seiful Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">Copiază în seiful Universal Password Manager</string>
     <string name="default_save_option">Opțiune implicită de salvare</string>
-    <string name="save_to_bitwarden">Salvează în Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">Salvează în Universal Password Manager</string>
     <string name="save_here">Salvează aici</string>
     <string name="none">Niciuna</string>
     <string name="default_save_options_subtitle">Selectează unde dorești să salvezi noile coduri de verificare.</string>
     <string name="verification_code_created">Cod de verificare creat</string>
     <string name="choose_save_location_message">Salvează această cheie authenticator aici sau adaug-o la o autentificare din aplicația Universal Password Manager.</string>
     <string name="save_option_as_default">Salvează opțiunea ca implicită</string>
-    <string name="account_synced_from_bitwarden_app">Cont sincronizat din aplicația Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Cont sincronizat din aplicația Universal Password Manager</string>
     <string name="local_codes">Coduri locale (%1$d)</string>
     <string name="local_codes_header">Coduri locale</string>
     <string name="required_information_missing">Lipsesc informații obligatorii</string>
-    <string name="required_information_missing_message">Lipsesc informații obligatorii (de ex., „services” sau „secret”). Verifică fișierul și încearcă din nou. Vizitează bitwarden.com/help pentru asistență</string>
+    <string name="required_information_missing_message">Lipsesc informații obligatorii (de ex., „services” sau „secret”). Verifică fișierul și încearcă din nou. Vizitează /help pentru asistență</string>
     <string name="file_could_not_be_processed">Fișierul nu a putut fi procesat</string>
-    <string name="file_could_not_be_processed_message">Fișierul nu a putut fi procesat. Asigură-te că este JSON valid și încearcă din nou. Ai nevoie de ajutor? Vizitează bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">Fișierul nu a putut fi procesat. Asigură-te că este JSON valid și încearcă din nou. Ai nevoie de ajutor? Vizitează /help</string>
     <string name="get_help">Obținere ajutor</string>
     <string name="error_cannot_decrypt">[eroare: nu se poate decripta]</string>
     <string name="copy_error_report">Copiază raportul de eroare</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager nu a putut decripta acest element al seifului. Copiază și distribuie acest raport de eroare către departamentul de succes al clienților pentru a evita pierderea suplimentară de date.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager nu a putut decripta acest element al seifului. Copiază și distribuie acest raport de eroare către departamentul de succes al clienților pentru a evita pierderea suplimentară de date.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager nu a putut decripta %1$d element al seifului. Copiază și distribuie acest raport de eroare către departamentul de succes al clienților pentru a evita pierderea suplimentară de date.</item>
         <item quantity="few">Universal Password Manager nu a putut decripta %1$d elemente ale seifului. Copiază și distribuie acest raport de eroare către departamentul de succes al clienților pentru a evita pierderea suplimentară de date.</item>
         <item quantity="other">Universal Password Manager nu a putut decripta %1$d elemente ale seifului. Copiază și distribuie acest raport de eroare către departamentul de succes al clienților pentru a evita pierderea suplimentară de date.</item>
@@ -1201,7 +1201,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Activează Completarea automată în browser pentru a continua completarea parolelor</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Browserul tău s-a actualizat recent, ceea ce a dezactivat completarea automată Universal Password Manager. Pentru a continua să completezi parolele cu Universal Password Manager, activează completarea automată în browser în setările de completare automată.</string>
     <string name="not_now">Nu acum</string>
-    <string name="import_from_bitwarden">Importă din Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">Importă din Universal Password Manager</string>
     <string name="select_account">Selectează contul</string>
     <string name="no_accounts_available">Nu sunt disponibile conturi</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Nu ai niciun cont din care să poți importa. Politica de securitate a organizației tale poate restricționa importarea elementelor din Universal Password Manager în altă aplicație.</string>
@@ -1299,7 +1299,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">De încredere</string>
     <string name="preview_not_available_for_files">Previzualizarea nu este disponibilă pentru fișierele %1$s. Poți totuși să le descarci pentru a le vizualiza pe dispozitivul tău.</string>
     <string name="this_file_is_too_large_to_preview">Acest fișier este prea mare pentru previzualizare. Poți totuși să îl descarci pentru a-l vizualiza pe dispozitivul tău.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager nu a putut decripta acest fișier, astfel încât previzualizarea nu poate fi afișată.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager nu a putut decripta acest fișier, astfel încât previzualizarea nu poate fi afișată.</string>
     <string name="preview_unavailable_for_this_file">Previzualizarea nu este disponibilă pentru acest fișier. Poți totuși să îl descarci pentru a-l vizualiza pe dispozitivul tău.</string>
     <string name="preview_unavailable">Previzualizare indisponibilă</string>
     <string name="download_attachment">Descarcă Atașament</string>
@@ -1341,7 +1341,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / an</string>
     <string name="billing_rate_per_month">%1$s / lună</string>
     <string name="manage_plan">Gestionați planul</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Gestionați-vă planul de abonament în aplicația web Universal Password Manager.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Gestionați-vă planul de abonament în aplicația web Universal Password Manager.</string>
     <string name="cancel_premium">Anulează Premium</string>
     <string name="subscription_status_active">Activ</string>
     <string name="subscription_status_canceled">Anulat</string>
@@ -1433,8 +1433,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">Este necesar accesul la rețeaua locală</string>
     <string name="ask_again_later">Întreabă din nou mai târziu</string>
     <string name="enable_local_network_access">Activează accesul la rețeaua locală</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager are nevoie de acces la rețeaua locală pentru a sincroniza cu serverul tău. Fără această permisiune, aplicația nu se va putea conecta.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Fără această permisiune, Universal Password Manager nu se va putea conecta și sincroniza cu serverul tău. Poți activa acest lucru în setările dispozitivului.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager are nevoie de acces la rețeaua locală pentru a sincroniza cu serverul tău. Fără această permisiune, aplicația nu se va putea conecta.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Fără această permisiune, Universal Password Manager nu se va putea conecta și sincroniza cu serverul tău. Poți activa acest lucru în setările dispozitivului.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Cererea ta a fost întreruptă deoarece aplicația are nevoie de acces la rețeaua locală. Poți activa acest lucru în setările dispozitivului.</string>
     <string name="continue_to_stripe">Continui către Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Vei fi redirecționat către Stripe pentru a gestiona anularea abonamentului.</string>

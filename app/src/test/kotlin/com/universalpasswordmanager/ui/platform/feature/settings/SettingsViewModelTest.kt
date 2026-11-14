@@ -326,7 +326,7 @@ class SettingsViewModelTest : BaseViewModelTest() {
             viewModel.trySendAction(SettingsAction.UpgradedToPremiumCardClick)
             assertEquals(
                 SettingsEvent.NavigateToUrl(
-                    url = "https://bitwarden.com/help/password-manager-plans/",
+                    url = "https:///help/password-manager-plans/",
                 ),
                 awaitItem(),
             )

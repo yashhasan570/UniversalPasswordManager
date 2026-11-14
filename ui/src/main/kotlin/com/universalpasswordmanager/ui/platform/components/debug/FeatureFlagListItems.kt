@@ -84,7 +84,7 @@ private fun <T : Any> FlagKey<T>.getDisplayLabel(): String = when (this) {
 
     FlagKey.NoLogoutOnKdfChange -> stringResource(UniversalString.avoid_logout_on_kdf_change)
     FlagKey.UniversalAuthenticationEnabled -> {
-        stringResource(UniversalString.bitwarden_authentication_enabled)
+        stringResource(UniversalString.universalpasswordmanager_authentication_enabled)
     }
 
     FlagKey.CardScanner -> stringResource(UniversalString.scan_card)

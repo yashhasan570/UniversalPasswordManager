@@ -97,7 +97,7 @@ class OrganizationServiceTest : BaseServiceTest() {
                     .setBody(ORGANIZATION_VERIFIED_DOMAIN_SSO_DETAILS_JSON),
             )
             val result =
-                organizationService.getVerifiedOrganizationDomainSsoDetails("example@bitwarden.com")
+                organizationService.getVerifiedOrganizationDomainSsoDetails("example@")
             assertEquals(ORGANIZATION_VERIFIED_DOMAIN_SSO_DETAILS_RESPONSE.asSuccess(), result)
         }
 
@@ -107,7 +107,7 @@ class OrganizationServiceTest : BaseServiceTest() {
         runTest {
             server.enqueue(MockResponse().setResponseCode(400))
             val result =
-                organizationService.getVerifiedOrganizationDomainSsoDetails("example@bitwarden.com")
+                organizationService.getVerifiedOrganizationDomainSsoDetails("example@")
             assertTrue(result.isFailure)
         }
 
@@ -158,7 +158,7 @@ private const val ORGANIZATION_VERIFIED_DOMAIN_SSO_DETAILS_JSON = """
     {
       "organizationIdentifier": "Test Identifier",
       "organizationName": "Universal",
-      "domainName": "bitwarden.com"
+      "domainName": ""
     }
   ]
 }
@@ -170,7 +170,7 @@ private val ORGANIZATION_VERIFIED_DOMAIN_SSO_DETAILS_RESPONSE =
             VerifiedOrganizationDomainSsoDetailsResponse.VerifiedOrganizationDomainSsoDetail(
                 organizationIdentifier = "Test Identifier",
                 organizationName = "Universal",
-                domainName = "bitwarden.com",
+                domainName = "",
             ),
         ),
     )

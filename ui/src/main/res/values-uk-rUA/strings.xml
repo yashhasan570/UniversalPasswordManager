@@ -75,9 +75,9 @@
     <string name="yes">Так</string>
     <string name="account">Обліковий запис</string>
     <string name="account_created_success">Ваш обліковий запис створено!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Зробіть Universal Password Manager своїм провайдером ключів доступу в налаштуваннях пристрою.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Зробіть Universal Password Manager своїм провайдером ключів доступу в налаштуваннях пристрою.</string>
     <string name="avoid_ambiguous_characters">Уникати неоднозначних символів</string>
-    <string name="bitwarden_autofill_service">Служба автозаповнення Universal Password Manager</string>
+    <string name="universalpasswordmanager_autofill_service">Служба автозаповнення Universal Password Manager</string>
     <string name="change_master_password">Змінити головний пароль</string>
     <string name="close">Закрити</string>
     <string name="close_app">Закрити програму</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Встановити час очікування сеансу на \"Вийти\"?</string>
     <string name="vault_timeout_log_out_confirmation_message">Після часу очікування сеансу ви вийдете з системи. Для повторного входу й відновлення доступу до сховища потрібне інтернет-з\'єднання. Збережені налаштування та PIN-код на цьому пристрої не зміняться.</string>
     <string name="logging_in">Вхід…</string>
-    <string name="login_to_bitwarden">Увійти в Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">Увійти в Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">Підтвердження пароля неправильне.</string>
     <string name="master_password_description">Головний пароль використовується для доступу до вашого сховища. Дуже важливо, щоб ви запам\'ятали його. Якщо ви забудете головний пароль, його неможливо буде відновити.</string>
     <string name="master_password_hint">Підказка для головного пароля (необов\'язково)</string>
@@ -178,7 +178,7 @@
     <string name="no_items_for_vault">У вашому сховищі немає записів, які відповідають “%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">Пошукати запис або додати новий</string>
     <string name="disabled">Вимкнено</string>
-    <string name="bitwarden_autofill_service_alert2">Найлегшим способом додавання нових записів до сховища є використання служби автозаповнення Universal Password Manager. Дізнайтеся більше про використання служби автозаповнення Universal Password Manager в меню \"Налаштування\".</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Найлегшим способом додавання нових записів до сховища є використання служби автозаповнення Universal Password Manager. Дізнайтеся більше про використання служби автозаповнення Universal Password Manager в меню \"Налаштування\".</string>
     <string name="autofill_noun">Автозаповнення</string>
     <string name="autofill_verb">Автозаповнення</string>
     <string name="autofill_or_view">Автоматично заповнити чи переглянути запис?</string>
@@ -301,7 +301,7 @@
     <string name="no_items_trash">У смітнику немає записів.</string>
     <string name="autofill_accessibility_summary">Допомога із заповненням полів імені користувача і пароля в інших програмах і в інтернеті.</string>
     <string name="autofill_service_description">Служба автозаповнення Universal Password Manager використовує Android Autofill Framework для введення облікових даних в інших програмах на вашому пристрої.</string>
-    <string name="bitwarden_autofill_go_to_settings">Не вдалося автоматично відкрити меню налаштувань автозаповнення Android. Ви можете перейти до меню налаштувань автозаповнення вручну в Налаштування &gt; Система &gt; Мова і введення &gt; Додатково &gt; Служба автозаповнення.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Не вдалося автоматично відкрити меню налаштувань автозаповнення Android. Ви можете перейти до меню налаштувань автозаповнення вручну в Налаштування &gt; Система &gt; Мова і введення &gt; Додатково &gt; Служба автозаповнення.</string>
     <string name="custom_field_name">Назва власного поля</string>
     <string name="field_type_boolean">Логічне значення</string>
     <string name="field_type_hidden">Приховано</string>
@@ -657,14 +657,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Спроба отримання доступу з:
 %1$s
 Хочете перемкнутися на цей обліковий запис?</string>
-    <string name="new_to_bitwarden">Вперше у Universal Password Manager?</string>
+    <string name="new_to_universalpasswordmanager">Вперше у Universal Password Manager?</string>
     <string name="get_master_passwordword_hint">Отримати підказку для головного пароля</string>
     <string name="logging_in_as_x_on_y">Вхід як %1$s на %2$s</string>
     <string name="not_you">Не ви?</string>
     <string name="log_in_with_master_password">Увійти з головним паролем</string>
     <string name="log_in_initiated">Ініційовано вхід</string>
     <string name="request_sent_to_your_device">Запит надіслано на ваш пристрій</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Схваліть цей запит у своєму обліковому записі Universal Password Manager на іншому розблокованому пристрої або у вебпрограмі. У налаштуваннях має бути ввімкнено функцію запитів на доступ до облікового запису.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Схваліть цей запит у своєму обліковому записі Universal Password Manager на іншому розблокованому пристрої або у вебпрограмі. У налаштуваннях має бути ввімкнено функцію запитів на доступ до облікового запису.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Перш ніж підтверджувати, обов\'язково перевірте відповідність зазначеної нижче фрази відбитка.</string>
     <string name="resend_notification">Надіслати сповіщення ще раз</string>
     <string name="view_all_login_options">Переглянути всі варіанти входу</string>
@@ -722,7 +722,7 @@
     <string name="select_vault">Вибрати сховище</string>
     <string name="appearance">Подання</string>
     <string name="account_security">Безпека облікового запису</string>
-    <string name="bitwarden_help_center">Довідковий центр Universal Password Manager</string>
+    <string name="universalpasswordmanager_help_center">Довідковий центр Universal Password Manager</string>
     <string name="sync_now">Синхронізувати</string>
     <string name="unlock_options">Налаштування розблокування</string>
     <string name="session_timeout">Час очікування сеансу</string>
@@ -739,10 +739,10 @@
     <string name="continue_to_device_settings">Відкрити налаштування пристрою?</string>
     <string name="two_step_login_description_long">Додайте вищий рівень захисту облікового запису, налаштувавши двоетапну перевірку у вебпрограмі Universal Password Manager.</string>
     <string name="change_master_password_description_long">Ви можете змінити головний пароль у вебпрограмі Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Дізнайтеся більше про те, як використовувати Universal Password Manager в довідковому центрі.</string>
-    <string name="privacy_policy_description_long">Ознайомтеся з нашою політикою приватності на bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Ознайомтеся з іншими функціями вашого облікового запису Universal Password Manager у вебпрограмі.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager дозволяє доступ до записів сховища спільно з іншими користувачами за допомогою організації. Дізнайтеся більше про це на вебсайті bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Дізнайтеся більше про те, як використовувати Universal Password Manager в довідковому центрі.</string>
+    <string name="privacy_policy_description_long">Ознайомтеся з нашою політикою приватності на .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Ознайомтеся з іншими функціями вашого облікового запису Universal Password Manager у вебпрограмі.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager дозволяє доступ до записів сховища спільно з іншими користувачами за допомогою організації. Дізнайтеся більше про це на вебсайті .</string>
     <string name="created_x">Створено %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Ваша організація вимагає, щоб ви встановили головний пароль.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Налаштуйте спосіб розблокування, щоб змінити час очікування сховища.</string>
@@ -752,8 +752,8 @@
     <string name="duo_two_step_login_is_required_for_your_account">Для вашого облікового запису необхідна двоетапна перевірка з Duo.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Виконайте дії з Duo для завершення входу.</string>
     <string name="launch_duo">Запустити Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Ваш ключ доступу буде збережено в сховищі Universal Password Manager для %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Ваш пароль буде збережено у сховищі Universal Password Manager для %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Ваш ключ доступу буде збережено в сховищі Universal Password Manager для %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Ваш пароль буде збережено у сховищі Universal Password Manager для %1$s</string>
     <string name="passkeys_not_supported_for_this_app">Ця програма не підтримує ключі доступу</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Не вдалося виконати операцію з ключем доступу, оскільки браузер не має права доступу</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Не вдалося виконати операцію з ключем доступу, оскільки не збігається підпис браузера</string>
@@ -779,7 +779,7 @@
     <string name="check_your_email">Перевірте свою електронну пошту</string>
     <string name="open_email_app">Відкрийте програму електронної пошти</string>
     <string name="email_verified">Електронну пошту підтверджено</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Отримуйте електронні листи від Universal Password Manager з оголошеннями, порадами та інформацією про нові можливості. <annotation link="unsubscribe">Відписатися</annotation> можна будь-коли.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Отримуйте електронні листи від Universal Password Manager з оголошеннями, порадами та інформацією про нові можливості. <annotation link="unsubscribe">Відписатися</annotation> можна будь-коли.</string>
     <string name="security_prioritized">Безпека понад усе</string>
     <string name="welcome_message_1">Зберігайте записи входу, картки та посвідчення в захищеному сховищі. Для захисту ваших даних Universal Password Manager використовує наскрізне шифрування з нульовим рівнем доступу.</string>
     <string name="welcome_message_2">Налаштуйте біометричне розблокування та автозаповнення, щоб миттєво входити в облікові записи.</string>
@@ -817,8 +817,8 @@
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Перейдіть за посиланням у листі, щоб підтвердити адресу електронної пошти й продовжити створення облікового запису.</string>
     <string name="change_email_address">Змінити адресу е-пошти</string>
     <string name="next">Далі</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager не може відновити втрачений чи забутий головний пароль.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager не може скинути втрачений чи забутий головний пароль.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager не може відновити втрачений чи забутий головний пароль.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager не може скинути втрачений чи забутий головний пароль.</string>
     <string name="choose_your_master_password">Створити головний пароль</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Створіть унікальний, надійний пароль, щоб захистити вашу інформацію.</string>
     <plurals name="minimum_characters">
@@ -831,13 +831,13 @@
     <string name="please_restart_registration_or_try_logging_in">Перезапустіть реєстрацію або спробуйте увійти. Можливо, ви вже маєте обліковий запис.</string>
     <string name="restart_registration">Перезапустити реєстрацію</string>
     <string name="authenticator_sync">Синхронізація автентифікатора</string>
-    <string name="allow_bitwarden_authenticator_syncing">Дозволити синхронізацію Universal Password Manager Authentificator</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Дозволити синхронізацію Universal Password Manager Authentificator</string>
     <string name="there_was_an_issue_validating_the_registration_token">Під час перевірки токена реєстрації виникла проблема.</string>
     <string name="turn_on_autofill">Увімкніть автозаповнення</string>
     <string name="autofill_setup">Налаштування автозаповнення</string>
     <string name="turn_on_browser_autofill_integration">Увімкнути інтеграцію автозаповнення у браузері</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Ви використовуєте браузер, який потребує спеціальних дозволів для автозаповнення паролів Universal Password Manager.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Ви використовуєте браузери, які потребують спеціальних дозволів для автозаповнення паролів Universal Password Manager.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Ви використовуєте браузер, який потребує спеціальних дозволів для автозаповнення паролів Universal Password Manager.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Ви використовуєте браузери, які потребують спеціальних дозволів для автозаповнення паролів Universal Password Manager.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Ви використовуєте браузер, який потребує спеціальних дозволів для автозаповнення паролів Universal Password Manager. Активуйте бажану інтеграцію автозаповнення нижче.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Ви використовуєте браузери, які потребують спеціальних дозволів для автозаповнення паролів Universal Password Manager. Активуйте бажані інтеграції автозаповнення нижче.</string>
     <string name="use_autofill_to_log_into_your_accounts">Використовуйте автозаповнення для входу в облікові записи одним дотиком.</string>
@@ -845,7 +845,7 @@
     <string name="turn_on_autofill_later">Увімкнути автозаповнення пізніше?</string>
     <string name="turn_on_browser_autofill_integration_later">Увімкнути інтеграцію автозаповнення у браузері пізніше?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Ви можете виконати цей крок будь-коли в налаштуваннях.</string>
-    <string name="what_bitwarden_has_to_offer">Тепер ви можете випробувати всі можливості Universal Password Manager і почати безпечно керувати своїми паролями.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Тепер ви можете випробувати всі можливості Universal Password Manager і почати безпечно керувати своїми паролями.</string>
     <string name="youre_all_set">Усе налаштовано!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Помилка під\'єднання до служби Duo. Скористайтеся іншим способом двоетапної перевірки або зверніться до служби підтримки Duo по допомогу.</string>
     <string name="master_password_hint_not_specified">Підказка для головного пароля</string>
@@ -874,29 +874,29 @@
     <string name="step_1_of_3">Крок 1 з 3</string>
     <string name="export_your_saved_logins">Експортуйте збережені записи</string>
     <string name="delete_this_file_after_import_is_complete">Після завершення імпорту видаліть цей файл.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">На вашому комп\'ютері відкрийте нову вкладку браузера і <annotation emphasis="bold">перейдіть до <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Увійдіть у вебпрограму Universal Password Manager.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">На вашому комп\'ютері відкрийте нову вкладку браузера і <annotation emphasis="bold">перейдіть до <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Увійдіть у вебпрограму Universal Password Manager.</string>
     <string name="step_2_of_3">Крок 2 з 3</string>
-    <string name="log_in_to_bitwarden">Увійдіть у Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">Увійдіть у Universal Password Manager</string>
     <string name="step_3_of_3">Крок 3 з 3</string>
-    <string name="import_logins_to_bitwarden">Імпортуйте записи до Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">У меню Universal Password Manager <annotation emphasis="bold">знайдіть опцію Інструменти</annotation> й <annotation emphasis="bold">виберіть Імпортувати дані</annotation>.</string>
+    <string name="import_logins_to_universalpasswordmanager">Імпортуйте записи до Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">У меню Universal Password Manager <annotation emphasis="bold">знайдіть опцію Інструменти</annotation> й <annotation emphasis="bold">виберіть Імпортувати дані</annotation>.</string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Заповніть форму та <annotation emphasis="bold">імпортуйте збережений файл із паролями</annotation>.</string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">З міркувань безпеки, обов\'язково <annotation emphasis="bold">видаліть збережений файл із паролями</annotation>.</string>
     <string name="need_help_check_out_import_help">Потрібна допомога? Перегляньте <annotation link="importHelp">довідку щодо імпорту</annotation>.</string>
     <string name="import_help">довідка щодо імпорту</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Збережіть експортований файл</annotation> у легкодоступному місці на цьому комп\'ютері.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Це не розпізнаний сервер Universal Password Manager. Можливо, вам необхідно перевірити параметри свого провайдера або оновити свій сервер.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Це не розпізнаний сервер Universal Password Manager. Можливо, вам необхідно перевірити параметри свого провайдера або оновити свій сервер.</string>
     <string name="syncing_logins_loading_message">Синхронізація записів…</string>
     <string name="download_the_browser_extension">Завантажити розширення браузера</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Відкрийте bitwarden.com/download, щоб інтегрувати Universal Password Manager у свій браузер для найкращої продуктивності.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Відкрийте /download, щоб інтегрувати Universal Password Manager у свій браузер для найкращої продуктивності.</string>
     <string name="use_the_web_app">Використовувати вебпрограму</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Увійдіть на bitwarden.com, щоб легко керувати обліковим записом і змінювати налаштування.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Увійдіть на , щоб легко керувати обліковим записом і змінювати налаштування.</string>
     <string name="autofill_passwords">Автозаповнення паролів</string>
     <string name="set_up_autofill_on_all_your_devices">Налаштуйте автозаповнення на всіх пристроях для входу одним дотиком.</string>
     <string name="import_successful">Успішно імпортовано!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Керуйте своїми паролями звідусіль за допомогою вебінструментів та програм Universal Password Manager.</string>
-    <string name="bitwarden_tools">Інструменти Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Керуйте своїми паролями звідусіль за допомогою вебінструментів та програм Universal Password Manager.</string>
+    <string name="universalpasswordmanager_tools">Інструменти Universal Password Manager</string>
     <string name="got_it">Зрозуміло</string>
     <string name="no_logins_were_imported">Жодного запису не імпортовано</string>
     <string name="import_error">Помилка імпорту</string>
@@ -916,7 +916,7 @@
         <item quantity="other">%d сповіщень</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Швидко й легко виконуйте вхід на різних пристроях</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager може сповіщати вас щоразу, коли ви отримуєте новий запит на вхід з іншого пристрою.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager може сповіщати вас щоразу, коли ви отримуєте новий запит на вхід з іншого пристрою.</string>
     <string name="skip_for_now">Наразі пропустити</string>
     <string name="done_text">Виконано</string>
     <string name="page_number_x_of_y">%1$s з %2$s</string>
@@ -968,7 +968,7 @@
     <string name="coachmark_5_of_6">5 з 6</string>
     <string name="coachmark_6_of_6">6 з 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Використовуйте ці параметри, щоб налаштувати відповідність пароля вимогам вебсайту.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Після збереження нового пароля у Universal Password Manager обов\'язково оновіть його на вебсайті.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Після збереження нового пароля у Universal Password Manager обов\'язково оновіть його на вебсайті.</string>
     <string name="verify_your_identity">Підтвердьте свою особу</string>
     <string name="error_loading_certificate">Помилка завантаження сертифіката</string>
     <string name="certificate_alias">Псевдонім сертифіката</string>
@@ -979,7 +979,7 @@
     <string name="unsupported_certificate_type">Непідтримуваний тип сертифіката</string>
     <string name="certificate_password_incorrect">Неправильний пароль сертифіката</string>
     <string name="invalid_certificate_chain">Недійсний ланцюжок сертифіката</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Використання сертифіката системи є менш захищеним, ніж зберігання сертифіката з Universal Password Manager. Якщо продовжити, буде показано список доступних системних сертифікатів, якщо вони вже встановлені.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Використання сертифіката системи є менш захищеним, ніж зберігання сертифіката з Universal Password Manager. Якщо продовжити, буде показано список доступних системних сертифікатів, якщо вони вже встановлені.</string>
     <string name="link">Посилання</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Не вдалося виконати операцію з ключем доступу, оскільки в запиті відсутня URL-адреса вузла.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Не вдалося виконати операцію з ключем доступу, оскільки підпис програми недійсний.</string>
@@ -1051,7 +1051,7 @@
     <string name="unable_to_read_certificate">Не вдалося прочитати сертифікат.</string>
     <string name="cannot_delete_your_account">Не вдається видалити ваш обліковий запис</string>
     <string name="cannot_delete_your_account_explanation">Цю дію не можна виконати, тому що ваш обліковий запис належить організації. Зверніться до адміністратора організації для отримання додаткової інформації.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Цей обліковий запис незабаром буде видалено. Виконайте вхід на %1$s, щоб продовжити використання Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Цей обліковий запис незабаром буде видалено. Виконайте вхід на %1$s, щоб продовжити використання Universal Password Manager.</string>
     <string name="view_file_send">Переглянути файлове відправлення</string>
     <string name="view_text_send">Переглянути текстове відправлення</string>
     <string name="delete_send">Видалити відправлення</string>
@@ -1073,7 +1073,7 @@
     <string name="learn_more_about_privileged_apps">Докладніше про привілейовані програми</string>
     <string name="privileged_apps">Привілейовані програми</string>
     <string name="unrecognized_browser">Нерозпізнаний браузер</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Докладніше про ключі доступу в Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Докладніше про ключі доступу в Universal Password Manager.</string>
     <string name="all_trusted_apps">Усі довірені програми</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Ви дійсно хочете скасувати довіру для %s?</string>
     <string name="installed_apps">Встановлені програми</string>
@@ -1103,7 +1103,7 @@
     <string name="information">Інформація</string>
     <string name="otp_type">Тип OTP</string>
     <string name="search_codes">Шукати коди</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Захистіть свої облікові записи за допомогою Bitwarden Authenticator</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Захистіть свої облікові записи за допомогою Universal Password Manager Authenticator</string>
     <string name="get_verification_codes_for_all_your_accounts">Отримуйте коди підтвердження для всіх облікових записів, які підтримують двоетапну перевірку.</string>
     <string name="use_your_device_camera_to_scan_codes">Використовуйте камеру пристрою для сканування кодів</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Скануйте QR-код у налаштуваннях двоетапної перевірки будь-якого облікового запису.</string>
@@ -1124,7 +1124,7 @@
     <string name="too_many_failed_biometric_attempts">Забагато невдалих спроб біометричної перевірки.</string>
     <string name="version">Версія</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Версія: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Дізнайтеся більше про використання Bitwarden Authenticator у довідковому центрі.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Дізнайтеся більше про використання Universal Password Manager Authenticator у довідковому центрі.</string>
     <string name="key">Ключ</string>
     <string name="create_verification_code">Створити код підтвердження</string>
     <string name="key_is_required">Необхідно ввести ключ.</string>
@@ -1135,41 +1135,41 @@
     <string name="key_is_invalid">Недійсний ключ.</string>
     <string name="backup">Резервне копіювання</string>
     <string name="data_backup_title">Резервне копіювання даних</string>
-    <string name="data_backup_message">Резервне копіювання даних Bitwarden Authenticator відбувається за допомогою пристрою. Відновити дані можна будь-коли.</string>
+    <string name="data_backup_message">Резервне копіювання даних Universal Password Manager Authenticator відбувається за допомогою пристрою. Відновити дані можна будь-коли.</string>
     <string name="import_2fas_password_protected_not_supported">Імпортування даних із захищених паролем файлів 2FAS не підтримується. Повторіть спробу з експортованим файлом, який не захищено паролем.</string>
-    <string name="import_bitwarden_unsupported_format">Імпорт CSV-файлів Universal Password Manager не підтримується. Повторіть спробу з експортованим файлом JSON.</string>
-    <string name="download_bitwarden_card_title">Завантажити програму Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">Зберігайте всі паролі та синхронізуйте коди підтвердження безпосередньо з програмою Authenticator.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Імпорт CSV-файлів Universal Password Manager не підтримується. Повторіть спробу з експортованим файлом JSON.</string>
+    <string name="download_universalpasswordmanager_card_title">Завантажити програму Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">Зберігайте всі паролі та синхронізуйте коди підтвердження безпосередньо з програмою Authenticator.</string>
     <string name="download_now">Завантажити</string>
-    <string name="sync_with_bitwarden_app">Синхронізувати з програмою Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">Синхронізувати з програмою Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">Докладніше</annotation></string>
     <string name="shared_codes_error">Неможливо синхронізувати коди з програмою Universal Password Manager. Переконайтеся, що у вас найновіші версії обох програм. Ви все одно можете отримати доступ до наявних кодів у програмі Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">Синхронізувати з програмою Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">Дозвольте синхронізацію програми Authenticator у налаштуваннях, щоб бачити тут свої коди підтвердження.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Синхронізувати з програмою Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Дозвольте синхронізацію програми Authenticator у налаштуваннях, щоб бачити тут свої коди підтвердження.</string>
     <string name="take_me_to_app_settings">Перейти до налаштувань програми</string>
     <string name="something_went_wrong">Щось пішло не так</string>
     <string name="please_try_again">Повторіть спробу</string>
-    <string name="copy_to_bitwarden_vault">Копіювати до сховища Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">Копіювати до сховища Universal Password Manager</string>
     <string name="default_save_option">Типовий параметр збереження</string>
-    <string name="save_to_bitwarden">Зберегти в Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">Зберегти в Universal Password Manager</string>
     <string name="save_here">Зберегти тут</string>
     <string name="none">Немає</string>
     <string name="default_save_options_subtitle">Виберіть, де ви бажаєте зберігати нові коди підтвердження.</string>
     <string name="verification_code_created">Код підтвердження створено</string>
     <string name="choose_save_location_message">Збережіть цей ключ автентифікації тут, або додайте його до запису в програмі Universal Password Manager.</string>
     <string name="save_option_as_default">Зробити цю дію типовою</string>
-    <string name="account_synced_from_bitwarden_app">Обліковий запис синхронізовано з програми Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Обліковий запис синхронізовано з програми Universal Password Manager</string>
     <string name="local_codes">Локальні коди (%1$d)</string>
     <string name="local_codes_header">Локальні коди</string>
     <string name="required_information_missing">Відсутня необхідна інформація</string>
-    <string name="required_information_missing_message">Необхідна інформація відсутня (наприклад, \'services\' або \'secret\'). Перевірте свій файл і повторіть спробу. Відвідайте bitwarden.com/help для підтримки</string>
+    <string name="required_information_missing_message">Необхідна інформація відсутня (наприклад, \'services\' або \'secret\'). Перевірте свій файл і повторіть спробу. Відвідайте /help для підтримки</string>
     <string name="file_could_not_be_processed">Неможливо обробити файл</string>
-    <string name="file_could_not_be_processed_message">Не вдалося обробити файл. Перевірте правильність JSON і повторіть спробу. Потрібна допомога? Відвідайте bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">Не вдалося обробити файл. Перевірте правильність JSON і повторіть спробу. Потрібна допомога? Відвідайте /help</string>
     <string name="get_help">Отримати допомогу</string>
     <string name="error_cannot_decrypt">[помилка: неможливо розшифрувати]</string>
     <string name="copy_error_report">Копіювати звіт про помилку</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager не вдалося розшифрувати цей елемент сховища. Скопіюйте цей звіт про помилку та поділіться ним зі службою підтримки, щоб уникнути втрати даних.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager не вдалося розшифрувати цей елемент сховища. Скопіюйте цей звіт про помилку та поділіться ним зі службою підтримки, щоб уникнути втрати даних.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager не може розшифрувати %1$d елемент сховища. Скопіюйте цей звіт про помилку та поділіться ним зі службою підтримки, щоб уникнути втрати даних.</item>
         <item quantity="few">Universal Password Manager не може розшифрувати %1$d елементи сховища. Скопіюйте цей звіт про помилку та поділіться ним зі службою підтримки, щоб уникнути втрати даних.</item>
         <item quantity="many">Universal Password Manager не може розшифрувати %1$d елементів сховища. Скопіюйте цей звіт про помилку та поділіться ним зі службою підтримки, щоб уникнути втрати даних.</item>
@@ -1212,7 +1212,7 @@
     <string name="enable_browser_autofill_to_keep_filling_passwords">Увімкніть автозаповнення браузера для заповнення паролів</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Ваш браузер нещодавно оновився, що призвело до вимкнення автозаповнення Universal Password Manager. Щоб і надалі заповнювати паролі за допомогою Universal Password Manager, увімкніть автозаповнення браузера в налаштуваннях.</string>
     <string name="not_now">Не зараз</string>
-    <string name="import_from_bitwarden">Імпортувати з Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">Імпортувати з Universal Password Manager</string>
     <string name="select_account">Вибрати обліковий запис</string>
     <string name="no_accounts_available">Немає доступних облікових записів</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">У вас немає жодного облікового запису, з якого можна імпортувати дані. Політика безпеки вашої організації може обмежувати імпорт записів з Universal Password Manager до іншої програми.</string>
@@ -1310,7 +1310,7 @@
     <string name="trusted">Надійний</string>
     <string name="preview_not_available_for_files">Перегляд недоступний для файлів %1$s. Ви можете завантажити його для перегляду на пристрої.</string>
     <string name="this_file_is_too_large_to_preview">Цей файл завеликий для перегляду. Ви можете завантажити його для перегляду на пристрої.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager не зміг розшифрувати цей файл, тому неможливо створити перегляд.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager не зміг розшифрувати цей файл, тому неможливо створити перегляд.</string>
     <string name="preview_unavailable_for_this_file">Перегляд недоступний для цього файлу. Ви можете завантажити його для перегляду на пристрої.</string>
     <string name="preview_unavailable">Перегляд недоступний</string>
     <string name="download_attachment">Завантажити вкладення</string>
@@ -1352,7 +1352,7 @@
     <string name="billing_rate_per_year">%1$s / рік</string>
     <string name="billing_rate_per_month">%1$s / місяць</string>
     <string name="manage_plan">Керувати планом</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Керуйте своїм планом передплати у вебпрограмі Universal Password Manager.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Керуйте своїм планом передплати у вебпрограмі Universal Password Manager.</string>
     <string name="cancel_premium">Скасувати Premium</string>
     <string name="subscription_status_active">Активний</string>
     <string name="subscription_status_canceled">Скасовано</string>
@@ -1445,8 +1445,8 @@
     <string name="local_network_access_required">Необхідний доступ до локальної мережі</string>
     <string name="ask_again_later">Запитати знову пізніше</string>
     <string name="enable_local_network_access">Дозволити доступ до локальної мережі</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager потребує доступу до локальної мережі для синхронізації з вашим сервером. Без цього дозволу програма не зможе встановити з\'єднання.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Без цього дозволу Universal Password Manager не зможе встановити з\'єднання з вашим сервером і виконувати синхронізацію. Ви можете ввімкнути це в налаштуваннях свого пристрою.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager потребує доступу до локальної мережі для синхронізації з вашим сервером. Без цього дозволу програма не зможе встановити з\'єднання.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Без цього дозволу Universal Password Manager не зможе встановити з\'єднання з вашим сервером і виконувати синхронізацію. Ви можете ввімкнути це в налаштуваннях свого пристрою.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Ваш запит перервано, оскільки програмі потрібен доступ до локальної мережі. Ви можете ввімкнути це в налаштуваннях пристрою.</string>
     <string name="continue_to_stripe">Продовжити у Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Вас буде спрямовано на сторінку Stripe для керування скасуванням передплати.</string>

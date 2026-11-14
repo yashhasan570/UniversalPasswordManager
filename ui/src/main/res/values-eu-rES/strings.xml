@@ -75,9 +75,9 @@
     <string name="yes">Bai</string>
     <string name="account">Kontua</string>
     <string name="account_created_success">Zure kontu berria sortu da!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Ezarri Universal Password Manager zure pasagiltza-hornitzaile gisa gailuaren ezarpenetan.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Ezarri Universal Password Manager zure pasagiltza-hornitzaile gisa gailuaren ezarpenetan.</string>
     <string name="avoid_ambiguous_characters">Saihestu karaktere anbiguoak</string>
-    <string name="bitwarden_autofill_service">Universal Password Manageren automatikoki betetzeko zerbitzua</string>
+    <string name="universalpasswordmanager_autofill_service">Universal Password Manageren automatikoki betetzeko zerbitzua</string>
     <string name="change_master_password">Aldatu pasahitz nagusia</string>
     <string name="close">Itxi</string>
     <string name="close_app">Itxi aplikazioa</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Ezarri saioaren denbora-muga \"Amaitu saioa\" gisa?</string>
     <string name="vault_timeout_log_out_confirmation_message">Denbora-muga igaro ondoren, saioa amaituko da. Internet konektatuta egon beharko duzu berriro saioa hasteko eta zure kutxara sartzeko. Gailu honetan gordetako ezarpenek eta PINak ez dute aldaketarik izango.</string>
     <string name="logging_in">Saioa hasten…</string>
-    <string name="login_to_bitwarden">Hasi saioa Universal Password Manager-en</string>
+    <string name="login_to_universalpasswordmanager">Hasi saioa Universal Password Manager-en</string>
     <string name="master_password_confirmation_val_message">Pasahitzaren baieztapena ez da zuzena.</string>
     <string name="master_password_description">Pasahitz nagusia, kutxa gotorrera sartzeko erabiltzen duzun pasahitza da. Oso garrantzitsua da ez ahaztea, ahazten baduzu, ez dago pasahitza berreskuratzeko modurik.</string>
     <string name="master_password_hint">Pasahitz nagusirako pista (aukerakoa)</string>
@@ -176,7 +176,7 @@
     <string name="no_items_for_vault">Ez dago bat datorren elementurik zure kutxan “%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">Bilatu saio bat edo gehitu saio berri bat</string>
     <string name="disabled">Desgaitua</string>
-    <string name="bitwarden_autofill_service_alert2">Saio berriak zure kutxan gehitzeko modurik errazena Universal Password Manager Autobeteketa Zerbitzutik da. Ikasi gehiago Universal Password Manager Autobeteketa Zerbitzua erabiltzeari buruz \"Ezarpenak\" pantailara joanda.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Saio berriak zure kutxan gehitzeko modurik errazena Universal Password Manager Autobeteketa Zerbitzutik da. Ikasi gehiago Universal Password Manager Autobeteketa Zerbitzua erabiltzeari buruz \"Ezarpenak\" pantailara joanda.</string>
     <string name="autofill_noun">Autobeteketa</string>
     <string name="autofill_verb">Autobeteketa</string>
     <string name="autofill_or_view">Elementu hau ikusi edo automatikoki bete nahi duzu?</string>
@@ -298,7 +298,7 @@
     <string name="no_items_trash">Zakarrontzian ez dago elementurik.</string>
     <string name="autofill_accessibility_summary">Lagundu erabiltzaile-izen eta pasahitz eremuak betetzen beste aplikazioetan eta webgunean.</string>
     <string name="autofill_service_description">Universal Password Manageren automatikoki betetzeko zerbitzuak Android Autofill Framework erabiltzen du zure gailuko beste aplikazio batzuetan saio-hasierako informazioa betetzen laguntzeko.</string>
-    <string name="bitwarden_autofill_go_to_settings">Ezin izan dugu automatikoki ireki Android-en auto-betetzerako ezarpenen menua. Auto-betetzerako ezarpenen menura eskuz nabiga dezakezu, Android-en Ezarpenak &gt; Sistema &gt; Hizkuntzak eta idazketa &gt; Hobespen aurreratuak &gt; Betetze automatikoaren zerbitzutik.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Ezin izan dugu automatikoki ireki Android-en auto-betetzerako ezarpenen menua. Auto-betetzerako ezarpenen menura eskuz nabiga dezakezu, Android-en Ezarpenak &gt; Sistema &gt; Hizkuntzak eta idazketa &gt; Hobespen aurreratuak &gt; Betetze automatikoaren zerbitzutik.</string>
     <string name="custom_field_name">Eremu pertsonalizatuaren izena</string>
     <string name="field_type_boolean">Boolearra</string>
     <string name="field_type_hidden">Ezkutatua</string>
@@ -647,14 +647,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Universal Password Manager-en berria zara?</string>
+    <string name="new_to_universalpasswordmanager">Universal Password Manager-en berria zara?</string>
     <string name="get_master_passwordword_hint">Jaso pasahitz nagusiaren pista</string>
     <string name="logging_in_as_x_on_y">%1$s bezala saioa hasten %2$s(e)n</string>
     <string name="not_you">Ez zara zu?</string>
     <string name="log_in_with_master_password">Hasi saioa pasahitz nagusiarekin</string>
     <string name="log_in_initiated">Saioa hastea martxan da</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">Berbidali jakinarazpena</string>
     <string name="view_all_login_options">Ikusi erregistro guztiak ezarpenetan</string>
@@ -712,7 +712,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Select vault</string>
     <string name="appearance">Itxura</string>
     <string name="account_security">Kontuaren segurtasuna</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">Sinkronizatu orain</string>
     <string name="unlock_options">Desblokeo-aukerak</string>
     <string name="session_timeout">Saioaren denbora-muga</string>
@@ -729,10 +729,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">Gailuaren ezarpenetara jarraitu?</string>
     <string name="two_step_login_description_long">Egin zure kontua seguruagoa bi urratsetako saioa konfiguratuz Universal Password Manager web-aplikazioan.</string>
     <string name="change_master_password_description_long">Zure pasahitz nagusia Universal Password Manager web-aplikazioan alda dezakezu.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Ikasi gehiago Universal Password Manager erabiltzeari buruz Laguntza-zentroan.</string>
-    <string name="privacy_policy_description_long">Begiratu gure pribatutasun-politika bitwarden.com-en.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Arakatu zure Universal Password Manager kontuaren ezaugarri gehiago web-aplikazioan.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager-ek zure kutxako elementuak beste batzuekin partekatzeko aukera ematen dizu erakunde bat erabiliz. Ikasi gehiago bitwarden.com webgunean.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Ikasi gehiago Universal Password Manager erabiltzeari buruz Laguntza-zentroan.</string>
+    <string name="privacy_policy_description_long">Begiratu gure pribatutasun-politika -en.</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Arakatu zure Universal Password Manager kontuaren ezaugarri gehiago web-aplikazioan.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager-ek zure kutxako elementuak beste batzuekin partekatzeko aukera ematen dizu erakunde bat erabiliz. Ikasi gehiago  webgunean.</string>
     <string name="created_x">Sortua %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Zure erakundeak pasahitz nagusi bat ezartzea eskatzen du.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Konfiguratu desblokeo-aukeraketa zure kutxaren denbora-mugaren ekintza aldatzeko.</string>
@@ -742,8 +742,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">Duo bi urratsetako saioa beharrezkoa da zure konturako.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Jarraitu Duo-ren urratsak saioa amaitzeko.</string>
     <string name="launch_duo">Abiarazi Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Zure pasagiltza zure Universal Password Manager kutxan gordeko da %1$s-rako</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Zure pasahitza zure Universal Password Manager kutxan gordeko da %1$s-rako</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Zure pasagiltza zure Universal Password Manager kutxan gordeko da %1$s-rako</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Zure pasahitza zure Universal Password Manager kutxan gordeko da %1$s-rako</string>
     <string name="passkeys_not_supported_for_this_app">Pasagiltzak ez dira onartzen aplikazio honetarako</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Pasagiltzaren eragiketak huts egin du nabigatzailea ez delako pribilegiatua</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Pasagiltzaren eragiketak huts egin du nabigatzailearen sinadura ez datorrelako bat</string>
@@ -769,7 +769,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">Begiratu zure posta elektronikoa</string>
     <string name="open_email_app">Ireki posta elektronikoko aplikazioa</string>
     <string name="email_verified">Helbide elektronikoa egiaztatuta</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Jaso Universal Password Manager-en mezu elektronikoak iragarpenetarako, aholkuetarako eta ikerketa-aukeretarako. <annotation link="unsubscribe">Harpidetza kendu</annotation> nahi duzunean.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Jaso Universal Password Manager-en mezu elektronikoak iragarpenetarako, aholkuetarako eta ikerketa-aukeretarako. <annotation link="unsubscribe">Harpidetza kendu</annotation> nahi duzunean.</string>
     <string name="security_prioritized">Segurtasuna, lehentasunezkoa</string>
     <string name="welcome_message_1">Gorde saioak, txartelak eta identitateak zure kutxa seguruan. Universal Password Manager-ek zero-ezagutza eta muturretik muturrerako enkriptatzea erabiltzen du zuretzat garrantzitsua dena babesteko.</string>
     <string name="welcome_message_2">Konfiguratu desblokeo biometrikoa eta autobeteketa zure kontuetan saioa hasteko letrarik idatzi gabe.</string>
@@ -807,8 +807,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Hautatu mezu elektronikoko esteka zure helbide elektronikoa egiaztatzeko eta kontua sortzen jarraitzeko.</string>
     <string name="change_email_address">Aldatu helbide elektronikoa</string>
     <string name="next">Hurrengoa</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager-ek ezin du galdu edo ahaztutako pasahitz nagusia berreskuratu.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager-ek ezin du galdu edo ahaztutako pasahitz nagusia berrezarri.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager-ek ezin du galdu edo ahaztutako pasahitz nagusia berreskuratu.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager-ek ezin du galdu edo ahaztutako pasahitz nagusia berrezarri.</string>
     <string name="choose_your_master_password">Aukeratu zure pasahitz nagusia</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Aukeratu pasahitz bakarra eta sendoa zure informazioa seguru mantentzeko.</string>
     <plurals name="minimum_characters">
@@ -819,13 +819,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">Mesedez, berrabiarazi erregistroa edo saioa hasi. Baliteke kontua izatea.</string>
     <string name="restart_registration">Berrabiarazi erregistroa</string>
     <string name="authenticator_sync">Autentifikatzailearen sinkronizazioa</string>
-    <string name="allow_bitwarden_authenticator_syncing">Baimendu autentifikatzailearen sinkronizazioa</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Baimendu autentifikatzailearen sinkronizazioa</string>
     <string name="there_was_an_issue_validating_the_registration_token">Arazo bat egon da erregistro-tokena balioztatzean.</string>
     <string name="turn_on_autofill">Aktibatu autobeteketa</string>
     <string name="autofill_setup">Autobeteketaren konfigurazioa</string>
     <string name="turn_on_browser_autofill_integration">Aktibatu nabigatzailearen autobeteketaren integrazioa</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Universal Password Manager-ek zure pasahitzak autobetetzeko baimen bereziak behar dituen nabigatzaile bat erabiltzen ari zara.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Universal Password Manager-ek zure pasahitzak autobetetzeko baimen bereziak behar dituzten nabigatzaileak erabiltzen ari zara.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Universal Password Manager-ek zure pasahitzak autobetetzeko baimen bereziak behar dituen nabigatzaile bat erabiltzen ari zara.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Universal Password Manager-ek zure pasahitzak autobetetzeko baimen bereziak behar dituzten nabigatzaileak erabiltzen ari zara.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Universal Password Manager-ek zure pasahitzak autobetetzeko baimen bereziak behar dituen nabigatzaile bat erabiltzen ari zara. Gaitu behean zure autobeteketa-integrazio gogokoena.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Universal Password Manager-ek zure pasahitzak autobetetzeko baimen bereziak behar dituzten nabigatzaileak erabiltzen ari zara. Gaitu autobeteketa zure instalatutako nabigatzaile guztietan jarraitzeko.</string>
     <string name="use_autofill_to_log_into_your_accounts">Erabili autobeteketa zure kontuetan saioa hasteko ukitu bakarrarekin.</string>
@@ -833,7 +833,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">Autobeteketa geroago aktibatu?</string>
     <string name="turn_on_browser_autofill_integration_later">Nabigatzailearen autobeteketaren integrazioa geroago aktibatu?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Edonoiz itzul zaitezke urrats hau osatzeko Ezarpenetatik.</string>
-    <string name="what_bitwarden_has_to_offer">Orain Universal Password Manager-ek eskaintzen duen guztia arakatu eta zure pasahitzak segurtasunez kudeatzen has zaitezke.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Orain Universal Password Manager-ek eskaintzen duen guztia arakatu eta zure pasahitzak segurtasunez kudeatzen has zaitezke.</string>
     <string name="youre_all_set">Dena prest duzu!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Errorea Duo zerbitzuarekin konektatzean. Erabili bi urratsetako saio-metodo ezberdin bat edo jarri Duo-rekin harremanetan laguntza jasotzeko.</string>
     <string name="master_password_hint_not_specified">Pasahitz nagusiaren argibidea</string>
@@ -862,29 +862,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">1. urratsa 3-tik</string>
     <string name="export_your_saved_logins">Esportatu zure gordetako saioak</string>
     <string name="delete_this_file_after_import_is_complete">Fitxategi hau ezabatuko duzu inportazioa amaitutakoan.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">Zure ordenagailuan, ireki nabigatzailearen fitxa berri bat eta <annotation emphasis="bold">joan <annotation arg="0">%1$s</annotation>-ra</annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Hasi saioa Universal Password Manager web-aplikazioan.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">Zure ordenagailuan, ireki nabigatzailearen fitxa berri bat eta <annotation emphasis="bold">joan <annotation arg="0">%1$s</annotation>-ra</annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Hasi saioa Universal Password Manager web-aplikazioan.</string>
     <string name="step_2_of_3">2. urratsa 3-tik</string>
-    <string name="log_in_to_bitwarden">Hasi saioa Universal Password Manager-en</string>
+    <string name="log_in_to_universalpasswordmanager">Hasi saioa Universal Password Manager-en</string>
     <string name="step_3_of_3">3. urratsa 3-tik</string>
-    <string name="import_logins_to_bitwarden">Inportatu saioak Universal Password Manager-era</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager nabigazioan, <annotation emphasis="bold">bilatu Tresnak</annotation> aukera eta <annotation emphasis="bold">hautatu Inportatu datuak.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Inportatu saioak Universal Password Manager-era</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager nabigazioan, <annotation emphasis="bold">bilatu Tresnak</annotation> aukera eta <annotation emphasis="bold">hautatu Inportatu datuak.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Bete formularioa eta <annotation emphasis="bold">inportatu zure gordetako pasahitz-fitxategia.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Zure segurtasunerako, ziurtatu <annotation emphasis="bold">zure gordetako pasahitz-fitxategia ezabatzea.</annotation></string>
     <string name="need_help_check_out_import_help">Laguntza behar duzu? Begiratu <annotation link="importHelp">inportazioaren laguntza</annotation>.</string>
     <string name="import_help">inportazioaren laguntza</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Gorde esportatutako fitxategia</annotation> zure ordenagailuan erraz aurkitu dezakezun leku batean.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Hau ez da Universal Password Manager zerbitzari ezagun bat. Baliteke zure hornitzailearekin egiaztatu edo zure zerbitzaria eguneratu behar izatea.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Hau ez da Universal Password Manager zerbitzari ezagun bat. Baliteke zure hornitzailearekin egiaztatu edo zure zerbitzaria eguneratu behar izatea.</string>
     <string name="syncing_logins_loading_message">Saioak sinkronizatzen…</string>
     <string name="download_the_browser_extension">Deskargatu nabigatzailearen hedapena</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Joan bitwarden.com/download-era Universal Password Manager zure nabigatzaile gogokoenan integratzeko esperientzia ezin hobea izateko.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Joan /download-era Universal Password Manager zure nabigatzaile gogokoenan integratzeko esperientzia ezin hobea izateko.</string>
     <string name="use_the_web_app">Erabili web-aplikazioa</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Hasi saioa bitwarden.com-en zure kontua erraz kudeatzeko eta ezarpenak eguneratzeko.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Hasi saioa -en zure kontua erraz kudeatzeko eta ezarpenak eguneratzeko.</string>
     <string name="autofill_passwords">Autobeteketa pasahitzak</string>
     <string name="set_up_autofill_on_all_your_devices">Konfiguratu autobeteketa zure gailu guztietan edonon ukitu bakarrarekin saioa hasteko.</string>
     <string name="import_successful">Inportazioa arrakastatsua!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Kudeatu zure saioak edonondik Universal Password Manager-ek web eta mahaigainerako dituen tresnekin.</string>
-    <string name="bitwarden_tools">Universal Password Manager tresnak</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Kudeatu zure saioak edonondik Universal Password Manager-ek web eta mahaigainerako dituen tresnekin.</string>
+    <string name="universalpasswordmanager_tools">Universal Password Manager tresnak</string>
     <string name="got_it">Ulertuta</string>
     <string name="no_logins_were_imported">Ez da saiorik inportatu</string>
     <string name="import_error">Errorea inportatzerakoan</string>
@@ -902,7 +902,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d jakinarazpen</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Hasi saioa azkar eta erraz gailuen artean</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager-ek jakinarazi diezazuke beste gailu batetik saio-eskaera berri bat jasotzen duzun bakoitzean.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager-ek jakinarazi diezazuke beste gailu batetik saio-eskaera berri bat jasotzen duzun bakoitzean.</string>
     <string name="skip_for_now">Saltatu oraingoz</string>
     <string name="done_text">Egina</string>
     <string name="page_number_x_of_y">%1$s / %2$s</string>
@@ -954,7 +954,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 / 6</string>
     <string name="coachmark_6_of_6">6 / 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Erabili aukera hauek zure pasahitza zure kontuaren webguneak eskatzen dituen baldintzetara egokitzeko.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Pasahitz berria Universal Password Manager-en gorde ondoren, ez ahaztu zure kontuaren webgunean eguneratzea.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Pasahitz berria Universal Password Manager-en gorde ondoren, ez ahaztu zure kontuaren webgunean eguneratzea.</string>
     <string name="verify_your_identity">Egiaztatu zure identitatea</string>
     <string name="error_loading_certificate">Errorea ziurtagiria kargatzean</string>
     <string name="certificate_alias">Ziurtagiriaren goitizena</string>
@@ -965,7 +965,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">Ziurtagiri mota ez onartua</string>
     <string name="certificate_password_incorrect">Ziurtagiriaren pasahitza okerra</string>
     <string name="invalid_certificate_chain">Ziurtagiri-katea baliogabea</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Sistemako ziurtagiria erabiltzea ez da hain segurua Universal Password Manager-ekin ziurtagiria gordetzea baino. Jarraitzeak eskuragarri dauden sistemako ziurtagirien zerrenda erakutsiko du bat instalatuta badago.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Sistemako ziurtagiria erabiltzea ez da hain segurua Universal Password Manager-ekin ziurtagiria gordetzea baino. Jarraitzeak eskuragarri dauden sistemako ziurtagirien zerrenda erakutsiko du bat instalatuta badago.</string>
     <string name="link">Esteka</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Pasagiltzaren eragiketak huts egin du ostalariaren URLa ez dagoelako eskaeran.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Pasagiltzaren eragiketak huts egin du aplikazioaren sinadura baliogabea delako.</string>
@@ -1035,7 +1035,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">Ezin da ziurtagiria irakurri.</string>
     <string name="cannot_delete_your_account">Ezin da zure kontua ezabatu</string>
     <string name="cannot_delete_your_account_explanation">Ekintza hau ezin da amaitu zure kontua erakunde baten jabetzakoa delako. Jarri zure erakundearen administratzailearekin harremanetan xehetasun gehiagorako.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Kontu hau laster ezabatuko da. Hasi saioa %1$s-n Universal Password Manager erabiltzen jarraitzeko.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Kontu hau laster ezabatuko da. Hasi saioa %1$s-n Universal Password Manager erabiltzen jarraitzeko.</string>
     <string name="view_file_send">Ikusi fitxategi-bidalketa</string>
     <string name="view_text_send">Ikusi testu-bidalketa</string>
     <string name="delete_send">Ezabatu Send-a</string>
@@ -1057,7 +1057,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">Ikasi gehiago aplikazio pribilegiatuei buruz</string>
     <string name="privileged_apps">Aplikazio pribilegiatuak</string>
     <string name="unrecognized_browser">Nabigatzaile ezezaguna</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Ikasi gehiago pasagiltzak Universal Password Manager-ekin erabiltzeari buruz.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Ikasi gehiago pasagiltzak Universal Password Manager-ekin erabiltzeari buruz.</string>
     <string name="all_trusted_apps">Aplikazio fidagarri guztiak</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Ziur zaude %s-ri fidatzeari utzi nahi diozula?</string>
     <string name="installed_apps">Instalatutako aplikazioak</string>
@@ -1085,7 +1085,7 @@ Do you want to switch to this account?</string>
     <string name="information">Informazioa</string>
     <string name="otp_type">OTP mota</string>
     <string name="search_codes">Bilatu kodeak</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Ziurtatu zure kontuak Universal Password Manager Autentifikatzailearekin</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Ziurtatu zure kontuak Universal Password Manager Autentifikatzailearekin</string>
     <string name="get_verification_codes_for_all_your_accounts">Lortu egiaztapen-kodeak bi urratsetako egiaztapena onartzen duten zure kontu guztietarako.</string>
     <string name="use_your_device_camera_to_scan_codes">Erabili zure gailuaren kamera kodeak eskaneatzeko</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Eskaneatu QR kodea edozein konturen bi urratsetako egiaztapen-ezarpenetan.</string>
@@ -1106,7 +1106,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">Biometria-saiakera huts gehiegi.</string>
     <string name="version">Bertsioa</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Bertsioa: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Ikasi gehiago Universal Password Manager Autentifikatzailea erabiltzeari buruz Laguntza-zentroan.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Ikasi gehiago Universal Password Manager Autentifikatzailea erabiltzeari buruz Laguntza-zentroan.</string>
     <string name="key">Gakoa</string>
     <string name="create_verification_code">Sortu egiaztapen-kodea</string>
     <string name="key_is_required">Giltza beharrezkoa da.</string>
@@ -1119,39 +1119,39 @@ Do you want to switch to this account?</string>
     <string name="data_backup_title">Datuen babeskopia</string>
     <string name="data_backup_message">Universal Password Manager Autentifikatzailearen datuen babeskopia egiten da eta zure ohiko gailuaren babeskopietatik berreskura daitezke.</string>
     <string name="import_2fas_password_protected_not_supported">2FAS pasahitzarekin babestutako fitxategietatik inportatzea ez da onartzen. Saiatu berriro pasahitzik gabeko esportatutako fitxategi batekin.</string>
-    <string name="import_bitwarden_unsupported_format">Universal Password Manager CSV fitxategiak inportatzea ez da onartzen. Saiatu berriro esportatutako JSON fitxategi batekin.</string>
-    <string name="download_bitwarden_card_title">Deskargatu Universal Password Manager aplikazioa</string>
-    <string name="download_bitwarden_card_message">Gorde zure saio guztiak eta sinkronizatu egiaztapen-kodeak zuzenean Autentifikatzaile aplikazioarekin.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Universal Password Manager CSV fitxategiak inportatzea ez da onartzen. Saiatu berriro esportatutako JSON fitxategi batekin.</string>
+    <string name="download_universalpasswordmanager_card_title">Deskargatu Universal Password Manager aplikazioa</string>
+    <string name="download_universalpasswordmanager_card_message">Gorde zure saio guztiak eta sinkronizatu egiaztapen-kodeak zuzenean Autentifikatzaile aplikazioarekin.</string>
     <string name="download_now">Deskargatu orain</string>
-    <string name="sync_with_bitwarden_app">Sinkronizatu Universal Password Manager aplikazioarekin</string>
+    <string name="sync_with_universalpasswordmanager_app">Sinkronizatu Universal Password Manager aplikazioarekin</string>
     <string name="learn_more_link"><annotation link="learnMore">Ikasi gehiago</annotation></string>
     <string name="shared_codes_error">Ezin dira Universal Password Manager aplikaziotik kodeak sinkronizatu. Ziurtatu bi aplikazioak eguneratuta daudela. Oraindik zure kodeak atzi ditzakezu Universal Password Manager aplikazioan.</string>
-    <string name="sync_with_the_bitwarden_app">Sinkronizatu Universal Password Manager aplikazioarekin</string>
-    <string name="sync_with_bitwarden_action_card_message">Baimendu Autentifikatzaile aplikazioaren sinkronizazioa ezarpenetan zure egiaztapen-kode guztiak hemen ikusteko.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Sinkronizatu Universal Password Manager aplikazioarekin</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Baimendu Autentifikatzaile aplikazioaren sinkronizazioa ezarpenetan zure egiaztapen-kode guztiak hemen ikusteko.</string>
     <string name="take_me_to_app_settings">Eraman nazazu aplikazioaren ezarpenetara</string>
     <string name="something_went_wrong">Zerbait gaizki joan da</string>
     <string name="please_try_again">Mesedez, saiatu berriro</string>
-    <string name="copy_to_bitwarden_vault">Kopiatu Universal Password Manager kutxara</string>
+    <string name="copy_to_universalpasswordmanager_vault">Kopiatu Universal Password Manager kutxara</string>
     <string name="default_save_option">Gordetzeko aukera lehenetsia</string>
-    <string name="save_to_bitwarden">Gorde Universal Password Manager-en</string>
+    <string name="save_to_universalpasswordmanager">Gorde Universal Password Manager-en</string>
     <string name="save_here">Gorde hemen</string>
     <string name="none">Bat ere ez</string>
     <string name="default_save_options_subtitle">Hautatu non gorde nahi dituzun egiaztapen-kode berriak.</string>
     <string name="verification_code_created">Egiaztapen-kodea sortuta</string>
     <string name="choose_save_location_message">Gorde autentifikazio-giltza hau hemen, edo gehitu saio bati zure Universal Password Manager aplikazioan.</string>
     <string name="save_option_as_default">Ezarri aukera lehenetsi gisa</string>
-    <string name="account_synced_from_bitwarden_app">Universal Password Manager aplikaziotik sinkronizatutako kontua</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Universal Password Manager aplikaziotik sinkronizatutako kontua</string>
     <string name="local_codes">Kode lokalak (%1$d)</string>
     <string name="local_codes_header">Kode lokalak</string>
     <string name="required_information_missing">Beharrezko informazioa falta da</string>
-    <string name="required_information_missing_message">Beharrezko informazioa falta da (adibidez, \'zerbitzuak\' edo \'sekretua\'). Egiaztatu zure fitxategia eta saiatu berriro. Bisitatu bitwarden.com/help laguntza jasotzeko</string>
+    <string name="required_information_missing_message">Beharrezko informazioa falta da (adibidez, \'zerbitzuak\' edo \'sekretua\'). Egiaztatu zure fitxategia eta saiatu berriro. Bisitatu /help laguntza jasotzeko</string>
     <string name="file_could_not_be_processed">Fitxategia ezin izan da prozesatu</string>
-    <string name="file_could_not_be_processed_message">Fitxategia ezin izan da prozesatu. Ziurtatu JSON balioduna dela eta saiatu berriro. Laguntza behar duzu? Bisitatu bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">Fitxategia ezin izan da prozesatu. Ziurtatu JSON balioduna dela eta saiatu berriro. Laguntza behar duzu? Bisitatu /help</string>
     <string name="get_help">Jaso laguntza</string>
     <string name="error_cannot_decrypt">[errorea: ezin da desenkriptatu]</string>
     <string name="copy_error_report">Kopiatu errore-txostena</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager-ek ezin du kutxako elementu hau desenkriptatu. Kopiatu eta partekatu errore-txosten hau bezeroarentzako arretarekin datu-galera gehiago saihesteko.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager-ek ezin du kutxako elementu hau desenkriptatu. Kopiatu eta partekatu errore-txosten hau bezeroarentzako arretarekin datu-galera gehiago saihesteko.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager-ek ezin du %1$d kutxako elementu desenkriptatu. Kopiatu eta partekatu errore-txosten hau bezeroarentzako arretarekin datu-galera gehiago saihesteko.</item>
         <item quantity="other">Universal Password Manager-ek ezin du %1$d kutxako elementu desenkriptatu. Kopiatu eta partekatu errore-txosten hau bezeroarentzako arretarekin datu-galera gehiago saihesteko.</item>
     </plurals>
@@ -1190,7 +1190,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Gaitu nabigatzailearen Autobeteketa pasahitzak betetzen jarraitzeko</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Zure nabigatzailea berriki eguneratu da, eta Universal Password Manager-en autobeteketa desgaitu du. Universal Password Manager-ekin zure pasahitzak betetzen jarraitzeko, gaitu nabigatzailearen autobeteketa autobeteketaren ezarpenetan.</string>
     <string name="not_now">Ez orain</string>
-    <string name="import_from_bitwarden">Inportatu Universal Password Manager-etik</string>
+    <string name="import_from_universalpasswordmanager">Inportatu Universal Password Manager-etik</string>
     <string name="select_account">Hautatu kontua</string>
     <string name="no_accounts_available">Ez dago konturik eskuragarri</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Ez duzu inportatu dezakezun konturik. Zure erakundearen segurtasun-politikak Universal Password Manager-etik beste aplikazio batera elementuak inportatzea muga dezake.</string>
@@ -1288,7 +1288,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">Fidagarria</string>
     <string name="preview_not_available_for_files">Aurrebista ez dago eskuragarri %1$s fitxategientzat. Hala ere, deskarga dezakezu zure gailuan ikusteko.</string>
     <string name="this_file_is_too_large_to_preview">Fitxategia handiegia da aurrebistarako. Hala ere, deskarga dezakezu zure gailuan ikusteko.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager-ek ezin du fitxategi hau desenkriptatu, beraz, aurrebista ezin da erakutsi.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager-ek ezin du fitxategi hau desenkriptatu, beraz, aurrebista ezin da erakutsi.</string>
     <string name="preview_unavailable_for_this_file">Aurrebista ez dago eskuragarri fitxategi honetarako. Hala ere, deskarga dezakezu zure gailuan ikusteko.</string>
     <string name="preview_unavailable">Aurrebista ez dago eskuragarri</string>
     <string name="download_attachment">Deskargatu eranskina</string>
@@ -1330,7 +1330,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / urte</string>
     <string name="billing_rate_per_month">%1$s / hilabete</string>
     <string name="manage_plan">Kudeatu plana</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Kudeatu zure harpidetza-plana Universal Password Manager web-aplikazioan.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Kudeatu zure harpidetza-plana Universal Password Manager web-aplikazioan.</string>
     <string name="cancel_premium">Utzi Premium</string>
     <string name="subscription_status_active">Aktiboa</string>
     <string name="subscription_status_canceled">Bertan behera utzita</string>
@@ -1421,8 +1421,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">Sare lokaleko sarbidea beharrezkoa</string>
     <string name="ask_again_later">Galdetu berriro geroago</string>
     <string name="enable_local_network_access">Gaitu sare lokaleko sarbidea</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager-ek sare lokaleko sarbidea behar du zure zerbitzariarekin sinkronizatzeko. Baimen hau gabe, aplikazioa ezin izango da konektatu.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Baimen hau gabe, Universal Password Manager ezin izango da konektatu eta zure zerbitzariarekin sinkronizatu. Hau zure gailuaren ezarpenetan gaitu dezakezu.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager-ek sare lokaleko sarbidea behar du zure zerbitzariarekin sinkronizatzeko. Baimen hau gabe, aplikazioa ezin izango da konektatu.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Baimen hau gabe, Universal Password Manager ezin izango da konektatu eta zure zerbitzariarekin sinkronizatu. Hau zure gailuaren ezarpenetan gaitu dezakezu.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Zure eskaera eten egin da aplikazioak sare lokaleko sarbidea behar duelako. Hau zure gailuaren ezarpenetan gaitu dezakezu.</string>
     <string name="continue_to_stripe">Stripe-ra jarraitu?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Stripe-ra eramango zaituzte zure harpidetza bertan behera uzteko.</string>

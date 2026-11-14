@@ -28,7 +28,7 @@ import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.components.button.UniversalTextButton
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.composition.LocalClock
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
@@ -99,7 +99,7 @@ fun UniversalDatePickerDialog(
             }
             .wrapContentHeight(),
     ) {
-        val colors = bitwardenDatePickerColors()
+        val colors = universalpasswordmanagerDatePickerColors()
         Surface(
             modifier = Modifier
                 // The Date picker has specific requirements in order to look correct.
@@ -153,7 +153,7 @@ fun UniversalDatePickerDialog(
 }
 
 @Composable
-private fun bitwardenDatePickerColors(): DatePickerColors = DatePickerColors(
+private fun universalpasswordmanagerDatePickerColors(): DatePickerColors = DatePickerColors(
     containerColor = UniversalTheme.colorScheme.background.primary,
     titleContentColor = UniversalTheme.colorScheme.text.secondary,
     headlineContentColor = UniversalTheme.colorScheme.text.primary,
@@ -178,7 +178,7 @@ private fun bitwardenDatePickerColors(): DatePickerColors = DatePickerColors(
     dividerColor = UniversalTheme.colorScheme.stroke.divider,
     dayInSelectionRangeContainerColor = UniversalTheme.colorScheme.filledButton.background,
     dayInSelectionRangeContentColor = UniversalTheme.colorScheme.text.primary,
-    dateTextFieldColors = bitwardenTextFieldColors(
+    dateTextFieldColors = universalpasswordmanagerTextFieldColors(
         focusedIndicatorColor = UniversalTheme.colorScheme.outlineButton.border,
         unfocusedIndicatorColor = UniversalTheme.colorScheme.outlineButton.border,
         disabledIndicatorColor = UniversalTheme.colorScheme.outlineButton.border,

@@ -31,7 +31,7 @@ class SendViewExtensionsTest {
     @Test
     fun `toViewSendViewStateContent should create content with file data`() {
         val fileSendView = createMockSendView(number = 1, type = SendType.FILE)
-        val baseWebSendUrl = "https://send.bitwarden.com/#"
+        val baseWebSendUrl = "https://send./#"
         val sendUrl = "send_url"
         every { fileSendView.toSendUrl(baseWebSendUrl = baseWebSendUrl) } returns sendUrl
 
@@ -60,7 +60,7 @@ class SendViewExtensionsTest {
     @Test
     fun `toViewSendViewStateContent should create content with text data`() {
         val fileSendView = createMockSendView(number = 2, type = SendType.TEXT)
-        val baseWebSendUrl = "https://send.bitwarden.com/#"
+        val baseWebSendUrl = "https://send./#"
         val sendUrl = "send_url"
         every { fileSendView.toSendUrl(baseWebSendUrl = baseWebSendUrl) } returns sendUrl
 

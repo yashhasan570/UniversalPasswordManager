@@ -126,7 +126,7 @@ class MigrateToMyItemsViewModel @Inject constructor(
     private fun handleHelpLinkClicked() {
         sendEvent(
             MigrateToMyItemsEvent.LaunchUri(
-                uri = "https://bitwarden.com/help/transfer-ownership/",
+                uri = "https:///help/transfer-ownership/",
             ),
         )
     }

@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for sliders.
  */
 @Composable
-fun bitwardenSliderColors(): SliderColors = SliderColors(
+fun universalpasswordmanagerSliderColors(): SliderColors = SliderColors(
     thumbColor = UniversalTheme.colorScheme.sliderButton.knobBackground,
     activeTrackColor = UniversalTheme.colorScheme.sliderButton.filled,
     activeTickColor = Color.Transparent,

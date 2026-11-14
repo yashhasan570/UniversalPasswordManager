@@ -23,7 +23,7 @@ class NetworkConfigManagerImpl(
     authRepository: AuthRepository,
     environmentRepository: EnvironmentRepository,
     serverConfigRepository: ServerConfigRepository,
-    bitwardenServiceClient: UniversalServiceClient,
+    universalpasswordmanagerServiceClient: UniversalServiceClient,
     dispatcherManager: DispatcherManager,
 ) : NetworkConfigManager {
 
@@ -42,6 +42,6 @@ class NetworkConfigManagerImpl(
                 serverConfigRepository.getServerConfig(forceRefresh = true)
             }
             .launchIn(collectionScope)
-        bitwardenServiceClient.setRefreshTokenProvider(authRepository)
+        universalpasswordmanagerServiceClient.setRefreshTokenProvider(authRepository)
     }
 }

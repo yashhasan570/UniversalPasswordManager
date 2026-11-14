@@ -931,7 +931,7 @@ private val DEFAULT_USER_STATE = UserState(
         UserState.Account(
             userId = "activeUserId",
             name = "Active User",
-            email = "active@bitwarden.com",
+            email = "active@",
             avatarColorHex = "#aa00aa",
             environment = Environment.Prod.Us,
             isPremium = true,
@@ -962,7 +962,7 @@ private val DEFAULT_USER_STATE = UserState(
         UserState.Account(
             userId = "activeUserId2",
             name = "Active User Two",
-            email = "active+two@bitwarden.com",
+            email = "active+two@",
             avatarColorHex = "#aa00aa",
             environment = Environment.Prod.Us,
             isPremium = true,

@@ -16,30 +16,30 @@ import com.universalpasswordmanager.ui.platform.components.snackbar.model.Univer
 /**
  * A custom Universal-themed snackbar.
  *
- * @param bitwardenHostState The state of this snackbar.
+ * @param universalpasswordmanagerHostState The state of this snackbar.
  * @param modifier The [Modifier] to be applied to the [SnackbarHost].
  * @param windowInsets The insets to be applied to this composable. By default this will account for
  * the insets that are on the sides and bottom of the screen (Display Cutout and Navigation bars).
  */
 @Composable
 fun UniversalSnackbarHost(
-    bitwardenHostState: UniversalSnackbarHostState,
+    universalpasswordmanagerHostState: UniversalSnackbarHostState,
     modifier: Modifier = Modifier,
     windowInsets: WindowInsets = WindowInsets.displayCutout
         .only(sides = WindowInsetsSides.Horizontal + WindowInsetsSides.Bottom)
         .union(insets = WindowInsets.navigationBars),
 ) {
     SnackbarHost(
-        hostState = bitwardenHostState.snackbarHostState,
+        hostState = universalpasswordmanagerHostState.snackbarHostState,
         modifier = modifier
             .windowInsetsPadding(insets = windowInsets)
             .consumeWindowInsets(insets = windowInsets),
     ) { snackbarData ->
         val message = snackbarData.visuals.message
-        val currentCustomSnackbarData = bitwardenHostState.currentSnackbarData
+        val currentCustomSnackbarData = universalpasswordmanagerHostState.currentSnackbarData
         if (currentCustomSnackbarData?.key == message) {
             UniversalSnackbar(
-                bitwardenSnackbarData = currentCustomSnackbarData,
+                universalpasswordmanagerSnackbarData = currentCustomSnackbarData,
                 onDismiss = snackbarData::dismiss,
                 onActionClick = snackbarData::performAction,
             )

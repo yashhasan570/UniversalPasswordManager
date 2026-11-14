@@ -75,9 +75,9 @@
     <string name="yes">ใช่</string>
     <string name="account">บัญชี</string>
     <string name="account_created_success">สร้างบัญชีใหม่ของคุณแล้ว!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">ตั้งค่า Universal Password Manager เป็นผู้ให้บริการพาสคีย์ในการตั้งค่าอุปกรณ์</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">ตั้งค่า Universal Password Manager เป็นผู้ให้บริการพาสคีย์ในการตั้งค่าอุปกรณ์</string>
     <string name="avoid_ambiguous_characters">หลีกเลี่ยงอักขระที่ไม่ชัดเจน</string>
-    <string name="bitwarden_autofill_service">Universal Password Manager บริการกรอกข้อมูลอัตโนมัติ</string>
+    <string name="universalpasswordmanager_autofill_service">Universal Password Manager บริการกรอกข้อมูลอัตโนมัติ</string>
     <string name="change_master_password">เปลี่ยนรหัสผ่านหลัก</string>
     <string name="close">ปิด</string>
     <string name="close_app">ปิดแอป</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">ตั้งค่าการหมดเวลาเซสชันเป็น “ออกจากระบบ” หรือไม่</string>
     <string name="vault_timeout_log_out_confirmation_message">เมื่อครบกำหนดเวลา ระบบจะออกจากระบบโดยอัตโนมัติ คุณต้องเชื่อมต่ออินเทอร์เน็ตเพื่อเข้าสู่ระบบและเข้าถึงตู้นิรภัยอีกครั้ง การตั้งค่าและ PIN ในอุปกรณ์นี้จะไม่เปลี่ยนแปลง</string>
     <string name="logging_in">กำลังเข้าสู่ระบบ…</string>
-    <string name="login_to_bitwarden">เข้าสู่ระบบ Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">เข้าสู่ระบบ Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">การยืนยันรหัสผ่านไม่ถูกต้อง</string>
     <string name="master_password_description">รหัสผ่านหลักคือรหัสผ่านที่คุณใช้เข้าถึงตู้นิรภัย สิ่งสำคัญคือห้ามลืมรหัสผ่านหลักเด็ดขาด เพราะไม่มีทางกู้คืนรหัสผ่านได้หากคุณลืม</string>
     <string name="master_password_hint">คำใบ้รหัสผ่านหลัก (ไม่บังคับ)</string>
@@ -168,14 +168,14 @@
     <string name="view_identity">ดูข้อมูลระบุตัวตน</string>
     <string name="view_note">ดูโน้ต</string>
     <string name="view_ssh_key">ดูคีย์ SSH</string>
-    <string name="web_vault">bitwarden Web Vault</string>
+    <string name="web_vault">universalpasswordmanager Web Vault</string>
     <string name="items">รายการ</string>
     <string name="items_for_uri">รายการสำหรับ %1$s</string>
     <string name="no_items_for_uri">ไม่มีรายการ %1$s ในห้องนิรภัยของคุณ</string>
     <string name="no_items_for_vault">ไม่มีรายการในตู้นิรภัยที่ตรงกับ “%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">ค้นหาข้อมูลเข้าสู่ระบบหรือเพิ่มรายการใหม่</string>
     <string name="disabled">ปิดการใช้งาน</string>
-    <string name="bitwarden_autofill_service_alert2">วิธีที่ง่ายที่สุดในการเพิ่มข้อมูลเข้าสู่ระบบใหม่ลงในตู้นิรภัยคือผ่านบริการป้อนอัตโนมัติของ Universal Password Manager เรียนรู้เพิ่มเติมเกี่ยวกับการใช้บริการนี้ได้ที่หน้า “การตั้งค่า”</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">วิธีที่ง่ายที่สุดในการเพิ่มข้อมูลเข้าสู่ระบบใหม่ลงในตู้นิรภัยคือผ่านบริการป้อนอัตโนมัติของ Universal Password Manager เรียนรู้เพิ่มเติมเกี่ยวกับการใช้บริการนี้ได้ที่หน้า “การตั้งค่า”</string>
     <string name="autofill_noun">การป้อนอัตโนมัติ</string>
     <string name="autofill_verb">ป้อนอัตโนมัติ</string>
     <string name="autofill_or_view">คุณต้องการกรอกข้อมูลอัตโนมัติหรือดูรายการนี้หรือไม่?</string>
@@ -227,7 +227,7 @@
     <string name="environment_saved">มีการบันทึก URL ของสภาพแวดล้อมแล้ว</string>
     <string name="identity_url">URL เซิร์ฟเวอร์ข้อมูลประจำตัว</string>
     <string name="self_hosted_environment">จัดสภาพแวดล้อมโฮสต์ด้วยตนเอง</string>
-    <string name="self_hosted_environment_footer">Specify the base URL of your on-premise hosted bitwarden installation.</string>
+    <string name="self_hosted_environment_footer">Specify the base URL of your on-premise hosted universalpasswordmanager installation.</string>
     <string name="server_url">URL ของเซิร์ฟเวอร์</string>
     <string name="web_vault_url">URL เซิร์ฟเวอร์ของเว็บนิรภัย</string>
     <string name="custom_fields">เขตข้อมูลแบบระบุเอง</string>
@@ -297,8 +297,8 @@
     <string name="no_items_folder">ไม่มีรายการในโฟลเดอร์นี้</string>
     <string name="no_items_trash">ไม่มีรายการในถังขยะ</string>
     <string name="autofill_accessibility_summary">ช่วยกรอกชื่อผู้ใช้และรหัสผ่านในแอปอื่นและบนเว็บ</string>
-    <string name="autofill_service_description">The bitwarden auto-fill service uses the Android Autofill Framework to assist in filling logins, credit cards, and identity information into other apps on your device.</string>
-    <string name="bitwarden_autofill_go_to_settings">เราไม่สามารถเปิดเมนูการตั้งค่าการป้อนข้อมูลอัตโนมัติของ Android ให้คุณโดยอัตโนมัติ คุณสามารถไปที่เมนูการตั้งค่าได้ด้วยตัวเองจาก การตั้งค่า Android &gt; ระบบ &gt; ภาษาและการป้อนข้อมูล &gt; ขั้นสูง &gt; บริการป้อนข้อมูลอัตโนมัติ</string>
+    <string name="autofill_service_description">The universalpasswordmanager auto-fill service uses the Android Autofill Framework to assist in filling logins, credit cards, and identity information into other apps on your device.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">เราไม่สามารถเปิดเมนูการตั้งค่าการป้อนข้อมูลอัตโนมัติของ Android ให้คุณโดยอัตโนมัติ คุณสามารถไปที่เมนูการตั้งค่าได้ด้วยตัวเองจาก การตั้งค่า Android &gt; ระบบ &gt; ภาษาและการป้อนข้อมูล &gt; ขั้นสูง &gt; บริการป้อนข้อมูลอัตโนมัติ</string>
     <string name="custom_field_name">ชื่อเขตข้อมูล ที่กำหนดเอง</string>
     <string name="field_type_boolean">ค่าบูลีน</string>
     <string name="field_type_hidden">ซ่อน</string>
@@ -645,14 +645,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">เพิ่งเคยใช้ Universal Password Manager ใช่ไหม</string>
+    <string name="new_to_universalpasswordmanager">เพิ่งเคยใช้ Universal Password Manager ใช่ไหม</string>
     <string name="get_master_passwordword_hint">รับคำใบ้รหัสผ่านหลัก</string>
     <string name="logging_in_as_x_on_y">กำลังเข้าสู่ระบบในชื่อ %1$s เมื่อ %2$s</string>
     <string name="not_you">ไม่ใช่คุณหรือ</string>
     <string name="log_in_with_master_password">เข้าสู่ระบบด้วยรหัสผ่านหลัก</string>
     <string name="log_in_initiated">เริ่มการเข้าสู่ระบบแล้ว</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">ส่งการแจ้งเตือนอีกครั้ง</string>
     <string name="view_all_login_options">ดูตัวเลือกการเข้าสู่ระบบทั้งหมด</string>
@@ -710,7 +710,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">เลือกคลังข้อมูล</string>
     <string name="appearance">รูปลักษณ์</string>
     <string name="account_security">ความปลอดภัยของบัญชี</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">ซิงค์ตอนนี้</string>
     <string name="unlock_options">ตัวเลือกการปลดล็อก</string>
     <string name="session_timeout">เวลาหมดอายุเซสชัน</string>
@@ -727,10 +727,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">ดำเนินการต่อไปยังการตั้งค่าอุปกรณ์หรือไม่</string>
     <string name="two_step_login_description_long">ทำให้บัญชีของคุณปลอดภัยยิ่งขึ้นโดยการตั้งค่าการยืนยันตัวตนสองขั้นตอนในเว็บแอป Universal Password Manager</string>
     <string name="change_master_password_description_long">คุณสามารถเปลี่ยนรหัสผ่านหลักได้ในเว็บแอป Universal Password Manager</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">เรียนรู้เพิ่มเติมเกี่ยวกับวิธีใช้ Universal Password Manager ได้ที่ศูนย์ช่วยเหลือ</string>
-    <string name="privacy_policy_description_long">ดูนโยบายความเป็นส่วนตัวของเราได้ที่ bitwarden.com</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">สำรวจฟีเจอร์เพิ่มเติมของบัญชี Universal Password Manager ของคุณได้บนเว็บแอป</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager อนุญาตให้คุณแชร์รายการในตู้นิรภัยกับผู้อื่นโดยใช้องค์กร เรียนรู้เพิ่มเติมได้ที่เว็บไซต์ bitwarden.com</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">เรียนรู้เพิ่มเติมเกี่ยวกับวิธีใช้ Universal Password Manager ได้ที่ศูนย์ช่วยเหลือ</string>
+    <string name="privacy_policy_description_long">ดูนโยบายความเป็นส่วนตัวของเราได้ที่ </string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">สำรวจฟีเจอร์เพิ่มเติมของบัญชี Universal Password Manager ของคุณได้บนเว็บแอป</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager อนุญาตให้คุณแชร์รายการในตู้นิรภัยกับผู้อื่นโดยใช้องค์กร เรียนรู้เพิ่มเติมได้ที่เว็บไซต์ </string>
     <string name="created_x">สร้างเมื่อ %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">องค์กรของคุณกำหนดให้คุณต้องตั้งรหัสผ่านหลัก</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">ตั้งค่าตัวเลือกการปลดล็อกเพื่อเปลี่ยนการทำงานเมื่อตู้นิรภัยหมดเวลา</string>
@@ -740,8 +740,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">จำเป็นต้องใช้ Duo สำหรับการยืนยันตัวตนสองขั้นตอนของบัญชีคุณ</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">ทำตามขั้นตอนจาก Duo เพื่อเสร็จสิ้นการเข้าสู่ระบบ</string>
     <string name="launch_duo">เปิด Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">พาสคีย์ของคุณจะถูกบันทึกไว้ในตู้นิรภัย Universal Password Manager สำหรับ %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">จะบันทึกรหัสผ่านของคุณลงในตู้นิรภัย Universal Password Manager สำหรับ %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">พาสคีย์ของคุณจะถูกบันทึกไว้ในตู้นิรภัย Universal Password Manager สำหรับ %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">จะบันทึกรหัสผ่านของคุณลงในตู้นิรภัย Universal Password Manager สำหรับ %1$s</string>
     <string name="passkeys_not_supported_for_this_app">แอปนี้ไม่รองรับพาสคีย์</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">การดำเนินการพาสคีย์ล้มเหลวเนื่องจากเบราว์เซอร์ไม่มีสิทธิ์</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">การดำเนินการพาสคีย์ล้มเหลวเนื่องจากลายเซ็นเบราว์เซอร์ไม่ตรงกัน</string>
@@ -767,7 +767,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">ตรวจสอบอีเมลของคุณ</string>
     <string name="open_email_app">เปิดแอปอีเมล</string>
     <string name="email_verified">ยืนยันอีเมลแล้ว</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">รับอีเมลข่าวสาร คำแนะนำ และโอกาสในการวิจัยจาก Universal Password Manager <annotation link="unsubscribe">เลิกรับข่าวสาร</annotation>ได้ตลอดเวลา</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">รับอีเมลข่าวสาร คำแนะนำ และโอกาสในการวิจัยจาก Universal Password Manager <annotation link="unsubscribe">เลิกรับข่าวสาร</annotation>ได้ตลอดเวลา</string>
     <string name="security_prioritized">ความปลอดภัยต้องมาก่อน</string>
     <string name="welcome_message_1">บันทึกข้อมูลเข้าสู่ระบบ บัตร และข้อมูลระบุตัวตนไว้ในตู้นิรภัยที่ปลอดภัย Universal Password Manager ใช้การเข้ารหัสแบบ Zero-knowledge และต้นทางถึงปลายทางเพื่อปกป้องสิ่งที่สำคัญสำหรับคุณ</string>
     <string name="welcome_message_2">ตั้งค่าการปลดล็อกด้วยไบโอเมตริกและการป้อนอัตโนมัติเพื่อเข้าสู่ระบบบัญชีของคุณโดยไม่ต้องพิมพ์แม้แต่ตัวอักษรเดียว</string>
@@ -805,8 +805,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">เลือกลิงก์ในอีเมลเพื่อยืนยันที่อยู่อีเมลและดำเนินการสร้างบัญชีต่อ</string>
     <string name="change_email_address">เปลี่ยนที่อยู่อีเมล</string>
     <string name="next">ถัดไป</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager ไม่สามารถกู้คืนรหัสผ่านหลักที่สูญหายหรือลืมได้</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager ไม่สามารถรีเซ็ตรหัสผ่านหลักที่สูญหายหรือลืมได้</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager ไม่สามารถกู้คืนรหัสผ่านหลักที่สูญหายหรือลืมได้</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager ไม่สามารถรีเซ็ตรหัสผ่านหลักที่สูญหายหรือลืมได้</string>
     <string name="choose_your_master_password">เลือกรหัสผ่านหลักของคุณ</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">เลือกรหัสผ่านที่ไม่ซ้ำใครและรัดกุมเพื่อรักษาความปลอดภัยข้อมูลของคุณ</string>
     <plurals name="minimum_characters">
@@ -816,13 +816,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">โปรดเริ่มการลงทะเบียนใหม่หรือลองเข้าสู่ระบบ คุณอาจมีบัญชีอยู่แล้ว</string>
     <string name="restart_registration">เริ่มการลงทะเบียนใหม่</string>
     <string name="authenticator_sync">การซิงค์แอปยืนยันตัวตน</string>
-    <string name="allow_bitwarden_authenticator_syncing">อนุญาตการซิงค์แอปยืนยันตัวตน</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">อนุญาตการซิงค์แอปยืนยันตัวตน</string>
     <string name="there_was_an_issue_validating_the_registration_token">เกิดปัญหาในการตรวจสอบโทเค็นการลงทะเบียน</string>
     <string name="turn_on_autofill">เปิดใช้งานป้อนอัตโนมัติ</string>
     <string name="autofill_setup">การตั้งค่าการป้อนอัตโนมัติ</string>
     <string name="turn_on_browser_autofill_integration">เปิดใช้งานการรวมการป้อนอัตโนมัติในเบราว์เซอร์</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">คุณกำลังใช้เบราว์เซอร์ที่ต้องใช้สิทธิ์พิเศษเพื่อให้ Universal Password Manager ป้อนรหัสผ่านอัตโนมัติได้</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">คุณกำลังใช้เบราว์เซอร์ที่ต้องใช้สิทธิ์พิเศษเพื่อให้  Universal Password Manager ป้อนรหัสผ่านอัตโนมัติได้</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">คุณกำลังใช้เบราว์เซอร์ที่ต้องใช้สิทธิ์พิเศษเพื่อให้ Universal Password Manager ป้อนรหัสผ่านอัตโนมัติได้</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">คุณกำลังใช้เบราว์เซอร์ที่ต้องใช้สิทธิ์พิเศษเพื่อให้  Universal Password Manager ป้อนรหัสผ่านอัตโนมัติได้</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">คุณกำลังใช้เบราว์เซอร์ที่ต้องใช้สิทธิ์พิเศษเพื่อให้ Universal Password Manager ป้อนรหัสผ่านอัตโนมัติได้ เปิดใช้งานการรวมการป้อนอัตโนมัติที่คุณต้องการด้านล่าง</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">คุณกำลังใช้เบราว์เซอร์ที่ต้องใช้สิทธิ์พิเศษเพื่อให้ Universal Password Manager ป้อนรหัสผ่านอัตโนมัติได้ เปิดใช้งานการป้อนอัตโนมัติสำหรับเบราว์เซอร์ที่ติดตั้งทั้งหมดเพื่อดำเนินการต่อ</string>
     <string name="use_autofill_to_log_into_your_accounts">ใช้การป้อนอัตโนมัติเพื่อเข้าสู่ระบบบัญชีของคุณด้วยการแตะเพียงครั้งเดียว</string>
@@ -830,7 +830,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">เปิดใช้งานป้อนอัตโนมัติภายหลังหรือไม่</string>
     <string name="turn_on_browser_autofill_integration_later">เปิดใช้งานการรวมการป้อนอัตโนมัติในเบราว์เซอร์ภายหลังหรือไม่</string>
     <string name="return_to_complete_this_step_anytime_in_settings">คุณสามารถกลับมาทำขั้นตอนนี้ให้เสร็จสิ้นได้ทุกเมื่อในการตั้งค่า</string>
-    <string name="what_bitwarden_has_to_offer">ตอนนี้คุณสามารถสำรวจทุกสิ่งที่ Universal Password Manager มีให้และเริ่มจัดการรหัสผ่านของคุณอย่างปลอดภัย</string>
+    <string name="what_universalpasswordmanager_has_to_offer">ตอนนี้คุณสามารถสำรวจทุกสิ่งที่ Universal Password Manager มีให้และเริ่มจัดการรหัสผ่านของคุณอย่างปลอดภัย</string>
     <string name="youre_all_set">เรียบร้อยแล้ว!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">เกิดข้อผิดพลาดในการเชื่อมต่อกับบริการ Duo ใช้วิธีการยืนยันตัวตนสองขั้นตอนอื่น หรือติดต่อ Duo เพื่อขอความช่วยเหลือ</string>
     <string name="master_password_hint_not_specified">คำใบ้รหัสผ่านหลัก</string>
@@ -859,29 +859,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">ขั้นตอนที่ 1 จาก 3</string>
     <string name="export_your_saved_logins">ส่งออกข้อมูลเข้าสู่ระบบที่บันทึกไว้ของคุณ</string>
     <string name="delete_this_file_after_import_is_complete">คุณจะลบไฟล์นี้หลังจากนำเข้าเสร็จสมบูรณ์</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">บนคอมพิวเตอร์ ให้เปิดแท็บเบราว์เซอร์ใหม่และ <annotation emphasis="bold">ไปที่ <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">เข้าสู่ระบบเว็บแอป Universal Password Manager</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">บนคอมพิวเตอร์ ให้เปิดแท็บเบราว์เซอร์ใหม่และ <annotation emphasis="bold">ไปที่ <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">เข้าสู่ระบบเว็บแอป Universal Password Manager</string>
     <string name="step_2_of_3">ขั้นตอนที่ 2 จาก 3</string>
-    <string name="log_in_to_bitwarden">เข้าสู่ระบบ Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">เข้าสู่ระบบ Universal Password Manager</string>
     <string name="step_3_of_3">ขั้นตอนที่ 3 จาก 3</string>
-    <string name="import_logins_to_bitwarden">นำเข้าข้อมูลเข้าสู่ระบบไปยัง Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">ในเมนูการนำทางของ Universal Password Manager <annotation emphasis="bold">ให้หาเมนูเครื่องมือ</annotation> และ <annotation emphasis="bold">เลือก นำเข้าข้อมูล</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">นำเข้าข้อมูลเข้าสู่ระบบไปยัง Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">ในเมนูการนำทางของ Universal Password Manager <annotation emphasis="bold">ให้หาเมนูเครื่องมือ</annotation> และ <annotation emphasis="bold">เลือก นำเข้าข้อมูล</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">กรอกแบบฟอร์มและ <annotation emphasis="bold">นำเข้าไฟล์รหัสผ่านที่บันทึกไว้ของคุณ</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">เพื่อความปลอดภัย โปรดแน่ใจว่าได้ <annotation emphasis="bold">ลบไฟล์รหัสผ่านที่บันทึกไว้ของคุณ</annotation></string>
     <string name="need_help_check_out_import_help">ต้องการความช่วยเหลือหรือไม่ ดู<annotation link="importHelp">วิธีนำเข้า</annotation></string>
     <string name="import_help">นำเข้าความช่วยเหลือ</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">บันทึกไฟล์ที่ส่งออก</annotation> ไว้ในตำแหน่งบนคอมพิวเตอร์ที่คุณหาได้ง่าย</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">นี่ไม่ใช่เซิร์ฟเวอร์ Universal Password Manager ที่รู้จัก คุณอาจต้องตรวจสอบกับผู้ให้บริการของคุณหรืออัปเดตเซิร์ฟเวอร์</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">นี่ไม่ใช่เซิร์ฟเวอร์ Universal Password Manager ที่รู้จัก คุณอาจต้องตรวจสอบกับผู้ให้บริการของคุณหรืออัปเดตเซิร์ฟเวอร์</string>
     <string name="syncing_logins_loading_message">กำลังซิงค์ข้อมูลเข้าสู่ระบบ…</string>
     <string name="download_the_browser_extension">ดาวน์โหลดส่วนขยายเบราว์เซอร์</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">ไปที่ bitwarden.com/download เพื่อรวม Universal Password Manager เข้ากับเบราว์เซอร์โปรดของคุณเพื่อประสบการณ์ที่ราบรื่น</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">ไปที่ /download เพื่อรวม Universal Password Manager เข้ากับเบราว์เซอร์โปรดของคุณเพื่อประสบการณ์ที่ราบรื่น</string>
     <string name="use_the_web_app">ใช้เว็บแอป</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">เข้าสู่ระบบที่ bitwarden.com เพื่อจัดการบัญชีและอัปเดตการตั้งค่าของคุณได้อย่างง่ายดาย</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">เข้าสู่ระบบที่  เพื่อจัดการบัญชีและอัปเดตการตั้งค่าของคุณได้อย่างง่ายดาย</string>
     <string name="autofill_passwords">ป้อนรหัสผ่านอัตโนมัติ</string>
     <string name="set_up_autofill_on_all_your_devices">ตั้งค่าการป้อนอัตโนมัติบนอุปกรณ์ทั้งหมดของคุณเพื่อเข้าสู่ระบบด้วยการแตะเพียงครั้งเดียวจากทุกที่</string>
     <string name="import_successful">นำเข้าสำเร็จ!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">จัดการข้อมูลเข้าสู่ระบบของคุณได้จากทุกที่ด้วยเครื่องมือ Universal Password Manager สำหรับเว็บและเดสก์ท็อป</string>
-    <string name="bitwarden_tools">เครื่องมือ Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">จัดการข้อมูลเข้าสู่ระบบของคุณได้จากทุกที่ด้วยเครื่องมือ Universal Password Manager สำหรับเว็บและเดสก์ท็อป</string>
+    <string name="universalpasswordmanager_tools">เครื่องมือ Universal Password Manager</string>
     <string name="got_it">รับทราบ</string>
     <string name="no_logins_were_imported">ไม่มีข้อมูลเข้าสู่ระบบที่ถูกนำเข้า</string>
     <string name="import_error">ข้อผิดพลาดในการนำเข้า</string>
@@ -898,7 +898,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d การแจ้งเตือน</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">เข้าสู่ระบบอย่างรวดเร็วและง่ายดายข้ามอุปกรณ์</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager สามารถแจ้งเตือนคุณทุกครั้งที่คุณได้รับคำขอเข้าสู่ระบบใหม่จากอุปกรณ์อื่น</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager สามารถแจ้งเตือนคุณทุกครั้งที่คุณได้รับคำขอเข้าสู่ระบบใหม่จากอุปกรณ์อื่น</string>
     <string name="skip_for_now">ข้ามไปก่อน</string>
     <string name="done_text">เสร็จสิ้น</string>
     <string name="page_number_x_of_y">%1$s จาก %2$s</string>
@@ -950,7 +950,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 จาก 6</string>
     <string name="coachmark_6_of_6">6 จาก 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">ใช้ตัวเลือกเหล่านี้เพื่อปรับรหัสผ่านให้ตรงตามข้อกำหนดของเว็บไซต์บัญชี</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">หลังจากบันทึกรหัสผ่านใหม่ลงใน Universal Password Manager แล้ว อย่าลืมอัปเดตที่เว็บไซต์บัญชีของคุณด้วย</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">หลังจากบันทึกรหัสผ่านใหม่ลงใน Universal Password Manager แล้ว อย่าลืมอัปเดตที่เว็บไซต์บัญชีของคุณด้วย</string>
     <string name="verify_your_identity">ยืนยันตัวตนของคุณ</string>
     <string name="error_loading_certificate">เกิดข้อผิดพลาดในการโหลดใบรับรอง</string>
     <string name="certificate_alias">นามแฝงใบรับรอง</string>
@@ -961,7 +961,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">ไม่รองรับประเภทใบรับรอง</string>
     <string name="certificate_password_incorrect">รหัสผ่านใบรับรองไม่ถูกต้อง</string>
     <string name="invalid_certificate_chain">ห่วงโซ่ใบรับรองไม่ถูกต้อง</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">การใช้ใบรับรองระบบมีความปลอดภัยน้อยกว่าการจัดเก็บใบรับรองไว้กับ Universal Password Manager การดำเนินการต่อจะแสดงรายการใบรับรองระบบที่มีอยู่หากมีการติดตั้งไว้แล้ว</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">การใช้ใบรับรองระบบมีความปลอดภัยน้อยกว่าการจัดเก็บใบรับรองไว้กับ Universal Password Manager การดำเนินการต่อจะแสดงรายการใบรับรองระบบที่มีอยู่หากมีการติดตั้งไว้แล้ว</string>
     <string name="link">ลิงก์</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">การดำเนินการพาสคีย์ล้มเหลวเนื่องจากไม่มี URL โฮสต์ในคำขอ</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">การดำเนินการพาสคีย์ล้มเหลวเนื่องจากลายเซ็นแอปไม่ถูกต้อง</string>
@@ -1031,7 +1031,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">ไม่สามารถอ่านใบรับรองได้</string>
     <string name="cannot_delete_your_account">ไม่สามารถลบบัญชีของคุณได้</string>
     <string name="cannot_delete_your_account_explanation">การกระทำนี้ไม่สามารถทำได้เนื่องจากบัญชีของคุณเป็นขององค์กร ติดต่อผู้ดูแลระบบองค์กรของคุณสำหรับรายละเอียดเพิ่มเติม</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">บัญชีนี้จะถูกลบในเร็ว ๆ นี้ เข้าสู่ระบบที่ %1$s เพื่อใช้ Universal Password Manager ต่อไป</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">บัญชีนี้จะถูกลบในเร็ว ๆ นี้ เข้าสู่ระบบที่ %1$s เพื่อใช้ Universal Password Manager ต่อไป</string>
     <string name="view_file_send">ดูไฟล์ Send</string>
     <string name="view_text_send">ดูข้อความ Send</string>
     <string name="delete_send">ลบ Send</string>
@@ -1053,7 +1053,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">เรียนรู้เพิ่มเติมเกี่ยวกับแอปที่มีสิทธิ์พิเศษ</string>
     <string name="privileged_apps">แอปที่มีสิทธิ์พิเศษ</string>
     <string name="unrecognized_browser">เบราว์เซอร์ที่ไม่รู้จัก</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">เรียนรู้เพิ่มเติมเกี่ยวกับการใช้พาสคีย์กับ Universal Password Manager</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">เรียนรู้เพิ่มเติมเกี่ยวกับการใช้พาสคีย์กับ Universal Password Manager</string>
     <string name="all_trusted_apps">แอปที่เชื่อถือทั้งหมด</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">ยืนยันที่จะเลิกเชื่อถือ %s หรือไม่</string>
     <string name="installed_apps">แอปที่ติดตั้งแล้ว</string>
@@ -1080,7 +1080,7 @@ Do you want to switch to this account?</string>
     <string name="information">ข้อมูล</string>
     <string name="otp_type">ประเภท OTP</string>
     <string name="search_codes">ค้นหารหัส</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">รักษาความปลอดภัยบัญชีของคุณด้วย Bitwarden Authenticator</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">รักษาความปลอดภัยบัญชีของคุณด้วย Universal Password Manager Authenticator</string>
     <string name="get_verification_codes_for_all_your_accounts">รับรหัสยืนยันสำหรับทุกบัญชีของคุณที่รองรับการยืนยันตัวตนแบบ 2 ขั้นตอน</string>
     <string name="use_your_device_camera_to_scan_codes">ใช้กล้องของอุปกรณ์เพื่อสแกนรหัส</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">สแกน QR Code ในการตั้งค่าการยืนยันตัวตนแบบ 2 ขั้นตอนสำหรับบัญชีใดก็ได้</string>
@@ -1101,7 +1101,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">พยายามใช้ไบโอเมตริกไม่สำเร็จมากเกินไป</string>
     <string name="version">เวอร์ชัน</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">เวอร์ชัน: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">เรียนรู้เพิ่มเติมเกี่ยวกับวิธีใช้ Bitwarden Authenticator ได้ที่ศูนย์ช่วยเหลือ</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">เรียนรู้เพิ่มเติมเกี่ยวกับวิธีใช้ Universal Password Manager Authenticator ได้ที่ศูนย์ช่วยเหลือ</string>
     <string name="key">คีย์</string>
     <string name="create_verification_code">สร้างรหัสยืนยัน</string>
     <string name="key_is_required">จำเป็นต้องมีคีย์</string>
@@ -1112,41 +1112,41 @@ Do you want to switch to this account?</string>
     <string name="key_is_invalid">คีย์ไม่ถูกต้อง</string>
     <string name="backup">สำรองข้อมูล</string>
     <string name="data_backup_title">การสำรองข้อมูล</string>
-    <string name="data_backup_message">ข้อมูล Bitwarden Authenticator ได้รับการสำรองไว้และสามารถกู้คืนได้ด้วยการสำรองข้อมูลอุปกรณ์ตามกำหนดเวลาปกติของคุณ</string>
+    <string name="data_backup_message">ข้อมูล Universal Password Manager Authenticator ได้รับการสำรองไว้และสามารถกู้คืนได้ด้วยการสำรองข้อมูลอุปกรณ์ตามกำหนดเวลาปกติของคุณ</string>
     <string name="import_2fas_password_protected_not_supported">ไม่รองรับการนำเข้าจากไฟล์ 2FAS ที่ป้องกันด้วยรหัสผ่าน โปรดลองอีกครั้งด้วยไฟล์ที่ส่งออกซึ่งไม่มีการป้องกันด้วยรหัสผ่าน</string>
-    <string name="import_bitwarden_unsupported_format">ไม่รองรับการนำเข้าไฟล์ CSV ของ Universal Password Manager โปรดลองอีกครั้งด้วยไฟล์ JSON ที่ส่งออก</string>
-    <string name="download_bitwarden_card_title">ดาวน์โหลดแอป Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">จัดเก็บข้อมูลเข้าสู่ระบบทั้งหมดของคุณและซิงค์รหัสยืนยันกับแอป Authenticator โดยตรง</string>
+    <string name="import_universalpasswordmanager_unsupported_format">ไม่รองรับการนำเข้าไฟล์ CSV ของ Universal Password Manager โปรดลองอีกครั้งด้วยไฟล์ JSON ที่ส่งออก</string>
+    <string name="download_universalpasswordmanager_card_title">ดาวน์โหลดแอป Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">จัดเก็บข้อมูลเข้าสู่ระบบทั้งหมดของคุณและซิงค์รหัสยืนยันกับแอป Authenticator โดยตรง</string>
     <string name="download_now">ดาวน์โหลดเลย</string>
-    <string name="sync_with_bitwarden_app">ซิงค์กับแอป Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">ซิงค์กับแอป Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">เรียนรู้เพิ่มเติม</annotation></string>
     <string name="shared_codes_error">ไม่สามารถซิงค์รหัสจากแอป Universal Password Manager ตรวจสอบให้แน่ใจว่าทั้งสองแอปเป็นเวอร์ชันล่าสุด คุณยังคงสามารถเข้าถึงรหัสที่มีอยู่ในแอป Universal Password Manager ได้</string>
-    <string name="sync_with_the_bitwarden_app">ซิงค์กับแอป Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">อนุญาตการซิงค์แอป Authenticator ในการตั้งค่าเพื่อดูรหัสยืนยันทั้งหมดของคุณที่นี่</string>
+    <string name="sync_with_the_universalpasswordmanager_app">ซิงค์กับแอป Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">อนุญาตการซิงค์แอป Authenticator ในการตั้งค่าเพื่อดูรหัสยืนยันทั้งหมดของคุณที่นี่</string>
     <string name="take_me_to_app_settings">พาฉันไปที่การตั้งค่าแอป</string>
     <string name="something_went_wrong">มีบางอย่างผิดปกติ</string>
     <string name="please_try_again">โปรดลองอีกครั้ง</string>
-    <string name="copy_to_bitwarden_vault">คัดลอกไปยังตู้นิรภัย Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">คัดลอกไปยังตู้นิรภัย Universal Password Manager</string>
     <string name="default_save_option">ตัวเลือกการบันทึกเริ่มต้น</string>
-    <string name="save_to_bitwarden">บันทึกไปที่ Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">บันทึกไปที่ Universal Password Manager</string>
     <string name="save_here">บันทึกที่นี่</string>
     <string name="none">ไม่มี</string>
     <string name="default_save_options_subtitle">เลือกตำแหน่งที่คุณต้องการบันทึกรหัสยืนยันใหม่</string>
     <string name="verification_code_created">สร้างรหัสยืนยันแล้ว</string>
     <string name="choose_save_location_message">บันทึกคีย์ยืนยันตัวตนนี้ที่นี่ หรือเพิ่มลงในข้อมูลเข้าสู่ระบบในแอป Universal Password Manager ของคุณ</string>
     <string name="save_option_as_default">บันทึกตัวเลือกเป็นค่าเริ่มต้น</string>
-    <string name="account_synced_from_bitwarden_app">บัญชีซิงค์จากแอป Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">บัญชีซิงค์จากแอป Universal Password Manager</string>
     <string name="local_codes">รหัสในเครื่อง (%1$d)</string>
     <string name="local_codes_header">รหัสในเครื่อง</string>
     <string name="required_information_missing">ข้อมูลที่จำเป็นหายไป</string>
-    <string name="required_information_missing_message">ข้อมูลที่จำเป็นหายไป (เช่น ‘services’ หรือ ‘secret’) ตรวจสอบไฟล์ของคุณแล้วลองอีกครั้ง เยี่ยมชม bitwarden.com/help เพื่อขอความช่วยเหลือ</string>
+    <string name="required_information_missing_message">ข้อมูลที่จำเป็นหายไป (เช่น ‘services’ หรือ ‘secret’) ตรวจสอบไฟล์ของคุณแล้วลองอีกครั้ง เยี่ยมชม /help เพื่อขอความช่วยเหลือ</string>
     <string name="file_could_not_be_processed">ไม่สามารถประมวลผลไฟล์ได้</string>
-    <string name="file_could_not_be_processed_message">ไม่สามารถประมวลผลไฟล์ได้ ตรวจสอบว่าเป็น JSON ที่ถูกต้องแล้วลองอีกครั้ง ต้องการความช่วยเหลือไหม เยี่ยมชม bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">ไม่สามารถประมวลผลไฟล์ได้ ตรวจสอบว่าเป็น JSON ที่ถูกต้องแล้วลองอีกครั้ง ต้องการความช่วยเหลือไหม เยี่ยมชม /help</string>
     <string name="get_help">ขอความช่วยเหลือ</string>
     <string name="error_cannot_decrypt">[ข้อผิดพลาด: ไม่สามารถถอดรหัสได้]</string>
     <string name="copy_error_report">คัดลอกรายงานข้อผิดพลาด</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager ไม่สามารถถอดรหัสรายการในตู้นิรภัยนี้ได้ คัดลอกและแชร์รายงานข้อผิดพลาดนี้กับฝ่ายดูแลลูกค้าเพื่อหลีกเลี่ยงการสูญเสียข้อมูลเพิ่มเติม</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager ไม่สามารถถอดรหัสรายการในตู้นิรภัยนี้ได้ คัดลอกและแชร์รายงานข้อผิดพลาดนี้กับฝ่ายดูแลลูกค้าเพื่อหลีกเลี่ยงการสูญเสียข้อมูลเพิ่มเติม</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="other">Universal Password Manager ไม่สามารถถอดรหัสรายการตู้นิรภัย %1$d รายการ คัดลอกและแชร์รายงานข้อผิดพลาดนี้กับทีมบริการลูกค้าเพื่อหลีกเลี่ยงการสูญเสียข้อมูลเพิ่มเติม</item>
     </plurals>
     <string name="select_a_card_for_x">เลือกบัตรสำหรับ %s</string>
@@ -1183,7 +1183,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">เปิดใช้งานการป้อนอัตโนมัติของเบราว์เซอร์เพื่อป้อนรหัสผ่านต่อไป</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">เบราว์เซอร์ของคุณเพิ่งได้รับการอัปเดต ซึ่งปิดใช้งานการป้อนอัตโนมัติของ Universal Password Manager เพื่อป้อนรหัสผ่านด้วย Universal Password Manager ต่อไป ให้เปิดใช้งานการป้อนอัตโนมัติของเบราว์เซอร์ในการตั้งค่าการป้อนอัตโนมัติ</string>
     <string name="not_now">ไม่ใช่ตอนนี้</string>
-    <string name="import_from_bitwarden">นำเข้าจาก Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">นำเข้าจาก Universal Password Manager</string>
     <string name="select_account">เลือกบัญชี</string>
     <string name="no_accounts_available">ไม่มีบัญชีที่ใช้ได้</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">คุณไม่มีบัญชีที่สามารถนำเข้าได้ นโยบายความปลอดภัยขององค์กรของคุณอาจจำกัดการนำเข้ารายการจาก Universal Password Manager ไปยังแอปอื่น</string>
@@ -1281,7 +1281,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">เชื่อถือได้</string>
     <string name="preview_not_available_for_files">ไม่สามารถแสดงตัวอย่างสำหรับไฟล์ %1$s ได้ คุณยังสามารถดาวน์โหลดเพื่อดูบนอุปกรณ์ของคุณ</string>
     <string name="this_file_is_too_large_to_preview">ไฟล์นี้มีขนาดใหญ่เกินไปที่จะแสดงตัวอย่าง คุณยังสามารถดาวน์โหลดเพื่อดูบนอุปกรณ์ของคุณ</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager ไม่สามารถถอดรหัสไฟล์นี้ได้ จึงไม่สามารถแสดงตัวอย่างได้</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager ไม่สามารถถอดรหัสไฟล์นี้ได้ จึงไม่สามารถแสดงตัวอย่างได้</string>
     <string name="preview_unavailable_for_this_file">ไม่สามารถแสดงตัวอย่างสำหรับไฟล์นี้ คุณยังสามารถดาวน์โหลดเพื่อดูบนอุปกรณ์ของคุณ</string>
     <string name="preview_unavailable">ไม่สามารถแสดงตัวอย่าง</string>
     <string name="download_attachment">ดาวน์โหลดไฟล์แนบ</string>
@@ -1323,7 +1323,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / ปี</string>
     <string name="billing_rate_per_month">%1$s / เดือน</string>
     <string name="manage_plan">จัดการแผน</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">จัดการแผนการสมัครสมาชิกของคุณในเว็บแอป Universal Password Manager</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">จัดการแผนการสมัครสมาชิกของคุณในเว็บแอป Universal Password Manager</string>
     <string name="cancel_premium">ยกเลิกพรีเมียม</string>
     <string name="subscription_status_active">ใช้งานอยู่</string>
     <string name="subscription_status_canceled">ยกเลิกแล้ว</string>
@@ -1413,8 +1413,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">ต้องมีการเข้าถึงเครือข่ายท้องถิ่น</string>
     <string name="ask_again_later">ถามอีกครั้งทีหลัง</string>
     <string name="enable_local_network_access">เปิดใช้งานการเข้าถึงเครือข่ายท้องถิ่น</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager ต้องการการเข้าถึงเครือข่ายท้องถิ่นเพื่อซิงค์กับเซิร์ฟเวอร์ของคุณ หากไม่มีสิทธิ์นี้ แอปจะไม่สามารถเชื่อมต่อได้</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">หากไม่มีสิทธิ์นี้ Universal Password Manager จะไม่สามารถเชื่อมต่อและซิงค์กับเซิร์ฟเวอร์ของคุณได้ คุณสามารถเปิดใช้งานได้ในการตั้งค่าอุปกรณ์ของคุณ</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager ต้องการการเข้าถึงเครือข่ายท้องถิ่นเพื่อซิงค์กับเซิร์ฟเวอร์ของคุณ หากไม่มีสิทธิ์นี้ แอปจะไม่สามารถเชื่อมต่อได้</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">หากไม่มีสิทธิ์นี้ Universal Password Manager จะไม่สามารถเชื่อมต่อและซิงค์กับเซิร์ฟเวอร์ของคุณได้ คุณสามารถเปิดใช้งานได้ในการตั้งค่าอุปกรณ์ของคุณ</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">คำขอของคุณถูกขัดจังหวะเนื่องจากแอปต้องการการเข้าถึงเครือข่ายท้องถิ่น คุณสามารถเปิดใช้งานได้ในการตั้งค่าอุปกรณ์ของคุณ</string>
     <string name="continue_to_stripe">ดำเนินการต่อที่ Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">คุณจะถูกนำไปที่ Stripe เพื่อจัดการการยกเลิกการสมัครสมาชิกของคุณ</string>

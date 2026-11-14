@@ -118,7 +118,7 @@ class TwoFactorRequiredExtensionTest {
 
     @Test
     fun `twoFactorDuoAuthUrl returns the expected value for DUO`() {
-        val authUrl = "vault.bitwarden.com"
+        val authUrl = "vault."
         val subject = GetTokenResponseJson.TwoFactorRequired(
             authMethodsData = mapOf(
                 TwoFactorAuthMethod.DUO to JsonObject(
@@ -133,7 +133,7 @@ class TwoFactorRequiredExtensionTest {
 
     @Test
     fun `twoFactorDuoAuthUrl returns the expected value for DUO_ORGANIZATION`() {
-        val authUrl = "vault.bitwarden.com"
+        val authUrl = "vault."
         val subject = GetTokenResponseJson.TwoFactorRequired(
             authMethodsData = mapOf(
                 TwoFactorAuthMethod.DUO_ORGANIZATION to JsonObject(

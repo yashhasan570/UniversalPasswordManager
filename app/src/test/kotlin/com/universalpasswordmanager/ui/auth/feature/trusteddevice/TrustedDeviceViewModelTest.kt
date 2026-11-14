@@ -245,7 +245,7 @@ class TrustedDeviceViewModelTest : BaseViewModelTest() {
         TrustedDeviceViewModel(
             savedStateHandle = SavedStateHandle().apply {
                 set("state", state)
-                set("email_address", "email@bitwarden.com")
+                set("email_address", "email@")
             },
             environmentRepository = environmentRepository,
             authRepository = authorizationRepository,
@@ -253,12 +253,12 @@ class TrustedDeviceViewModelTest : BaseViewModelTest() {
 }
 
 private const val USER_ID: String = "userId"
-private const val EMAIL: String = "email@bitwarden.com"
+private const val EMAIL: String = "email@"
 
 private val DEFAULT_STATE: TrustedDeviceState = TrustedDeviceState(
     dialogState = null,
     emailAddress = EMAIL,
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isRemembered = true,
     showContinueButton = false,
     showOtherDeviceButton = true,

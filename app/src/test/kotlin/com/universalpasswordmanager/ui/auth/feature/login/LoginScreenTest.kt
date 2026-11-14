@@ -337,13 +337,13 @@ class LoginScreenTest : UniversalComposeTest() {
     }
 }
 
-private const val EMAIL = "active@bitwarden.com"
+private const val EMAIL = "active@"
 private val ACTIVE_ACCOUNT_SUMMARY = AccountSummary(
     userId = "activeUserId",
     name = "Active User",
     email = EMAIL,
     avatarColorHex = "#aa00aa",
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isActive = true,
     isLoggedIn = true,
     isVaultUnlocked = true,

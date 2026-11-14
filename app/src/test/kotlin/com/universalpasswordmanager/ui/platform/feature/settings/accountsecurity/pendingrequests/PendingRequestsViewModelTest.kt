@@ -114,7 +114,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = nowInstant,
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "pantry-overdue-survive-sleep-jab",
             ),
             AuthRequest(
@@ -127,7 +127,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = nowInstant,
                 responseDate = null,
                 requestApproved = true,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "fingerprint",
             ),
             AuthRequest(
@@ -140,7 +140,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = nowInstant.minus(10, ChronoUnit.MINUTES),
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "erupt-anew-matchbook-disk-student",
             ),
             AuthRequest(
@@ -153,7 +153,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = nowInstant,
                 responseDate = nowInstant,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "fingerprint",
             ),
         )
@@ -290,7 +290,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
             creationDate = fixedClock.instant().minus(5, ChronoUnit.MINUTES),
             responseDate = null,
             requestApproved = false,
-            originUrl = "www.bitwarden.com",
+            originUrl = "www.",
             fingerprint = "erupt-anew-matchbook-disk-student",
         )
         val authRequest2 = AuthRequest(
@@ -303,7 +303,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
             creationDate = fixedClock.instant(),
             responseDate = null,
             requestApproved = false,
-            originUrl = "www.bitwarden.com",
+            originUrl = "www.",
             fingerprint = "pantry-overdue-survive-sleep-jab",
         )
         coEvery {
@@ -382,7 +382,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = sixMinInstant,
                 responseDate = null,
                 requestApproved = true,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "fingerprint",
             ),
             AuthRequest(
@@ -395,7 +395,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = fiveMinInstant,
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "erupt-anew-matchbook-disk-student",
             ),
             AuthRequest(
@@ -408,7 +408,7 @@ class PendingRequestsViewModelTest : BaseViewModelTest() {
                 creationDate = nowInstant,
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "pantry-overdue-survive-sleep-jab",
             ),
         )

@@ -100,7 +100,7 @@ fun PreviewAttachmentScreen(
             )
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         when (val viewState = state.viewState) {
@@ -165,7 +165,7 @@ private fun PreviewAttachmentDialogs(
                 title = stringResource(id = UniversalString.preview_unavailable),
                 message = stringResource(
                     id = UniversalString
-                        .bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed,
+                        .universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed,
                 ),
                 confirmButtonLabel = stringResource(id = UniversalString.close),
                 onDismissRequest = onCloseClick,

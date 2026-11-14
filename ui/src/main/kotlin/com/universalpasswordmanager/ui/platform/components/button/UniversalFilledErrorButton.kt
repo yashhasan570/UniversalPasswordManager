@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.tooling.preview.Preview
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenFilledErrorButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerFilledErrorButtonColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 
@@ -33,7 +33,7 @@ fun UniversalFilledErrorButton(
         icon = icon,
         modifier = modifier,
         isEnabled = isEnabled,
-        colors = bitwardenFilledErrorButtonColors(),
+        colors = universalpasswordmanagerFilledErrorButtonColors(),
     )
 }
 

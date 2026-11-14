@@ -63,7 +63,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
     private val vaultRepository: VaultRepository = mockk(relaxed = true) {
         every { lockVault(any(), any()) } just runs
     }
-    private val bitwardenCredentialManager: UniversalCredentialManager = mockk {
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager = mockk {
         every { isUserVerified } returns true
         every { isUserVerified = any() } just runs
     }
@@ -244,7 +244,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
                     UserState.Account(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active+test@bitwarden.com",
+                        email = "active+test@",
                         avatarColorHex = "#00aaaa",
                         environment = Environment.Prod.Us,
                         isPremium = true,
@@ -287,7 +287,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
                     UserState.Account(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active+test@bitwarden.com",
+                        email = "active+test@",
                         avatarColorHex = "#00aaaa",
                         environment = Environment.Prod.Us,
                         isPremium = true,
@@ -313,14 +313,14 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
             DEFAULT_STATE.copy(
                 avatarColorString = "#00aaaa",
                 initials = "OU",
-                email = "active+test@bitwarden.com",
+                email = "active+test@",
                 accountSummaries = persistentListOf(
                     AccountSummary(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active+test@bitwarden.com",
+                        email = "active+test@",
                         avatarColorHex = "#00aaaa",
-                        environmentLabel = "bitwarden.com",
+                        environmentLabel = "",
                         isActive = true,
                         isLoggedIn = true,
                         isVaultUnlocked = false,
@@ -1125,7 +1125,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
                 assertEquals(expectedErrorState, viewModel.stateFlow.value)
                 verify(exactly = 0) {
                     authRepository.clearBiometrics(userId = any())
-                    bitwardenCredentialManager.isUserVerified = true
+                    universalpasswordmanagerCredentialManager.isUserVerified = true
                 }
 
                 viewModel.trySendAction(VaultUnlockAction.DismissDialog)
@@ -1148,7 +1148,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
                 )
                 verify(exactly = 0) {
                     authRepository.clearBiometrics(userId = any())
-                    bitwardenCredentialManager.isUserVerified = true
+                    universalpasswordmanagerCredentialManager.isUserVerified = true
                 }
                 coVerify(exactly = 1) {
                     vaultRepository.unlockVaultWithBiometrics(cipher = CIPHER)
@@ -1189,7 +1189,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
                 assertEquals(firstFailureState, viewModel.stateFlow.value)
                 verify(exactly = 0) {
                     authRepository.clearBiometrics(userId = any())
-                    bitwardenCredentialManager.isUserVerified = true
+                    universalpasswordmanagerCredentialManager.isUserVerified = true
                 }
 
                 viewModel.trySendAction(VaultUnlockAction.DismissDialog)
@@ -1222,7 +1222,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
                     authRepository.clearBiometrics(userId = USER_ID)
                 }
                 verify(exactly = 0) {
-                    bitwardenCredentialManager.isUserVerified = true
+                    universalpasswordmanagerCredentialManager.isUserVerified = true
                 }
             }
         }
@@ -1502,7 +1502,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = true }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = true }
     }
 
     @Suppress("MaxLineLength")
@@ -1518,7 +1518,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
     }
 
     @Test
@@ -1562,7 +1562,7 @@ class VaultUnlockViewModelTest : BaseViewModelTest() {
         },
         authRepository = authRepository,
         vaultRepo = vaultRepo,
-        bitwardenCredentialManager = bitwardenCredentialManager,
+        universalpasswordmanagerCredentialManager = universalpasswordmanagerCredentialManager,
         specialCircumstanceManager = specialCircumstanceManager,
         appResumeManager = appResumeManager,
         vaultLockManager = lockManager,
@@ -1576,16 +1576,16 @@ private val DEFAULT_STATE: VaultUnlockState = VaultUnlockState(
         AccountSummary(
             userId = "activeUserId",
             name = "Active User",
-            email = "active@bitwarden.com",
+            email = "active@",
             avatarColorHex = "#aa00aa",
-            environmentLabel = "bitwarden.com",
+            environmentLabel = "",
             isActive = true,
             isLoggedIn = true,
             isVaultUnlocked = true,
         ),
     ),
     avatarColorString = "#aa00aa",
-    email = "active@bitwarden.com",
+    email = "active@",
     hideInput = false,
     initials = "AU",
     dialog = null,
@@ -1611,7 +1611,7 @@ private val TRUSTED_DEVICE: UserState.TrustedDevice = UserState.TrustedDevice(
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = USER_ID,
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     environment = Environment.Prod.Us,
     avatarColorHex = "#aa00aa",
     isPremium = true,

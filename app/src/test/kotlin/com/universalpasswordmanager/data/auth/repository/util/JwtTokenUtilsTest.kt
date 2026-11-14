@@ -24,7 +24,7 @@ class JwtTokenUtilsTest {
         assertEquals(
             JwtTokenDataJson(
                 userId = "2a135b23-e1fb-42c9-bec3-573857bc8181",
-                email = "test@bitwarden.com",
+                email = "test@",
                 isEmailVerified = true,
                 name = "Universal Tester",
                 expirationAsEpochTime = 1697495714,

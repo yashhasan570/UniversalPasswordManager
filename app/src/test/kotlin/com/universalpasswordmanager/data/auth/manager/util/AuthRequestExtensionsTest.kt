@@ -82,6 +82,6 @@ private val AUTH_REQUEST: AuthRequest = AuthRequest(
     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
     responseDate = null,
     requestApproved = false,
-    originUrl = "www.bitwarden.com",
+    originUrl = "www.",
     fingerprint = "fingerprint",
 )

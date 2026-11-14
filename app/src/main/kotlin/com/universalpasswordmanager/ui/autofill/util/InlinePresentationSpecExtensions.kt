@@ -67,7 +67,7 @@ fun InlinePresentationSpec.createVaultItemInlinePresentationOrNull(
         } else {
             autofillAppInfo.context.getString(UniversalString.my_vault)
         },
-        iconRes = UniversalDrawable.logo_bitwarden_icon,
+        iconRes = UniversalDrawable.logo_universalpasswordmanager_icon,
         shouldTintIcon = false,
     )
 

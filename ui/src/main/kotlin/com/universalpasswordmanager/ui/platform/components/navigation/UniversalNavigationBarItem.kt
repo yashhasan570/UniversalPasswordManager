@@ -18,7 +18,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
 import com.universalpasswordmanager.ui.platform.components.badge.NotificationBadge
-import com.universalpasswordmanager.ui.platform.components.navigation.color.bitwardenNavigationBarItemColors
+import com.universalpasswordmanager.ui.platform.components.navigation.color.universalpasswordmanagerNavigationBarItemColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalPlurals
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
@@ -86,7 +86,7 @@ fun RowScope.UniversalNavigationBarItem(
         },
         selected = isSelected,
         onClick = onClick,
-        colors = bitwardenNavigationBarItemColors(),
+        colors = universalpasswordmanagerNavigationBarItemColors(),
         interactionSource = interactionSource,
         modifier = modifier.interactiveBorder(
             interactionSource = interactionSource,

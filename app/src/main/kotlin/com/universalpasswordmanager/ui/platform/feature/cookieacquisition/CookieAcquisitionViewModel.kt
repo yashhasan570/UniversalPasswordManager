@@ -26,7 +26,7 @@ import javax.inject.Inject
 
 private const val KEY_STATE = "state"
 private const val PROXY_URL = "/proxy-cookie-redirect-connector.html"
-private const val COOKIE_CALLBACK_URL = "bitwarden://sso-cookie-vendor"
+private const val COOKIE_CALLBACK_URL = "sso-cookie-vendor"
 
 /**
  * ViewModel for the Cookie Acquisition screen.

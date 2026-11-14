@@ -92,7 +92,7 @@ fun FoldersScreen(
                     .navigationBarsPadding(),
             )
         },
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
     ) {
         when (val viewState = state.value.viewState) {
             is FoldersState.ViewState.Content -> {

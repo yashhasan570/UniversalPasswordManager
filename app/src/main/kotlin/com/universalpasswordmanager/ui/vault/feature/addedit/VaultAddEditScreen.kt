@@ -174,13 +174,13 @@ fun VaultAddEditScreen(
 
             is VaultAddEditEvent.NavigateToTooltipUri -> {
                 intentManager.launchUri(
-                    "https://bitwarden.com/help/managing-items/#protect-individual-items".toUri(),
+                    "https:///help/managing-items/#protect-individual-items".toUri(),
                 )
             }
 
             is VaultAddEditEvent.NavigateToAuthenticatorKeyTooltipUri -> {
                 intentManager.launchUri(
-                    "https://bitwarden.com/help/integrated-authenticator".toUri(),
+                    "https:///help/integrated-authenticator".toUri(),
                 )
             }
 
@@ -211,7 +211,7 @@ fun VaultAddEditScreen(
             is VaultAddEditEvent.ShowSnackbar -> snackbarHostState.showSnackbar(event.data)
 
             VaultAddEditEvent.NavigateToLearnMore -> {
-                intentManager.launchUri("https://bitwarden.com/help/uri-match-detection/".toUri())
+                intentManager.launchUri("https:///help/uri-match-detection/".toUri())
             }
 
             is VaultAddEditEvent.NavigateToPremium -> {
@@ -424,7 +424,7 @@ fun VaultAddEditScreen(
                 )
             },
             snackbarHost = {
-                UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+                UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
             },
         ) {
             when (val viewState = state.viewState) {
@@ -531,8 +531,8 @@ private fun VaultAddEditItemDialogs(
 
         is VaultAddEditState.DialogState.InitialAutofillPrompt -> {
             UniversalBasicDialog(
-                title = stringResource(id = UniversalString.bitwarden_autofill_service),
-                message = stringResource(id = UniversalString.bitwarden_autofill_service_alert2),
+                title = stringResource(id = UniversalString.universalpasswordmanager_autofill_service),
+                message = stringResource(id = UniversalString.universalpasswordmanager_autofill_service_alert2),
                 onDismissRequest = onAutofillDismissRequest,
             )
         }

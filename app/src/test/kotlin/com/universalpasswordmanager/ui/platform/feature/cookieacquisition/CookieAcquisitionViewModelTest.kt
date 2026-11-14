@@ -66,7 +66,7 @@ class CookieAcquisitionViewModelTest : BaseViewModelTest() {
                     CookieAcquisitionEvent.LaunchBrowser(
                         uri = "https://$DEFAULT_HOSTNAME/proxy-cookie-redirect-connector.html",
                         authTabData = AuthTabData.CustomScheme(
-                            callbackUrl = "bitwarden://sso-cookie-vendor",
+                            callbackUrl = "sso-cookie-vendor",
                         ),
                     ),
                     awaitItem(),
@@ -193,7 +193,7 @@ class CookieAcquisitionViewModelTest : BaseViewModelTest() {
         val viewModel = createViewModel(state = null)
         assertEquals(
             CookieAcquisitionState(
-                environmentUrl = "https://vault.bitwarden.com",
+                environmentUrl = "https://vault.",
                 hostname = DEFAULT_HOSTNAME,
                 dialogState = null,
             ),
@@ -222,7 +222,7 @@ private val DEFAULT_COOKIE_ACQUISITION_REQUEST = CookieAcquisitionRequest(
 )
 
 private val DEFAULT_STATE = CookieAcquisitionState(
-    environmentUrl = "https://vault.bitwarden.us",
+    environmentUrl = "https://vault.universalpasswordmanager.us",
     hostname = DEFAULT_HOSTNAME,
     dialogState = null,
 )

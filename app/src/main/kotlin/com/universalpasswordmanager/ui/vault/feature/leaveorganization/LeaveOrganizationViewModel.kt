@@ -95,7 +95,7 @@ class LeaveOrganizationViewModel @AssistedInject constructor(
     private fun handleHelpLinkClick() {
         sendEvent(
             LeaveOrganizationEvent.LaunchUri(
-                uri = "https://bitwarden.com/help/transfer-ownership/",
+                uri = "https:///help/transfer-ownership/",
             ),
         )
     }

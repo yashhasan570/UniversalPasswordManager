@@ -63,13 +63,13 @@ internal class IdentityServiceImpl(
         )
         .toResult()
         .recoverCatching { throwable ->
-            val bitwardenError = throwable.toUniversalError()
-            bitwardenError
+            val universalpasswordmanagerError = throwable.toUniversalError()
+            universalpasswordmanagerError
                 .parseErrorBodyOrNull<GetTokenResponseJson.TwoFactorRequired>(
                     code = NetworkErrorCode.BAD_REQUEST,
                     json = json,
                 )
-                ?: bitwardenError.parseErrorBodyOrNull<GetTokenResponseJson.Invalid>(
+                ?: universalpasswordmanagerError.parseErrorBodyOrNull<GetTokenResponseJson.Invalid>(
                     code = NetworkErrorCode.BAD_REQUEST,
                     json = json,
                 )
@@ -84,8 +84,8 @@ internal class IdentityServiceImpl(
         )
         .toResult()
         .recoverCatching { throwable ->
-            val bitwardenError = throwable.toUniversalError()
-            bitwardenError
+            val universalpasswordmanagerError = throwable.toUniversalError()
+            universalpasswordmanagerError
                 .parseErrorBodyOrNull<PrevalidateSsoResponseJson.Error>(
                     code = NetworkErrorCode.BAD_REQUEST,
                     json = json,
@@ -104,14 +104,14 @@ internal class IdentityServiceImpl(
         .executeForNetworkResult()
         .toResult()
         .recoverCatching { throwable ->
-            val bitwardenError = throwable.toUniversalError()
-            bitwardenError
+            val universalpasswordmanagerError = throwable.toUniversalError()
+            universalpasswordmanagerError
                 .parseErrorBodyOrNull<RefreshTokenResponseJson.Error>(
                     code = NetworkErrorCode.BAD_REQUEST,
                     json = json,
                 )
                 ?: run {
-                    when (bitwardenError.getNetworkErrorCodeOrNull()) {
+                    when (universalpasswordmanagerError.getNetworkErrorCodeOrNull()) {
                         NetworkErrorCode.UNAUTHORIZED -> {
                             RefreshTokenResponseJson.Unauthorized(throwable)
                         }
@@ -136,8 +136,8 @@ internal class IdentityServiceImpl(
             .registerFinish(body)
             .toResult()
             .recoverCatching { throwable ->
-                val bitwardenError = throwable.toUniversalError()
-                bitwardenError
+                val universalpasswordmanagerError = throwable.toUniversalError()
+                universalpasswordmanagerError
                     .parseErrorBodyOrNull<RegisterResponseJson.Invalid>(
                         codes = listOf(
                             NetworkErrorCode.BAD_REQUEST,
@@ -175,8 +175,8 @@ internal class IdentityServiceImpl(
         .toResult()
         .map { VerifyEmailTokenResponseJson.Valid }
         .recoverCatching { throwable ->
-            val bitwardenError = throwable.toUniversalError()
-            bitwardenError
+            val universalpasswordmanagerError = throwable.toUniversalError()
+            universalpasswordmanagerError
                 .parseErrorBodyOrNull<VerifyEmailTokenResponseJson.Invalid>(
                     code = NetworkErrorCode.BAD_REQUEST,
                     json = json,

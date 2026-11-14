@@ -146,7 +146,7 @@ internal class FileManagerImpl(
                     ZipFileResult.NothingToZip
                 } else {
                     val zipFile = File.createTempFile(
-                        "bitwarden_flight_recorder",
+                        "universalpasswordmanager_flight_recorder",
                         ".zip",
                         context.cacheDir,
                     )

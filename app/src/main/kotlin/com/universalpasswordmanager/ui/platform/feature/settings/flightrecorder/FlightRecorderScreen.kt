@@ -57,7 +57,7 @@ fun FlightRecorderScreen(
         when (event) {
             FlightRecorderEvent.NavigateBack -> onNavigateBack()
             FlightRecorderEvent.NavigateToHelpCenter -> {
-                intentManager.launchUri(uri = "https://bitwarden.com/help/flight-recorder".toUri())
+                intentManager.launchUri(uri = "https:///help/flight-recorder".toUri())
             }
         }
     }
@@ -160,7 +160,7 @@ private fun FlightRecorderContent(
         UniversalHyperTextLink(
             annotatedResId = UniversalString.for_details_on_what_is_and_isnt_logged,
             annotationKey = "helpCenter",
-            accessibilityString = stringResource(id = UniversalString.bitwarden_help_center),
+            accessibilityString = stringResource(id = UniversalString.universalpasswordmanager_help_center),
             onClick = onHelpCenterClick,
             color = UniversalTheme.colorScheme.text.secondary,
             style = UniversalTheme.typography.bodySmall,

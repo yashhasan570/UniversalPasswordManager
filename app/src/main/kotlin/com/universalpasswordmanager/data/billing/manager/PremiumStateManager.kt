@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.StateFlow
  * URL opened when the user taps the "Learn more" CTA on the "Upgraded to Premium" action card.
  */
 const val UPGRADED_TO_PREMIUM_LEARN_MORE_URL: String =
-    "https://bitwarden.com/help/password-manager-plans/"
+    "https:///help/password-manager-plans/"
 
 /**
  * Manages Premium upgrade state for the active user.

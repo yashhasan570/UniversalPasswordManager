@@ -75,9 +75,9 @@
     <string name="yes">Ya</string>
     <string name="account">Akun</string>
     <string name="account_created_success">Akun baru Anda telah berhasil dibuat!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Jadikan Universal Password Manager sebagai penyedia kunci sandi di setelan perangkat.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Jadikan Universal Password Manager sebagai penyedia kunci sandi di setelan perangkat.</string>
     <string name="avoid_ambiguous_characters">Hindari karakter ambigu</string>
-    <string name="bitwarden_autofill_service">Layanan Pengisian Otomatis Universal Password Manager</string>
+    <string name="universalpasswordmanager_autofill_service">Layanan Pengisian Otomatis Universal Password Manager</string>
     <string name="change_master_password">Ubah sandi utama</string>
     <string name="close">Tutup</string>
     <string name="close_app">Tutup aplikasi</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Tetapkan batas waktu sesi untuk \"Keluar\"?</string>
     <string name="vault_timeout_log_out_confirmation_message">Setelah periode batas waktu berakhir, Anda akan keluar otomatis. Untuk masuk dan mengakses brankas Anda lagi, perangkat harus terhubung ke internet. Pengaturan dan PIN di perangkat ini tetap sama.</string>
     <string name="logging_in">Sedang masuk…</string>
-    <string name="login_to_bitwarden">Masuk ke Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">Masuk ke Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">Konfirmasi sandi tidak benar.</string>
     <string name="master_password_description">Sandi utama adalah sandi yang Anda gunakan untuk mengakses brankas Anda. Sangat penting untuk tidak melupakan sandi utama. Tidak ada cara untuk memulihkan sandi jika Anda melupakannya.</string>
     <string name="master_password_hint">Petunjuk sandi utama (opsional)</string>
@@ -168,14 +168,14 @@
     <string name="view_identity">Lihat indentitas</string>
     <string name="view_note">Lihat catatan</string>
     <string name="view_ssh_key">Lihat kunci SSH</string>
-    <string name="web_vault">Brankas Web bitwarden</string>
+    <string name="web_vault">Brankas Web universalpasswordmanager</string>
     <string name="items">Item</string>
     <string name="items_for_uri">Item untuk %1$s</string>
     <string name="no_items_for_uri">Tidak ada item di brankas Anda untuk %1$s.</string>
     <string name="no_items_for_vault">Tidak ada item di brankas Anda yang cocok dengan “%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">Cari login atau tambahkan login baru</string>
     <string name="disabled">Dinonaktifkan</string>
-    <string name="bitwarden_autofill_service_alert2">Cara termudah menambahkan login baru ke brankas adalah melalui Layanan Isi Otomatis Universal Password Manager. Pelajari lebih lanjut cara penggunaan Layanan Isi Otomatis Universal Password Manager di menu \"Pengaturan\".</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Cara termudah menambahkan login baru ke brankas adalah melalui Layanan Isi Otomatis Universal Password Manager. Pelajari lebih lanjut cara penggunaan Layanan Isi Otomatis Universal Password Manager di menu \"Pengaturan\".</string>
     <string name="autofill_noun">Isi otomatis</string>
     <string name="autofill_verb">Isi otomatis</string>
     <string name="autofill_or_view">Apakah Anda ingin mengisi otomatis atau melihat info masuk ini?</string>
@@ -227,7 +227,7 @@ Proses pindai akan terjadi secara otomatis.</string>
     <string name="environment_saved">URL dari lingkungan sudah tersimpan.</string>
     <string name="identity_url">URL Server Identitas</string>
     <string name="self_hosted_environment">Lingkungan Host-Mandiri</string>
-    <string name="self_hosted_environment_footer">Specify the base URL of your on-premise hosted bitwarden installation.</string>
+    <string name="self_hosted_environment_footer">Specify the base URL of your on-premise hosted universalpasswordmanager installation.</string>
     <string name="server_url">URL Server</string>
     <string name="web_vault_url">URL Server Brankas Web</string>
     <string name="custom_fields">Kolom ubahsuai</string>
@@ -298,7 +298,7 @@ Proses pindai akan terjadi secara otomatis.</string>
     <string name="no_items_trash">Tidak ada item di sampah.</string>
     <string name="autofill_accessibility_summary">Bantu mengisi kolom nama pengguna dan sandi di aplikasi lain serta di web.</string>
     <string name="autofill_service_description">Layanan isi otomatis Universal Password Manager menggunakan Android Autofill Framework untuk membantu mengisi informasi login ke apl lain di perangkat Anda.</string>
-    <string name="bitwarden_autofill_go_to_settings">Kami tidak dapat secara otomatis membuka menu pengaturan Android isi otomatis untuk Anda. Anda dapat membuka menu pengaturan isi otomatis secara manual dari Pengaturan Android &gt; Sistem &gt; Bahasa dan masukan &gt; Lanjutan &gt; Layanan isi otomatis.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Kami tidak dapat secara otomatis membuka menu pengaturan Android isi otomatis untuk Anda. Anda dapat membuka menu pengaturan isi otomatis secara manual dari Pengaturan Android &gt; Sistem &gt; Bahasa dan masukan &gt; Lanjutan &gt; Layanan isi otomatis.</string>
     <string name="custom_field_name">Nama kolom ubahsuai</string>
     <string name="field_type_boolean">Boolean</string>
     <string name="field_type_hidden">Tersembunyi</string>
@@ -643,14 +643,14 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="decline">Tolak</string>
     <string name="access_request_has_already_expired">Permintaan akses telah kedaluwarsa.</string>
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Percobaan akses dari: %1$s Apakah Anda ingin beralih ke akun ini?</string>
-    <string name="new_to_bitwarden">Baru di Universal Password Manager?</string>
+    <string name="new_to_universalpasswordmanager">Baru di Universal Password Manager?</string>
     <string name="get_master_passwordword_hint">Dapatkan petunjuk sandi utama</string>
     <string name="logging_in_as_x_on_y">Masuk sebagai %1$s di %2$s</string>
     <string name="not_you">Bukan Anda?</string>
     <string name="log_in_with_master_password">Masuk dengan sandi utama</string>
     <string name="log_in_initiated">Memulai login</string>
     <string name="request_sent_to_your_device">Permintaan dikirim ke perangkat Anda</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Setujui permintaan ini di akun Universal Password Manager Anda pada aplikasi web atau di perangkat lain yang tidak terkunci. Permintaan akses akun harus diaktifkan di Pengaturan.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Setujui permintaan ini di akun Universal Password Manager Anda pada aplikasi web atau di perangkat lain yang tidak terkunci. Permintaan akses akun harus diaktifkan di Pengaturan.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Pastikan frasa sidik jari cocok dengan yang di bawah ini sebelum menyetujui.</string>
     <string name="resend_notification">Kirim ulang pemberitahuan</string>
     <string name="view_all_login_options">Lihat semua opsi masuk</string>
@@ -708,7 +708,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="select_vault">Pilih brankas</string>
     <string name="appearance">Tampilan</string>
     <string name="account_security">Keamanan akun</string>
-    <string name="bitwarden_help_center">Pusat Bantuan Universal Password Manager</string>
+    <string name="universalpasswordmanager_help_center">Pusat Bantuan Universal Password Manager</string>
     <string name="sync_now">Sinkronkan sekarang</string>
     <string name="unlock_options">Opsi buka kunci</string>
     <string name="session_timeout">Waktu habis sesi</string>
@@ -725,10 +725,10 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="continue_to_device_settings">Lanjut ke Pengaturan perangkat?</string>
     <string name="two_step_login_description_long">Amankan akun Anda dengan menyiapkan login dua langkah di aplikasi web Universal Password Manager.</string>
     <string name="change_master_password_description_long">Anda dapat mengubah sandi utama di aplikasi web Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Pelajari lebih lanjut cara menggunakan Universal Password Manager di Pusat Bantuan.</string>
-    <string name="privacy_policy_description_long">Lihat kebijakan privasi kami di bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Temukan lebih banyak fitur akun Universal Password Manager Anda di aplikasi web.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager memungkinkan Anda berbagi item brankas dengan orang lain menggunakan organisasi. Pelajari lebih lanjut di situs web bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Pelajari lebih lanjut cara menggunakan Universal Password Manager di Pusat Bantuan.</string>
+    <string name="privacy_policy_description_long">Lihat kebijakan privasi kami di .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Temukan lebih banyak fitur akun Universal Password Manager Anda di aplikasi web.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager memungkinkan Anda berbagi item brankas dengan orang lain menggunakan organisasi. Pelajari lebih lanjut di situs web .</string>
     <string name="created_x">Dibuat %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Organisasi Anda mewajibkan membuat sandi utama.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Atur opsi buka kunci untuk mengubah tindakan batas waktu brankas Anda.</string>
@@ -738,8 +738,8 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="duo_two_step_login_is_required_for_your_account">Login dua-langkah Duo diperlukan untuk akun Anda.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Ikuti langkah dari Duo untuk menyelesaikan login.</string>
     <string name="launch_duo">Luncurkan Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Kunci sandi Anda akan disimpan ke brankas Universal Password Manager untuk %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Sandi Anda akan disimpan ke brankas Universal Password Manager Anda selama %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Kunci sandi Anda akan disimpan ke brankas Universal Password Manager untuk %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Sandi Anda akan disimpan ke brankas Universal Password Manager Anda selama %1$s</string>
     <string name="passkeys_not_supported_for_this_app">Aplikasi ini tidak mendukung kunci sandi</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Gagal menjalankan kunci sandi karena browser bukan apl dengan hak khusus</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Gagal menjalankan kunci sandi karena signature browser tidak sesuai</string>
@@ -765,7 +765,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="check_your_email">Periksa email Anda</string>
     <string name="open_email_app">Buka apl email</string>
     <string name="email_verified">Email berhasil terverifikasi</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Dapatkan email dari Universal Password Manager berisi pengumuman, tips, dan peluang riset. <annotation link="unsubscribe">Berhenti berlangganan</annotation> kapan saja.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Dapatkan email dari Universal Password Manager berisi pengumuman, tips, dan peluang riset. <annotation link="unsubscribe">Berhenti berlangganan</annotation> kapan saja.</string>
     <string name="security_prioritized">Keamanan, jadi prioritas</string>
     <string name="welcome_message_1">Simpan login, kartu, dan identitas ke brankas aman Anda. Universal Password Manager menggunakan zero-knowledge, enkripsi end-to-end untuk melindungi data penting Anda.</string>
     <string name="welcome_message_2">Siapkan buka kunci biometrik dan isi otomatis untuk masuk ke akun tanpa mengetik satu huruf pun.</string>
@@ -803,8 +803,8 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Klik tautan di email untuk verifikasi alamat email Anda dan lanjutkan buat akun.</string>
     <string name="change_email_address">Ubah alamat email</string>
     <string name="next">Lanjut</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager tidak dapat memulihkan sandi utama yang hilang atau terlupa.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager tidak dapat mengatur ulang sandi utama yang hilang atau terlupa.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager tidak dapat memulihkan sandi utama yang hilang atau terlupa.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager tidak dapat mengatur ulang sandi utama yang hilang atau terlupa.</string>
     <string name="choose_your_master_password">Pilih sandi utama Anda</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Pilih sandi yang unik dan kuat untuk menjaga keamanan informasi Anda.</string>
     <plurals name="minimum_characters">
@@ -814,13 +814,13 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="please_restart_registration_or_try_logging_in">Silakan mulai ulang pendaftaran atau coba masuk. Mungkin Anda sudah memiliki akun.</string>
     <string name="restart_registration">Mulai ulang pendaftaran</string>
     <string name="authenticator_sync">Sinkron Authenticator</string>
-    <string name="allow_bitwarden_authenticator_syncing">Aktifkan sinkronisasi authenticator</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Aktifkan sinkronisasi authenticator</string>
     <string name="there_was_an_issue_validating_the_registration_token">Terjadi masalah saat memvalidasi token pendaftaran.</string>
     <string name="turn_on_autofill">Aktifkan isi otomatis</string>
     <string name="autofill_setup">Setel isi otomatis</string>
     <string name="turn_on_browser_autofill_integration">Aktifkan integrasi isi otomatis browser</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Anda menggunakan browser yang memerlukan izin khusus agar Universal Password Manager dapat mengisi otomatis sandi Anda.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Anda menggunakan browser yang memerlukan izin khusus agar Universal Password Manager dapat mengisi otomatis sandi Anda.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Anda menggunakan browser yang memerlukan izin khusus agar Universal Password Manager dapat mengisi otomatis sandi Anda.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Anda menggunakan browser yang memerlukan izin khusus agar Universal Password Manager dapat mengisi otomatis sandi Anda.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Anda menggunakan browser yang memerlukan izin khusus agar Universal Password Manager dapat mengisi otomatis sandi Anda. Aktifkan integrasi isi otomatis pilihan Anda di bawah ini.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Anda menggunakan browser yang memerlukan izin khusus agar Universal Password Manager dapat mengisi otomatis sandi Anda. Aktifkan isi otomatis pada semua browser yang terpasang untuk melanjutkan.</string>
     <string name="use_autofill_to_log_into_your_accounts">Gunakan isi otomatis untuk masuk ke akun Anda dengan sekali ketuk.</string>
@@ -828,7 +828,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="turn_on_autofill_later">Aktifkan isi otomatis nanti?</string>
     <string name="turn_on_browser_autofill_integration_later">Aktifkan integrasi isi otomatis browser nanti?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Anda dapat kembali menyelesaikan langkah ini kapan saja di Pengaturan.</string>
-    <string name="what_bitwarden_has_to_offer">Sekarang Anda dapat menjelajahi semua yang ditawarkan Universal Password Manager dan mulai mengelola sandi Anda dengan aman.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Sekarang Anda dapat menjelajahi semua yang ditawarkan Universal Password Manager dan mulai mengelola sandi Anda dengan aman.</string>
     <string name="youre_all_set">Anda sudah siap!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Terjadi kesalahan saat menghubungkan dengan layanan Duo. Gunakan metode login dua langkah lain atau hubungi Duo untuk bantuan.</string>
     <string name="master_password_hint_not_specified">Petunjuk sandi utama</string>
@@ -857,29 +857,29 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="step_1_of_3">Langkah 1 dari 3</string>
     <string name="export_your_saved_logins">Ekspor login tersimpan Anda</string>
     <string name="delete_this_file_after_import_is_complete">File ini akan dihapus setelah impor selesai.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">Di komputer Anda, buka tab browser baru dan <annotation emphasis="bold">pergi ke <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Masuk ke aplikasi web Universal Password Manager.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">Di komputer Anda, buka tab browser baru dan <annotation emphasis="bold">pergi ke <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Masuk ke aplikasi web Universal Password Manager.</string>
     <string name="step_2_of_3">Langkah 2 dari 3</string>
-    <string name="log_in_to_bitwarden">Masuk ke Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">Masuk ke Universal Password Manager</string>
     <string name="step_3_of_3">Langkah 3 dari 3</string>
-    <string name="import_logins_to_bitwarden">Impor login ke Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Di navigasi Universal Password Manager, <annotation emphasis="bold">temukan menu Alat</annotation> lalu <annotation emphasis="bold">pilih Impor data.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Impor login ke Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Di navigasi Universal Password Manager, <annotation emphasis="bold">temukan menu Alat</annotation> lalu <annotation emphasis="bold">pilih Impor data.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Isi formulir lalu <annotation emphasis="bold">impor file sandi tersimpan Anda.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Demi keamanan Anda, pastikan untuk <annotation emphasis="bold">menghapus file sandi tersimpan Anda.</annotation></string>
     <string name="need_help_check_out_import_help">Butuh bantuan? Lihat <annotation link="importHelp">bantuan impor</annotation>.</string>
     <string name="import_help">bantuan impor</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Simpan file ekspor</annotation> di komputer Anda pada tempat mudah ditemukan.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Ini bukan server Universal Password Manager yang dikenali. Anda mungkin perlu memeriksa dengan penyedia atau memperbarui server Anda.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Ini bukan server Universal Password Manager yang dikenali. Anda mungkin perlu memeriksa dengan penyedia atau memperbarui server Anda.</string>
     <string name="syncing_logins_loading_message">Menyinkronkan login…</string>
     <string name="download_the_browser_extension">Unduh ekstensi peramban</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Buka bitwarden.com/download untuk mengintegrasikan Universal Password Manager ke browser favorit Anda agar pengalaman lebih mulus.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Buka /download untuk mengintegrasikan Universal Password Manager ke browser favorit Anda agar pengalaman lebih mulus.</string>
     <string name="use_the_web_app">Gunakan aplikasi web</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Masuk di bitwarden.com untuk mengelola akun dan memperbarui pengaturan dengan mudah.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Masuk di  untuk mengelola akun dan memperbarui pengaturan dengan mudah.</string>
     <string name="autofill_passwords">Isi otomatis sandi</string>
     <string name="set_up_autofill_on_all_your_devices">Atur isi otomatis di semua perangkat Anda untuk login dengan sekali ketuk di mana saja.</string>
     <string name="import_successful">Impor Berhasil!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Kelola login Anda dari mana saja dengan alat Universal Password Manager untuk web dan desktop.</string>
-    <string name="bitwarden_tools">Alat Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Kelola login Anda dari mana saja dengan alat Universal Password Manager untuk web dan desktop.</string>
+    <string name="universalpasswordmanager_tools">Alat Universal Password Manager</string>
     <string name="got_it">Siap</string>
     <string name="no_logins_were_imported">Tidak ada login yang diimpor</string>
     <string name="import_error">Kesalahan impor</string>
@@ -896,7 +896,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
         <item quantity="other">%d notifikasi</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Masuk dengan cepat dan mudah lintas perangkat</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager dapat memberi Anda notifikasi setiap kali ada permintaan login baru dari perangkat lain.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager dapat memberi Anda notifikasi setiap kali ada permintaan login baru dari perangkat lain.</string>
     <string name="skip_for_now">Lewati dulu</string>
     <string name="done_text">Selesai</string>
     <string name="page_number_x_of_y">%1$s dari %2$s</string>
@@ -948,7 +948,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="coachmark_5_of_6">5 DARI 6</string>
     <string name="coachmark_6_of_6">6 DARI 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Gunakan opsi ini untuk menyesuaikan sandi Anda agar memenuhi persyaratan situs akun.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Setelah menyimpan sandi baru ke Universal Password Manager, jangan lupa memperbaruinya di situs akun Anda.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Setelah menyimpan sandi baru ke Universal Password Manager, jangan lupa memperbaruinya di situs akun Anda.</string>
     <string name="verify_your_identity">Verifikasi identitas Anda</string>
     <string name="error_loading_certificate">Kesalahan memuat sertifikat</string>
     <string name="certificate_alias">Alias sertifikat</string>
@@ -959,7 +959,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="unsupported_certificate_type">Jenis sertifikat tidak didukung</string>
     <string name="certificate_password_incorrect">Sandi sertifikat salah</string>
     <string name="invalid_certificate_chain">Rantai sertifikat tidak valid</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Menggunakan sertifikat sistem kurang aman dibanding menyimpan sertifikat dengan Universal Password Manager. Jika dilanjutkan, akan ditampilkan daftar sertifikat sistem yang tersedia bila sudah terpasang.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Menggunakan sertifikat sistem kurang aman dibanding menyimpan sertifikat dengan Universal Password Manager. Jika dilanjutkan, akan ditampilkan daftar sertifikat sistem yang tersedia bila sudah terpasang.</string>
     <string name="link">Tautan</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Operasi kunci sandi gagal karena URL host tidak ada dalam permintaan.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Operasi kunci sandi gagal karena tanda tangan aplikasi tidak valid.</string>
@@ -1029,7 +1029,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="unable_to_read_certificate">Tidak bisa membaca sertifikat.</string>
     <string name="cannot_delete_your_account">Tidak bisa menghapus akun Anda</string>
     <string name="cannot_delete_your_account_explanation">Tindakan ini tidak dapat diselesaikan karena akun Anda dimiliki oleh sebuah organisasi. Hubungi administrator organisasi Anda untuk detail lebih lanjut.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Akun ini akan segera dihapus. Masuk di %1$s untuk terus menggunakan Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Akun ini akan segera dihapus. Masuk di %1$s untuk terus menggunakan Universal Password Manager.</string>
     <string name="view_file_send">Lihat file Kirim</string>
     <string name="view_text_send">Lihat teks Kirim</string>
     <string name="delete_send">Hapus Kirim</string>
@@ -1051,7 +1051,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="learn_more_about_privileged_apps">Pelajari lebih lanjut tentang apl dengan hak khusus</string>
     <string name="privileged_apps">Aplikasi dengan hak khusus</string>
     <string name="unrecognized_browser">Browser tidak dikenali</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Pelajari lebih lanjut tentang penggunaan kunci sandi dengan Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Pelajari lebih lanjut tentang penggunaan kunci sandi dengan Universal Password Manager.</string>
     <string name="all_trusted_apps">Semua aplikasi terpercaya</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Anda yakin ingin berhenti mempercayai %s?</string>
     <string name="installed_apps">Aplikasi terpasang</string>
@@ -1078,7 +1078,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="information">Informasi</string>
     <string name="otp_type">Tipe OTP</string>
     <string name="search_codes">Cari kode</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Amankan akun Anda dengan Otentikator Universal Password Manager</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Amankan akun Anda dengan Otentikator Universal Password Manager</string>
     <string name="get_verification_codes_for_all_your_accounts">Dapatkan kode verifikasi untuk semua akun Anda yang mendukung verifikasi 2 langkah.</string>
     <string name="use_your_device_camera_to_scan_codes">Gunakan kamera perangkat Anda untuk scan kode</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Pindai kode QR di pengaturan verifikasi 2 langkah untuk akun apa pun.</string>
@@ -1099,7 +1099,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="too_many_failed_biometric_attempts">Terlalu banyak kesalahan percobaan biometrik.</string>
     <string name="version">Versi</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Versi: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Pelajari lebih lanjut cara menggunakan Bitwarden Authenticator di Pusat Bantuan.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Pelajari lebih lanjut cara menggunakan Universal Password Manager Authenticator di Pusat Bantuan.</string>
     <string name="key">Kunci</string>
     <string name="create_verification_code">Buat kode Verifikasi</string>
     <string name="key_is_required">Kunci diperlukan.</string>
@@ -1110,41 +1110,41 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="key_is_invalid">Kunci salah.</string>
     <string name="backup">Cadangan</string>
     <string name="data_backup_title">Cadangan data</string>
-    <string name="data_backup_message">Data Bitwarden Authenticator dicadangkan dan dapat dipulihkan melalui cadangan perangkat terjadwal Anda.</string>
+    <string name="data_backup_message">Data Universal Password Manager Authenticator dicadangkan dan dapat dipulihkan melalui cadangan perangkat terjadwal Anda.</string>
     <string name="import_2fas_password_protected_not_supported">Impor dari file 2FAS yang dilindungi sandi tidak didukung. Coba lagi dengan file ekspor yang tidak dilindungi sandi.</string>
-    <string name="import_bitwarden_unsupported_format">Mengimpor file CSV Universal Password Manager tidak didukung. Coba lagi dengan file JSON yang diekspor.</string>
-    <string name="download_bitwarden_card_title">Unduh aplikasi Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">Simpan semua login Anda dan sinkronkan kode verifikasi langsung dengan aplikasi Authenticator.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Mengimpor file CSV Universal Password Manager tidak didukung. Coba lagi dengan file JSON yang diekspor.</string>
+    <string name="download_universalpasswordmanager_card_title">Unduh aplikasi Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">Simpan semua login Anda dan sinkronkan kode verifikasi langsung dengan aplikasi Authenticator.</string>
     <string name="download_now">Unduh sekarang</string>
-    <string name="sync_with_bitwarden_app">Sinkron dengan aplikasi Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">Sinkron dengan aplikasi Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">Pelajari lebih lanjut</annotation></string>
     <string name="shared_codes_error">Tidak dapat menyinkronkan kode dari aplikasi Universal Password Manager. Pastikan kedua aplikasi diperbarui. Anda tetap bisa mengakses kode yang ada di aplikasi Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">Sinkron dengan aplikasi Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">Untuk melihat semua kode verifikasi Anda, aktifkan sinkronisasi di semua akun.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Sinkron dengan aplikasi Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Untuk melihat semua kode verifikasi Anda, aktifkan sinkronisasi di semua akun.</string>
     <string name="take_me_to_app_settings">Bawa saya ke pengaturan aplikasi</string>
     <string name="something_went_wrong">Terjadi kesalahan</string>
     <string name="please_try_again">Harap coba lagi</string>
-    <string name="copy_to_bitwarden_vault">Salin ke brankas Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">Salin ke brankas Universal Password Manager</string>
     <string name="default_save_option">Pilihan simpan standar</string>
-    <string name="save_to_bitwarden">Simpan ke Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">Simpan ke Universal Password Manager</string>
     <string name="save_here">Simpan disini</string>
     <string name="none">Tidak ada</string>
     <string name="default_save_options_subtitle">Pilih tempat untuk menyimpan kode verifikasi baru.</string>
     <string name="verification_code_created">Kode verifikasi berhasil dibuat</string>
     <string name="choose_save_location_message">Simpan kunci autentikator ini di sini, atau tambahkan ke login di aplikasi Universal Password Manager Anda.</string>
     <string name="save_option_as_default">Simpan opsi sebagai bawaan</string>
-    <string name="account_synced_from_bitwarden_app">Akun tersinkron dari aplikasi Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Akun tersinkron dari aplikasi Universal Password Manager</string>
     <string name="local_codes">Kode lokal (%1$d)</string>
     <string name="local_codes_header">Kode lokal</string>
     <string name="required_information_missing">Informasi Wajib Masih Kosong</string>
-    <string name="required_information_missing_message">Informasi yang diperlukan hilang (misalnya: ‘layanan’ atau ‘rahasia’). Periksa file Anda dan coba lagi. Kunjungi bitwarden.com/help untuk dukungan</string>
+    <string name="required_information_missing_message">Informasi yang diperlukan hilang (misalnya: ‘layanan’ atau ‘rahasia’). Periksa file Anda dan coba lagi. Kunjungi /help untuk dukungan</string>
     <string name="file_could_not_be_processed">File Tidak Dapat Diproses</string>
-    <string name="file_could_not_be_processed_message">File tidak dapat diproses. Pastikan file berformat JSON yang valid lalu coba lagi. Perlu bantuan? Kunjungi bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">File tidak dapat diproses. Pastikan file berformat JSON yang valid lalu coba lagi. Perlu bantuan? Kunjungi /help</string>
     <string name="get_help">Dapatkan Bantuan</string>
     <string name="error_cannot_decrypt">[kesalahan: tidak bisa mendecrypt]</string>
     <string name="copy_error_report">Salin laporan kesalahan</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager tidak dapat mendekripsi item brankas ini. Salin dan bagikan laporan kesalahan ini ke tim layanan pelanggan untuk mencegah kehilangan data lebih lanjut.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager tidak dapat mendekripsi item brankas ini. Salin dan bagikan laporan kesalahan ini ke tim layanan pelanggan untuk mencegah kehilangan data lebih lanjut.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="other">Universal Password Manager tidak dapat mendekripsi %1$d item brankas. Salin dan bagikan laporan kesalahan ini ke tim layanan pelanggan untuk mencegah kehilangan data lebih lanjut.</item>
     </plurals>
     <string name="select_a_card_for_x">Pilih kartu untuk %s</string>
@@ -1181,7 +1181,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Aktifkan Isi Otomatis browser untuk tetap mengisi sandi</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Browser Anda baru saja diperbarui, yang menyebabkan isi otomatis Universal Password Manager nonaktif. Untuk tetap mengisi sandi dengan Universal Password Manager, aktifkan isi otomatis browser di pengaturan isi otomatis.</string>
     <string name="not_now">Lain kali</string>
-    <string name="import_from_bitwarden">Impor dari Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">Impor dari Universal Password Manager</string>
     <string name="select_account">Pilih akun</string>
     <string name="no_accounts_available">Tidak ada akun tersedia</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Anda tidak memiliki akun yang dapat diimpor. Kebijakan keamanan organisasi Anda mungkin membatasi impor item dari Universal Password Manager ke apl lain.</string>
@@ -1280,7 +1280,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="trusted">Dipercaya</string>
     <string name="preview_not_available_for_files">Pratinjau tidak tersedia untuk file %1$s. Anda masih dapat mengunduhnya untuk melihat di perangkat Anda.</string>
     <string name="this_file_is_too_large_to_preview">File ini terlalu besar untuk dipratinjau. Anda masih dapat mengunduhnya untuk melihat di perangkat Anda.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager tidak dapat mendekripsi file ini, sehingga pratinjau tidak dapat ditampilkan.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager tidak dapat mendekripsi file ini, sehingga pratinjau tidak dapat ditampilkan.</string>
     <string name="preview_unavailable_for_this_file">Pratinjau tidak tersedia untuk file ini. Anda masih dapat mengunduhnya untuk melihat di perangkat Anda.</string>
     <string name="preview_unavailable">Pratinjau tidak tersedia</string>
     <string name="download_attachment">Unduh Lampiran</string>
@@ -1322,7 +1322,7 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="billing_rate_per_year">%1$s / tahun</string>
     <string name="billing_rate_per_month">%1$s / bulan</string>
     <string name="manage_plan">Kelola paket</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Kelola paket langganan Anda di aplikasi web Universal Password Manager.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Kelola paket langganan Anda di aplikasi web Universal Password Manager.</string>
     <string name="cancel_premium">Batalkan Premium</string>
     <string name="subscription_status_active">Aktif</string>
     <string name="subscription_status_canceled">Dibatalkan</string>
@@ -1412,8 +1412,8 @@ pilih Tambahkan TOTP untuk menyimpan kunci dengan aman</string>
     <string name="local_network_access_required">Akses jaringan lokal diperlukan</string>
     <string name="ask_again_later">Tanya lagi nanti</string>
     <string name="enable_local_network_access">Aktifkan akses jaringan lokal</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager memerlukan akses jaringan lokal untuk sinkronisasi dengan server Anda. Tanpa izin ini, aplikasi tidak akan dapat terhubung.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Tanpa izin ini, Universal Password Manager tidak akan dapat terhubung dan sinkronisasi dengan server Anda. Anda dapat mengaktifkannya di pengaturan perangkat Anda.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager memerlukan akses jaringan lokal untuk sinkronisasi dengan server Anda. Tanpa izin ini, aplikasi tidak akan dapat terhubung.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Tanpa izin ini, Universal Password Manager tidak akan dapat terhubung dan sinkronisasi dengan server Anda. Anda dapat mengaktifkannya di pengaturan perangkat Anda.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Permintaan Anda terputus karena aplikasi memerlukan akses jaringan lokal. Anda dapat mengaktifkannya di pengaturan perangkat Anda.</string>
     <string name="continue_to_stripe">Lanjutkan ke Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Anda akan dibawa ke Stripe untuk mengelola pembatalan langganan Anda.</string>

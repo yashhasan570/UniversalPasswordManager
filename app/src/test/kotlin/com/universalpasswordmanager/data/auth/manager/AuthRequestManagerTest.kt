@@ -120,7 +120,7 @@ class AuthRequestManagerTest {
                 creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
             )
             val updatedAuthRequestResponseJson = authRequestResponseJson.copy(
                 requestApproved = true,
@@ -198,7 +198,7 @@ class AuthRequestManagerTest {
                 creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
             )
             fakeAuthDiskSource.userState = SINGLE_USER_STATE
             fakeAuthDiskSource.storePendingAuthRequest(
@@ -279,7 +279,7 @@ class AuthRequestManagerTest {
                 creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
             )
             val updatedAuthRequestResponseJson = authRequestResponseJson.copy(
                 responseDate = Instant.parse("2024-09-13T00:00:00Z"),
@@ -347,7 +347,7 @@ class AuthRequestManagerTest {
                 creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
             )
             val updatedAuthRequestResponseJson = authRequestResponseJson.copy(
                 creationDate = Instant.parse("2023-09-13T00:00:00Z"),
@@ -1107,7 +1107,7 @@ class AuthRequestManagerTest {
                     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                     responseDate = null,
                     requestApproved = true,
-                    originUrl = "www.bitwarden.com",
+                    originUrl = "www.",
                 ),
             ),
         )
@@ -1123,7 +1123,7 @@ class AuthRequestManagerTest {
                     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                     responseDate = null,
                     requestApproved = true,
-                    originUrl = "www.bitwarden.com",
+                    originUrl = "www.",
                     fingerprint = fingerprint,
                 ),
             ),
@@ -1157,7 +1157,7 @@ class AuthRequestManagerTest {
                     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                     responseDate = null,
                     requestApproved = true,
-                    originUrl = "www.bitwarden.com",
+                    originUrl = "www.",
                 ),
             ),
         )
@@ -1241,7 +1241,7 @@ class AuthRequestManagerTest {
             creationDate = Instant.parse("2024-09-13T00:00:00Z"),
             responseDate = null,
             requestApproved = true,
-            originUrl = "www.bitwarden.com",
+            originUrl = "www.",
         )
         val expected = AuthRequestResult.Success(
             authRequest = AuthRequest(
@@ -1254,7 +1254,7 @@ class AuthRequestManagerTest {
                 creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                 responseDate = null,
                 requestApproved = true,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "",
             ),
         )
@@ -1325,7 +1325,7 @@ class AuthRequestManagerTest {
         }
 }
 
-private const val EMAIL: String = "test@bitwarden.com"
+private const val EMAIL: String = "test@"
 private const val UNIQUE_APP_ID: String = "testUniqueAppId"
 private const val PRIVATE_KEY: String = "privateKey"
 private const val PUBLIC_KEY: String = "PublicKey"
@@ -1382,7 +1382,7 @@ private val AUTH_REQUESTS_RESPONSE_JSON_AUTH_RESPONSE: AuthRequestsResponseJson.
         creationDate = Instant.parse("2024-09-13T00:00:00Z"),
         responseDate = null,
         requestApproved = true,
-        originUrl = "www.bitwarden.com",
+        originUrl = "www.",
     )
 
 private val AUTH_REQUEST: AuthRequest = AuthRequest(
@@ -1395,7 +1395,7 @@ private val AUTH_REQUEST: AuthRequest = AuthRequest(
     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
     responseDate = null,
     requestApproved = true,
-    originUrl = "www.bitwarden.com",
+    originUrl = "www.",
     fingerprint = FINGER_PRINT,
 )
 

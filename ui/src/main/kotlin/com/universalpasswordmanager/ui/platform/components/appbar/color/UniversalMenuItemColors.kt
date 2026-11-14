@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for menu items.
  */
 @Composable
-fun bitwardenMenuItemColors(
+fun universalpasswordmanagerMenuItemColors(
     textColor: Color = UniversalTheme.colorScheme.text.primary,
 ): MenuItemColors = MenuItemColors(
     textColor = textColor,

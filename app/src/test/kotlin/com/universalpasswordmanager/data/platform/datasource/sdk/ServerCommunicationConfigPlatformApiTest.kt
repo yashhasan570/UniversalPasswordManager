@@ -27,7 +27,7 @@ class ServerCommunicationConfigPlatformApiTest {
 
     @Test
     fun `acquireCookies sets pending state and throws exception`() = runTest {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val pendingSlot = slot<CookieAcquisitionRequest>()
         every {
             serverCommConfigManager.setPendingCookieAcquisition(capture(pendingSlot))

@@ -13,7 +13,7 @@ import kotlinx.parcelize.Parcelize
  * @property email The email of the user.
  * @property avatarColorHex Hex color value for a user's avatar in the "#AARRGGBB" format.
  * @property environmentLabel Label for the environment associated with the user's account
- * (ex: "bitwarden.com"). This is purely for display purposes.
+ * (ex: ""). This is purely for display purposes.
  * @property isActive Whether the account is currently the active one.
  * @property isVaultUnlocked Whether the account's vault is currently unlocked.
  */

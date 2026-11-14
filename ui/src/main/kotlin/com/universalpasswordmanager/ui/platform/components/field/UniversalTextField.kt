@@ -50,9 +50,9 @@ import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
 import com.universalpasswordmanager.ui.platform.base.util.simpleVerticalScrollbar
 import com.universalpasswordmanager.ui.platform.base.util.toPx
 import com.universalpasswordmanager.ui.platform.base.util.withLineBreaksAtWidth
-import com.universalpasswordmanager.ui.platform.components.appbar.color.bitwardenMenuItemColors
+import com.universalpasswordmanager.ui.platform.components.appbar.color.universalpasswordmanagerMenuItemColors
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalHelpButtonData
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.components.field.label.UniversalTextFieldLabel
 import com.universalpasswordmanager.ui.platform.components.field.model.TextToolbarType
 import com.universalpasswordmanager.ui.platform.components.field.support.UniversalTextFieldSupportingContent
@@ -296,7 +296,7 @@ fun UniversalTextField(
                     .fillMaxWidth(),
             ) {
                 TextField(
-                    colors = bitwardenTextFieldColors(textColor = textColor),
+                    colors = universalpasswordmanagerTextFieldColors(textColor = textColor),
                     enabled = enabled,
                     label = label?.let {
                         {
@@ -404,7 +404,7 @@ private fun ExposedDropdownMenuBoxScope.AutocompleteDropDownMenu(
     ) {
         autoCompleteList.forEach {
             DropdownMenuItem(
-                colors = bitwardenMenuItemColors(),
+                colors = universalpasswordmanagerMenuItemColors(),
                 text = { Text(text = it, style = textStyle) },
                 onClick = { onValueClicked(it) },
             )

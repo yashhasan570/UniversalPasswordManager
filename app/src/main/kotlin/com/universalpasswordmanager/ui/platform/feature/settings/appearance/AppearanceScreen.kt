@@ -58,7 +58,7 @@ fun AppearanceScreen(
         when (event) {
             AppearanceEvent.NavigateBack -> onNavigateBack.invoke()
             AppearanceEvent.NavigateToWebsiteIconsHelp -> {
-                intentManager.launchUri("https://bitwarden.com/help/website-icons/".toUri())
+                intentManager.launchUri("https:///help/website-icons/".toUri())
             }
         }
     }

@@ -107,7 +107,7 @@ fun AccountSecurityScreen(
             AccountSecurityEvent.NavigateToDeleteAccount -> onNavigateToDeleteAccount()
 
             AccountSecurityEvent.NavigateToFingerprintPhrase -> {
-                intentManager.launchUri("http://bitwarden.com/help/fingerprint-phrase".toUri())
+                intentManager.launchUri("http:///help/fingerprint-phrase".toUri())
             }
 
             AccountSecurityEvent.NavigateToPendingRequests -> onNavigateToPendingRequests()
@@ -622,7 +622,7 @@ private fun ColumnScope.SyncWithAuthenticatorRow(
     )
     Spacer(modifier = Modifier.height(height = 8.dp))
     UniversalSwitch(
-        label = stringResource(UniversalString.allow_bitwarden_authenticator_syncing),
+        label = stringResource(UniversalString.allow_universalpasswordmanager_authenticator_syncing),
         onCheckedChange = onCheckedChange,
         isChecked = isChecked,
         cardStyle = CardStyle.Full,

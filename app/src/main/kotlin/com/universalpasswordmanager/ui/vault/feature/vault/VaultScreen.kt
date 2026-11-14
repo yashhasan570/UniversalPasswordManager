@@ -285,7 +285,7 @@ private fun VaultScreenScaffold(
                 label = "AnimateFlightRecorderSnackbar",
             ) { data ->
                 UniversalSnackbar(
-                    bitwardenSnackbarData = data,
+                    universalpasswordmanagerSnackbarData = data,
                     onDismiss = vaultHandlers.dismissFlightRecorderSnackbar,
                     onActionClick = vaultHandlers.flightRecorderGoToSettingsClick,
                 )
@@ -294,7 +294,7 @@ private fun VaultScreenScaffold(
                 // We don't want additional animations from the Animated Visibility and we only
                 // want this displayed if the flight recorder snackbar is not set.
                 UniversalSnackbarHost(
-                    bitwardenHostState = snackbarHostState,
+                    universalpasswordmanagerHostState = snackbarHostState,
                 )
             }
         },
@@ -465,7 +465,7 @@ private fun VaultDialogs(
                 title = dialogState.title(),
                 message = pluralStringResource(
                     id = UniversalPlurals
-                        .bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long,
+                        .universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long,
                     count = dialogState.cipherCount,
                     dialogState.cipherCount,
                 ),

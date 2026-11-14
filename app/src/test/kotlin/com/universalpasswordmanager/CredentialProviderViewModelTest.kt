@@ -44,7 +44,7 @@ class CredentialProviderViewModelTest : BaseViewModelTest() {
     private val mockCredentialProviderRequestManager = mockk<CredentialProviderRequestManager> {
         every { setPendingCredentialRequest(capture(credentialRequestSlot)) } just runs
     }
-    private val bitwardenCredentialManager = mockk<UniversalCredentialManager> {
+    private val universalpasswordmanagerCredentialManager = mockk<UniversalCredentialManager> {
         every { isUserVerified } returns false
         every { isUserVerified = any() } just runs
     }
@@ -105,7 +105,7 @@ class CredentialProviderViewModelTest : BaseViewModelTest() {
 
         viewModel.trySendAction(CredentialProviderAction.ReceiveFirstIntent(intent = mockIntent))
 
-        verify { bitwardenCredentialManager.isUserVerified = true }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = true }
     }
 
     @Suppress("MaxLineLength")
@@ -182,7 +182,7 @@ class CredentialProviderViewModelTest : BaseViewModelTest() {
 
         viewModel.trySendAction(CredentialProviderAction.ReceiveFirstIntent(intent = mockIntent))
 
-        verify { bitwardenCredentialManager.isUserVerified = true }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = true }
     }
 
     @Suppress("MaxLineLength")
@@ -220,7 +220,7 @@ class CredentialProviderViewModelTest : BaseViewModelTest() {
 
         viewModel.trySendAction(CredentialProviderAction.ReceiveFirstIntent(intent = mockIntent))
 
-        verify { bitwardenCredentialManager.isUserVerified = true }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = true }
     }
 
     @Suppress("MaxLineLength")
@@ -333,7 +333,7 @@ class CredentialProviderViewModelTest : BaseViewModelTest() {
     private fun createViewModel() = CredentialProviderViewModel(
         credentialProviderRequestManager = mockCredentialProviderRequestManager,
         authRepository = mockAuthRepository,
-        bitwardenCredentialManager = bitwardenCredentialManager,
+        universalpasswordmanagerCredentialManager = universalpasswordmanagerCredentialManager,
     )
 
     @Suppress("LongParameterList")

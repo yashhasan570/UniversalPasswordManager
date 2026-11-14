@@ -46,7 +46,7 @@ class UniversalAccessibilityProcessorTest {
         every { show(messageId = any(), duration = Toast.LENGTH_LONG) } just runs
     }
 
-    private val bitwardenAccessibilityProcessor: UniversalAccessibilityProcessor =
+    private val universalpasswordmanagerAccessibilityProcessor: UniversalAccessibilityProcessor =
         UniversalAccessibilityProcessorImpl(
             context = context,
             accessibilityParser = accessibilityParser,
@@ -80,7 +80,7 @@ class UniversalAccessibilityProcessorTest {
             every { source } returns null
         }
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
 
         verify(exactly = 0) {
             powerManager.isInteractive
@@ -97,7 +97,7 @@ class UniversalAccessibilityProcessorTest {
             every { packageName } returns "other_package"
         }
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 0) {
             powerManager.isInteractive
@@ -115,7 +115,7 @@ class UniversalAccessibilityProcessorTest {
         }
         every { powerManager.isInteractive } returns false
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -129,7 +129,7 @@ class UniversalAccessibilityProcessorTest {
         }
         every { powerManager.isInteractive } returns false
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -148,7 +148,7 @@ class UniversalAccessibilityProcessorTest {
         }
         every { powerManager.isInteractive } returns true
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -169,7 +169,7 @@ class UniversalAccessibilityProcessorTest {
         }
         every { powerManager.isInteractive } returns true
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -192,7 +192,7 @@ class UniversalAccessibilityProcessorTest {
         every { launcherPackageNameManager.launcherPackages } returns listOf(testPackageName)
         every { powerManager.isInteractive } returns true
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -207,7 +207,7 @@ class UniversalAccessibilityProcessorTest {
     fun `processAccessibilityEvent without accessibility action should return before performing other checks`() {
         val event = mockk<AccessibilityEvent>()
         every { accessibilityAutofillManager.accessibilityAction } returns null
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { null }
 
         verify(exactly = 1) { accessibilityAutofillManager.accessibilityAction }
         verify(exactly = 0) {
@@ -240,7 +240,7 @@ class UniversalAccessibilityProcessorTest {
         every { accessibilityAutofillManager.accessibilityAction = null } just runs
         every { accessibilityParser.parseForUriOrPackageName(rootNode = node) } returns null
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -293,7 +293,7 @@ class UniversalAccessibilityProcessorTest {
             accessibilityParser.parseForFillableFields(rootNode = node, uri = uri)
         } returns mockk { every { hasFields } returns false }
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -347,7 +347,7 @@ class UniversalAccessibilityProcessorTest {
             accessibilityParser.parseForFillableFields(rootNode = node, uri = uri)
         } returns mockk { every { hasFields } returns true }
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -393,7 +393,7 @@ class UniversalAccessibilityProcessorTest {
         every { accessibilityAutofillManager.accessibilityAction } returns attemptFill
         every { accessibilityAutofillManager.accessibilityAction = null } just runs
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 1) {
             powerManager.isInteractive
@@ -450,7 +450,7 @@ class UniversalAccessibilityProcessorTest {
             accessibilityParser.parseForFillableFields(rootNode = node, uri = uri)
         } returns fillableFields
 
-        bitwardenAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
+        universalpasswordmanagerAccessibilityProcessor.processAccessibilityEvent(event = event) { rootNode }
 
         verify(exactly = 1) {
             powerManager.isInteractive

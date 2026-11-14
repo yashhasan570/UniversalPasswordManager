@@ -30,12 +30,12 @@ import kotlinx.serialization.json.Json
 /**
  * Provides access to Universal services.
  *
- * New instances of this class should be created using the [bitwardenServiceClient] factory
+ * New instances of this class should be created using the [universalpasswordmanagerServiceClient] factory
  * function.
  *
  * Example initialization:
  * ```
- * val bitwardenServiceClient = bitwardenServiceClient(
+ * val universalpasswordmanagerServiceClient = universalpasswordmanagerServiceClient(
  *     UniversalServiceClientConfig(
  *         clock = clock,
  *         json = json,
@@ -164,7 +164,7 @@ interface UniversalServiceClient {
  *
  * Example initialization:
  * ```
- * val bitwardenServiceClient = bitwardenServiceClient(
+ * val universalpasswordmanagerServiceClient = universalpasswordmanagerServiceClient(
  *     UniversalServiceClientConfig(
  *         clock = clock,
  *         json = json,
@@ -181,10 +181,10 @@ interface UniversalServiceClient {
  * )
  * ```
  */
-fun bitwardenServiceClient(
+fun universalpasswordmanagerServiceClient(
     config: UniversalServiceClientConfig,
     json: Json,
 ): UniversalServiceClient = UniversalServiceClientImpl(
-    bitwardenServiceClientConfig = config,
+    universalpasswordmanagerServiceClientConfig = config,
     clientJson = json,
 )

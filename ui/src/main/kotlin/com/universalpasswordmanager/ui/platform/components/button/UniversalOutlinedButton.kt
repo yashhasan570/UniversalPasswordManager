@@ -21,7 +21,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.cardStyle
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenOutlinedButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerOutlinedButtonColors
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalButtonData
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalOutlinedButtonColors
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
@@ -48,7 +48,7 @@ fun UniversalOutlinedButton(
     buttonData: UniversalButtonData,
     modifier: Modifier = Modifier,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    colors: UniversalOutlinedButtonColors = bitwardenOutlinedButtonColors(),
+    colors: UniversalOutlinedButtonColors = universalpasswordmanagerOutlinedButtonColors(),
     cardStyle: CardStyle? = null,
     cardInsets: PaddingValues = PaddingValues(horizontal = 16.dp, vertical = 6.dp),
 ) {
@@ -91,7 +91,7 @@ fun UniversalOutlinedButton(
     icon: Painter? = null,
     isEnabled: Boolean = true,
     isExternalLink: Boolean = false,
-    colors: UniversalOutlinedButtonColors = bitwardenOutlinedButtonColors(),
+    colors: UniversalOutlinedButtonColors = universalpasswordmanagerOutlinedButtonColors(),
     cardStyle: CardStyle? = null,
     cardInsets: PaddingValues = PaddingValues(horizontal = 16.dp, vertical = 6.dp),
 ) {

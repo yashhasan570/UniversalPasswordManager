@@ -247,8 +247,8 @@ class OriginManagerTest {
 private const val DEFAULT_PACKAGE_NAME = "com.universalpasswordmanager"
 private const val DEFAULT_APP_SIGNATURE = "0987654321ABCDEF"
 private const val DEFAULT_CERT_FINGERPRINT = "30:39:38:37:36:35:34:33:32:31:41:42:43:44:45:46"
-private const val DEFAULT_ORIGIN = "bitwarden.com"
-private const val DEFAULT_RELYING_PARTY_ID = "www.bitwarden.com"
+private const val DEFAULT_ORIGIN = ""
+private const val DEFAULT_RELYING_PARTY_ID = "www."
 private const val GOOGLE_ALLOW_LIST_FILENAME = "fido2_privileged_google.json"
 private const val COMMUNITY_ALLOW_LIST_FILENAME = "fido2_privileged_community.json"
 private const val DEFAULT_ALLOW_LIST = """
@@ -279,7 +279,7 @@ private const val FAIL_ALLOW_LIST = """
     {
       "type": "android",
       "info": {
-        "package_name": "com.not.bitwarden",
+        "package_name": "com.not.universalpasswordmanager",
         "signatures": [
           {
             "build": "release",

@@ -371,7 +371,7 @@ class StartRegistrationViewModelTest : BaseViewModelTest() {
                             title = UniversalString.account_creation_restricted.asText(),
                             message = UniversalString
                                 .only_allows_invited_users_to_create_accounts
-                                .asText("https://bitwarden.com"),
+                                .asText("https://"),
                         ),
                     ),
                     awaitItem(),
@@ -434,10 +434,10 @@ private fun createServerConfig(
         server = null,
         environment = ConfigResponseJson.EnvironmentJson(
             cloudRegion = "US",
-            vaultUrl = "https://bitwarden.com",
-            apiUrl = "https://api.bitwarden.com",
-            identityUrl = "https://identity.bitwarden.com",
-            notificationsUrl = "https://notifications.bitwarden.com",
+            vaultUrl = "https://",
+            apiUrl = "https://api.",
+            identityUrl = "https://identity.",
+            notificationsUrl = "https://notifications.",
             ssoUrl = null,
             fillAssistRulesUrl = null,
         ),

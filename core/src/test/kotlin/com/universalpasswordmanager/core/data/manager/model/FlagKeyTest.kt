@@ -10,7 +10,7 @@ class FlagKeyTest {
     fun `Feature flags have the correct key name set`() {
         assertEquals(
             FlagKey.UniversalAuthenticationEnabled.keyName,
-            "bitwarden-authentication-enabled",
+            "universalpasswordmanager-authentication-enabled",
         )
         assertEquals(
             FlagKey.AttachmentUpdates.keyName,

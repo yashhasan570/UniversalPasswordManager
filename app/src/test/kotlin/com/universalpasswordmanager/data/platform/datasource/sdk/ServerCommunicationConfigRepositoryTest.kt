@@ -34,7 +34,7 @@ class ServerCommunicationConfigRepositoryTest {
 
     @Test
     fun `get returns null when communication config not present`() = runTest {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
 
         val result = repository.get(hostname)
 
@@ -43,9 +43,9 @@ class ServerCommunicationConfigRepositoryTest {
 
     @Test
     fun `get returns ServerCommunicationConfig with cookies when config exists`() = runTest {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val idpLoginUrl = "https://idp.example.com/login"
-        val vaultUrl = "https://api.bitwarden.com"
+        val vaultUrl = "https://api."
         val cookieName = "session"
         val cookieDomain = ".example.com"
         configDiskSource.serverConfig = ServerConfig(
@@ -109,7 +109,7 @@ class ServerCommunicationConfigRepositoryTest {
 
     @Test
     fun `get returns Direct when bootstrap type is not ssoCookieVendor`() = runTest {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         configDiskSource.serverConfig = ServerConfig(
             lastSync = 0L,
             serverData = ConfigResponseJson(
@@ -142,12 +142,12 @@ class ServerCommunicationConfigRepositoryTest {
     @Test
     fun `save converts ServerCommunicationConfig to CookieConfigurationData and stores`() =
         runTest {
-            val hostname = "vault.bitwarden.com"
+            val hostname = "vault."
             val config = ServerCommunicationConfig(
                 bootstrap = BootstrapConfig.SsoCookieVendor(
                     v1 = SsoCookieVendorConfig(
                         idpLoginUrl = "https://$hostname/proxy-cookie-redirect-connector",
-                        vaultUrl = "https://api.bitwarden.com",
+                        vaultUrl = "https://api.",
                         cookieName = "session",
                         cookieDomain = hostname,
                         cookieValue = listOf(
@@ -178,7 +178,7 @@ class ServerCommunicationConfigRepositoryTest {
     @Test
     fun `save clears cookie config when bootstrap type is Direct`() =
         runTest {
-            val hostname = "vault.bitwarden.com"
+            val hostname = "vault."
             val config = ServerCommunicationConfig(bootstrap = BootstrapConfig.Direct)
             every { cookieDiskSource.storeCookieConfig(any(), null) } just runs
 
@@ -191,12 +191,12 @@ class ServerCommunicationConfigRepositoryTest {
 
     @Test
     fun `save handles ServerCommunicationConfig with null cookieValue`() = runTest {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val config = ServerCommunicationConfig(
             bootstrap = BootstrapConfig.SsoCookieVendor(
                 v1 = SsoCookieVendorConfig(
                     idpLoginUrl = "https://$hostname/proxy-cookie-redirect-connector",
-                    vaultUrl = "https://api.bitwarden.com",
+                    vaultUrl = "https://api.",
                     cookieName = "session",
                     cookieDomain = hostname,
                     cookieValue = null,

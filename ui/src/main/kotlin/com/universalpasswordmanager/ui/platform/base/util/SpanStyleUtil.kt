@@ -37,7 +37,7 @@ fun spanStyleOf(
 /**
  * A [SpanStyle] representing "regular" text using the text primary color and label medium font.
  */
-val bitwardenDefaultSpanStyle: SpanStyle
+val universalpasswordmanagerDefaultSpanStyle: SpanStyle
     @Composable
     @ReadOnlyComposable
     get() = spanStyleOf(
@@ -49,7 +49,7 @@ val bitwardenDefaultSpanStyle: SpanStyle
  * A [SpanStyle] representing "bold" text using the text primary color and body medium emphasis
  * font.
  */
-val bitwardenBoldSpanStyle: SpanStyle
+val universalpasswordmanagerBoldSpanStyle: SpanStyle
     @Composable
     @ReadOnlyComposable
     get() = spanStyleOf(
@@ -61,7 +61,7 @@ val bitwardenBoldSpanStyle: SpanStyle
  * A [SpanStyle] representing "clickable" text using the text interaction color and label medium
  * font.
  */
-val bitwardenClickableTextSpanStyle: SpanStyle
+val universalpasswordmanagerClickableTextSpanStyle: SpanStyle
     @Composable
     @ReadOnlyComposable
     get() = spanStyleOf(
@@ -73,7 +73,7 @@ val bitwardenClickableTextSpanStyle: SpanStyle
  * A [SpanStyle] representing "clickable" text in the focused state using the background alert
  * color and the underlined label medium font.
  */
-val bitwardenClickableTextFocusSpanStyle: SpanStyle
+val universalpasswordmanagerClickableTextFocusSpanStyle: SpanStyle
     @Composable
     @ReadOnlyComposable
     get() = spanStyleOf(

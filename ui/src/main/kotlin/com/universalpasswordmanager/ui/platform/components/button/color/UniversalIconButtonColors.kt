@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for a filled icon button.
  */
 @Composable
-fun bitwardenFilledIconButtonColors(): IconButtonColors = IconButtonColors(
+fun universalpasswordmanagerFilledIconButtonColors(): IconButtonColors = IconButtonColors(
     containerColor = UniversalTheme.colorScheme.filledButton.background,
     contentColor = UniversalTheme.colorScheme.filledButton.foreground,
     disabledContainerColor = UniversalTheme.colorScheme.filledButton.backgroundDisabled,
@@ -20,7 +20,7 @@ fun bitwardenFilledIconButtonColors(): IconButtonColors = IconButtonColors(
  * Provides a default set of Universal-styled colors for a standard icon button.
  */
 @Composable
-fun bitwardenStandardIconButtonColors(
+fun universalpasswordmanagerStandardIconButtonColors(
     contentColor: Color = UniversalTheme.colorScheme.icon.primary,
 ): IconButtonColors = IconButtonColors(
     containerColor = Color.Transparent,
@@ -33,7 +33,7 @@ fun bitwardenStandardIconButtonColors(
  * Provides a default set of Universal-styled colors for a filled icon button.
  */
 @Composable
-fun bitwardenTonalIconButtonColors(): IconButtonColors = IconButtonColors(
+fun universalpasswordmanagerTonalIconButtonColors(): IconButtonColors = IconButtonColors(
     containerColor = UniversalTheme.colorScheme.background.tertiary,
     contentColor = UniversalTheme.colorScheme.filledButton.foregroundReversed,
     disabledContainerColor = UniversalTheme.colorScheme.filledButton.backgroundDisabled,

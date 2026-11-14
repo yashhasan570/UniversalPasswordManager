@@ -10,7 +10,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for a filled button.
  */
 @Composable
-fun bitwardenFilledButtonColors(): ButtonColors = ButtonColors(
+fun universalpasswordmanagerFilledButtonColors(): ButtonColors = ButtonColors(
     containerColor = UniversalTheme.colorScheme.filledButton.background,
     contentColor = UniversalTheme.colorScheme.filledButton.foreground,
     disabledContainerColor = UniversalTheme.colorScheme.filledButton.backgroundDisabled,
@@ -21,7 +21,7 @@ fun bitwardenFilledButtonColors(): ButtonColors = ButtonColors(
  * Provides a default set of Universal-styled colors for a filled error button.
  */
 @Composable
-fun bitwardenFilledErrorButtonColors() = ButtonColors(
+fun universalpasswordmanagerFilledErrorButtonColors() = ButtonColors(
     containerColor = UniversalTheme.colorScheme.status.weak1,
     contentColor = UniversalTheme.colorScheme.filledButton.foreground,
     disabledContainerColor = UniversalTheme.colorScheme.filledButton.backgroundDisabled,
@@ -32,7 +32,7 @@ fun bitwardenFilledErrorButtonColors() = ButtonColors(
  * Provides a default set of Universal-styled colors for an outlined button.
  */
 @Composable
-fun bitwardenOutlinedButtonColors(
+fun universalpasswordmanagerOutlinedButtonColors(
     contentColor: Color = UniversalTheme.colorScheme.outlineButton.foreground,
     outlineColor: Color = UniversalTheme.colorScheme.outlineButton.border,
     outlineColorDisabled: Color = UniversalTheme.colorScheme.outlineButton.borderDisabled,
@@ -52,7 +52,7 @@ fun bitwardenOutlinedButtonColors(
  * Provides a default set of Universal-styled colors for a text button.
  */
 @Composable
-fun bitwardenTextButtonColors(
+fun universalpasswordmanagerTextButtonColors(
     contentColor: Color = UniversalTheme.colorScheme.outlineButton.foreground,
 ): ButtonColors = ButtonColors(
     containerColor = Color.Transparent,

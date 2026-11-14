@@ -22,30 +22,30 @@ object VaultNetworkModule {
     @Provides
     @Singleton
     fun provideCiphersService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): CiphersService = bitwardenServiceClient.ciphersService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): CiphersService = universalpasswordmanagerServiceClient.ciphersService
 
     @Provides
     @Singleton
     fun providesFolderService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): FolderService = bitwardenServiceClient.folderService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): FolderService = universalpasswordmanagerServiceClient.folderService
 
     @Provides
     @Singleton
     fun provideSendsService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): SendsService = bitwardenServiceClient.sendsService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): SendsService = universalpasswordmanagerServiceClient.sendsService
 
     @Provides
     @Singleton
     fun provideSyncService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): SyncService = bitwardenServiceClient.syncService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): SyncService = universalpasswordmanagerServiceClient.syncService
 
     @Provides
     @Singleton
     fun provideDownloadService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): DownloadService = bitwardenServiceClient.downloadService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): DownloadService = universalpasswordmanagerServiceClient.downloadService
 }

@@ -6,12 +6,12 @@ package com.universalpasswordmanager.network.util
 internal const val HEADER_KEY_AUTHORIZATION: String = "Authorization"
 
 /**
- * The key used for the 'bitwarden-client-name' headers.
+ * The key used for the 'universalpasswordmanager-client-name' headers.
  */
 internal const val HEADER_KEY_CLIENT_NAME: String = "Universal-Client-Name"
 
 /**
- * The key used for the 'bitwarden-client-version' headers.
+ * The key used for the 'universalpasswordmanager-client-version' headers.
  */
 internal const val HEADER_KEY_CLIENT_VERSION: String = "Universal-Client-Version"
 

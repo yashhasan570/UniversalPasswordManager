@@ -23,7 +23,7 @@ class UniversalPackageManagerTest {
     private val context: Context = mockk {
         every { packageManager } returns mockPackageManager
     }
-    private val bitwardenPackageManager = UniversalPackageManagerImpl(context)
+    private val universalpasswordmanagerPackageManager = UniversalPackageManagerImpl(context)
 
     @BeforeEach
     fun setUp() {
@@ -52,7 +52,7 @@ class UniversalPackageManagerTest {
                 PackageManager.ApplicationInfoFlags.of(0L),
             )
         } returns ApplicationInfo()
-        val result = bitwardenPackageManager.isPackageInstalled(packageName)
+        val result = universalpasswordmanagerPackageManager.isPackageInstalled(packageName)
         assertTrue(result)
     }
 
@@ -65,7 +65,7 @@ class UniversalPackageManagerTest {
                 PackageManager.ApplicationInfoFlags.of(0L),
             )
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.isPackageInstalled(packageName)
+        val result = universalpasswordmanagerPackageManager.isPackageInstalled(packageName)
         assertFalse(result)
     }
 
@@ -78,7 +78,7 @@ class UniversalPackageManagerTest {
                 PackageManager.ApplicationInfoFlags.of(0L),
             )
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.isPackageInstalled(packageName)
+        val result = universalpasswordmanagerPackageManager.isPackageInstalled(packageName)
         assertFalse(result)
     }
 
@@ -91,7 +91,7 @@ class UniversalPackageManagerTest {
                 PackageManager.ApplicationInfoFlags.of(0L),
             )
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.isPackageInstalled(packageName)
+        val result = universalpasswordmanagerPackageManager.isPackageInstalled(packageName)
         assertFalse(result)
     }
 
@@ -103,7 +103,7 @@ class UniversalPackageManagerTest {
         every {
             mockPackageManager.getApplicationInfo(packageName, 0)
         } returns mockk()
-        bitwardenPackageManager.isPackageInstalled(packageName)
+        universalpasswordmanagerPackageManager.isPackageInstalled(packageName)
         verify { mockPackageManager.getApplicationInfo(packageName, 0) }
     }
 
@@ -114,7 +114,7 @@ class UniversalPackageManagerTest {
         val applicationInfo = ApplicationInfo()
         every { mockPackageManager.getApplicationInfo(packageName, 0) } returns applicationInfo
         every { mockPackageManager.getApplicationLabel(applicationInfo) } returns appLabel
-        val result = bitwardenPackageManager.getAppLabelForPackageOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getAppLabelForPackageOrNull(packageName)
         assertEquals(appLabel, result)
     }
 
@@ -124,7 +124,7 @@ class UniversalPackageManagerTest {
         every {
             mockPackageManager.getApplicationInfo(packageName, 0)
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.getAppLabelForPackageOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getAppLabelForPackageOrNull(packageName)
         assertNull(result)
     }
 
@@ -134,7 +134,7 @@ class UniversalPackageManagerTest {
         val applicationInfo = ApplicationInfo()
         every { mockPackageManager.getApplicationInfo(packageName, 0) } returns applicationInfo
         every { mockPackageManager.getApplicationLabel(applicationInfo) } returns ""
-        val result = bitwardenPackageManager.getAppLabelForPackageOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getAppLabelForPackageOrNull(packageName)
         assertEquals("", result)
     }
 
@@ -144,7 +144,7 @@ class UniversalPackageManagerTest {
         every {
             mockPackageManager.getApplicationInfo(packageName, 0)
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.getAppLabelForPackageOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getAppLabelForPackageOrNull(packageName)
         assertNull(result)
     }
 
@@ -154,7 +154,7 @@ class UniversalPackageManagerTest {
         every {
             mockPackageManager.getApplicationInfo(packageName, 0)
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.getAppLabelForPackageOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getAppLabelForPackageOrNull(packageName)
         assertNull(result)
     }
 
@@ -165,7 +165,7 @@ class UniversalPackageManagerTest {
         every { mockPackageManager.getInstallSourceInfo(packageName) } returns mockk {
             every { installingPackageName } returns installationSource
         }
-        val result = bitwardenPackageManager.getPackageInstallationSourceOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getPackageInstallationSourceOrNull(packageName)
         assertEquals(installationSource, result)
     }
 
@@ -177,7 +177,7 @@ class UniversalPackageManagerTest {
         } returns mockk {
             every { installingPackageName } returns null
         }
-        val result = bitwardenPackageManager.getPackageInstallationSourceOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getPackageInstallationSourceOrNull(packageName)
         assertNull(result)
     }
 
@@ -187,7 +187,7 @@ class UniversalPackageManagerTest {
         every {
             mockPackageManager.getInstallSourceInfo(packageName)
         } throws PackageManager.NameNotFoundException()
-        val result = bitwardenPackageManager.getPackageInstallationSourceOrNull(packageName)
+        val result = universalpasswordmanagerPackageManager.getPackageInstallationSourceOrNull(packageName)
         assertNull(result)
     }
 
@@ -198,7 +198,7 @@ class UniversalPackageManagerTest {
         val installationSource = "com.example.source"
         every { isBuildVersionAtLeast(30) } returns false
         every { mockPackageManager.getInstallerPackageName(packageName) } returns installationSource
-        bitwardenPackageManager.getPackageInstallationSourceOrNull(packageName)
+        universalpasswordmanagerPackageManager.getPackageInstallationSourceOrNull(packageName)
         verify { mockPackageManager.getInstallerPackageName(packageName) }
     }
 
@@ -209,7 +209,7 @@ class UniversalPackageManagerTest {
         every { mockPackageManager.getInstallSourceInfo(packageName) } returns mockk {
             every { installingPackageName } returns installationSource
         }
-        bitwardenPackageManager.getPackageInstallationSourceOrNull(packageName)
+        universalpasswordmanagerPackageManager.getPackageInstallationSourceOrNull(packageName)
         verify { mockPackageManager.getInstallSourceInfo(packageName) }
     }
 }

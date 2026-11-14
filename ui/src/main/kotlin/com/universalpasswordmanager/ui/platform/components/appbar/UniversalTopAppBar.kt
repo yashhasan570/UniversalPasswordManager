@@ -32,7 +32,7 @@ import com.universalpasswordmanager.ui.R
 import com.universalpasswordmanager.ui.platform.base.util.bottomDivider
 import com.universalpasswordmanager.ui.platform.base.util.mirrorIfRtl
 import com.universalpasswordmanager.ui.platform.base.util.scrolledContainerBottomDivider
-import com.universalpasswordmanager.ui.platform.components.appbar.color.bitwardenTopAppBarColors
+import com.universalpasswordmanager.ui.platform.components.appbar.color.universalpasswordmanagerTopAppBarColors
 import com.universalpasswordmanager.ui.platform.components.appbar.model.TopAppBarDividerStyle
 import com.universalpasswordmanager.ui.platform.components.button.UniversalStandardIconButton
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
@@ -171,7 +171,7 @@ private fun InternalMediumTopAppBar(
 ) {
     MediumTopAppBar(
         windowInsets = windowInsets,
-        colors = bitwardenTopAppBarColors(),
+        colors = universalpasswordmanagerTopAppBarColors(),
         scrollBehavior = scrollBehavior,
         navigationIcon = { NavigationIconButton(navigationIcon = navigationIcon) },
         collapsedHeight = minimumHeight,
@@ -199,7 +199,7 @@ private fun InternalDefaultTopAppBar(
 ) {
     TopAppBar(
         windowInsets = windowInsets,
-        colors = bitwardenTopAppBarColors(),
+        colors = universalpasswordmanagerTopAppBarColors(),
         scrollBehavior = scrollBehavior,
         navigationIcon = { NavigationIconButton(navigationIcon = navigationIcon) },
         expandedHeight = minimumHeight,

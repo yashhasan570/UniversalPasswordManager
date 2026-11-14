@@ -2,7 +2,7 @@ package com.universalpasswordmanager.data.auth.datasource.disk
 
 import androidx.core.content.edit
 import app.cash.turbine.test
-import com.bitwarden.authenticatorbridge.util.generateSecretKey
+import .authenticatorbridge.util.generateSecretKey
 import com.universalpasswordmanager.core.WrappedAccountCryptographicState
 import com.universalpasswordmanager.core.di.CoreModule
 import com.universalpasswordmanager.data.datasource.disk.base.FakeSharedPreferences

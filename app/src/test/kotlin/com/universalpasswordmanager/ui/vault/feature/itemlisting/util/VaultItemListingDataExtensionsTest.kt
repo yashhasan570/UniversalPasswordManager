@@ -800,7 +800,7 @@ class VaultItemListingDataExtensionsTest {
                         secondSubtitleTestTag = "PasskeySite",
                         subtitleTestTag = "PasskeyName",
                         iconData = IconData.Network(
-                            uri = "https://icons.bitwarden.net/www.mockuri.com/icon.png",
+                            uri = "https://icons./www.mockuri.com/icon.png",
                             fallbackIconRes = UniversalDrawable.ic_bw_passkey,
                         ),
                         isAutofill = true,
@@ -889,7 +889,7 @@ class VaultItemListingDataExtensionsTest {
                             secondSubtitleTestTag = "PasskeySite",
                             subtitleTestTag = "PasskeyName",
                             iconData = IconData.Network(
-                                uri = "https://icons.bitwarden.net/www.mockuri.com/icon.png",
+                                uri = "https://icons./www.mockuri.com/icon.png",
                                 fallbackIconRes = UniversalDrawable.ic_bw_passkey,
                             ),
                             isAutofill = true,

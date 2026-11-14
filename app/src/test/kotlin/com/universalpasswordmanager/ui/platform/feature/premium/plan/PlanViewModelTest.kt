@@ -1494,7 +1494,7 @@ class PlanViewModelTest : BaseViewModelTest() {
 
             assertEquals(
                 PlanEvent.LaunchUri(
-                    url = "https://vault.bitwarden.com/#/settings/subscription/premium",
+                    url = "https://vault./#/settings/subscription/premium",
                 ),
                 eventFlow.awaitItem(),
             )
@@ -1819,7 +1819,7 @@ class PlanViewModelTest : BaseViewModelTest() {
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = "user-id-1",
     name = "Test User",
-    email = "test@bitwarden.com",
+    email = "test@",
     avatarColorHex = "#000000",
     environment = mockk(),
     isPremium = false,

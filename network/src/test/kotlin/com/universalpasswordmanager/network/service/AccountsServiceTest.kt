@@ -222,7 +222,7 @@ class AccountsServiceTest : BaseServiceTest() {
                     parallelism = 2,
                     kdfType = KdfTypeJson.ARGON2_ID,
                 ),
-                salt = "sample@bitwarden.com",
+                salt = "sample@",
                 masterPasswordAuthenticationHash = "passwordHash",
                 masterKeyWrappedUserKey = "encryptedUserKey",
                 keys = KeysJson(
@@ -248,7 +248,7 @@ class AccountsServiceTest : BaseServiceTest() {
                     parallelism = 2,
                     kdfType = KdfTypeJson.ARGON2_ID,
                 ),
-                salt = "sample@bitwarden.com",
+                salt = "sample@",
                 masterPasswordAuthenticationHash = "passwordHash",
                 masterKeyWrappedUserKey = "encryptedUserKey",
                 keys = null,

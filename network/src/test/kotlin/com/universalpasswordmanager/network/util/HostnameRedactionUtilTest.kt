@@ -17,7 +17,7 @@ class HostnameRedactionUtilTest {
     @Test
     fun `redactHostnamesInMessage preserves non-configured URLs`() {
         val message = "--> GET https://vault.example.com/api/sync HTTP/1.1"
-        val configuredHosts = setOf("api.bitwarden.com") // Different host
+        val configuredHosts = setOf("api.") // Different host
 
         val result = message.redactHostnamesInMessage(configuredHosts)
 
@@ -26,8 +26,8 @@ class HostnameRedactionUtilTest {
 
     @Test
     fun `redactHostnamesInMessage preserves Universal URLs even if configured`() {
-        val message = "--> GET https://vault.bitwarden.com/api/sync HTTP/1.1"
-        val configuredHosts = setOf("vault.bitwarden.com")
+        val message = "--> GET https://vault./api/sync HTTP/1.1"
+        val configuredHosts = setOf("vault.")
 
         val result = message.redactHostnamesInMessage(configuredHosts)
 
@@ -85,14 +85,14 @@ class HostnameRedactionUtilTest {
     @Test
     fun `redactHostnamesInMessage preserves Universal domains in NetworkCookieManagerImpl logs`() {
         val message = "2026-03-09 12:43:29:857 – DEBUG – NetworkCookieManagerImpl – " +
-            "getCookies(vault.example.com): resolved=vault.qa.bitwarden.pw, count=0"
-        val configuredHosts = setOf("vault.example.com", "vault.qa.bitwarden.pw")
+            "getCookies(vault.example.com): resolved=vault.qa., count=0"
+        val configuredHosts = setOf("vault.example.com", "vault.qa.")
 
         val result = message.redactHostnamesInMessage(configuredHosts)
 
         assertEquals(
             "2026-03-09 12:43:29:857 – DEBUG – NetworkCookieManagerImpl – " +
-                "getCookies([REDACTED_SELF_HOST]): resolved=vault.qa.bitwarden.pw, count=0",
+                "getCookies([REDACTED_SELF_HOST]): resolved=vault.qa., count=0",
             result,
         )
     }

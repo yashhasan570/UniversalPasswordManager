@@ -31,9 +31,9 @@ import com.universalpasswordmanager.ui.platform.base.util.bottomDivider
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
 import com.universalpasswordmanager.ui.platform.base.util.mirrorIfRtl
 import com.universalpasswordmanager.ui.platform.base.util.tabNavigation
-import com.universalpasswordmanager.ui.platform.components.appbar.color.bitwardenTopAppBarColors
+import com.universalpasswordmanager.ui.platform.components.appbar.color.universalpasswordmanagerTopAppBarColors
 import com.universalpasswordmanager.ui.platform.components.button.UniversalStandardIconButton
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
 
@@ -64,7 +64,7 @@ fun UniversalSearchTopAppBar(
             .testTag(tag = "HeaderBarComponent")
             .bottomDivider(),
         windowInsets = windowInsets,
-        colors = bitwardenTopAppBarColors(),
+        colors = universalpasswordmanagerTopAppBarColors(),
         scrollBehavior = scrollBehavior,
         navigationIcon = {
             navigationIcon?.let {
@@ -81,7 +81,7 @@ fun UniversalSearchTopAppBar(
         title = {
             val interactionSource = remember { MutableInteractionSource() }
             TextField(
-                colors = bitwardenTextFieldColors(),
+                colors = universalpasswordmanagerTextFieldColors(),
                 textStyle = UniversalTheme.typography.bodyLarge,
                 placeholder = { Text(text = placeholder) },
                 value = searchTerm,

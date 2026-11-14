@@ -32,7 +32,7 @@ class CompleteRegistrationDataUtilsTest {
         }
         val uriMock = mockk<Uri>()
         every { Uri.parse(any()) } returns uriMock
-        every { uriMock.host } returns "www.bitwarden.com"
+        every { uriMock.host } returns "www."
         every { uriMock.path } returns "/finish-signup"
         every { uriMock.getQueryParameter("email") } returns "example@email.com"
         every { uriMock.getQueryParameter("token") } returns "verificationtoken"
@@ -95,7 +95,7 @@ class CompleteRegistrationDataUtilsTest {
         }
         val uriMock = mockk<Uri>()
         every { Uri.parse(any()) } returns uriMock
-        every { uriMock.host } returns "www.bitwarden.com"
+        every { uriMock.host } returns "www."
         every { uriMock.path } returns "/finish-signup"
         every { uriMock.getQueryParameter("email") } returns null
         assertNull(
@@ -110,7 +110,7 @@ class CompleteRegistrationDataUtilsTest {
         }
         val uriMock = mockk<Uri>()
         every { Uri.parse(any()) } returns uriMock
-        every { uriMock.host } returns "www.bitwarden.com"
+        every { uriMock.host } returns "www."
         every { uriMock.path } returns "/finish-signup"
         every { uriMock.getQueryParameter("email") } returns "example@email.com"
         every { uriMock.getQueryParameter("token") } returns null

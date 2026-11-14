@@ -10,7 +10,7 @@ class CookieConfigurationDataExtensionsTest {
     @Test
     fun `toAcquiredCookie should map Cookie to AcquiredCookie`() {
         val cookie = CookieConfigurationData.Cookie(
-            name = "BW_SESSION",
+            name = "UNIVERSALPM_SESSION",
             value = "session_value",
         )
 
@@ -18,7 +18,7 @@ class CookieConfigurationDataExtensionsTest {
 
         assertEquals(
             AcquiredCookie(
-                name = "BW_SESSION",
+                name = "UNIVERSALPM_SESSION",
                 value = "session_value",
             ),
             result,

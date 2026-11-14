@@ -69,7 +69,7 @@ class CallExtensionsTest {
     private fun createMockkRequest(): Request {
         val mockkUrl = mockk<URL> {
             every { protocol } returns "http"
-            every { authority } returns "bitwarden.com"
+            every { authority } returns ""
             every { path } returns "/example/path"
         }
         val mockkHttpUrl = mockk<HttpUrl> {

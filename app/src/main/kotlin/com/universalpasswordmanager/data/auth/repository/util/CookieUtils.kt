@@ -7,7 +7,7 @@ import androidx.browser.auth.AuthTabIntent
 import kotlinx.parcelize.Parcelize
 
 /** URI scheme for cookie vendor callback. */
-private const val COOKIE_CALLBACK_SCHEME: String = "bitwarden"
+private const val COOKIE_CALLBACK_SCHEME: String = "universalpasswordmanager"
 
 /** URI host for cookie vendor callback. */
 private const val COOKIE_CALLBACK_HOST: String = "sso-cookie-vendor"

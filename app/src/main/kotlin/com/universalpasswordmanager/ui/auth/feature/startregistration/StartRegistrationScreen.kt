@@ -82,16 +82,16 @@ fun StartRegistrationScreen(
     EventsEffect(viewModel) { event ->
         when (event) {
             is NavigateToPrivacyPolicy -> {
-                intentManager.launchUri("https://bitwarden.com/privacy/".toUri())
+                intentManager.launchUri("https:///privacy/".toUri())
             }
 
-            is NavigateToTerms -> intentManager.launchUri("https://bitwarden.com/terms/".toUri())
+            is NavigateToTerms -> intentManager.launchUri("https:///terms/".toUri())
             is StartRegistrationEvent.NavigateToUnsubscribe -> {
-                intentManager.launchUri("https://bitwarden.com/email-preferences/".toUri())
+                intentManager.launchUri("https:///email-preferences/".toUri())
             }
 
             is StartRegistrationEvent.NavigateToServerSelectionInfo -> {
-                intentManager.launchUri("https://bitwarden.com/help/server-geographies/".toUri())
+                intentManager.launchUri("https:///help/server-geographies/".toUri())
             }
 
             is StartRegistrationEvent.NavigateBack -> onNavigateBack.invoke()
@@ -125,7 +125,7 @@ fun StartRegistrationScreen(
             )
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         StartRegistrationContent(
@@ -175,7 +175,7 @@ private fun StartRegistrationContent(
 
         Spacer(modifier = Modifier.weight(1f))
         Image(
-            painter = rememberVectorPainter(id = UniversalDrawable.logo_bitwarden),
+            painter = rememberVectorPainter(id = UniversalDrawable.logo_universalpasswordmanager),
             contentDescription = null,
             modifier = Modifier
                 .standardHorizontalMargin()
@@ -344,7 +344,7 @@ private fun ReceiveMarketingEmailsSwitch(
             }
             .testTag(tag = "ReceiveMarketingEmailsToggle"),
         label = annotatedStringResource(
-            id = UniversalString.get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time,
+            id = UniversalString.get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time,
             onAnnotationClick = { onUnsubscribeClick() },
         ),
         isChecked = isChecked,

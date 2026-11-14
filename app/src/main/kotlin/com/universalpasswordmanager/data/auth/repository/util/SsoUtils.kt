@@ -11,14 +11,14 @@ import java.net.URLEncoder
 import java.security.MessageDigest
 import java.util.Base64
 
-private val BITWARDEN_HOSTS: List<String> = listOf(
-    "bitwarden.com",
-    "bitwarden.eu",
-    "bitwarden.pw",
-    "bitwarden-gov.com",
+private val UNIVERSALPM_HOSTS: List<String> = listOf(
+    "",
+    "",
+    "",
+    "",
 )
 private const val APP_LINK_SCHEME: String = "https"
-private const val DEEPLINK_SCHEME: String = "bitwarden"
+private const val DEEPLINK_SCHEME: String = "universalpasswordmanager"
 private const val CALLBACK: String = "sso-callback"
 
 /**
@@ -86,7 +86,7 @@ fun Intent.getSsoCallbackResult(): SsoCallbackResult? {
         }
 
         APP_LINK_SCHEME -> {
-            if (localData.host in BITWARDEN_HOSTS && localData.path == "/$CALLBACK") {
+            if (localData.host in UNIVERSALPM_HOSTS && localData.path == "/$CALLBACK") {
                 localData.getSsoCallbackResult()
             } else {
                 null

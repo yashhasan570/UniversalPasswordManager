@@ -18,6 +18,6 @@ object BillingNetworkModule {
     @Provides
     @Singleton
     fun provideBillingService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): BillingService = bitwardenServiceClient.billingService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): BillingService = universalpasswordmanagerServiceClient.billingService
 }

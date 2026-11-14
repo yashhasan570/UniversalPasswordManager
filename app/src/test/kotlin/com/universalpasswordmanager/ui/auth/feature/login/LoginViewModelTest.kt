@@ -299,7 +299,7 @@ class LoginViewModelTest : BaseViewModelTest() {
                     DEFAULT_STATE.copy(
                         dialogState = LoginState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server.asText(),
+                            message = UniversalString.this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server.asText(),
                         ),
                     ),
                     awaitItem(),
@@ -323,7 +323,7 @@ class LoginViewModelTest : BaseViewModelTest() {
             fakeEnvironmentRepository.environment = Environment.SelfHosted(
                 environmentUrlData = EnvironmentUrlDataJson(
                     base = "",
-                    webVault = "vault.bitwarden.com",
+                    webVault = "vault.",
                 ),
             )
             val viewModel = createViewModel()
@@ -345,8 +345,8 @@ class LoginViewModelTest : BaseViewModelTest() {
                         environmentLabel = "",
                         dialogState = LoginState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden
-                                .asText("vault.bitwarden.com"),
+                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager
+                                .asText("vault."),
                         ),
                     ),
                     awaitItem(),
@@ -369,7 +369,7 @@ class LoginViewModelTest : BaseViewModelTest() {
             } returns LoginResult.EncryptionKeyMigrationRequired
             fakeEnvironmentRepository.environment = Environment.SelfHosted(
                 environmentUrlData = EnvironmentUrlDataJson(
-                    base = "base.bitwarden.com",
+                    base = "base.",
                     webVault = "",
                 ),
             )
@@ -390,8 +390,8 @@ class LoginViewModelTest : BaseViewModelTest() {
                     defaultSelfHostedState.copy(
                         dialogState = LoginState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden
-                                .asText("base.bitwarden.com"),
+                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager
+                                .asText("base."),
                         ),
                     ),
                     awaitItem(),
@@ -435,8 +435,8 @@ class LoginViewModelTest : BaseViewModelTest() {
                     defaultSelfHostedState.copy(
                         dialogState = LoginState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden
-                                .asText("vault.bitwarden.com"),
+                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager
+                                .asText("vault."),
                         ),
                     ),
                     awaitItem(),

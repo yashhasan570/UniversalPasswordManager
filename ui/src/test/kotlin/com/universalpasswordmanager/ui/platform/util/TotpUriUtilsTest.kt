@@ -124,7 +124,7 @@ class TotpUriUtilsTest {
         val issuer = "Universal"
         val period = 25
         val algorithm = "sha256"
-        val accountName = "test@bitwarden.com"
+        val accountName = "test@"
         val uri = mockk<Uri> {
             every { scheme } returns "otpauth"
             every { host } returns "totp"

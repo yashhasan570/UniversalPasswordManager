@@ -166,7 +166,7 @@ class AuthTokenManagerTest {
     }
 }
 
-private const val EMAIL: String = "test@bitwarden.com"
+private const val EMAIL: String = "test@"
 private const val USER_ID: String = "2a135b23-e1fb-42c9-bec3-573857bc8181"
 private const val ACCESS_TOKEN: String = "accessToken"
 private const val REFRESH_TOKEN: String = "refreshToken"

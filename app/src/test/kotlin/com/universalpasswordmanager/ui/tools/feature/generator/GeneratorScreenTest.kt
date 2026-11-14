@@ -280,7 +280,7 @@ class GeneratorScreenTest : UniversalComposeTest() {
     @Test
     fun `NavigateToAddLogin event should call onNavigateToVaultAddItem`() {
         val event = GeneratorEvent.NavigateToAddLogin(
-            initialData = VaultAddEditType.AddItem.InitialData.Username(value = "bitwarden_user"),
+            initialData = VaultAddEditType.AddItem.InitialData.Username(value = "universalpasswordmanager_user"),
         )
         mutableEventFlow.tryEmit(event)
         assertTrue(onNavigateToVaultAddItemCalled)
@@ -1602,7 +1602,7 @@ class GeneratorScreenTest : UniversalComposeTest() {
     fun `on NavigateToTooltip should call launchUri on IntentManager`() {
         mutableEventFlow.tryEmit(GeneratorEvent.NavigateToTooltip)
         verify {
-            intentManager.launchUri("https://bitwarden.com/help/generator/#username-types".toUri())
+            intentManager.launchUri("https:///help/generator/#username-types".toUri())
         }
     }
 

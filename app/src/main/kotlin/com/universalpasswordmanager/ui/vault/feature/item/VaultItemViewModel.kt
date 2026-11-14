@@ -689,7 +689,7 @@ class VaultItemViewModel @AssistedInject constructor(
     private fun handleAuthenticatorHelpToolTipClick() {
         sendEvent(
             event = VaultItemEvent.NavigateToUri(
-                uri = "https://bitwarden.com/help/integrated-authenticator",
+                uri = "https:///help/integrated-authenticator",
             ),
         )
     }

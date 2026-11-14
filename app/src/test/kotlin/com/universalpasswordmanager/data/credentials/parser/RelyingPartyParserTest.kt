@@ -93,7 +93,7 @@ class RelyingPartyParserTest {
     }
 }
 
-private const val DEFAULT_RELYING_PARTY_ID = "www.bitwarden.com"
+private const val DEFAULT_RELYING_PARTY_ID = "www."
 private val DEFAULT_ATTESTATION_OPTIONS_JSON = """
 {
   "attestation": "direct",

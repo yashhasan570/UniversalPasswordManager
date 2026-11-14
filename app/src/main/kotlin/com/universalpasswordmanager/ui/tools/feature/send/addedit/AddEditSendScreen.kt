@@ -164,7 +164,7 @@ fun AddEditSendScreen(
                 },
             )
         },
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
     ) {
         val modifier = Modifier
             .fillMaxSize()

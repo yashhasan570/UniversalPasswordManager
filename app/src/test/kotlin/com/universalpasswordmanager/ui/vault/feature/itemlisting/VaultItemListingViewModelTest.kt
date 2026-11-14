@@ -229,7 +229,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             getActivePoliciesFlow(type = PolicyType.RESTRICTED_ITEM_TYPES)
         } returns mutableActivePoliciesFlow
     }
-    private val bitwardenCredentialManager: UniversalCredentialManager = mockk {
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager = mockk {
         every { isUserVerified } returns false
         every { isUserVerified = any() } just runs
         every { authenticationAttempts } returns 0
@@ -782,7 +782,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 vaultRepository.getCipher("mockId-1")
             } returns GetCipherResult.Success(cipherView)
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     createPublicKeyCredentialRequest = any(),
@@ -833,12 +833,12 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 ),
             )
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = any<CreatePublicKeyCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.REQUIRED
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     createPublicKeyCredentialRequest = any(),
@@ -896,12 +896,12 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 ),
             )
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = any<CreatePublicKeyCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.DISCOURAGED
             every {
-                bitwardenCredentialManager.getPasskeyAttestationOptionsOrNull(any())
+                universalpasswordmanagerCredentialManager.getPasskeyAttestationOptionsOrNull(any())
             } returns createMockPasskeyAttestationOptions(
                 number = 1,
                 userVerificationRequirement = UserVerificationRequirement.DISCOURAGED,
@@ -910,7 +910,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 vaultRepository.getCipher("mockId-1")
             } returns GetCipherResult.Success(cipherView)
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     createPublicKeyCredentialRequest = any(),
@@ -930,7 +930,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             )
 
             coVerify {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = DEFAULT_USER_STATE.activeUserId,
                     createPublicKeyCredentialRequest = any(),
                     selectedCipherView = cipherView,
@@ -962,9 +962,9 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     sendViewList = emptyList(),
                 ),
             )
-            every { bitwardenCredentialManager.isUserVerified } returns true
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     createPublicKeyCredentialRequest = any(),
@@ -983,9 +983,9 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 ),
             )
 
-            coVerify { bitwardenCredentialManager.isUserVerified }
+            coVerify { universalpasswordmanagerCredentialManager.isUserVerified }
             coVerify(exactly = 1) {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = DEFAULT_USER_STATE.activeUserId,
                     createPublicKeyCredentialRequest = any(),
                     selectedCipherView = cipherView,
@@ -1051,7 +1051,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 dialogState = VaultItemListingState.DialogState.CipherDecryptionError(
                     title = UniversalString.decryption_error.asText(),
                     message = UniversalString
-                        .bitwarden_could_not_decrypt_this_vault_item_description_long.asText(),
+                        .universalpasswordmanager_could_not_decrypt_this_vault_item_description_long.asText(),
                     selectedCipherId = itemId,
                 ),
             ),
@@ -1084,7 +1084,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(VaultItemListingsAction.UpgradeToPremiumClick)
                 assertEquals(
                     VaultItemListingEvent.NavigateToUrl(
-                        url = "https://vault.bitwarden.com/#/" +
+                        url = "https://vault./#/" +
                             "settings/subscription/premium" +
                             "?callToAction=upgradeToPremium",
                     ),
@@ -2639,7 +2639,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
     @Test
     fun `OverflowOptionClick Vault CopyUsernameClick should call setText on the ClipboardManager`() =
         runTest {
-            val username = "bitwarden"
+            val username = "universalpasswordmanager"
             val viewModel = createVaultItemListingViewModel()
             viewModel.trySendAction(
                 VaultItemListingsAction.OverflowOptionClick(
@@ -2831,7 +2831,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                                 secondSubtitle = "mockRpId-1",
                                 subtitleTestTag = "PasskeyName",
                                 iconData = IconData.Network(
-                                    uri = "https://icons.bitwarden.net/www.mockuri.com/icon.png",
+                                    uri = "https://icons./www.mockuri.com/icon.png",
                                     fallbackIconRes = UniversalDrawable.ic_bw_passkey,
                                 ),
                                 isAutofill = true,
@@ -3042,7 +3042,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                                 secondSubtitleTestTag = "PasskeySite",
                                 subtitleTestTag = "PasskeyName",
                                 iconData = IconData.Network(
-                                    uri = "https://icons.bitwarden.net/www.mockuri.com/icon.png",
+                                    uri = "https://icons./www.mockuri.com/icon.png",
                                     fallbackIconRes = UniversalDrawable.ic_bw_passkey,
                                 ),
                                 isCredentialCreation = true,
@@ -4076,7 +4076,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 toastManager.show(messageId = UniversalString.item_updated)
                 // Verify that isUserVerified is reset to false after successful registration
                 // to ensure subsequent credential operations require fresh user verification
-                bitwardenCredentialManager.isUserVerified = false
+                universalpasswordmanagerCredentialManager.isUserVerified = false
             }
         }
 
@@ -4202,7 +4202,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     mockGetCredentialsRequest,
                 )
             coEvery {
-                bitwardenCredentialManager.getCredentialEntries(any())
+                universalpasswordmanagerCredentialManager.getCredentialEntries(any())
             } returns emptyList<PublicKeyCredentialEntry>().asSuccess()
             coEvery {
                 originManager.validateOrigin(relyingPartyId = any(), callingAppInfo = any())
@@ -4266,7 +4266,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 mockBeginGetCredentialRequest.beginGetCredentialOptions
             } returns emptyList()
             coEvery {
-                bitwardenCredentialManager.getCredentialEntries(any())
+                universalpasswordmanagerCredentialManager.getCredentialEntries(any())
             } returns GetCredentialUnknownException("Internal error").asFailure()
 
             val dataState = DataState.Loaded(
@@ -4393,7 +4393,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 mockAssertionRequest,
             )
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     any<ProviderGetCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.REQUIRED
@@ -4426,7 +4426,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     VaultItemListingState.DialogState.Loading(UniversalString.loading.asText()),
                     viewModel.stateFlow.value.dialogState,
                 )
-                verify { bitwardenCredentialManager.isUserVerified }
+                verify { universalpasswordmanagerCredentialManager.isUserVerified }
                 assertEquals(
                     VaultItemListingEvent.CredentialManagerUserVerification(
                         isRequired = true,
@@ -4454,7 +4454,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 mockAssertionRequest,
             )
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     any<ProviderGetCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.PREFERRED
@@ -4488,7 +4488,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     VaultItemListingState.DialogState.Loading(UniversalString.loading.asText()),
                     viewModel.stateFlow.value.dialogState,
                 )
-                verify { bitwardenCredentialManager.isUserVerified }
+                verify { universalpasswordmanagerCredentialManager.isUserVerified }
                 assertEquals(
                     VaultItemListingEvent.CredentialManagerUserVerification(
                         isRequired = false,
@@ -4517,7 +4517,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             )
             every { authRepository.activeUserId } returns "activeUserId"
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     any<ProviderGetCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.DISCOURAGED
@@ -4534,7 +4534,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 vaultRepository.getCipher("mockId-1")
             } returns GetCipherResult.Success(mockCipherView)
             coEvery {
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = "activeUserId",
                     request = any(),
                     selectedCipherView = mockCipherView,
@@ -4558,8 +4558,8 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             mutableVaultDataStateFlow.value = dataState
 
             coVerify {
-                bitwardenCredentialManager.isUserVerified
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.isUserVerified
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = "activeUserId",
                     request = any(),
                     selectedCipherView = mockCipherView,
@@ -4580,7 +4580,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             specialCircumstanceManager.specialCircumstance = SpecialCircumstance.Fido2Assertion(
                 mockAssertionRequest,
             )
-            every { bitwardenCredentialManager.isUserVerified } returns true
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
             every {
                 vaultRepository
                     .decryptCipherListResultStateFlow
@@ -4632,7 +4632,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             specialCircumstanceManager.specialCircumstance = SpecialCircumstance.Fido2Assertion(
                 mockAssertionRequest,
             )
-            every { bitwardenCredentialManager.isUserVerified } returns true
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
             every {
                 vaultRepository
                     .decryptCipherListResultStateFlow
@@ -4683,9 +4683,9 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         specialCircumstanceManager.specialCircumstance = SpecialCircumstance.Fido2Assertion(
             mockAssertionRequest,
         )
-        every { bitwardenCredentialManager.isUserVerified } returns true
+        every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
         every {
-            bitwardenCredentialManager.getUserVerificationRequirement(
+            universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                 any<ProviderGetCredentialRequest>(),
             )
         } returns UserVerificationRequirement.PREFERRED
@@ -4693,7 +4693,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             vaultRepository.getCipher("mockId-1")
         } returns GetCipherResult.Success(mockCipherView)
         coEvery {
-            bitwardenCredentialManager.authenticateFido2Credential(
+            universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = "activeUserId",
                 request = any(),
                 selectedCipherView = mockCipherView,
@@ -4726,8 +4726,8 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         mutableVaultDataStateFlow.value = dataState
 
         coVerify {
-            bitwardenCredentialManager.isUserVerified
-            bitwardenCredentialManager.authenticateFido2Credential(
+            universalpasswordmanagerCredentialManager.isUserVerified
+            universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = any(),
                 request = any(),
                 selectedCipherView = any(),
@@ -4746,7 +4746,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         specialCircumstanceManager.specialCircumstance = SpecialCircumstance.Fido2Assertion(
             mockAssertionRequest,
         )
-        every { bitwardenCredentialManager.isUserVerified } returns true
+        every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
         every {
             vaultRepository
                 .decryptCipherListResultStateFlow
@@ -4771,7 +4771,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         mutableVaultDataStateFlow.value = dataState
 
         coVerify(exactly = 0) {
-            bitwardenCredentialManager.authenticateFido2Credential(
+            universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = any(),
                 request = any(),
                 selectedCipherView = any(),
@@ -4815,7 +4815,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         specialCircumstanceManager.specialCircumstance = SpecialCircumstance.Fido2Assertion(
             mockAssertionRequest,
         )
-        every { bitwardenCredentialManager.isUserVerified } returns true
+        every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
         every {
             vaultRepository
                 .decryptCipherListResultStateFlow
@@ -4885,7 +4885,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             specialCircumstanceManager.specialCircumstance = SpecialCircumstance.Fido2Assertion(
                 mockAssertionRequest,
             )
-            every { bitwardenCredentialManager.isUserVerified } returns true
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
             every {
                 vaultRepository
                     .decryptCipherListResultStateFlow
@@ -4897,7 +4897,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 vaultRepository.getCipher("mockId-1")
             } returns GetCipherResult.Success(mockCipherView)
             coEvery {
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     DEFAULT_USER_STATE.activeUserId,
                     request = any(),
                     selectedCipherView = mockCipherView,
@@ -4921,7 +4921,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             mutableVaultDataStateFlow.value = dataState
 
             coVerify {
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = any(),
                     request = any(),
                     selectedCipherView = any(),
@@ -4937,7 +4937,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         val viewModel = createVaultItemListingViewModel()
         viewModel.trySendAction(VaultItemListingsAction.UserVerificationLockOut)
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.CredentialManagerOperationFail(
                 title = UniversalString.an_error_has_occurred.asText(),
@@ -4961,7 +4961,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             val viewModel = createVaultItemListingViewModel()
             viewModel.trySendAction(VaultItemListingsAction.UserVerificationCancelled)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertNull(viewModel.stateFlow.value.dialogState)
             viewModel.eventFlow.test {
                 assertEquals(
@@ -4983,7 +4983,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             val viewModel = createVaultItemListingViewModel()
             viewModel.trySendAction(VaultItemListingsAction.UserVerificationCancelled)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertNull(viewModel.stateFlow.value.dialogState)
             viewModel.eventFlow.test {
                 assertEquals(
@@ -5001,7 +5001,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         val viewModel = createVaultItemListingViewModel()
         viewModel.trySendAction(VaultItemListingsAction.UserVerificationFail)
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.CredentialManagerOperationFail(
                 title = UniversalString.an_error_has_occurred.asText(),
@@ -5019,7 +5019,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         runTest {
             specialCircumstanceManager.specialCircumstance = null
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     any(),
                     any(),
                     any(),
@@ -5060,7 +5060,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     ),
                 )
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     any(),
                     any(),
                     any(),
@@ -5127,7 +5127,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     createCredentialRequest = createMockCreateCredentialRequest(number = 1),
                 )
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     createPublicKeyCredentialRequest = any(),
@@ -5146,8 +5146,8 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             )
 
             coVerify {
-                bitwardenCredentialManager.isUserVerified = true
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.isUserVerified = true
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = DEFAULT_ACCOUNT.userId,
                     createPublicKeyCredentialRequest = any(),
                     selectedCipherView = any(),
@@ -5184,7 +5184,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 createMockCipherListView(number = 1),
             )
             coEvery {
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     request = any(),
@@ -5203,8 +5203,8 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             )
 
             coVerify {
-                bitwardenCredentialManager.isUserVerified = true
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.isUserVerified = true
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = DEFAULT_ACCOUNT.userId,
                     request = any(),
                     selectedCipherView = any(),
@@ -5225,7 +5225,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.CredentialManagerOperationFail(
                 title = UniversalString.an_error_has_occurred.asText(),
@@ -5250,7 +5250,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.CredentialManagerOperationFail(
                 title = UniversalString.an_error_has_occurred.asText(),
@@ -5282,7 +5282,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.UserVerificationPinPrompt(
                 selectedCipherId = selectedCipherId,
@@ -5303,7 +5303,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.UserVerificationMasterPasswordPrompt(
                 selectedCipherId = selectedCipherId,
@@ -5338,7 +5338,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             ),
         )
 
-        verify { bitwardenCredentialManager.isUserVerified = false }
+        verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
         assertEquals(
             VaultItemListingState.DialogState.UserVerificationPinSetUpPrompt(
                 selectedCipherId = selectedCipherId,
@@ -5414,7 +5414,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         val viewModel = createVaultItemListingViewModel()
         val selectedCipherId = "selectedCipherId"
         val password = "password"
-        every { bitwardenCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
+        every { universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
         coEvery {
             authRepository.validatePassword(password = password)
         } returns ValidatePasswordResult.Success(isValid = false)
@@ -5595,7 +5595,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
         val viewModel = createVaultItemListingViewModel()
         val selectedCipherId = "selectedCipherId"
         val pin = "PIN"
-        every { bitwardenCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
+        every { universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
         coEvery {
             authRepository.validatePinUserKey(pin = pin)
         } returns ValidatePinResult.Success(isValid = false)
@@ -5832,7 +5832,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 ),
             )
             coEvery {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = any<CreatePublicKeyCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.REQUIRED
@@ -5845,7 +5845,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 ),
             )
 
-            verify { bitwardenCredentialManager.isUserVerified }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified }
         }
 
     @Suppress("MaxLineLength")
@@ -6031,7 +6031,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             SpecialCircumstance.ProviderGetPasswordRequest(
                 mockGetPasswordRequest,
             )
-        every { bitwardenCredentialManager.isUserVerified } returns true
+        every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
         every {
             vaultRepository
                 .decryptCipherListResultStateFlow
@@ -6201,7 +6201,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             val viewModel = createVaultItemListingViewModel()
             viewModel.trySendAction(VaultItemListingsAction.UserVerificationCancelled)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertNull(viewModel.stateFlow.value.dialogState)
             viewModel.eventFlow.test {
                 assertEquals(
@@ -6329,7 +6329,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 )
             } returns ValidateOriginResult.Error.PrivilegedAppNotAllowed
             coEvery {
-                bitwardenCredentialManager.getCredentialEntries(any())
+                universalpasswordmanagerCredentialManager.getCredentialEntries(any())
             } returns emptyList<CredentialEntry>().asSuccess()
 
             val viewModel = createVaultItemListingViewModel()
@@ -6346,7 +6346,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     packageName = "mockPackageName",
                     signature = "mockSignature",
                 )
-                bitwardenCredentialManager.getCredentialEntries(
+                universalpasswordmanagerCredentialManager.getCredentialEntries(
                     getCredentialsRequest = any(),
                 )
             }
@@ -6449,7 +6449,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                 mockCallingAppInfo.getSignatureFingerprintAsHexString()
             } returns "mockSignature"
             coEvery {
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = any(),
                     callingAppInfo = mockCallingAppInfo,
                     request = any(),
@@ -6467,7 +6467,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     ),
                 ),
             )
-            every { bitwardenCredentialManager.isUserVerified } returns true
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
             coEvery {
                 originManager.validateOrigin(
                     relyingPartyId = DEFAULT_RELYING_PARTY_ID,
@@ -6502,7 +6502,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     packageName = "mockPackageName",
                     signature = "mockSignature",
                 )
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = any(),
                     callingAppInfo = mockCallingAppInfo,
                     request = any(),
@@ -6576,7 +6576,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     packageName = any(),
                     signature = any(),
                 )
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     request = any(),
@@ -6653,7 +6653,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
                     packageName = any(),
                     signature = any(),
                 )
-                bitwardenCredentialManager.authenticateFido2Credential(
+                universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                     userId = any(),
                     callingAppInfo = any(),
                     request = any(),
@@ -6731,7 +6731,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
             cipherMatchingManager = cipherMatchingManager,
             specialCircumstanceManager = specialCircumstanceManager,
             policyManager = policyManager,
-            bitwardenCredentialManager = bitwardenCredentialManager,
+            universalpasswordmanagerCredentialManager = universalpasswordmanagerCredentialManager,
             organizationEventManager = organizationEventManager,
             originManager = originManager,
             networkConnectionManager = networkConnectionManager,
@@ -6775,7 +6775,7 @@ class VaultItemListingViewModelTest : BaseViewModelTest() {
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     environment = Environment.Prod.Us,
     avatarColorHex = "#aa00aa",
     isPremium = true,
@@ -6809,4 +6809,4 @@ private val DEFAULT_EFFECTIVE_SEND_POLICY = EffectiveSendPolicy(
     whoCanAccess = null,
 )
 
-private const val DEFAULT_RELYING_PARTY_ID = "www.bitwarden.com"
+private const val DEFAULT_RELYING_PARTY_ID = "www."

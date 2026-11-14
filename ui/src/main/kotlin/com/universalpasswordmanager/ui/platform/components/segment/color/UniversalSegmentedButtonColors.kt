@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for segmented buttons.
  */
 @Composable
-fun bitwardenSegmentedButtonColors(): SegmentedButtonColors = SegmentedButtonColors(
+fun universalpasswordmanagerSegmentedButtonColors(): SegmentedButtonColors = SegmentedButtonColors(
     activeContainerColor = UniversalTheme.colorScheme.filledButton.backgroundReversed,
     activeContentColor = UniversalTheme.colorScheme.filledButton.foregroundReversed,
     activeBorderColor = Color.Transparent,

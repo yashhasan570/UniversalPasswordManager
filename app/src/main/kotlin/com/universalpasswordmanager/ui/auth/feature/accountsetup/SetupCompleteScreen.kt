@@ -96,7 +96,7 @@ private fun SetupCompleteContent(
         )
         Spacer(Modifier.height(8.dp))
         Text(
-            text = stringResource(UniversalString.what_bitwarden_has_to_offer),
+            text = stringResource(UniversalString.what_universalpasswordmanager_has_to_offer),
             style = UniversalTheme.typography.bodyMedium,
             color = UniversalTheme.colorScheme.text.primary,
             textAlign = TextAlign.Center,

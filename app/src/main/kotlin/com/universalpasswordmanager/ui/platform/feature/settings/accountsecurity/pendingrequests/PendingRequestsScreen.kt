@@ -139,7 +139,7 @@ fun PendingRequestsScreen(
         },
         pullToRefreshState = pullToRefreshState,
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         when (val viewState = state.viewState) {
@@ -384,7 +384,7 @@ private fun PendingRequestsBottomSheetContent(
         @Suppress("MaxLineLength")
         Text(
             text = stringResource(
-                id = UniversalString.bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device,
+                id = UniversalString.universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device,
             ),
             style = UniversalTheme.typography.bodyMedium,
             color = UniversalTheme.colorScheme.text.primary,

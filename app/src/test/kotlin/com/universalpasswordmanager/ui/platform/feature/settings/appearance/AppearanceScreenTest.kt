@@ -196,7 +196,7 @@ class AppearanceScreenTest : UniversalComposeTest() {
     fun `on NavigateToWebsiteIconsHelp should call launchUri`() {
         mutableEventFlow.tryEmit(AppearanceEvent.NavigateToWebsiteIconsHelp)
         verify {
-            intentManager.launchUri("https://bitwarden.com/help/website-icons/".toUri())
+            intentManager.launchUri("https:///help/website-icons/".toUri())
         }
     }
 

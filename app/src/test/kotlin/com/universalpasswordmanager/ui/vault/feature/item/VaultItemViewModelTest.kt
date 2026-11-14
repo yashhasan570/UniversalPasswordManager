@@ -294,7 +294,7 @@ class VaultItemViewModelTest : BaseViewModelTest() {
                     )
                     assertEquals(
                         VaultItemEvent.NavigateToUri(
-                            uri = "https://vault.bitwarden.com/#/" +
+                            uri = "https://vault./#/" +
                                 "settings/subscription/premium" +
                                 "?callToAction=upgradeToPremium",
                         ),
@@ -2074,7 +2074,7 @@ class VaultItemViewModelTest : BaseViewModelTest() {
                 )
                 assertEquals(
                     VaultItemEvent.NavigateToUri(
-                        "https://bitwarden.com/help/integrated-authenticator",
+                        "https:///help/integrated-authenticator",
                     ),
                     awaitItem(),
                 )
@@ -3918,7 +3918,7 @@ class VaultItemViewModelTest : BaseViewModelTest() {
         vaultItemId: String = VAULT_ITEM_ID,
         vaultItemCipherType: VaultItemCipherType = VaultItemCipherType.LOGIN,
         showCreatedSnackbar: Boolean = false,
-        bitwardenClipboardManager: UniversalClipboardManager = clipboardManager,
+        universalpasswordmanagerClipboardManager: UniversalClipboardManager = clipboardManager,
         authRepository: AuthRepository = authRepo,
         vaultRepository: VaultRepository = vaultRepo,
         fileManager: FileManager = mockFileManager,
@@ -3936,7 +3936,7 @@ class VaultItemViewModelTest : BaseViewModelTest() {
             set("state", state)
             set("tempAttachmentFile", tempAttachmentFile)
         },
-        clipboardManager = bitwardenClipboardManager,
+        clipboardManager = universalpasswordmanagerClipboardManager,
         authRepository = authRepository,
         vaultRepository = vaultRepository,
         fileManager = fileManager,
@@ -3988,7 +3988,7 @@ class VaultItemViewModelTest : BaseViewModelTest() {
         private val DEFAULT_USER_ACCOUNT = UserState.Account(
             userId = "user_id_1",
             name = "Bit",
-            email = "bitwarden@gmail.com",
+            email = "universalpasswordmanager@gmail.com",
             avatarColorHex = "#ff00ff",
             environment = Environment.Prod.Us,
             isPremium = true,

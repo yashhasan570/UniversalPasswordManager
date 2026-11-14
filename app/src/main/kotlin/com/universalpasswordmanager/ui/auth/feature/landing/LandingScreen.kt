@@ -158,7 +158,7 @@ fun LandingScreen(
             )
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         LandingScreenContent(
@@ -198,7 +198,7 @@ private fun LandingScreenContent(
         Spacer(modifier = Modifier.weight(1f))
 
         Image(
-            painter = rememberVectorPainter(id = UniversalDrawable.logo_bitwarden),
+            painter = rememberVectorPainter(id = UniversalDrawable.logo_universalpasswordmanager),
             contentDescription = null,
             modifier = Modifier
                 .standardHorizontalMargin()
@@ -209,7 +209,7 @@ private fun LandingScreenContent(
         Spacer(modifier = Modifier.height(height = 12.dp))
 
         Text(
-            text = stringResource(id = UniversalString.login_to_bitwarden),
+            text = stringResource(id = UniversalString.login_to_universalpasswordmanager),
             textAlign = TextAlign.Center,
             style = UniversalTheme.typography.headlineSmall,
             color = UniversalTheme.colorScheme.text.primary,
@@ -288,7 +288,7 @@ private fun LandingScreenContent(
                         .wrapContentHeight(),
                 ) {
                     Text(
-                        text = stringResource(id = UniversalString.new_to_bitwarden),
+                        text = stringResource(id = UniversalString.new_to_universalpasswordmanager),
                         style = UniversalTheme.typography.bodyMedium,
                         color = UniversalTheme.colorScheme.text.secondary,
                     )

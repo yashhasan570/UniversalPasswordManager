@@ -205,7 +205,7 @@ class UniversalRemoteViewsTest {
         prepareRemoteViews(
             name = APP_NAME,
             subtitle = VAULT_IS_LOCKED,
-            iconRes = UniversalDrawable.logo_bitwarden_icon,
+            iconRes = UniversalDrawable.logo_universalpasswordmanager_icon,
         )
 
         // Test
@@ -233,7 +233,7 @@ class UniversalRemoteViewsTest {
             anyConstructed<RemoteViews>()
                 .setImageViewResource(
                     R.id.icon,
-                    UniversalDrawable.logo_bitwarden_icon,
+                    UniversalDrawable.logo_universalpasswordmanager_icon,
                 )
             anyConstructed<RemoteViews>()
                 .setInt(
@@ -263,7 +263,7 @@ class UniversalRemoteViewsTest {
         prepareRemoteViews(
             name = APP_NAME,
             subtitle = GO_TO_MY_VAULT,
-            iconRes = UniversalDrawable.logo_bitwarden_icon,
+            iconRes = UniversalDrawable.logo_universalpasswordmanager_icon,
         )
 
         // Test
@@ -291,7 +291,7 @@ class UniversalRemoteViewsTest {
             anyConstructed<RemoteViews>()
                 .setImageViewResource(
                     R.id.icon,
-                    UniversalDrawable.logo_bitwarden_icon,
+                    UniversalDrawable.logo_universalpasswordmanager_icon,
                 )
             anyConstructed<RemoteViews>()
                 .setInt(

@@ -21,9 +21,9 @@ import com.universalpasswordmanager.annotation.OmitFromCoverage
 fun annotatedStringResource(
     @StringRes id: Int,
     vararg args: String,
-    style: SpanStyle = bitwardenDefaultSpanStyle,
-    emphasisHighlightStyle: SpanStyle = bitwardenBoldSpanStyle,
-    linkHighlightStyle: SpanStyle = bitwardenClickableTextSpanStyle,
+    style: SpanStyle = universalpasswordmanagerDefaultSpanStyle,
+    emphasisHighlightStyle: SpanStyle = universalpasswordmanagerBoldSpanStyle,
+    linkHighlightStyle: SpanStyle = universalpasswordmanagerClickableTextSpanStyle,
     resources: Resources = LocalResources.current,
     onAnnotationClick: ((annotationKey: String) -> Unit)? = null,
 ): AnnotatedString =
@@ -47,9 +47,9 @@ fun annotatedPluralsResource(
     @PluralsRes id: Int,
     quantity: Int,
     vararg args: CharSequence,
-    style: SpanStyle = bitwardenDefaultSpanStyle,
-    emphasisHighlightStyle: SpanStyle = bitwardenBoldSpanStyle,
-    linkHighlightStyle: SpanStyle = bitwardenClickableTextSpanStyle,
+    style: SpanStyle = universalpasswordmanagerDefaultSpanStyle,
+    emphasisHighlightStyle: SpanStyle = universalpasswordmanagerBoldSpanStyle,
+    linkHighlightStyle: SpanStyle = universalpasswordmanagerClickableTextSpanStyle,
     resources: Resources = LocalResources.current,
     onAnnotationClick: ((annotationKey: String) -> Unit)? = null,
 ): AnnotatedString =

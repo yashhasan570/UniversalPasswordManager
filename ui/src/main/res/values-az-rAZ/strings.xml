@@ -75,9 +75,9 @@
     <string name="yes">Bəli</string>
     <string name="account">Hesab</string>
     <string name="account_created_success">Yeni hesabınız yaradıldı!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Cihaz ayarlarında \"Universal Password Manager\"i keçid açarı provayderiniz olaraq ayarlayın.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Cihaz ayarlarında \"Universal Password Manager\"i keçid açarı provayderiniz olaraq ayarlayın.</string>
     <string name="avoid_ambiguous_characters">Anlaşılmaz simvollardan çəkinin</string>
-    <string name="bitwarden_autofill_service">Universal Password Manager avto-doldurma xidməti</string>
+    <string name="universalpasswordmanager_autofill_service">Universal Password Manager avto-doldurma xidməti</string>
     <string name="change_master_password">Ana parolu dəyişdir</string>
     <string name="close">Bağla</string>
     <string name="close_app">Tətbiqi bağla</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Sessiya vaxtının bitməsi “Çıxış et” olaraq təyin edilsin?</string>
     <string name="vault_timeout_log_out_confirmation_message">Vaxt bitdikdən sonra hesabdan çıxış ediləcək. Seyfinizə təkrar giriş edib erişmək üçün internetə bağlanmalısınız. Bu cihazdakı saxlanılmış ayarlarınız və PIN dəyişməyəcək.</string>
     <string name="logging_in">Giriş edilir…</string>
-    <string name="login_to_bitwarden">Universal Password Manager-ə giriş edin</string>
+    <string name="login_to_universalpasswordmanager">Universal Password Manager-ə giriş edin</string>
     <string name="master_password_confirmation_val_message">Parol təsdiqləmə doğru deyil.</string>
     <string name="master_password_description">Ana parol, seyfinizə erişmək üçün istifadə edəcəyiniz paroldur. Ana parolu yadda saxlamaq çox vacibdir. Unutsanız, parolu bərpa etməyin heç bir yolu yoxdur.</string>
     <string name="master_password_hint">Ana parol üçün ipucu (ixtiyari)</string>
@@ -176,7 +176,7 @@
     <string name="no_items_for_vault">Seyfinizdə \"%1$s\" ilə uyuşan heç bir element yoxdur</string>
     <string name="search_for_a_login_or_add_a_new_login">Bir giriş axtar və ya yenisini əlavə et</string>
     <string name="disabled">Sıradan çıxarıldı</string>
-    <string name="bitwarden_autofill_service_alert2">Seyfinizə yeni bir giriş əlavə etməyin ən asan yolu, Universal Password Manager Avto-doldurma Xidmətidir. Universal Password Manager Avto-doldurma Xidmətini istifadə etməklə bağlı daha ətraflı məlumat üçün “Ayarlar” ekranına gedin.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Seyfinizə yeni bir giriş əlavə etməyin ən asan yolu, Universal Password Manager Avto-doldurma Xidmətidir. Universal Password Manager Avto-doldurma Xidmətini istifadə etməklə bağlı daha ətraflı məlumat üçün “Ayarlar” ekranına gedin.</string>
     <string name="autofill_noun">Avto-doldurma</string>
     <string name="autofill_verb">Avto-doldurma</string>
     <string name="autofill_or_view">Avto-doldurmaq və ya bu elementə baxmaq istəyirsiniz?</string>
@@ -299,7 +299,7 @@ Skan prosesi avtomatik baş tutacaq.</string>
     <string name="no_items_trash">Tullantı qutusunda heç bir element yoxdur.</string>
     <string name="autofill_accessibility_summary">Digər tətbiqlərdə və vebdə istifadəçi adı və parol xanalarının doldurulmasına kömək edin.</string>
     <string name="autofill_service_description">Universal Password Manager avto-doldurma xidməti, cihazınızdakı digər tətbiqlərə giriş məlumatlarını doldurmağa kömək edən Android Avto-doldurma Çərçivəsini istifadə edir.</string>
-    <string name="bitwarden_autofill_go_to_settings">Android avto-doldurma ayarları menyusunu avtomatik aça bilmədik. Bu menyunu tapmaq üçün Android Ayarları &gt; Sistem &gt; Dillər və giriş &gt; Qabaqcıl &gt; \"Avto-doldurma xidməti\"nə gedin.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Android avto-doldurma ayarları menyusunu avtomatik aça bilmədik. Bu menyunu tapmaq üçün Android Ayarları &gt; Sistem &gt; Dillər və giriş &gt; Qabaqcıl &gt; \"Avto-doldurma xidməti\"nə gedin.</string>
     <string name="custom_field_name">Özəl sahə adı</string>
     <string name="field_type_boolean">Boolean</string>
     <string name="field_type_hidden">Gizli</string>
@@ -648,14 +648,14 @@ Skan prosesi avtomatik baş tutacaq.</string>
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Universal Password Manager-də yenisiniz?</string>
+    <string name="new_to_universalpasswordmanager">Universal Password Manager-də yenisiniz?</string>
     <string name="get_master_passwordword_hint">Ana parol üçün məsləhət alın</string>
     <string name="logging_in_as_x_on_y">%2$s üzərində %1$s olaraq giriş edildi</string>
     <string name="not_you">Siz deyilsiniz?</string>
     <string name="log_in_with_master_password">Ana parolla giriş et</string>
     <string name="log_in_initiated">Giriş etmə başladıldı</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">Bildirişi təkrar göndər</string>
     <string name="view_all_login_options">Bütün giriş etmə seçimlərinə bax</string>
@@ -713,7 +713,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Seyfi seç</string>
     <string name="appearance">Görünüş</string>
     <string name="account_security">Hesab güvənliyi</string>
-    <string name="bitwarden_help_center">Universal Password Manager Kömək Mərkəzi</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Kömək Mərkəzi</string>
     <string name="sync_now">İndi sinxr.</string>
     <string name="unlock_options">Kilid açma seçimləri</string>
     <string name="session_timeout">Seans vaxt bitməsi</string>
@@ -730,10 +730,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">Cihaz Ayarlarına davam edilsin?</string>
     <string name="two_step_login_description_long">Universal Password Manager veb tətbiqində iki addımlı girişi quraraq hesabınızı daha güvənli edin.</string>
     <string name="change_master_password_description_long">Ana parolunuzu Universal Password Manager veb tətbiqində dəyişdirə bilərsiniz.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Kömək mərkəzində Universal Password Manager-in necə istifadə ediləcəyi ilə bağlı ətraflı öyrənin.</string>
-    <string name="privacy_policy_description_long">bitwarden.com saytında məxfilik siyasətimizi nəzərdən keçirin.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Veb tətbiqində Universal Password Manager hesabınızın daha çox özəlliyini kəşf edin.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager, bir təşkilatı istifadə edərək seyf elementlərinizi başqaları ilə paylaşmağınıza imkan verir. Daha ətraflı məlumat üçün bitwarden.com saytını ziyarət edin.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Kömək mərkəzində Universal Password Manager-in necə istifadə ediləcəyi ilə bağlı ətraflı öyrənin.</string>
+    <string name="privacy_policy_description_long"> saytında məxfilik siyasətimizi nəzərdən keçirin.</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Veb tətbiqində Universal Password Manager hesabınızın daha çox özəlliyini kəşf edin.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager, bir təşkilatı istifadə edərək seyf elementlərinizi başqaları ilə paylaşmağınıza imkan verir. Daha ətraflı məlumat üçün  saytını ziyarət edin.</string>
     <string name="created_x">Yaradıldı: %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Təşkilatınız bir ana parol ayarlamağı tələb edir.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Seyf vaxt bitmə əməliyyatınızı dəyişdirmək üçün bir kilid açma seçənəyi qurun.</string>
@@ -743,8 +743,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">Hesabınız üçün Duo iki addımlı giriş tələb olunur.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Giriş etməni tamamlamaq üçün Duo-dakı addımları izləyin.</string>
     <string name="launch_duo">Duo-nu başlat</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Keçid açarınız %1$s üçün Universal Password Manager seyfinizdə saxlanılacaq</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Parolunuz %1$s üçün Universal Password Manager seyfinizdə saxlanılacaq</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Keçid açarınız %1$s üçün Universal Password Manager seyfinizdə saxlanılacaq</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Parolunuz %1$s üçün Universal Password Manager seyfinizdə saxlanılacaq</string>
     <string name="passkeys_not_supported_for_this_app">Keçid açarları bu tətbiq üçün dəstəklənmir</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Brauzer, imtiyazlı olmadığı üçün keçid açarı əməliyyatı uğursuz oldu</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Brauzer imzası uyuşmadığı üçün keçid açarı əməliyyatı uğursuz oldu</string>
@@ -770,7 +770,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">E-poçtunuzu yoxlayın</string>
     <string name="open_email_app">E-poçt tətbiqini aç</string>
     <string name="email_verified">E-poçt doğrulandı</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Elanlar, məsləhətlər və araşdırma fürsətləri üçün Universal Password Manager-dən e-poçt alın. İstənilən vaxt <annotation link="unsubscribe">abunəlikdən çıxa bilərsiniz</annotation>.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Elanlar, məsləhətlər və araşdırma fürsətləri üçün Universal Password Manager-dən e-poçt alın. İstənilən vaxt <annotation link="unsubscribe">abunəlikdən çıxa bilərsiniz</annotation>.</string>
     <string name="security_prioritized">Təhlükəsizlik, prioritet</string>
     <string name="welcome_message_1">Girişləri, kart və kimlik məlumatlarınızı güvənli seyfinizdə saxlayın. Universal Password Manager, sizin üçün mühüm olanları qorumaq üçün zero-knowledge və ucdan-uca şifrələmə istifadə edir.</string>
     <string name="welcome_message_2">Tək bir hərf yazmadan hesablarınıza giriş etmək üçün biometrik kilid açma və avto-doldurma seçimlərini qurun.</string>
@@ -808,8 +808,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">E-poçt ünvanınızı doğrulamaq və hesabınızı yaratmağa davam etmək üçün e-poçtdakı keçidi seçin.</string>
     <string name="change_email_address">E-poçt ünvanını dəyişdir</string>
     <string name="next">Növbəti</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager itmiş və ya unutulmuş ana parolu geri qaytara bilməz.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager itmiş və ya unutulmuş ana parolu sıfırlaya bilməz.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager itmiş və ya unutulmuş ana parolu geri qaytara bilməz.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager itmiş və ya unutulmuş ana parolu sıfırlaya bilməz.</string>
     <string name="choose_your_master_password">Ana parolunuzu seçin</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Məlumatlarınızı təhlükəsiz saxlamaq üçün unikal və güclü bir parol seçin.</string>
     <plurals name="minimum_characters">
@@ -820,13 +820,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">Lütfən qeydiyyatı yenidən başladın və ya giriş etməyə çalışın. Artıq bir hesabınız ola bilər.</string>
     <string name="restart_registration">Qeydiyyatı yenidən başlat</string>
     <string name="authenticator_sync">Kimlik doğrulayıcı sinxronlaşdırma</string>
-    <string name="allow_bitwarden_authenticator_syncing">Kimlik doğrulayıcını sinxrn icazə ver</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Kimlik doğrulayıcını sinxrn icazə ver</string>
     <string name="there_was_an_issue_validating_the_registration_token">Qeydiyyat jetonu doğrulanarkən bir problem baş verdi.</string>
     <string name="turn_on_autofill">Avto-doldurmanı işə sal</string>
     <string name="autofill_setup">Avto-doldurmanı quraşdır</string>
     <string name="turn_on_browser_autofill_integration">Brauzer avto-doldurma inteqrasiyasını işə sal</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Universal Password Manager-in parollarınızı avto-doldurması üçün xüsusi izinlər tələb edən brauzer istifadə edirsiniz.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Universal Password Manager-in parollarınızı avto-doldurması üçün xüsusi izinlər tələb edən brauzerlər istifadə edirsiniz.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Universal Password Manager-in parollarınızı avto-doldurması üçün xüsusi izinlər tələb edən brauzer istifadə edirsiniz.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Universal Password Manager-in parollarınızı avto-doldurması üçün xüsusi izinlər tələb edən brauzerlər istifadə edirsiniz.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Universal Password Manager-in parollarınızı avto-doldurması üçün xüsusi izinlər tələb edən brauzer istifadə edirsiniz. Aşağıda tərcih etdiyiniz avto-doldurma inteqrasiyasını fəallaşdırın.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Universal Password Manager-in parollarınızı avto-doldurması üçün xüsusi izinlər tələb edən brauzerlər istifadə edirsiniz. Quraşdırdığınız bütün brauzerləriniz üçün avto-doldurmanı fəallaşdırıb davam edin.</string>
     <string name="use_autofill_to_log_into_your_accounts">Tək toxunuşda hesablarınıza giriş etmək üçün avto-doldurmanı istifadə edin.</string>
@@ -834,7 +834,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">Avto-doldurma daha sonra işə salınsın?</string>
     <string name="turn_on_browser_autofill_integration_later">Brauzer avto-doldurma inteqrasiyası daha sonra işə salınsın?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Bu addımı tamamlamaq üçün istənilən vaxt Ayarlara gedə bilərsiniz.</string>
-    <string name="what_bitwarden_has_to_offer">Artıq saxlanılmış parollarınızı istifadə edərək tətbiq və veb saytlara giriş etmək üçün avto-doldurmanı istifadə edə bilərsiniz. Artıq, Universal Password Manager-nin təklif etdiyi hər şeyi kəşf edə bilərsiniz.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Artıq saxlanılmış parollarınızı istifadə edərək tətbiq və veb saytlara giriş etmək üçün avto-doldurmanı istifadə edə bilərsiniz. Artıq, Universal Password Manager-nin təklif etdiyi hər şeyi kəşf edə bilərsiniz.</string>
     <string name="youre_all_set">Artıq hazırsınız!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Duo xidmətinə bağlanarkən xəta baş verdi. Fərqli iki addımlı giriş üsulu istifadə edin və ya kömək üçün Duo ilə əlaqə saxlayın.</string>
     <string name="master_password_hint_not_specified">Ana parol ipucusu</string>
@@ -863,29 +863,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">Adım 1/3</string>
     <string name="export_your_saved_logins">Saxlanılmış girişlərinizi xaricə köçürün</string>
     <string name="delete_this_file_after_import_is_complete">Daxilə köçürmə tamamlandıqdan sonra bu faylı siləcəksiniz.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">Kompüterinizdə yeni bir brauzer vərəqi açın və <annotation emphasis="bold">bura gedin: <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Universal Password Manager veb tətbiqində giriş edin.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">Kompüterinizdə yeni bir brauzer vərəqi açın və <annotation emphasis="bold">bura gedin: <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Universal Password Manager veb tətbiqində giriş edin.</string>
     <string name="step_2_of_3">Addım 2/3</string>
-    <string name="log_in_to_bitwarden">Universal Password Manager-ə giriş edin</string>
+    <string name="log_in_to_universalpasswordmanager">Universal Password Manager-ə giriş edin</string>
     <string name="step_3_of_3">Addım 3/3</string>
-    <string name="import_logins_to_bitwarden">Girişləri Universal Password Manager-ə köçür</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager naviqasiyasında <annotation emphasis="bold">Alətlər seçənəyini tapın</annotation> və <annotation emphasis="bold">\"Veriləri daxilə köçür\"ü</annotation> seçin.</string>
+    <string name="import_logins_to_universalpasswordmanager">Girişləri Universal Password Manager-ə köçür</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager naviqasiyasında <annotation emphasis="bold">Alətlər seçənəyini tapın</annotation> və <annotation emphasis="bold">\"Veriləri daxilə köçür\"ü</annotation> seçin.</string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Formu doldurun və <annotation emphasis="bold">saxlanılmış parol faylınızı daxilə köçürün.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Təhlükəsizliyiniz üçün saxlanılmış <annotation emphasis="bold">parol faylınızı sildiyinizə əmin olun.</annotation></string>
     <string name="need_help_check_out_import_help">Kömək lazımdır? <annotation link="importHelp">Daxilə köçürmə üzrə kömək səhifəmizə baxın.</annotation></string>
     <string name="import_help">daxilə köçürmə üzrə kömək</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Xaricə köçürdüyünüz faylı kompüterinizdə rahatlıqla tapa biləcəyiniz yerdə saxlayın.</annotation></string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Bu, bilinən Universal Password Manager serveri deyil. Provayderinizi yoxlamağınız və ya serverinizi güncəlləməyiniz lazım gələ bilər.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Bu, bilinən Universal Password Manager serveri deyil. Provayderinizi yoxlamağınız və ya serverinizi güncəlləməyiniz lazım gələ bilər.</string>
     <string name="syncing_logins_loading_message">Girişlər sinxronlaşdırılır…</string>
     <string name="download_the_browser_extension">Brauzer uzantısını endir</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Daha problemsiz bir təcrübə üçün Universal Password Manager-i sevimli brauzerinizə inteqrasiya etmək üçün bitwarden.com/download ünvanına gedin. </string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Daha problemsiz bir təcrübə üçün Universal Password Manager-i sevimli brauzerinizə inteqrasiya etmək üçün /download ünvanına gedin. </string>
     <string name="use_the_web_app">Veb tətbiqi istifadə et</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Hesabınızı asanlıqla idarə etmək və ayarları güncəlləmək üçün bitwarden.com saytında giriş edin.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Hesabınızı asanlıqla idarə etmək və ayarları güncəlləmək üçün  saytında giriş edin.</string>
     <string name="autofill_passwords">Parolları avto-doldur</string>
     <string name="set_up_autofill_on_all_your_devices">Bütün cihazlarınızda avto-doldurmanı quraraq tək toxunuşla istənilən yerdən giriş edin.</string>
     <string name="import_successful">Uğurla daxilə köçürüldü!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Universal Password Manager-in veb və masaüstü alətləri ilə istənilən yerdən girişlərinizi idarə edin.</string>
-    <string name="bitwarden_tools">Universal Password Manager Alətləri</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Universal Password Manager-in veb və masaüstü alətləri ilə istənilən yerdən girişlərinizi idarə edin.</string>
+    <string name="universalpasswordmanager_tools">Universal Password Manager Alətləri</string>
     <string name="got_it">Anladım</string>
     <string name="no_logins_were_imported">Heç bir giriş daxilə köçürülmədi</string>
     <string name="import_error">Daxilə köçürmə xətası</string>
@@ -903,7 +903,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d bildiriş</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Cihazlar arasında cəld və asan giriş et</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager, başqa bir cihazdan yeni bir giriş tələbi aldığınız hər dəfəsində sizi məlumatlandıracaq.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager, başqa bir cihazdan yeni bir giriş tələbi aldığınız hər dəfəsində sizi məlumatlandıracaq.</string>
     <string name="skip_for_now">İndilik ötür</string>
     <string name="done_text">Bitdi</string>
     <string name="page_number_x_of_y">%1$s/%2$s</string>
@@ -955,7 +955,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5/6</string>
     <string name="coachmark_6_of_6">6/6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Bu seçimləri istifadə edərək parolunuzu, hesab veb saytınızın tələblərinə uyğun ayarlaya bilərsiniz.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Yeni parolunuzu Universal Password Manager-də saxladıqdan sonra, onu hesabınızın veb saytında güncəlləməyi unutmayın.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Yeni parolunuzu Universal Password Manager-də saxladıqdan sonra, onu hesabınızın veb saytında güncəlləməyi unutmayın.</string>
     <string name="verify_your_identity">Kimliyinizi doğrulayın</string>
     <string name="error_loading_certificate">Sertifikat yükləmə xətası</string>
     <string name="certificate_alias">Sertifikat alias-ı</string>
@@ -966,7 +966,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">Dəstəklənməyən sertifikat növü</string>
     <string name="certificate_password_incorrect">Sertifikat parolu yanlışdır</string>
     <string name="invalid_certificate_chain">Yararsız sertifikat zənciri</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Sistem sertifikatını istifadə etmək, sertifikatı Universal Password Manager ilə saxlamaqdan daha az güvənlidir. Davam etsəniz, artıq quraşdırılmış bir sistem sertifikatı varsa, mövcud sistem sertifikatlarının bir siyahısı göstəriləcək.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Sistem sertifikatını istifadə etmək, sertifikatı Universal Password Manager ilə saxlamaqdan daha az güvənlidir. Davam etsəniz, artıq quraşdırılmış bir sistem sertifikatı varsa, mövcud sistem sertifikatlarının bir siyahısı göstəriləcək.</string>
     <string name="link">Keçid</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Sorğuda host URL təqdim olunmadığı üçün keçid açarı əməliyyatı uğursuz oldu.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Tətbiq imzası yararsız olduğu üçün keçid açarı əməliyyatı uğursuz oldu.</string>
@@ -1038,7 +1038,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="unable_to_read_certificate">Sertifikat oxuna bilmir.</string>
     <string name="cannot_delete_your_account">Hesabınız silinə bilmir</string>
     <string name="cannot_delete_your_account_explanation">Hesabınız bir təşkilata aid olduğu üçün bu əməliyyat icra edilə bilməz. Əlavə məlumat üçün təşkilatınızın inzibatçısı ilə əlaqə saxlayın.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Bu hesab tezliklə silinəcək. Universal Password Manager-i istifadə etməyə davam etmək üçün %1$s üzərindən giriş edin.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Bu hesab tezliklə silinəcək. Universal Password Manager-i istifadə etməyə davam etmək üçün %1$s üzərindən giriş edin.</string>
     <string name="view_file_send">Send faylına bax</string>
     <string name="view_text_send">Send mətninə bax</string>
     <string name="delete_send">\"Send\"i sil</string>
@@ -1060,7 +1060,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="learn_more_about_privileged_apps">İmtiyazlı tətbiqlər barədə daha ətraflı</string>
     <string name="privileged_apps">İmtiyazlı tətbiqlər</string>
     <string name="unrecognized_browser">Tanınmayan brauzer</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Universal Password Manager ilə keçid açarı istifadəsi barədə ətraflı öyrənin.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Universal Password Manager ilə keçid açarı istifadəsi barədə ətraflı öyrənin.</string>
     <string name="all_trusted_apps">Bütün güvənli tətbiqlər</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">%s - güvənməyi dayandırmaq istədiyinizə əminsiniz?</string>
     <string name="installed_apps">Quraşdırılmış tətbiqlər</string>
@@ -1088,7 +1088,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="information">Məlumat</string>
     <string name="otp_type">OTP növü</string>
     <string name="search_codes">Kod axtar</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Hesablarınızı Bitwarden Authenticator ilə qoruyun</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Hesablarınızı Universal Password Manager Authenticator ilə qoruyun</string>
     <string name="get_verification_codes_for_all_your_accounts">2 addımlı doğrulamanı dəstəkləyən bütün hesablarınız üçün doğrulama kodu alın.</string>
     <string name="use_your_device_camera_to_scan_codes">Kodları skan etmək üçün cihazınızın kamerasını istifadə edin</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">İstənilən hesab üçün 2 addımlı doğrulama ayarlarınızdakı QR kodu skan edin.</string>
@@ -1109,7 +1109,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="too_many_failed_biometric_attempts">Həddən artıq uğursuz biometrik cəhdi.</string>
     <string name="version">Versiya</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Versiya: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Kömək Mərkəzində Bitwarden Authenticator-u necə istifadə ediləcəyi ilə bağlı ətraflı öyrənin.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Kömək Mərkəzində Universal Password Manager Authenticator-u necə istifadə ediləcəyi ilə bağlı ətraflı öyrənin.</string>
     <string name="key">Açar</string>
     <string name="create_verification_code">Doğrulama kodu yarat</string>
     <string name="key_is_required">Açar tələb olunur.</string>
@@ -1120,41 +1120,41 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="key_is_invalid">Açar yararsızdır.</string>
     <string name="backup">Nüsxələmə</string>
     <string name="data_backup_title">Veri nüsxələmə</string>
-    <string name="data_backup_message">Bitwarden Authenticator veriləri nüsxələndi və müntəzəm planlanmış cihaz nüsxələrinizlə bərpa edilə bilər.</string>
+    <string name="data_backup_message">Universal Password Manager Authenticator veriləri nüsxələndi və müntəzəm planlanmış cihaz nüsxələrinizlə bərpa edilə bilər.</string>
     <string name="import_2fas_password_protected_not_supported">2FAS parol qorumalı fayllardan daxilə köçürmə dəstəklənmir. Parol qorumalı olmayan xaricə köçürülən bir faylla yenidən sınayın.</string>
-    <string name="import_bitwarden_unsupported_format">Universal Password Manager CSV fayllarını daxilə köçürmə dəstəklənmir. Xaricə köçürülən JSON faylı ilə yenidən sınayın.</string>
-    <string name="download_bitwarden_card_title">Universal Password Manager tətbiqini endir</string>
-    <string name="download_bitwarden_card_message">Bütün girişlərinizi saxlayın və doğrulama kodlarını birbaşa Authenticator tətbiqi ilə sinxronlaşdırın.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Universal Password Manager CSV fayllarını daxilə köçürmə dəstəklənmir. Xaricə köçürülən JSON faylı ilə yenidən sınayın.</string>
+    <string name="download_universalpasswordmanager_card_title">Universal Password Manager tətbiqini endir</string>
+    <string name="download_universalpasswordmanager_card_message">Bütün girişlərinizi saxlayın və doğrulama kodlarını birbaşa Authenticator tətbiqi ilə sinxronlaşdırın.</string>
     <string name="download_now">İndi endir</string>
-    <string name="sync_with_bitwarden_app">Universal Password Manager tətbiqi ilə sinxronlaşdır</string>
+    <string name="sync_with_universalpasswordmanager_app">Universal Password Manager tətbiqi ilə sinxronlaşdır</string>
     <string name="learn_more_link"><annotation link="learnMore">Daha ətraflı</annotation></string>
     <string name="shared_codes_error">Kodlar, Universal Password Manager tətbiqindən sinxronlaşdırıla bilmir. Hər iki tətbiqin güncəl olduğuna əmin olun. Mövcud kodlarınıza hələ də Universal Password Manager tətbiqindən erişə bilərsiniz.</string>
-    <string name="sync_with_the_bitwarden_app">Universal Password Manager tətbiqi ilə sinxronlaşdır</string>
-    <string name="sync_with_bitwarden_action_card_message">Bütün doğrulama kodlarınıza burada baxmaq üçün ayarlarda Authenticator tətbiqinin sinxronlaşdırmasına icazə verin.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Universal Password Manager tətbiqi ilə sinxronlaşdır</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Bütün doğrulama kodlarınıza burada baxmaq üçün ayarlarda Authenticator tətbiqinin sinxronlaşdırmasına icazə verin.</string>
     <string name="take_me_to_app_settings">Məni tətbiq ayarlarına apar</string>
     <string name="something_went_wrong">Nəsə səhv getdi</string>
     <string name="please_try_again">Lütfən yenidən sınayın</string>
-    <string name="copy_to_bitwarden_vault">Universal Password Manager-ə seyfinə kopyala</string>
+    <string name="copy_to_universalpasswordmanager_vault">Universal Password Manager-ə seyfinə kopyala</string>
     <string name="default_save_option">İlkin saxlama seçənəyi</string>
-    <string name="save_to_bitwarden">\"Universal Password Manager\"də saxla</string>
+    <string name="save_to_universalpasswordmanager">\"Universal Password Manager\"də saxla</string>
     <string name="save_here">Burada saxla</string>
     <string name="none">Yoxdur</string>
     <string name="default_save_options_subtitle">Yeni doğrulama kodlarını harada saxlamaq istədiyinizi seçin.</string>
     <string name="verification_code_created">Doğrulama kodu yaradıldı</string>
     <string name="choose_save_location_message">Bu kimlik doğrulayıcı açarı burada saxlayın, ya da onu Universal Password Manager tətbiqində bir girişə əlavə edin.</string>
     <string name="save_option_as_default">Seçənəyi ilkin olaraq saxla</string>
-    <string name="account_synced_from_bitwarden_app">Hesab, Universal Password Manager tətbiqindən sinxronlaşdırıldı</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Hesab, Universal Password Manager tətbiqindən sinxronlaşdırıldı</string>
     <string name="local_codes">Lokal kodlar (%1$d)</string>
     <string name="local_codes_header">Lokal kodlar</string>
     <string name="required_information_missing">Tələb olunan məlumat əskikdir</string>
-    <string name="required_information_missing_message">Tələb olunan məlumatlar əskikdir (məs. \'xidmətlər\' və ya \'sirr\'). Faylınızı yoxlayıb yenidən sınayın. Dəstək üçün bitwarden.com/help ünvanını ziyarət edin</string>
+    <string name="required_information_missing_message">Tələb olunan məlumatlar əskikdir (məs. \'xidmətlər\' və ya \'sirr\'). Faylınızı yoxlayıb yenidən sınayın. Dəstək üçün /help ünvanını ziyarət edin</string>
     <string name="file_could_not_be_processed">Fayl emal oluna bilmədi</string>
-    <string name="file_could_not_be_processed_message">Fayl emal edilə bilmədi. Bunun yararlı JSON faylı olduğuna əmin olub yenidən sınayın. Kömək lazımdır? bitwarden.com/help ünvanını ziyarət edin</string>
+    <string name="file_could_not_be_processed_message">Fayl emal edilə bilmədi. Bunun yararlı JSON faylı olduğuna əmin olub yenidən sınayın. Kömək lazımdır? /help ünvanını ziyarət edin</string>
     <string name="get_help">Kömək al</string>
     <string name="error_cannot_decrypt">[xəta: şifrə açıla bilmir]</string>
     <string name="copy_error_report">Xəta hesabatını kopyala</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager, bu seyf elementinin şifrəsini aça bilmədi. Əlavə veri itkisini önləmək üçün bu xəta hesabatını kopyalayıb müştəri dəstəyi ilə paylaşın.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager, bu seyf elementinin şifrəsini aça bilmədi. Əlavə veri itkisini önləmək üçün bu xəta hesabatını kopyalayıb müştəri dəstəyi ilə paylaşın.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager, %1$d seyf elementinin şifrəsini aça bilmədi. Əlavə veri itkisini önləmək üçün bu xəta hesabatını kopyalayıb müştəri dəstəyi ilə paylaşın.</item>
         <item quantity="other">Universal Password Manager, %1$d seyf elementinin şifrəsini aça bilmədi. Əlavə veri itkisini önləmək üçün bu xəta hesabatını kopyalayıb müştəri dəstəyi ilə paylaşın.</item>
     </plurals>
@@ -1193,7 +1193,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Parolları doldurmağa davam etmək üçün brauzer Avto-doldurmanı fəallaşdır</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Brauzeriniz təzəlikcə güncəllənib və bu, Universal Password Manager-in avto-doldurma özəlliyini sıradan çıxardıb. Parollarınızı Universal Password Manager ilə doldurmağa davam etmək üçün avto-doldurma ayarlarında brauzer avto-doldurmanı fəallaşdırın.</string>
     <string name="not_now">İndi yox</string>
-    <string name="import_from_bitwarden">Universal Password Manager-dən daxilə köçür</string>
+    <string name="import_from_universalpasswordmanager">Universal Password Manager-dən daxilə köçür</string>
     <string name="select_account">Hesab seç</string>
     <string name="no_accounts_available">Heç bir hesab mövcud deyil</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Daxilə köçürə biləcəyiniz heç bir hesabınız yoxdur. Təşkilatınızın təhlükəsizlik siyasəti, elementlərin Universal Password Manager-dən başqa bir tətbiqə köçürülməsini məhdudlaşdıra bilər.</string>
@@ -1291,7 +1291,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="trusted">Güvənilən</string>
     <string name="preview_not_available_for_files">%1$s fayl üçün önizləmə mövcud deyil. Hələ də cihazınızda baxmaq üçün endirə bilərsiniz.</string>
     <string name="this_file_is_too_large_to_preview">Bu fayl, önizləmək üçün çox böyükdür. Cihazınızda baxmaq üçün yenə də endirə bilərsiniz.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager bu faylın şifrəsini aça bilmədi, ona görə də önizləmə nümayiş oluna bilmir.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager bu faylın şifrəsini aça bilmədi, ona görə də önizləmə nümayiş oluna bilmir.</string>
     <string name="preview_unavailable_for_this_file">Bu fayl üçün önizləmə mövcud deyil. Hələ də cihazınızda baxmaq üçün endirə bilərsiniz.</string>
     <string name="preview_unavailable">Önizləmə mövcud deyil</string>
     <string name="download_attachment">Qoşmanı endir</string>
@@ -1333,7 +1333,7 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="billing_rate_per_year">%1$s / il</string>
     <string name="billing_rate_per_month">%1$s / ay</string>
     <string name="manage_plan">Planı idarə et</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Abunəlik planınızı Universal Password Manager veb tətbiqində idarə edin.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Abunəlik planınızı Universal Password Manager veb tətbiqində idarə edin.</string>
     <string name="cancel_premium">Premium ləğv edildi</string>
     <string name="subscription_status_active">Aktiv</string>
     <string name="subscription_status_canceled">Ləğv edildi</string>
@@ -1424,8 +1424,8 @@ fəaliyyəti yaxalamaq üçün sizə vaxt verəcək.</string>
     <string name="local_network_access_required">Lokal şəbəkənizə erişim tələb olundu</string>
     <string name="ask_again_later">Daha sonra soruş</string>
     <string name="enable_local_network_access">Lokal şəbəkəyə erişimi fəallaşdır</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager-in serverinizlə sinxron olması üçün lokal şəbəkəyə erişməsi lazımdır. Bu izin olmadan, tətbiq bağlantı qura bilməyəcək.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Bu izin olmadan, Universal Password Manager serverinizə bağlana bilməyəcək və sinxron ola bilməyəcək. Bunu cihazınızın ayarlarında fəallaşdıra bilərsiniz.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager-in serverinizlə sinxron olması üçün lokal şəbəkəyə erişməsi lazımdır. Bu izin olmadan, tətbiq bağlantı qura bilməyəcək.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Bu izin olmadan, Universal Password Manager serverinizə bağlana bilməyəcək və sinxron ola bilməyəcək. Bunu cihazınızın ayarlarında fəallaşdıra bilərsiniz.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Sorğunuz yarımçıq dayandırıldı, çünki tətbiqin lokal şəbəkəyə erişməsi lazımdır. Bunu cihazınızın ayarlarında fəallaşdıra bilərsiniz.</string>
     <string name="continue_to_stripe">Stripe ilə davam edilsin?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Abunəliyinizin ləğvi üçün Stripe-a yönləndiriləcəksiniz.</string>

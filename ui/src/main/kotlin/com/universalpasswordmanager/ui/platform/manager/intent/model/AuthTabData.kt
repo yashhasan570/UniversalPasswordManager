@@ -22,7 +22,7 @@ sealed class AuthTabData {
      */
     data class CustomScheme(
         override val callbackUrl: String,
-        override val callbackScheme: String = "bitwarden",
+        override val callbackScheme: String = "universalpasswordmanager",
     ) : AuthTabData()
 
     /**

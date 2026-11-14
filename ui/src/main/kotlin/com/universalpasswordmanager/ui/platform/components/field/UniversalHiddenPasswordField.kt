@@ -12,7 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.cardStyle
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.components.field.toolbar.UniversalEmptyTextToolbar
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
 import com.universalpasswordmanager.ui.platform.components.util.passwordVisualTransformation
@@ -49,7 +49,7 @@ fun UniversalHiddenPasswordField(
             enabled = false,
             readOnly = true,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-            colors = bitwardenTextFieldColors(),
+            colors = universalpasswordmanagerTextFieldColors(),
         )
     }
 }

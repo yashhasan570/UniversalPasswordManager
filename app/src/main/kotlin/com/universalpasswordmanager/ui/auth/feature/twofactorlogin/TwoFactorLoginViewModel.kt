@@ -315,7 +315,7 @@ class TwoFactorLoginViewModel @AssistedInject constructor(
                     it.copy(
                         dialogState = TwoFactorLoginState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server
+                            message = UniversalString.this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server
                                 .asText(),
                         ),
                     )

@@ -156,7 +156,7 @@ class AttachmentsViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(AttachmentsAction.UpgradeToPremiumClick)
                 assertEquals(
                     AttachmentsEvent.NavigateToUri(
-                        uri = "https://vault.bitwarden.com/#/settings/subscription" +
+                        uri = "https://vault./#/settings/subscription" +
                             "/premium?callToAction=upgradeToPremium",
                     ),
                     awaitItem(),
@@ -832,7 +832,7 @@ class AttachmentsViewModelTest : BaseViewModelTest() {
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = "mockUserId-1",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     environment = Environment.Prod.Us,
     avatarColorHex = "#aa00aa",
     isPremium = true,

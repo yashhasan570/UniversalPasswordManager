@@ -1240,7 +1240,7 @@ class AddEditSendScreenTest : UniversalComposeTest() {
 
     @Test
     fun `on NavigateToPremium event should call launchUri on IntentManager`() = runTest {
-        val uri = "https://vault.bitwarden.com/#/settings/subscription/premium"
+        val uri = "https://vault./#/settings/subscription/premium"
         mutableEventFlow.tryEmit(AddEditSendEvent.NavigateToPremium(uri))
 
         verify { intentManager.launchUri(any()) }
@@ -1968,7 +1968,7 @@ private val DEFAULT_STATE = AddEditSendState(
     dialogState = null,
     shouldFinishOnComplete = false,
     isShared = false,
-    baseWebSendUrl = "https://vault.bitwarden.com/#/send/",
+    baseWebSendUrl = "https://vault./#/send/",
     policyDisablesSend = false,
     isSendControlsEnabled = false,
     allowedDomains = null,

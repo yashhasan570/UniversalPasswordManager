@@ -276,7 +276,7 @@ class SelectAccountViewModelTest : BaseViewModelTest() {
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     environment = Environment.Prod.Us,
     avatarColorHex = "#FF00FF00",
     isPremium = true,

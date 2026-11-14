@@ -75,9 +75,9 @@
     <string name="yes">是</string>
     <string name="account">帳戶</string>
     <string name="account_created_success">您的新帳戶已建立！</string>
-    <string name="set_bitwarden_as_passkey_manager_description">於裝置設定將 Universal Password Manager 設為您的密鑰提供者</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">於裝置設定將 Universal Password Manager 設為您的密鑰提供者</string>
     <string name="avoid_ambiguous_characters">避免易混淆的字元</string>
-    <string name="bitwarden_autofill_service">Universal Password Manager 自動填入服務</string>
+    <string name="universalpasswordmanager_autofill_service">Universal Password Manager 自動填入服務</string>
     <string name="change_master_password">變更主密碼</string>
     <string name="close">關閉</string>
     <string name="close_app">關閉應用程式</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">將工作階段逾時設定為「登出」嗎？</string>
     <string name="vault_timeout_log_out_confirmation_message">在逾時時間結束後，你將會被登出。你需要連接網際網路才能重新登入並存取你的密碼庫。此裝置上已儲存的設定與 PIN 不會改變。</string>
     <string name="logging_in">登入中…</string>
-    <string name="login_to_bitwarden">登入 Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">登入 Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">兩次填寫的主密碼不一致。</string>
     <string name="master_password_description">主密碼是用於存取密碼庫的密碼。它非常重要，請您不要忘記它。若您忘記了主密碼，沒有任何方法能將其復原。</string>
     <string name="master_password_hint">主密碼提示（可省略）</string>
@@ -175,7 +175,7 @@
     <string name="no_items_for_vault">您的密碼庫中沒有與「%1$s」一致的項目</string>
     <string name="search_for_a_login_or_add_a_new_login">搜尋登入資訊或新增登入資訊</string>
     <string name="disabled">已停用</string>
-    <string name="bitwarden_autofill_service_alert2">Universal Password Manager 自動填入服務是新增登入資料的最簡單方法。請至「設定」頁面深入了解使用 Universal Password Manager 自動填入服務的方法 。</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Universal Password Manager 自動填入服務是新增登入資料的最簡單方法。請至「設定」頁面深入了解使用 Universal Password Manager 自動填入服務的方法 。</string>
     <string name="autofill_noun">自動填入</string>
     <string name="autofill_verb">自動填入</string>
     <string name="autofill_or_view">您想自動填入還是檢視此項目？</string>
@@ -298,7 +298,7 @@
     <string name="no_items_trash">垃圾桶中沒有項目。</string>
     <string name="autofill_accessibility_summary">在其它應用程式及網頁上協助自動填寫使用者名稱和密碼。</string>
     <string name="autofill_service_description">Universal Password Manager 自動填入服務使用 Android 自動填入框架來協助您將登入資訊填入至您裝置上的其他應用程式中。</string>
-    <string name="bitwarden_autofill_go_to_settings">我們無法為您自動開啟 Android 自動填入設定選單。您可以從 Android 設定 &gt; 系統 &gt; 語言與輸入設定 &gt; 進階 &gt; 自動填入服務，手動到達自動填入設定選單。</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">我們無法為您自動開啟 Android 自動填入設定選單。您可以從 Android 設定 &gt; 系統 &gt; 語言與輸入設定 &gt; 進階 &gt; 自動填入服務，手動到達自動填入設定選單。</string>
     <string name="custom_field_name">自訂欄位名稱</string>
     <string name="field_type_boolean">布林值</string>
     <string name="field_type_hidden">隱藏型</string>
@@ -646,14 +646,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">第一次使用 Universal Password Manager？</string>
+    <string name="new_to_universalpasswordmanager">第一次使用 Universal Password Manager？</string>
     <string name="get_master_passwordword_hint">獲取主密碼提示</string>
     <string name="logging_in_as_x_on_y">在 %2$s 上以 %1$s 身分登入</string>
     <string name="not_you">不是您嗎？</string>
     <string name="log_in_with_master_password">使用主密碼登入</string>
     <string name="log_in_initiated">登入已發起</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">重新傳送通知</string>
     <string name="view_all_login_options">檢視所有登入選項</string>
@@ -711,7 +711,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">選擇保管庫</string>
     <string name="appearance">外觀</string>
     <string name="account_security">帳戶安全性</string>
-    <string name="bitwarden_help_center">Universal Password Manager 幫助中心</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager 幫助中心</string>
     <string name="sync_now">立即同步</string>
     <string name="unlock_options">解鎖選項</string>
     <string name="session_timeout">工作階段逾時</string>
@@ -728,10 +728,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">繼續前往裝置設定？</string>
     <string name="two_step_login_description_long">在 Universal Password Manager Web 應用程式中設定兩步驟登入，讓您的帳戶更加安全。</string>
     <string name="change_master_password_description_long">您可以在 Universal Password Manager Web 應用程式上變更主密碼。</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">在幫助中心了解有關如何使用 Universal Password Manager 的更多資訊。</string>
-    <string name="privacy_policy_description_long">在 bitwarden.com 上查看我們的隱私權政策。</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">在 Web 應用程式上探索 Universal Password Manager 帳戶的更多功能。</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager 可讓您透過組織與其他人共用您的密碼庫項目。請造訪 bitwarden.com 網站以了解更多資訊。</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">在幫助中心了解有關如何使用 Universal Password Manager 的更多資訊。</string>
+    <string name="privacy_policy_description_long">在  上查看我們的隱私權政策。</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">在 Web 應用程式上探索 Universal Password Manager 帳戶的更多功能。</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager 可讓您透過組織與其他人共用您的密碼庫項目。請造訪  網站以了解更多資訊。</string>
     <string name="created_x">建立於%1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">您的組織要求您設定主密碼。</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">設定一個解鎖方式來變更您的密碼庫逾時動作。</string>
@@ -741,8 +741,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">您的帳號要求使用 Duo 兩步驟驗證登入。</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">跟隨 Duo 的步驟來完成登入。</string>
     <string name="launch_duo">啟動 Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">您的密碼金鑰已經儲存在您的 %1$s Universal Password Manager 密碼庫</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">您的密碼已經儲存在您的 %1$s Universal Password Manager 密碼庫</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">您的密碼金鑰已經儲存在您的 %1$s Universal Password Manager 密碼庫</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">您的密碼已經儲存在您的 %1$s Universal Password Manager 密碼庫</string>
     <string name="passkeys_not_supported_for_this_app">此應用程式不支援密碼金鑰</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">由於您的瀏覽器未獲得權限，密碼金鑰動作失敗</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">由於您的瀏覽器憑證不正確，密碼金鑰動作失敗</string>
@@ -768,7 +768,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">檢查您的電子郵件</string>
     <string name="open_email_app">開啟電子郵件 App</string>
     <string name="email_verified">電子郵件已驗證</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">獲得來自 Universal Password Manager 的公告、建議及研究資訊電子郵件。可以在任何時間<annotation link="unsubscribe">取消訂閱</annotation>。</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">獲得來自 Universal Password Manager 的公告、建議及研究資訊電子郵件。可以在任何時間<annotation link="unsubscribe">取消訂閱</annotation>。</string>
     <string name="security_prioritized">安全，第一優先</string>
     <string name="welcome_message_1">儲存登入資訊、信用卡和數位身分到您的安全密碼庫。Universal Password Manager 使用零知識、端對端的加密來保護您的重要資訊。</string>
     <string name="welcome_message_2">設定生物辨識解鎖及自動填入，不需要輸入任何字元就可以登入。</string>
@@ -806,8 +806,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">選擇您電子郵件中的連結來認證您的電子郵件地址及繼續建立您的帳號。</string>
     <string name="change_email_address">更改電子郵件地址</string>
     <string name="next">下一步</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager 無法為您恢復遺失或忘記的主密碼。</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager 無法重設遺失或忘記的主密碼。</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager 無法為您恢復遺失或忘記的主密碼。</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager 無法重設遺失或忘記的主密碼。</string>
     <string name="choose_your_master_password">選擇您的主密碼</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">選擇一個獨特且強度足夠的密碼來保護您的資訊安全。</string>
     <plurals name="minimum_characters">
@@ -817,13 +817,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">請重啟註冊或是嘗試登入。您可能已經有一個帳號了。</string>
     <string name="restart_registration">重新啟動註冊</string>
     <string name="authenticator_sync">驗證器自動同步</string>
-    <string name="allow_bitwarden_authenticator_syncing">啟用驗證器的自動同步</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">啟用驗證器的自動同步</string>
     <string name="there_was_an_issue_validating_the_registration_token">在驗證您的註冊權杖時遇到了問題。</string>
     <string name="turn_on_autofill">啟用自動填入</string>
     <string name="autofill_setup">自動填入設定</string>
     <string name="turn_on_browser_autofill_integration">開啟瀏覽器自動填入整合功能</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">開啟瀏覽器自動填入整合功能</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">您正在使用的瀏覽器需要授予 Universal Password Manager 特殊權限，才能自動填入您的密碼。</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">開啟瀏覽器自動填入整合功能</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">您正在使用的瀏覽器需要授予 Universal Password Manager 特殊權限，才能自動填入您的密碼。</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">您正在使用的瀏覽器需要授予 Universal Password Manager 特殊權限，才能自動填入您的密碼。請在下方啟用您偏好的自動填入整合功能。</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">您正在使用的瀏覽器需要授予 Universal Password Manager 特殊權限，才能自動填入您的密碼。請啟用所有已安裝瀏覽器的自動填入功能以繼續。</string>
     <string name="use_autofill_to_log_into_your_accounts">使用自動填入來一鍵登入您的帳號。</string>
@@ -831,7 +831,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">稍後再啟動自動填入？</string>
     <string name="turn_on_browser_autofill_integration_later">稍後再開啟瀏覽器自動填入整合功能？</string>
     <string name="return_to_complete_this_step_anytime_in_settings">您可以在設定中隨時回到此步驟。</string>
-    <string name="what_bitwarden_has_to_offer">您現在可以瀏覽所有 Universal Password Manager 所提供的功能並開始安全管理您的密碼。</string>
+    <string name="what_universalpasswordmanager_has_to_offer">您現在可以瀏覽所有 Universal Password Manager 所提供的功能並開始安全管理您的密碼。</string>
     <string name="youre_all_set">一切就緒！</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">連接到 Duo 服務時發生錯誤。使用不同的兩階段認證或聯繫 Duo 來獲得支援。</string>
     <string name="master_password_hint_not_specified">主密碼提示</string>
@@ -860,29 +860,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">步驟 3 之 1</string>
     <string name="export_your_saved_logins">匯出已儲存的登入資訊</string>
     <string name="delete_this_file_after_import_is_complete">您稍後在匯入完成後可以刪除此檔案。</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">使用您的電腦，開啟新的瀏覽器分頁並<annotation emphasis="bold">瀏覽到<annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">登入到 Universal Password Manager 網頁應用程式。</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">使用您的電腦，開啟新的瀏覽器分頁並<annotation emphasis="bold">瀏覽到<annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">登入到 Universal Password Manager 網頁應用程式。</string>
     <string name="step_2_of_3">步驟 3 之 2</string>
-    <string name="log_in_to_bitwarden">登入 Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">登入 Universal Password Manager</string>
     <string name="step_3_of_3">步驟 3 之 3</string>
-    <string name="import_logins_to_bitwarden">匯入登入資訊到 Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">在 Universal Password Manager 選單中，<annotation emphasis="bold">找到工具選項</annotation>並<annotation emphasis="bold">選擇匯入資料</annotation>。</string>
+    <string name="import_logins_to_universalpasswordmanager">匯入登入資訊到 Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">在 Universal Password Manager 選單中，<annotation emphasis="bold">找到工具選項</annotation>並<annotation emphasis="bold">選擇匯入資料</annotation>。</string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">填入表單並<annotation emphasis="bold">匯入您的密碼檔案</annotation>。</string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">為了您的安全，記得<annotation emphasis="bold">刪除先前匯出的密碼檔案</annotation>。</string>
     <string name="need_help_check_out_import_help">需要幫助嗎？看看我們的<annotation link="importHelp">匯入說明</annotation>。</string>
     <string name="import_help">匯入說明</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily">在您的電腦上<annotation emphasis="bold">儲存匯出的檔案</annotation>方便日後尋找。</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">這不是一個 Universal Password Manager 伺服器。您可能需要聯繫您的提供商或更新您的伺服器。</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">這不是一個 Universal Password Manager 伺服器。您可能需要聯繫您的提供商或更新您的伺服器。</string>
     <string name="syncing_logins_loading_message">正在同步登入資訊...</string>
     <string name="download_the_browser_extension">下載瀏覽器擴充套件</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">瀏覽到 bitwarden.com/download 來結合 Universal Password Manager 到您最愛的瀏覽器提供最好的體驗。</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">瀏覽到 /download 來結合 Universal Password Manager 到您最愛的瀏覽器提供最好的體驗。</string>
     <string name="use_the_web_app">使用網頁應用程式</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">登入到 bitwarden.com 來輕易管理您的帳號及更新偏好設定。</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">登入到  來輕易管理您的帳號及更新偏好設定。</string>
     <string name="autofill_passwords">自動填入密碼</string>
     <string name="set_up_autofill_on_all_your_devices">在您所有裝置上設定一鍵自動填入登入</string>
     <string name="import_successful">匯入成功！</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">在任何地方使用 Universal Password Manager 網頁或桌面應用程式來管理您的登入資訊。</string>
-    <string name="bitwarden_tools">Universal Password Manager 工具</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">在任何地方使用 Universal Password Manager 網頁或桌面應用程式來管理您的登入資訊。</string>
+    <string name="universalpasswordmanager_tools">Universal Password Manager 工具</string>
     <string name="got_it">知道了</string>
     <string name="no_logins_were_imported">沒有匯入任何登入資訊</string>
     <string name="import_error">匯入時發生錯誤</string>
@@ -899,7 +899,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d 通知</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">快速輕鬆的使用不同裝置登入</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager 可以在您透過其它裝置收到新登入要求時通知您。</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager 可以在您透過其它裝置收到新登入要求時通知您。</string>
     <string name="skip_for_now">下次再說</string>
     <string name="done_text">完成</string>
     <string name="page_number_x_of_y">%2$s 之 %1$s</string>
@@ -951,7 +951,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 / 6</string>
     <string name="coachmark_6_of_6">6 / 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">使用這些選項來調整您的密碼，以符合您帳號網站的要求。</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">將新密碼儲存到 Universal Password Manager 後，別忘了在您的帳號網站上更新它。</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">將新密碼儲存到 Universal Password Manager 後，別忘了在您的帳號網站上更新它。</string>
     <string name="verify_your_identity">驗證您的身份</string>
     <string name="error_loading_certificate">加載證書時出錯。</string>
     <string name="certificate_alias">證書別名</string>
@@ -962,7 +962,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">未支援的憑證類型</string>
     <string name="certificate_password_incorrect">憑證密碼不正確</string>
     <string name="invalid_certificate_chain">憑證鏈無效</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">使用系統憑證的安全性低於將憑證儲存在 Universal Password Manager 中。繼續操作將顯示可用的系統憑證清單（若已安裝憑證）。</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">使用系統憑證的安全性低於將憑證儲存在 Universal Password Manager 中。繼續操作將顯示可用的系統憑證清單（若已安裝憑證）。</string>
     <string name="link">連結</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">通行金鑰操作失敗，因為請求中沒有主機網址。</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">通行金鑰操作失敗，因為應用程式簽章無效。</string>
@@ -1032,7 +1032,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">無法讀取憑證。</string>
     <string name="cannot_delete_your_account">無法刪除您的帳號</string>
     <string name="cannot_delete_your_account_explanation">由於您的帳號由一個機構持有，因此無法完成此操作。請聯絡您的機構管理員以獲取更多詳情。</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">此帳號即將被刪除。請前往 %1$s 登入以繼續使用 Universal Password Manager。</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">此帳號即將被刪除。請前往 %1$s 登入以繼續使用 Universal Password Manager。</string>
     <string name="view_file_send">檢視檔案 Send</string>
     <string name="view_text_send">檢視文字 Send</string>
     <string name="delete_send">刪除 Send</string>
@@ -1054,7 +1054,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">了解更多關於受信任應用程式的資訊</string>
     <string name="privileged_apps">受信任的應用程式</string>
     <string name="unrecognized_browser">無法識別的瀏覽器</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">了解更多如何在 Universal Password Manager 中使用通行金鑰。</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">了解更多如何在 Universal Password Manager 中使用通行金鑰。</string>
     <string name="all_trusted_apps">所有信任的應用程式</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">您確定要停止信任 %s 嗎？</string>
     <string name="installed_apps">已安裝的應用程式</string>
@@ -1081,7 +1081,7 @@ Do you want to switch to this account?</string>
     <string name="information">資訊</string>
     <string name="otp_type">OTP 類別</string>
     <string name="search_codes">搜尋代碼</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">使用 Universal Password Manager 驗證器保護您的帳戶</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">使用 Universal Password Manager 驗證器保護您的帳戶</string>
     <string name="get_verification_codes_for_all_your_accounts">取得所有支援兩步驟驗證的帳戶之驗證碼。</string>
     <string name="use_your_device_camera_to_scan_codes">使用您裝置的相機掃描驗證碼</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">掃描您帳戶兩步驟驗證設定中的 QR code。</string>
@@ -1102,7 +1102,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">生物辨識嘗試次數過多。</string>
     <string name="version">版本</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">版本：%1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">在說明中心了解有關如何使用 Universal Password Manager Authenticato的更多資訊。</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">在說明中心了解有關如何使用 Universal Password Manager Authenticato的更多資訊。</string>
     <string name="key">金鑰</string>
     <string name="create_verification_code">建立驗證碼</string>
     <string name="key_is_required">需要金鑰</string>
@@ -1115,39 +1115,39 @@ Do you want to switch to this account?</string>
     <string name="data_backup_title">資料備份</string>
     <string name="data_backup_message">Universal Password Manager 驗證器資料已備份，可透過您定期排程的裝置備份進行還原。</string>
     <string name="import_2fas_password_protected_not_supported">不支援從受密碼保護的 2FAS 檔案匯入。請使用未受密碼保護的匯出檔案重試。</string>
-    <string name="import_bitwarden_unsupported_format">不支援匯入 Universal Password Manager 的 CSV 檔案。請改用匯出的 JSON 檔案再試一次。</string>
-    <string name="download_bitwarden_card_title">下載 Universal Password Manager 應用程式</string>
-    <string name="download_bitwarden_card_message">將您所有的登入資料儲存並與驗證碼直接同步至驗證器應用程式。</string>
+    <string name="import_universalpasswordmanager_unsupported_format">不支援匯入 Universal Password Manager 的 CSV 檔案。請改用匯出的 JSON 檔案再試一次。</string>
+    <string name="download_universalpasswordmanager_card_title">下載 Universal Password Manager 應用程式</string>
+    <string name="download_universalpasswordmanager_card_message">將您所有的登入資料儲存並與驗證碼直接同步至驗證器應用程式。</string>
     <string name="download_now">下載 CSV</string>
-    <string name="sync_with_bitwarden_app">與 Universal Password Manager 應用程式同步</string>
+    <string name="sync_with_universalpasswordmanager_app">與 Universal Password Manager 應用程式同步</string>
     <string name="learn_more_link"><annotation link="learnMore">瞭解更多</annotation></string>
     <string name="shared_codes_error">無法從 Universal Password Manager 應用程式同步驗證碼。請確保兩個應用程式皆為最新版本。您仍可在 Universal Password Manager 應用程式中存取現有的驗證碼。</string>
-    <string name="sync_with_the_bitwarden_app">與 Universal Password Manager 應用程式同步</string>
-    <string name="sync_with_bitwarden_action_card_message">若要查看所有驗證碼，您需要允許在所有帳戶上進行同步。</string>
+    <string name="sync_with_the_universalpasswordmanager_app">與 Universal Password Manager 應用程式同步</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">若要查看所有驗證碼，您需要允許在所有帳戶上進行同步。</string>
     <string name="take_me_to_app_settings">前往應用程式設定</string>
     <string name="something_went_wrong">出了點問題</string>
     <string name="please_try_again">請再試一次</string>
-    <string name="copy_to_bitwarden_vault">複製到 Universal Password Manager 密碼庫</string>
+    <string name="copy_to_universalpasswordmanager_vault">複製到 Universal Password Manager 密碼庫</string>
     <string name="default_save_option">預設儲存選項</string>
-    <string name="save_to_bitwarden">已儲存至 Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">已儲存至 Universal Password Manager</string>
     <string name="save_here">儲存在此</string>
     <string name="none">無</string>
     <string name="default_save_options_subtitle">選擇您要儲存新驗證碼的位置。</string>
     <string name="verification_code_created">驗證碼已建立</string>
     <string name="choose_save_location_message">將此驗證器金鑰儲存在此，或將其新增至您 Universal Password Manager 應用程式中的登入項目。</string>
     <string name="save_option_as_default">將此儲存選項設為預設</string>
-    <string name="account_synced_from_bitwarden_app">從 Universal Password Manager 應用程式同步的帳戶</string>
+    <string name="account_synced_from_universalpasswordmanager_app">從 Universal Password Manager 應用程式同步的帳戶</string>
     <string name="local_codes">本機代碼（%1$d）</string>
     <string name="local_codes_header">本地代碼</string>
     <string name="required_information_missing">缺少必要資訊</string>
-    <string name="required_information_missing_message">缺少必要資訊（例如「服務」或「密鑰」）。請檢查您的檔案後再試一次。如需支援，請造訪 bitwarden.com/help</string>
+    <string name="required_information_missing_message">缺少必要資訊（例如「服務」或「密鑰」）。請檢查您的檔案後再試一次。如需支援，請造訪 /help</string>
     <string name="file_could_not_be_processed">無法處理檔案</string>
-    <string name="file_could_not_be_processed_message">無法處理檔案。請確認其為有效的 JSON 後再試一次。需要協助？請造訪 bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">無法處理檔案。請確認其為有效的 JSON 後再試一次。需要協助？請造訪 /help</string>
     <string name="get_help">尋求協助</string>
     <string name="error_cannot_decrypt">[錯誤：無法解密]</string>
     <string name="copy_error_report">複製錯誤報告</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager 無法解密此保險庫項目。請複製並將此錯誤報告提供給客服團隊，以避免進一步的資料遺失。</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager 無法解密此保險庫項目。請複製並將此錯誤報告提供給客服團隊，以避免進一步的資料遺失。</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="other">Universal Password Manager 無法解密 %1$d 個保險庫項目。請複製並將此錯誤報告提供給客服團隊，以避免進一步的資料遺失。</item>
     </plurals>
     <string name="select_a_card_for_x">選擇 %s 的付款卡</string>
@@ -1185,7 +1185,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">啟用瀏覽器自動填入功能以持續自動填入密碼</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">您的瀏覽器最近更新，已停用 Universal Password Manager 的自動填入功能。若要繼續使用 Universal Password Manager 自動填入密碼，請在自動填入設定中啟用瀏覽器自動填入。</string>
     <string name="not_now">以後再說</string>
-    <string name="import_from_bitwarden">從 Universal Password Manager 匯入</string>
+    <string name="import_from_universalpasswordmanager">從 Universal Password Manager 匯入</string>
     <string name="select_account">選擇帳號</string>
     <string name="no_accounts_available">無可用帳戶</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">您沒有可供匯入的帳戶。您組織的安全性政策可能限制從 Universal Password Manager 匯入項目至其他應用程式。</string>
@@ -1283,7 +1283,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">已信任</string>
     <string name="preview_not_available_for_files">無法預覽 %1$s 類型的檔案。您仍可下載後在裝置上檢視。</string>
     <string name="this_file_is_too_large_to_preview">此檔案過大，無法預覽。您仍可下載後在裝置上檢視。</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager 無法解密此檔案，因此無法顯示預覽。</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager 無法解密此檔案，因此無法顯示預覽。</string>
     <string name="preview_unavailable_for_this_file">此檔案無法預覽。您仍可下載後在裝置上檢視。</string>
     <string name="preview_unavailable">無法預覽</string>
     <string name="download_attachment">下載附件</string>
@@ -1325,7 +1325,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s／年</string>
     <string name="billing_rate_per_month">%1$s／月</string>
     <string name="manage_plan">管理方案</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">請在 Universal Password Manager 網頁版中管理您的訂閱方案。</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">請在 Universal Password Manager 網頁版中管理您的訂閱方案。</string>
     <string name="cancel_premium">取消 Premium</string>
     <string name="subscription_status_active">生效中</string>
     <string name="subscription_status_canceled">已取消</string>
@@ -1415,8 +1415,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">需要本機網路存取權限</string>
     <string name="ask_again_later">稍後再詢問</string>
     <string name="enable_local_network_access">啟用本機網路存取權限</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager 需要本機網路存取權限才能與您的伺服器同步。若未授予此權限，應用程式將無法連線。</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">若未授予此權限，Universal Password Manager 將無法連線並與您的伺服器同步。您可以在裝置設定中啟用此權限。</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager 需要本機網路存取權限才能與您的伺服器同步。若未授予此權限，應用程式將無法連線。</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">若未授予此權限，Universal Password Manager 將無法連線並與您的伺服器同步。您可以在裝置設定中啟用此權限。</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">您的要求已中斷，因為應用程式需要本機網路存取權限。您可以在裝置設定中啟用此權限。</string>
     <string name="continue_to_stripe">要前往 Stripe 嗎？</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">您將前往 Stripe 管理您的訂閱取消事宜。</string>

@@ -36,7 +36,7 @@ import javax.inject.Inject
 class CredentialProviderViewModel @Inject constructor(
     private val credentialProviderRequestManager: CredentialProviderRequestManager,
     private val authRepository: AuthRepository,
-    private val bitwardenCredentialManager: UniversalCredentialManager,
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager,
 ) : BaseViewModel<Unit, Unit, CredentialProviderAction>(initialState = Unit) {
 
     override fun handleAction(action: CredentialProviderAction) {
@@ -54,7 +54,7 @@ class CredentialProviderViewModel @Inject constructor(
     }
 
     private fun handleCreateCredential(request: CreateCredentialRequest) {
-        bitwardenCredentialManager.isUserVerified = request.isUserPreVerified
+        universalpasswordmanagerCredentialManager.isUserVerified = request.isUserPreVerified
 
         // Switch accounts if the selected user is not the active user
         if (authRepository.activeUserId != null &&
@@ -70,7 +70,7 @@ class CredentialProviderViewModel @Inject constructor(
 
     private fun handleFido2Assertion(request: Fido2CredentialAssertionRequest) {
         // Set the user's verification status when a new FIDO 2 request is received
-        bitwardenCredentialManager.isUserVerified = request.isUserPreVerified
+        universalpasswordmanagerCredentialManager.isUserVerified = request.isUserPreVerified
 
         credentialProviderRequestManager.setPendingCredentialRequest(
             CredentialProviderRequest.Fido2Assertion(request),
@@ -79,7 +79,7 @@ class CredentialProviderViewModel @Inject constructor(
 
     private fun handlePasswordGet(request: ProviderGetPasswordCredentialRequest) {
         // Set the user's verification status when a new GetPassword request is received
-        bitwardenCredentialManager.isUserVerified = request.isUserPreVerified
+        universalpasswordmanagerCredentialManager.isUserVerified = request.isUserPreVerified
 
         credentialProviderRequestManager.setPendingCredentialRequest(
             CredentialProviderRequest.GetPassword(request),

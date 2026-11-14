@@ -75,9 +75,9 @@
     <string name="yes">Da</string>
     <string name="account">Račun</string>
     <string name="account_created_success">Vaš novi račun je bil ustvarjen!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">V nastavitvah naprave nastavite Universal Password Manager kot ponudnika varnostnih ključev.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">V nastavitvah naprave nastavite Universal Password Manager kot ponudnika varnostnih ključev.</string>
     <string name="avoid_ambiguous_characters">Brez dvoumnih znakov</string>
-    <string name="bitwarden_autofill_service">Universal Password Manager storitev samodejnega izpolnjevanja obrazcev</string>
+    <string name="universalpasswordmanager_autofill_service">Universal Password Manager storitev samodejnega izpolnjevanja obrazcev</string>
     <string name="change_master_password">Spremeni glavno geslo</string>
     <string name="close">Zapri</string>
     <string name="close_app">Zapri aplikacijo</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Nastavite časovno omejitev seje na »Odjava«?</string>
     <string name="vault_timeout_log_out_confirmation_message">Po izteku časovne omejitve boste odjavljeni. Za ponovno prijavo in dostop do trezorja boste morali biti povezani v internet. Vaše nastavitve in PIN, shranjeni na tej napravi, se ne bodo spremenili.</string>
     <string name="logging_in">Prijavljanje…</string>
-    <string name="login_to_bitwarden">Prijava v Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">Prijava v Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">Potrditev gesla ni pravilna.</string>
     <string name="master_password_description">Glavno geslo je geslo, ki ga uporabljate za dostop do svojega trezorja. Zelo pomembno je, da ne pozabite svojega glavnega gesla. V primeru, da ga pozabite, gesla ni mogoče obnoviti.</string>
     <string name="master_password_hint">Namig za glavno geslo (neobvezno)</string>
@@ -178,7 +178,7 @@
     <string name="no_items_for_vault">V tvojem trezorju ni predmetov, ki bi ustrezali »%1$s«</string>
     <string name="search_for_a_login_or_add_a_new_login">Poiščite prijavo ali dodajte novo prijavo</string>
     <string name="disabled">Onemogočeno</string>
-    <string name="bitwarden_autofill_service_alert2">Najlažji način za dodajanje novih prijav v vaš trezor je prek storitve Universal Password Manager za samodejno izpolnjevanje. Več o uporabi storitve Universal Password Manager za samodejno izpolnjevanje izveste tako, da odprete zaslon »Nastavitve«.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Najlažji način za dodajanje novih prijav v vaš trezor je prek storitve Universal Password Manager za samodejno izpolnjevanje. Več o uporabi storitve Universal Password Manager za samodejno izpolnjevanje izveste tako, da odprete zaslon »Nastavitve«.</string>
     <string name="autofill_noun">Samodejno izpolnjevanje</string>
     <string name="autofill_verb">Samodejno izpolni</string>
     <string name="autofill_or_view">Želite samodejno izpolniti ali prikazati ta element?</string>
@@ -301,7 +301,7 @@ Skeniranje bo potekalo samodejno.</string>
     <string name="no_items_trash">Koš je prazen.</string>
     <string name="autofill_accessibility_summary">Pomaga pri izpolnjevanju polj z uporabniškim imenom in geslom v drugih aplikacijah in na spletu.</string>
     <string name="autofill_service_description">Storitev Universal Password Manager za samodejno izpolnjevanje uporablja Android Autofill Framework za pomoč pri izpolnjevanju prijavnih podatkov v drugih aplikacijah v vaši napravi.</string>
-    <string name="bitwarden_autofill_go_to_settings">Meni z nastavitvami za samodejno izpolnjevanje v Androidu vam ni bilo mogoče samodejno odpreti. Do menija z nastavitvami za samodejno izpolnjevanje lahko ročno dostopate prek: Nastavitve Androida &gt; Sistem &gt; Jeziki in vnos &gt; Napredno &gt; Storitev samodejnega izpolnjevanja.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Meni z nastavitvami za samodejno izpolnjevanje v Androidu vam ni bilo mogoče samodejno odpreti. Do menija z nastavitvami za samodejno izpolnjevanje lahko ročno dostopate prek: Nastavitve Androida &gt; Sistem &gt; Jeziki in vnos &gt; Napredno &gt; Storitev samodejnega izpolnjevanja.</string>
     <string name="custom_field_name">Ime polja po meri</string>
     <string name="field_type_boolean">Logična vrednost</string>
     <string name="field_type_hidden">Skrito</string>
@@ -657,14 +657,14 @@ izberite Dodaj TOTP, da varno shranite ključ</string>
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Ste novi v Universal Password Manager?</string>
+    <string name="new_to_universalpasswordmanager">Ste novi v Universal Password Manager?</string>
     <string name="get_master_passwordword_hint">Pridobi namig za glavno geslo</string>
     <string name="logging_in_as_x_on_y">Prijava kot %1$s na %2$s</string>
     <string name="not_you">To niste vi?</string>
     <string name="log_in_with_master_password">Prijava z glavnim geslom</string>
     <string name="log_in_initiated">Prijava sprožena</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">Ponovno pošlji obvestilo</string>
     <string name="view_all_login_options">Prikaži vse možnosti prijave</string>
@@ -722,7 +722,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Izberi trezor</string>
     <string name="appearance">Videz</string>
     <string name="account_security">Varnost računa</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">Sinhroniziraj zdaj</string>
     <string name="unlock_options">Možnosti odklepanja</string>
     <string name="session_timeout">Časovna omejitev seje</string>
@@ -739,10 +739,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">Nadaljuj na nastavitve naprave?</string>
     <string name="two_step_login_description_long">Naredite svoj račun varnejši z nastavitvijo dvostopenjske prijave v spletni aplikaciji Universal Password Manager.</string>
     <string name="change_master_password_description_long">Glavno geslo lahko spremenite v spletni aplikaciji Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Več o uporabi Universal Password Manager izveste v Centru za pomoč.</string>
-    <string name="privacy_policy_description_long">Oglejte si naš pravilnik o zasebnosti na bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Raziščite več funkcij svojega računa Universal Password Manager v spletni aplikaciji.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager vam omogoča, da predmete iz trezorja delite z drugimi prek organizacije. Več izveste na spletni strani bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Več o uporabi Universal Password Manager izveste v Centru za pomoč.</string>
+    <string name="privacy_policy_description_long">Oglejte si naš pravilnik o zasebnosti na .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Raziščite več funkcij svojega računa Universal Password Manager v spletni aplikaciji.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager vam omogoča, da predmete iz trezorja delite z drugimi prek organizacije. Več izveste na spletni strani .</string>
     <string name="created_x">Ustvarjeno %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Vaša organizacija zahteva, da nastavite glavno geslo.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Nastavite možnost odklepanja, da spremenite dejanje ob časovni omejitvi trezorja.</string>
@@ -752,8 +752,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">Za vaš račun je potrebna dvostopenjska prijava Duo.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Sledite korakom podjetja Duo za dokončanje prijave.</string>
     <string name="launch_duo">Zaženi Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Vaš varnostni ključ bo shranjen v vaš Universal Password Manager trezor za %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Vaše geslo bo shranjeno v vaš Universal Password Manager trezor za %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Vaš varnostni ključ bo shranjen v vaš Universal Password Manager trezor za %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Vaše geslo bo shranjeno v vaš Universal Password Manager trezor za %1$s</string>
     <string name="passkeys_not_supported_for_this_app">Varnostni ključi za to aplikacijo niso podprti</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Operacija z varnostnim ključem ni uspela, ker brskalnik nima privilegijev</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Operacija z varnostnim ključem ni uspela, ker se podpis brskalnika ne ujema</string>
@@ -779,7 +779,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">Preverite e-pošto</string>
     <string name="open_email_app">Odpri e-poštno aplikacijo</string>
     <string name="email_verified">E-pošta preverjena</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Prejemajte e-pošto od Universal Password Manager z obvestili, nasveti in raziskovalnimi priložnostmi. Kadar koli se lahko <annotation link="unsubscribe">odjavite</annotation>.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Prejemajte e-pošto od Universal Password Manager z obvestili, nasveti in raziskovalnimi priložnostmi. Kadar koli se lahko <annotation link="unsubscribe">odjavite</annotation>.</string>
     <string name="security_prioritized">Varnost na prvem mestu</string>
     <string name="welcome_message_1">Shranjujte prijave, kartice in identitete v svoj varni trezor. Universal Password Manager uporablja šifriranje z ničelnim znanjem in od konca do konca, da zaščiti tisto, kar vam je pomembno.</string>
     <string name="welcome_message_2">Nastavite biometrično odklepanje in samodejno izpolnjevanje za prijavo v račune brez vnosa niti ene črke.</string>
@@ -817,8 +817,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Izberite povezavo v e-poštnem sporočilu, da potrdite svoj e-poštni naslov in nadaljujete z ustvarjanjem računa.</string>
     <string name="change_email_address">Spremeni e-poštni naslov</string>
     <string name="next">Naprej</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager ne more obnoviti izgubljenega ali pozabljenega glavnega gesla.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager ne more ponastaviti izgubljenega ali pozabljenega glavnega gesla.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager ne more obnoviti izgubljenega ali pozabljenega glavnega gesla.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager ne more ponastaviti izgubljenega ali pozabljenega glavnega gesla.</string>
     <string name="choose_your_master_password">Izberite svoje glavno geslo</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Izberite edinstveno in močno geslo za zaščito svojih podatkov.</string>
     <plurals name="minimum_characters">
@@ -831,13 +831,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">Ponovno zaženite registracijo ali poskusite s prijavo. Morda že imate račun.</string>
     <string name="restart_registration">Ponovno zaženi registracijo</string>
     <string name="authenticator_sync">Sinhronizacija overovitelja</string>
-    <string name="allow_bitwarden_authenticator_syncing">Dovoli sinhronizacijo overovitelja</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Dovoli sinhronizacijo overovitelja</string>
     <string name="there_was_an_issue_validating_the_registration_token">Pri preverjanju registracijskega žetona je prišlo do težave.</string>
     <string name="turn_on_autofill">Vklopi samodejno izpolnjevanje</string>
     <string name="autofill_setup">Nastavitev samodejnega izpolnjevanja</string>
     <string name="turn_on_browser_autofill_integration">Vklopi integracijo samodejnega izpolnjevanja v brskalniku</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Uporabljate brskalnik, ki zahteva posebna dovoljenja, da Universal Password Manager samodejno izpolni vaša gesla.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Uporabljate brskalnike, ki zahtevajo posebna dovoljenja, da Universal Password Manager samodejno izpolni vaša gesla.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Uporabljate brskalnik, ki zahteva posebna dovoljenja, da Universal Password Manager samodejno izpolni vaša gesla.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Uporabljate brskalnike, ki zahtevajo posebna dovoljenja, da Universal Password Manager samodejno izpolni vaša gesla.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Uporabljate brskalnik, ki zahteva posebna dovoljenja, da Universal Password Manager samodejno izpolni vaša gesla. Spodaj omogočite želeno integracijo samodejnega izpolnjevanja.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Uporabljate brskalnike, ki zahtevajo posebna dovoljenja, da Universal Password Manager samodejno izpolni vaša gesla. Za nadaljevanje omogočite samodejno izpolnjevanje za vse nameščene brskalnike.</string>
     <string name="use_autofill_to_log_into_your_accounts">Uporabite samodejno izpolnjevanje za prijavo v račune z enim dotikom.</string>
@@ -845,7 +845,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">Vklopite samodejno izpolnjevanje kasneje?</string>
     <string name="turn_on_browser_autofill_integration_later">Vklopite integracijo samodejnega izpolnjevanja v brskalniku kasneje?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Ta korak lahko kadar koli dokončate v nastavitvah.</string>
-    <string name="what_bitwarden_has_to_offer">Zdaj lahko raziščete vse, kar ponuja Universal Password Manager, in začnete varno upravljati svoja gesla.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Zdaj lahko raziščete vse, kar ponuja Universal Password Manager, in začnete varno upravljati svoja gesla.</string>
     <string name="youre_all_set">Vse je pripravljeno!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Napaka pri povezovanju s storitvijo Duo. Uporabite drugo metodo dvostopenjske prijave ali pa za pomoč kontaktirajte Duo.</string>
     <string name="master_password_hint_not_specified">Namig za glavno geslo</string>
@@ -874,29 +874,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">Korak 1 od 3</string>
     <string name="export_your_saved_logins">Izvozi shranjene prijave</string>
     <string name="delete_this_file_after_import_is_complete">To datoteko boste izbrisali po zaključku uvoza.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">V računalniku odprite nov zavihek brskalnika in <annotation emphasis="bold">pojdite na <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Prijavite se v spletno aplikacijo Universal Password Manager.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">V računalniku odprite nov zavihek brskalnika in <annotation emphasis="bold">pojdite na <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Prijavite se v spletno aplikacijo Universal Password Manager.</string>
     <string name="step_2_of_3">Korak 2 od 3</string>
-    <string name="log_in_to_bitwarden">Prijava v Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">Prijava v Universal Password Manager</string>
     <string name="step_3_of_3">Korak 3 od 3</string>
-    <string name="import_logins_to_bitwarden">Uvozi prijave v Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">V navigaciji Universal Password Manager <annotation emphasis="bold">poiščite možnost Orodja</annotation> in <annotation emphasis="bold">izberite Uvozi podatke.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Uvozi prijave v Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">V navigaciji Universal Password Manager <annotation emphasis="bold">poiščite možnost Orodja</annotation> in <annotation emphasis="bold">izberite Uvozi podatke.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Izpolnite obrazec in <annotation emphasis="bold">uvozite shranjeno datoteko z gesli.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Za svojo varnost <annotation emphasis="bold">izbrišite shranjeno datoteko z gesli.</annotation></string>
     <string name="need_help_check_out_import_help">Potrebujete pomoč? Oglejte si <annotation link="importHelp">pomoč za uvoz</annotation>.</string>
     <string name="import_help">pomoč za uvoz</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Shranite izvoženo datoteko</annotation> nekam v računalnik, kjer jo boste zlahka našli.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">To ni prepoznan strežnik Universal Password Manager. Morda boste morali preveriti pri svojem ponudniku ali posodobiti strežnik.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">To ni prepoznan strežnik Universal Password Manager. Morda boste morali preveriti pri svojem ponudniku ali posodobiti strežnik.</string>
     <string name="syncing_logins_loading_message">Sinhronizacija prijav…</string>
     <string name="download_the_browser_extension">Prenesite razširitev za brskalnik</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Obiščite bitwarden.com/download, da vključite Universal Password Manager v svoj najljubši brskalnik za brezhibno izkušnjo.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Obiščite /download, da vključite Universal Password Manager v svoj najljubši brskalnik za brezhibno izkušnjo.</string>
     <string name="use_the_web_app">Uporabite spletno aplikacijo</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Prijavite se na bitwarden.com za enostavno upravljanje računa in posodabljanje nastavitev.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Prijavite se na  za enostavno upravljanje računa in posodabljanje nastavitev.</string>
     <string name="autofill_passwords">Samodejno izpolni gesla</string>
     <string name="set_up_autofill_on_all_your_devices">Nastavite samodejno izpolnjevanje na vseh napravah za prijavo z enim dotikom kjer koli.</string>
     <string name="import_successful">Uvoz uspešen!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Upravljajte svoje prijave od koder koli z orodji Universal Password Manager za splet in namizje.</string>
-    <string name="bitwarden_tools">Orodja Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Upravljajte svoje prijave od koder koli z orodji Universal Password Manager za splet in namizje.</string>
+    <string name="universalpasswordmanager_tools">Orodja Universal Password Manager</string>
     <string name="got_it">Razumem</string>
     <string name="no_logins_were_imported">Nobena prijava ni bila uvožena</string>
     <string name="import_error">Napaka pri uvozu</string>
@@ -916,7 +916,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d obvestil</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Hitro in enostavno se prijavite na vseh napravah</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager vas lahko obvesti vsakič, ko prejmete novo zahtevo za prijavo z druge naprave.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager vas lahko obvesti vsakič, ko prejmete novo zahtevo za prijavo z druge naprave.</string>
     <string name="skip_for_now">Preskoči za zdaj</string>
     <string name="done_text">Končano</string>
     <string name="page_number_x_of_y">%1$s od %2$s</string>
@@ -968,7 +968,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 OD 6</string>
     <string name="coachmark_6_of_6">6 OD 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Uporabite te možnosti za prilagoditev gesla zahtevam spletne strani vašega računa.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Ko shranite novo geslo v Universal Password Manager, ne pozabite posodobiti tudi na spletni strani vašega računa.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Ko shranite novo geslo v Universal Password Manager, ne pozabite posodobiti tudi na spletni strani vašega računa.</string>
     <string name="verify_your_identity">Preverite svojo identiteto</string>
     <string name="error_loading_certificate">Napaka pri nalaganju potrdila</string>
     <string name="certificate_alias">Vzdevek potrdila</string>
@@ -979,7 +979,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">Nepodprta vrsta potrdila</string>
     <string name="certificate_password_incorrect">Geslo potrdila je napačno</string>
     <string name="invalid_certificate_chain">Neveljavna veriga potrdil</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Uporaba sistemskega potrdila je manj varna kot shranjevanje potrdila z Universal Password Manager. Če nadaljujete, se prikaže seznam razpoložljivih sistemskih potrdil, če je katero že nameščeno.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Uporaba sistemskega potrdila je manj varna kot shranjevanje potrdila z Universal Password Manager. Če nadaljujete, se prikaže seznam razpoložljivih sistemskih potrdil, če je katero že nameščeno.</string>
     <string name="link">Povezava</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Operacija z varnostnim ključem ni uspela, ker v zahtevi ni URL-ja gostitelja.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Operacija z varnostnim ključem ni uspela, ker je podpis aplikacije neveljaven.</string>
@@ -1049,7 +1049,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">Potrdila ni mogoče prebrati.</string>
     <string name="cannot_delete_your_account">Vašega računa ni mogoče izbrisati</string>
     <string name="cannot_delete_your_account_explanation">Tega dejanja ni mogoče izvesti, ker je vaš račun v lasti organizacije. Za dodatne podrobnosti se obrnite na skrbnika organizacije.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Ta račun bo kmalu izbrisan. Prijavite se na %1$s, če želite še naprej uporabljati Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Ta račun bo kmalu izbrisan. Prijavite se na %1$s, če želite še naprej uporabljati Universal Password Manager.</string>
     <string name="view_file_send">Ogled Senda z datoteko</string>
     <string name="view_text_send">Ogled Senda z besedilom</string>
     <string name="delete_send">Izbriši pošiljko</string>
@@ -1071,7 +1071,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">Več o privilegiranih aplikacijah</string>
     <string name="privileged_apps">Privilegirane aplikacije</string>
     <string name="unrecognized_browser">Neprepoznan brskalnik</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Več o uporabi varnostnih ključev z Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Več o uporabi varnostnih ključev z Universal Password Manager.</string>
     <string name="all_trusted_apps">Vse zaupane aplikacije</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Ali ste prepričani, da ne želite več zaupati %s?</string>
     <string name="installed_apps">Nameščene aplikacije</string>
@@ -1101,7 +1101,7 @@ Do you want to switch to this account?</string>
     <string name="information">Informacije</string>
     <string name="otp_type">Vrsta OTP</string>
     <string name="search_codes">Iskanje kod</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Zavarujte svoje račune z Bitwarden Authenticator</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Zavarujte svoje račune z Universal Password Manager Authenticator</string>
     <string name="get_verification_codes_for_all_your_accounts">Pridobite verifikacijske kode za vse svoje račune, ki podpirajo dvostopenjsko preverjanje.</string>
     <string name="use_your_device_camera_to_scan_codes">Uporabite kamero naprave za skeniranje kod</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Skenirajte kodo QR v nastavitvah dvostopenjskega preverjanja za kateri koli račun.</string>
@@ -1122,7 +1122,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">Preveč neuspešnih poskusov biometrije.</string>
     <string name="version">Različica</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Različica: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Več o uporabi Bitwarden Authenticator izveste v Centru za pomoč.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Več o uporabi Universal Password Manager Authenticator izveste v Centru za pomoč.</string>
     <string name="key">Ključ</string>
     <string name="create_verification_code">Ustvari verifikacijsko kodo</string>
     <string name="key_is_required">Ključ je obvezen.</string>
@@ -1133,41 +1133,41 @@ Do you want to switch to this account?</string>
     <string name="key_is_invalid">Ključ je neveljaven.</string>
     <string name="backup">Varnostna kopija</string>
     <string name="data_backup_title">Varnostna kopija podatkov</string>
-    <string name="data_backup_message">Podatki Bitwarden Authenticator so varnostno kopirani in jih je mogoče obnoviti z rednimi varnostnimi kopijami naprave.</string>
+    <string name="data_backup_message">Podatki Universal Password Manager Authenticator so varnostno kopirani in jih je mogoče obnoviti z rednimi varnostnimi kopijami naprave.</string>
     <string name="import_2fas_password_protected_not_supported">Uvoz iz datotek 2FAS, zaščitenih z geslom, ni podprt. Poskusite znova z izvoženo datoteko, ki ni zaščitena z geslom.</string>
-    <string name="import_bitwarden_unsupported_format">Uvoz datotek CSV Universal Password Manager ni podprt. Poskusite znova z izvoženo datoteko JSON.</string>
-    <string name="download_bitwarden_card_title">Prenesite aplikacijo Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">Shranite vse svoje prijave in sinhronizirajte verifikacijske kode neposredno z aplikacijo Authenticator.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Uvoz datotek CSV Universal Password Manager ni podprt. Poskusite znova z izvoženo datoteko JSON.</string>
+    <string name="download_universalpasswordmanager_card_title">Prenesite aplikacijo Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">Shranite vse svoje prijave in sinhronizirajte verifikacijske kode neposredno z aplikacijo Authenticator.</string>
     <string name="download_now">Prenesi zdaj</string>
-    <string name="sync_with_bitwarden_app">Sinhroniziraj z aplikacijo Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">Sinhroniziraj z aplikacijo Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">Več</annotation></string>
     <string name="shared_codes_error">Kod iz aplikacije Universal Password Manager ni mogoče sinhronizirati. Prepričajte se, da sta obe aplikaciji posodobljeni. Do obstoječih kod lahko še vedno dostopate v aplikaciji Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">Sinhroniziraj z aplikacijo Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">Dovolite sinhronizacijo aplikacije Authenticator v nastavitvah, da si tukaj ogledate vse svoje verifikacijske kode.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Sinhroniziraj z aplikacijo Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Dovolite sinhronizacijo aplikacije Authenticator v nastavitvah, da si tukaj ogledate vse svoje verifikacijske kode.</string>
     <string name="take_me_to_app_settings">Pripelji me do nastavitev aplikacije</string>
     <string name="something_went_wrong">Nekaj je šlo narobe</string>
     <string name="please_try_again">Poskusite znova</string>
-    <string name="copy_to_bitwarden_vault">Kopiraj v Universal Password Manager trezor</string>
+    <string name="copy_to_universalpasswordmanager_vault">Kopiraj v Universal Password Manager trezor</string>
     <string name="default_save_option">Privzeta možnost shranjevanja</string>
-    <string name="save_to_bitwarden">Shrani v Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">Shrani v Universal Password Manager</string>
     <string name="save_here">Shrani tukaj</string>
     <string name="none">Brez</string>
     <string name="default_save_options_subtitle">Izberite, kam želite shraniti nove verifikacijske kode.</string>
     <string name="verification_code_created">Verifikacijska koda ustvarjena</string>
     <string name="choose_save_location_message">Shranite ta ključ overovitelja tukaj ali ga dodajte prijavi v svoji aplikaciji Universal Password Manager.</string>
     <string name="save_option_as_default">Shrani možnost kot privzeto</string>
-    <string name="account_synced_from_bitwarden_app">Račun sinhroniziran iz aplikacije Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Račun sinhroniziran iz aplikacije Universal Password Manager</string>
     <string name="local_codes">Lokalne kode (%1$d)</string>
     <string name="local_codes_header">Lokalne kode</string>
     <string name="required_information_missing">Manjkajo obvezne informacije</string>
-    <string name="required_information_missing_message">Manjkajo obvezne informacije (npr. »services« ali »secret«). Preverite svojo datoteko in poskusite znova. Za podporo obiščite bitwarden.com/help</string>
+    <string name="required_information_missing_message">Manjkajo obvezne informacije (npr. »services« ali »secret«). Preverite svojo datoteko in poskusite znova. Za podporo obiščite /help</string>
     <string name="file_could_not_be_processed">Datoteke ni bilo mogoče obdelati</string>
-    <string name="file_could_not_be_processed_message">Datoteke ni bilo mogoče obdelati. Prepričajte se, da je veljaven JSON, in poskusite znova. Potrebujete pomoč? Obiščite bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">Datoteke ni bilo mogoče obdelati. Prepričajte se, da je veljaven JSON, in poskusite znova. Potrebujete pomoč? Obiščite /help</string>
     <string name="get_help">Pomoč</string>
     <string name="error_cannot_decrypt">[napaka: ni mogoče dešifrirati]</string>
     <string name="copy_error_report">Kopiraj poročilo o napaki</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager ni mogel dešifrirati tega predmeta v trezorju. Kopirajte in delite to poročilo o napaki s podporo za stranke, da preprečite dodatno izgubo podatkov.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager ni mogel dešifrirati tega predmeta v trezorju. Kopirajte in delite to poročilo o napaki s podporo za stranke, da preprečite dodatno izgubo podatkov.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager ni mogel dešifrirati %1$d predmeta v trezorju. Kopirajte in delite to poročilo o napaki s podporo za stranke, da preprečite dodatno izgubo podatkov.</item>
         <item quantity="two">Universal Password Manager ni mogel dešifrirati %1$d predmetov v trezorju. Kopirajte in delite to poročilo o napaki s podporo za stranke, da preprečite dodatno izgubo podatkov.</item>
         <item quantity="few">Universal Password Manager ni mogel dešifrirati %1$d predmetov v trezorju. Kopirajte in delite to poročilo o napaki s podporo za stranke, da preprečite dodatno izgubo podatkov.</item>
@@ -1210,7 +1210,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Omogočite samodejno izpolnjevanje v brskalniku za nadaljnje izpolnjevanje gesel</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Vaš brskalnik je bil nedavno posodobljen, kar je onemogočilo samodejno izpolnjevanje Universal Password Manager. Če želite še naprej izpolnjevati gesla z Universal Password Manager, omogočite samodejno izpolnjevanje v brskalniku v nastavitvah samodejnega izpolnjevanja.</string>
     <string name="not_now">Ne zdaj</string>
-    <string name="import_from_bitwarden">Uvozi iz Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">Uvozi iz Universal Password Manager</string>
     <string name="select_account">Izberite račun</string>
     <string name="no_accounts_available">Ni razpoložljivih računov</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Nimate nobenih računov, iz katerih bi lahko uvozili. Varnostni pravilnik vaše organizacije lahko omejuje uvoz predmetov iz Universal Password Manager v drugo aplikacijo.</string>
@@ -1308,7 +1308,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">Zaupano</string>
     <string name="preview_not_available_for_files">Predogled za datoteke %1$s ni na voljo. Še vedno jih lahko prenesete za ogled v svoji napravi.</string>
     <string name="this_file_is_too_large_to_preview">Ta datoteka je prevelika za predogled. Še vedno jo lahko prenesete za ogled v svoji napravi.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager te datoteke ni mogel dešifrirati, zato predogleda ni mogoče prikazati.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager te datoteke ni mogel dešifrirati, zato predogleda ni mogoče prikazati.</string>
     <string name="preview_unavailable_for_this_file">Predogled za to datoteko ni na voljo. Še vedno jo lahko prenesete za ogled v svoji napravi.</string>
     <string name="preview_unavailable">Predogled ni na voljo</string>
     <string name="download_attachment">Prenesi priponko</string>
@@ -1350,7 +1350,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / leto</string>
     <string name="billing_rate_per_month">%1$s / mesec</string>
     <string name="manage_plan">Upravljaj paket</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Upravljajte svoj naročniški paket v spletni aplikaciji Universal Password Manager.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Upravljajte svoj naročniški paket v spletni aplikaciji Universal Password Manager.</string>
     <string name="cancel_premium">Prekliči Premium</string>
     <string name="subscription_status_active">Aktiven</string>
     <string name="subscription_status_canceled">Preklican</string>
@@ -1443,8 +1443,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">Zahtevan dostop do lokalnega omrežja</string>
     <string name="ask_again_later">Vprašaj kasneje</string>
     <string name="enable_local_network_access">Omogoči dostop do lokalnega omrežja</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager potrebuje dostop do lokalnega omrežja za sinhronizacijo s strežnikom. Brez tega dovoljenja se aplikacija ne bo mogla povezati.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Brez tega dovoljenja se Universal Password Manager ne bo mogel povezati in sinhronizirati s strežnikom. To lahko omogočite v nastavitvah naprave.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager potrebuje dostop do lokalnega omrežja za sinhronizacijo s strežnikom. Brez tega dovoljenja se aplikacija ne bo mogla povezati.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Brez tega dovoljenja se Universal Password Manager ne bo mogel povezati in sinhronizirati s strežnikom. To lahko omogočite v nastavitvah naprave.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Vaša zahteva je bila prekinjena, ker aplikacija potrebuje dostop do lokalnega omrežja. To lahko omogočite v nastavitvah naprave.</string>
     <string name="continue_to_stripe">Nadaljuj na Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Preusmerjeni boste na Stripe za upravljanje preklica naročnine.</string>

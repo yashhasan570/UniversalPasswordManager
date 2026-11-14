@@ -192,7 +192,7 @@ class SyncResponseJsonExtensionsTest {
             disableSend = false,
             disableHideEmail = true,
             whoCanAccess = SendAccessTypeJson.SPECIFIC_PEOPLE,
-            allowedDomains = "bitwarden.com",
+            allowedDomains = "",
             deletionHours = 168,
             allowedSendTypes = listOf(SendTypeJson.TEXT),
         )
@@ -216,7 +216,7 @@ class SyncResponseJsonExtensionsTest {
                   "disableSend": false,
                   "disableHideEmail": true,
                   "whoCanAccess": 2,
-                  "allowedDomains": "bitwarden.com",
+                  "allowedDomains": "",
                   "deletionHours": 168,
                   "allowedSendTypes": [0, 2]
                 }
@@ -228,7 +228,7 @@ class SyncResponseJsonExtensionsTest {
                 disableSend = false,
                 disableHideEmail = true,
                 whoCanAccess = SendAccessTypeJson.SPECIFIC_PEOPLE,
-                allowedDomains = "bitwarden.com",
+                allowedDomains = "",
                 deletionHours = 168,
                 allowedSendTypes = listOf(SendTypeJson.TEXT),
             ),
@@ -245,7 +245,7 @@ class SyncResponseJsonExtensionsTest {
                   "disableSend": false,
                   "disableHideEmail": true,
                   "whoCanAccess": 2,
-                  "allowedDomains": "bitwarden.com",
+                  "allowedDomains": "",
                   "deletionHours": 168,
                   "allowedSendTypes": [2]
                 }
@@ -257,7 +257,7 @@ class SyncResponseJsonExtensionsTest {
                 disableSend = false,
                 disableHideEmail = true,
                 whoCanAccess = SendAccessTypeJson.SPECIFIC_PEOPLE,
-                allowedDomains = "bitwarden.com",
+                allowedDomains = "",
                 deletionHours = 168,
                 allowedSendTypes = emptyList(),
             ),

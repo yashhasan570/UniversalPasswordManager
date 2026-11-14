@@ -34,7 +34,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
-import com.universalpasswordmanager.ui.platform.components.card.color.bitwardenCardColors
+import com.universalpasswordmanager.ui.platform.components.card.color.universalpasswordmanagerCardColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
@@ -53,7 +53,7 @@ fun UniversalActionCardSmall(
     modifier: Modifier = Modifier,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
     callToActionTextColor: Color = UniversalTheme.colorScheme.text.primary,
-    colors: CardColors = bitwardenCardColors(),
+    colors: CardColors = universalpasswordmanagerCardColors(),
     trailingContent: (@Composable BoxScope.() -> Unit)? = null,
 ) {
     val isFocused by interactionSource.collectIsFocusedAsState()

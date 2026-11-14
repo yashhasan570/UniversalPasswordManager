@@ -1,6 +1,6 @@
 package com.universalpasswordmanager.data.platform.repository
 
-import com.bitwarden.authenticatorbridge.model.SharedAccountData
+import .authenticatorbridge.model.SharedAccountData
 import com.universalpasswordmanager.core.InitOrgCryptoRequest
 import com.universalpasswordmanager.core.InitUserCryptoMethod
 import com.universalpasswordmanager.core.InitUserCryptoRequest

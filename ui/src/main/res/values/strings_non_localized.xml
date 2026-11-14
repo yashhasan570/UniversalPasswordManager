@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="bitwarden_authenticator">Bitwarden Authenticator</string>
+    <string name="universalpasswordmanager_authenticator">Universal Password Manager Authenticator</string>
     <string name="csv_extension" translatable="false">.csv</string>
     <string name="duo_title" translatable="false">Duo</string>
     <string name="duo_org_title" translatable="false">Duo (%1$s)</string>
     <string name="json_extension" translatable="false">.json</string>
     <string name="json_extension_formatted" translatable="false">.json (%1$s)</string>
-    <string name="bitwarden" translatable="false">Universal Password Manager</string>
+    <string name="universalpasswordmanager" translatable="false">Universal Password Manager</string>
     <string name="fido2_title" translatable="false">FIDO2 WebAuthn</string>
     <string name="addy_io" translatable="false">addy.io</string>
     <string name="firefox_relay" translatable="false">Firefox Relay</string>
@@ -38,8 +38,8 @@
     <string name="premium">Premium</string>
     <string name="reset_premium_upgrade_banner">Reset Premium upgrade banner</string>
     <string name="show_upgraded_to_premium_card">Show \"Upgraded to Premium\" card</string>
-    <string name="bitwarden_authentication_enabled">Universal Password Manager authentication enabled</string>
-    <string name="import_format_label_bitwarden_json">Universal Password Manager (.json)</string>
+    <string name="universalpasswordmanager_authentication_enabled">Universal Password Manager authentication enabled</string>
+    <string name="import_format_label_universalpasswordmanager_json">Universal Password Manager (.json)</string>
     <string name="import_format_label_2fas_json">2FAS (no password)</string>
     <string name="import_format_label_lastpass_json">LastPass (.json)</string>
     <string name="import_format_label_aegis_json">Aegis (.json)</string>

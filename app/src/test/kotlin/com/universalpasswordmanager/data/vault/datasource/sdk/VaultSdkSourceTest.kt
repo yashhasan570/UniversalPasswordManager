@@ -642,10 +642,10 @@ class VaultSdkSourceTest {
             val userId = "userId"
             val mockInitCryptoRequest = mockk<InitUserCryptoRequest>()
             val expectedException = EncryptionSettingsException.MissingPrivateKey("Whoopsy")
-            val bitwardenException = UniversalException.EncryptionSettings(v1 = expectedException)
+            val universalpasswordmanagerException = UniversalException.EncryptionSettings(v1 = expectedException)
             coEvery {
                 clientCrypto.initializeUserCrypto(req = mockInitCryptoRequest)
-            } throws bitwardenException
+            } throws universalpasswordmanagerException
             val result = vaultSdkSource.initializeCrypto(
                 userId = userId,
                 request = mockInitCryptoRequest,
@@ -665,10 +665,10 @@ class VaultSdkSourceTest {
             val mockInitCryptoRequest = mockk<InitUserCryptoRequest>()
             val expectedErrorMessage = "Whoopsy"
             val expectedException = EncryptionSettingsException.Crypto(expectedErrorMessage)
-            val bitwardenException = UniversalException.EncryptionSettings(v1 = expectedException)
+            val universalpasswordmanagerException = UniversalException.EncryptionSettings(v1 = expectedException)
             coEvery {
                 clientCrypto.initializeUserCrypto(req = mockInitCryptoRequest)
-            } throws bitwardenException
+            } throws universalpasswordmanagerException
             val result = vaultSdkSource.initializeCrypto(
                 userId = userId,
                 request = mockInitCryptoRequest,
@@ -1733,8 +1733,8 @@ private val DEFAULT_ORIGIN = Origin.Android(
     UnverifiedAssetLink(
         packageName = "com.universalpasswordmanager",
         sha256CertFingerprint = "30:39:38:37:36:35:34:33:32:31:41:42:43:44:45:46",
-        host = "bitwarden.com",
-        assetLinkUrl = "www.bitwarden.com",
+        host = "",
+        assetLinkUrl = "www.",
     ),
 )
 private val DEFAULT_FIDO_2_REGISTER_CREDENTIAL_REQUEST = RegisterFido2CredentialRequest(

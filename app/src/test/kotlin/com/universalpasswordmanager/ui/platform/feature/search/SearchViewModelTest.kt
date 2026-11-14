@@ -306,7 +306,7 @@ class SearchViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(SearchAction.UpgradeToPremiumClick)
                 assertEquals(
                     SearchEvent.NavigateToUrl(
-                        url = "https://vault.bitwarden.com/#/" +
+                        url = "https://vault./#/" +
                             "settings/subscription/premium" +
                             "?callToAction=upgradeToPremium",
                     ),
@@ -1651,7 +1651,7 @@ class SearchViewModelTest : BaseViewModelTest() {
     @Test
     fun `OverflowOptionClick Vault CopyUsernameClick should call setText on the ClipboardManager`() =
         runTest {
-            val username = "bitwarden"
+            val username = "universalpasswordmanager"
             val viewModel = createViewModel()
             viewModel.trySendAction(
                 SearchAction.OverflowOptionClick(
@@ -1749,7 +1749,7 @@ class SearchViewModelTest : BaseViewModelTest() {
         every {
             ciphers.toViewState(
                 searchTerm = "",
-                baseIconUrl = "https://icons.bitwarden.net",
+                baseIconUrl = "https://icons.",
                 isIconLoadingDisabled = false,
                 isAutofill = false,
                 hasMasterPassword = true,
@@ -1860,7 +1860,7 @@ class SearchViewModelTest : BaseViewModelTest() {
         every {
             ciphers.toViewState(
                 searchTerm = "",
-                baseIconUrl = "https://icons.bitwarden.net",
+                baseIconUrl = "https://icons.",
                 isIconLoadingDisabled = false,
                 isAutofill = false,
                 hasMasterPassword = true,
@@ -1978,7 +1978,7 @@ class SearchViewModelTest : BaseViewModelTest() {
         every {
             ciphers.toViewState(
                 searchTerm = "",
-                baseIconUrl = "https://icons.bitwarden.net",
+                baseIconUrl = "https://icons.",
                 isIconLoadingDisabled = false,
                 isAutofill = false,
                 hasMasterPassword = true,
@@ -2099,7 +2099,7 @@ class SearchViewModelTest : BaseViewModelTest() {
         every {
             ciphers.toViewState(
                 searchTerm = "",
-                baseIconUrl = "https://icons.bitwarden.net",
+                baseIconUrl = "https://icons.",
                 isIconLoadingDisabled = false,
                 isAutofill = false,
                 hasMasterPassword = true,
@@ -2332,7 +2332,7 @@ class SearchViewModelTest : BaseViewModelTest() {
         every {
             ciphers.toViewState(
                 searchTerm = "",
-                baseIconUrl = "https://icons.bitwarden.net",
+                baseIconUrl = "https://icons.",
                 isIconLoadingDisabled = false,
                 isAutofill = true,
                 hasMasterPassword = true,
@@ -2373,8 +2373,8 @@ private val DEFAULT_STATE: SearchState = SearchState(
     viewState = SearchState.ViewState.Loading,
     dialogState = null,
     vaultFilterData = null,
-    baseWebSendUrl = "https://send.bitwarden.com/#",
-    baseIconUrl = "https://icons.bitwarden.net",
+    baseWebSendUrl = "https://send./#",
+    baseIconUrl = "https://icons.",
     isIconLoadingDisabled = false,
     hasMasterPassword = true,
     totpData = null,
@@ -2386,7 +2386,7 @@ private val DEFAULT_STATE: SearchState = SearchState(
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     avatarColorHex = "#aa00aa",
     environment = Environment.Prod.Us,
     isPremium = true,

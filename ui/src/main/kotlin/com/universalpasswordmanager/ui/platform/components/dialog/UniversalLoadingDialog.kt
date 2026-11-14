@@ -24,7 +24,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * beyond the default bounds, ensuring a full-screen design.
  *
  * We retained the Dialog nomenclature to minimize refactor disruption, but we plan to transition
- * to Modal-based terminology in the future. (https://bitwarden.atlassian.net/browse/PM-17356)
+ * to Modal-based terminology in the future. (https://universalpasswordmanager.atlassian.net/browse/PM-17356)
  *
  * @param text The text to display in the dialog.
  */

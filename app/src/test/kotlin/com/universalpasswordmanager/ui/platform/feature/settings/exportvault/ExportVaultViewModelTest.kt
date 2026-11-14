@@ -645,7 +645,7 @@ class ExportVaultViewModelTest : BaseViewModelTest() {
 
                 assertEquals(
                     ExportVaultEvent.NavigateToSelectExportDataLocation(
-                        fileName = "bitwarden_export_20231027120000.json",
+                        fileName = "universalpasswordmanager_export_20231027120000.json",
                     ),
                     awaitItem(),
                 )

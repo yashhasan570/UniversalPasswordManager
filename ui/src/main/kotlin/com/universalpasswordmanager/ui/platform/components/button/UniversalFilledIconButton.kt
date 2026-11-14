@@ -13,7 +13,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenFilledIconButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerFilledIconButtonColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
@@ -39,7 +39,7 @@ fun UniversalFilledIconButton(
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
     isEnabled: Boolean = true,
 ) {
-    val colors = bitwardenFilledIconButtonColors()
+    val colors = universalpasswordmanagerFilledIconButtonColors()
     CompositionLocalProvider(LocalRippleConfiguration provides NoFocusRippleConfig) {
         FilledIconButton(
             onClick = onClick,

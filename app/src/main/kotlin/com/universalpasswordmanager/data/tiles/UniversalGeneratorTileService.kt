@@ -29,7 +29,7 @@ class UniversalGeneratorTileService : TileService() {
     private fun launchGenerator() {
         val intent = Intent(applicationContext, MainActivity::class.java)
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            .setData("bitwarden://password_generator".toUri())
+            .setData("password_generator".toUri())
         if (!isBuildVersionAtLeast(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)) {
             @Suppress("DEPRECATION")
             @SuppressLint("StartActivityAndCollapseDeprecated")

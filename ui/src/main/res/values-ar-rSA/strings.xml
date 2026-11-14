@@ -75,9 +75,9 @@
     <string name="yes">نعم</string>
     <string name="account">حساب</string>
     <string name="account_created_success">تم إنشاء حسابك الجديد!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">تعيين Universal Password Manager كموفر مفتاح المرور الخاص بك في إعدادات الجهاز.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">تعيين Universal Password Manager كموفر مفتاح المرور الخاص بك في إعدادات الجهاز.</string>
     <string name="avoid_ambiguous_characters">تجنب الأحرف الغامضة</string>
-    <string name="bitwarden_autofill_service">خدمة الملء التلقائي من Universal Password Manager</string>
+    <string name="universalpasswordmanager_autofill_service">خدمة الملء التلقائي من Universal Password Manager</string>
     <string name="change_master_password">تغيير كلمة المرور الرئيسية</string>
     <string name="close">إغلاق</string>
     <string name="close_app">إغلاق التطبيق</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">تعيين مهلة انتهاء الجلسة إلى \"تسجيل الخروج\"؟</string>
     <string name="vault_timeout_log_out_confirmation_message">بعد انتهاء المهلة، سيتم تسجيل الخروج. سوف تحتاج إلى الاتصال بالإنترنت لتسجيل الدخول والوصول إلى المخزن الخاص بك مرة أخرى. لن تتغير الإعدادات الخاصة بك والرقم السري المحفوظين على هذا الجهاز.</string>
     <string name="logging_in">جار تسجيل الدخول…</string>
-    <string name="login_to_bitwarden">تسجيل الدخول إلى Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">تسجيل الدخول إلى Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">تأكيد كلمة المرور غير صحيح.</string>
     <string name="master_password_description">كلمة المرور الرئيسية هي كلمة المرور المستخدمة للوصول إلى الخزنة الخاصة بك. من المهم جدا ً ألا تنسى ذلك. لا توجد طريقة للعثور عليها إذا نسيت.</string>
     <string name="master_password_hint">تلميح كلمة المرور الرئيسية (اختياري)</string>
@@ -180,7 +180,7 @@
     <string name="no_items_for_vault">لا توجد عناصر في خزنتك تطابق \"%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">ابحث عن بيانات تسجيل دخول أو أضف بيانات جديدة</string>
     <string name="disabled">معطل</string>
-    <string name="bitwarden_autofill_service_alert2">أسهل طريقة لإضافة تسجيلات دخول جديدة إلى خزنتك هي من خدمةالملء التلقائي Universal Password Manager تعرف على المزيد حول استخدام خدمة الملء التلقائي لـ Universal Password Manager عن طريق الانتقال إلى شاشة \"إعدادات\".</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">أسهل طريقة لإضافة تسجيلات دخول جديدة إلى خزنتك هي من خدمةالملء التلقائي Universal Password Manager تعرف على المزيد حول استخدام خدمة الملء التلقائي لـ Universal Password Manager عن طريق الانتقال إلى شاشة \"إعدادات\".</string>
     <string name="autofill_noun">ملء تلقائي</string>
     <string name="autofill_verb">ملء تلقائي</string>
     <string name="autofill_or_view">هل تريد الملأ التلقائي أو رؤية هذا المعرّف؟</string>
@@ -303,7 +303,7 @@
     <string name="no_items_trash">لا توجد عناصر في سلة المهملات.</string>
     <string name="autofill_accessibility_summary">المساعدة في ملء اسم المستخدم وحقول كلمة المرور في التطبيقات الأخرى وعلى الويب.</string>
     <string name="autofill_service_description">تستخدم خدمة Universal Password Manager للتعبئة التلقائية إطار التشغيل التلقائي لأندرويد للمساعدة في ملء معلومات تسجيل الدخول في تطبيقات أخرى على جهازك.</string>
-    <string name="bitwarden_autofill_go_to_settings">لم نتمكن من فتح قائمة إعداداتالملء التلقائي لـAndroid تلقائياً. يمكنك الانتقال إلى قائمة إعداداتالملء التلقائي يدويًا من إعدادات أندرويد &gt; النظام &gt; اللغات و الإدخال &gt; الخدمة المتقدمة &gt; خدمةالملء التلقائي.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">لم نتمكن من فتح قائمة إعداداتالملء التلقائي لـAndroid تلقائياً. يمكنك الانتقال إلى قائمة إعداداتالملء التلقائي يدويًا من إعدادات أندرويد &gt; النظام &gt; اللغات و الإدخال &gt; الخدمة المتقدمة &gt; خدمةالملء التلقائي.</string>
     <string name="custom_field_name">اسم الحقل المخصص</string>
     <string name="field_type_boolean">قيمة منطقية</string>
     <string name="field_type_hidden">مخفي</string>
@@ -665,14 +665,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">جديد على Universal Password Manager؟</string>
+    <string name="new_to_universalpasswordmanager">جديد على Universal Password Manager؟</string>
     <string name="get_master_passwordword_hint">احصل على تلميح كلمة المرور الرئيسية</string>
     <string name="logging_in_as_x_on_y">تسجيل الدخول باسم %1$s على %2$s</string>
     <string name="not_you">ليس أنت؟</string>
     <string name="log_in_with_master_password">تسجيل الدخول باستخدام كلمة المرور الرئيسية</string>
     <string name="log_in_initiated">بدء تسجيل الدخول</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">إعادة إرسال الإشعار</string>
     <string name="view_all_login_options">عرض جميع خيارات تسجيل الدخول</string>
@@ -730,7 +730,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Select vault</string>
     <string name="appearance">المظهر</string>
     <string name="account_security">أمان الحساب</string>
-    <string name="bitwarden_help_center">مركز المساعدة Universal Password Manager</string>
+    <string name="universalpasswordmanager_help_center">مركز المساعدة Universal Password Manager</string>
     <string name="sync_now">المزامنة الآن</string>
     <string name="unlock_options">خيارات فتح القفل</string>
     <string name="session_timeout">مهلة الجلسة</string>
@@ -747,10 +747,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">هل تريد المتابعة إلى إعدادات الجهاز؟</string>
     <string name="two_step_login_description_long">اجعل حسابك أكثر أمنا من خلال إعداد تسجيل الدخول بخطوتين في تطبيق Universal Password Manager على شبكة الإنترنت.</string>
     <string name="change_master_password_description_long">يمكنك تغيير كلمة المرور الرئيسية الخاصة بك على تطبيق ويب Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">تعرف على المزيد حول كيفية استخدام Universal Password Manager في مركز المساعدة.</string>
-    <string name="privacy_policy_description_long">اطلع على سياستنا للخصوصية على bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">استكشف المزيد من الميزات لحساب Universal Password Manager الخاص بك على تطبيق الويب.</string>
-    <string name="learn_about_organizations_description_long">يتيح لك Universal Password Manager مشاركة عناصر خزنتك مع الآخرين باستخدام حساب المنظمة. تعرف على المزيد على موقع bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">تعرف على المزيد حول كيفية استخدام Universal Password Manager في مركز المساعدة.</string>
+    <string name="privacy_policy_description_long">اطلع على سياستنا للخصوصية على .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">استكشف المزيد من الميزات لحساب Universal Password Manager الخاص بك على تطبيق الويب.</string>
+    <string name="learn_about_organizations_description_long">يتيح لك Universal Password Manager مشاركة عناصر خزنتك مع الآخرين باستخدام حساب المنظمة. تعرف على المزيد على موقع .</string>
     <string name="created_x">تم إنشاء %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">تتطلب مؤسستك تعيين كلمة مرور رئيسية.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">قم بإعداد خيار فتح القفل لتغيير إجراء مهلة انتهاء خزنتك.</string>
@@ -760,8 +760,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">تسجيل الدخول لـ Duo من خطوتين مطلوب لحسابك.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">اتبع الخطوات من Duo لإنهاء تسجيل الدخول.</string>
     <string name="launch_duo">تشغيل Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">سيتم حفظ مفتاح المرور الخاص بك في خزنة Universal Password Manager الخاصة بك لـ %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">سيتم حفظ كلمة المرور الخاصة بك في مخزن Universal Password Manager الخاص بك لـ %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">سيتم حفظ مفتاح المرور الخاص بك في خزنة Universal Password Manager الخاصة بك لـ %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">سيتم حفظ كلمة المرور الخاصة بك في مخزن Universal Password Manager الخاص بك لـ %1$s</string>
     <string name="passkeys_not_supported_for_this_app">لا يدعم هذا التطبيق استخدام مفاتيح المرور</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">فشلت عملية مفتاح المرور لأن المتصفح لا يملك الصلاحيات اللازمة</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">فشلت عملية مفتاح المرور لأن توقيع المتصفح غير مطابق</string>
@@ -787,7 +787,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">تحقق من بريدك الإلكتروني</string>
     <string name="open_email_app">افتح تطبيق البريد الإلكتروني</string>
     <string name="email_verified">تم التحقق من البريد الإلكتروني</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">الحصول على رسائل بريد إلكتروني من Universal Password Manager للإعلانات، والنصائح، وفرص البحث. <annotation link="unsubscribe">يمكنك إلغاء الاشتراك</annotation> في أي وقت.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">الحصول على رسائل بريد إلكتروني من Universal Password Manager للإعلانات، والنصائح، وفرص البحث. <annotation link="unsubscribe">يمكنك إلغاء الاشتراك</annotation> في أي وقت.</string>
     <string name="security_prioritized">الأمن، مرتب حسب الأولوية</string>
     <string name="welcome_message_1">حفظ تسجيلات الدخول والبطاقات والهويات إلى خزنتك الآمنة. يستخدم Universal Password Manager المعرفة الصفرية، التشفير من النهاية إلى النهاية لحماية ما هو مهم بالنسبة لك.</string>
     <string name="welcome_message_2">قم بإعداد فتح فتح القفل بالمصادقة البيومترية  والتعبئة التلقائية لتسجيل الدخول إلى حساباتك دون كتابة حرف واحد.</string>
@@ -825,8 +825,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">انقر على الرابط الموجود في الرسالة الإلكترونية لتأكيد عنوان بريدك الإلكتروني ومتابعة إنشاء حسابك.</string>
     <string name="change_email_address">تغيير عنوان البريد الإلكتروني</string>
     <string name="next">التالي</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">لا يمكن لـ Universal Password Manager أن تستعيد كلمة المرور الرئيسية المفقودة أو المنسية.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">لا يمكن لUniversal Password Manager إعادة تعيين كلمة مرور رئيسية مفقودة أو منسية.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">لا يمكن لـ Universal Password Manager أن تستعيد كلمة المرور الرئيسية المفقودة أو المنسية.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">لا يمكن لUniversal Password Manager إعادة تعيين كلمة مرور رئيسية مفقودة أو منسية.</string>
     <string name="choose_your_master_password">اختر كلمة المرور الرئيسية</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">اختر كلمة مرور فريدة وقوية للحفاظ على سلامة معلوماتك.</string>
     <plurals name="minimum_characters">
@@ -841,13 +841,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">الرجاء إعادة تشغيل التسجيل أو محاولة تسجيل الدخول. قد يكون لديك حساب بالفعل.</string>
     <string name="restart_registration">إعادة تشغيل التسجيل</string>
     <string name="authenticator_sync">مزامنة المصادقة</string>
-    <string name="allow_bitwarden_authenticator_syncing">السماح بمزامنة المصادقة</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">السماح بمزامنة المصادقة</string>
     <string name="there_was_an_issue_validating_the_registration_token">حدثت مشكلة أثناء التحقق من صحة رمز التسجيل.</string>
     <string name="turn_on_autofill">تشغيلالملء التلقائي</string>
     <string name="autofill_setup">إعداد الملء التلقائي</string>
     <string name="turn_on_browser_autofill_integration">تفعيل دمج الملء التلقائي للمتصفح</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">أنت تستخدم متصفحًا يتطلب أذونات خاصة لـ Universal Password Manager لملء كلمات المرور الخاصة بك تلقائياً.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">أنت تستخدم المتصفحات التي تتطلب أذونات خاصة لـ Universal Password Manager لملء كلمات المرور الخاصة بك تلقائياً.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">أنت تستخدم متصفحًا يتطلب أذونات خاصة لـ Universal Password Manager لملء كلمات المرور الخاصة بك تلقائياً.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">أنت تستخدم المتصفحات التي تتطلب أذونات خاصة لـ Universal Password Manager لملء كلمات المرور الخاصة بك تلقائياً.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">أنت تستخدم المتصفحات التي تتطلب صلاحيات خاصة لـ Universal Password Manager لملء كلمات مرورك. يرجى تفعيل الملء التلقائي المفضل لديك أدناه.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">أنت تستخدم المتصفحات التي تتطلب صلاحيات خاصة لـ Universal Password Manager لملء كلمات مرورك. يرجى تفعيل الملء التلقائي لجميع المتصفحات المثبتة للمتابعة.</string>
     <string name="use_autofill_to_log_into_your_accounts">استخدمالملء التلقائي لتسجيل الدخول إلى حساباتك بنقرة واحدة.</string>
@@ -855,7 +855,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">هل تريد تفعيل الملء التلقائي في وقت لاحق؟</string>
     <string name="turn_on_browser_autofill_integration_later">هل تريد تفعيل دمج الملء التلقائي للمتصفح في وقت لاحق؟</string>
     <string name="return_to_complete_this_step_anytime_in_settings">يمكنك العودة لإكمال هذه الخطوة في أي وقت من الإعدادات.</string>
-    <string name="what_bitwarden_has_to_offer">يمكنك الآن استكشاف كل ما يجب على Universal Password Manager تقديمه وبدء إدارة كلمات المرور الخاصة بك بشكل آمن.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">يمكنك الآن استكشاف كل ما يجب على Universal Password Manager تقديمه وبدء إدارة كلمات المرور الخاصة بك بشكل آمن.</string>
     <string name="youre_all_set">أنت جاهز تمامًا!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">خطأ في الاتصال بخدمة Duo. استخدم طريقة تسجيل الدخول بخطوتين مختلفة أو اتصل بـ Duo للمساعدة.</string>
     <string name="master_password_hint_not_specified">تلميح كلمة المرور الرئيسية</string>
@@ -884,30 +884,30 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">الخطوة 1 من 3</string>
     <string name="export_your_saved_logins">تصدير تسجيلاتك المحفوظة</string>
     <string name="delete_this_file_after_import_is_complete">سوف تحذف هذا الملف بعد اكتمال الاستيراد.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">على جهاز الكمبيوتر الخاص بك، افتح علامة تبويب جديدة للمتصفح و <annotation emphasis="bold">اذهب إلى <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">تسجيل الدخول إلى تطبيق ويب Universal Password Manager.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">على جهاز الكمبيوتر الخاص بك، افتح علامة تبويب جديدة للمتصفح و <annotation emphasis="bold">اذهب إلى <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">تسجيل الدخول إلى تطبيق ويب Universal Password Manager.</string>
     <string name="step_2_of_3">الخطوة 2 من 3</string>
-    <string name="log_in_to_bitwarden">تسجيل الدخول إلى Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">تسجيل الدخول إلى Universal Password Manager</string>
     <string name="step_3_of_3">الخطوة 3 من 3</string>
-    <string name="import_logins_to_bitwarden">استيراد تسجيلات الدخول إلى Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">في شريط التنقل في Universal Password Manager، ابحث عن خيار <annotation emphasis="bold">الأدوات</annotation> وحدد <annotation emphasis="bold">استيراد البيانات.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">استيراد تسجيلات الدخول إلى Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">في شريط التنقل في Universal Password Manager، ابحث عن خيار <annotation emphasis="bold">الأدوات</annotation> وحدد <annotation emphasis="bold">استيراد البيانات.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">املأ النموذج و<annotation emphasis="bold">استورد ملف كلمات المرور المحفوظة.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">للأمان الخاص بك، تأكد من <annotation emphasis="bold">حذف ملف كلمات المرور المحفوظة.</annotation></string>
     <string name="need_help_check_out_import_help">بحاجة إلى مساعدة؟ تحقق من <annotation link="importHelp">تعليمات الاستيراد
 </annotation>.</string>
     <string name="import_help">مساعدة في الاستيراد</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">احفظ الملف المصدر</annotation> في مكان ما على جهاز الكمبيوتر الخاص بك أين يمكنك العثور عليه بسهولة.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">هذا ليس خادم Universal Password Manager المعترف به. قد تحتاج إلى التحقق مع المزود الخاص بك أو تحديث الخادم الخاص بك.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">هذا ليس خادم Universal Password Manager المعترف به. قد تحتاج إلى التحقق مع المزود الخاص بك أو تحديث الخادم الخاص بك.</string>
     <string name="syncing_logins_loading_message">مزامنة تسجيلات الدخول…</string>
     <string name="download_the_browser_extension">تحميل ملحق المتصفح</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">اذهب إلى bitwarden.com/download لدمج Universal Password Manager في المتصفح المفضل لديك للحصول على تجربة سلسة.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">اذهب إلى /download لدمج Universal Password Manager في المتصفح المفضل لديك للحصول على تجربة سلسة.</string>
     <string name="use_the_web_app">استخدام تطبيق الويب</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">سجّل الدخول في bitwarden.com لإدارة حسابك بسهولة وتحديث الإعدادات.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">سجّل الدخول في  لإدارة حسابك بسهولة وتحديث الإعدادات.</string>
     <string name="autofill_passwords">الملء التلقائي لكلمات المرور</string>
     <string name="set_up_autofill_on_all_your_devices">إعدادالملء التلقائي على جميع الأجهزة الخاصة بك لتسجيل الدخول بنقرة واحدة في أي مكان.</string>
     <string name="import_successful">تم الاستيراد بنجاح!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">إدارة تسجيلات الدخول الخاصة بك من أي مكان باستخدام أدوات Universal Password Manager للويب وسطح المكتب.</string>
-    <string name="bitwarden_tools">أدوات Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">إدارة تسجيلات الدخول الخاصة بك من أي مكان باستخدام أدوات Universal Password Manager للويب وسطح المكتب.</string>
+    <string name="universalpasswordmanager_tools">أدوات Universal Password Manager</string>
     <string name="got_it">فهمت</string>
     <string name="no_logins_were_imported">لم يتم استيراد أي تسجيلات دخول</string>
     <string name="import_error">خطأ في الاستيراد</string>
@@ -929,7 +929,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d إشعار</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">تسجيل الدخول بسرعة وسهولة عبر الأجهزة</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager يمكنه إعلامك في كل مرة تتلقى فيها طلب تسجيل دخول جديد من جهاز آخر.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager يمكنه إعلامك في كل مرة تتلقى فيها طلب تسجيل دخول جديد من جهاز آخر.</string>
     <string name="skip_for_now">تخطي الآن</string>
     <string name="done_text">تم</string>
     <string name="page_number_x_of_y">%1$s من %2$s</string>
@@ -981,7 +981,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 من 6</string>
     <string name="coachmark_6_of_6">6 من 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">استخدم هذه الخيارات لتعديل كلمة مرورك بحيث تتوافق مع متطلبات موقع الويب الخاص بحسابك.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">بعد حفظ كلمة المرور الجديدة إلى Universal Password Manager، لا تنس تحديثها على موقع حسابك.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">بعد حفظ كلمة المرور الجديدة إلى Universal Password Manager، لا تنس تحديثها على موقع حسابك.</string>
     <string name="verify_your_identity">تحقق من هويتك</string>
     <string name="error_loading_certificate">خطأ في تحميل الشهادة</string>
     <string name="certificate_alias">اسم مستعار للشهادة</string>
@@ -992,7 +992,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">نوع الشهادة غير مدعوم</string>
     <string name="certificate_password_incorrect">كلمة مرور الشهادة غير صحيحة</string>
     <string name="invalid_certificate_chain">سلسلة الشهادات غير صالحة</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">واستخدام شهادة النظام أقل أمنا من تخزين الشهادة مع شركة بت وردين. سيتم عرض قائمة من شهادات النظام المتاحة إذا تم تثبيت واحدة بالفعل.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">واستخدام شهادة النظام أقل أمنا من تخزين الشهادة مع شركة بت وردين. سيتم عرض قائمة من شهادات النظام المتاحة إذا تم تثبيت واحدة بالفعل.</string>
     <string name="link">رابط</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">فشلت عملية إدخال مفتاح المرور لأن عنوان URL المضيف غير موجود في الطلب.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">فشلت عملية مفتاح المرور لأن توقيع التطبيق غير صالح.</string>
@@ -1062,7 +1062,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">غير قادر على قراءة الشهادة.</string>
     <string name="cannot_delete_your_account">لا يمكن حذف حسابك</string>
     <string name="cannot_delete_your_account_explanation">لا يمكن إكمال هذا الإجراء لأن حسابك مملوك من قبل منظمة. اتصل بمسؤول مؤسستك للحصول على تفاصيل إضافية.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">سيتم حذف هذا الحساب قريباً. سجل الدخول على %1$s لمتابعة استخدام Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">سيتم حذف هذا الحساب قريباً. سجل الدخول على %1$s لمتابعة استخدام Universal Password Manager.</string>
     <string name="view_file_send">عرض مِلَفّ الإرسال</string>
     <string name="view_text_send">عرض إرسال النص</string>
     <string name="delete_send">حذف الإرسال</string>
@@ -1084,7 +1084,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">معرفة المزيد عن التطبيقات المتميزة</string>
     <string name="privileged_apps">تطبيقات ذات صلاحيات</string>
     <string name="unrecognized_browser">متصفح غير معروف</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">تعرف على المزيد حول استخدام مفاتيح المرور مع Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">تعرف على المزيد حول استخدام مفاتيح المرور مع Universal Password Manager.</string>
     <string name="all_trusted_apps">جميع التطبيقات الموثوق بها</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">هل أنت متأكد من أنك تريد إيقاف الثقة %s؟</string>
     <string name="installed_apps">التطبيقات المثبتة</string>
@@ -1116,7 +1116,7 @@ Do you want to switch to this account?</string>
     <string name="information">معلومات</string>
     <string name="otp_type">نوع OTP</string>
     <string name="search_codes">ابحث عن رموز</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">تأمين حساباتك مع مصادق Universal Password Manager</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">تأمين حساباتك مع مصادق Universal Password Manager</string>
     <string name="get_verification_codes_for_all_your_accounts">احصل على رموز التحقق لجميع حساباتك التي تدعم التحقق بخطوتين.</string>
     <string name="use_your_device_camera_to_scan_codes">استخدم كاميرا جهازك لمسح الرموز ضوئيا</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">امسح رمز QR في إعدادات التحقق من خطوتين لأي حساب.</string>
@@ -1137,7 +1137,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">العديد من المحاولات الفاشلة للمصادقة البيومترية.</string>
     <string name="version">الإصدار</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">الإصدار: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">تعرف على المزيد حول كيفية استخدام مصادق Universal Password Manager في مركز المساعدة.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">تعرف على المزيد حول كيفية استخدام مصادق Universal Password Manager في مركز المساعدة.</string>
     <string name="key">مفتاح</string>
     <string name="create_verification_code">إنشاء رمز التحقق</string>
     <string name="key_is_required">المفتاح مطلوب.</string>
@@ -1150,39 +1150,39 @@ Do you want to switch to this account?</string>
     <string name="data_backup_title">النسخ الاحتياطي للبيانات</string>
     <string name="data_backup_message">يتم النسخ الاحتياطي لبيانات مصادقة Universal Password Manager ويمكن استعادتها مع النسخ الاحتياطية لجهازك المجدولة بانتظام.</string>
     <string name="import_2fas_password_protected_not_supported">الاستيراد من الملفات المحمية بكلمة مرور 2FAS غير مدعوم. حاول مرة أخرى مع ملف مصدَّر غير محمي بكلمة المرور.</string>
-    <string name="import_bitwarden_unsupported_format">استيراد ملفات Universal Password Manager CSV غير مدعوم. حاول مرة أخرى مع ملف JSON مصدَّر.</string>
-    <string name="download_bitwarden_card_title">تنزيل تطبيق Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">تخزين جميع تسجيلات الدخول الخاصة بك ومزامنة رموز التحقق مباشرة مع تطبيق المصادقة.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">استيراد ملفات Universal Password Manager CSV غير مدعوم. حاول مرة أخرى مع ملف JSON مصدَّر.</string>
+    <string name="download_universalpasswordmanager_card_title">تنزيل تطبيق Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">تخزين جميع تسجيلات الدخول الخاصة بك ومزامنة رموز التحقق مباشرة مع تطبيق المصادقة.</string>
     <string name="download_now">تنزيل الآن</string>
-    <string name="sync_with_bitwarden_app">المزامنة مع تطبيق Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">المزامنة مع تطبيق Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">تعرف على المزيد</annotation></string>
     <string name="shared_codes_error">غير قادر على مزامنة الرموز من تطبيق Universal Password Manager. تأكد من تحديث كلا التطبيقين. لا يزال بإمكانك الوصول إلى الرموز الموجودة في تطبيق Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">المزامنة مع تطبيق Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">السماح لمزامنة تطبيق المصادقة في الإعدادات لعرض جميع رموز التحقق الخاصة بك هنا.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">المزامنة مع تطبيق Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">السماح لمزامنة تطبيق المصادقة في الإعدادات لعرض جميع رموز التحقق الخاصة بك هنا.</string>
     <string name="take_me_to_app_settings">انقلني إلى إعدادات التطبيق</string>
     <string name="something_went_wrong">حدث خطأ ما</string>
     <string name="please_try_again">يرجى المحاولة مرة أخرى</string>
-    <string name="copy_to_bitwarden_vault">نسخ إلى خزنة Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">نسخ إلى خزنة Universal Password Manager</string>
     <string name="default_save_option">خيار الحفظ الافتراضي</string>
-    <string name="save_to_bitwarden">الحفظ في Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">الحفظ في Universal Password Manager</string>
     <string name="save_here">حفظ هنا</string>
     <string name="none">لا شيء</string>
     <string name="default_save_options_subtitle">اختر المكان الذي تريد حفظ رموز التحقق الجديدة فيه.</string>
     <string name="verification_code_created">تم إنشاء رمز التحقق</string>
     <string name="choose_save_location_message">احفظ مفتاح المصادقة هذا هنا، أو أضفه إلى تسجيل الدخول في تطبيق Universal Password Manager الخاص بك.</string>
     <string name="save_option_as_default">حفظ الخيار كخيار افتراضي</string>
-    <string name="account_synced_from_bitwarden_app">تمت مزامنة الحساب من تطبيق Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">تمت مزامنة الحساب من تطبيق Universal Password Manager</string>
     <string name="local_codes">الرموز المحلية (%1$d)</string>
     <string name="local_codes_header">الرموز المحلية</string>
     <string name="required_information_missing">المعلومات المطلوبة غير موجودة</string>
-    <string name="required_information_missing_message">المعلومات المطلوبة مفقودة (على سبيل المثال، \"خدمات\" أو \"سري\"). تحقق من ملفك وحاول مرة أخرى. قم بزيارة bitwarden.com/help للحصول على الدعم</string>
+    <string name="required_information_missing_message">المعلومات المطلوبة مفقودة (على سبيل المثال، \"خدمات\" أو \"سري\"). تحقق من ملفك وحاول مرة أخرى. قم بزيارة /help للحصول على الدعم</string>
     <string name="file_could_not_be_processed">تعذر معالجة الملف</string>
-    <string name="file_could_not_be_processed_message">تعذر معالجة الملف. تأكد من صلاحيتها JSON وحاول مرة أخرى. بحاجة إلى مساعدة؟ قم بزيارة bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">تعذر معالجة الملف. تأكد من صلاحيتها JSON وحاول مرة أخرى. بحاجة إلى مساعدة؟ قم بزيارة /help</string>
     <string name="get_help">الحصول على المساعدة</string>
     <string name="error_cannot_decrypt">[خطأ: لا يمكن فك التشفير]</string>
     <string name="copy_error_report">نسخ تقرير الخطأ</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">تعذر على Universal Password Manager فك تشفير عنصر الخزنة هذا. انسخ تقرير الخطأ هذا وشاركه مع دعم العملاء لتجنب خسارة إضافية للبيانات.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">تعذر على Universal Password Manager فك تشفير عنصر الخزنة هذا. انسخ تقرير الخطأ هذا وشاركه مع دعم العملاء لتجنب خسارة إضافية للبيانات.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="zero">تعذر على Universal Password Manager فك تشفير %1$d عنصر خزنة. انسخ وشارك تقرير الخطأ هذا مع دعم العملاء لتجنب خسارة البيانات الإضافية.</item>
         <item quantity="one">تعذر على Universal Password Manager فك تشفير %1$d عنصر خزنة. انسخ وشارك تقرير الخطأ هذا مع دعم العملاء لتجنب خسارة البيانات الإضافية.</item>
         <item quantity="two">تعذر على Universal Password Manager فك تشفير %1$d عنصري خزنة. انسخ وشارك تقرير الخطأ هذا مع دعم العملاء لتجنب خسارة البيانات الإضافية.</item>
@@ -1229,7 +1229,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">تمكينالملء التلقائي للمتصفح للإبقاء على ملء كلمات المرور</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">تم تحديث متصفحك مؤخرا، والذي قام بتعطيلالملء التلقائي لـ Universal Password Manager. للاستمرار في ملء كلمات المرور الخاصة بك مع Universal Password Manager، قم بتمكينالملء التلقائي في إعداداتالملء التلقائي.</string>
     <string name="not_now">ليس الآن</string>
-    <string name="import_from_bitwarden">استيراد من Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">استيراد من Universal Password Manager</string>
     <string name="select_account">اختر حسابًا</string>
     <string name="no_accounts_available">لا توجد حسابات متاحة</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">ليس لديك أي حسابات يمكنك الاستيراد منها. قد تقيد سياسة أمن مؤسستك استيراد المواد من Universal Password Manager إلى تطبيق آخر.</string>
@@ -1327,7 +1327,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">موثوق</string>
     <string name="preview_not_available_for_files">المعاينة غير متوفرة للملفات %1$s. لا يزال بإمكانك تنزيلها لعرضها على جهازك.</string>
     <string name="this_file_is_too_large_to_preview">هذا الملف كبير جدًا للمعاينة. لا يزال بإمكانك تنزيله لعرضه على جهازك.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">تعذر على Universal Password Manager فك تشفير هذا الملف، لذلك لا يمكن عرض المعاينة.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">تعذر على Universal Password Manager فك تشفير هذا الملف، لذلك لا يمكن عرض المعاينة.</string>
     <string name="preview_unavailable_for_this_file">المعاينة غير متوفرة لهذا الملف. لا يزال يمكنك تنزيله لعرضه على جهازك.</string>
     <string name="preview_unavailable">المعاينة غير متاحة</string>
     <string name="download_attachment">تنزيل المرفق</string>
@@ -1369,7 +1369,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / سنة</string>
     <string name="billing_rate_per_month">%1$s / شهر</string>
     <string name="manage_plan">إدارة باقة الاشتراك</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">إدارة باقة اشتراكك في تطبيق Universal Password Manager على الويب.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">إدارة باقة اشتراكك في تطبيق Universal Password Manager على الويب.</string>
     <string name="cancel_premium">إلغاء Premium</string>
     <string name="subscription_status_active">نشط</string>
     <string name="subscription_status_canceled">ملغى</string>
@@ -1464,8 +1464,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">مطلوب صلاحية الوصول إلى الشبكة المحلية</string>
     <string name="ask_again_later">اسأل مرة أخرى لاحقا</string>
     <string name="enable_local_network_access">تفعيل الوصول إلى الشبكة المحلية</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">يتطلب Universal Password Manager صلاحية الوصول للشبكة المحلية لمزامنة البيانات مع خادمك. وفي حال عدم منح هذا الإذن، لن يستطيع التطبيق الاتصال.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">بدون هذا الإذن، لن يتمكن Universal Password Manager من الاتصال والمزامنة مع خادمك. ويمكنك تفعيله في إعدادات جهازك.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">يتطلب Universal Password Manager صلاحية الوصول للشبكة المحلية لمزامنة البيانات مع خادمك. وفي حال عدم منح هذا الإذن، لن يستطيع التطبيق الاتصال.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">بدون هذا الإذن، لن يتمكن Universal Password Manager من الاتصال والمزامنة مع خادمك. ويمكنك تفعيله في إعدادات جهازك.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">تعذر إكمال طلبك بسبب حاجة التطبيق للاتصال بالشبكة المحلية. ويمكنك تفعيله في إعدادات جهازك.</string>
     <string name="continue_to_stripe">المتابعة إلى Stripe؟</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">سيتم توجيهك لصفحة Stripe لإدارة إلغاء اشتراكك.</string>

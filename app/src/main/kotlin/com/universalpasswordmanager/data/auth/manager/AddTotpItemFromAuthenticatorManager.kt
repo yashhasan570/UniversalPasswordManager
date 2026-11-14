@@ -3,7 +3,7 @@ package com.universalpasswordmanager.data.auth.manager
 import com.universalpasswordmanager.ui.platform.model.TotpData
 
 /**
- * Manager for keeping track of requests from the Bitwarden Authenticator app to add a TOTP
+ * Manager for keeping track of requests from the Universal Password Manager Authenticator app to add a TOTP
  * item.
  */
 interface AddTotpItemFromAuthenticatorManager {

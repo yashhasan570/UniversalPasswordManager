@@ -152,7 +152,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
     private val specialCircumstanceManager: SpecialCircumstanceManager,
     private val policyManager: PolicyManager,
     private val originManager: OriginManager,
-    private val bitwardenCredentialManager: UniversalCredentialManager,
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager,
     private val organizationEventManager: OrganizationEventManager,
     private val networkConnectionManager: NetworkConnectionManager,
     private val relyingPartyParser: RelyingPartyParser,
@@ -435,7 +435,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
     }
 
     private fun handleUserVerificationLockOut() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         showCredentialManagerErrorDialog(
             UniversalString.credential_operation_failed_because_user_is_locked_out.asText(),
         )
@@ -444,19 +444,19 @@ class VaultItemListingViewModel @AssistedInject constructor(
     private fun handleUserVerificationSuccess(
         action: VaultItemListingsAction.UserVerificationSuccess,
     ) {
-        bitwardenCredentialManager.isUserVerified = true
+        universalpasswordmanagerCredentialManager.isUserVerified = true
         continueCredentialManagerOperation(action.selectedCipherView)
     }
 
     private fun handleUserVerificationFail() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         showCredentialManagerErrorDialog(
             UniversalString.credential_operation_failed_because_user_could_not_be_verified.asText(),
         )
     }
 
     private fun handleUserVerificationCancelled() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         clearDialogState()
         state.createCredentialRequest
             ?.let {
@@ -487,7 +487,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
     private fun handleUserVerificationNotSupported(
         action: VaultItemListingsAction.UserVerificationNotSupported,
     ) {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
 
         val selectedCipherId = action
             .selectedCipherId
@@ -806,7 +806,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
             sendAction(
                 VaultItemListingsAction.Internal.GetCredentialEntriesResultReceive(
                     userId = request.userId,
-                    result = bitwardenCredentialManager.getCredentialEntries(
+                    result = universalpasswordmanagerCredentialManager.getCredentialEntries(
                         getCredentialsRequest = request,
                     ),
                 ),
@@ -1007,7 +1007,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
                 dialogState = VaultItemListingState.DialogState.CipherDecryptionError(
                     title = UniversalString.decryption_error.asText(),
                     message = UniversalString
-                        .bitwarden_could_not_decrypt_this_vault_item_description_long
+                        .universalpasswordmanager_could_not_decrypt_this_vault_item_description_long
                         .asText(),
                     selectedCipherId = itemId,
                 ),
@@ -1084,7 +1084,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
                 return
             }
 
-        if (bitwardenCredentialManager.isUserVerified) {
+        if (universalpasswordmanagerCredentialManager.isUserVerified) {
             // The user has performed verification implicitly so we continue FIDO 2 registration
             // without checking the request's user verification settings.
             registerFido2CredentialToCipher(cipherView, providerRequest)
@@ -1099,7 +1099,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
     ) {
         val userVerificationRequirement = providerRequest
             .getCreatePasskeyCredentialRequestOrNull()
-            ?.let { bitwardenCredentialManager.getUserVerificationRequirement(it) }
+            ?.let { universalpasswordmanagerCredentialManager.getUserVerificationRequirement(it) }
             ?: run {
                 showCredentialManagerErrorDialog(
                     UniversalString.passkey_operation_failed_because_the_request_is_unsupported
@@ -1182,7 +1182,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
 
         viewModelScope.launch {
             val result: Fido2RegisterCredentialResult =
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = activeUserId,
                     callingAppInfo = providerRequest.callingAppInfo,
                     createPublicKeyCredentialRequest = createRequest,
@@ -1245,7 +1245,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
                 is ValidateOriginResult.Success -> {
                     sendAction(
                         VaultItemListingsAction.Internal.Fido2AssertionResultReceive(
-                            result = bitwardenCredentialManager.authenticateFido2Credential(
+                            result = universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                                 userId = activeUserId,
                                 selectedCipherView = cipherView,
                                 request = option,
@@ -2139,8 +2139,8 @@ class VaultItemListingViewModel @AssistedInject constructor(
     private fun handleInvalidAuthentication(
         errorDialogState: VaultItemListingState.DialogState,
     ) {
-        bitwardenCredentialManager.authenticationAttempts += 1
-        if (bitwardenCredentialManager.hasAuthenticationAttemptsRemaining()) {
+        universalpasswordmanagerCredentialManager.authenticationAttempts += 1
+        if (universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining()) {
             mutableStateFlow.update {
                 it.copy(dialogState = errorDialogState)
             }
@@ -2154,8 +2154,8 @@ class VaultItemListingViewModel @AssistedInject constructor(
     }
 
     private fun handleValidAuthentication(selectedCipherId: String) {
-        bitwardenCredentialManager.isUserVerified = true
-        bitwardenCredentialManager.authenticationAttempts = 0
+        universalpasswordmanagerCredentialManager.isUserVerified = true
+        universalpasswordmanagerCredentialManager.authenticationAttempts = 0
 
         viewModelScope.launch {
             getCipherViewForCredentialOrNull(selectedCipherId)
@@ -2375,7 +2375,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
                 // fresh user verification. Without this reset, the stale isUserVerified = true
                 // from this registration would cause subsequent login attempts to skip
                 // biometric verification.
-                bitwardenCredentialManager.isUserVerified = false
+                universalpasswordmanagerCredentialManager.isUserVerified = false
                 // This must be a toast because we are finishing the activity and we want the
                 // user to have time to see the message.
                 toastManager.show(messageId = UniversalString.item_updated)
@@ -2415,7 +2415,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
                 sendAction(
                     VaultItemListingsAction.Internal.GetCredentialEntriesResultReceive(
                         userId = request.userId,
-                        result = bitwardenCredentialManager.getCredentialEntries(
+                        result = universalpasswordmanagerCredentialManager.getCredentialEntries(
                             getCredentialsRequest = request,
                         ),
                     ),
@@ -2460,7 +2460,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
                     sendAction(
                         VaultItemListingsAction.Internal.GetCredentialEntriesResultReceive(
                             userId = request.userId,
-                            result = bitwardenCredentialManager.getCredentialEntries(
+                            result = universalpasswordmanagerCredentialManager.getCredentialEntries(
                                 getCredentialsRequest = request,
                             ),
                         ),
@@ -2616,7 +2616,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
         selectedCipher: CipherView,
     ) {
 
-        if (bitwardenCredentialManager.isUserVerified) {
+        if (universalpasswordmanagerCredentialManager.isUserVerified) {
             authenticateFido2Credential(
                 request = request,
                 cipherView = selectedCipher,
@@ -2625,7 +2625,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
         }
 
         val userVerificationRequirement =
-            bitwardenCredentialManager.getUserVerificationRequirement(request)
+            universalpasswordmanagerCredentialManager.getUserVerificationRequirement(request)
         when (userVerificationRequirement) {
             UserVerificationRequirement.DISCOURAGED -> {
                 authenticateFido2Credential(
@@ -2648,7 +2648,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
         selectedCipher: CipherView,
     ) {
         viewModelScope.launch {
-            bitwardenCredentialManager.isUserVerified = false
+            universalpasswordmanagerCredentialManager.isUserVerified = false
             clearDialogState()
 
             val event = selectedCipher
@@ -2689,7 +2689,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
     private fun handleFido2AssertionResultReceive(
         action: VaultItemListingsAction.Internal.Fido2AssertionResultReceive,
     ) {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         clearDialogState()
         when (action.result) {
             is Fido2CredentialAssertionResult.Error -> {
@@ -2943,7 +2943,7 @@ class VaultItemListingViewModel @AssistedInject constructor(
         title: Text = UniversalString.an_error_has_occurred.asText(),
         error: Throwable? = null,
     ) {
-        bitwardenCredentialManager.authenticationAttempts = 0
+        universalpasswordmanagerCredentialManager.authenticationAttempts = 0
         mutableStateFlow.update {
             it.copy(
                 dialogState = VaultItemListingState.DialogState.CredentialManagerOperationFail(

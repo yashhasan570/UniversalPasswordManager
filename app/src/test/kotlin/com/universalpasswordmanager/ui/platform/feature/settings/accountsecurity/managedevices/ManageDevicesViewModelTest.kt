@@ -249,7 +249,7 @@ class ManageDevicesViewModelTest : BaseViewModelTest() {
                 creationDate = fixedClock.instant(),
                 responseDate = null,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = "fingerprint-phrase",
             )
             val currentDevice = DEFAULT_DEVICE.copy(isCurrentDevice = true)
@@ -402,7 +402,7 @@ private val PASSWORDLESS_AUTH_REQUEST = AuthRequest(
     creationDate = Instant.parse("2023-10-27T12:00:00Z"),
     responseDate = null,
     requestApproved = false,
-    originUrl = "www.bitwarden.com",
+    originUrl = "www.",
     fingerprint = "fingerprint-phrase",
 )
 

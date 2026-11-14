@@ -186,7 +186,7 @@ class VaultAddEditScreenTest : UniversalComposeTest() {
         mutableEventFlow.tryEmit(VaultAddEditEvent.NavigateToTooltipUri)
         verify {
             intentManager.launchUri(
-                "https://bitwarden.com/help/managing-items/#protect-individual-items".toUri(),
+                "https:///help/managing-items/#protect-individual-items".toUri(),
             )
         }
     }
@@ -196,7 +196,7 @@ class VaultAddEditScreenTest : UniversalComposeTest() {
         mutableEventFlow.tryEmit(VaultAddEditEvent.NavigateToAuthenticatorKeyTooltipUri)
         verify {
             intentManager.launchUri(
-                "https://bitwarden.com/help/integrated-authenticator".toUri(),
+                "https:///help/integrated-authenticator".toUri(),
             )
         }
     }
@@ -292,7 +292,7 @@ class VaultAddEditScreenTest : UniversalComposeTest() {
     @Suppress("MaxLineLength")
     @Test
     fun `on NavigateToGeneratorModal event in username mode should invoke NavigateToGeneratorModal with Username Generator Mode `() {
-        val website = "bitwarden.com"
+        val website = ""
         mutableEventFlow.tryEmit(
             VaultAddEditEvent.NavigateToGeneratorModal(
                 generatorMode = GeneratorMode.Modal.Username(website),
@@ -5244,7 +5244,7 @@ class VaultAddEditScreenTest : UniversalComposeTest() {
     fun `on NavigateToLearnMore should call launchUri`() {
         mutableEventFlow.tryEmit(VaultAddEditEvent.NavigateToLearnMore)
         verify(exactly = 1) {
-            intentManager.launchUri(uri = "https://bitwarden.com/help/uri-match-detection/".toUri())
+            intentManager.launchUri(uri = "https:///help/uri-match-detection/".toUri())
         }
     }
 

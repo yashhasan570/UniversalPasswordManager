@@ -30,7 +30,7 @@ import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
-import com.universalpasswordmanager.ui.platform.components.appbar.color.bitwardenMenuItemColors
+import com.universalpasswordmanager.ui.platform.components.appbar.color.universalpasswordmanagerMenuItemColors
 import com.universalpasswordmanager.ui.platform.components.appbar.model.OverflowMenuItemData
 import com.universalpasswordmanager.ui.platform.components.button.UniversalStandardIconButton
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
@@ -128,7 +128,7 @@ private fun UniversalDropdownMenuItem(
             )
             .testTag(tag = data.testTag),
         interactionSource = interactionSource,
-        colors = bitwardenMenuItemColors(
+        colors = universalpasswordmanagerMenuItemColors(
             textColor = data
                 .color
                 .takeUnless { it.isUnspecified }

@@ -3,7 +3,7 @@ package com.universalpasswordmanager.network.util
 /**
  * List of official Universal cloud hostnames that are safe to log.
  */
-private val BITWARDEN_HOSTS = listOf("bitwarden.com", "bitwarden.eu", "bitwarden.pw")
+private val UNIVERSALPM_HOSTS = listOf("", "", "")
 
 /**
  * Redacts hostnames in a log message by replacing bare hostnames with [REDACTED_SELF_HOST].
@@ -22,6 +22,6 @@ fun String.redactHostnamesInMessage(configuredHosts: Set<String>): String =
     }
 
 private fun String.redactIfSelfHosted(): String {
-    val isUniversalHost = BITWARDEN_HOSTS.any { this.endsWith(it) }
+    val isUniversalHost = UNIVERSALPM_HOSTS.any { this.endsWith(it) }
     return if (isUniversalHost) this else "[REDACTED_SELF_HOST]"
 }

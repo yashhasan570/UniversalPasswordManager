@@ -58,7 +58,7 @@ internal class UniversalToolTipStateImpl(
                 if (isPersistent) {
                     cancellableShow()
                 } else {
-                    withTimeout(BITWARDEN_TOOL_TIP_TIMEOUT.milliseconds) { cancellableShow() }
+                    withTimeout(UNIVERSALPM_TOOL_TIP_TIMEOUT.milliseconds) { cancellableShow() }
                 }
             } finally {
                 if (mutatePriority != MutatePriority.PreventUserInput) {
@@ -113,4 +113,4 @@ private object UniversalToolTipStateDefaults {
     val GlobalMutatorMutex = MutatorMutex()
 }
 
-private const val BITWARDEN_TOOL_TIP_TIMEOUT = 1500L
+private const val UNIVERSALPM_TOOL_TIP_TIMEOUT = 1500L

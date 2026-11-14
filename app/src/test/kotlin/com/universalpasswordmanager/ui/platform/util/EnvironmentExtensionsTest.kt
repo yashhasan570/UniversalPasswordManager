@@ -10,7 +10,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `displayLabel for US type should return the correct value`() {
         assertEquals(
-            "bitwarden.com".asText(),
+            "".asText(),
             Environment.Type.US.displayLabel,
         )
     }
@@ -18,7 +18,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `displayLabel for EU type should return the correct value`() {
         assertEquals(
-            "bitwarden.eu".asText(),
+            "".asText(),
             Environment.Type.EU.displayLabel,
         )
     }
@@ -26,7 +26,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `displayLabel for FED_RAMP type should return the correct value`() {
         assertEquals(
-            "bitwarden-gov.com".asText(),
+            "".asText(),
             Environment.Type.FED_RAMP.displayLabel,
         )
     }

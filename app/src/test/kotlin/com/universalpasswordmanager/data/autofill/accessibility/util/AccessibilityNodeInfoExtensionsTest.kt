@@ -162,7 +162,7 @@ class AccessibilityNodeInfoExtensionsTest {
 
     @Suppress("MaxLineLength")
     @Test
-    fun `shouldSkipPackage when packageName is prefixed with bitwarden package should return true`() {
+    fun `shouldSkipPackage when packageName is prefixed with universalpasswordmanager package should return true`() {
         val accessibilityNodeInfo = mockk<AccessibilityNodeInfo> {
             every { packageName } returns "com.universalpasswordmanager.beta"
         }

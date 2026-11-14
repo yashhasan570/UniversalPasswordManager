@@ -13,7 +13,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.bitwarden.authenticatorbridge"
+    namespace = ".authenticatorbridge"
     setVersion(version)
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())

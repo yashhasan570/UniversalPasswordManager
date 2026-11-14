@@ -37,7 +37,7 @@ sealed class Environment {
          */
         data object Us : Prod() {
             override val type: Type get() = Type.US
-            override val label: String get() = "bitwarden.com"
+            override val label: String get() = ""
             override val isFedRamp: Boolean get() = false
             override val environmentUrlData: EnvironmentUrlDataJson
                 get() = EnvironmentUrlDataJson.DEFAULT_US
@@ -48,7 +48,7 @@ sealed class Environment {
          */
         data object Eu : Prod() {
             override val type: Type get() = Type.EU
-            override val label: String get() = "bitwarden.eu"
+            override val label: String get() = ""
             override val isFedRamp: Boolean get() = false
             override val environmentUrlData: EnvironmentUrlDataJson
                 get() = EnvironmentUrlDataJson.DEFAULT_EU
@@ -59,7 +59,7 @@ sealed class Environment {
          */
         data object FedRamp : Prod() {
             override val type: Type get() = Type.FED_RAMP
-            override val label: String get() = "bitwarden-gov.com"
+            override val label: String get() = ""
             override val isFedRamp: Boolean get() = true
             override val environmentUrlData: EnvironmentUrlDataJson
                 get() = EnvironmentUrlDataJson.DEFAULT_FED_RAMP
@@ -94,12 +94,12 @@ sealed class Environment {
          * List of all primary development environment base URLs.
          */
         val DEFAULT_INTERNAL_ENVIRONMENTS: List<String> = listOf(
-            "https://vault.qa.bitwarden.pw",
-            "https://qa-team.sh.bitwarden.pw",
-            "https://vault.usdev.bitwarden.pw",
-            "https://vault.fedramp.usdev.bitwarden.pw",
-            "https://gw.dev.bitwarden.pw",
-            "https://gw.stg.bitwarden.pw",
+            "https://vault.qa.",
+            "https://qa-team.sh.",
+            "https://vault.usdev.",
+            "https://vault.fedramp.usdev.",
+            "https://gw.dev.",
+            "https://gw.stg.",
         )
     }
 }

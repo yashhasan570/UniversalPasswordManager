@@ -109,7 +109,7 @@ fun AttachmentsScreen(
             )
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         when (val viewState = state.viewState) {

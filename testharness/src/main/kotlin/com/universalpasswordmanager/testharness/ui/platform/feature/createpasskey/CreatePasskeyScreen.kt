@@ -187,7 +187,7 @@ private fun CreatePasskeyScreenContent(
 private fun CreatePasskeyScreenPreview() {
     CreatePasskeyScreenContent(
         state = CreatePasskeyState(
-            username = "user@bitwarden.com",
+            username = "user@",
             rpId = "passkeys.example.com",
             origin = "https://passkeys.example.com",
             isLoading = false,

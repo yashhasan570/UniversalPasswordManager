@@ -2,7 +2,7 @@ package com.universalpasswordmanager.data.platform.repository
 
 import android.view.autofill.AutofillManager
 import app.cash.turbine.test
-import com.bitwarden.authenticatorbridge.util.generateSecretKey
+import .authenticatorbridge.util.generateSecretKey
 import com.universalpasswordmanager.core.EnrollPinResponse
 import com.universalpasswordmanager.core.data.manager.BuildInfoManager
 import com.universalpasswordmanager.core.data.manager.dispatcher.FakeDispatcherManager
@@ -1667,7 +1667,7 @@ private val MOCK_USER_DECRYPTION_OPTIONS: UserDecryptionOptionsJson = UserDecryp
 
 private val MOCK_PROFILE = AccountJson.Profile(
     userId = USER_ID,
-    email = "test@bitwarden.com",
+    email = "test@",
     isEmailVerified = true,
     name = "Universal Tester",
     hasPremiumPersonally = false,

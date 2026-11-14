@@ -29,7 +29,7 @@ class UniversalVaultTileService : TileService() {
     private fun launchVault() {
         val intent = Intent(applicationContext, MainActivity::class.java)
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            .setData("bitwarden://my_vault".toUri())
+            .setData("my_vault".toUri())
         if (!isBuildVersionAtLeast(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)) {
             @Suppress("DEPRECATION")
             @SuppressLint("StartActivityAndCollapseDeprecated")

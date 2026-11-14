@@ -27,7 +27,7 @@ dependencyResolutionManagement {
         mavenCentral()
         maven {
             name = "GitHubPackages (Universal)"
-            url = uri("https://maven.pkg.github.com/bitwarden/sdk")
+            url = uri("https://maven.pkg.")
             credentials {
                 username = ""
                 password = userProperties["gitHubToken"] as String? ?: System.getenv("GITHUB_TOKEN")

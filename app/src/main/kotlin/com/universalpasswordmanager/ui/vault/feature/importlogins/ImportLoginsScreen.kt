@@ -40,7 +40,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.universalpasswordmanager.annotation.OmitFromCoverage
 import com.universalpasswordmanager.ui.platform.base.util.EventsEffect
 import com.universalpasswordmanager.ui.platform.base.util.annotatedStringResource
-import com.universalpasswordmanager.ui.platform.base.util.bitwardenBoldSpanStyle
+import com.universalpasswordmanager.ui.platform.base.util.universalpasswordmanagerBoldSpanStyle
 import com.universalpasswordmanager.ui.platform.base.util.standardHorizontalMargin
 import com.universalpasswordmanager.ui.platform.base.util.toAnnotatedString
 import com.universalpasswordmanager.ui.platform.components.appbar.UniversalTopAppBar
@@ -64,7 +64,7 @@ import com.universalpasswordmanager.ui.vault.feature.importlogins.handlers.Impor
 import com.universalpasswordmanager.ui.vault.feature.importlogins.handlers.rememberImportLoginHandler
 import kotlinx.collections.immutable.persistentListOf
 
-private const val IMPORT_HELP_URL = "https://bitwarden.com/help/import-data/"
+private const val IMPORT_HELP_URL = "https:///help/import-data/"
 
 /**
  * Top level component for the import logins screen.
@@ -99,7 +99,7 @@ fun ImportLoginsScreen(
 
     UniversalModalBottomSheet(
         showBottomSheet = state.showBottomSheet,
-        sheetTitle = stringResource(UniversalString.bitwarden_tools),
+        sheetTitle = stringResource(UniversalString.universalpasswordmanager_tools),
         onDismiss = handler.onSuccessfulSyncAcknowledged,
         sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
         modifier = Modifier.statusBarsPadding(),
@@ -334,18 +334,18 @@ private fun ImportLoginsStepTwoContent(
     modifier: Modifier = Modifier,
 ) {
     val instruction1 = annotatedStringResource(
-        id = UniversalString.on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com,
+        id = UniversalString.on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com,
         args = arrayOf(vaultUrl),
     )
-    val instruction2Text = stringResource(UniversalString.log_in_to_the_bitwarden_web_app)
+    val instruction2Text = stringResource(UniversalString.log_in_to_the_universalpasswordmanager_web_app)
     val instruction2 = buildAnnotatedString {
-        withStyle(bitwardenBoldSpanStyle) {
+        withStyle(universalpasswordmanagerBoldSpanStyle) {
             append(instruction2Text)
         }
     }
     ImportLoginsInstructionStep(
         stepText = stringResource(UniversalString.step_2_of_3),
-        stepTitle = stringResource(UniversalString.log_in_to_bitwarden),
+        stepTitle = stringResource(UniversalString.log_in_to_universalpasswordmanager),
         instructions = persistentListOf(
             ContentBlockData(
                 iconVectorResource = UniversalDrawable.ic_number1,
@@ -374,7 +374,7 @@ private fun ImportLoginsStepThreeContent(
     modifier: Modifier = Modifier,
 ) {
     val instruction1 = annotatedStringResource(
-        id = UniversalString.in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data,
+        id = UniversalString.in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data,
     )
     val instruction2 = annotatedStringResource(
         id = UniversalString.fill_out_the_form_and_import_your_saved_password_file,
@@ -387,7 +387,7 @@ private fun ImportLoginsStepThreeContent(
     )
     ImportLoginsInstructionStep(
         stepText = stringResource(UniversalString.step_3_of_3),
-        stepTitle = stringResource(UniversalString.import_logins_to_bitwarden),
+        stepTitle = stringResource(UniversalString.import_logins_to_universalpasswordmanager),
         instructions = persistentListOf(
             ContentBlockData(
                 iconVectorResource = UniversalDrawable.ic_number1,
@@ -449,7 +449,7 @@ private fun ImportLoginsSuccessBottomSheetContent(
         Spacer(Modifier.height(12.dp))
         Text(
             text = stringResource(
-                UniversalString.manage_your_logins_from_anywhere_with_bitwarden_tools,
+                UniversalString.manage_your_logins_from_anywhere_with_universalpasswordmanager_tools,
             ),
             style = UniversalTheme.typography.bodyMedium,
             textAlign = TextAlign.Center,
@@ -462,14 +462,14 @@ private fun ImportLoginsSuccessBottomSheetContent(
                     headerText = stringResource(UniversalString.download_the_browser_extension),
                     subtitleText = stringResource(
                         UniversalString
-                            .go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser,
+                            .go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser,
                     ),
                     iconVectorResource = UniversalDrawable.ic_puzzle,
                 ),
                 ContentBlockData(
                     headerText = stringResource(UniversalString.use_the_web_app),
                     subtitleText = stringResource(
-                        UniversalString.log_in_at_bitwarden_com_to_easily_manage_your_account,
+                        UniversalString.log_in_at_universalpasswordmanager_com_to_easily_manage_your_account,
                     ),
                     iconVectorResource = UniversalDrawable.ic_desktop,
                 ),
@@ -563,13 +563,13 @@ private class ImportLoginsDialogContentPreviewProvider :
                 dialogState = ImportLoginsState.DialogState.GetStarted,
                 viewState = ImportLoginsState.ViewState.InitialContent,
                 showBottomSheet = false,
-                currentWebVaultUrl = "vault.bitwarden.com",
+                currentWebVaultUrl = "vault.",
             ),
             ImportLoginsState(
                 dialogState = ImportLoginsState.DialogState.ImportLater,
                 viewState = ImportLoginsState.ViewState.InitialContent,
                 showBottomSheet = false,
-                currentWebVaultUrl = "vault.bitwarden.com",
+                currentWebVaultUrl = "vault.",
             ),
         )
 }

@@ -339,7 +339,7 @@ class AccountSecurityViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(AccountSecurityAction.ChangeMasterPasswordClick)
                 assertEquals(
                     AccountSecurityEvent.NavigateToChangeMasterPassword(
-                        "https://vault.bitwarden.com/#/settings",
+                        "https://vault./#/settings",
                     ),
                     awaitItem(),
                 )
@@ -349,7 +349,7 @@ class AccountSecurityViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(AccountSecurityAction.ChangeMasterPasswordClick)
                 assertEquals(
                     AccountSecurityEvent.NavigateToChangeMasterPassword(
-                        "https://vault.bitwarden.eu/#/settings",
+                        "https://vault./#/settings",
                     ),
                     awaitItem(),
                 )
@@ -457,7 +457,7 @@ class AccountSecurityViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(AccountSecurityAction.TwoStepLoginClick)
                 assertEquals(
                     AccountSecurityEvent.NavigateToTwoStepLogin(
-                        "https://vault.bitwarden.com/#/settings",
+                        "https://vault./#/settings",
                     ),
                     awaitItem(),
                 )
@@ -467,7 +467,7 @@ class AccountSecurityViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(AccountSecurityAction.TwoStepLoginClick)
                 assertEquals(
                     AccountSecurityEvent.NavigateToTwoStepLogin(
-                        "https://vault.bitwarden.eu/#/settings",
+                        "https://vault./#/settings",
                     ),
                     awaitItem(),
                 )
@@ -937,7 +937,7 @@ private val DEFAULT_USER_STATE = UserState(
         UserState.Account(
             userId = "activeUserId",
             name = "Active User",
-            email = "active@bitwarden.com",
+            email = "active@",
             avatarColorHex = "#aa00aa",
             environment = Environment.Prod.Us,
             isPremium = true,

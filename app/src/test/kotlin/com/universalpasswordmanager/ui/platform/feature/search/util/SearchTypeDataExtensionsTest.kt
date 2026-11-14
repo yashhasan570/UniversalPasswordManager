@@ -510,7 +510,7 @@ class SearchTypeDataExtensionsTest {
 
         val result = sends.toViewState(
             searchTerm = "mock",
-            baseIconUrl = "https://vault.bitwarden.com/icons",
+            baseIconUrl = "https://vault./icons",
             isIconLoadingDisabled = false,
             isAutofill = false,
             hasMasterPassword = true,
@@ -552,7 +552,7 @@ class SearchTypeDataExtensionsTest {
 
         val result = sends.toViewState(
             searchTerm = "mock",
-            baseIconUrl = "https://vault.bitwarden.com/icons",
+            baseIconUrl = "https://vault./icons",
             isIconLoadingDisabled = false,
             isAutofill = true,
             hasMasterPassword = true,
@@ -636,7 +636,7 @@ class SearchTypeDataExtensionsTest {
             createMockCipherListView(number = 2),
         ).toViewState(
             searchTerm = "mock",
-            baseIconUrl = "https://vault.bitwarden.com/icons",
+            baseIconUrl = "https://vault./icons",
             isIconLoadingDisabled = false,
             hasMasterPassword = true,
             isAutofill = false,
@@ -738,7 +738,7 @@ class SearchTypeDataExtensionsTest {
 
             val result = sends.toViewState(
                 searchTerm = "mock",
-                baseWebSendUrl = "https://vault.bitwarden.com/#/send/",
+                baseWebSendUrl = "https://vault./#/send/",
                 clock = clock,
             )
 

@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.orNullIfBlank
 import com.universalpasswordmanager.ui.platform.components.button.UniversalFilledIconButton
 import com.universalpasswordmanager.ui.platform.components.field.UniversalTextField
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
@@ -59,7 +59,7 @@ fun UniversalStepper(
                 Text(
                     text = it,
                     style = UniversalTheme.typography.bodySmall,
-                    color = bitwardenTextFieldColors().focusedSupportingTextColor,
+                    color = universalpasswordmanagerTextFieldColors().focusedSupportingTextColor,
                     modifier = Modifier.fillMaxWidth(),
                 )
             }

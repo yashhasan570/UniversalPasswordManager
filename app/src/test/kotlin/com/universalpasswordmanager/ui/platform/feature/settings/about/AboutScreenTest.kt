@@ -105,7 +105,7 @@ class AboutScreenTest : UniversalComposeTest() {
 
     @Suppress("MaxLineLength")
     @Test
-    fun `on bitwarden help center click should display confirmation dialog and confirm click should emit HelpCenterClick`() {
+    fun `on universalpasswordmanager help center click should display confirmation dialog and confirm click should emit HelpCenterClick`() {
         composeTestRule.onNode(isDialog()).assertDoesNotExist()
         composeTestRule.onNodeWithText("Universal help center").performClick()
         composeTestRule.onNode(isDialog()).assertExists()
@@ -137,7 +137,7 @@ class AboutScreenTest : UniversalComposeTest() {
 
     @Suppress("MaxLineLength")
     @Test
-    fun `on bitwarden web vault click should display confirmation dialog and confirm click should emit WebVaultClick`() {
+    fun `on universalpasswordmanager web vault click should display confirmation dialog and confirm click should emit WebVaultClick`() {
         composeTestRule.onNode(isDialog()).assertDoesNotExist()
         composeTestRule.onNodeWithText("Universal web vault").performClick()
         composeTestRule.onNode(isDialog()).assertExists()
@@ -192,7 +192,7 @@ class AboutScreenTest : UniversalComposeTest() {
     fun `on NavigateToFlightRecorderHelp should call launchUri on IntentManager`() {
         mutableEventFlow.tryEmit(AboutEvent.NavigateToFlightRecorderHelp)
         verify(exactly = 1) {
-            intentManager.launchUri("https://bitwarden.com/help/flight-recorder".toUri())
+            intentManager.launchUri("https:///help/flight-recorder".toUri())
         }
     }
 
@@ -200,7 +200,7 @@ class AboutScreenTest : UniversalComposeTest() {
     fun `on NavigateToHelpCenter should call launchUri on IntentManager`() {
         mutableEventFlow.tryEmit(AboutEvent.NavigateToHelpCenter)
         verify {
-            intentManager.launchUri("https://bitwarden.com/help".toUri())
+            intentManager.launchUri("https:///help".toUri())
         }
     }
 
@@ -208,7 +208,7 @@ class AboutScreenTest : UniversalComposeTest() {
     fun `on NavigateToPrivacyPolicy should call launchUri on IntentManager`() {
         mutableEventFlow.tryEmit(AboutEvent.NavigateToPrivacyPolicy)
         verify {
-            intentManager.launchUri("https://bitwarden.com/privacy".toUri())
+            intentManager.launchUri("https:///privacy".toUri())
         }
     }
 
@@ -216,7 +216,7 @@ class AboutScreenTest : UniversalComposeTest() {
     fun `on NavigateToLearnAboutOrganizations should call launchUri on IntentManager`() {
         mutableEventFlow.tryEmit(AboutEvent.NavigateToLearnAboutOrganizations)
         verify {
-            intentManager.launchUri("https://bitwarden.com/help/about-organizations".toUri())
+            intentManager.launchUri("https:///help/about-organizations".toUri())
         }
     }
 

@@ -71,19 +71,19 @@ fun AboutScreen(
             AboutEvent.NavigateToRecordedLogs -> onNavigateToRecordedLogs()
 
             AboutEvent.NavigateToFlightRecorderHelp -> {
-                intentManager.launchUri("https://bitwarden.com/help/flight-recorder".toUri())
+                intentManager.launchUri("https:///help/flight-recorder".toUri())
             }
 
             AboutEvent.NavigateToHelpCenter -> {
-                intentManager.launchUri("https://bitwarden.com/help".toUri())
+                intentManager.launchUri("https:///help".toUri())
             }
 
             AboutEvent.NavigateToPrivacyPolicy -> {
-                intentManager.launchUri("https://bitwarden.com/privacy".toUri())
+                intentManager.launchUri("https:///privacy".toUri())
             }
 
             AboutEvent.NavigateToLearnAboutOrganizations -> {
-                intentManager.launchUri("https://bitwarden.com/help/about-organizations".toUri())
+                intentManager.launchUri("https:///help/about-organizations".toUri())
             }
         }
     }
@@ -162,11 +162,11 @@ private fun AboutScreenContent(
             onViewRecordedLogsClick = onViewRecordedLogsClick,
         )
         UniversalExternalLinkRow(
-            text = stringResource(id = UniversalString.bitwarden_help_center),
+            text = stringResource(id = UniversalString.universalpasswordmanager_help_center),
             onConfirmClick = onHelpCenterClick,
             dialogTitle = stringResource(id = UniversalString.continue_to_help_center),
             dialogMessage = stringResource(
-                id = UniversalString.learn_more_about_how_to_use_bitwarden_on_the_help_center,
+                id = UniversalString.learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center,
             ),
             withDivider = false,
             cardStyle = CardStyle.Top(),
@@ -194,7 +194,7 @@ private fun AboutScreenContent(
             onConfirmClick = onWebVaultClick,
             dialogTitle = stringResource(id = UniversalString.continue_to_web_app),
             dialogMessage = stringResource(
-                id = UniversalString.explore_more_features_of_your_bitwarden_account_on_the_web_app,
+                id = UniversalString.explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app,
             ),
             withDivider = false,
             cardStyle = CardStyle.Middle(),
@@ -206,7 +206,7 @@ private fun AboutScreenContent(
         UniversalExternalLinkRow(
             text = stringResource(id = UniversalString.learn_org),
             onConfirmClick = onLearnAboutOrgsClick,
-            dialogTitle = stringResource(id = UniversalString.continue_to_x, "bitwarden.com"),
+            dialogTitle = stringResource(id = UniversalString.continue_to_x, ""),
             dialogMessage = stringResource(
                 id = UniversalString.learn_about_organizations_description_long,
             ),

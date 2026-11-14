@@ -87,7 +87,7 @@ fun VaultSettingsScreen(
         },
         snackbarHost = {
             UniversalSnackbarHost(
-                bitwardenHostState = snackbarHostState,
+                universalpasswordmanagerHostState = snackbarHostState,
             )
         },
     ) {

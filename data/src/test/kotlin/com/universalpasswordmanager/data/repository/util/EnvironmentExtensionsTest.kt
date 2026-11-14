@@ -26,7 +26,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `baseApiUrl should return default url if base is empty and api is null`() {
         assertEquals(
-            "https://api.bitwarden.com",
+            "https://api.",
             Environment
                 .SelfHosted(DEFAULT_CUSTOM_ENVIRONMENT_URL_DATA.copy(base = "", api = ""))
                 .baseApiUrl,
@@ -54,7 +54,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `baseEventsUrl should return default url if base is empty and events is null`() {
         assertEquals(
-            "https://events.bitwarden.com",
+            "https://events.",
             Environment
                 .SelfHosted(DEFAULT_CUSTOM_ENVIRONMENT_URL_DATA.copy(base = "", events = ""))
                 .baseEventsUrl,
@@ -81,7 +81,7 @@ class EnvironmentExtensionsTest {
 
     @Test
     fun `baseIdentityUrl should return default url if base is empty and identity is null`() {
-        val expectedUrl = "https://identity.bitwarden.com"
+        val expectedUrl = "https://identity."
 
         assertEquals(
             expectedUrl,
@@ -137,7 +137,7 @@ class EnvironmentExtensionsTest {
         val result = Environment
             .SelfHosted(DEFAULT_CUSTOM_ENVIRONMENT_URL_DATA.copy(base = "", webVault = null))
             .baseWebVaultUrlOrDefault
-        assertEquals("https://vault.bitwarden.com", result)
+        assertEquals("https://vault.", result)
     }
 
     @Test
@@ -159,7 +159,7 @@ class EnvironmentExtensionsTest {
         val result = Environment
             .SelfHosted(DEFAULT_CUSTOM_ENVIRONMENT_URL_DATA.copy(base = "", webVault = null))
             .baseWebSendUrl
-        assertEquals("https://send.bitwarden.com/#", result)
+        assertEquals("https://send./#", result)
     }
 
     @Test
@@ -168,11 +168,11 @@ class EnvironmentExtensionsTest {
             .SelfHosted(
                 environmentUrlData = DEFAULT_CUSTOM_ENVIRONMENT_URL_DATA.copy(
                     base = "",
-                    webVault = "https://vault.bitwarden.com",
+                    webVault = "https://vault.",
                 ),
             )
             .baseWebSendUrl
-        assertEquals("https://vault.bitwarden.com/#/send/", result)
+        assertEquals("https://vault./#/send/", result)
     }
 
     @Test
@@ -195,7 +195,7 @@ class EnvironmentExtensionsTest {
 
     @Test
     fun `baseIconUrl should return default url if base is empty and icon is null`() {
-        val expectedUrl = "https://icons.bitwarden.net"
+        val expectedUrl = "https://icons."
 
         assertEquals(
             expectedUrl,
@@ -232,7 +232,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `labelOrBaseUrlHost should correctly convert US environment to the correct label`() {
         assertEquals(
-            "bitwarden.com",
+            "",
             Environment.Prod.Us.labelOrBaseUrlHost,
         )
     }
@@ -240,7 +240,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `labelOrBaseUrlHost should correctly convert EU environment to the correct label`() {
         assertEquals(
-            "bitwarden.eu",
+            "",
             Environment.Prod.Eu.labelOrBaseUrlHost,
         )
     }
@@ -248,7 +248,7 @@ class EnvironmentExtensionsTest {
     @Test
     fun `labelOrBaseUrlHost should correctly convert FedRAMP environment to the correct label`() {
         assertEquals(
-            "bitwarden-gov.com",
+            "",
             Environment.Prod.FedRamp.labelOrBaseUrlHost,
         )
     }
@@ -257,10 +257,10 @@ class EnvironmentExtensionsTest {
     @Test
     fun `labelOrBaseUrlHost should correctly convert self hosted environment to the correct label`() {
         val environment = Environment.SelfHosted(
-            environmentUrlData = EnvironmentUrlDataJson(base = "https://vault.qa.bitwarden.pw"),
+            environmentUrlData = EnvironmentUrlDataJson(base = "https://vault.qa."),
         )
         assertEquals(
-            "vault.qa.bitwarden.pw",
+            "vault.qa.",
             environment.labelOrBaseUrlHost,
         )
     }

@@ -52,7 +52,7 @@ object CredentialProviderModule {
     fun provideCredentialProviderProcessor(
         @ApplicationContext context: Context,
         authRepository: AuthRepository,
-        bitwardenCredentialManager: UniversalCredentialManager,
+        universalpasswordmanagerCredentialManager: UniversalCredentialManager,
         dispatcherManager: DispatcherManager,
         pendingIntentManager: CredentialManagerPendingIntentManager,
         clock: Clock,
@@ -60,7 +60,7 @@ object CredentialProviderModule {
         CredentialProviderProcessorImpl(
             context = context,
             authRepository = authRepository,
-            bitwardenCredentialManager = bitwardenCredentialManager,
+            universalpasswordmanagerCredentialManager = universalpasswordmanagerCredentialManager,
             pendingIntentManager = pendingIntentManager,
             clock = clock,
             dispatcherManager = dispatcherManager,

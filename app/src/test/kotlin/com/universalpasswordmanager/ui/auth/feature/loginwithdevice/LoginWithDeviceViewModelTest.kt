@@ -438,7 +438,7 @@ class LoginWithDeviceViewModelTest : BaseViewModelTest() {
                             ),
                             dialogState = LoginWithDeviceState.DialogState.Error(
                                 title = UniversalString.an_error_has_occurred.asText(),
-                                message = UniversalString.this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server.asText(),
+                                message = UniversalString.this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server.asText(),
                             ),
                             loginData = DEFAULT_LOGIN_DATA,
                         ),
@@ -703,7 +703,7 @@ private val AUTH_REQUEST = AuthRequest(
     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
     responseDate = null,
     requestApproved = true,
-    originUrl = "www.bitwarden.com",
+    originUrl = "www.",
     fingerprint = FINGERPRINT,
 )
 

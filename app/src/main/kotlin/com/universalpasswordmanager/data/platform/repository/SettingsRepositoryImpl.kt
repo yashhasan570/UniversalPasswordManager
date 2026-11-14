@@ -1,7 +1,7 @@
 package com.universalpasswordmanager.data.platform.repository
 
 import android.view.autofill.AutofillManager
-import com.bitwarden.authenticatorbridge.util.generateSecretKey
+import .authenticatorbridge.util.generateSecretKey
 import com.universalpasswordmanager.core.data.manager.BuildInfoManager
 import com.universalpasswordmanager.core.data.manager.dispatcher.DispatcherManager
 import com.universalpasswordmanager.data.manager.flightrecorder.FlightRecorderManager

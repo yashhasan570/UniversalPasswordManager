@@ -429,7 +429,7 @@ class VaultUnlockScreenTest : UniversalComposeTest() {
 
     @Test
     fun `email state change should update logged in as text`() {
-        val newEmail = "david@bitwarden.com"
+        val newEmail = "david@"
         val textBeforeUpdate = "Logged in as ${DEFAULT_STATE.email} on $DEFAULT_ENVIRONMENT_URL."
         val textAfterUpdate = "Logged in as $newEmail on $DEFAULT_ENVIRONMENT_URL."
         composeTestRule.onNodeWithText(textBeforeUpdate).assertExists()
@@ -441,7 +441,7 @@ class VaultUnlockScreenTest : UniversalComposeTest() {
 
     @Test
     fun `environment url state change should update logged in as text`() {
-        val newEnvironmentUrl = "eu.bitwarden.com"
+        val newEnvironmentUrl = "eu."
         val textBeforeUpdate = "Logged in as ${DEFAULT_STATE.email} on $DEFAULT_ENVIRONMENT_URL."
         val textAfterUpdate = "Logged in as ${DEFAULT_STATE.email} on $newEnvironmentUrl."
         composeTestRule.onNodeWithText(textBeforeUpdate).assertExists()
@@ -605,14 +605,14 @@ class VaultUnlockScreenTest : UniversalComposeTest() {
     }
 }
 
-private const val DEFAULT_ENVIRONMENT_URL: String = "vault.bitwarden.com"
+private const val DEFAULT_ENVIRONMENT_URL: String = "vault."
 
 private val ACTIVE_ACCOUNT_SUMMARY = AccountSummary(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     avatarColorHex = "#aa00aa",
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isActive = true,
     isLoggedIn = true,
     isVaultUnlocked = true,
@@ -621,9 +621,9 @@ private val ACTIVE_ACCOUNT_SUMMARY = AccountSummary(
 private val LOCKED_ACCOUNT_SUMMARY = AccountSummary(
     userId = "lockedUserId",
     name = "Locked User",
-    email = "locked@bitwarden.com",
+    email = "locked@",
     avatarColorHex = "#00aaaa",
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isActive = false,
     isLoggedIn = true,
     isVaultUnlocked = false,
@@ -639,7 +639,7 @@ private val DEFAULT_STATE: VaultUnlockState = VaultUnlockState(
     accountSummaries = ACCOUNT_SUMMARIES,
     avatarColorString = "0000FF",
     dialog = null,
-    email = "bit@bitwarden.com",
+    email = "bit@",
     environmentUrl = DEFAULT_ENVIRONMENT_URL,
     hideInput = false,
     initials = "AU",

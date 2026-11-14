@@ -51,7 +51,7 @@ class SdkLoggerFactoryTest {
             .getLogCallback()
             .onLog(
                 level = LogLevel.INFO,
-                target = "bitwarden_core::target",
+                target = "universalpasswordmanager_core::target",
                 message = "mockMessage",
             )
 
@@ -60,7 +60,7 @@ class SdkLoggerFactoryTest {
                 LogEntry(
                     priority = Log.INFO,
                     tag = "UniversalSdkClient",
-                    message = "bitwarden_core::target --mockMessage",
+                    message = "universalpasswordmanager_core::target --mockMessage",
                 ),
             ),
             recordingTree.logEntries,

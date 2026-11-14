@@ -2,7 +2,7 @@ package com.universalpasswordmanager.data.platform.datasource.network.di
 
 import com.universalpasswordmanager.core.data.manager.BuildInfoManager
 import com.universalpasswordmanager.network.UniversalServiceClient
-import com.universalpasswordmanager.network.bitwardenServiceClient
+import com.universalpasswordmanager.network.universalpasswordmanagerServiceClient
 import com.universalpasswordmanager.network.interceptor.BaseUrlsProvider
 import com.universalpasswordmanager.network.model.UniversalServiceClientConfig
 import com.universalpasswordmanager.network.service.ConfigService
@@ -36,26 +36,26 @@ object PlatformNetworkModule {
     @Provides
     @Singleton
     fun providesFillAssistService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): FillAssistService = bitwardenServiceClient.fillAssistService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): FillAssistService = universalpasswordmanagerServiceClient.fillAssistService
 
     @Provides
     @Singleton
     fun providesConfigService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): ConfigService = bitwardenServiceClient.configService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): ConfigService = universalpasswordmanagerServiceClient.configService
 
     @Provides
     @Singleton
     fun providesEventService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): EventService = bitwardenServiceClient.eventService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): EventService = universalpasswordmanagerServiceClient.eventService
 
     @Provides
     @Singleton
     fun providePushService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): PushService = bitwardenServiceClient.pushService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): PushService = universalpasswordmanagerServiceClient.pushService
 
     @Provides
     @Singleton
@@ -89,7 +89,7 @@ object PlatformNetworkModule {
     fun provideUniversalServiceClient(
         serviceClientConfig: UniversalServiceClientConfig,
         json: Json,
-    ): UniversalServiceClient = bitwardenServiceClient(
+    ): UniversalServiceClient = universalpasswordmanagerServiceClient(
         config = serviceClientConfig,
         json = json,
     )

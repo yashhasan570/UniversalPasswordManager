@@ -29,7 +29,7 @@ class CookieInterceptorTest {
     @Test
     fun `intercept should skip cookie handling for config path`() {
         val originalRequest = Request.Builder()
-            .url("https://api.bitwarden.com/api/config")
+            .url("https://api./api/config")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
@@ -45,7 +45,7 @@ class CookieInterceptorTest {
     @Test
     fun `intercept should skip cookie handling for sso-cookie-vendor path`() {
         val originalRequest = Request.Builder()
-            .url("https://api.bitwarden.com/api/sso-cookie-vendor")
+            .url("https://api./api/sso-cookie-vendor")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
@@ -61,43 +61,43 @@ class CookieInterceptorTest {
     @Test
     fun `intercept should throw CookieRedirectException when bootstrap is needed`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns true
+        every { mockCookieProvider.needsBootstrap("vault.") } returns true
         every { mockCookieProvider.errorMessageString } returns "Error"
 
         val exception = assertThrows<CookieRedirectException> {
             interceptor.intercept(chain)
         }
 
-        assertEquals("vault.bitwarden.com", exception.hostname)
-        verify { mockCookieProvider.acquireCookies("vault.bitwarden.com") }
+        assertEquals("vault.", exception.hostname)
+        verify { mockCookieProvider.acquireCookies("vault.") }
         verify(exactly = 0) { mockCookieProvider.getCookies(any()) }
     }
 
     @Test
     fun `intercept should proceed without cookies when no cookies available`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns false
-        every { mockCookieProvider.getCookies("vault.bitwarden.com") } returns emptyList()
+        every { mockCookieProvider.needsBootstrap("vault.") } returns false
+        every { mockCookieProvider.getCookies("vault.") } returns emptyList()
 
         val response = interceptor.intercept(chain)
 
         assertEquals(originalRequest, response.request)
         assertNull(response.request.header("Cookie"))
-        verify(exactly = 1) { mockCookieProvider.getCookies("vault.bitwarden.com") }
+        verify(exactly = 1) { mockCookieProvider.getCookies("vault.") }
     }
 
     @Test
     fun `intercept should attach single cookie when cookies available`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
@@ -105,19 +105,19 @@ class CookieInterceptorTest {
             NetworkCookie(name = "awselb", value = "session123"),
         )
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns false
-        every { mockCookieProvider.getCookies("vault.bitwarden.com") } returns cookies
+        every { mockCookieProvider.needsBootstrap("vault.") } returns false
+        every { mockCookieProvider.getCookies("vault.") } returns cookies
 
         val response = interceptor.intercept(chain)
 
         assertEquals("awselb=session123", response.request.header("Cookie"))
-        verify(exactly = 1) { mockCookieProvider.getCookies("vault.bitwarden.com") }
+        verify(exactly = 1) { mockCookieProvider.getCookies("vault.") }
     }
 
     @Test
     fun `intercept should attach multiple cookies with correct format`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
@@ -127,8 +127,8 @@ class CookieInterceptorTest {
             NetworkCookie(name = "custom", value = "value789"),
         )
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns false
-        every { mockCookieProvider.getCookies("vault.bitwarden.com") } returns cookies
+        every { mockCookieProvider.needsBootstrap("vault.") } returns false
+        every { mockCookieProvider.getCookies("vault.") } returns cookies
 
         val response = interceptor.intercept(chain)
 
@@ -136,13 +136,13 @@ class CookieInterceptorTest {
             "awselb=session123; awselbcors=cors456; custom=value789",
             response.request.header("Cookie"),
         )
-        verify(exactly = 1) { mockCookieProvider.getCookies("vault.bitwarden.com") }
+        verify(exactly = 1) { mockCookieProvider.getCookies("vault.") }
     }
 
     @Test
     fun `intercept should throw CookieRedirectException on 302 response`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
 
         val redirectResponse = Response.Builder()
@@ -158,27 +158,27 @@ class CookieInterceptorTest {
             responseProvider = { redirectResponse },
         )
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns false
-        every { mockCookieProvider.getCookies("vault.bitwarden.com") } returns emptyList()
+        every { mockCookieProvider.needsBootstrap("vault.") } returns false
+        every { mockCookieProvider.getCookies("vault.") } returns emptyList()
         every { mockCookieProvider.errorMessageString } returns "Error"
 
         val exception = assertThrows<CookieRedirectException> {
             interceptor.intercept(chain)
         }
 
-        assertEquals("vault.bitwarden.com", exception.hostname)
-        verify { mockCookieProvider.acquireCookies("vault.bitwarden.com") }
+        assertEquals("vault.", exception.hostname)
+        verify { mockCookieProvider.acquireCookies("vault.") }
     }
 
     @Test
     fun `intercept should not throw exception on successful 200 response`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns false
-        every { mockCookieProvider.getCookies("vault.bitwarden.com") } returns emptyList()
+        every { mockCookieProvider.needsBootstrap("vault.") } returns false
+        every { mockCookieProvider.getCookies("vault.") } returns emptyList()
 
         val response = interceptor.intercept(chain)
 
@@ -188,7 +188,7 @@ class CookieInterceptorTest {
     @Test
     fun `intercept should skip cookie handling for cloud config path`() {
         val originalRequest = Request.Builder()
-            .url("https://api.bitwarden.com/config")
+            .url("https://api./config")
             .build()
         val chain = FakeInterceptorChain(originalRequest)
 
@@ -204,7 +204,7 @@ class CookieInterceptorTest {
     @Test
     fun `intercept should throw CookieRedirectException on 302 when cookies were attached`() {
         val originalRequest = Request.Builder()
-            .url("https://vault.bitwarden.com/api/accounts/profile")
+            .url("https://vault./api/accounts/profile")
             .build()
 
         val cookies = listOf(
@@ -224,15 +224,15 @@ class CookieInterceptorTest {
             responseProvider = { redirectResponse },
         )
 
-        every { mockCookieProvider.needsBootstrap("vault.bitwarden.com") } returns false
-        every { mockCookieProvider.getCookies("vault.bitwarden.com") } returns cookies
+        every { mockCookieProvider.needsBootstrap("vault.") } returns false
+        every { mockCookieProvider.getCookies("vault.") } returns cookies
         every { mockCookieProvider.errorMessageString } returns "Error"
 
         val exception = assertThrows<CookieRedirectException> {
             interceptor.intercept(chain)
         }
 
-        assertEquals("vault.bitwarden.com", exception.hostname)
-        verify { mockCookieProvider.acquireCookies("vault.bitwarden.com") }
+        assertEquals("vault.", exception.hostname)
+        verify { mockCookieProvider.acquireCookies("vault.") }
     }
 }

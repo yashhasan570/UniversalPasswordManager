@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="known_bitwarden_certs">
+    <string-array name="known_universalpasswordmanager_certs">
         <!-- This is the SHA-256 digest for Google Play signing key of the Universal Password Manager App release
         variant: -->
         <item>24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a</item>

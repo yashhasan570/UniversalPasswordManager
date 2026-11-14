@@ -144,7 +144,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
     private val clipboardManager: UniversalClipboardManager,
     private val policyManager: PolicyManager,
     private val vaultRepository: VaultRepository,
-    private val bitwardenCredentialManager: UniversalCredentialManager,
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager,
     private val settingsRepository: SettingsRepository,
     private val specialCircumstanceManager: SpecialCircumstanceManager,
     private val resourceManager: ResourceManager,
@@ -177,7 +177,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
                 specialCircumstance?.toCreateCredentialRequestOrNull()
             val fido2AttestationOptions = providerCreateCredentialRequest?.requestJson
                 ?.let { request ->
-                    bitwardenCredentialManager.getPasskeyAttestationOptionsOrNull(request)
+                    universalpasswordmanagerCredentialManager.getPasskeyAttestationOptionsOrNull(request)
                 }
 
             // Exit on save if handling an autofill, Fido2 Attestation, or TOTP link
@@ -562,14 +562,14 @@ class VaultAddEditViewModel @AssistedInject constructor(
             return
         }
 
-        if (bitwardenCredentialManager.isUserVerified) {
+        if (universalpasswordmanagerCredentialManager.isUserVerified) {
             registerFido2CredentialToCipher(callingAppInfo, request, cipherView)
             return
         }
 
         when (
             val requirement =
-                bitwardenCredentialManager.getUserVerificationRequirement(request)
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(request)
         ) {
             UserVerificationRequirement.DISCOURAGED -> {
                 registerFido2CredentialToCipher(callingAppInfo, request, cipherView)
@@ -600,7 +600,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
                     return@launch
                 }
             val result: Fido2RegisterCredentialResult =
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = userId,
                     callingAppInfo = callingAppInfo,
                     createPublicKeyCredentialRequest = request,
@@ -781,14 +781,14 @@ class VaultAddEditViewModel @AssistedInject constructor(
     }
 
     private fun handleUserVerificationLockOut() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         showCredentialErrorDialog(
             UniversalString.passkey_operation_failed_because_user_could_not_be_verified.asText(),
         )
     }
 
     private fun handleUserVerificationSuccess() {
-        bitwardenCredentialManager.isUserVerified = true
+        universalpasswordmanagerCredentialManager.isUserVerified = true
         getRequestAndRegisterFido2Credential()
     }
 
@@ -815,7 +815,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
             )
 
     private fun handleUserVerificationFail() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         showCredentialErrorDialog(
             UniversalString.passkey_operation_failed_because_user_could_not_be_verified.asText(),
         )
@@ -824,7 +824,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
     private fun handleCredentialErrorDialogDismissed(
         action: VaultAddEditAction.Common.CredentialErrorDialogDismissed,
     ) {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         clearDialogState()
         sendEvent(
             VaultAddEditEvent.CompleteCredentialRegistration(
@@ -834,7 +834,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
     }
 
     private fun handleUserVerificationCancelled() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
         clearDialogState()
         sendEvent(
             VaultAddEditEvent.CompleteCredentialRegistration(
@@ -844,7 +844,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
     }
 
     private fun handleUserVerificationNotSupported() {
-        bitwardenCredentialManager.isUserVerified = false
+        universalpasswordmanagerCredentialManager.isUserVerified = false
 
         val activeAccount = authRepository
             .userStateFlow
@@ -2447,7 +2447,7 @@ class VaultAddEditViewModel @AssistedInject constructor(
                 // fresh user verification. Without this reset, the stale isUserVerified = true
                 // from this registration would cause subsequent login attempts to skip
                 // biometric verification.
-                bitwardenCredentialManager.isUserVerified = false
+                universalpasswordmanagerCredentialManager.isUserVerified = false
                 // Use toast here because we are closing the activity.
                 toastManager.show(UniversalString.item_updated)
                 sendEvent(
@@ -2512,8 +2512,8 @@ class VaultAddEditViewModel @AssistedInject constructor(
     }
 
     private fun handleInvalidAuthentication(errorDialogState: VaultAddEditState.DialogState) {
-        bitwardenCredentialManager.authenticationAttempts += 1
-        if (bitwardenCredentialManager.hasAuthenticationAttemptsRemaining()) {
+        universalpasswordmanagerCredentialManager.authenticationAttempts += 1
+        if (universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining()) {
             mutableStateFlow.update {
                 it.copy(dialog = errorDialogState)
             }
@@ -2526,8 +2526,8 @@ class VaultAddEditViewModel @AssistedInject constructor(
     }
 
     private fun handleValidAuthentication() {
-        bitwardenCredentialManager.isUserVerified = true
-        bitwardenCredentialManager.authenticationAttempts = 0
+        universalpasswordmanagerCredentialManager.isUserVerified = true
+        universalpasswordmanagerCredentialManager.authenticationAttempts = 0
 
         getRequestAndRegisterFido2Credential()
     }

@@ -45,7 +45,7 @@ class AccountSummaryExtensionsTest {
             "TE",
             mockk<AccountSummary> {
                 every { name } returns null
-                every { email } returns "test@bitwarden.com"
+                every { email } returns "test@"
             }
                 .initials,
         )

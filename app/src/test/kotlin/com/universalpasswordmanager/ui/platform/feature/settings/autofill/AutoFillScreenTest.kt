@@ -109,7 +109,7 @@ class AutoFillScreenTest : UniversalComposeTest() {
         mutableEventFlow.tryEmit(AutoFillEvent.NavigateToAutofillHelp)
         verify(exactly = 1) {
             intentManager.launchUri(
-                uri = "https://bitwarden.com/help/auto-fill-android-troubleshooting/".toUri(),
+                uri = "https:///help/auto-fill-android-troubleshooting/".toUri(),
             )
         }
     }
@@ -864,7 +864,7 @@ class AutoFillScreenTest : UniversalComposeTest() {
     fun `on NavigateToLearnMore should call launchUri`() {
         mutableEventFlow.tryEmit(AutoFillEvent.NavigateToLearnMore)
         verify(exactly = 1) {
-            intentManager.launchUri("https://bitwarden.com/help/uri-match-detection/".toUri())
+            intentManager.launchUri("https:///help/uri-match-detection/".toUri())
         }
     }
 
@@ -910,7 +910,7 @@ class AutoFillScreenTest : UniversalComposeTest() {
     fun `on NavigateToFillAssistHelp should call launchUri`() {
         mutableEventFlow.tryEmit(AutoFillEvent.NavigateToFillAssistHelp)
         verify(exactly = 1) {
-            intentManager.launchUri("https://bitwarden.com/help/fill-assist/".toUri())
+            intentManager.launchUri("https:///help/fill-assist/".toUri())
         }
     }
 }

@@ -159,7 +159,7 @@ fun ViewSendScreen(
                 )
             }
         },
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
     ) {
         ViewSendScreenContent(
             state = state,

@@ -263,7 +263,7 @@ class RemovePasswordViewModelTest : BaseViewModelTest() {
 }
 
 private const val ORGANIZATION_NAME: String = "My org"
-private const val KEY_CONNECTOR_URL: String = "bitwarden.com"
+private const val KEY_CONNECTOR_URL: String = ""
 private val DEFAULT_STATE = RemovePasswordState(
     input = "",
     dialogState = null,
@@ -281,7 +281,7 @@ private const val USER_ID: String = "user_id"
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = USER_ID,
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     environment = Environment.Prod.Us,
     avatarColorHex = "#aa00aa",
     isPremium = true,

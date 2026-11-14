@@ -33,7 +33,7 @@ fun ExportItemsScaffold(
     UniversalScaffold(
         topBar = {
             UniversalTopAppBar(
-                title = stringResource(UniversalString.import_from_bitwarden),
+                title = stringResource(UniversalString.import_from_universalpasswordmanager),
                 onNavigationIconClick = onNavigationIconClick,
                 navigationIconContentDescription = navigationIconContentDescription,
                 navigationIcon = navIcon,

@@ -15,7 +15,7 @@ import java.util.Locale
  * - "First Last" -> "FL"
  * - "First Second Last" -> "FS"
  * - "First" -> "FI"
- * - name is `null`, email is "test@bitwarden.com" -> "TE"
+ * - name is `null`, email is "test@" -> "TE"
  */
 val AccountSummary.initials: String
     get() {

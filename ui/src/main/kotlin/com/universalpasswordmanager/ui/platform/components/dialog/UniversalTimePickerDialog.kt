@@ -90,13 +90,13 @@ fun UniversalTimePickerDialog(
         if (showTimeInput) {
             TimeInput(
                 state = timePickerState,
-                colors = bitwardenTimePickerColors(),
+                colors = universalpasswordmanagerTimePickerColors(),
                 modifier = modifier,
             )
         } else {
             TimePicker(
                 state = timePickerState,
-                colors = bitwardenTimePickerColors(),
+                colors = universalpasswordmanagerTimePickerColors(),
                 modifier = modifier,
             )
         }
@@ -105,7 +105,7 @@ fun UniversalTimePickerDialog(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun bitwardenTimePickerColors(): TimePickerColors = TimePickerColors(
+private fun universalpasswordmanagerTimePickerColors(): TimePickerColors = TimePickerColors(
     clockDialColor = UniversalTheme.colorScheme.filledButton.backgroundReversed,
     selectorColor = UniversalTheme.colorScheme.filledButton.background,
     containerColor = UniversalTheme.colorScheme.filledButton.foreground,

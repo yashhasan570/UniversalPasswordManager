@@ -265,7 +265,7 @@ fun VaultItemScreen(
             }
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         VaultItemContent(

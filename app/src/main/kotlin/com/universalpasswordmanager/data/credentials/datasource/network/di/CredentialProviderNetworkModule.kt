@@ -18,7 +18,7 @@ object CredentialProviderNetworkModule {
     @Provides
     @Singleton
     fun provideDigitalAssetLinkService(
-        bitwardenServiceClient: UniversalServiceClient,
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
     ): DigitalAssetLinkService =
-        bitwardenServiceClient.digitalAssetLinkService
+        universalpasswordmanagerServiceClient.digitalAssetLinkService
 }

@@ -45,7 +45,7 @@ internal class ServiceTypeExtensionsTest {
             domainName = "test.com",
             selfHostServerUrl = "http://test.com",
         )
-        val website = "bitwarden.com"
+        val website = ""
 
         assertEquals(
             GeneratorRequestResult.Success(
@@ -69,7 +69,7 @@ internal class ServiceTypeExtensionsTest {
             apiAccessToken = "testToken",
             domainName = "test.com",
         )
-        val website = "bitwarden.com"
+        val website = ""
         val request = addyIoServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(
@@ -101,7 +101,7 @@ internal class ServiceTypeExtensionsTest {
     @Test
     fun `toUsernameGeneratorRequest for DuckDuckGo returns correct request`() {
         val duckDuckGoServiceType = ServiceType.DuckDuckGo(apiKey = "testKey")
-        val website = "bitwarden.com"
+        val website = ""
         val request = duckDuckGoServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(
@@ -129,7 +129,7 @@ internal class ServiceTypeExtensionsTest {
     @Test
     fun `toUsernameGeneratorRequest for FirefoxRelay returns correct request`() {
         val firefoxRelayServiceType = ServiceType.FirefoxRelay(apiAccessToken = "testToken")
-        val website = "bitwarden.com"
+        val website = ""
         val request = firefoxRelayServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(
@@ -159,14 +159,14 @@ internal class ServiceTypeExtensionsTest {
         val fastMailServiceType = ServiceType.FastMail(
             apiKey = "testKey",
         )
-        val website = "bitwarden.com"
+        val website = ""
         val request = fastMailServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(
             GeneratorRequestResult.Success(
                 result = UsernameGeneratorRequest.Forwarded(
                     service = ForwarderServiceType.Fastmail(apiToken = "testKey"),
-                    website = "bitwarden.com",
+                    website = "",
                 ),
             ),
             request,
@@ -207,7 +207,7 @@ internal class ServiceTypeExtensionsTest {
             apiKey = "apiKey",
             domainName = "domainName",
         )
-        val website = "bitwarden.com"
+        val website = ""
         val request = forwardEmailServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(
@@ -239,7 +239,7 @@ internal class ServiceTypeExtensionsTest {
     @Test
     fun `toUsernameGeneratorRequest for SimpleLogin returns correct request when selfHostServerUrl is blank`() {
         val simpleLoginServiceType = ServiceType.SimpleLogin(apiKey = "testKey")
-        val website = "bitwarden.com"
+        val website = ""
         val request = simpleLoginServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(
@@ -263,7 +263,7 @@ internal class ServiceTypeExtensionsTest {
             apiKey = "testKey",
             selfHostServerUrl = "https://simplelogin.local",
         )
-        val website = "bitwarden.com"
+        val website = ""
         val request = simpleLoginServiceType.toUsernameGeneratorRequest(website = website)
 
         assertEquals(

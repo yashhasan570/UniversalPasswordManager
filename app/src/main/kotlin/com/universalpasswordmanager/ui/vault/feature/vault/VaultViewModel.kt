@@ -1143,7 +1143,7 @@ class VaultViewModel @Inject constructor(
                 dialog = VaultState.DialogState.CipherDecryptionError(
                     title = UniversalString.decryption_error.asText(),
                     message = UniversalString
-                        .bitwarden_could_not_decrypt_this_vault_item_description_long.asText(),
+                        .universalpasswordmanager_could_not_decrypt_this_vault_item_description_long.asText(),
                     selectedCipherId = itemId,
                 ),
             )

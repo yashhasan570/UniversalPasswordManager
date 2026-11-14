@@ -8,7 +8,7 @@ import androidx.compose.ui.unit.dp
 /**
  * The default [UniversalShapes] for the app.
  */
-val bitwardenShapes: UniversalShapes = UniversalShapes(
+val universalpasswordmanagerShapes: UniversalShapes = UniversalShapes(
     actionCard = RoundedCornerShape(size = 12.dp),
     badge = RoundedCornerShape(size = 12.dp),
     bottomSheet = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp),

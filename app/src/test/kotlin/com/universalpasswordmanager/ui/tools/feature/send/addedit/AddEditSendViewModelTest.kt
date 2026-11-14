@@ -1031,18 +1031,18 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
         val viewState = emailViewState(emails = listOf("recipient@example.com"))
         val viewModel = createViewModelWithDomainPolicy(
             viewState = viewState,
-            allowedDomains = "bitwarden.com",
+            allowedDomains = "",
         )
 
         viewModel.trySendAction(AddEditSendAction.SaveClick)
 
         assertEquals(
-            domainPolicyState(viewState = viewState, allowedDomains = "bitwarden.com").copy(
+            domainPolicyState(viewState = viewState, allowedDomains = "").copy(
                 dialogState = AddEditSendState.DialogState.Error(
                     title = UniversalString.invalid_email_addresses.asText(),
                     message = UniversalString
                         .only_include_the_following_domains_x_please_review_and_try_again
-                        .asText("bitwarden.com"),
+                        .asText(""),
                 ),
             ),
             viewModel.stateFlow.value,
@@ -1052,7 +1052,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
     @Test
     fun `SaveClick outside the allowed domains should list every allowed domain`() {
         val viewState = emailViewState(emails = listOf("recipient@example.com"))
-        val domains = "bitwarden.com,bitwarden.eu"
+        val domains = ","
         val viewModel = createViewModelWithDomainPolicy(
             viewState = viewState,
             allowedDomains = domains,
@@ -1066,7 +1066,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
                     title = UniversalString.invalid_email_addresses.asText(),
                     message = UniversalString
                         .only_include_the_following_domains_x_please_review_and_try_again
-                        .asText("bitwarden.com, bitwarden.eu"),
+                        .asText(", "),
                 ),
             ),
             viewModel.stateFlow.value,
@@ -1076,7 +1076,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
     @Test
     fun `SaveClick outside the allowed domains should normalize the policy value`() {
         val viewState = emailViewState(emails = listOf("recipient@example.com"))
-        val domains = " bitwarden.com , , bitwarden.eu "
+        val domains = "  , ,  "
         val viewModel = createViewModelWithDomainPolicy(
             viewState = viewState,
             allowedDomains = domains,
@@ -1091,7 +1091,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
                     title = UniversalString.invalid_email_addresses.asText(),
                     message = UniversalString
                         .only_include_the_following_domains_x_please_review_and_try_again
-                        .asText("bitwarden.com, bitwarden.eu"),
+                        .asText(", "),
                 ),
             ),
             viewModel.stateFlow.value,
@@ -1101,12 +1101,12 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
     @Test
     fun `SaveClick with every recipient inside the allowed domains should save`() {
         val viewState = emailViewState(
-            emails = listOf("one@bitwarden.com", "two@BITWARDEN.EU"),
+            emails = listOf("one@", "two@UNIVERSAL PASSWORD MANAGER.EU"),
         )
         val mockSendView = stubCreateSend(viewState = viewState)
         val viewModel = createViewModelWithDomainPolicy(
             viewState = viewState,
-            allowedDomains = "bitwarden.com, bitwarden.eu",
+            allowedDomains = ", ",
         )
 
         viewModel.trySendAction(AddEditSendAction.SaveClick)
@@ -1123,7 +1123,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
         val mockSendView = stubCreateSend(viewState = viewState)
         val viewModel = createViewModelWithDomainPolicy(
             viewState = viewState,
-            allowedDomains = "bitwarden.com",
+            allowedDomains = "",
             isSendControlsEnabled = false,
         )
 
@@ -1158,7 +1158,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
         val mockSendView = stubCreateSend(viewState = viewState)
         val viewModel = createViewModelWithDomainPolicy(
             viewState = viewState,
-            allowedDomains = "bitwarden.com",
+            allowedDomains = "",
         )
 
         viewModel.trySendAction(AddEditSendAction.SaveClick)
@@ -2166,7 +2166,7 @@ class AddEditSendViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(AddEditSendAction.UpgradeToPremiumClick)
                 assertEquals(
                     AddEditSendEvent.NavigateToPremium(
-                        uri = "https://vault.bitwarden.com/#/settings/subscription/premium?callToAction=upgradeToPremium",
+                        uri = "https://vault./#/settings/subscription/premium?callToAction=upgradeToPremium",
                     ),
                     awaitItem(),
                 )
@@ -2261,7 +2261,7 @@ private val DEFAULT_VIEW_STATE = AddEditSendState.ViewState.Content(
     selectedType = DEFAULT_SELECTED_TYPE_STATE,
 )
 
-private const val DEFAULT_ENVIRONMENT_URL = "https://send.bitwarden.com/#"
+private const val DEFAULT_ENVIRONMENT_URL = "https://send./#"
 
 private val DEFAULT_STATE = AddEditSendState(
     addEditSendType = AddEditSendType.AddItem,
@@ -2385,7 +2385,7 @@ private val DEFAULT_EFFECTIVE_SEND_POLICY = EffectiveSendPolicy(
 private val DEFAULT_ACCOUNT = UserState.Account(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     environment = Environment.Prod.Us,
     avatarColorHex = "#aa00aa",
     isPremium = true,

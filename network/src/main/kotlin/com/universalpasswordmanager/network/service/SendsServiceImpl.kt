@@ -160,8 +160,8 @@ internal class SendsServiceImpl(
             .toResult()
             .map { GetSendResponse.Success(send = it) }
             .recoverCatching { throwable ->
-                val bitwardenError = throwable.toUniversalError()
-                if (bitwardenError.isErrorCode(code = NetworkErrorCode.NOT_FOUND)) {
+                val universalpasswordmanagerError = throwable.toUniversalError()
+                if (universalpasswordmanagerError.isErrorCode(code = NetworkErrorCode.NOT_FOUND)) {
                     GetSendResponse.NotFound(throwable = throwable)
                 } else {
                     throw throwable

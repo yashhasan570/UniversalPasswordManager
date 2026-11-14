@@ -1165,7 +1165,7 @@ private val MOCK_USER_STATE = UserStateJson(
         "mockId-1" to AccountJson(
             profile = AccountJson.Profile(
                 userId = "mockId-1",
-                email = "test@bitwarden.com",
+                email = "test@",
                 isEmailVerified = true,
                 name = "Universal Tester",
                 stamp = null,

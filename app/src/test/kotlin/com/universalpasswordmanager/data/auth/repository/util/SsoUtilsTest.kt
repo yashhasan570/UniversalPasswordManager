@@ -13,15 +13,15 @@ class SsoUtilsTest : BaseRobolectricTest() {
 
     @Test
     fun `generateUriForSso should generate the correct URI`() {
-        val identityBaseUrl = "https://identity.bitwarden.com"
-        val redirectUrl = "https://bitwarden.com/sso-callback"
+        val identityBaseUrl = "https://identity."
+        val redirectUrl = "https:///sso-callback"
         val organizationIdentifier = "Test Organization"
         val token = "Test Token"
         val state = "test_state"
         val codeVerifier = "test_code_verifier"
-        val expectedUrl = "https://identity.bitwarden.com/connect/authorize" +
+        val expectedUrl = "https://identity./connect/authorize" +
             "?client_id=mobile" +
-            "&redirect_uri=https%3A%2F%2Fbitwarden.com%2Fsso-callback" +
+            "&redirect_uri=https%3A%2F%2F%2Fsso-callback" +
             "&response_type=code" +
             "&scope=api%20offline_access" +
             "&state=test_state" +
@@ -70,7 +70,7 @@ class SsoUtilsTest : BaseRobolectricTest() {
             every { data?.getQueryParameter("code") } returns null
             every { action } returns Intent.ACTION_VIEW
             every { data?.host } returns "sso-callback"
-            every { data?.scheme } returns "bitwarden"
+            every { data?.scheme } returns "universalpasswordmanager"
         }
         val result = intent.getSsoCallbackResult()
         assertEquals(SsoCallbackResult.MissingCode, result)
@@ -84,7 +84,7 @@ class SsoUtilsTest : BaseRobolectricTest() {
             every { data?.getQueryParameter("state") } returns "myState"
             every { action } returns Intent.ACTION_VIEW
             every { data?.host } returns "sso-callback"
-            every { data?.scheme } returns "bitwarden"
+            every { data?.scheme } returns "universalpasswordmanager"
         }
         val result = intent.getSsoCallbackResult()
         assertEquals(
@@ -100,7 +100,7 @@ class SsoUtilsTest : BaseRobolectricTest() {
             every { data?.getQueryParameter("code") } returns null
             every { action } returns Intent.ACTION_VIEW
             every { data?.scheme } returns "https"
-            every { data?.host } returns "bitwarden.eu"
+            every { data?.host } returns ""
             every { data?.path } returns "/sso-callback"
         }
         val result = intent.getSsoCallbackResult()
@@ -115,7 +115,7 @@ class SsoUtilsTest : BaseRobolectricTest() {
             every { data?.getQueryParameter("state") } returns "myState"
             every { action } returns Intent.ACTION_VIEW
             every { data?.scheme } returns "https"
-            every { data?.host } returns "bitwarden.com"
+            every { data?.host } returns ""
             every { data?.path } returns "/sso-callback"
         }
         val result = intent.getSsoCallbackResult()

@@ -24,7 +24,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenTextButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerTextButtonColors
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalButtonData
 import com.universalpasswordmanager.ui.platform.components.util.throttledClick
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
@@ -104,7 +104,7 @@ fun UniversalTextButton(
             start = 12.dp,
             end = if (icon == null) 12.dp else 16.dp,
         ),
-        colors = bitwardenTextButtonColors(contentColor = contentColor),
+        colors = universalpasswordmanagerTextButtonColors(contentColor = contentColor),
         border = BorderStroke(width = 2.dp, color = contentColor.copy(alpha = colorAlpha)),
         interactionSource = interactionSource,
     ) {

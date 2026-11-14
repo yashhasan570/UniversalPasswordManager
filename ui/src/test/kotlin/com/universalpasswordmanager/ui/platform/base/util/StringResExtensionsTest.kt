@@ -66,7 +66,7 @@ class StringResExtensionsTest : BaseComposeTest() {
                 text =
                     R.string.test_for_string_with_annotation_and_arg_annotation
                         .toAnnotatedString(
-                            args = arrayOf("vault.bitwarden.com", "i should not exist"),
+                            args = arrayOf("vault.", "i should not exist"),
                         ),
             )
         }
@@ -74,7 +74,7 @@ class StringResExtensionsTest : BaseComposeTest() {
         composeTestRule
             .onNodeWithText(
                 "On your computer, open a new browser " +
-                    "tab and go to vault.bitwarden.com",
+                    "tab and go to vault.",
             )
             .assertIsDisplayed()
 

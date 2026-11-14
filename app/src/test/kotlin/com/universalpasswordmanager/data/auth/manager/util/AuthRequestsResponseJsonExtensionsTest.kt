@@ -30,7 +30,7 @@ class AuthRequestsResponseJsonExtensionsTest {
                 creationDate = Instant.parse("2024-09-13T00:00:00Z"),
                 responseDate = responseDate,
                 requestApproved = false,
-                originUrl = "www.bitwarden.com",
+                originUrl = "www.",
                 fingerprint = fingerprint,
             ),
             result,
@@ -49,5 +49,5 @@ private val AUTH_REQUEST_RESPONSE_JSON: AuthRequestsResponseJson.AuthRequest =
         creationDate = Instant.parse("2024-09-13T00:00:00Z"),
         responseDate = Instant.parse("2024-09-13T00:05:00Z"),
         requestApproved = true,
-        originUrl = "www.bitwarden.com",
+        originUrl = "www.",
     )

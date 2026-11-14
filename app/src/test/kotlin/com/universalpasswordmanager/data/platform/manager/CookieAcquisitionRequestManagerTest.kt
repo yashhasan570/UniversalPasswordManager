@@ -20,7 +20,7 @@ class CookieAcquisitionRequestManagerTest {
 
     @Test
     fun `setPendingCookieAcquisition emits new value to flow`() = runTest {
-        val pending = CookieAcquisitionRequest(hostname = "vault.bitwarden.com")
+        val pending = CookieAcquisitionRequest(hostname = "vault.")
 
         manager.cookieAcquisitionRequestFlow.test {
             assertNull(awaitItem())
@@ -32,7 +32,7 @@ class CookieAcquisitionRequestManagerTest {
 
     @Test
     fun `setPendingCookieAcquisition can clear pending state`() = runTest {
-        val pending = CookieAcquisitionRequest(hostname = "vault.bitwarden.com")
+        val pending = CookieAcquisitionRequest(hostname = "vault.")
 
         manager.cookieAcquisitionRequestFlow.test {
             assertNull(awaitItem())
@@ -47,8 +47,8 @@ class CookieAcquisitionRequestManagerTest {
 
     @Test
     fun `setPendingCookieAcquisition replaces existing value`() = runTest {
-        val pending1 = CookieAcquisitionRequest(hostname = "vault1.bitwarden.com")
-        val pending2 = CookieAcquisitionRequest(hostname = "vault2.bitwarden.com")
+        val pending1 = CookieAcquisitionRequest(hostname = "vault1.")
+        val pending2 = CookieAcquisitionRequest(hostname = "vault2.")
 
         manager.cookieAcquisitionRequestFlow.test {
             assertNull(awaitItem())

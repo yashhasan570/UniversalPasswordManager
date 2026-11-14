@@ -121,7 +121,7 @@ fun SendScreen(
             }
 
             is SendEvent.NavigateToAboutSend -> {
-                intentManager.launchUri("https://bitwarden.com/products/send".toUri())
+                intentManager.launchUri("https:///products/send".toUri())
             }
 
             is SendEvent.ShowShareSheet -> intentManager.shareText(event.url)
@@ -193,7 +193,7 @@ fun SendScreen(
             }
         },
         pullToRefreshState = pullToRefreshState,
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
     ) {
         val contentModifier = Modifier.fillMaxSize()
         val upgradedToPremiumCardData = UpgradedToPremiumCardData(

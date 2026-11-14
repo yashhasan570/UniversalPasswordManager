@@ -24,21 +24,21 @@ private fun Environment.authTabData(
 ): AuthTabData = when (this) {
     is Environment.Prod.Us -> {
         AuthTabData.HttpsScheme(
-            host = "bitwarden.com",
+            host = "",
             path = "$kind-callback",
         )
     }
 
     is Environment.Prod.Eu -> {
         AuthTabData.HttpsScheme(
-            host = "bitwarden.eu",
+            host = "",
             path = "$kind-callback",
         )
     }
 
     is Environment.Prod.FedRamp -> {
         AuthTabData.HttpsScheme(
-            host = "bitwarden-gov.com",
+            host = "",
             path = "$kind-callback",
         )
     }
@@ -46,12 +46,12 @@ private fun Environment.authTabData(
     is Environment.SelfHosted -> {
         if (this.isInternal) {
             AuthTabData.HttpsScheme(
-                host = "bitwarden.pw",
+                host = "",
                 path = "$kind-callback",
             )
         } else {
             AuthTabData.CustomScheme(
-                callbackUrl = "bitwarden://$kind-callback",
+                callbackUrl = "$kind-callback",
             )
         }
     }
@@ -63,5 +63,5 @@ private fun Environment.authTabData(
 val Environment.appLinksScheme: String
     get() = when (this) {
         is Environment.Prod -> "https"
-        is Environment.SelfHosted -> if (this.isInternal) "https" else "bitwarden"
+        is Environment.SelfHosted -> if (this.isInternal) "https" else "universalpasswordmanager"
     }

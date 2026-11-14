@@ -27,7 +27,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * is declared so that the matching [FontWeight] renders the real weight from the font's weight
  * axis instead of a synthesized one.
  */
-val bitwardenFontFamily: FontFamily = FontFamily(
+val universalpasswordmanagerFontFamily: FontFamily = FontFamily(
     interVariableFont(weight = FontWeight.Normal),
     interVariableFont(weight = FontWeight.Medium),
     interVariableFont(weight = FontWeight.SemiBold),
@@ -37,11 +37,11 @@ val bitwardenFontFamily: FontFamily = FontFamily(
 /**
  * The default [UniversalTypography] for the app.
  */
-val bitwardenTypography: UniversalTypography = UniversalTypography(
+val universalpasswordmanagerTypography: UniversalTypography = UniversalTypography(
     displayLarge = TextStyle(
         fontSize = 56.sp,
         lineHeight = 64.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -53,7 +53,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     displayMedium = TextStyle(
         fontSize = 44.sp,
         lineHeight = 52.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -65,7 +65,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     displaySmall = TextStyle(
         fontSize = 36.sp,
         lineHeight = 44.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -77,7 +77,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     headlineLarge = TextStyle(
         fontSize = 32.sp,
         lineHeight = 40.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -89,7 +89,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     headlineMedium = TextStyle(
         fontSize = 28.sp,
         lineHeight = 36.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -101,7 +101,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     headlineSmall = TextStyle(
         fontSize = 18.sp,
         lineHeight = 22.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -113,7 +113,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     titleExtraLarge = TextStyle(
         fontSize = 24.sp,
         lineHeight = 28.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -125,7 +125,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     titleLarge = TextStyle(
         fontSize = 19.sp,
         lineHeight = 28.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -137,7 +137,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     titleMedium = TextStyle(
         fontSize = 16.sp,
         lineHeight = 20.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -149,7 +149,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     titleSmall = TextStyle(
         fontSize = 14.sp,
         lineHeight = 18.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -161,7 +161,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     bodyLarge = TextStyle(
         fontSize = 15.sp,
         lineHeight = 20.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Normal,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -173,7 +173,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     bodyLargeEmphasis = TextStyle(
         fontSize = 15.sp,
         lineHeight = 20.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Bold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -185,7 +185,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     bodyMedium = TextStyle(
         fontSize = 13.sp,
         lineHeight = 18.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Normal,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -197,7 +197,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     bodyMediumEmphasis = TextStyle(
         fontSize = 13.sp,
         lineHeight = 18.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Bold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -209,7 +209,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     bodySmall = TextStyle(
         fontSize = 12.sp,
         lineHeight = 16.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Normal,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -221,7 +221,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     labelLarge = TextStyle(
         fontSize = 14.sp,
         lineHeight = 20.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -233,7 +233,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     labelLargeEmphasis = TextStyle(
         fontSize = 14.sp,
         lineHeight = 20.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Bold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -245,7 +245,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     labelLargeRegular = TextStyle(
         fontSize = 14.sp,
         lineHeight = 20.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Normal,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -257,7 +257,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     labelMedium = TextStyle(
         fontSize = 12.sp,
         lineHeight = 16.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.SemiBold,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -269,7 +269,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     labelSmall = TextStyle(
         fontSize = 12.sp,
         lineHeight = 16.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Normal,
         letterSpacing = 0.sp,
         lineHeightStyle = LineHeightStyle(
@@ -305,7 +305,7 @@ val bitwardenTypography: UniversalTypography = UniversalTypography(
     eyebrowMedium = TextStyle(
         fontSize = 12.sp,
         lineHeight = 18.sp,
-        fontFamily = bitwardenFontFamily,
+        fontFamily = universalpasswordmanagerFontFamily,
         fontWeight = FontWeight.Bold,
         letterSpacing = 0.6.sp,
         lineHeightStyle = LineHeightStyle(
@@ -347,29 +347,29 @@ private fun UniversalTypography_preview() {
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
-            Text(text = "Display large", style = bitwardenTypography.displayLarge)
-            Text(text = "Display medium", style = bitwardenTypography.displayMedium)
-            Text(text = "Display small", style = bitwardenTypography.displaySmall)
-            Text(text = "Headline large", style = bitwardenTypography.headlineLarge)
-            Text(text = "Headline medium", style = bitwardenTypography.headlineMedium)
-            Text(text = "Headline small", style = bitwardenTypography.headlineSmall)
-            Text(text = "Title extra large", style = bitwardenTypography.titleExtraLarge)
-            Text(text = "Title large", style = bitwardenTypography.titleLarge)
-            Text(text = "Title medium", style = bitwardenTypography.titleMedium)
-            Text(text = "Title small", style = bitwardenTypography.titleSmall)
-            Text(text = "Body large", style = bitwardenTypography.bodyLarge)
-            Text(text = "Body large emphasis", style = bitwardenTypography.bodyLargeEmphasis)
-            Text(text = "Body medium", style = bitwardenTypography.bodyMedium)
-            Text(text = "Body medium emphasis", style = bitwardenTypography.bodyMediumEmphasis)
-            Text(text = "Body small", style = bitwardenTypography.bodySmall)
-            Text(text = "Label large", style = bitwardenTypography.labelLarge)
-            Text(text = "Label large emphasis", style = bitwardenTypography.labelLargeEmphasis)
-            Text(text = "Label large regular", style = bitwardenTypography.labelLargeRegular)
-            Text(text = "Label medium", style = bitwardenTypography.labelMedium)
-            Text(text = "Label small", style = bitwardenTypography.labelSmall)
-            Text(text = "Sensitive info small", style = bitwardenTypography.sensitiveInfoSmall)
-            Text(text = "Sensitive info medium", style = bitwardenTypography.sensitiveInfoMedium)
-            Text(text = "Eyebrow medium", style = bitwardenTypography.eyebrowMedium)
+            Text(text = "Display large", style = universalpasswordmanagerTypography.displayLarge)
+            Text(text = "Display medium", style = universalpasswordmanagerTypography.displayMedium)
+            Text(text = "Display small", style = universalpasswordmanagerTypography.displaySmall)
+            Text(text = "Headline large", style = universalpasswordmanagerTypography.headlineLarge)
+            Text(text = "Headline medium", style = universalpasswordmanagerTypography.headlineMedium)
+            Text(text = "Headline small", style = universalpasswordmanagerTypography.headlineSmall)
+            Text(text = "Title extra large", style = universalpasswordmanagerTypography.titleExtraLarge)
+            Text(text = "Title large", style = universalpasswordmanagerTypography.titleLarge)
+            Text(text = "Title medium", style = universalpasswordmanagerTypography.titleMedium)
+            Text(text = "Title small", style = universalpasswordmanagerTypography.titleSmall)
+            Text(text = "Body large", style = universalpasswordmanagerTypography.bodyLarge)
+            Text(text = "Body large emphasis", style = universalpasswordmanagerTypography.bodyLargeEmphasis)
+            Text(text = "Body medium", style = universalpasswordmanagerTypography.bodyMedium)
+            Text(text = "Body medium emphasis", style = universalpasswordmanagerTypography.bodyMediumEmphasis)
+            Text(text = "Body small", style = universalpasswordmanagerTypography.bodySmall)
+            Text(text = "Label large", style = universalpasswordmanagerTypography.labelLarge)
+            Text(text = "Label large emphasis", style = universalpasswordmanagerTypography.labelLargeEmphasis)
+            Text(text = "Label large regular", style = universalpasswordmanagerTypography.labelLargeRegular)
+            Text(text = "Label medium", style = universalpasswordmanagerTypography.labelMedium)
+            Text(text = "Label small", style = universalpasswordmanagerTypography.labelSmall)
+            Text(text = "Sensitive info small", style = universalpasswordmanagerTypography.sensitiveInfoSmall)
+            Text(text = "Sensitive info medium", style = universalpasswordmanagerTypography.sensitiveInfoMedium)
+            Text(text = "Eyebrow medium", style = universalpasswordmanagerTypography.eyebrowMedium)
         }
     }
 }

@@ -1324,7 +1324,7 @@ class PlanScreenTest : UniversalComposeTest() {
 
     @Test
     fun `LaunchUri event should call intentManager launchUri`() {
-        val url = "https://vault.bitwarden.com/#/settings/subscription/premium"
+        val url = "https://vault./#/settings/subscription/premium"
         mutableEventFlow.tryEmit(PlanEvent.LaunchUri(url = url))
         verify { intentManager.launchUri(url.toUri()) }
     }

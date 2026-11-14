@@ -10,7 +10,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for a read-only text field button.
  */
 @Composable
-fun bitwardenTextFieldButtonColors(): TextFieldColors = bitwardenTextFieldColors(
+fun universalpasswordmanagerTextFieldButtonColors(): TextFieldColors = universalpasswordmanagerTextFieldColors(
     disabledTextColor = UniversalTheme.colorScheme.text.primary,
     disabledLeadingIconColor = UniversalTheme.colorScheme.icon.primary,
     disabledTrailingIconColor = UniversalTheme.colorScheme.icon.primary,
@@ -23,7 +23,7 @@ fun bitwardenTextFieldButtonColors(): TextFieldColors = bitwardenTextFieldColors
  * Provides a default set of Universal-styled colors for text fields.
  */
 @Composable
-fun bitwardenTextFieldColors(
+fun universalpasswordmanagerTextFieldColors(
     textColor: Color = UniversalTheme.colorScheme.text.primary,
     disabledTextColor: Color = UniversalTheme.colorScheme.filledButton.foregroundDisabled,
     disabledLeadingIconColor: Color = UniversalTheme.colorScheme.filledButton.foregroundDisabled,

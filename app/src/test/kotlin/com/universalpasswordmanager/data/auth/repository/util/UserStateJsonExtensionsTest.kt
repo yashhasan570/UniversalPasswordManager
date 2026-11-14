@@ -2672,7 +2672,7 @@ class UserStateJsonExtensionsTest {
             profile = originalProfile,
             tokens = null,
             settings = AccountJson.Settings(
-                environmentUrlData = EnvironmentUrlDataJson(base = "https://vault.bitwarden.com"),
+                environmentUrlData = EnvironmentUrlDataJson(base = "https://vault."),
             ),
         )
         val originalUserState = UserStateJson(

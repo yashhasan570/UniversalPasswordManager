@@ -269,7 +269,7 @@ class PrivilegedAppsListViewModelTest : BaseViewModelTest() {
         state: PrivilegedAppsListState? = null,
     ): PrivilegedAppsListViewModel = PrivilegedAppsListViewModel(
         privilegedAppRepository = mockPrivilegedAppRepository,
-        bitwardenPackageManager = mockUniversalPackageManager,
+        universalpasswordmanagerPackageManager = mockUniversalPackageManager,
         savedStateHandle = SavedStateHandle().apply {
             set("state", state)
         },

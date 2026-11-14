@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for switches.
  */
 @Composable
-fun bitwardenSwitchColors(): SwitchColors = SwitchColors(
+fun universalpasswordmanagerSwitchColors(): SwitchColors = SwitchColors(
     checkedThumbColor = UniversalTheme.colorScheme.toggleButton.switch,
     checkedTrackColor = UniversalTheme.colorScheme.toggleButton.backgroundOn,
     checkedBorderColor = Color.Transparent,

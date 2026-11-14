@@ -129,7 +129,7 @@ private fun ImportItemsScaffold(
         },
         snackbarHost = {
             UniversalSnackbarHost(
-                bitwardenHostState = snackbarHostState,
+                universalpasswordmanagerHostState = snackbarHostState,
             )
         },
     ) {

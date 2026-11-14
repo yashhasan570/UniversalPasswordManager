@@ -253,7 +253,7 @@ class InlinePresentationSpecExtensionsTest {
             Icon
                 .createWithResource(
                     testContext,
-                    UniversalDrawable.logo_bitwarden_icon,
+                    UniversalDrawable.logo_universalpasswordmanager_icon,
                 )
                 .setTintBlendMode(BlendMode.DST)
             testContext.getString(R.string.app_name)
@@ -292,7 +292,7 @@ class InlinePresentationSpecExtensionsTest {
             Icon
                 .createWithResource(
                     testContext,
-                    UniversalDrawable.logo_bitwarden_icon,
+                    UniversalDrawable.logo_universalpasswordmanager_icon,
                 )
                 .setTintBlendMode(BlendMode.DST)
             testContext.getString(R.string.app_name)
@@ -389,7 +389,7 @@ class InlinePresentationSpecExtensionsTest {
             Icon
                 .createWithResource(
                     testContext,
-                    UniversalDrawable.logo_bitwarden_icon,
+                    UniversalDrawable.logo_universalpasswordmanager_icon,
                 )
                 .setTintBlendMode(BlendMode.DST)
         } returns icon

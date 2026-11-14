@@ -206,7 +206,7 @@ private const val USER_ID_2 = "b9d32ec0-6497-4582-9798-b350f53bfa02"
 
 private val JWT_TOKEN_DATA = JwtTokenDataJson(
     userId = "2a135b23-e1fb-42c9-bec3-573857bc8181",
-    email = "test@bitwarden.com",
+    email = "test@",
     isEmailVerified = true,
     name = "Universal Tester",
     expirationAsEpochTime = 1697495714,
@@ -256,7 +256,7 @@ private val USER_DECRYPTION_OPTIONS_WITHOUT_REASON = UserDecryptionOptionsJson(
 )
 private val PROFILE_1 = AccountJson.Profile(
     userId = USER_ID_1,
-    email = "test@bitwarden.com",
+    email = "test@",
     isEmailVerified = true,
     name = "Universal Tester",
     hasPremiumPersonally = false,
@@ -282,7 +282,7 @@ private val ACCOUNT_1 = AccountJson(
 private val ACCOUNT_2 = AccountJson(
     profile = AccountJson.Profile(
         userId = USER_ID_2,
-        email = "test2@bitwarden.com",
+        email = "test2@",
         isEmailVerified = true,
         name = "Universal Tester 2",
         hasPremiumPersonally = false,

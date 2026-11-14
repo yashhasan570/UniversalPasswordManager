@@ -81,7 +81,7 @@ fun SetupAutoFillScreen(
         is SetupAutoFillDialogState.AutoFillFallbackDialog -> {
             UniversalBasicDialog(
                 title = null,
-                message = stringResource(id = UniversalString.bitwarden_autofill_go_to_settings),
+                message = stringResource(id = UniversalString.universalpasswordmanager_autofill_go_to_settings),
                 onDismissRequest = handler.onDismissDialog,
             )
         }

@@ -505,7 +505,7 @@ private fun VaultItemListingScaffold(
             )
         },
         pullToRefreshState = pullToRefreshState,
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
     ) {
         when (state.viewState) {
             is VaultItemListingState.ViewState.Content -> {

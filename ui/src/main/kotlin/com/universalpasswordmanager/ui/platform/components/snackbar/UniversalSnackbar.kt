@@ -26,7 +26,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.components.button.UniversalOutlinedButton
 import com.universalpasswordmanager.ui.platform.components.button.UniversalStandardIconButton
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenOutlinedButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerOutlinedButtonColors
 import com.universalpasswordmanager.ui.platform.components.snackbar.model.UniversalSnackbarData
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
@@ -36,7 +36,7 @@ import com.universalpasswordmanager.ui.util.asText
 /**
  * Custom snackbar for Universal.
  *
- * @param bitwardenSnackbarData The data required to display the Snackbar.
+ * @param universalpasswordmanagerSnackbarData The data required to display the Snackbar.
  * @param modifier The [Modifier] to be applied to the button.
  * @param windowInsets The insets to be applied to this composable. By default this will account for
  * the insets that are on the sides and bottom of the screen (Display Cutout and Navigation bars).
@@ -46,7 +46,7 @@ import com.universalpasswordmanager.ui.util.asText
 @Suppress("LongMethod")
 @Composable
 fun UniversalSnackbar(
-    bitwardenSnackbarData: UniversalSnackbarData,
+    universalpasswordmanagerSnackbarData: UniversalSnackbarData,
     modifier: Modifier = Modifier,
     windowInsets: WindowInsets = WindowInsets.displayCutout
         .only(sides = WindowInsetsSides.Horizontal + WindowInsetsSides.Bottom)
@@ -70,7 +70,7 @@ fun UniversalSnackbar(
                 // I there is no explicit dismiss action, the Snackbar can be dismissed by clicking
                 // anywhere on the Snackbar.
                 .clickable(
-                    enabled = !bitwardenSnackbarData.withDismissAction,
+                    enabled = !universalpasswordmanagerSnackbarData.withDismissAction,
                     onClick = onDismiss,
                 ),
         ) {
@@ -79,7 +79,7 @@ fun UniversalSnackbar(
                     .padding(top = 16.dp, bottom = 16.dp, start = 16.dp)
                     .weight(weight = 1f),
             ) {
-                bitwardenSnackbarData.messageHeader?.let {
+                universalpasswordmanagerSnackbarData.messageHeader?.let {
                     Text(
                         text = it(),
                         color = UniversalTheme.colorScheme.text.reversed,
@@ -88,21 +88,21 @@ fun UniversalSnackbar(
                     Spacer(Modifier.height(4.dp))
                 }
                 Text(
-                    text = bitwardenSnackbarData.message(),
+                    text = universalpasswordmanagerSnackbarData.message(),
                     color = UniversalTheme.colorScheme.text.reversed,
-                    style = if (bitwardenSnackbarData.messageHeader != null) {
+                    style = if (universalpasswordmanagerSnackbarData.messageHeader != null) {
                         UniversalTheme.typography.bodyMedium
                     } else {
                         // Upgrade the font when it is stand alone.
                         UniversalTheme.typography.titleSmall
                     },
                 )
-                bitwardenSnackbarData.actionLabel?.let {
+                universalpasswordmanagerSnackbarData.actionLabel?.let {
                     Spacer(Modifier.height(12.dp))
                     UniversalOutlinedButton(
                         label = it(),
                         onClick = onActionClick,
-                        colors = bitwardenOutlinedButtonColors(
+                        colors = universalpasswordmanagerOutlinedButtonColors(
                             contentColor = UniversalTheme.colorScheme.text.reversed,
                             outlineColor = UniversalTheme
                                 .colorScheme
@@ -112,7 +112,7 @@ fun UniversalSnackbar(
                     )
                 }
             }
-            if (bitwardenSnackbarData.withDismissAction) {
+            if (universalpasswordmanagerSnackbarData.withDismissAction) {
                 UniversalStandardIconButton(
                     onClick = onDismiss,
                     vectorIconRes = UniversalDrawable.ic_close,

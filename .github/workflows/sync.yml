@@ -22,7 +22,7 @@ jobs:
         run: |
           git config user.name "yashhasan570"
           git config user.email "hasankhalid700570@gmail.com"
-          git clone --depth 1 https://github.com/bitwarden/android /tmp/upstream
+          git clone --depth 1 https://github.com/universalpasswordmanager/android /tmp/upstream
           cd /tmp/upstream
           git ls-files | rsync -a --delete \
             --exclude=.git \

@@ -29,7 +29,7 @@ import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPa
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
-import com.universalpasswordmanager.ui.platform.theme.type.bitwardenFontFamily
+import com.universalpasswordmanager.ui.platform.theme.type.universalpasswordmanagerFontFamily
 import com.universalpasswordmanager.ui.vault.feature.exportitems.model.AccountSelectionListItem
 
 /**
@@ -82,7 +82,7 @@ fun AccountSummaryListItem(
                 style = TextStyle(
                     fontSize = 11.dp.toUnscaledTextUnit(),
                     lineHeight = 13.dp.toUnscaledTextUnit(),
-                    fontFamily = bitwardenFontFamily,
+                    fontFamily = universalpasswordmanagerFontFamily,
                     fontWeight = FontWeight.SemiBold,
                 ),
                 color = item.avatarColorHex.hexToColor().toSafeOverlayColor(),

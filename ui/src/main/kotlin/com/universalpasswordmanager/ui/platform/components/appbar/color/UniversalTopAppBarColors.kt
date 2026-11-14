@@ -8,7 +8,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for top app bars.
  */
 @Composable
-fun bitwardenTopAppBarColors(): TopAppBarColors = TopAppBarColors(
+fun universalpasswordmanagerTopAppBarColors(): TopAppBarColors = TopAppBarColors(
     containerColor = UniversalTheme.colorScheme.background.secondary,
     scrolledContainerColor = UniversalTheme.colorScheme.background.secondary,
     navigationIconContentColor = UniversalTheme.colorScheme.icon.primary,

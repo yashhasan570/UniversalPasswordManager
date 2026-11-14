@@ -426,7 +426,7 @@ class RootNavViewModelTest : BaseViewModelTest() {
                                 name = "orgName",
                                 shouldUseKeyConnector = true,
                                 role = OrganizationType.USER,
-                                keyConnectorUrl = "bitwarden.com",
+                                keyConnectorUrl = "",
                             ),
                         ),
                         needsMasterPassword = false,

@@ -134,17 +134,17 @@ fun AutoFillScreen(
 
             AutoFillEvent.NavigateToFillAssistHelp -> {
                 intentManager.launchUri(
-                    "https://bitwarden.com/help/fill-assist/".toUri(),
+                    "https:///help/fill-assist/".toUri(),
                 )
             }
 
             AutoFillEvent.NavigateToLearnMore -> {
-                intentManager.launchUri("https://bitwarden.com/help/uri-match-detection/".toUri())
+                intentManager.launchUri("https:///help/uri-match-detection/".toUri())
             }
 
             AutoFillEvent.NavigateToAutofillHelp -> {
                 intentManager.launchUri(
-                    uri = "https://bitwarden.com/help/auto-fill-android-troubleshooting/".toUri(),
+                    uri = "https:///help/auto-fill-android-troubleshooting/".toUri(),
                 )
             }
         }
@@ -153,7 +153,7 @@ fun AutoFillScreen(
     if (shouldShowAutofillFallbackDialog) {
         UniversalBasicDialog(
             title = null,
-            message = stringResource(id = UniversalString.bitwarden_autofill_go_to_settings),
+            message = stringResource(id = UniversalString.universalpasswordmanager_autofill_go_to_settings),
             onDismissRequest = { shouldShowAutofillFallbackDialog = false },
         )
     }
@@ -269,7 +269,7 @@ private fun AutoFillScreenContent(
                 onConfirmClick = autoFillHandlers.onPasskeyManagementClick,
                 dialogTitle = stringResource(id = UniversalString.continue_to_device_settings),
                 dialogMessage = stringResource(
-                    id = UniversalString.set_bitwarden_as_passkey_manager_description,
+                    id = UniversalString.set_universalpasswordmanager_as_passkey_manager_description,
                 ),
                 withDivider = false,
                 cardStyle = CardStyle.Top(),
@@ -413,9 +413,9 @@ private fun AutofillCallToActionCard(
 
             CtaState.BROWSER_AUTOFILL -> {
                 val subTitleRes = if (state.browserCount > 1) {
-                    UniversalString.browser_requires_special_permissions_for_bitwarden_plural
+                    UniversalString.browser_requires_special_permissions_for_universalpasswordmanager_plural
                 } else {
-                    UniversalString.browser_requires_special_permissions_for_bitwarden_singular
+                    UniversalString.browser_requires_special_permissions_for_universalpasswordmanager_singular
                 }
                 UniversalActionCard(
                     cardTitle = stringResource(

@@ -117,7 +117,7 @@ class EnterpriseSignOnScreenTest : UniversalComposeTest() {
 
     @Test
     fun `NavigateToSsoLogin should call startCustomTabsActivity`() {
-        val ssoUri = Uri.parse("https://identity.bitwarden.com/sso-test")
+        val ssoUri = Uri.parse("https://identity./sso-test")
         val authTabData = mockk<AuthTabData>()
         mutableEventFlow.tryEmit(EnterpriseSignOnEvent.NavigateToSsoLogin(ssoUri, authTabData))
         verify(exactly = 1) {
@@ -218,7 +218,7 @@ class EnterpriseSignOnScreenTest : UniversalComposeTest() {
         mutableStateFlow.update {
             it.copy(
                 dialogState = EnterpriseSignOnState.DialogState.KeyConnectorDomain(
-                    keyConnectorDomain = "bitwarden.com",
+                    keyConnectorDomain = "",
                 ),
             )
         }
@@ -235,7 +235,7 @@ class EnterpriseSignOnScreenTest : UniversalComposeTest() {
                     "\n\n" +
                     "Key Connector domain:" +
                     "\n" +
-                    "bitwarden.com",
+                    "",
             )
             .assert(hasAnyAncestor(isDialog()))
             .assertIsDisplayed()
@@ -255,7 +255,7 @@ class EnterpriseSignOnScreenTest : UniversalComposeTest() {
         mutableStateFlow.update {
             DEFAULT_STATE.copy(
                 dialogState = EnterpriseSignOnState.DialogState.KeyConnectorDomain(
-                    keyConnectorDomain = "bitwarden.com",
+                    keyConnectorDomain = "",
                 ),
             )
         }
@@ -272,7 +272,7 @@ class EnterpriseSignOnScreenTest : UniversalComposeTest() {
         mutableStateFlow.update {
             DEFAULT_STATE.copy(
                 dialogState = EnterpriseSignOnState.DialogState.KeyConnectorDomain(
-                    keyConnectorDomain = "bitwarden.com",
+                    keyConnectorDomain = "",
                 ),
             )
         }

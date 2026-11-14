@@ -35,7 +35,7 @@ private const val KEY_STATE = "state"
 @HiltViewModel
 class PrivilegedAppsListViewModel @Inject constructor(
     private val privilegedAppRepository: PrivilegedAppRepository,
-    private val bitwardenPackageManager: UniversalPackageManager,
+    private val universalpasswordmanagerPackageManager: UniversalPackageManager,
     savedStateHandle: SavedStateHandle,
 ) : BaseViewModel<PrivilegedAppsListState, PrivilegedAppsListEvent, PrivilegedAppsListAction>(
     initialState = savedStateHandle[KEY_STATE]
@@ -205,7 +205,7 @@ class PrivilegedAppsListViewModel @Inject constructor(
         notInstalledApps: MutableList<PrivilegedAppListItem>,
     ) {
         this.forEach {
-            if (bitwardenPackageManager.isPackageInstalled(it.packageName)) {
+            if (universalpasswordmanagerPackageManager.isPackageInstalled(it.packageName)) {
                 installedApps.add(it)
             } else {
                 notInstalledApps.add(it)
@@ -226,7 +226,7 @@ class PrivilegedAppsListViewModel @Inject constructor(
             .first()
             .certFingerprintSha256,
         trustAuthority = trustAuthority,
-        appName = bitwardenPackageManager
+        appName = universalpasswordmanagerPackageManager
             .getAppLabelForPackageOrNull(info.packageName),
     )
 }

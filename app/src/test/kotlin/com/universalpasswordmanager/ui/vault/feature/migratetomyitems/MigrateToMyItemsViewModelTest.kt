@@ -251,7 +251,7 @@ class MigrateToMyItemsViewModelTest : BaseViewModelTest() {
         viewModel.eventFlow.test {
             viewModel.trySendAction(MigrateToMyItemsAction.HelpLinkClicked)
             assertEquals(
-                MigrateToMyItemsEvent.LaunchUri("https://bitwarden.com/help/transfer-ownership/"),
+                MigrateToMyItemsEvent.LaunchUri("https:///help/transfer-ownership/"),
                 awaitItem(),
             )
         }

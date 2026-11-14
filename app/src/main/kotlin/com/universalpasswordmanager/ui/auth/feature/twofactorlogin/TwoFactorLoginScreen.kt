@@ -163,7 +163,7 @@ fun TwoFactorLoginScreen(
             )
         },
         snackbarHost = {
-            UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+            UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
         },
     ) {
         TwoFactorLoginScreenContent(

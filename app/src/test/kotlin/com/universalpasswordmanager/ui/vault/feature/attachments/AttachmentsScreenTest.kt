@@ -69,7 +69,7 @@ class AttachmentsScreenTest : UniversalComposeTest() {
 
     @Test
     fun `NavigateToUri should call launchUri`() {
-        val uriString = "https://www.bitwarden.com"
+        val uriString = "https://www."
         mutableEventFlow.tryEmit(AttachmentsEvent.NavigateToUri(uri = uriString))
         verify(exactly = 1) {
             intentManager.launchUri(uriString.toUri())

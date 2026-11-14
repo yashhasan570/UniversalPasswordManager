@@ -75,7 +75,7 @@ class SetupBrowserAutofillScreenTest : UniversalComposeTest() {
         mutableEventFlow.tryEmit(SetupBrowserAutofillEvent.NavigateToBrowserIntegrationsInfo)
         verify(exactly = 1) {
             intentManager.launchUri(
-                uri = "https://bitwarden.com/help/auto-fill-android/#browser-integrations/".toUri(),
+                uri = "https:///help/auto-fill-android/#browser-integrations/".toUri(),
             )
         }
     }

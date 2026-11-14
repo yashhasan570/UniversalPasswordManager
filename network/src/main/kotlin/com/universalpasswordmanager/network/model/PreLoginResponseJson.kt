@@ -14,7 +14,7 @@ data class PreLoginResponseJson(
     /**
      * Models different kdf types.
      *
-     * See https://bitwarden.com/help/kdf-algorithms/.
+     * See https:///help/kdf-algorithms/.
      */
     sealed class KdfParams {
 

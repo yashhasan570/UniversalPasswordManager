@@ -63,7 +63,7 @@ class OverlayNavViewModelTest : BaseViewModelTest() {
             viewModel.eventFlow.test {
                 expectNoEvents()
                 mutableCookieAcquisitionFlow.value = CookieAcquisitionRequest(
-                    hostname = "vault.bitwarden.com",
+                    hostname = "vault.",
                 )
                 assertEquals(OverlayNavEvent.NavigateToCookieAcquisition, awaitItem())
             }

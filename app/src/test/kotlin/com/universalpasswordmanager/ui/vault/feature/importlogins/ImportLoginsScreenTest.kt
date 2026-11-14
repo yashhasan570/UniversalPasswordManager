@@ -190,7 +190,7 @@ class ImportLoginsScreenTest : UniversalComposeTest() {
     fun `OpenHelpLink event is used to open URI with intent manager`() {
         mutableImportLoginsEventFlow.tryEmit(ImportLoginsEvent.OpenHelpLink)
         verify {
-            intentManager.startCustomTabsActivity("https://bitwarden.com/help/import-data/".toUri())
+            intentManager.startCustomTabsActivity("https:///help/import-data/".toUri())
         }
     }
 
@@ -260,7 +260,7 @@ class ImportLoginsScreenTest : UniversalComposeTest() {
 
     @Test
     fun `Step two content shows correct vault url when vault url is set`() {
-        val url = "vault.bitwarden.com.testing"
+        val url = "vault..testing"
         mutableImportLoginsStateFlow.update {
             it.copy(
                 viewState = ImportLoginsState.ViewState.ImportStepTwo,
@@ -489,5 +489,5 @@ private val DEFAULT_STATE = ImportLoginsState(
     dialogState = null,
     viewState = ImportLoginsState.ViewState.InitialContent,
     showBottomSheet = false,
-    currentWebVaultUrl = "vault.bitwarden.com",
+    currentWebVaultUrl = "vault.",
 )

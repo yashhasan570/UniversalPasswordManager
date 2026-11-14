@@ -409,7 +409,7 @@ private fun createPolicyJson(
     }
     """
 
-private const val EMAIL = "test@bitwarden.com"
+private const val EMAIL = "test@"
 private const val PASSWORD = "password"
 private const val USER_ID_1 = "2a135b23-e1fb-42c9-bec3-573857bc8181"
 private const val ENCRYPTED_USER_KEY = "encryptedUserKey"

@@ -64,7 +64,7 @@ class RestrictionManagerTest {
     fun `initialize with baseEnvironmentUrl bundle data matching the current US environment should set the environment to US`() {
         every {
             restrictionsManager.applicationRestrictions
-        } returns mockBundle("baseEnvironmentUrl" to "https://vault.bitwarden.com")
+        } returns mockBundle("baseEnvironmentUrl" to "https://vault.")
 
         restrictionManager.initialize()
 
@@ -77,7 +77,7 @@ class RestrictionManagerTest {
     @Suppress("MaxLineLength")
     @Test
     fun `initialize with baseEnvironmentUrl bundle data not matching the current US environment should set the environment to self-hosted`() {
-        val baseUrl = "https://other.bitwarden.com"
+        val baseUrl = "https://other."
         every {
             restrictionsManager.applicationRestrictions
         } returns mockBundle("baseEnvironmentUrl" to baseUrl)
@@ -101,7 +101,7 @@ class RestrictionManagerTest {
         fakeEnvironmentRepository.environment = Environment.Prod.Eu
         every {
             restrictionsManager.applicationRestrictions
-        } returns mockBundle("baseEnvironmentUrl" to "https://vault.bitwarden.eu")
+        } returns mockBundle("baseEnvironmentUrl" to "https://vault.")
 
         restrictionManager.initialize()
 
@@ -114,7 +114,7 @@ class RestrictionManagerTest {
     @Suppress("MaxLineLength")
     @Test
     fun `initialize with baseEnvironmentUrl bundle data not matching the current EU environment should set the environment to self-hosted`() {
-        val baseUrl = "https://other.bitwarden.eu"
+        val baseUrl = "https://other."
         fakeEnvironmentRepository.environment = Environment.Prod.Eu
         every {
             restrictionsManager.applicationRestrictions
@@ -138,7 +138,7 @@ class RestrictionManagerTest {
     fun `initialize with baseEnvironmentUrl bundle data matching the current FedRAMP environment should set the environment to FedRAMP`() {
         every {
             restrictionsManager.applicationRestrictions
-        } returns mockBundle("baseEnvironmentUrl" to "https://vault.bitwarden-gov.com")
+        } returns mockBundle("baseEnvironmentUrl" to "https://vault.")
 
         restrictionManager.initialize()
 
@@ -151,7 +151,7 @@ class RestrictionManagerTest {
     @Suppress("MaxLineLength")
     @Test
     fun `initialize with baseEnvironmentUrl bundle data matching the current self-hosted environment should set the environment to self-hosted`() {
-        val baseUrl = "https://vault.qa.bitwarden.pw"
+        val baseUrl = "https://vault.qa."
         val environment = Environment.SelfHosted(
             environmentUrlData = EnvironmentUrlDataJson(base = baseUrl),
         )
@@ -171,9 +171,9 @@ class RestrictionManagerTest {
     @Suppress("MaxLineLength")
     @Test
     fun `initialize with baseEnvironmentUrl bundle data not matching the current self-hosted environment should set the environment to self-hosted`() {
-        val baseUrl = "https://other.qa.bitwarden.pw"
+        val baseUrl = "https://other.qa."
         val environment = Environment.SelfHosted(
-            environmentUrlData = EnvironmentUrlDataJson(base = "https://vault.qa.bitwarden.pw"),
+            environmentUrlData = EnvironmentUrlDataJson(base = "https://vault.qa."),
         )
         fakeEnvironmentRepository.environment = environment
         every {

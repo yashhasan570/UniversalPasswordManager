@@ -63,7 +63,7 @@ class VaultUnlockViewModel @AssistedInject constructor(
     private val authRepository: AuthRepository,
     private val vaultRepo: VaultRepository,
     private val specialCircumstanceManager: SpecialCircumstanceManager,
-    private val bitwardenCredentialManager: UniversalCredentialManager,
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager,
     private val appResumeManager: AppResumeManager,
     private val vaultLockManager: VaultLockManager,
     savedStateHandle: SavedStateHandle,
@@ -347,7 +347,7 @@ class VaultUnlockViewModel @AssistedInject constructor(
         }
 
         // Mark the user verified for this session if the unlock result is Success.
-        bitwardenCredentialManager.isUserVerified =
+        universalpasswordmanagerCredentialManager.isUserVerified =
             action.vaultUnlockResult is VaultUnlockResult.Success &&
                 state.isUnlockingForCredentialManagerRequest
 

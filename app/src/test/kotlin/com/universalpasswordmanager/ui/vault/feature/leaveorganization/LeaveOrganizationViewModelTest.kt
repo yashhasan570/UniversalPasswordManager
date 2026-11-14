@@ -74,7 +74,7 @@ class LeaveOrganizationViewModelTest : BaseViewModelTest() {
             val event = awaitItem()
             assert(event is LeaveOrganizationEvent.LaunchUri)
             assertEquals(
-                "https://bitwarden.com/help/transfer-ownership/",
+                "https:///help/transfer-ownership/",
                 (event as LeaveOrganizationEvent.LaunchUri).uri,
             )
         }

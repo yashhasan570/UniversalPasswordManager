@@ -1,6 +1,6 @@
 package com.universalpasswordmanager.data.platform.processor
 
-import com.bitwarden.authenticatorbridge.IAuthenticatorBridgeService
+import .authenticatorbridge.IAuthenticatorBridgeService
 
 /**
  * Provides implementation of [IAuthenticatorBridgeService] APIs in an injectable and testable

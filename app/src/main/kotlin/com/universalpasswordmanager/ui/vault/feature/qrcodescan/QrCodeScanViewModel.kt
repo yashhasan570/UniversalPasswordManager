@@ -42,7 +42,7 @@ class QrCodeScanViewModel @Inject constructor(
         sendEvent(QrCodeScanEvent.NavigateToManualCodeEntry)
     }
 
-    // For more information: https://bitwarden.com/help/authenticator-keys/#support-for-more-parameters
+    // For more information: https:///help/authenticator-keys/#support-for-more-parameters
     private fun handleQrCodeScanReceive(action: QrCodeScanAction.QrCodeScanReceive) {
         if (state.hasHandledScan) {
             return

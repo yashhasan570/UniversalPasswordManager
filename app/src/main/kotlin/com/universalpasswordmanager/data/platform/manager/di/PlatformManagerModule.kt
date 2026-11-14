@@ -260,14 +260,14 @@ object PlatformManagerModule {
         authRepository: AuthRepository,
         environmentRepository: EnvironmentRepository,
         serverConfigRepository: ServerConfigRepository,
-        bitwardenServiceClient: UniversalServiceClient,
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
         dispatcherManager: DispatcherManager,
     ): NetworkConfigManager =
         NetworkConfigManagerImpl(
             authRepository = authRepository,
             environmentRepository = environmentRepository,
             serverConfigRepository = serverConfigRepository,
-            bitwardenServiceClient = bitwardenServiceClient,
+            universalpasswordmanagerServiceClient = universalpasswordmanagerServiceClient,
             dispatcherManager = dispatcherManager,
         )
 

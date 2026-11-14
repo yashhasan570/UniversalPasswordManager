@@ -186,6 +186,6 @@ private val DEFAULT_STATE = RemovePasswordState(
     labelOrg = "Organization name".asText(),
     orgName = "Org X".asText(),
     labelDomain = "Confirm Key Connector domain".asText(),
-    domainName = "bitwarden.com".asText(),
+    domainName = "".asText(),
     organizationId = "org-id",
 )

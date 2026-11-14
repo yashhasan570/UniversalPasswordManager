@@ -80,7 +80,7 @@ fun UserState.Account.toVaultFilterData(
  * - "First Last" -> "FL"
  * - "First Second Last" -> "FS"
  * - "First" -> "FI"
- * - name is `null`, email is "test@bitwarden.com" -> "TE"
+ * - name is `null`, email is "test@" -> "TE"
  */
 val UserState.Account.initials: String
     get() {

@@ -25,7 +25,7 @@ class UpgradedToPremiumViewModelTest : BaseViewModelTest() {
             viewModel.trySendAction(UpgradedToPremiumAction.LearnMoreClick)
             assertEquals(
                 UpgradedToPremiumEvent.NavigateToUrl(
-                    url = "https://bitwarden.com/help/password-manager-plans/",
+                    url = "https:///help/password-manager-plans/",
                 ),
                 awaitItem(),
             )

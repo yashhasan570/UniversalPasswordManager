@@ -1733,7 +1733,7 @@ class AuthRepositoryTest {
     @Test
     fun `login should hash the password with the salt and KDF returned by the SDK pre login`() =
         runTest {
-            val salt = "salt@bitwarden.com"
+            val salt = "salt@"
             val kdf = Kdf.Argon2id(iterations = 3u, memory = 64u, parallelism = 4u)
             coEvery {
                 authSdkSource.preLogin(email = EMAIL)
@@ -6440,7 +6440,7 @@ class AuthRepositoryTest {
                 VerifiedOrganizationDomainSsoDetailsResponse.VerifiedOrganizationDomainSsoDetail(
                     organizationIdentifier = "Test Identifier",
                     organizationName = "Universal",
-                    domainName = "bitwarden.com",
+                    domainName = "",
                 ),
             ),
         ).asSuccess()
@@ -6452,7 +6452,7 @@ class AuthRepositoryTest {
                     VerifiedOrganizationDomainSsoDetailsResponse.VerifiedOrganizationDomainSsoDetail(
                         organizationIdentifier = "Test Identifier",
                         organizationName = "Universal",
-                        domainName = "bitwarden.com",
+                        domainName = "",
                     ),
                 ),
             ),
@@ -7584,8 +7584,8 @@ private val FIXED_CLOCK: Clock = Clock.fixed(
 private const val DEEPLINK_SCHEME = "https"
 private const val UNIQUE_APP_ID = "testUniqueAppId"
 private const val NAME = "Example Name"
-private const val EMAIL = "test@bitwarden.com"
-private const val EMAIL_2 = "test2@bitwarden.com"
+private const val EMAIL = "test@"
+private const val EMAIL_2 = "test2@"
 private const val EMAIL_VERIFICATION_TOKEN = "thisisanawesometoken"
 private const val SALT = "salt"
 private const val PASSWORD = "password"
@@ -7605,7 +7605,7 @@ private val TWO_FACTOR_DATA = TwoFactorDataModel(
 )
 private const val SSO_CODE = "ssoCode"
 private const val SSO_CODE_VERIFIER = "ssoCodeVerifier"
-private const val SSO_REDIRECT_URI = "bitwarden://sso-test"
+private const val SSO_REDIRECT_URI = "sso-test"
 private const val DEVICE_ACCESS_CODE = "accessCode"
 private const val DEVICE_REQUEST_ID = "authRequestId"
 private const val DEVICE_ASYMMETRICAL_KEY = "asymmetricalKey"

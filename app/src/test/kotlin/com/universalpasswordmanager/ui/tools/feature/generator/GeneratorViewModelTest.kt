@@ -2433,7 +2433,7 @@ class GeneratorViewModelTest : BaseViewModelTest() {
             viewModel.trySendAction(GeneratorAction.UpgradedToPremiumCardClick)
             assertEquals(
                 GeneratorEvent.NavigateToUrl(
-                    url = "https://bitwarden.com/help/password-manager-plans/",
+                    url = "https:///help/password-manager-plans/",
                 ),
                 awaitItem(),
             )

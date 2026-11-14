@@ -15,7 +15,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
 import com.universalpasswordmanager.ui.platform.components.badge.NotificationBadge
-import com.universalpasswordmanager.ui.platform.components.navigation.color.bitwardenNavigationRailItemColors
+import com.universalpasswordmanager.ui.platform.components.navigation.color.universalpasswordmanagerNavigationRailItemColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalPlurals
 
@@ -78,7 +78,7 @@ fun ColumnScope.UniversalNavigationRailItem(
         },
         selected = isSelected,
         onClick = onClick,
-        colors = bitwardenNavigationRailItemColors(),
+        colors = universalpasswordmanagerNavigationRailItemColors(),
         modifier = modifier,
     )
 }

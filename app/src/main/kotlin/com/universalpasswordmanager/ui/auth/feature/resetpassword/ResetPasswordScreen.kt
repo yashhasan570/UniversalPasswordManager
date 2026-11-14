@@ -292,7 +292,7 @@ private fun ResetPasswordScreenContent(
                     Text(
                         text = stringResource(
                             id = UniversalString
-                                .bitwarden_cannot_reset_a_lost_or_forgotten_master_password,
+                                .universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password,
                         ),
                         style = UniversalTheme.typography.bodySmall,
                         color = UniversalTheme.colorScheme.text.secondary,

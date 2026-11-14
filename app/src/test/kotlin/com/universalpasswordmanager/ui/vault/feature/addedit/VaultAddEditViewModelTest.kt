@@ -177,7 +177,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             getActivePolicies(type = PolicyType.ORGANIZATION_DATA_OWNERSHIP)
         } returns emptyList()
     }
-    private val bitwardenCredentialManager = mockk<UniversalCredentialManager> {
+    private val universalpasswordmanagerCredentialManager = mockk<UniversalCredentialManager> {
         every { isUserVerified } returns false
         every { isUserVerified = any() } just runs
         every { authenticationAttempts } returns 0
@@ -561,7 +561,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(VaultAddEditAction.Common.UpgradeToPremiumClick)
                 assertEquals(
                     VaultAddEditEvent.NavigateToPremium(
-                        uri = "https://vault.bitwarden.com/#/" +
+                        uri = "https://vault./#/" +
                             "settings/subscription/premium" +
                             "?callToAction=upgradeToPremium",
                     ),
@@ -1069,7 +1069,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 mockCreatePublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
             )
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = "mockUserId",
                     selectedCipherView = any(),
                     createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
@@ -1077,7 +1077,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 )
             } returns Fido2RegisterCredentialResult.Success("mockRegistrationResponse")
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = mockCreatePublicKeyCredentialRequest,
                 )
             } returns UserVerificationRequirement.REQUIRED
@@ -1138,12 +1138,12 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             )
 
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     mockCreatePublicKeyCredentialRequest,
                 )
             } returns UserVerificationRequirement.DISCOURAGED
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = "mockUserId",
                     selectedCipherView = any(),
                     createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
@@ -1180,7 +1180,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                     toastManager.show(messageId = UniversalString.item_updated)
                 }
                 coVerify(exactly = 1) {
-                    bitwardenCredentialManager.registerFido2Credential(
+                    universalpasswordmanagerCredentialManager.registerFido2Credential(
                         userId = mockUserId,
                         selectedCipherView = any(),
                         createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
@@ -1221,12 +1221,12 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             )
 
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     mockCreatePublicKeyCredentialRequest,
                 )
             } returns UserVerificationRequirement.DISCOURAGED
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = "mockUserId",
                     selectedCipherView = any(),
                     createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
@@ -1234,9 +1234,9 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 )
             } returns Fido2RegisterCredentialResult.Success(responseJson = "mockResponse")
             every { authRepository.activeUserId } returns fido2CredentialRequest.userId
-            every { bitwardenCredentialManager.isUserVerified } returns true
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
             coEvery {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = fido2CredentialRequest.userId,
                     createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                     selectedCipherView = any(),
@@ -1250,7 +1250,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             viewModel.trySendAction(VaultAddEditAction.Common.SaveClick)
 
             coVerify {
-                bitwardenCredentialManager.registerFido2Credential(
+                universalpasswordmanagerCredentialManager.registerFido2Credential(
                     userId = fido2CredentialRequest.userId,
                     createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                     selectedCipherView = any(),
@@ -1259,7 +1259,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             }
 
             verify(exactly = 0) {
-                bitwardenCredentialManager.getPasskeyAttestationOptionsOrNull(any())
+                universalpasswordmanagerCredentialManager.getPasskeyAttestationOptionsOrNull(any())
             }
         }
 
@@ -1282,7 +1282,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
 
             setupFido2CreateRequest()
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = any<CreatePublicKeyCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.PREFERRED
@@ -1325,7 +1325,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             setupFido2CreateRequest()
 
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = any<CreatePublicKeyCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.REQUIRED
@@ -2195,7 +2195,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             mockCreatePublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
         )
         coEvery {
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = mockFidoRequest.userId,
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 callingAppInfo = mockCallingAppInfo,
@@ -2215,7 +2215,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 canAssignToCollections = true,
             )
         } returns stateWithName.viewState
-        every { bitwardenCredentialManager.isUserVerified } returns true
+        every { universalpasswordmanagerCredentialManager.isUserVerified } returns true
 
         mutableVaultDataFlow.value = DataState.Loaded(
             createVaultData(cipherListView = cipherListView),
@@ -2227,8 +2227,8 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         viewModel.trySendAction(VaultAddEditAction.Common.ConfirmOverwriteExistingPasskeyClick)
 
         coVerify {
-            bitwardenCredentialManager.isUserVerified
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.isUserVerified
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = mockFidoRequest.userId,
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 callingAppInfo = mockCallingAppInfo,
@@ -2283,9 +2283,9 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                     canAssignToCollections = true,
                 )
             } returns stateWithName.viewState
-            every { bitwardenCredentialManager.isUserVerified } returns false
+            every { universalpasswordmanagerCredentialManager.isUserVerified } returns false
             every {
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     any<CreatePublicKeyCredentialRequest>(),
                 )
             } returns UserVerificationRequirement.REQUIRED
@@ -2300,7 +2300,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             viewModel.trySendAction(VaultAddEditAction.Common.ConfirmOverwriteExistingPasskeyClick)
 
             verify {
-                bitwardenCredentialManager.isUserVerified
+                universalpasswordmanagerCredentialManager.isUserVerified
             }
         }
 
@@ -5199,7 +5199,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         fun `UserVerificationLockout should set isUserVerified to false and display CredentialErrorDialog`() {
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationLockOut)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.CredentialError(
                     message = UniversalString.passkey_operation_failed_because_user_could_not_be_verified.asText(),
@@ -5214,7 +5214,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             runTest {
                 viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationCancelled)
 
-                verify { bitwardenCredentialManager.isUserVerified = false }
+                verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
                 assertNull(viewModel.stateFlow.value.dialog)
                 viewModel.eventFlow.test {
                     assertEquals(
@@ -5231,7 +5231,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         fun `UserVerificationFail should set isUserVerified to false, and display CredentialErrorDialog`() {
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationFail)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.CredentialError(
                     message = UniversalString.passkey_operation_failed_because_user_could_not_be_verified.asText(),
@@ -5245,7 +5245,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         fun `UserVerificationNotSupported should display CredentialErrorDialog when active account not found`() {
             mutableUserStateFlow.value = null
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationNotSupported)
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.CredentialError(
                     message = UniversalString.passkey_operation_failed_because_user_could_not_be_verified.asText(),
@@ -5267,7 +5267,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 ),
             )
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationNotSupported)
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.Fido2PinPrompt,
                 viewModel.stateFlow.value.dialog,
@@ -5278,7 +5278,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         @Test
         fun `UserVerificationNotSupported should display Fido2MasterPasswordPrompt when user has password but no pin`() {
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationNotSupported)
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.Fido2MasterPasswordPrompt,
                 viewModel.stateFlow.value.dialog,
@@ -5306,7 +5306,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
 
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationNotSupported)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.Fido2PinSetUpPrompt,
                 viewModel.stateFlow.value.dialog,
@@ -5334,7 +5334,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
 
             viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationNotSupported)
 
-            verify { bitwardenCredentialManager.isUserVerified = false }
+            verify { universalpasswordmanagerCredentialManager.isUserVerified = false }
             assertEquals(
                 VaultAddEditState.DialogState.Fido2PinSetUpPrompt,
                 viewModel.stateFlow.value.dialog,
@@ -5394,7 +5394,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         @Test
         fun `MasterPasswordFido2VerificationSubmit should display CredentialError when user has no retries remaining`() {
             val password = "password"
-            every { bitwardenCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
+            every { universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
             coEvery {
                 authRepository.validatePassword(password = password)
             } returns ValidatePasswordResult.Success(isValid = false)
@@ -5499,7 +5499,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
         @Test
         fun `PinFido2VerificationSubmit should display CredentialError when user has no retries remaining`() {
             val pin = "PIN"
-            every { bitwardenCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
+            every { universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining() } returns false
             coEvery {
                 authRepository.validatePinUserKey(pin = pin)
             } returns ValidatePinResult.Success(isValid = false)
@@ -5644,18 +5644,18 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 setupFido2CreateRequest()
                 every { authRepository.activeUserId } returns "activeUserId"
                 coEvery {
-                    bitwardenCredentialManager.registerFido2Credential(
+                    universalpasswordmanagerCredentialManager.registerFido2Credential(
                         any(),
                         any(),
                         any(),
                         any(),
                     )
                 } returns mockResult
-                every { bitwardenCredentialManager.isUserVerified } returns false
+                every { universalpasswordmanagerCredentialManager.isUserVerified } returns false
                 viewModel.trySendAction(VaultAddEditAction.Common.UserVerificationSuccess)
 
                 verify {
-                    bitwardenCredentialManager.isUserVerified = true
+                    universalpasswordmanagerCredentialManager.isUserVerified = true
                 }
             }
 
@@ -5671,7 +5671,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                     )
                 every { authRepository.activeUserId } returns "activeUserId"
                 coEvery {
-                    bitwardenCredentialManager.registerFido2Credential(
+                    universalpasswordmanagerCredentialManager.registerFido2Credential(
                         any(),
                         any(),
                         any(),
@@ -5718,7 +5718,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                 setupFido2CreateRequest()
                 every { authRepository.activeUserId } returns "activeUserId"
                 coEvery {
-                    bitwardenCredentialManager.registerFido2Credential(
+                    universalpasswordmanagerCredentialManager.registerFido2Credential(
                         any(),
                         any(),
                         any(),
@@ -5746,7 +5746,7 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
                     toastManager.show(messageId = UniversalString.item_updated)
                     // Verify that isUserVerified is reset to false after successful registration
                     // to ensure subsequent credential operations require fresh user verification
-                    bitwardenCredentialManager.isUserVerified = false
+                    universalpasswordmanagerCredentialManager.isUserVerified = false
                 }
             }
     }
@@ -6299,10 +6299,10 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             vaultAddEditType = VaultAddEditType.AddItem(),
             vaultItemCipherType = VaultItemCipherType.LOGIN,
         ),
-        bitwardenClipboardManager: UniversalClipboardManager = clipboardManager,
+        universalpasswordmanagerClipboardManager: UniversalClipboardManager = clipboardManager,
         vaultRepo: VaultRepository = vaultRepository,
         generatorRepo: GeneratorRepository = generatorRepository,
-        bitwardenResourceManager: ResourceManager = resourceManager,
+        universalpasswordmanagerResourceManager: ResourceManager = resourceManager,
         clock: Clock = fixedClock,
     ): VaultAddEditViewModel =
         VaultAddEditViewModel(
@@ -6311,17 +6311,17 @@ class VaultAddEditViewModelTest : BaseViewModelTest() {
             featureFlagManager = featureFlagManager,
             authRepository = authRepository,
             buildInfoManager = buildInfoManager,
-            clipboardManager = bitwardenClipboardManager,
+            clipboardManager = universalpasswordmanagerClipboardManager,
             cardScanManager = cardScanManager,
             policyManager = policyManager,
             vaultRepository = vaultRepo,
-            bitwardenCredentialManager = bitwardenCredentialManager,
+            universalpasswordmanagerCredentialManager = universalpasswordmanagerCredentialManager,
             generatorRepository = generatorRepo,
             settingsRepository = settingsRepository,
             snackbarRelayManager = snackbarRelayManager,
             toastManager = toastManager,
             specialCircumstanceManager = specialCircumstanceManager,
-            resourceManager = bitwardenResourceManager,
+            resourceManager = universalpasswordmanagerResourceManager,
             clock = clock,
             organizationEventManager = organizationEventManager,
             networkConnectionManager = networkConnectionManager,

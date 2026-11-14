@@ -122,7 +122,7 @@ private fun LocalNetworkAccessContent(
             title = stringResource(id = UniversalString.local_network_access_required),
             message = stringResource(
                 id = UniversalString
-                    .without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server,
+                    .without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server,
             ),
             confirmButtonText = stringResource(id = UniversalString.go_to_settings),
             dismissButtonText = stringResource(id = UniversalString.no_thanks),
@@ -166,7 +166,7 @@ private fun LocalNetworkAccessContent(
 
         Text(
             text = stringResource(
-                id = UniversalString.bitwarden_needs_local_network_access_to_sync_with_your_server,
+                id = UniversalString.universalpasswordmanager_needs_local_network_access_to_sync_with_your_server,
             ),
             style = UniversalTheme.typography.bodyMedium,
             color = UniversalTheme.colorScheme.text.primary,

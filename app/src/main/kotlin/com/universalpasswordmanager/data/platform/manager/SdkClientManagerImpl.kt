@@ -65,7 +65,7 @@ internal class SdkClientManagerImpl(
         // to work around this limitation the SDK must be manually loaded prior to initializing any
         // [Client] instance.
         if (!isBuildVersionAtLeast(Build.VERSION_CODES.S)) {
-            nativeLibraryManager.loadLibrary("bitwarden_uniffi")
+            nativeLibraryManager.loadLibrary("universalpasswordmanager_uniffi")
         }
         initLogger(
             callback = sdkLoggerFactory.getLogCallback(),

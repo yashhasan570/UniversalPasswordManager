@@ -25,12 +25,12 @@ class CookieDiskSourceTest {
     @Test
     @Suppress("MaxLineLength")
     fun `initialization should migrate legacy encrypted values to the keystore encrypted preferences`() {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val config = CookieConfigurationData(
             hostname = hostname,
             cookies = listOf(
                 CookieConfigurationData.Cookie(
-                    name = "BW_SESSION",
+                    name = "UNIVERSALPM_SESSION",
                     value = "encrypted_cookie_value",
                 ),
             ),
@@ -70,12 +70,12 @@ class CookieDiskSourceTest {
 
     @Test
     fun `storeCookieConfig should persist config and getCookieConfig should retrieve it`() {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val config = CookieConfigurationData(
             hostname = hostname,
             cookies = listOf(
                 CookieConfigurationData.Cookie(
-                    name = "BW_SESSION",
+                    name = "UNIVERSALPM_SESSION",
                     value = "encrypted_cookie_value",
                 ),
             ),
@@ -89,7 +89,7 @@ class CookieDiskSourceTest {
 
     @Test
     fun `storeCookieConfig should update existing config`() {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val initialConfig = CookieConfigurationData(
             hostname = hostname,
             cookies = listOf(
@@ -119,16 +119,16 @@ class CookieDiskSourceTest {
 
     @Test
     fun `storage should handle cookies with multiple values`() {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val config = CookieConfigurationData(
             hostname = hostname,
             cookies = listOf(
                 CookieConfigurationData.Cookie(
-                    name = "BW_SESSION",
+                    name = "UNIVERSALPM_SESSION",
                     value = "session_value",
                 ),
                 CookieConfigurationData.Cookie(
-                    name = "BW_REFRESH",
+                    name = "UNIVERSALPM_REFRESH",
                     value = "refresh_value",
                 ),
             ),
@@ -141,7 +141,7 @@ class CookieDiskSourceTest {
 
     @Test
     fun `storeCookieConfig with null should remove stored config`() {
-        val hostname = "vault.bitwarden.com"
+        val hostname = "vault."
         val config = CookieConfigurationData(
             hostname = hostname,
             cookies = listOf(
@@ -160,8 +160,8 @@ class CookieDiskSourceTest {
 
     @Test
     fun `storeCookieConfig with null should not affect other hostnames`() {
-        val hostname1 = "vault.bitwarden.com"
-        val hostname2 = "other.bitwarden.com"
+        val hostname1 = "vault."
+        val hostname2 = "other."
         val config1 = CookieConfigurationData(
             hostname = hostname1,
             cookies = listOf(
@@ -185,8 +185,8 @@ class CookieDiskSourceTest {
 
     @Test
     fun `clearCookies should remove all stored cookie configs`() {
-        val hostname1 = "vault.bitwarden.com"
-        val hostname2 = "other.bitwarden.com"
+        val hostname1 = "vault."
+        val hostname2 = "other."
         val config1 = CookieConfigurationData(
             hostname = hostname1,
             cookies = listOf(
@@ -212,13 +212,13 @@ class CookieDiskSourceTest {
     @Test
     fun `clearCookies should be safe to call when no cookies are stored`() {
         cookieDiskSource.clearCookies()
-        assertNull(cookieDiskSource.getCookieConfig("vault.bitwarden.com"))
+        assertNull(cookieDiskSource.getCookieConfig("vault."))
     }
 
     @Test
     fun `storage should isolate configs by hostname`() {
-        val hostname1 = "vault.bitwarden.com"
-        val hostname2 = "other.bitwarden.com"
+        val hostname1 = "vault."
+        val hostname2 = "other."
         val config1 = CookieConfigurationData(
             hostname = hostname1,
             cookies = listOf(

@@ -51,18 +51,18 @@ class SdkClientManagerTest {
     }
 
     @Test
-    fun `init should load the bitwarden_uniffi library when build version is below 31`() = runTest {
+    fun `init should load the universalpasswordmanager_uniffi library when build version is below 31`() = runTest {
         every { isBuildVersionAtLeast(31) } returns false
         createSdkClientManager()
-        verify { mockNativeLibraryManager.loadLibrary("bitwarden_uniffi") }
+        verify { mockNativeLibraryManager.loadLibrary("universalpasswordmanager_uniffi") }
     }
 
     @Test
-    fun `init should not load the bitwarden_uniffi library when build version is 31 or above`() =
+    fun `init should not load the universalpasswordmanager_uniffi library when build version is 31 or above`() =
         runTest {
             every { isBuildVersionAtLeast(31) } returns true
             createSdkClientManager()
-            verify(exactly = 0) { mockNativeLibraryManager.loadLibrary("bitwarden_uniffi") }
+            verify(exactly = 0) { mockNativeLibraryManager.loadLibrary("universalpasswordmanager_uniffi") }
         }
 
     @Suppress("MaxLineLength")

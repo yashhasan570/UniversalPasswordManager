@@ -42,9 +42,9 @@ import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.cardStyle
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
 import com.universalpasswordmanager.ui.platform.base.util.toDp
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
-import com.universalpasswordmanager.ui.platform.components.slider.color.bitwardenSliderColors
+import com.universalpasswordmanager.ui.platform.components.slider.color.universalpasswordmanagerSliderColors
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
 
@@ -116,7 +116,7 @@ fun UniversalSlider(
             },
             singleLine = true,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-            colors = bitwardenTextFieldColors(),
+            colors = universalpasswordmanagerTextFieldColors(),
             interactionSource = interactionSource,
             modifier = Modifier
                 .onPreviewKeyEvent { keyEvent ->
@@ -146,11 +146,11 @@ fun UniversalSlider(
             onValueChangeFinished = { onValueChange(sliderValue, false) },
             valueRange = range.start.toFloat()..range.endInclusive.toFloat(),
             steps = range.endInclusive - 1,
-            colors = bitwardenSliderColors(),
+            colors = universalpasswordmanagerSliderColors(),
             thumb = {
                 SliderDefaults.Thumb(
                     interactionSource = remember { MutableInteractionSource() },
-                    colors = bitwardenSliderColors(),
+                    colors = universalpasswordmanagerSliderColors(),
                     thumbSize = DpSize(width = 20.dp, height = 20.dp),
                     modifier = Modifier.shadow(elevation = 2.dp, shape = CircleShape),
                 )
@@ -159,7 +159,7 @@ fun UniversalSlider(
                 SliderDefaults.Track(
                     modifier = Modifier.height(height = 4.dp),
                     drawStopIndicator = null,
-                    colors = bitwardenSliderColors(),
+                    colors = universalpasswordmanagerSliderColors(),
                     sliderState = sliderState,
                     thumbTrackGapSize = 0.dp,
                 )

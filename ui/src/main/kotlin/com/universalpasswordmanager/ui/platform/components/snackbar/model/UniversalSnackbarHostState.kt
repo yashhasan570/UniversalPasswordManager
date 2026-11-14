@@ -59,7 +59,7 @@ data class UniversalSnackbarHostState(
 }
 
 /**
- * Models possible data to show in a custom bitwarden snackbar.
+ * Models possible data to show in a custom universalpasswordmanager snackbar.
  * @property message The text to show in the snackbar.
  * @property messageHeader The optional title text to show.
  * @property actionLabel The optional text to show in the action button.

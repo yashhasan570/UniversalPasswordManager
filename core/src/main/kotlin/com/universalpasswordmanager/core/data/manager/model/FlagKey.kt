@@ -55,7 +55,7 @@ sealed class FlagKey<out T : Any> {
      *  Indicates the state of Universal authentication.
      */
     data object UniversalAuthenticationEnabled : FlagKey<Boolean>() {
-        override val keyName: String = "bitwarden-authentication-enabled"
+        override val keyName: String = "universalpasswordmanager-authentication-enabled"
         override val defaultValue: Boolean = false
     }
 

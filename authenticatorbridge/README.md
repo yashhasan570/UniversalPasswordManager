@@ -54,12 +54,12 @@ Some things to note:
 
 The following is a list of project modules required by the SDK.
 
-- **bitwarden-core**
+- **universalpasswordmanager-core**
   - [Core](../core)
   - Purpose: Internal platform tools and extensions
   - License: [LICENSE](../LICENSE.txt)
 
-- **bitwarden-annotations**
+- **universalpasswordmanager-annotations**
   - [Annotations](../annotation)
   - Purpose: Internal annotations used by the SDK.
   - License: [LICENSE](../LICENSE.txt)

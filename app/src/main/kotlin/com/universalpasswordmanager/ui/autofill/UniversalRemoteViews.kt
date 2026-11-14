@@ -52,7 +52,7 @@ fun buildVaultItemAutofillRemoteViews(
                 getString(UniversalString.go_to_my_vault)
             }
         },
-        iconRes = UniversalDrawable.logo_bitwarden_icon,
+        iconRes = UniversalDrawable.logo_universalpasswordmanager_icon,
         shouldTintIcon = false,
         autofillContentDescription = null,
     )
@@ -113,10 +113,10 @@ private fun buildAutofillRemoteViews(
             }
         }
 
-private val Context.bitwardenColorScheme: UniversalColorScheme
+private val Context.universalpasswordmanagerColorScheme: UniversalColorScheme
     get() = if (isSystemDarkMode) darkUniversalColorScheme else lightUniversalColorScheme
 
-val Context.iconTint: Color get() = bitwardenColorScheme.icon.primary
-private val Context.primaryText: Color get() = bitwardenColorScheme.text.primary
-private val Context.secondaryText: Color get() = bitwardenColorScheme.text.secondary
-private val Context.background: Color get() = bitwardenColorScheme.background.primary
+val Context.iconTint: Color get() = universalpasswordmanagerColorScheme.icon.primary
+private val Context.primaryText: Color get() = universalpasswordmanagerColorScheme.text.primary
+private val Context.secondaryText: Color get() = universalpasswordmanagerColorScheme.text.secondary
+private val Context.background: Color get() = universalpasswordmanagerColorScheme.background.primary

@@ -1,6 +1,6 @@
 package com.universalpasswordmanager.data.platform.repository
 
-import com.bitwarden.authenticatorbridge.model.SharedAccountData
+import .authenticatorbridge.model.SharedAccountData
 
 /**
  * Provides an API for querying disk sources required by Authenticator Bridge

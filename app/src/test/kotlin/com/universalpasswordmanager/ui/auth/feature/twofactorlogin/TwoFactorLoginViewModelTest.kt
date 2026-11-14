@@ -404,7 +404,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
         runTest {
             val authMethodsData = mapOf(
                 TwoFactorAuthMethod.DUO to JsonObject(
-                    mapOf("AuthUrl" to JsonPrimitive("bitwarden.com")),
+                    mapOf("AuthUrl" to JsonPrimitive("")),
                 ),
             )
             val response = GetTokenResponseJson.TwoFactorRequired(
@@ -414,7 +414,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
             )
             every { authRepository.twoFactorResponse } returns response
             val mockkUri = mockk<Uri>()
-            every { "bitwarden.com".toUri() } returns mockkUri
+            every { "".toUri() } returns mockkUri
             val viewModel = createViewModel(
                 state = DEFAULT_STATE.copy(
                     authMethod = TwoFactorAuthMethod.DUO,
@@ -426,7 +426,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
                     TwoFactorLoginEvent.NavigateToDuo(
                         uri = mockkUri,
                         authTabData = AuthTabData.HttpsScheme(
-                            host = "bitwarden.com",
+                            host = "",
                             path = "duo-callback",
                         ),
                     ),
@@ -478,7 +478,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
     @Test
     fun `ContinueButtonClick login should emit NavigateToWebAuth when auth method is WEB_AUTH and data is non-null`() =
         runTest {
-            val data = JsonObject(mapOf("AuthUrl" to JsonPrimitive("bitwarden.com")))
+            val data = JsonObject(mapOf("AuthUrl" to JsonPrimitive("")))
             val response = GetTokenResponseJson.TwoFactorRequired(
                 authMethodsData = mapOf(TwoFactorAuthMethod.WEB_AUTH to data),
                 ssoToken = null,
@@ -515,7 +515,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
                     TwoFactorLoginEvent.NavigateToWebAuth(
                         uri = mockkUri,
                         authTabData = AuthTabData.HttpsScheme(
-                            host = "bitwarden.com",
+                            host = "",
                             path = "webauthn-callback",
                         ),
                     ),
@@ -702,7 +702,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
                     DEFAULT_STATE.copy(
                         dialogState = TwoFactorLoginState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server.asText(),
+                            message = UniversalString.this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server.asText(),
                         ),
                     ),
                     awaitItem(),
@@ -972,7 +972,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
         runTest {
             val mockkUri = mockk<Uri>()
             every {
-                Uri.parse("https://vault.bitwarden.com/#/recover-2fa")
+                Uri.parse("https://vault./#/recover-2fa")
             } returns mockkUri
 
             val viewModel = createViewModel()
@@ -984,7 +984,7 @@ class TwoFactorLoginViewModelTest : BaseViewModelTest() {
                 )
                 assertEquals(
                     TwoFactorLoginEvent.NavigateToRecoveryCode(
-                        uri = "https://vault.bitwarden.com/#/recover-2fa".toUri(),
+                        uri = "https://vault./#/recover-2fa".toUri(),
                     ),
                     awaitItem(),
                 )

@@ -17,12 +17,12 @@ import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
 import com.universalpasswordmanager.ui.platform.base.util.toSafeOverlayColor
 import com.universalpasswordmanager.ui.platform.base.util.toUnscaledTextUnit
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenStandardIconButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerStandardIconButtonColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
-import com.universalpasswordmanager.ui.platform.theme.type.bitwardenFontFamily
+import com.universalpasswordmanager.ui.platform.theme.type.universalpasswordmanagerFontFamily
 
 /**
  * Displays an icon representing a Universal account with the user's initials superimposed.
@@ -47,7 +47,7 @@ fun UniversalAccountActionItem(
     val contentDescription = stringResource(id = UniversalString.account)
     IconButton(
         onClick = onClick,
-        colors = bitwardenStandardIconButtonColors(),
+        colors = universalpasswordmanagerStandardIconButtonColors(),
         interactionSource = interactionSource,
         modifier = modifier
             .interactiveBorder(
@@ -66,7 +66,7 @@ fun UniversalAccountActionItem(
             style = TextStyle(
                 fontSize = 11.dp.toUnscaledTextUnit(),
                 lineHeight = 13.dp.toUnscaledTextUnit(),
-                fontFamily = bitwardenFontFamily,
+                fontFamily = universalpasswordmanagerFontFamily,
                 fontWeight = FontWeight.SemiBold,
             ),
             color = color.toSafeOverlayColor(),

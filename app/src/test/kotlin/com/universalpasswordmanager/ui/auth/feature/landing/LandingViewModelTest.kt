@@ -239,7 +239,7 @@ class LandingViewModelTest : BaseViewModelTest() {
 
     @Test
     fun `ContinueButtonClick with valid email should emit NavigateToLogin`() = runTest {
-        val validEmail = "email@bitwarden.com"
+        val validEmail = "email@"
         val viewModel = createViewModel()
         viewModel.trySendAction(LandingAction.EmailInputChanged(validEmail))
         viewModel.eventFlow.test {
@@ -253,7 +253,7 @@ class LandingViewModelTest : BaseViewModelTest() {
 
     @Test
     fun `ContinueButtonClick with invalid email should display an error dialog`() = runTest {
-        val invalidEmail = "bitwarden.com"
+        val invalidEmail = ""
         val viewModel = createViewModel()
         viewModel.trySendAction(LandingAction.EmailInputChanged(invalidEmail))
         val initialState = DEFAULT_STATE.copy(
@@ -287,7 +287,7 @@ class LandingViewModelTest : BaseViewModelTest() {
     @Suppress("MaxLineLength")
     @Test
     fun `ContinueButtonClick with an email input matching an existing account on same environment that is logged in should show the account already added dialog`() {
-        val rememberedEmail = "active@bitwarden.com"
+        val rememberedEmail = "active@"
         val activeAccount = UserState.Account(
             userId = "activeUserId",
             name = "name",
@@ -347,7 +347,7 @@ class LandingViewModelTest : BaseViewModelTest() {
     @Test
     fun `ContinueButtonClick with an email input matching an existing account on different environment that is logged in should emit NavigateToLogin`() =
         runTest {
-            val rememberedEmail = "active@bitwarden.com"
+            val rememberedEmail = "active@"
             val activeAccount = UserState.Account(
                 userId = "activeUserId",
                 name = "name",
@@ -413,7 +413,7 @@ class LandingViewModelTest : BaseViewModelTest() {
     @Test
     fun `ContinueButtonClick with an email input matching an existing account that is logged out should emit NavigateToLogin`() =
         runTest {
-            val rememberedEmail = "active@bitwarden.com"
+            val rememberedEmail = "active@"
             val activeAccount = UserState.Account(
                 userId = "activeUserId",
                 name = "name",

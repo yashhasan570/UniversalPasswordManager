@@ -121,8 +121,8 @@ class SdkRepositoryFactoryTests {
                 userAgent = USER_AGENT,
                 deviceType = DeviceType.ANDROID,
                 deviceIdentifier = UNIQUE_APP_ID,
-                bitwardenClientVersion = CLIENT_VERSION,
-                bitwardenPackageType = null,
+                universalpasswordmanagerClientVersion = CLIENT_VERSION,
+                universalpasswordmanagerPackageType = null,
             ),
             sdkRepoFactory.getClientSettings(),
         )
@@ -141,9 +141,9 @@ private val FIXED_CLOCK: Clock = Clock.fixed(
     ZoneOffset.UTC,
 )
 
-private const val BASE_API_URL: String = "https://api.bitwarden.com"
-private const val BASE_EVENTS_URL: String = "https://events.bitwarden.com"
-private const val BASE_IDENTITY_URL: String = "https://identity.bitwarden.com"
+private const val BASE_API_URL: String = "https://api."
+private const val BASE_EVENTS_URL: String = "https://events."
+private const val BASE_IDENTITY_URL: String = "https://identity."
 private const val CLIENT_NAME: String = "mobile"
 private const val CLIENT_VERSION: String = "2026.4.1"
 private const val UNIQUE_APP_ID: String = "app_id_12345"

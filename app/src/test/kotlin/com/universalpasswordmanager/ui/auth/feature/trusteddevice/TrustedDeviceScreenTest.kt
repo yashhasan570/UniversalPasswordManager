@@ -50,21 +50,21 @@ class TrustedDeviceScreenTest : UniversalComposeTest() {
 
     @Test
     fun `on NavigateToApproveWithDevice event should invoke onNavigateToAdminApproval`() {
-        val email = "test@bitwarden.com"
+        val email = "test@"
         mutableEventFlow.tryEmit(TrustedDeviceEvent.NavigateToApproveWithAdmin(email))
         assertEquals(onNavigateToAdminApprovalEmail, email)
     }
 
     @Test
     fun `on NavigateToApproveWithDevice event should invoke onNavigateToLoginWithOtherDevice`() {
-        val email = "test@bitwarden.com"
+        val email = "test@"
         mutableEventFlow.tryEmit(TrustedDeviceEvent.NavigateToApproveWithDevice(email))
         assertEquals(onNavigateToLoginWithOtherDeviceEmail, email)
     }
 
     @Test
     fun `on NavigateToLockScreen event should invoke NavigateToLockScreen`() {
-        val email = "test@bitwarden.com"
+        val email = "test@"
         mutableEventFlow.tryEmit(TrustedDeviceEvent.NavigateToLockScreen(email))
         assertEquals(onNavigateToLockEmail, email)
     }
@@ -221,25 +221,25 @@ class TrustedDeviceScreenTest : UniversalComposeTest() {
         mutableStateFlow.update { DEFAULT_STATE }
 
         composeTestRule
-            .onNodeWithText("Logging in as bitwarden@email.com on vault.test.pw")
+            .onNodeWithText("Logging in as universalpasswordmanager@email.com on vault.test.pw")
             .assertDoesNotExist()
         composeTestRule
-            .onNodeWithText("Logging in as email@bitwarden.com on vault.bitwarden.pw")
+            .onNodeWithText("Logging in as email@ on vault.")
             .performScrollTo()
             .assertIsDisplayed()
 
         mutableStateFlow.update {
             DEFAULT_STATE.copy(
-                emailAddress = "bitwarden@email.com",
+                emailAddress = "universalpasswordmanager@email.com",
                 environmentLabel = "vault.test.pw",
             )
         }
 
         composeTestRule
-            .onNodeWithText("Logging in as email@bitwarden.com on vault.bitwarden.pw")
+            .onNodeWithText("Logging in as email@ on vault.")
             .assertDoesNotExist()
         composeTestRule
-            .onNodeWithText("Logging in as bitwarden@email.com on vault.test.pw")
+            .onNodeWithText("Logging in as universalpasswordmanager@email.com on vault.test.pw")
             .performScrollTo()
             .assertIsDisplayed()
     }
@@ -285,8 +285,8 @@ class TrustedDeviceScreenTest : UniversalComposeTest() {
 
 private val DEFAULT_STATE: TrustedDeviceState = TrustedDeviceState(
     dialogState = null,
-    emailAddress = "email@bitwarden.com",
-    environmentLabel = "vault.bitwarden.pw",
+    emailAddress = "email@",
+    environmentLabel = "vault.",
     isRemembered = false,
     showContinueButton = true,
     showOtherDeviceButton = true,

@@ -51,10 +51,10 @@ import androidx.core.text.getSpans
 @Composable
 fun @receiver:StringRes Int.toAnnotatedString(
     vararg args: CharSequence,
-    style: SpanStyle = bitwardenDefaultSpanStyle,
-    emphasisHighlightStyle: SpanStyle = bitwardenBoldSpanStyle,
-    linkHighlightStyle: SpanStyle = bitwardenClickableTextSpanStyle,
-    linkHighlightFocusStyle: SpanStyle = bitwardenClickableTextFocusSpanStyle,
+    style: SpanStyle = universalpasswordmanagerDefaultSpanStyle,
+    emphasisHighlightStyle: SpanStyle = universalpasswordmanagerBoldSpanStyle,
+    linkHighlightStyle: SpanStyle = universalpasswordmanagerClickableTextSpanStyle,
+    linkHighlightFocusStyle: SpanStyle = universalpasswordmanagerClickableTextFocusSpanStyle,
     resources: Resources = LocalResources.current,
     onAnnotationClick: ((annotationKey: String) -> Unit)? = null,
 ): AnnotatedString = remember(
@@ -109,10 +109,10 @@ fun @receiver:StringRes Int.toAnnotatedString(
 fun @receiver:PluralsRes Int.toAnnotatedPluralsString(
     quantity: Int,
     vararg args: CharSequence,
-    style: SpanStyle = bitwardenDefaultSpanStyle,
-    emphasisHighlightStyle: SpanStyle = bitwardenBoldSpanStyle,
-    linkHighlightStyle: SpanStyle = bitwardenClickableTextSpanStyle,
-    linkHighlightFocusStyle: SpanStyle = bitwardenClickableTextFocusSpanStyle,
+    style: SpanStyle = universalpasswordmanagerDefaultSpanStyle,
+    emphasisHighlightStyle: SpanStyle = universalpasswordmanagerBoldSpanStyle,
+    linkHighlightStyle: SpanStyle = universalpasswordmanagerClickableTextSpanStyle,
+    linkHighlightFocusStyle: SpanStyle = universalpasswordmanagerClickableTextFocusSpanStyle,
     resources: Resources = LocalResources.current,
     onAnnotationClick: ((annotationKey: String) -> Unit)? = null,
 ): AnnotatedString = remember(

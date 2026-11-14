@@ -42,7 +42,7 @@ import com.universalpasswordmanager.ui.platform.base.util.interactiveBorder
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
 import com.universalpasswordmanager.ui.platform.base.util.toDp
 import com.universalpasswordmanager.ui.platform.base.util.toMaxScale
-import com.universalpasswordmanager.ui.platform.components.segment.color.bitwardenSegmentedButtonColors
+import com.universalpasswordmanager.ui.platform.components.segment.color.universalpasswordmanagerSegmentedButtonColors
 import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
 import com.universalpasswordmanager.ui.platform.theme.ripple.NoFocusRippleConfig
 import kotlinx.collections.immutable.ImmutableList
@@ -118,7 +118,7 @@ fun SingleChoiceSegmentedButtonRowScope.SegmentedButtonOptionContent(
     modifier: Modifier = Modifier,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
 ) {
-    val colors = bitwardenSegmentedButtonColors()
+    val colors = universalpasswordmanagerSegmentedButtonColors()
     CompositionLocalProvider(LocalRippleConfiguration provides NoFocusRippleConfig) {
         SegmentedButton(
             enabled = option.isEnabled,

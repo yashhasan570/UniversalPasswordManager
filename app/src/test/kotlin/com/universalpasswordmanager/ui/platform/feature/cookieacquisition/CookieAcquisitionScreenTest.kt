@@ -68,7 +68,7 @@ class CookieAcquisitionScreenTest : UniversalComposeTest() {
     fun `LaunchBrowser event should call startAuthTab`() {
         val uri = "https://example.com"
         val authTabData = AuthTabData.CustomScheme(
-            callbackUrl = "bitwarden://sso-cookie-vendor",
+            callbackUrl = "sso-cookie-vendor",
         )
         mutableEventFlow.tryEmit(
             CookieAcquisitionEvent.LaunchBrowser(
@@ -191,7 +191,7 @@ class CookieAcquisitionScreenTest : UniversalComposeTest() {
     }
 }
 
-private const val DEFAULT_ENVIRONMENT_URL = "https://vault.bitwarden.com"
+private const val DEFAULT_ENVIRONMENT_URL = "https://vault."
 
 private val DEFAULT_STATE = CookieAcquisitionState(
     environmentUrl = DEFAULT_ENVIRONMENT_URL,

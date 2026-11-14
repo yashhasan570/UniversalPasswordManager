@@ -291,8 +291,8 @@ class UserStateManagerTest {
         }
 }
 
-private const val EMAIL_1 = "test@bitwarden.com"
-private const val EMAIL_2 = "test2@bitwarden.com"
+private const val EMAIL_1 = "test@"
+private const val EMAIL_2 = "test2@"
 private const val USER_ID_1 = "2a135b23-e1fb-42c9-bec3-573857bc8181"
 private const val USER_ID_2 = "b9d32ec0-6497-4582-9798-b350f53bfa02"
 

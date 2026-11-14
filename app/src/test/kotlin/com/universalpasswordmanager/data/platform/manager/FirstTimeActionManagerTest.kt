@@ -446,7 +446,7 @@ private val MOCK_USER_DECRYPTION_OPTIONS: UserDecryptionOptionsJson = UserDecryp
 
 private val MOCK_PROFILE = AccountJson.Profile(
     userId = USER_ID,
-    email = "test@bitwarden.com",
+    email = "test@",
     isEmailVerified = true,
     name = "Universal Tester",
     hasPremiumPersonally = false,

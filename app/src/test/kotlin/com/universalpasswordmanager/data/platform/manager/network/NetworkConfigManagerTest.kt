@@ -55,7 +55,7 @@ class NetworkConfigManagerTest {
             authRepository = authRepository,
             environmentRepository = environmentRepository,
             serverConfigRepository = serverConfigRepository,
-            bitwardenServiceClient = mockUniversalServiceClient,
+            universalpasswordmanagerServiceClient = mockUniversalServiceClient,
             dispatcherManager = dispatcherManager,
         )
     }

@@ -364,7 +364,7 @@ private fun PrivilegedAppsListScreen_Preview() {
                     appName = null,
                 ),
                 PrivilegedAppListItem(
-                    packageName = "com.bitwarden.authenticator.google",
+                    packageName = ".authenticator.google",
                     signature = "XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX",
                     trustAuthority = PrivilegedAppListItem.PrivilegedAppTrustAuthority.COMMUNITY,
                     appName = "Universal",
@@ -378,13 +378,13 @@ private fun PrivilegedAppsListScreen_Preview() {
             ),
             notInstalledApps = persistentListOf(
                 PrivilegedAppListItem(
-                    packageName = "com.universalpasswordmanager.community",
+                    packageName = "com.munity",
                     signature = "XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX",
                     trustAuthority = PrivilegedAppListItem.PrivilegedAppTrustAuthority.USER,
                     appName = "Universal",
                 ),
                 PrivilegedAppListItem(
-                    packageName = "com.bitwarden.authenticator.community",
+                    packageName = ".authenticator.community",
                     signature = "XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX",
                     trustAuthority = PrivilegedAppListItem.PrivilegedAppTrustAuthority.COMMUNITY,
                     appName = "Universal",

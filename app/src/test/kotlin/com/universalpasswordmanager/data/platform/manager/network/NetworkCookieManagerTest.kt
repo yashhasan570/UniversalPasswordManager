@@ -283,9 +283,9 @@ class NetworkCookieManagerTest {
     }
 }
 
-private const val HOSTNAME = "vault.bitwarden.com"
-private const val COOKIE_DOMAIN = "bitwarden.com"
-private const val SUBDOMAIN_HOSTNAME = "api.bitwarden.com"
+private const val HOSTNAME = "vault."
+private const val COOKIE_DOMAIN = ""
+private const val SUBDOMAIN_HOSTNAME = "api."
 private const val OTHER_ENVIRONMENT_HOSTNAME = "vault.example.org"
 private const val BOOTSTRAP_TYPE_SSO = "ssoCookieVendor"
 

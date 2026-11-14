@@ -49,7 +49,7 @@ import javax.crypto.Cipher
 class CredentialProviderProcessorImpl(
     private val context: Context,
     private val authRepository: AuthRepository,
-    private val bitwardenCredentialManager: UniversalCredentialManager,
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager,
     private val pendingIntentManager: CredentialManagerPendingIntentManager,
     private val clock: Clock,
     dispatcherManager: DispatcherManager,
@@ -121,7 +121,7 @@ class CredentialProviderProcessorImpl(
 
         // Otherwise, find all matching credentials from the current vault.
         val getCredentialJob = ioScope.launch {
-            bitwardenCredentialManager
+            universalpasswordmanagerCredentialManager
                 .getCredentialEntries(
                     getCredentialsRequest = GetCredentialsRequest(
                         userId = userState.activeUserId,
@@ -191,7 +191,7 @@ class CredentialProviderProcessorImpl(
             )
             .setDescription(
                 context.getString(
-                    UniversalString.your_passkey_will_be_saved_to_your_bitwarden_vault_for_x,
+                    UniversalString.your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x,
                     accountName,
                 ),
             )
@@ -239,7 +239,7 @@ class CredentialProviderProcessorImpl(
             )
             .setDescription(
                 context.getString(
-                    UniversalString.your_password_will_be_saved_to_your_bitwarden_vault_for_x,
+                    UniversalString.your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x,
                     accountName,
                 ),
             )

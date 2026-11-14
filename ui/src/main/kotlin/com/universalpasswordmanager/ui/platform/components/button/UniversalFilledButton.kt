@@ -21,7 +21,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.universalpasswordmanager.ui.platform.base.util.cardStyle
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
-import com.universalpasswordmanager.ui.platform.components.button.color.bitwardenFilledButtonColors
+import com.universalpasswordmanager.ui.platform.components.button.color.universalpasswordmanagerFilledButtonColors
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalButtonData
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
@@ -47,7 +47,7 @@ fun UniversalFilledButton(
     buttonData: UniversalButtonData,
     modifier: Modifier = Modifier,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    colors: ButtonColors = bitwardenFilledButtonColors(),
+    colors: ButtonColors = universalpasswordmanagerFilledButtonColors(),
     cardStyle: CardStyle? = null,
     cardInsets: PaddingValues = PaddingValues(horizontal = 16.dp),
 ) {
@@ -90,7 +90,7 @@ fun UniversalFilledButton(
     icon: Painter? = null,
     isEnabled: Boolean = true,
     isExternalLink: Boolean = false,
-    colors: ButtonColors = bitwardenFilledButtonColors(),
+    colors: ButtonColors = universalpasswordmanagerFilledButtonColors(),
     cardStyle: CardStyle? = null,
     cardInsets: PaddingValues = PaddingValues(horizontal = 16.dp),
 ) {

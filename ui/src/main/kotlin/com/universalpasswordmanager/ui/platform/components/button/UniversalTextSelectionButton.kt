@@ -34,8 +34,8 @@ import com.universalpasswordmanager.ui.platform.base.util.cardStyle
 import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalHelpButtonData
 import com.universalpasswordmanager.ui.platform.components.divider.UniversalHorizontalDivider
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldButtonColors
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldButtonColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.components.model.CardStyle
 import com.universalpasswordmanager.ui.platform.components.row.UniversalRowOfActions
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
@@ -176,9 +176,9 @@ fun UniversalTextSelectionButton(
             value = selectedOption.orEmpty(),
             onValueChange = {},
             colors = if (enabled) {
-                bitwardenTextFieldButtonColors()
+                universalpasswordmanagerTextFieldButtonColors()
             } else {
-                bitwardenTextFieldColors()
+                universalpasswordmanagerTextFieldColors()
             },
             modifier = Modifier
                 .semantics { this.hideFromAccessibility() }

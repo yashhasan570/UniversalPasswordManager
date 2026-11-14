@@ -437,8 +437,8 @@ class LoginApprovalViewModelTest : BaseViewModelTest() {
     )
 }
 
-private const val EMAIL = "test@bitwarden.com"
-private const val EMAIL_2 = "test2@bitwarden.com"
+private const val EMAIL = "test@"
+private const val EMAIL_2 = "test2@"
 private const val FINGERPRINT = "fingerprint"
 private const val PASSWORD_HASH = "verySecureHash"
 private const val PUBLIC_KEY = "publicKey"
@@ -452,7 +452,7 @@ private val DEFAULT_STATE: LoginApprovalState = LoginApprovalState(
     dialogState = null,
     viewState = LoginApprovalState.ViewState.Content(
         deviceType = "Android",
-        domainUrl = "www.bitwarden.com",
+        domainUrl = "www.",
         email = EMAIL,
         fingerprint = FINGERPRINT,
         ipAddress = "1.0.0.1",
@@ -520,6 +520,6 @@ private val AUTH_REQUEST = AuthRequest(
     creationDate = Instant.parse("2024-09-13T00:00:00Z"),
     responseDate = null,
     requestApproved = true,
-    originUrl = "www.bitwarden.com",
+    originUrl = "www.",
     fingerprint = FINGERPRINT,
 )

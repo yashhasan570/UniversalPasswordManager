@@ -75,7 +75,7 @@ class StringExtensionsTest {
 
     @Test
     fun `getWebHostFromAndroidUriOrNull should return null when no dot`() {
-        assertNull("androidapp://comx8bitbitwarden".getWebHostFromAndroidUriOrNull())
+        assertNull("androidapp://comx8bituniversalpasswordmanager".getWebHostFromAndroidUriOrNull())
     }
 
     @Test

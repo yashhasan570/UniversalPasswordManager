@@ -25,9 +25,9 @@ import com.universalpasswordmanager.ui.platform.theme.color.lightUniversalColorS
 import com.universalpasswordmanager.ui.platform.theme.color.toMaterialColorScheme
 import com.universalpasswordmanager.ui.platform.theme.ripple.toRippleConfig
 import com.universalpasswordmanager.ui.platform.theme.shape.UniversalShapes
-import com.universalpasswordmanager.ui.platform.theme.shape.bitwardenShapes
+import com.universalpasswordmanager.ui.platform.theme.shape.universalpasswordmanagerShapes
 import com.universalpasswordmanager.ui.platform.theme.type.UniversalTypography
-import com.universalpasswordmanager.ui.platform.theme.type.bitwardenTypography
+import com.universalpasswordmanager.ui.platform.theme.type.universalpasswordmanagerTypography
 import com.universalpasswordmanager.ui.platform.theme.type.toMaterialTypography
 import com.universalpasswordmanager.ui.platform.util.isDarkMode
 
@@ -93,25 +93,25 @@ fun UniversalTheme(
         materialColorScheme = darkMaterialColorScheme,
         isDarkTheme = true,
     )
-    val bitwardenColorScheme = when {
+    val universalpasswordmanagerColorScheme = when {
         isDynamicEnabled -> if (isDarkTheme) darkDynamicColorScheme else lightDynamicColorScheme
         isDarkTheme -> darkUniversalColorScheme
         else -> lightUniversalColorScheme
     }
     // Provide the selected color scheme as well as the dynamic ones for override support.
     CompositionLocalProvider(
-        LocalUniversalColorScheme provides bitwardenColorScheme,
+        LocalUniversalColorScheme provides universalpasswordmanagerColorScheme,
         LocalUniversalDynamicLightColorScheme provides lightDynamicColorScheme,
         LocalUniversalDynamicDarkColorScheme provides darkDynamicColorScheme,
-        LocalUniversalShapes provides bitwardenShapes,
-        LocalUniversalTypography provides bitwardenTypography,
-        LocalRippleConfiguration provides bitwardenColorScheme.toRippleConfig(),
+        LocalUniversalShapes provides universalpasswordmanagerShapes,
+        LocalUniversalTypography provides universalpasswordmanagerTypography,
+        LocalRippleConfiguration provides universalpasswordmanagerColorScheme.toRippleConfig(),
     ) {
         MaterialTheme(
-            colorScheme = bitwardenColorScheme.toMaterialColorScheme(
+            colorScheme = universalpasswordmanagerColorScheme.toMaterialColorScheme(
                 defaultColorScheme = materialColorScheme,
             ),
-            typography = bitwardenTypography.toMaterialTypography(),
+            typography = universalpasswordmanagerTypography.toMaterialTypography(),
         ) { IncognitoInput(content = content) }
     }
 }
@@ -140,10 +140,10 @@ val LocalUniversalDynamicDarkColorScheme: ProvidableCompositionLocal<UniversalCo
  * Provides access to the Universal shapes throughout the app.
  */
 val LocalUniversalShapes: ProvidableCompositionLocal<UniversalShapes> =
-    compositionLocalOf { bitwardenShapes }
+    compositionLocalOf { universalpasswordmanagerShapes }
 
 /**
  * Provides access to the Universal typography throughout the app.
  */
 val LocalUniversalTypography: ProvidableCompositionLocal<UniversalTypography> =
-    compositionLocalOf { bitwardenTypography }
+    compositionLocalOf { universalpasswordmanagerTypography }

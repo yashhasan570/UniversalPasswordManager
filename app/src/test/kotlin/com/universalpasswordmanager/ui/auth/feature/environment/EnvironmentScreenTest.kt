@@ -144,7 +144,7 @@ class EnvironmentScreenTest : UniversalComposeTest() {
             .onNodeWithText("Server URL")
             // Click to focus to see placeholder
             .performClick()
-            .assertTextEquals("Server URL", "ex. https://bitwarden.company.com", "")
+            .assertTextEquals("Server URL", "ex. https://pany.com", "")
 
         mutableStateFlow.update { it.copy(serverUrl = "server-url") }
 

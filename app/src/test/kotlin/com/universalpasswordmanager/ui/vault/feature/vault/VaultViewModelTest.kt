@@ -595,7 +595,7 @@ class VaultViewModelTest : BaseViewModelTest() {
                 )
                 assertEquals(
                     VaultEvent.NavigateToUrl(
-                        url = "https://bitwarden.com/help/password-manager-plans/",
+                        url = "https:///help/password-manager-plans/",
                     ),
                     awaitItem(),
                 )
@@ -813,7 +813,7 @@ class VaultViewModelTest : BaseViewModelTest() {
                     UserState.Account(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active@bitwarden.com",
+                        email = "active@",
                         avatarColorHex = "#00aaaa",
                         environment = Environment.Prod.Us,
                         isPremium = true,
@@ -851,9 +851,9 @@ class VaultViewModelTest : BaseViewModelTest() {
                     AccountSummary(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active@bitwarden.com",
+                        email = "active@",
                         avatarColorHex = "#00aaaa",
-                        environmentLabel = "bitwarden.com",
+                        environmentLabel = "",
                         isActive = true,
                         isLoggedIn = true,
                         isVaultUnlocked = true,
@@ -900,7 +900,7 @@ class VaultViewModelTest : BaseViewModelTest() {
                     UserState.Account(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active@bitwarden.com",
+                        email = "active@",
                         avatarColorHex = "#00aaaa",
                         environment = Environment.Prod.Us,
                         isPremium = true,
@@ -938,9 +938,9 @@ class VaultViewModelTest : BaseViewModelTest() {
                     AccountSummary(
                         userId = "activeUserId",
                         name = "Other User",
-                        email = "active@bitwarden.com",
+                        email = "active@",
                         avatarColorHex = "#00aaaa",
-                        environmentLabel = "bitwarden.com",
+                        environmentLabel = "",
                         isActive = true,
                         isLoggedIn = true,
                         isVaultUnlocked = true,
@@ -1106,7 +1106,7 @@ class VaultViewModelTest : BaseViewModelTest() {
                 viewModel.trySendAction(VaultAction.UpgradeToPremiumClick)
                 assertEquals(
                     VaultEvent.NavigateToUrl(
-                        url = "https://vault.bitwarden.com/#/" +
+                        url = "https://vault./#/" +
                             "settings/subscription/premium" +
                             "?callToAction=upgradeToPremium",
                     ),
@@ -2813,7 +2813,7 @@ class VaultViewModelTest : BaseViewModelTest() {
                 dialog = VaultState.DialogState.CipherDecryptionError(
                     title = UniversalString.decryption_error.asText(),
                     message = UniversalString
-                        .bitwarden_could_not_decrypt_this_vault_item_description_long.asText(),
+                        .universalpasswordmanager_could_not_decrypt_this_vault_item_description_long.asText(),
                     selectedCipherId = itemId,
                 ),
             ),
@@ -3867,7 +3867,7 @@ class VaultViewModelTest : BaseViewModelTest() {
     @Test
     fun `OverflowOptionClick Vault CopyUsernameClick should call setText on the ClipboardManager`() =
         runTest {
-            val username = "bitwarden"
+            val username = "universalpasswordmanager"
             val viewModel = createViewModel()
             viewModel.trySendAction(
                 VaultAction.OverflowOptionClick(
@@ -4989,7 +4989,7 @@ private val DEFAULT_FIRST_TIME_STATE = FirstTimeState(
 private val DEFAULT_ACTIVE_ACCOUNT = UserState.Account(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     avatarColorHex = "#aa00aa",
     environment = Environment.Prod.Us,
     isPremium = true,
@@ -5012,7 +5012,7 @@ private val DEFAULT_ACTIVE_ACCOUNT = UserState.Account(
 private val DEFAULT_INACTIVE_ACCOUNT = UserState.Account(
     userId = "lockedUserId",
     name = "Locked User",
-    email = "locked@bitwarden.com",
+    email = "locked@",
     avatarColorHex = "#00aaaa",
     environment = Environment.Prod.Us,
     isPremium = false,
@@ -5053,9 +5053,9 @@ private fun createMockVaultState(
             AccountSummary(
                 userId = "activeUserId",
                 name = "Active User",
-                email = "active@bitwarden.com",
+                email = "active@",
                 avatarColorHex = "#aa00aa",
-                environmentLabel = "bitwarden.com",
+                environmentLabel = "",
                 isActive = true,
                 isLoggedIn = true,
                 isVaultUnlocked = true,
@@ -5063,9 +5063,9 @@ private fun createMockVaultState(
             AccountSummary(
                 userId = "lockedUserId",
                 name = "Locked User",
-                email = "locked@bitwarden.com",
+                email = "locked@",
                 avatarColorHex = "#00aaaa",
-                environmentLabel = "bitwarden.com",
+                environmentLabel = "",
                 isActive = false,
                 isLoggedIn = true,
                 isVaultUnlocked = false,

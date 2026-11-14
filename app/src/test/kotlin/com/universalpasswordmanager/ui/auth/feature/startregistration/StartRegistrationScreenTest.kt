@@ -120,7 +120,7 @@ class StartRegistrationScreenTest : UniversalComposeTest() {
     fun `NavigateToPrivacyPolicy event should invoke intent manager`() {
         mutableEventFlow.tryEmit(StartRegistrationEvent.NavigateToPrivacyPolicy)
         verify {
-            intentManager.launchUri("https://bitwarden.com/privacy/".toUri())
+            intentManager.launchUri("https:///privacy/".toUri())
         }
     }
 
@@ -128,7 +128,7 @@ class StartRegistrationScreenTest : UniversalComposeTest() {
     fun `NavigateToTerms event should invoke intent manager`() {
         mutableEventFlow.tryEmit(StartRegistrationEvent.NavigateToTerms)
         verify {
-            intentManager.launchUri("https://bitwarden.com/terms/".toUri())
+            intentManager.launchUri("https:///terms/".toUri())
         }
     }
 
@@ -136,7 +136,7 @@ class StartRegistrationScreenTest : UniversalComposeTest() {
     fun `NavigateToUnsubscribe event should invoke intent manager`() {
         mutableEventFlow.tryEmit(StartRegistrationEvent.NavigateToUnsubscribe)
         verify {
-            intentManager.launchUri("https://bitwarden.com/email-preferences/".toUri())
+            intentManager.launchUri("https:///email-preferences/".toUri())
         }
     }
 
@@ -198,7 +198,7 @@ class StartRegistrationScreenTest : UniversalComposeTest() {
 
         verify {
             intentManager.launchUri(
-                uri = "https://bitwarden.com/help/server-geographies/".toUri(),
+                uri = "https:///help/server-geographies/".toUri(),
             )
         }
     }

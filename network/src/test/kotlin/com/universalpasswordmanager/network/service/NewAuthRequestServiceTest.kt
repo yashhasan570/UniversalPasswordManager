@@ -200,7 +200,7 @@ private const val AUTH_REQUEST_RESPONSE_JSON = """
   "masterPasswordHash": "verySecureHash",
   "creationDate": "2024-09-13T01:00:00.00Z",
   "requestApproved": true,
-  "origin": "www.bitwarden.com"
+  "origin": "www."
 }
 """
 
@@ -214,5 +214,5 @@ private val AUTH_REQUEST_RESPONSE = AuthRequestsResponseJson.AuthRequest(
     creationDate = Instant.parse("2024-09-13T01:00:00.00Z"),
     responseDate = null,
     requestApproved = true,
-    originUrl = "www.bitwarden.com",
+    originUrl = "www.",
 )

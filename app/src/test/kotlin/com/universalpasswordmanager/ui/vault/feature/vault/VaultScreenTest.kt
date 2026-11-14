@@ -1361,7 +1361,7 @@ class VaultScreenTest : UniversalComposeTest() {
     @Test
     fun `clicking a favorite item should send VaultItemClick with the correct item`() {
         val itemText = "Test Item"
-        val username = "BitWarden"
+        val username = "Universal Password Manager"
         val vaultItem = VaultState.ViewState.VaultItem.Login(
             id = "12345",
             name = itemText.asText(),
@@ -2001,7 +2001,7 @@ class VaultScreenTest : UniversalComposeTest() {
     @Test
     fun `clicking a no folder item without password prompt should send VaultItemClick`() {
         val itemText = "Test Item"
-        val userName = "BitWarden"
+        val userName = "Universal Password Manager"
         val vaultItem = VaultState.ViewState.VaultItem.Login(
             id = "12345",
             name = itemText.asText(),
@@ -3025,9 +3025,9 @@ class VaultScreenTest : UniversalComposeTest() {
 private val ACTIVE_ACCOUNT_SUMMARY = AccountSummary(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     avatarColorHex = "#aa00aa",
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isActive = true,
     isLoggedIn = true,
     isVaultUnlocked = true,
@@ -3036,9 +3036,9 @@ private val ACTIVE_ACCOUNT_SUMMARY = AccountSummary(
 private val LOCKED_ACCOUNT_SUMMARY = AccountSummary(
     userId = "lockedUserId",
     name = "Locked User",
-    email = "locked@bitwarden.com",
+    email = "locked@",
     avatarColorHex = "#00aaaa",
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isActive = false,
     isLoggedIn = true,
     isVaultUnlocked = false,

@@ -204,7 +204,7 @@ private fun CookieAcquisitionScreen_preview() {
         UniversalScaffold {
             CookieAcquisitionContent(
                 state = CookieAcquisitionState(
-                    environmentUrl = "vault.bitwarden.com",
+                    environmentUrl = "vault.",
                     hostname = "",
                     dialogState = null,
                 ),
@@ -226,7 +226,7 @@ private fun CookieAcquisitionScreen_darkPreview() {
         UniversalScaffold {
             CookieAcquisitionContent(
                 state = CookieAcquisitionState(
-                    environmentUrl = "vault.bitwarden.com",
+                    environmentUrl = "vault.",
                     hostname = "",
                     dialogState = null,
                 ),

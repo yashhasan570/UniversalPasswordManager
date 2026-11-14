@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for navigation bar items.
  */
 @Composable
-fun bitwardenNavigationBarItemColors(): NavigationBarItemColors = NavigationBarItemColors(
+fun universalpasswordmanagerNavigationBarItemColors(): NavigationBarItemColors = NavigationBarItemColors(
     selectedIconColor = UniversalTheme.colorScheme.icon.secondary,
     unselectedIconColor = UniversalTheme.colorScheme.icon.primary,
     disabledIconColor = UniversalTheme.colorScheme.outlineButton.foregroundDisabled,

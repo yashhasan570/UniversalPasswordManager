@@ -235,8 +235,8 @@ private fun TrustedDeviceScaffold_preview() {
             state = TrustedDeviceState(
                 dialogState = null,
                 isRemembered = false,
-                emailAddress = "email@bitwarden.com",
-                environmentLabel = "vault.bitwarden.pw",
+                emailAddress = "email@",
+                environmentLabel = "vault.",
                 showContinueButton = false,
                 showOtherDeviceButton = true,
                 showRequestAdminButton = true,

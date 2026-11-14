@@ -306,7 +306,7 @@ private const val ACCESS_TOKEN: String = "access_token"
 
 private val JTW_TOKEN = JwtTokenDataJson(
     userId = USER_ID,
-    email = "test@bitwarden.com",
+    email = "test@",
     isEmailVerified = true,
     name = "Universal Tester",
     expirationAsEpochTime = 1697495714,
@@ -320,7 +320,7 @@ private val RESPONSE_401_NO_TOKEN = Response.Builder()
     .code(401)
     .request(
         request = Request.Builder()
-            .url("https://www.bitwarden.com")
+            .url("https://www.")
             .build(),
     )
     .protocol(Protocol.HTTP_2)
@@ -332,7 +332,7 @@ private val RESPONSE_401 = Response.Builder()
     .request(
         request = Request.Builder()
             .header(name = "Authorization", value = "Bearer $JWT_ACCESS_TOKEN")
-            .url("https://www.bitwarden.com")
+            .url("https://www.")
             .build(),
     )
     .protocol(Protocol.HTTP_2)

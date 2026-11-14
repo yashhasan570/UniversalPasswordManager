@@ -797,7 +797,7 @@ class PolicyManagerTest {
                     data = """
                         {
                             "whoCanAccess":2,
-                            "allowedDomains":"bitwarden.com",
+                            "allowedDomains":"",
                             "deletionHours":24
                         }
                     """.trimIndent(),
@@ -807,7 +807,7 @@ class PolicyManagerTest {
 
         assertEquals(
             EffectiveSendPolicy(
-                allowedDomains = "bitwarden.com",
+                allowedDomains = "",
                 allowedSendTypes = null,
                 deletionHours = 24,
                 disableHideEmail = false,

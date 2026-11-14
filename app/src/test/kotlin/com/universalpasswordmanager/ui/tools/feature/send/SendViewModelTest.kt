@@ -894,7 +894,7 @@ class SendViewModelTest : BaseViewModelTest() {
             viewModel.trySendAction(SendAction.UpgradedToPremiumCardClick)
             assertEquals(
                 SendEvent.NavigateToUrl(
-                    url = "https://bitwarden.com/help/password-manager-plans/",
+                    url = "https:///help/password-manager-plans/",
                 ),
                 awaitItem(),
             )
@@ -916,7 +916,7 @@ class SendViewModelTest : BaseViewModelTest() {
     @Suppress("LongParameterList")
     private fun createViewModel(
         state: SendState? = null,
-        bitwardenClipboardManager: UniversalClipboardManager = clipboardManager,
+        universalpasswordmanagerClipboardManager: UniversalClipboardManager = clipboardManager,
         authRepository: AuthRepository = authRepo,
         environmentRepository: EnvironmentRepository = environmentRepo,
         settingsRepository: SettingsRepository = settingsRepo,
@@ -926,7 +926,7 @@ class SendViewModelTest : BaseViewModelTest() {
         savedStateHandle = SavedStateHandle().apply {
             set("state", state)
         },
-        clipboardManager = bitwardenClipboardManager,
+        clipboardManager = universalpasswordmanagerClipboardManager,
         authRepo = authRepository,
         environmentRepo = environmentRepository,
         settingsRepo = settingsRepository,
@@ -960,7 +960,7 @@ private val DEFAULT_EFFECTIVE_SEND_POLICY = EffectiveSendPolicy(
 private val DEFAULT_USER_ACCOUNT_STATE = UserState.Account(
     userId = "user_id_1",
     name = "Bit",
-    email = "bitwarden@gmail.com",
+    email = "universalpasswordmanager@gmail.com",
     avatarColorHex = "#ff00ff",
     environment = Environment.Prod.Us,
     isPremium = false,

@@ -452,7 +452,7 @@ class UserLogoutManagerTest {
 }
 
 private val DISMISSAL_REVISION_DATE: Instant = Instant.parse("2024-09-13T01:00:00.00Z")
-private const val EMAIL_2 = "test2@bitwarden.com"
+private const val EMAIL_2 = "test2@"
 private const val ACCESS_TOKEN = "accessToken"
 private const val ACCESS_TOKEN_2 = "accessToken2"
 private const val REFRESH_TOKEN = "refreshToken"
@@ -461,7 +461,7 @@ private const val USER_ID_2 = "b9d32ec0-6497-4582-9798-b350f53bfa02"
 private val ACCOUNT_1 = AccountJson(
     profile = AccountJson.Profile(
         userId = USER_ID_1,
-        email = "test@bitwarden.com",
+        email = "test@",
         isEmailVerified = true,
         name = "Universal Tester",
         hasPremiumPersonally = false,

@@ -906,7 +906,7 @@ class SearchScreenTest : UniversalComposeTest() {
             viewModel.trySendAction(
                 SearchAction.OverflowOptionClick(
                     overflowAction = ListingItemOverflowAction.SendAction.CopyUrlClick(
-                        sendUrl = "https://vault.bitwarden.com/#/send/mockAccessId-1/mockKey-1",
+                        sendUrl = "https://vault./#/send/mockAccessId-1/mockKey-1",
                     ),
                 ),
             )
@@ -924,7 +924,7 @@ class SearchScreenTest : UniversalComposeTest() {
             viewModel.trySendAction(
                 SearchAction.OverflowOptionClick(
                     overflowAction = ListingItemOverflowAction.SendAction.ShareUrlClick(
-                        sendUrl = "https://vault.bitwarden.com/#/send/mockAccessId-1/mockKey-1",
+                        sendUrl = "https://vault./#/send/mockAccessId-1/mockKey-1",
                     ),
                 ),
             )

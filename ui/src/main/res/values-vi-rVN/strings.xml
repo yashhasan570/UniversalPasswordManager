@@ -75,9 +75,9 @@
     <string name="yes">Có</string>
     <string name="account">Tài khoản</string>
     <string name="account_created_success">Tài khoản của bạn đã được tạo thành công!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Đặt Universal Password Manager làm nhà cung cấp mã khóa trong cài đặt thiết bị.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Đặt Universal Password Manager làm nhà cung cấp mã khóa trong cài đặt thiết bị.</string>
     <string name="avoid_ambiguous_characters">Tránh các ký tự dễ nhầm lẫn</string>
-    <string name="bitwarden_autofill_service">Dịch vụ tự động điền Universal Password Manager</string>
+    <string name="universalpasswordmanager_autofill_service">Dịch vụ tự động điền Universal Password Manager</string>
     <string name="change_master_password">Thay đổi mật khẩu chính</string>
     <string name="close">Đóng</string>
     <string name="close_app">Đóng ứng dụng</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">“Đăng xuất” sau khi hết thời gian chờ phiên?</string>
     <string name="vault_timeout_log_out_confirmation_message">Sau thời gian này, bạn sẽ bị đăng xuất. Bạn cần kết nối với internet để đăng nhập lại và truy cập vào kho. Các cài đặt và mã PIN đã lưu trên thiết bị này sẽ không thay đổi.</string>
     <string name="logging_in">Đang đăng nhập…</string>
-    <string name="login_to_bitwarden">Đăng nhập Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">Đăng nhập Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">Mật khẩu nhập lại không trùng khớp.</string>
     <string name="master_password_description">Mật khẩu chính là mật khẩu bạn sử dụng để truy cập vào kho lưu trữ của mình. Điều rất quan trọng là bạn không được quên mật khẩu chính. Không có cách nào để khôi phục mật khẩu nếu bạn quên nó.</string>
     <string name="master_password_hint">Gợi ý mật khẩu chính (tùy chọn)</string>
@@ -175,7 +175,7 @@
     <string name="no_items_for_vault">Không có mục nào trong kho của bạn khớp với “%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">Tìm kiếm mục đăng nhập hoặc thêm mục đăng nhập mới</string>
     <string name="disabled">Vô hiệu hóa</string>
-    <string name="bitwarden_autofill_service_alert2">Cách dễ nhất để thêm thông tin đăng nhập mới vào kho của bạn là từ Dịch vụ Tự động điền Universal Password Manager. Tìm hiểu thêm về cách sử dụng Dịch vụ Tự động điền Universal Password Manager bằng cách chuyển đến trang \"Cài đặt\".</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Cách dễ nhất để thêm thông tin đăng nhập mới vào kho của bạn là từ Dịch vụ Tự động điền Universal Password Manager. Tìm hiểu thêm về cách sử dụng Dịch vụ Tự động điền Universal Password Manager bằng cách chuyển đến trang \"Cài đặt\".</string>
     <string name="autofill_noun">Tự động điền</string>
     <string name="autofill_verb">Tự động điền</string>
     <string name="autofill_or_view">Bạn muốn tự động điền hay xem mục này?</string>
@@ -299,7 +299,7 @@ Quá trình quét sẽ diễn ra tự động.</string>
     <string name="no_items_trash">Không có gì trong thùng rác.</string>
     <string name="autofill_accessibility_summary">Hỗ trợ điền tên đăng nhập và mật khẩu vào các trường tương ứng trong các ứng dụng khác và trên trang web.</string>
     <string name="autofill_service_description">Dịch vụ tự động điền của Universal Password Manager sử dụng Khung Tự động điền của Android để hỗ trợ điền thông tin đăng nhập, thẻ tín dụng và thông tin danh tính vào các ứng dụng khác trên thiết bị của bạn.</string>
-    <string name="bitwarden_autofill_go_to_settings">Chúng tôi không thể mở cài đặt tự động điền cho bạn. Bạn có thể đi đến cài đặt tự động điền theo cách thủ công bằng cách vào Cài đặt &gt; Hệ thống &gt; Ngôn ngữ và nhập liệu &gt; Nâng cao &gt; Dịch vụ tự động điền.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Chúng tôi không thể mở cài đặt tự động điền cho bạn. Bạn có thể đi đến cài đặt tự động điền theo cách thủ công bằng cách vào Cài đặt &gt; Hệ thống &gt; Ngôn ngữ và nhập liệu &gt; Nâng cao &gt; Dịch vụ tự động điền.</string>
     <string name="custom_field_name">Tên trường tùy chỉnh</string>
     <string name="field_type_boolean">Đúng/Sai</string>
     <string name="field_type_hidden">Bí ẩn</string>
@@ -646,14 +646,14 @@ chọn Thêm TOTP để lưu khóa an toàn</string>
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Bạn mới sử dụng Universal Password Manager?</string>
+    <string name="new_to_universalpasswordmanager">Bạn mới sử dụng Universal Password Manager?</string>
     <string name="get_master_passwordword_hint">Nhận gợi ý mật khẩu chính</string>
     <string name="logging_in_as_x_on_y">Đăng nhập như %1$s trên %2$s</string>
     <string name="not_you">Không phải bạn?</string>
     <string name="log_in_with_master_password">Đăng nhập bằng mật khẩu chính</string>
     <string name="log_in_initiated">Bắt đầu đăng nhập</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">Gửi lại thông báo</string>
     <string name="view_all_login_options">Xem tất cả tùy chọn đăng nhập</string>
@@ -711,7 +711,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Chọn kho lưu trữ</string>
     <string name="appearance">Giao diện</string>
     <string name="account_security">Bảo mật tài khoản</string>
-    <string name="bitwarden_help_center">Trung tâm hỗ trợ Universal Password Manager</string>
+    <string name="universalpasswordmanager_help_center">Trung tâm hỗ trợ Universal Password Manager</string>
     <string name="sync_now">Đồng bộ ngay</string>
     <string name="unlock_options">Tùy chọn mở khóa</string>
     <string name="session_timeout">Thời gian đóng kho</string>
@@ -728,10 +728,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">Tiếp tục tới Cài đặt thiết bị?</string>
     <string name="two_step_login_description_long">Tăng cường bảo mật tài khoản của bạn bằng cách thiết lập đăng nhập hai bước trên trang web Universal Password Manager.</string>
     <string name="change_master_password_description_long">Bạn có thể thay đổi mật khẩu chính của mình trên trang web Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Tìm hiểu thêm về cách sử dụng Universal Password Manager trong Trung tâm trợ giúp.</string>
-    <string name="privacy_policy_description_long">Đọc chính sách bảo mật trên bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Khám phá thêm các tính năng tài khoản Universal Password Manager của bạn trên bản web.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager cho phép bạn chia sẻ các mục trong kho lưu trữ với người khác bằng cách tạo một tổ chức. Tìm hiểu thêm trên bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Tìm hiểu thêm về cách sử dụng Universal Password Manager trong Trung tâm trợ giúp.</string>
+    <string name="privacy_policy_description_long">Đọc chính sách bảo mật trên .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Khám phá thêm các tính năng tài khoản Universal Password Manager của bạn trên bản web.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager cho phép bạn chia sẻ các mục trong kho lưu trữ với người khác bằng cách tạo một tổ chức. Tìm hiểu thêm trên .</string>
     <string name="created_x">Tạo lúc %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Tổ chức của bạn yêu cầu bạn thiết lập mật khẩu chính.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Thiết lập phương thức mở khóa để thay đổi hành động khi đóng kho.</string>
@@ -741,8 +741,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">Tài khoản của bạn bắt buộc đăng nhập hai bước bằng Duo.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Làm theo các bước từ Dou để hoàn tất đăng nhập.</string>
     <string name="launch_duo">Khởi chạy Dou</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Mã khóa sẽ được lưu vào kho Universal Password Manager của bạn trong %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Mật khẩu của bạn sẽ được lưu vào kho Universal Password Manager cho %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Mã khóa sẽ được lưu vào kho Universal Password Manager của bạn trong %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Mật khẩu của bạn sẽ được lưu vào kho Universal Password Manager cho %1$s</string>
     <string name="passkeys_not_supported_for_this_app">Ứng dụng này không hỗ trợ mã khóa</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Vận hành mã khóa thất bại vì trình duyệt không có quyền</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Vận hành mã khóa không thành công vì chữ ký trình duyệt không khớp</string>
@@ -768,7 +768,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">Kiểm tra email của bạn</string>
     <string name="open_email_app">Mở ứng dụng email</string>
     <string name="email_verified">Đã xác minh email</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Nhận email từ Universal Password Manager để cập nhật thông tin, lời khuyên và cơ hội nghiên cứu. <annotation link="unsubscribe">Hủy đăng ký</annotation> bất cứ lúc nào.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Nhận email từ Universal Password Manager để cập nhật thông tin, lời khuyên và cơ hội nghiên cứu. <annotation link="unsubscribe">Hủy đăng ký</annotation> bất cứ lúc nào.</string>
     <string name="security_prioritized">Bảo mật, ưu tiên hàng đầu</string>
     <string name="welcome_message_1">Lưu trữ thông tin đăng nhập, thẻ tín dụng và thông tin cá nhân vào kho lưu trữ an toàn của bạn. Universal Password Manager sử dụng mã hóa đầu cuối không tiết lộ thông tin (zero-knowledge) để bảo vệ những gì quan trọng đối với bạn.</string>
     <string name="welcome_message_2">Cài đặt tính năng mở khóa bằng sinh trắc học và tự động điền thông tin để đăng nhập vào các tài khoản của bạn mà không cần nhập bất kỳ ký tự nào.</string>
@@ -806,8 +806,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Nhấn vào liên kết trong email để xác minh địa chỉ email của bạn và tiếp tục tạo tài khoản.</string>
     <string name="change_email_address">Thay đổi địa chỉ email</string>
     <string name="next">Tiếp theo</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager không thể khôi phục mật khẩu chính bị mất hoặc quên.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager không thể đặt lại mật khẩu chính đã bị mất hoặc quên.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager không thể khôi phục mật khẩu chính bị mất hoặc quên.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager không thể đặt lại mật khẩu chính đã bị mất hoặc quên.</string>
     <string name="choose_your_master_password">Chọn mật khẩu chính của bạn</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Chọn mật khẩu mạnh và duy nhất để bảo vệ thông tin của bạn an toàn.</string>
     <plurals name="minimum_characters">
@@ -817,13 +817,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">Vui lòng tiến hành đăng ký lại hoặc thử đăng nhập. Bạn có thể đã có tài khoản.</string>
     <string name="restart_registration">Đăng ký lại</string>
     <string name="authenticator_sync">Đồng bộ hóa trình xác thực</string>
-    <string name="allow_bitwarden_authenticator_syncing">Đồng bộ với Bitwarden Authenticator</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Đồng bộ với Universal Password Manager Authenticator</string>
     <string name="there_was_an_issue_validating_the_registration_token">Có vấn đề trong quá trình xác thực token đăng ký.</string>
     <string name="turn_on_autofill">Bật tự động điền</string>
     <string name="autofill_setup">Thiết lập Tự động điền</string>
     <string name="turn_on_browser_autofill_integration">Bật tích hợp tự động điền trình duyệt</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Bạn đang sử dụng trình duyệt yêu cầu quyền đặc biệt để Universal Password Manager có thể tự động điền mật khẩu của bạn.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Bạn đang sử dụng các trình duyệt yêu cầu quyền đặc biệt để Universal Password Manager tự động điền mật khẩu của bạn.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Bạn đang sử dụng trình duyệt yêu cầu quyền đặc biệt để Universal Password Manager có thể tự động điền mật khẩu của bạn.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Bạn đang sử dụng các trình duyệt yêu cầu quyền đặc biệt để Universal Password Manager tự động điền mật khẩu của bạn.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Bạn đang sử dụng trình duyệt yêu cầu quyền đặc biệt để Universal Password Manager có thể tự động điền mật khẩu của bạn. Hãy bật phương thức tự động điền bạn muốn sử dụng bên dưới.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Bạn đang sử dụng các trình duyệt yêu cầu quyền đặc biệt để Universal Password Manager tự động điền mật khẩu của bạn. Bật tự động điền cho tất cả trình duyệt đã cài đặt của bạn để tiếp tục.</string>
     <string name="use_autofill_to_log_into_your_accounts">Dùng tính năng tự động điền để đăng nhập vào tài khoản của bạn chỉ bằng một lần chạm.</string>
@@ -831,7 +831,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">Bật tự động điền sau?</string>
     <string name="turn_on_browser_autofill_integration_later">Tích hợp tự động điền cho trình duyệt sau?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Bạn có thể hoàn tất bước này sau trong phần Cài đặt.</string>
-    <string name="what_bitwarden_has_to_offer">Bạn có thể khám phá tất cả các tính năng mà Universal Password Manager cung cấp và bắt đầu quản lý mật khẩu của mình một cách an toàn.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Bạn có thể khám phá tất cả các tính năng mà Universal Password Manager cung cấp và bắt đầu quản lý mật khẩu của mình một cách an toàn.</string>
     <string name="youre_all_set">Bạn đã sẵn sàng!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Lỗi kết nối với dịch vụ Duo. Sử dụng phương thức đăng nhập hai bước khác hoặc liên hệ với Duo để được hỗ trợ.</string>
     <string name="master_password_hint_not_specified">Gợi ý mật khẩu chính</string>
@@ -860,29 +860,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">Bước 1 trong 3</string>
     <string name="export_your_saved_logins">Xuất các thông tin đăng nhập đã lưu</string>
     <string name="delete_this_file_after_import_is_complete">Bạn sẽ xóa tệp này sau khi quá trình nhập dữ liệu hoàn tất.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">Trên máy tính của bạn, mở một tab trình duyệt mới và <annotation emphasis="bold">truy cập <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Đăng nhập Universal Password Manager bản web.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">Trên máy tính của bạn, mở một tab trình duyệt mới và <annotation emphasis="bold">truy cập <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Đăng nhập Universal Password Manager bản web.</string>
     <string name="step_2_of_3">Bước 2 trong 3</string>
-    <string name="log_in_to_bitwarden">Đăng nhập Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">Đăng nhập Universal Password Manager</string>
     <string name="step_3_of_3">Bước 3 trong 3</string>
-    <string name="import_logins_to_bitwarden">Nhập thông tin đăng nhập vào Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Trong giao diện điều hướng của Universal Password Manager, tìm tùy chọn <annotation emphasis="bold">Công cụ</annotation> và chọn <annotation emphasis="bold">Nhập dữ liệu.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Nhập thông tin đăng nhập vào Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Trong giao diện điều hướng của Universal Password Manager, tìm tùy chọn <annotation emphasis="bold">Công cụ</annotation> và chọn <annotation emphasis="bold">Nhập dữ liệu.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Điền vào biểu mẫu và <annotation emphasis="bold">nhập tệp mật khẩu đã lưu của bạn.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Để đảm bảo an toàn cho bạn, hãy chắc chắn rằng bạn đã <annotation emphasis="bold">xóa tệp mật khẩu đã lưu của mình.</annotation></string>
     <string name="need_help_check_out_import_help">Cần trợ giúp? Hãy xem <annotation link="importHelp">hướng dẫn nhập dữ liệu</annotation>.</string>
     <string name="import_help">trợ giúp nhập</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Lưu tệp đã xuất</annotation> ở một vị trí trên máy tính của bạn mà bạn có thể dễ dàng tìm thấy.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Đây không phải là máy chủ Universal Password Manager được công nhận. Bạn có thể cần liên hệ với nhà cung cấp dịch vụ hoặc cập nhật máy chủ của mình.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Đây không phải là máy chủ Universal Password Manager được công nhận. Bạn có thể cần liên hệ với nhà cung cấp dịch vụ hoặc cập nhật máy chủ của mình.</string>
     <string name="syncing_logins_loading_message">Đang đồng bộ đăng nhập…</string>
     <string name="download_the_browser_extension">Tải xuống tiện ích mở rộng trình duyệt</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Truy cập bitwarden.com/download và tích hợp Universal Password Manager vào trình duyệt yêu thích của bạn để có trải nghiệm liền mạch.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Truy cập /download và tích hợp Universal Password Manager vào trình duyệt yêu thích của bạn để có trải nghiệm liền mạch.</string>
     <string name="use_the_web_app">Dùng bản web</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Đăng nhập vào bitwarden.com để dễ dàng quản lý tài khoản và cập nhật cài đặt.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Đăng nhập vào  để dễ dàng quản lý tài khoản và cập nhật cài đặt.</string>
     <string name="autofill_passwords">Tự động điền mật khẩu</string>
     <string name="set_up_autofill_on_all_your_devices">Thiết lập tính năng tự động điền trên mọi thiết bị của bạn để đăng nhập chỉ bằng một lần chạm ở bất kỳ đâu.</string>
     <string name="import_successful">Nhập thành công!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Quản lý thông tin đăng nhập của bạn từ mọi nơi với các công cụ Universal Password Manager cho web và máy tính.</string>
-    <string name="bitwarden_tools">Công cụ Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Quản lý thông tin đăng nhập của bạn từ mọi nơi với các công cụ Universal Password Manager cho web và máy tính.</string>
+    <string name="universalpasswordmanager_tools">Công cụ Universal Password Manager</string>
     <string name="got_it">Đã hiểu</string>
     <string name="no_logins_were_imported">Không có tài khoản nào được nhập</string>
     <string name="import_error">Lỗi khi nhập</string>
@@ -899,7 +899,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d thông báo</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Đăng nhập nhanh và dễ dàng trên mọi thiết bị</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager có thể thông báo cho bạn mỗi khi nhận được yêu cầu đăng nhập mới từ một thiết bị khác.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Universal Password Manager có thể thông báo cho bạn mỗi khi nhận được yêu cầu đăng nhập mới từ một thiết bị khác.</string>
     <string name="skip_for_now">Bỏ qua bây giờ</string>
     <string name="done_text">Xong</string>
     <string name="page_number_x_of_y">%1$s trên %2$s</string>
@@ -951,7 +951,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 TRONG 6</string>
     <string name="coachmark_6_of_6">6 TRONG 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Sử dụng các tùy chọn này để điều chỉnh mật khẩu của bạn đáp ứng các yêu cầu của trang web.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Sau khi bạn lưu mật khẩu mới vào Universal Password Manager, đừng quên cập nhật nó trên trang web tài khoản.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Sau khi bạn lưu mật khẩu mới vào Universal Password Manager, đừng quên cập nhật nó trên trang web tài khoản.</string>
     <string name="verify_your_identity">Xác minh danh tính của bạn</string>
     <string name="error_loading_certificate">Lỗi khi tải chứng chỉ</string>
     <string name="certificate_alias">Tên gọi chứng chỉ</string>
@@ -962,7 +962,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">Không hỗ trợ loại chứng chỉ này</string>
     <string name="certificate_password_incorrect">Sai mật khẩu chứng chỉ</string>
     <string name="invalid_certificate_chain">Chuỗi chứng chỉ vô hiệu lực</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Sử dụng chứng chỉ hệ thống không an toàn bằng việc lưu trữ chứng chỉ trong Universal Password Manager. Tiếp tục sẽ hiển thị danh sách các chứng chỉ hệ thống có sẵn nếu đã có chứng chỉ được cài đặt.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Sử dụng chứng chỉ hệ thống không an toàn bằng việc lưu trữ chứng chỉ trong Universal Password Manager. Tiếp tục sẽ hiển thị danh sách các chứng chỉ hệ thống có sẵn nếu đã có chứng chỉ được cài đặt.</string>
     <string name="link">Liên kết</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Vận hành mã khóa không thành công vì URL máy chủ không có trong yêu cầu.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Vận hành mã khóa không thành công vì chữ ký ứng dụng không hợp lệ.</string>
@@ -1034,7 +1034,7 @@ các vấn đề.</string>
     <string name="unable_to_read_certificate">Không thể đọc chứng chỉ.</string>
     <string name="cannot_delete_your_account">Không thể xóa tài khoản của bạn</string>
     <string name="cannot_delete_your_account_explanation">Không thể thực hiện hành động này vì tài khoản của bạn thuộc sở hữu của một tổ chức. Liên hệ với quản trị viên tổ chức của bạn để biết thêm thông tin chi tiết.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Tài khoản này sẽ sớm bị xóa. Đăng nhập %1$s để tiếp tục sử dụng Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Tài khoản này sẽ sớm bị xóa. Đăng nhập %1$s để tiếp tục sử dụng Universal Password Manager.</string>
     <string name="view_file_send">Xem Send tập tin</string>
     <string name="view_text_send">Xem Send văn bản</string>
     <string name="delete_send">Xóa Send</string>
@@ -1056,7 +1056,7 @@ các vấn đề.</string>
     <string name="learn_more_about_privileged_apps">Tìm hiểu thêm về các ứng dụng có đặc quyền</string>
     <string name="privileged_apps">Ứng dụng có đặc quyền</string>
     <string name="unrecognized_browser">Trình duyệt không được nhận diện</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Tìm hiểu thêm về cách sử dụng mã khóa với Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Tìm hiểu thêm về cách sử dụng mã khóa với Universal Password Manager.</string>
     <string name="all_trusted_apps">Tất cả các ứng dụng đáng tin cậy</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Bạn có chắc chắn muốn ngừng tin tưởng %s không?</string>
     <string name="installed_apps">Ứng dụng đã cài đặt</string>
@@ -1083,7 +1083,7 @@ các vấn đề.</string>
     <string name="information">Thông tin</string>
     <string name="otp_type">Loại OTP</string>
     <string name="search_codes">Tìm kiếm mã</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Bảo mật tài khoản của bạn với Bitwarden Authenticator</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Bảo mật tài khoản của bạn với Universal Password Manager Authenticator</string>
     <string name="get_verification_codes_for_all_your_accounts">Nhận mã xác minh cho tất cả các tài khoản của bạn hỗ trợ xác minh 2 bước.</string>
     <string name="use_your_device_camera_to_scan_codes">Sử dụng camera của thiết bị để quét mã</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Quét mã QR trong các cài đặt xác minh hai bước của bạn cho bất kỳ tài khoản nào.</string>
@@ -1104,7 +1104,7 @@ các vấn đề.</string>
     <string name="too_many_failed_biometric_attempts">Xác thực sinh trắc thất bại quá nhiều lần.</string>
     <string name="version">Phiên bản</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Phiên bản: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Tìm hiểu thêm về cách sử dụng Universal Password Manager trong Trung tâm trợ giúp.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Tìm hiểu thêm về cách sử dụng Universal Password Manager trong Trung tâm trợ giúp.</string>
     <string name="key">Khóa</string>
     <string name="create_verification_code">Tạo mã xác minh</string>
     <string name="key_is_required">Khóa là bắt buộc.</string>
@@ -1115,41 +1115,41 @@ các vấn đề.</string>
     <string name="key_is_invalid">Khóa không hợp lệ.</string>
     <string name="backup">Sao lưu</string>
     <string name="data_backup_title">Sao lưu dữ liệu</string>
-    <string name="data_backup_message">Dữ liệu của Bitwarden Authenticator đã được sao lưu và có thể được khôi phục bằng bản sao lưu thiết bị định kỳ của bạn.</string>
+    <string name="data_backup_message">Dữ liệu của Universal Password Manager Authenticator đã được sao lưu và có thể được khôi phục bằng bản sao lưu thiết bị định kỳ của bạn.</string>
     <string name="import_2fas_password_protected_not_supported">Ứng dụng không hỗ trợ nhập từ các tập tin được bảo mật bằng mật khẩu 2FAS. Vui lòng thử lại với một tập tin xuất khẩu không được bảo mật bằng mật khẩu.</string>
-    <string name="import_bitwarden_unsupported_format">Nhập tập tin CSV Universal Password Manager không được hỗ trợ. Vui lòng thử lại với tập tin JSON đã xuất.</string>
-    <string name="download_bitwarden_card_title">Tải xuống ứng dụng Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">Lưu trữ tất cả thông tin đăng nhập của bạn và đồng bộ mã xác minh trực tiếp với ứng dụng Authenticator.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Nhập tập tin CSV Universal Password Manager không được hỗ trợ. Vui lòng thử lại với tập tin JSON đã xuất.</string>
+    <string name="download_universalpasswordmanager_card_title">Tải xuống ứng dụng Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">Lưu trữ tất cả thông tin đăng nhập của bạn và đồng bộ mã xác minh trực tiếp với ứng dụng Authenticator.</string>
     <string name="download_now">Tải về ngay</string>
-    <string name="sync_with_bitwarden_app">Đồng bộ hóa với ứng dụng Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">Đồng bộ hóa với ứng dụng Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">Tìm hiểu thêm</annotation></string>
     <string name="shared_codes_error">Không thể đồng bộ mã từ ứng dụng Universal Password Manager. Hãy đảm bảo cả hai ứng dụng đều được cập nhật phiên bản mới nhất. Bạn vẫn có thể truy cập các mã hiện có trong ứng dụng Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">Đồng bộ hóa với ứng dụng Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">Cho phép đồng bộ ứng dụng Authenticator trong phần cài đặt để xem toàn bộ mã xác minh của bạn tại đây.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Đồng bộ hóa với ứng dụng Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Cho phép đồng bộ ứng dụng Authenticator trong phần cài đặt để xem toàn bộ mã xác minh của bạn tại đây.</string>
     <string name="take_me_to_app_settings">Đi đến cài đặt ứng dụng</string>
     <string name="something_went_wrong">Đã xảy ra lỗi</string>
     <string name="please_try_again">Vui lòng thử lại</string>
-    <string name="copy_to_bitwarden_vault">Sao chép vào kho lưu trữ Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">Sao chép vào kho lưu trữ Universal Password Manager</string>
     <string name="default_save_option">Tùy chọn lưu mặc định</string>
-    <string name="save_to_bitwarden">Lưu vào Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">Lưu vào Universal Password Manager</string>
     <string name="save_here">Lưu tại đây</string>
     <string name="none">Không có</string>
     <string name="default_save_options_subtitle">Chọn vị trí bạn muốn lưu các mã xác minh mới.</string>
     <string name="verification_code_created">Mã xác minh đã được tạo</string>
     <string name="choose_save_location_message">Lưu khóa xác thực này tại đây hoặc thêm nó vào tài khoản đăng nhập trong ứng dụng Universal Password Manager của bạn.</string>
     <string name="save_option_as_default">Lưu tùy chọn làm mặc định</string>
-    <string name="account_synced_from_bitwarden_app">Tài khoản đã đồng bộ từ ứng dụng Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Tài khoản đã đồng bộ từ ứng dụng Universal Password Manager</string>
     <string name="local_codes">Mã địa phương (%1$d)</string>
     <string name="local_codes_header">Mã cục bộ</string>
     <string name="required_information_missing">Thông tin bắt buộc còn thiếu</string>
-    <string name="required_information_missing_message">Thông tin bắt buộc còn thiếu (ví dụ: ‘dịch vụ’ hoặc ‘bí mật’). Vui lòng kiểm tra lại tệp của bạn và thử lại. Truy cập bitwarden.com/help để được hỗ trợ</string>
+    <string name="required_information_missing_message">Thông tin bắt buộc còn thiếu (ví dụ: ‘dịch vụ’ hoặc ‘bí mật’). Vui lòng kiểm tra lại tệp của bạn và thử lại. Truy cập /help để được hỗ trợ</string>
     <string name="file_could_not_be_processed">Tệp không thể được xử lý</string>
-    <string name="file_could_not_be_processed_message">Tệp không thể được xử lý. Hãy đảm bảo tệp JSON hợp lệ và thử lại. Cần trợ giúp? Truy cập bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">Tệp không thể được xử lý. Hãy đảm bảo tệp JSON hợp lệ và thử lại. Cần trợ giúp? Truy cập /help</string>
     <string name="get_help">Nhận trợ giúp</string>
     <string name="error_cannot_decrypt">[lỗi: không thể giải mã]</string>
     <string name="copy_error_report">Sao chép báo lỗi</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager không thể giải mã mục này trong kho. Vui lòng sao chép và chia sẻ báo cáo lỗi này với bộ phận Hỗ trợ Khách hàng để tránh mất dữ liệu thêm.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager không thể giải mã mục này trong kho. Vui lòng sao chép và chia sẻ báo cáo lỗi này với bộ phận Hỗ trợ Khách hàng để tránh mất dữ liệu thêm.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="other">Universal Password Manager không thể giải mã %1$d mục trong kho. Hãy sao chép và chia sẻ báo cáo lỗi này với bộ phận hỗ trợ khách hàng để tránh mất thêm dữ liệu.</item>
     </plurals>
     <string name="select_a_card_for_x">Chọn một thẻ cho %s</string>
@@ -1188,7 +1188,7 @@ các vấn đề.</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Bật Tự động điền trình duyệt để tiếp tục điền mật khẩu</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Trình duyệt của bạn vừa được cập nhật, điều này đã vô hiệu hóa tính năng tự động điền của Universal Password Manager. Để tiếp tục tự động điền bằng Universal Password Manager, hãy bật tính năng tự động điền của trình duyệt trong cài đặt tự động điền.</string>
     <string name="not_now">Để sau</string>
-    <string name="import_from_bitwarden">Nhập từ Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">Nhập từ Universal Password Manager</string>
     <string name="select_account">Chọn tài khoản</string>
     <string name="no_accounts_available">Không có tài khoản nào khả dụng</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Bạn không có tài khoản nào có thể nhập. Chính sách bảo mật của tổ chức bạn có thể hạn chế việc nhập các mục từ Universal Password Manager sang ứng dụng khác.</string>
@@ -1286,7 +1286,7 @@ các vấn đề.</string>
     <string name="trusted">Đáng tin cậy</string>
     <string name="preview_not_available_for_files">Không thể xem trước tệp %1$s. Bạn vẫn có thể tải xuống để xem trên thiết bị của mình.</string>
     <string name="this_file_is_too_large_to_preview">Không thể xem trước tập tin vì kích thước quá lớn. Bạn có thể tải về để xem trên thiết bị của mình.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Không thể hiển thị bản xem trước vì Universal Password Manager không thể giải mã tập tin này.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Không thể hiển thị bản xem trước vì Universal Password Manager không thể giải mã tập tin này.</string>
     <string name="preview_unavailable_for_this_file">Bản xem trước của tập tin này không khả dụng. Bạn có thể tải về để xem trên thiết bị của mình.</string>
     <string name="preview_unavailable">Bản xem trước không khả dụng</string>
     <string name="download_attachment">Tải xuống tệp đính kèm</string>
@@ -1328,7 +1328,7 @@ các vấn đề.</string>
     <string name="billing_rate_per_year">%1$s / năm</string>
     <string name="billing_rate_per_month">%1$s / tháng</string>
     <string name="manage_plan">Quản lý gói</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Quản lý gói đăng ký của bạn trong ứng dụng web Universal Password Manager.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Quản lý gói đăng ký của bạn trong ứng dụng web Universal Password Manager.</string>
     <string name="cancel_premium">Hủy gói Cao cấp</string>
     <string name="subscription_status_active">Đang hoạt động</string>
     <string name="subscription_status_canceled">Đã hủy</string>
@@ -1418,8 +1418,8 @@ các vấn đề.</string>
     <string name="local_network_access_required">Yêu cầu quyền truy cập mạng cục bộ</string>
     <string name="ask_again_later">Hỏi lại sau</string>
     <string name="enable_local_network_access">Bật quyền truy cập mạng cục bộ</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager cần quyền truy cập mạng cục bộ để đồng bộ hóa với máy chủ của bạn. Nếu không có quyền này, ứng dụng sẽ không thể kết nối.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Nếu không có quyền này, Universal Password Manager sẽ không thể kết nối và đồng bộ hóa với máy chủ của bạn. Bạn có thể bật tính năng này trong cài đặt thiết bị của mình.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager cần quyền truy cập mạng cục bộ để đồng bộ hóa với máy chủ của bạn. Nếu không có quyền này, ứng dụng sẽ không thể kết nối.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Nếu không có quyền này, Universal Password Manager sẽ không thể kết nối và đồng bộ hóa với máy chủ của bạn. Bạn có thể bật tính năng này trong cài đặt thiết bị của mình.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Yêu cầu của bạn đã bị gián đoạn vì ứng dụng cần quyền truy cập mạng cục bộ. Bạn có thể bật tính năng này trong cài đặt thiết bị của mình.</string>
     <string name="continue_to_stripe">Tiếp tục chuyển đến Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Bạn sẽ được chuyển đến Stripe để quản lý việc hủy gói đăng ký của mình.</string>

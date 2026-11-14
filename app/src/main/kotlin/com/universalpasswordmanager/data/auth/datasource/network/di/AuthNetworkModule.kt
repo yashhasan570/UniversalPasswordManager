@@ -24,42 +24,42 @@ object AuthNetworkModule {
     @Provides
     @Singleton
     fun providesAccountService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): AccountsService = bitwardenServiceClient.accountsService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): AccountsService = universalpasswordmanagerServiceClient.accountsService
 
     @Provides
     @Singleton
     fun providesAuthRequestsService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): AuthRequestsService = bitwardenServiceClient.authRequestsService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): AuthRequestsService = universalpasswordmanagerServiceClient.authRequestsService
 
     @Provides
     @Singleton
     fun providesDevicesService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): DevicesService = bitwardenServiceClient.devicesService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): DevicesService = universalpasswordmanagerServiceClient.devicesService
 
     @Provides
     @Singleton
     fun providesIdentityService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): IdentityService = bitwardenServiceClient.identityService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): IdentityService = universalpasswordmanagerServiceClient.identityService
 
     @Provides
     @Singleton
     fun providesHaveIBeenPwnedService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): HaveIBeenPwnedService = bitwardenServiceClient.haveIBeenPwnedService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): HaveIBeenPwnedService = universalpasswordmanagerServiceClient.haveIBeenPwnedService
 
     @Provides
     @Singleton
     fun providesNewAuthRequestService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): NewAuthRequestService = bitwardenServiceClient.newAuthRequestService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): NewAuthRequestService = universalpasswordmanagerServiceClient.newAuthRequestService
 
     @Provides
     @Singleton
     fun providesOrganizationService(
-        bitwardenServiceClient: UniversalServiceClient,
-    ): OrganizationService = bitwardenServiceClient.organizationService
+        universalpasswordmanagerServiceClient: UniversalServiceClient,
+    ): OrganizationService = universalpasswordmanagerServiceClient.organizationService
 }

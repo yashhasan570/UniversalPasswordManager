@@ -111,7 +111,7 @@ fun RecordedLogsScreen(
                 },
             )
         },
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
     ) {
         when (val viewState = state.viewState) {

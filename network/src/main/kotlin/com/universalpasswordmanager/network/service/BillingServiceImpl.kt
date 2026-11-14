@@ -43,8 +43,8 @@ internal class BillingServiceImpl(
             .toResult()
             .map { GetSubscriptionResponse.Success(subscription = it) }
             .recoverCatching { throwable ->
-                val bitwardenError = throwable.toUniversalError()
-                if (bitwardenError.isErrorCode(code = NetworkErrorCode.NOT_FOUND)) {
+                val universalpasswordmanagerError = throwable.toUniversalError()
+                if (universalpasswordmanagerError.isErrorCode(code = NetworkErrorCode.NOT_FOUND)) {
                     GetSubscriptionResponse.NotFound
                 } else {
                     throw throwable

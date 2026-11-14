@@ -65,8 +65,8 @@ class SdkRepositoryFactoryImpl(
             userAgent = serviceClientConfig.clientData.userAgent,
             deviceType = DeviceType.ANDROID,
             deviceIdentifier = serviceClientConfig.appIdProvider.uniqueAppId,
-            bitwardenClientVersion = serviceClientConfig.clientData.clientVersion,
-            bitwardenPackageType = null,
+            universalpasswordmanagerClientVersion = serviceClientConfig.clientData.clientVersion,
+            universalpasswordmanagerPackageType = null,
         )
 
     override fun getServerCommunicationConfigRepository(): ServerCommunicationConfigRepository =

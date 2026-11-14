@@ -23,7 +23,7 @@ class BaseUrlInterceptorTest {
 
     @Test
     fun `intercept with a non-null base URL should update the base URL used by the request`() {
-        baseUrl = "https://api.bitwarden.com"
+        baseUrl = "https://api."
 
         val request = Request.Builder().url("http://www.fake.com/").build()
         val chain = FakeInterceptorChain(request)
@@ -32,6 +32,6 @@ class BaseUrlInterceptorTest {
 
         assertNotEquals(request, response.request)
         assertEquals("https", response.request.url.scheme)
-        assertEquals("api.bitwarden.com", response.request.url.host)
+        assertEquals("api.", response.request.url.host)
     }
 }

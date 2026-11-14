@@ -38,7 +38,7 @@ import com.universalpasswordmanager.ui.platform.base.util.standardHorizontalMarg
 import com.universalpasswordmanager.ui.platform.components.appbar.UniversalTopAppBar
 import com.universalpasswordmanager.ui.platform.components.button.UniversalFilledButton
 import com.universalpasswordmanager.ui.platform.components.card.UniversalActionCardSmall
-import com.universalpasswordmanager.ui.platform.components.card.color.bitwardenCardColors
+import com.universalpasswordmanager.ui.platform.components.card.color.universalpasswordmanagerCardColors
 import com.universalpasswordmanager.ui.platform.components.dialog.UniversalBasicDialog
 import com.universalpasswordmanager.ui.platform.components.dialog.UniversalLoadingDialog
 import com.universalpasswordmanager.ui.platform.components.dialog.UniversalTwoButtonDialog
@@ -143,7 +143,7 @@ fun CompleteRegistrationScreen(
                 onNavigationIconClick = handler.onBackClick,
             )
         },
-        snackbarHost = { UniversalSnackbarHost(bitwardenHostState = snackbarHostState) },
+        snackbarHost = { UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState) },
     ) {
         Column(
             modifier = Modifier
@@ -197,7 +197,7 @@ private fun CompleteRegistrationContent(
             actionText = stringResource(id = UniversalString.what_makes_a_password_strong),
             callToActionText = stringResource(id = UniversalString.learn_more),
             callToActionTextColor = UniversalTheme.colorScheme.text.interaction,
-            colors = bitwardenCardColors(
+            colors = universalpasswordmanagerCardColors(
                 containerColor = UniversalTheme.colorScheme.background.primary,
             ),
             onCardClicked = handler.onMakeStrongPassword,
@@ -254,7 +254,7 @@ private fun CompleteRegistrationContent(
                 Text(
                     text = stringResource(
                         id = UniversalString
-                            .bitwarden_cannot_recover_a_lost_or_forgotten_master_password,
+                            .universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password,
                     ),
                     style = UniversalTheme.typography.bodySmall,
                     color = UniversalTheme.colorScheme.text.secondary,

@@ -75,9 +75,9 @@
     <string name="yes">होय</string>
     <string name="account">खाते</string>
     <string name="account_created_success">तुमचे नवीन खाते तयार झाले आहे!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">डिव्हाइस सेटिंग्जमध्ये Universal Password Manager ला तुमचा पासकी प्रदाता म्हणून सेट करा.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">डिव्हाइस सेटिंग्जमध्ये Universal Password Manager ला तुमचा पासकी प्रदाता म्हणून सेट करा.</string>
     <string name="avoid_ambiguous_characters">अस्पष्ट वर्ण टाळा</string>
-    <string name="bitwarden_autofill_service">Universal Password Manager स्वयंपूर्त सेवा</string>
+    <string name="universalpasswordmanager_autofill_service">Universal Password Manager स्वयंपूर्त सेवा</string>
     <string name="change_master_password">मुख्य संकेतशब्द बदला</string>
     <string name="close">बंद करा</string>
     <string name="close_app">अॅप बंद करा</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">सत्र कालबाह्यता “Log out” वर सेट करायची?</string>
     <string name="vault_timeout_log_out_confirmation_message">कालबाह्यता कालावधीनंतर, तुम्ही लॉग आउट व्हाल. पुन्हा लॉग इन करण्यासाठी आणि तुमच्या तिजोरीत प्रवेश करण्यासाठी तुम्हाला इंटरनेटशी कनेक्ट केलेले असणे आवश्यक आहे. या डिव्हाइसवर जतन केलेल्या तुमच्या सेटिंग्ज आणि पिनमध्ये बदल होणार नाही.</string>
     <string name="logging_in">लॉग इन करत आहे…</string>
-    <string name="login_to_bitwarden">Universal Password Manager मध्ये लॉग इन करा</string>
+    <string name="login_to_universalpasswordmanager">Universal Password Manager मध्ये लॉग इन करा</string>
     <string name="master_password_confirmation_val_message">संकेतशब्द पुष्टीकरण बरोबर नाही.</string>
     <string name="master_password_description">मुख्य संकेतशब्द हा तुम्ही तुमच्या तिजोरीत प्रवेश करण्यासाठी वापरता तो संकेतशब्द आहे. तुमचा मुख्य संकेतशब्द विसरू नये हे अत्यंत महत्वाचे आहे. तुम्ही विसरल्यास संकेतशब्द पुनर्प्राप्त करण्याचा कोणताही मार्ग नाही.</string>
     <string name="master_password_hint">मुख्य संकेतशब्द सूचक (पर्यायी)</string>
@@ -176,7 +176,7 @@
     <string name="no_items_for_vault">तुमच्या तिजोरीत “%1$s” शी जुळणारे कोणतेही आयटम नाहीत</string>
     <string name="search_for_a_login_or_add_a_new_login">लॉगिनसाठी शोधा किंवा नवीन लॉगिन जोडा</string>
     <string name="disabled">अक्षम</string>
-    <string name="bitwarden_autofill_service_alert2">तुमच्या तिजोरीत नवीन लॉगिन्स जोडण्याचा सर्वात सोपा मार्ग म्हणजे Universal Password Manager Autofill Service वरून. “Settings” स्क्रीनवर नेव्हिगेट करून Universal Password Manager Autofill Service वापरण्याबद्दल अधिक जाणून घ्या.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">तुमच्या तिजोरीत नवीन लॉगिन्स जोडण्याचा सर्वात सोपा मार्ग म्हणजे Universal Password Manager Autofill Service वरून. “Settings” स्क्रीनवर नेव्हिगेट करून Universal Password Manager Autofill Service वापरण्याबद्दल अधिक जाणून घ्या.</string>
     <string name="autofill_noun">स्वयंपूर्त</string>
     <string name="autofill_verb">स्वयंपूर्त करा</string>
     <string name="autofill_or_view">तुम्हाला हा आयटम स्वयंपूर्त करायचा आहे का पहायचा आहे?</string>
@@ -299,7 +299,7 @@
     <string name="no_items_trash">कचराकुंडी रिकामी आहे.</string>
     <string name="autofill_accessibility_summary">इतर अॅप्स आणि वेबवर वापरकर्तानाव आणि संकेतशब्द फील्ड भरण्यास मदत करा.</string>
     <string name="autofill_service_description">Universal Password Manager स्वयंपूर्त सेवा तुमच्या डिव्हाइसवरील इतर अॅप्समध्ये लॉगिन माहिती भरण्यास मदत करण्यासाठी Android Autofill Framework वापरते.</string>
-    <string name="bitwarden_autofill_go_to_settings">आम्ही तुमच्यासाठी Android स्वयंपूर्त सेटिंग्ज मेनू स्वयंचलितपणे उघडू शकलो नाही. तुम्ही Android Settings &gt; System &gt; Languages and input &gt; Advanced &gt; Autofill service वरून स्वयंपूर्त सेटिंग्ज मेनूमध्ये स्वतः नेव्हिगेट करू शकता.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">आम्ही तुमच्यासाठी Android स्वयंपूर्त सेटिंग्ज मेनू स्वयंचलितपणे उघडू शकलो नाही. तुम्ही Android Settings &gt; System &gt; Languages and input &gt; Advanced &gt; Autofill service वरून स्वयंपूर्त सेटिंग्ज मेनूमध्ये स्वतः नेव्हिगेट करू शकता.</string>
     <string name="custom_field_name">सानुकूल फील्ड नाव</string>
     <string name="field_type_boolean">बुलियन</string>
     <string name="field_type_hidden">लपविलेले</string>
@@ -649,14 +649,14 @@
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Universal Password Manager साठी नवीन आहात?</string>
+    <string name="new_to_universalpasswordmanager">Universal Password Manager साठी नवीन आहात?</string>
     <string name="get_master_passwordword_hint">मुख्य संकेतशब्द सूचक मिळवा</string>
     <string name="logging_in_as_x_on_y">%2$s वर %1$s म्हणून लॉग इन करत आहे</string>
     <string name="not_you">तुम्ही नाही?</string>
     <string name="log_in_with_master_password">मुख्य संकेतशब्दासह लॉग इन करा</string>
     <string name="log_in_initiated">लॉगिन सुरू केले</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">सूचना पुन्हा पाठवा</string>
     <string name="view_all_login_options">सर्व लॉगिन पर्याय पहा</string>
@@ -714,7 +714,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">तिजोरी निवडा</string>
     <string name="appearance">देखावा</string>
     <string name="account_security">खाते सुरक्षा</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">आता समक्रमण करा</string>
     <string name="unlock_options">अनलॉक पर्याय</string>
     <string name="session_timeout">सत्र कालबाह्यता</string>
@@ -731,10 +731,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">डिव्हाइस Settings वर सुरू ठेवायचे?</string>
     <string name="two_step_login_description_long">Universal Password Manager वेब अॅपमध्ये द्वि-चरण लॉगिन सेट करून तुमचे खाते अधिक सुरक्षित करा.</string>
     <string name="change_master_password_description_long">तुम्ही Universal Password Manager वेब अॅपवर तुमचा मुख्य संकेतशब्द बदलू शकता.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Help center वर Universal Password Manager कसे वापरावे याबद्दल अधिक जाणून घ्या.</string>
-    <string name="privacy_policy_description_long">bitwarden.com वर आमची गोपनीयता धोरण पहा.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">वेब अॅपवर तुमच्या Universal Password Manager खात्याची अधिक वैशिष्ट्ये एक्सप्लोर करा.</string>
-    <string name="learn_about_organizations_description_long">Universal Password Manager तुम्हाला संस्था वापरून तुमचे तिजोरी आयटम इतरांशी सामायिक करण्याची परवानगी देते. bitwarden.com वेबसाइटवर अधिक जाणून घ्या.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Help center वर Universal Password Manager कसे वापरावे याबद्दल अधिक जाणून घ्या.</string>
+    <string name="privacy_policy_description_long"> वर आमची गोपनीयता धोरण पहा.</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">वेब अॅपवर तुमच्या Universal Password Manager खात्याची अधिक वैशिष्ट्ये एक्सप्लोर करा.</string>
+    <string name="learn_about_organizations_description_long">Universal Password Manager तुम्हाला संस्था वापरून तुमचे तिजोरी आयटम इतरांशी सामायिक करण्याची परवानगी देते.  वेबसाइटवर अधिक जाणून घ्या.</string>
     <string name="created_x">%1$s रोजी तयार</string>
     <string name="your_organization_requires_you_to_set_a_master_password">तुमच्या संस्थेला तुम्ही मुख्य संकेतशब्द सेट करणे आवश्यक आहे.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">तुमची तिजोरी कालबाह्यता क्रिया बदलण्यासाठी एक अनलॉक पर्याय सेट करा.</string>
@@ -744,8 +744,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">तुमच्या खात्यासाठी Duo द्वि-चरण लॉगिन आवश्यक आहे.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">लॉग इन पूर्ण करण्यासाठी Duo च्या पायऱ्या अनुसरण करा.</string>
     <string name="launch_duo">Duo लाँच करा</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">तुमची पासकी %1$s साठी तुमच्या Universal Password Manager तिजोरीत जतन केली जाईल</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">तुमचा संकेतशब्द %1$s साठी तुमच्या Universal Password Manager तिजोरीत जतन केला जाईल</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">तुमची पासकी %1$s साठी तुमच्या Universal Password Manager तिजोरीत जतन केली जाईल</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">तुमचा संकेतशब्द %1$s साठी तुमच्या Universal Password Manager तिजोरीत जतन केला जाईल</string>
     <string name="passkeys_not_supported_for_this_app">या अॅपसाठी पासकीज समर्थित नाहीत</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">ब्राउझर विशेषाधिकारित नसल्यामुळे पासकी ऑपरेशन अयशस्वी</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">ब्राउझर स्वाक्षरी जुळत नसल्यामुळे पासकी ऑपरेशन अयशस्वी</string>
@@ -771,7 +771,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">तुमचा ईमेल तपासा</string>
     <string name="open_email_app">ईमेल अॅप उघडा</string>
     <string name="email_verified">ईमेल सत्यापित</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">घोषणा, सल्ला आणि संशोधन संधींसाठी Universal Password Manager कडून ईमेल मिळवा. कधीही <annotation link="unsubscribe">सदस्यता रद्द करा</annotation>.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">घोषणा, सल्ला आणि संशोधन संधींसाठी Universal Password Manager कडून ईमेल मिळवा. कधीही <annotation link="unsubscribe">सदस्यता रद्द करा</annotation>.</string>
     <string name="security_prioritized">सुरक्षा, प्राधान्यक्रम</string>
     <string name="welcome_message_1">तुमच्या सुरक्षित तिजोरीत लॉगिन्स, कार्ड्स आणि ओळख जतन करा. Universal Password Manager तुमच्यासाठी महत्वाच्या गोष्टींचे संरक्षण करण्यासाठी शून्य-ज्ञान, एंड-टू-एंड एन्क्रिप्शन वापरते.</string>
     <string name="welcome_message_2">एकही अक्षर न टाइप करता तुमच्या खात्यांमध्ये लॉग इन करण्यासाठी बायोमेट्रिक अनलॉक आणि स्वयंपूर्त सेट करा.</string>
@@ -809,8 +809,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">तुमचा ईमेल पत्ता सत्यापित करण्यासाठी आणि खाते तयार करणे सुरू ठेवण्यासाठी ईमेलमधील लिंक निवडा.</string>
     <string name="change_email_address">ईमेल पत्ता बदला</string>
     <string name="next">पुढे</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager हरवलेला किंवा विसरलेला मुख्य संकेतशब्द पुनर्प्राप्त करू शकत नाही.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager हरवलेला किंवा विसरलेला मुख्य संकेतशब्द रीसेट करू शकत नाही.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Universal Password Manager हरवलेला किंवा विसरलेला मुख्य संकेतशब्द पुनर्प्राप्त करू शकत नाही.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Universal Password Manager हरवलेला किंवा विसरलेला मुख्य संकेतशब्द रीसेट करू शकत नाही.</string>
     <string name="choose_your_master_password">तुमचा मुख्य संकेतशब्द निवडा</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">तुमची माहिती सुरक्षित ठेवण्यासाठी अद्वितीय आणि मजबूत संकेतशब्द निवडा.</string>
     <plurals name="minimum_characters">
@@ -821,13 +821,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">कृपया नोंदणी पुन्हा सुरू करा किंवा लॉग इन करण्याचा प्रयत्न करा. तुमचे आधीच खाते असू शकते.</string>
     <string name="restart_registration">नोंदणी पुन्हा सुरू करा</string>
     <string name="authenticator_sync">प्रमाणीकरण समक्रमण</string>
-    <string name="allow_bitwarden_authenticator_syncing">प्रमाणीकरण समक्रमण करण्यास अनुमती द्या</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">प्रमाणीकरण समक्रमण करण्यास अनुमती द्या</string>
     <string name="there_was_an_issue_validating_the_registration_token">नोंदणी टोकन सत्यापित करताना समस्या आली.</string>
     <string name="turn_on_autofill">स्वयंपूर्त चालू करा</string>
     <string name="autofill_setup">स्वयंपूर्त सेटअप</string>
     <string name="turn_on_browser_autofill_integration">ब्राउझर स्वयंपूर्त एकीकरण चालू करा</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">तुम्ही एक ब्राउझर वापरत आहात ज्याला Universal Password Manager ला तुमचे संकेतशब्द स्वयंपूर्त करण्यासाठी विशेष परवानग्या आवश्यक आहेत.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">तुम्ही असे ब्राउझर वापरत आहात ज्यांना Universal Password Manager ला तुमचे संकेतशब्द स्वयंपूर्त करण्यासाठी विशेष परवानग्या आवश्यक आहेत.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">तुम्ही एक ब्राउझर वापरत आहात ज्याला Universal Password Manager ला तुमचे संकेतशब्द स्वयंपूर्त करण्यासाठी विशेष परवानग्या आवश्यक आहेत.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">तुम्ही असे ब्राउझर वापरत आहात ज्यांना Universal Password Manager ला तुमचे संकेतशब्द स्वयंपूर्त करण्यासाठी विशेष परवानग्या आवश्यक आहेत.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">तुम्ही एक ब्राउझर वापरत आहात ज्याला Universal Password Manager ला तुमचे संकेतशब्द स्वयंपूर्त करण्यासाठी विशेष परवानग्या आवश्यक आहेत. खाली तुमचे पसंतीचे स्वयंपूर्त एकीकरण सक्षम करा.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">तुम्ही असे ब्राउझर वापरत आहात ज्यांना Universal Password Manager ला तुमचे संकेतशब्द स्वयंपूर्त करण्यासाठी विशेष परवानग्या आवश्यक आहेत. सुरू ठेवण्यासाठी तुमच्या सर्व स्थापित ब्राउझरसाठी स्वयंपूर्त सक्षम करा.</string>
     <string name="use_autofill_to_log_into_your_accounts">एका टॅपने तुमच्या खात्यांमध्ये लॉग इन करण्यासाठी स्वयंपूर्त वापरा.</string>
@@ -835,7 +835,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">नंतर स्वयंपूर्त चालू करायचे?</string>
     <string name="turn_on_browser_autofill_integration_later">नंतर ब्राउझर स्वयंपूर्त एकीकरण चालू करायचे?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">तुम्ही Settings मध्ये कधीही ही पायरी पूर्ण करण्यासाठी परत येऊ शकता.</string>
-    <string name="what_bitwarden_has_to_offer">तुम्ही आता Universal Password Manager ने दिलेले सर्व काही एक्सप्लोर करू शकता आणि तुमचे संकेतशब्द सुरक्षितपणे व्यवस्थापित करणे सुरू करू शकता.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">तुम्ही आता Universal Password Manager ने दिलेले सर्व काही एक्सप्लोर करू शकता आणि तुमचे संकेतशब्द सुरक्षितपणे व्यवस्थापित करणे सुरू करू शकता.</string>
     <string name="youre_all_set">तुम्ही सर्व सज्ज आहात!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Duo सेवेशी कनेक्ट करताना त्रुटी. दुसरी द्वि-चरण लॉगिन पद्धत वापरा किंवा मदतीसाठी Duo शी संपर्क साधा.</string>
     <string name="master_password_hint_not_specified">मुख्य संकेतशब्द सूचक</string>
@@ -864,29 +864,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">३ पैकी १ पायरी</string>
     <string name="export_your_saved_logins">तुमची जतन केलेली लॉगिन्स निर्यात करा</string>
     <string name="delete_this_file_after_import_is_complete">आयात पूर्ण झाल्यानंतर तुम्ही ही फाइल हटवाल.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">तुमच्या संगणकावर, एक नवीन ब्राउझर टॅब उघडा आणि <annotation emphasis="bold"><annotation arg="0">%1$s</annotation> वर जा</annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Universal Password Manager वेब अॅपमध्ये लॉग इन करा.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">तुमच्या संगणकावर, एक नवीन ब्राउझर टॅब उघडा आणि <annotation emphasis="bold"><annotation arg="0">%1$s</annotation> वर जा</annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Universal Password Manager वेब अॅपमध्ये लॉग इन करा.</string>
     <string name="step_2_of_3">३ पैकी २ पायरी</string>
-    <string name="log_in_to_bitwarden">Universal Password Manager मध्ये लॉग इन करा</string>
+    <string name="log_in_to_universalpasswordmanager">Universal Password Manager मध्ये लॉग इन करा</string>
     <string name="step_3_of_3">३ पैकी ३ पायरी</string>
-    <string name="import_logins_to_bitwarden">Universal Password Manager मध्ये लॉगिन्स आयात करा</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager नेव्हिगेशनमध्ये, <annotation emphasis="bold">Tools पर्याय शोधा</annotation> आणि <annotation emphasis="bold">Import data निवडा.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Universal Password Manager मध्ये लॉगिन्स आयात करा</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Universal Password Manager नेव्हिगेशनमध्ये, <annotation emphasis="bold">Tools पर्याय शोधा</annotation> आणि <annotation emphasis="bold">Import data निवडा.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">फॉर्म भरा आणि <annotation emphasis="bold">तुमची जतन केलेली संकेतशब्द फाइल आयात करा.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">तुमच्या सुरक्षेसाठी, <annotation emphasis="bold">तुमची जतन केलेली संकेतशब्द फाइल हटवण्याची खात्री करा.</annotation></string>
     <string name="need_help_check_out_import_help">मदत हवी आहे? <annotation link="importHelp">import help</annotation> पहा.</string>
     <string name="import_help">आयात मदत</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily">तुमच्या संगणकावर तुम्हाला सहज सापडेल अशा ठिकाणी <annotation emphasis="bold">निर्यात केलेली फाइल जतन करा.</annotation></string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">हा ओळखला जाणारा Universal Password Manager सर्व्हर नाही. तुम्हाला तुमच्या प्रदात्याशी तपासण्याची किंवा तुमचा सर्व्हर अद्ययावत करण्याची आवश्यकता असू शकते.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">हा ओळखला जाणारा Universal Password Manager सर्व्हर नाही. तुम्हाला तुमच्या प्रदात्याशी तपासण्याची किंवा तुमचा सर्व्हर अद्ययावत करण्याची आवश्यकता असू शकते.</string>
     <string name="syncing_logins_loading_message">लॉगिन्सचे समक्रमण करत आहे…</string>
     <string name="download_the_browser_extension">ब्राउझर विस्तार डाउनलोड करा</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">अखंड अनुभवासाठी Universal Password Manager तुमच्या आवडत्या ब्राउझरमध्ये समाकलित करण्यासाठी bitwarden.com/download वर जा.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">अखंड अनुभवासाठी Universal Password Manager तुमच्या आवडत्या ब्राउझरमध्ये समाकलित करण्यासाठी /download वर जा.</string>
     <string name="use_the_web_app">वेब अॅप वापरा</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">तुमचे खाते सहजपणे व्यवस्थापित करण्यासाठी आणि सेटिंग्ज अद्ययावत करण्यासाठी bitwarden.com वर लॉग इन करा.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">तुमचे खाते सहजपणे व्यवस्थापित करण्यासाठी आणि सेटिंग्ज अद्ययावत करण्यासाठी  वर लॉग इन करा.</string>
     <string name="autofill_passwords">संकेतशब्द स्वयंपूर्त करा</string>
     <string name="set_up_autofill_on_all_your_devices">कुठेही एका टॅपने लॉग इन करण्यासाठी तुमच्या सर्व डिव्हाइसवर स्वयंपूर्त सेट करा.</string>
     <string name="import_successful">आयात यशस्वी!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">वेब आणि डेस्कटॉपसाठी Universal Password Manager साधनांसह कुठूनही तुमची लॉगिन्स व्यवस्थापित करा.</string>
-    <string name="bitwarden_tools">Universal Password Manager साधने</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">वेब आणि डेस्कटॉपसाठी Universal Password Manager साधनांसह कुठूनही तुमची लॉगिन्स व्यवस्थापित करा.</string>
+    <string name="universalpasswordmanager_tools">Universal Password Manager साधने</string>
     <string name="got_it">समजले</string>
     <string name="no_logins_were_imported">कोणतीही लॉगिन्स आयात केली गेली नाहीत</string>
     <string name="import_error">आयात त्रुटी</string>
@@ -904,7 +904,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d सूचना</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">डिव्हाइसवर त्वरीत आणि सहजपणे लॉग इन करा</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">तुम्हाला दुसऱ्या डिव्हाइसवरून नवीन लॉगिन विनंती मिळाल्यास Universal Password Manager तुम्हाला प्रत्येक वेळी सूचित करू शकतो.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">तुम्हाला दुसऱ्या डिव्हाइसवरून नवीन लॉगिन विनंती मिळाल्यास Universal Password Manager तुम्हाला प्रत्येक वेळी सूचित करू शकतो.</string>
     <string name="skip_for_now">आत्ता वगळा</string>
     <string name="done_text">पूर्ण</string>
     <string name="page_number_x_of_y">%2$s पैकी %1$s</string>
@@ -956,7 +956,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">६ पैकी ५</string>
     <string name="coachmark_6_of_6">६ पैकी ६</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">तुमच्या खात्याच्या वेबसाइटच्या आवश्यकता पूर्ण करण्यासाठी तुमचा संकेतशब्द समायोजित करण्यासाठी या पर्यायांचा वापर करा.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">तुम्ही तुमचा नवीन संकेतशब्द Universal Password Manager मध्ये जतन केल्यानंतर, तुमच्या खात्याच्या वेबसाइटवर तो अद्ययावत करायला विसरू नका.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">तुम्ही तुमचा नवीन संकेतशब्द Universal Password Manager मध्ये जतन केल्यानंतर, तुमच्या खात्याच्या वेबसाइटवर तो अद्ययावत करायला विसरू नका.</string>
     <string name="verify_your_identity">तुमची ओळख सत्यापित करा</string>
     <string name="error_loading_certificate">प्रमाणपत्र लोड करताना त्रुटी</string>
     <string name="certificate_alias">प्रमाणपत्र उपनाम</string>
@@ -967,7 +967,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">असमर्थित प्रमाणपत्र प्रकार</string>
     <string name="certificate_password_incorrect">प्रमाणपत्र संकेतशब्द चुकीचा</string>
     <string name="invalid_certificate_chain">अवैध प्रमाणपत्र साखळी</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">सिस्टम प्रमाणपत्र वापरणे हे प्रमाणपत्र Universal Password Manager सह संग्रहित करण्यापेक्षा कमी सुरक्षित आहे. सुरू ठेवल्यास, आधीपासून स्थापित असल्यास उपलब्ध सिस्टम प्रमाणपत्रांची यादी दिसेल.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">सिस्टम प्रमाणपत्र वापरणे हे प्रमाणपत्र Universal Password Manager सह संग्रहित करण्यापेक्षा कमी सुरक्षित आहे. सुरू ठेवल्यास, आधीपासून स्थापित असल्यास उपलब्ध सिस्टम प्रमाणपत्रांची यादी दिसेल.</string>
     <string name="link">लिंक</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">विनंतीमध्ये होस्ट URL उपस्थित नसल्यामुळे पासकी ऑपरेशन अयशस्वी.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">अॅप स्वाक्षरी अवैध असल्यामुळे पासकी ऑपरेशन अयशस्वी.</string>
@@ -1037,7 +1037,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">प्रमाणपत्र वाचता येत नाही.</string>
     <string name="cannot_delete_your_account">तुमचे खाते हटवता येत नाही</string>
     <string name="cannot_delete_your_account_explanation">ही क्रिया पूर्ण करता येत नाही कारण तुमचे खाते एखाद्या संस्थेच्या मालकीचे आहे. अतिरिक्त तपशीलांसाठी तुमच्या संस्था प्रशासकाशी संपर्क साधा.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">हे खाते लवकरच हटवले जाईल. Universal Password Manager वापरणे सुरू ठेवण्यासाठी %1$s वर लॉग इन करा.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">हे खाते लवकरच हटवले जाईल. Universal Password Manager वापरणे सुरू ठेवण्यासाठी %1$s वर लॉग इन करा.</string>
     <string name="view_file_send">फाइल Send पहा</string>
     <string name="view_text_send">मजकूर Send पहा</string>
     <string name="delete_send">Send हटवा</string>
@@ -1059,7 +1059,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">विशेषाधिकारित अॅप्सबद्दल अधिक जाणून घ्या</string>
     <string name="privileged_apps">विशेषाधिकारित अॅप्स</string>
     <string name="unrecognized_browser">अओळखलेला ब्राउझर</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Universal Password Manager सह पासकीज वापरण्याबद्दल अधिक जाणून घ्या.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Universal Password Manager सह पासकीज वापरण्याबद्दल अधिक जाणून घ्या.</string>
     <string name="all_trusted_apps">सर्व विश्वसनीय अॅप्स</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">तुम्हाला खात्री आहे की तुम्ही %s वर विश्वास ठेवणे थांबवू इच्छिता?</string>
     <string name="installed_apps">स्थापित अॅप्स</string>
@@ -1087,7 +1087,7 @@ Do you want to switch to this account?</string>
     <string name="information">माहिती</string>
     <string name="otp_type">OTP प्रकार</string>
     <string name="search_codes">कोड शोधा</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Universal Password Manager प्रमाणीकरणासह तुमची खाती सुरक्षित करा</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Universal Password Manager प्रमाणीकरणासह तुमची खाती सुरक्षित करा</string>
     <string name="get_verification_codes_for_all_your_accounts">२-चरण सत्यापनास समर्थन देणाऱ्या तुमच्या सर्व खात्यांसाठी सत्यापन कोड मिळवा.</string>
     <string name="use_your_device_camera_to_scan_codes">कोड स्कॅन करण्यासाठी तुमचा डिव्हाइस कॅमेरा वापरा</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">कोणत्याही खात्यासाठी तुमच्या २-चरण सत्यापन सेटिंग्जमध्ये QR कोड स्कॅन करा.</string>
@@ -1108,7 +1108,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">बायोमेट्रिक्सचे खूप जास्त अयशस्वी प्रयत्न.</string>
     <string name="version">आवृत्ती</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">आवृत्ती: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Help Center वर Bitwarden Authenticator कसे वापरावे याबद्दल अधिक जाणून घ्या.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Help Center वर Universal Password Manager Authenticator कसे वापरावे याबद्दल अधिक जाणून घ्या.</string>
     <string name="key">की</string>
     <string name="create_verification_code">सत्यापन कोड तयार करा</string>
     <string name="key_is_required">की आवश्यक आहे.</string>
@@ -1121,39 +1121,39 @@ Do you want to switch to this account?</string>
     <string name="data_backup_title">डेटा बॅकअप</string>
     <string name="data_backup_message">Universal Password Manager प्रमाणीकरण डेटाचा बॅकअप घेतला जातो आणि तुमच्या नियमित वेळापत्रकित डिव्हाइस बॅकअपसह पुनर्संचयित केला जाऊ शकतो.</string>
     <string name="import_2fas_password_protected_not_supported">2FAS संकेतशब्द-संरक्षित फाइल्समधून आयात करणे समर्थित नाही. संकेतशब्द-संरक्षित नसलेल्या निर्यात केलेल्या फाइलसह पुन्हा प्रयत्न करा.</string>
-    <string name="import_bitwarden_unsupported_format">Universal Password Manager CSV फाइल्स आयात करणे समर्थित नाही. निर्यात केलेल्या JSON फाइलसह पुन्हा प्रयत्न करा.</string>
-    <string name="download_bitwarden_card_title">Universal Password Manager अॅप डाउनलोड करा</string>
-    <string name="download_bitwarden_card_message">तुमची सर्व लॉगिन्स संग्रहित करा आणि सत्यापन कोड थेट Authenticator अॅपसह समक्रमित करा.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Universal Password Manager CSV फाइल्स आयात करणे समर्थित नाही. निर्यात केलेल्या JSON फाइलसह पुन्हा प्रयत्न करा.</string>
+    <string name="download_universalpasswordmanager_card_title">Universal Password Manager अॅप डाउनलोड करा</string>
+    <string name="download_universalpasswordmanager_card_message">तुमची सर्व लॉगिन्स संग्रहित करा आणि सत्यापन कोड थेट Authenticator अॅपसह समक्रमित करा.</string>
     <string name="download_now">आता डाउनलोड करा</string>
-    <string name="sync_with_bitwarden_app">Universal Password Manager अॅपसह समक्रमण करा</string>
+    <string name="sync_with_universalpasswordmanager_app">Universal Password Manager अॅपसह समक्रमण करा</string>
     <string name="learn_more_link"><annotation link="learnMore">अधिक जाणून घ्या</annotation></string>
     <string name="shared_codes_error">Universal Password Manager अॅपमधून कोड समक्रमित करण्यास असमर्थ. दोन्ही अॅप्स अद्ययावत आहेत याची खात्री करा. तुम्ही Universal Password Manager अॅपमध्ये तुमचे विद्यमान कोड अजूनही प्रवेश करू शकता.</string>
-    <string name="sync_with_the_bitwarden_app">Universal Password Manager अॅपसह समक्रमण करा</string>
-    <string name="sync_with_bitwarden_action_card_message">तुमचे सर्व सत्यापन कोड येथे पाहण्यासाठी सेटिंग्जमध्ये Authenticator अॅप समक्रमण करण्यास अनुमती द्या.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Universal Password Manager अॅपसह समक्रमण करा</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">तुमचे सर्व सत्यापन कोड येथे पाहण्यासाठी सेटिंग्जमध्ये Authenticator अॅप समक्रमण करण्यास अनुमती द्या.</string>
     <string name="take_me_to_app_settings">मला अॅप सेटिंग्जवर घेऊन जा</string>
     <string name="something_went_wrong">काहीतरी चूक झाली</string>
     <string name="please_try_again">कृपया पुन्हा प्रयत्न करा</string>
-    <string name="copy_to_bitwarden_vault">Universal Password Manager तिजोरीत कॉपी करा</string>
+    <string name="copy_to_universalpasswordmanager_vault">Universal Password Manager तिजोरीत कॉपी करा</string>
     <string name="default_save_option">डिफॉल्ट जतन पर्याय</string>
-    <string name="save_to_bitwarden">Universal Password Manager मध्ये जतन करा</string>
+    <string name="save_to_universalpasswordmanager">Universal Password Manager मध्ये जतन करा</string>
     <string name="save_here">येथे जतन करा</string>
     <string name="none">काहीही नाही</string>
     <string name="default_save_options_subtitle">तुम्ही नवीन सत्यापन कोड कुठे जतन करू इच्छिता ते निवडा.</string>
     <string name="verification_code_created">सत्यापन कोड तयार</string>
     <string name="choose_save_location_message">ही प्रमाणीकरण की येथे जतन करा, किंवा ती तुमच्या Universal Password Manager अॅपमधील लॉगिनमध्ये जोडा.</string>
     <string name="save_option_as_default">जतन पर्याय डिफॉल्ट म्हणून सेट करा</string>
-    <string name="account_synced_from_bitwarden_app">Universal Password Manager अॅपमधून समक्रमित केलेले खाते</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Universal Password Manager अॅपमधून समक्रमित केलेले खाते</string>
     <string name="local_codes">स्थानिक कोड (%1$d)</string>
     <string name="local_codes_header">स्थानिक कोड</string>
     <string name="required_information_missing">आवश्यक माहिती गहाळ</string>
-    <string name="required_information_missing_message">आवश्यक माहिती गहाळ आहे (उदा., ‘services’ किंवा ‘secret’). तुमची फाइल तपासा आणि पुन्हा प्रयत्न करा. समर्थनासाठी bitwarden.com/help ला भेट द्या</string>
+    <string name="required_information_missing_message">आवश्यक माहिती गहाळ आहे (उदा., ‘services’ किंवा ‘secret’). तुमची फाइल तपासा आणि पुन्हा प्रयत्न करा. समर्थनासाठी /help ला भेट द्या</string>
     <string name="file_could_not_be_processed">फाइलवर प्रक्रिया करता आली नाही</string>
-    <string name="file_could_not_be_processed_message">फाइलवर प्रक्रिया करता आली नाही. ती वैध JSON आहे याची खात्री करा आणि पुन्हा प्रयत्न करा. मदत हवी आहे? bitwarden.com/help ला भेट द्या</string>
+    <string name="file_could_not_be_processed_message">फाइलवर प्रक्रिया करता आली नाही. ती वैध JSON आहे याची खात्री करा आणि पुन्हा प्रयत्न करा. मदत हवी आहे? /help ला भेट द्या</string>
     <string name="get_help">मदत मिळवा</string>
     <string name="error_cannot_decrypt">[त्रुटी: डिक्रिप्ट करू शकत नाही]</string>
     <string name="copy_error_report">त्रुटी अहवाल कॉपी करा</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Universal Password Manager हा तिजोरी आयटम डिक्रिप्ट करू शकला नाही. अतिरिक्त डेटा नुकसान टाळण्यासाठी हा त्रुटी अहवाल कॉपी करा आणि ग्राहक सफलता टीमशी सामायिक करा.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Universal Password Manager हा तिजोरी आयटम डिक्रिप्ट करू शकला नाही. अतिरिक्त डेटा नुकसान टाळण्यासाठी हा त्रुटी अहवाल कॉपी करा आणि ग्राहक सफलता टीमशी सामायिक करा.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="one">Universal Password Manager %1$d तिजोरी आयटम डिक्रिप्ट करू शकला नाही. अतिरिक्त डेटा नुकसान टाळण्यासाठी हा त्रुटी अहवाल कॉपी करा आणि ग्राहक सफलता टीमशी सामायिक करा.</item>
         <item quantity="other">Universal Password Manager %1$d तिजोरी आयटम डिक्रिप्ट करू शकला नाही. अतिरिक्त डेटा नुकसान टाळण्यासाठी हा त्रुटी अहवाल कॉपी करा आणि ग्राहक सफलता टीमशी सामायिक करा.</item>
     </plurals>
@@ -1192,7 +1192,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">संकेतशब्द भरणे सुरू ठेवण्यासाठी ब्राउझर स्वयंपूर्त सक्षम करा</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">तुमचा ब्राउझर अलीकडे अद्ययावत झाला आहे, ज्यामुळे Universal Password Manager स्वयंपूर्त अक्षम झाली आहे. Universal Password Manager सह तुमचे संकेतशब्द भरणे सुरू ठेवण्यासाठी, स्वयंपूर्त सेटिंग्जमध्ये ब्राउझर स्वयंपूर्त सक्षम करा.</string>
     <string name="not_now">आत्ता नाही</string>
-    <string name="import_from_bitwarden">Universal Password Manager मधून आयात करा</string>
+    <string name="import_from_universalpasswordmanager">Universal Password Manager मधून आयात करा</string>
     <string name="select_account">खाते निवडा</string>
     <string name="no_accounts_available">कोणतीही खाती उपलब्ध नाहीत</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">तुमच्याकडे आयात करण्यासाठी कोणतीही खाती नाहीत. तुमच्या संस्थेची सुरक्षा धोरण Universal Password Manager वरून दुसऱ्या अॅपमध्ये आयटम आयात करण्यास प्रतिबंध करू शकते.</string>
@@ -1290,7 +1290,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">विश्वसनीय</string>
     <string name="preview_not_available_for_files">%1$s फाइल्ससाठी पूर्वावलोकन उपलब्ध नाही. तुम्ही तरीही ती तुमच्या डिव्हाइसवर पाहण्यासाठी डाउनलोड करू शकता.</string>
     <string name="this_file_is_too_large_to_preview">ही फाइल पूर्वावलोकनासाठी खूप मोठी आहे. तुम्ही तरीही ती तुमच्या डिव्हाइसवर पाहण्यासाठी डाउनलोड करू शकता.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager ही फाइल डिक्रिप्ट करू शकला नाही, म्हणून पूर्वावलोकन दाखवता येत नाही.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Universal Password Manager ही फाइल डिक्रिप्ट करू शकला नाही, म्हणून पूर्वावलोकन दाखवता येत नाही.</string>
     <string name="preview_unavailable_for_this_file">या फाइलसाठी पूर्वावलोकन उपलब्ध नाही. तुम्ही तरीही ती तुमच्या डिव्हाइसवर पाहण्यासाठी डाउनलोड करू शकता.</string>
     <string name="preview_unavailable">पूर्वावलोकन उपलब्ध नाही</string>
     <string name="download_attachment">संलग्नक डाउनलोड करा</string>
@@ -1332,7 +1332,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / वर्ष</string>
     <string name="billing_rate_per_month">%1$s / महिना</string>
     <string name="manage_plan">योजना व्यवस्थापित करा</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">तुमची सदस्यता योजना Universal Password Manager वेब अॅपमध्ये व्यवस्थापित करा.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">तुमची सदस्यता योजना Universal Password Manager वेब अॅपमध्ये व्यवस्थापित करा.</string>
     <string name="cancel_premium">Premium रद्द करा</string>
     <string name="subscription_status_active">सक्रिय</string>
     <string name="subscription_status_canceled">रद्द</string>
@@ -1423,8 +1423,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">स्थानिक नेटवर्क प्रवेश आवश्यक</string>
     <string name="ask_again_later">नंतर पुन्हा विचारा</string>
     <string name="enable_local_network_access">स्थानिक नेटवर्क प्रवेश सक्षम करा</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Universal Password Manager ला तुमच्या सर्व्हरसह समक्रमण करण्यासाठी स्थानिक नेटवर्क प्रवेश आवश्यक आहे. या परवानगीशिवाय, अॅप कनेक्ट होऊ शकणार नाही.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">या परवानगीशिवाय, Universal Password Manager कनेक्ट होऊ शकणार नाही आणि तुमच्या सर्व्हरसह समक्रमण करू शकणार नाही. तुम्ही हे तुमच्या डिव्हाइस सेटिंग्जमध्ये सक्षम करू शकता.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Universal Password Manager ला तुमच्या सर्व्हरसह समक्रमण करण्यासाठी स्थानिक नेटवर्क प्रवेश आवश्यक आहे. या परवानगीशिवाय, अॅप कनेक्ट होऊ शकणार नाही.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">या परवानगीशिवाय, Universal Password Manager कनेक्ट होऊ शकणार नाही आणि तुमच्या सर्व्हरसह समक्रमण करू शकणार नाही. तुम्ही हे तुमच्या डिव्हाइस सेटिंग्जमध्ये सक्षम करू शकता.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">अॅपला स्थानिक नेटवर्क प्रवेश आवश्यक असल्यामुळे तुमची विनंती व्यत्यय आणली गेली. तुम्ही हे तुमच्या डिव्हाइस सेटिंग्जमध्ये सक्षम करू शकता.</string>
     <string name="continue_to_stripe">Stripe वर सुरू ठेवायचे?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">तुमची सदस्यता रद्दीकरण व्यवस्थापित करण्यासाठी तुम्हाला Stripe वर नेले जाईल.</string>

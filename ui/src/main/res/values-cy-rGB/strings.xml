@@ -75,9 +75,9 @@
     <string name="yes">Ydw</string>
     <string name="account">Cyfrif</string>
     <string name="account_created_success">Mae eich cyfrif newydd wedi cael ei greu!</string>
-    <string name="set_bitwarden_as_passkey_manager_description">Gosod Universal Password Manager fel darparwr passkey yn gosodiadau dyfais.</string>
+    <string name="set_universalpasswordmanager_as_passkey_manager_description">Gosod Universal Password Manager fel darparwr passkey yn gosodiadau dyfais.</string>
     <string name="avoid_ambiguous_characters">Osgoi nodau amwys</string>
-    <string name="bitwarden_autofill_service">Gwasanaeth llenwi awtomatig Universal Password Manager</string>
+    <string name="universalpasswordmanager_autofill_service">Gwasanaeth llenwi awtomatig Universal Password Manager</string>
     <string name="change_master_password">Newid y prif gyfrinair</string>
     <string name="close">Cau</string>
     <string name="close_app">Cau ap</string>
@@ -108,7 +108,7 @@
     <string name="vault_timeout_log_out_confirmation_title">Gosod terfyn amser sesiwn i “Allgofnodi”?</string>
     <string name="vault_timeout_log_out_confirmation_message">Ar ôl y cyfnod amser allan, cewch eich allgofnodi. Bydd angen i chi fod wedi\'ch cysylltu â\'r rhyngrwyd i fewngofnodi a chael mynediad i\'ch cwpwrdd eto. Ni fydd eich gosodiadau a\'ch PIN a gedwir ar y ddyfais hon yn newid.</string>
     <string name="logging_in">Yn mewngofnodi…</string>
-    <string name="login_to_bitwarden">Mewngofnodi i Universal Password Manager</string>
+    <string name="login_to_universalpasswordmanager">Mewngofnodi i Universal Password Manager</string>
     <string name="master_password_confirmation_val_message">Nid yw\'r cadarnhad cyfrinair yn gywir.</string>
     <string name="master_password_description">Y cyfrinair meistr yw\'r cyfrinair rydych chi\'n ei ddefnyddio i gael mynediad i\'ch cwpwrdd. Mae\'n bwysig iawn peidio ag anghofio\'ch cyfrinair meistr. Nid oes unrhyw ffordd i adfer y cyfrinair rhag ofn i chi ei anghofio.</string>
     <string name="master_password_hint">Awgrym o\'ch prif gyfrinair (dewisol)</string>
@@ -180,7 +180,7 @@
     <string name="no_items_for_vault">Nid oes eitemau yn eich cwpwrdd sy\'n cyfateb i “%1$s”</string>
     <string name="search_for_a_login_or_add_a_new_login">Chwilio am fanylion mewngofnodi neu ychwanegu rhai newydd</string>
     <string name="disabled">Wedi diffodd</string>
-    <string name="bitwarden_autofill_service_alert2">Y ffordd hawsaf i ychwanegu mewngofnodiadau newydd i\'ch cwpwrdd yw o Wasanaeth Llenwi Awtomatig Universal Password Manager. Dysgwch fwy am ddefnyddio Gwasanaeth Llenwi Awtomatig Universal Password Manager trwy lywio i\'r sgrin “Settings”.</string>
+    <string name="universalpasswordmanager_autofill_service_alert2">Y ffordd hawsaf i ychwanegu mewngofnodiadau newydd i\'ch cwpwrdd yw o Wasanaeth Llenwi Awtomatig Universal Password Manager. Dysgwch fwy am ddefnyddio Gwasanaeth Llenwi Awtomatig Universal Password Manager trwy lywio i\'r sgrin “Settings”.</string>
     <string name="autofill_noun">Llenwi awtomatig</string>
     <string name="autofill_verb">Llenwi\'n awtomatig</string>
     <string name="autofill_or_view">Hoffech chi lenwi\'n awtomatig neu weld yr eitem hon?</string>
@@ -303,7 +303,7 @@ Bydd sganio yn digwydd yn awtomatig.</string>
     <string name="no_items_trash">Does dim eitemau yn y bin sbwriel.</string>
     <string name="autofill_accessibility_summary">Cynorthwyo gyda llenwi meysydd enw defnyddiwr a chyfrinair mewn apiau eraill ac ar y we.</string>
     <string name="autofill_service_description">Mae gwasanaeth llenwi awtomatig Universal Password Manager yn defnyddio Fframwaith Llenwi Awtomatig Android i gynorthwyo i lenwi gwybodaeth mewngofnodi i apiau eraill ar eich dyfais.</string>
-    <string name="bitwarden_autofill_go_to_settings">Ni allem agor dewislen gosodiadau llenwi awtomatig Android yn awtomatig i chi. Gallwch lywio i\'r ddewislen gosodiadau llenwi awtomatig â llaw o Gosodiadau Android &gt; System &gt; Ieithoedd a mewnbwn &gt; Uwch &gt; Gwasanaeth llenwi awtomatig.</string>
+    <string name="universalpasswordmanager_autofill_go_to_settings">Ni allem agor dewislen gosodiadau llenwi awtomatig Android yn awtomatig i chi. Gallwch lywio i\'r ddewislen gosodiadau llenwi awtomatig â llaw o Gosodiadau Android &gt; System &gt; Ieithoedd a mewnbwn &gt; Uwch &gt; Gwasanaeth llenwi awtomatig.</string>
     <string name="custom_field_name">Enw maes personol</string>
     <string name="field_type_boolean">Gwerth Boole</string>
     <string name="field_type_hidden">Cudd</string>
@@ -665,14 +665,14 @@ dewiswch Ychwanegu TOTP i storio\'r allwedd yn ddiogel</string>
     <string name="access_attempt_from_x_do_you_want_to_switch_to_this_account">Access attempt from:
 %1$s
 Do you want to switch to this account?</string>
-    <string name="new_to_bitwarden">Newydd i Universal Password Manager?</string>
+    <string name="new_to_universalpasswordmanager">Newydd i Universal Password Manager?</string>
     <string name="get_master_passwordword_hint">Anfon awgrym o\'ch prif gyfrinair</string>
     <string name="logging_in_as_x_on_y">Yn mewngofnodi fel %1$s ar %2$s</string>
     <string name="not_you">Nid chi?</string>
     <string name="log_in_with_master_password">Mewngofnodi â\'ch prif gyfrinair</string>
     <string name="log_in_initiated">Mewngofnodi wedi\'i gychwyn</string>
     <string name="request_sent_to_your_device">Request sent to your device</string>
-    <string name="approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
+    <string name="approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app">Approve this request in your Universal Password Manager account on another unlocked device or in the web app. Account access requests must be turned on in Settings.</string>
     <string name="make_sure_the_fingerprint_phrase_matches_the_one_below_before_approving">Make sure the Fingerprint phrase matches the one below before approving.</string>
     <string name="resend_notification">Ailanfon hysbysiad</string>
     <string name="view_all_login_options">Gweld yr holl opsiynau mewngofnodi</string>
@@ -730,7 +730,7 @@ Do you want to switch to this account?</string>
     <string name="select_vault">Dewis cwpwrdd</string>
     <string name="appearance">Golwg</string>
     <string name="account_security">Diogelwch eich cyfrif</string>
-    <string name="bitwarden_help_center">Universal Password Manager Help Center</string>
+    <string name="universalpasswordmanager_help_center">Universal Password Manager Help Center</string>
     <string name="sync_now">Cysoni nawr</string>
     <string name="unlock_options">Dewisiadau datgloi</string>
     <string name="session_timeout">Terfyn amser sesiwn</string>
@@ -747,10 +747,10 @@ Do you want to switch to this account?</string>
     <string name="continue_to_device_settings">Parhau i Gosodiadau dyfais?</string>
     <string name="two_step_login_description_long">Gallwch wneud eich cyfrif yn fwy diogel drwy alluogi mewngofnodi dau gam yn ap gwe Universal Password Manager.</string>
     <string name="change_master_password_description_long">Gallwch newid eich cyfrinair meistr ar ap gwe Universal Password Manager.</string>
-    <string name="learn_more_about_how_to_use_bitwarden_on_the_help_center">Dysgwch fwy am sut i ddefnyddio Universal Password Manager ar y Ganolfan Gymorth.</string>
-    <string name="privacy_policy_description_long">Edrychwch ar ein polisi preifatrwydd ar bitwarden.com.</string>
-    <string name="explore_more_features_of_your_bitwarden_account_on_the_web_app">Archwiliwch fwy o nodweddion eich cyfrif Universal Password Manager ar y cymhwysiad gwe.</string>
-    <string name="learn_about_organizations_description_long">Mae Universal Password Manager yn caniatáu i chi rannu eich eitemau cwpwrdd ag eraill trwy ddefnyddio sefydliad. Dysgwch fwy ar wefan bitwarden.com.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_on_the_help_center">Dysgwch fwy am sut i ddefnyddio Universal Password Manager ar y Ganolfan Gymorth.</string>
+    <string name="privacy_policy_description_long">Edrychwch ar ein polisi preifatrwydd ar .</string>
+    <string name="explore_more_features_of_your_universalpasswordmanager_account_on_the_web_app">Archwiliwch fwy o nodweddion eich cyfrif Universal Password Manager ar y cymhwysiad gwe.</string>
+    <string name="learn_about_organizations_description_long">Mae Universal Password Manager yn caniatáu i chi rannu eich eitemau cwpwrdd ag eraill trwy ddefnyddio sefydliad. Dysgwch fwy ar wefan .</string>
     <string name="created_x">Wedi\'i greu %1$s</string>
     <string name="your_organization_requires_you_to_set_a_master_password">Mae eich sefydliad yn gofyn i chi osod cyfrinair meistr.</string>
     <string name="set_up_an_unlock_option_to_change_your_vault_timeout_action">Sefydlu opsiwn datgloi i newid gweithred amser allan eich cwpwrdd.</string>
@@ -760,8 +760,8 @@ Do you want to switch to this account?</string>
     <string name="duo_two_step_login_is_required_for_your_account">Mae mewngofnodi dau gam Duo yn ofynnol ar gyfer eich cyfrif.</string>
     <string name="follow_the_steps_from_duo_to_finish_logging_in">Dilynwch y camau gan Duo i orffen mewngofnodi.</string>
     <string name="launch_duo">Lansio Duo</string>
-    <string name="your_passkey_will_be_saved_to_your_bitwarden_vault_for_x">Bydd eich passkey yn cael ei gadw i\'ch cwpwrdd Universal Password Manager ar gyfer %1$s</string>
-    <string name="your_password_will_be_saved_to_your_bitwarden_vault_for_x">Bydd eich cyfrinair yn cael ei gadw i\'ch cwpwrdd Universal Password Manager ar gyfer %1$s</string>
+    <string name="your_passkey_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Bydd eich passkey yn cael ei gadw i\'ch cwpwrdd Universal Password Manager ar gyfer %1$s</string>
+    <string name="your_password_will_be_saved_to_your_universalpasswordmanager_vault_for_x">Bydd eich cyfrinair yn cael ei gadw i\'ch cwpwrdd Universal Password Manager ar gyfer %1$s</string>
     <string name="passkeys_not_supported_for_this_app">Nid yw passkeys yn cael eu cynnal ar gyfer yr ap hwn</string>
     <string name="passkey_operation_failed_because_browser_is_not_privileged">Methodd gweithrediad passkey oherwydd nad yw\'r porwr yn freintiedig</string>
     <string name="passkey_operation_failed_because_browser_signature_does_not_match">Methodd gweithrediad passkey oherwydd nad yw llofnod y porwr yn cyfateb</string>
@@ -787,7 +787,7 @@ Do you want to switch to this account?</string>
     <string name="check_your_email">Gwiriwch eich e-bost</string>
     <string name="open_email_app">Agor ap e-bost</string>
     <string name="email_verified">E-bost wedi\'i ddilysu</string>
-    <string name="get_emails_from_bitwarden_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Cewch e-byst gan Universal Password Manager am gyhoeddiadau, cyngor, a chyfleoedd ymchwil. <annotation link="unsubscribe">Dadgofrestru</annotation> unrhyw bryd.</string>
+    <string name="get_emails_from_universalpasswordmanager_for_announcements_advices_and_research_opportunities_unsubscribe_any_time">Cewch e-byst gan Universal Password Manager am gyhoeddiadau, cyngor, a chyfleoedd ymchwil. <annotation link="unsubscribe">Dadgofrestru</annotation> unrhyw bryd.</string>
     <string name="security_prioritized">Diogelwch, yn flaenoriaeth</string>
     <string name="welcome_message_1">Cadwch fewngofnodiadau, cardiau, a hunaniaethau i\'ch cwpwrdd diogel. Mae Universal Password Manager yn defnyddio amgryptio di-gwybodaeth, pen-i-ben i ddiogelu\'r hyn sy\'n bwysig i chi.</string>
     <string name="welcome_message_2">Sefydlwch ddatgloi biometrig a llenwi awtomatig i fewngofnodi i\'ch cyfrifon heb deipio un llythyren.</string>
@@ -825,8 +825,8 @@ Do you want to switch to this account?</string>
     <string name="select_the_link_in_the_email_to_verify_your_email_address_and_continue_creating_your_account">Dewiswch y ddolen yn yr e-bost i ddilysu\'ch cyfeiriad e-bost a pharhau i greu\'ch cyfrif.</string>
     <string name="change_email_address">Newid cyfeiriad e-bost</string>
     <string name="next">Nesaf</string>
-    <string name="bitwarden_cannot_recover_a_lost_or_forgotten_master_password">Ni all Universal Password Manager adfer prif gyfrinair sydd ar goll neu wedi\'i anghofio.</string>
-    <string name="bitwarden_cannot_reset_a_lost_or_forgotten_master_password">Ni all Universal Password Manager ailosod cyfrinair meistr coll neu anghofiedig.</string>
+    <string name="universalpasswordmanager_cannot_recover_a_lost_or_forgotten_master_password">Ni all Universal Password Manager adfer prif gyfrinair sydd ar goll neu wedi\'i anghofio.</string>
+    <string name="universalpasswordmanager_cannot_reset_a_lost_or_forgotten_master_password">Ni all Universal Password Manager ailosod cyfrinair meistr coll neu anghofiedig.</string>
     <string name="choose_your_master_password">Dewiswch eich cyfrinair meistr</string>
     <string name="choose_a_unique_and_strong_password_to_keep_your_information_safe">Dewiswch gyfrinair unigryw a chryf i gadw\'ch gwybodaeth yn ddiogel.</string>
     <plurals name="minimum_characters">
@@ -841,13 +841,13 @@ Do you want to switch to this account?</string>
     <string name="please_restart_registration_or_try_logging_in">Ailgychwynnwch gofrestru neu ceisiwch fewngofnodi. Efallai bod gennych gyfrif yn barod.</string>
     <string name="restart_registration">Ailgychwyn cofrestru</string>
     <string name="authenticator_sync">Cydamseru Dilysydd</string>
-    <string name="allow_bitwarden_authenticator_syncing">Caniatáu cydamseru dilysydd</string>
+    <string name="allow_universalpasswordmanager_authenticator_syncing">Caniatáu cydamseru dilysydd</string>
     <string name="there_was_an_issue_validating_the_registration_token">Cafwyd problem wrth ddilysu\'r tocyn cofrestru.</string>
     <string name="turn_on_autofill">Trowch llenwi awtomatig ymlaen</string>
     <string name="autofill_setup">Sefydlu llenwi awtomatig</string>
     <string name="turn_on_browser_autofill_integration">Troi integreiddio llenwi awtomatig porwr ymlaen</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_singular">Rydych chi\'n defnyddio porwr sy\'n gofyn am ganiatadau arbennig i Universal Password Manager lenwi\'ch cyfrineiriau yn awtomatig.</string>
-    <string name="browser_requires_special_permissions_for_bitwarden_plural">Rydych chi\'n defnyddio porwyr sy\'n gofyn am ganiatadau arbennig i Universal Password Manager lenwi\'ch cyfrineiriau yn awtomatig.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_singular">Rydych chi\'n defnyddio porwr sy\'n gofyn am ganiatadau arbennig i Universal Password Manager lenwi\'ch cyfrineiriau yn awtomatig.</string>
+    <string name="browser_requires_special_permissions_for_universalpasswordmanager_plural">Rydych chi\'n defnyddio porwyr sy\'n gofyn am ganiatadau arbennig i Universal Password Manager lenwi\'ch cyfrineiriau yn awtomatig.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_singular">Rydych chi\'n defnyddio porwr sy\'n gofyn am ganiatadau arbennig i Universal Password Manager lenwi\'ch cyfrineiriau yn awtomatig. Galluogwch eich integreiddio llenwi awtomatig dewisol isod.</string>
     <string name="youre_using_a_browser_that_requires_special_permissions_plural">Rydych chi\'n defnyddio porwyr sy\'n gofyn am ganiatadau arbennig i Universal Password Manager lenwi\'ch cyfrineiriau yn awtomatig. Galluogwch lenwi awtomatig ar gyfer eich holl borwyr sydd wedi\'u gosod i barhau.</string>
     <string name="use_autofill_to_log_into_your_accounts">Defnyddiwch lenwi awtomatig i fewngofnodi i\'ch cyfrifon gydag un tapiad.</string>
@@ -855,7 +855,7 @@ Do you want to switch to this account?</string>
     <string name="turn_on_autofill_later">Troi llenwi awtomatig ymlaen yn hwyrach?</string>
     <string name="turn_on_browser_autofill_integration_later">Troi integreiddio llenwi awtomatig porwr ymlaen yn hwyrach?</string>
     <string name="return_to_complete_this_step_anytime_in_settings">Gallwch ddychwelyd i gwblhau\'r cam hwn unrhyw bryd yn Gosodiadau.</string>
-    <string name="what_bitwarden_has_to_offer">Gallwch nawr archwilio popeth sydd gan Universal Password Manager i\'w gynnig a dechrau rheoli\'ch cyfrineiriau yn ddiogel.</string>
+    <string name="what_universalpasswordmanager_has_to_offer">Gallwch nawr archwilio popeth sydd gan Universal Password Manager i\'w gynnig a dechrau rheoli\'ch cyfrineiriau yn ddiogel.</string>
     <string name="youre_all_set">Rydych chi wedi gorffen!</string>
     <string name="error_connecting_with_the_duo_service_use_a_different_two_step_login_method_or_contact_duo_for_assistance">Gwall wrth gysylltu â gwasanaeth Duo. Defnyddiwch ddull mewngofnodi dau-gam arall neu cysylltwch â Duo am gymorth.</string>
     <string name="master_password_hint_not_specified">Awgrym o\'ch prif gyfrinair</string>
@@ -884,29 +884,29 @@ Do you want to switch to this account?</string>
     <string name="step_1_of_3">Cam 1 o 3</string>
     <string name="export_your_saved_logins">Allforio\'ch mewngofnodiadau wedi\'u cadw</string>
     <string name="delete_this_file_after_import_is_complete">Byddwch yn dileu\'r ffeil hon ar ôl i\'r mewnforio ddod i ben.</string>
-    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_bitwarden_com">Ar eich cyfrifiadur, agorwch dab porwr newydd ac <annotation emphasis="bold">ewch i <annotation arg="0">%1$s</annotation></annotation></string>
-    <string name="log_in_to_the_bitwarden_web_app">Mewngofnodwch i ap gwe Universal Password Manager.</string>
+    <string name="on_your_computer_open_a_new_browser_tab_and_go_to_vault_universalpasswordmanager_com">Ar eich cyfrifiadur, agorwch dab porwr newydd ac <annotation emphasis="bold">ewch i <annotation arg="0">%1$s</annotation></annotation></string>
+    <string name="log_in_to_the_universalpasswordmanager_web_app">Mewngofnodwch i ap gwe Universal Password Manager.</string>
     <string name="step_2_of_3">Cam 2 o 3</string>
-    <string name="log_in_to_bitwarden">Mewngofnodi i Universal Password Manager</string>
+    <string name="log_in_to_universalpasswordmanager">Mewngofnodi i Universal Password Manager</string>
     <string name="step_3_of_3">Cam 3 o 3</string>
-    <string name="import_logins_to_bitwarden">Mewnforio mewngofnodiadau i Universal Password Manager</string>
-    <string name="in_the_bitwarden_navigation_find_the_tools_option_and_select_import_data">Yn llywio Universal Password Manager, <annotation emphasis="bold">dewch o hyd i\'r opsiwn Offer</annotation> a <annotation emphasis="bold">dewiswch Mewnforio data.</annotation></string>
+    <string name="import_logins_to_universalpasswordmanager">Mewnforio mewngofnodiadau i Universal Password Manager</string>
+    <string name="in_the_universalpasswordmanager_navigation_find_the_tools_option_and_select_import_data">Yn llywio Universal Password Manager, <annotation emphasis="bold">dewch o hyd i\'r opsiwn Offer</annotation> a <annotation emphasis="bold">dewiswch Mewnforio data.</annotation></string>
     <string name="fill_out_the_form_and_import_your_saved_password_file">Llenwch y ffurflen a <annotation emphasis="bold">mewnforiwch eich ffeil cyfrineiriau wedi\'u cadw.</annotation></string>
     <string name="for_your_security_be_sure_to_delete_your_saved_password_file">Er eich diogelwch, gwnewch yn siŵr i <annotation emphasis="bold">ddileu eich ffeil cyfrineiriau wedi\'u cadw.</annotation></string>
     <string name="need_help_check_out_import_help">Angen cymorth? Edrychwch ar <annotation link="importHelp">cymorth mewnforio</annotation>.</string>
     <string name="import_help">cymorth mewnforio</string>
     <string name="save_the_exported_file_somewhere_on_your_computer_you_can_find_easily"><annotation emphasis="bold">Cadwch y ffeil allforio</annotation> mewn man ar eich cyfrifiadur y gallwch ddod o hyd iddo\'n hawdd.</string>
-    <string name="this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server">Nid yw hwn yn weinydd Universal Password Manager adnabyddus. Efallai y bydd angen i chi wirio gyda\'ch darparwr neu ddiweddaru\'ch gweinydd.</string>
+    <string name="this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server">Nid yw hwn yn weinydd Universal Password Manager adnabyddus. Efallai y bydd angen i chi wirio gyda\'ch darparwr neu ddiweddaru\'ch gweinydd.</string>
     <string name="syncing_logins_loading_message">Yn cydamseru mewngofnodiadau…</string>
     <string name="download_the_browser_extension">Lawrlwythwch estyniad y porwr</string>
-    <string name="go_to_bitwarden_com_download_to_integrate_bitwarden_into_browser">Ewch i bitwarden.com/download i integreiddio Universal Password Manager i\'ch porwr ffafriol am brofiad di-dor.</string>
+    <string name="go_to_universalpasswordmanager_com_download_to_integrate_universalpasswordmanager_into_browser">Ewch i /download i integreiddio Universal Password Manager i\'ch porwr ffafriol am brofiad di-dor.</string>
     <string name="use_the_web_app">Defnyddiwch yr ap gwe</string>
-    <string name="log_in_at_bitwarden_com_to_easily_manage_your_account">Mewngofnodwch yn bitwarden.com i reoli\'ch cyfrif yn hawdd a diweddaru gosodiadau.</string>
+    <string name="log_in_at_universalpasswordmanager_com_to_easily_manage_your_account">Mewngofnodwch yn  i reoli\'ch cyfrif yn hawdd a diweddaru gosodiadau.</string>
     <string name="autofill_passwords">Llenwi cyfrineiriau yn awtomatig</string>
     <string name="set_up_autofill_on_all_your_devices">Sefydlwch lenwi awtomatig ar eich holl ddyfeisiau i fewngofnodi gydag un tapiad unrhyw le.</string>
     <string name="import_successful">Mewnforio\'n Llwyddiannus!</string>
-    <string name="manage_your_logins_from_anywhere_with_bitwarden_tools">Rheolwch eich mewngofnodiadau o unrhyw le gydag offer Universal Password Manager ar gyfer gwe a bwrdd gwaith.</string>
-    <string name="bitwarden_tools">Offer Universal Password Manager</string>
+    <string name="manage_your_logins_from_anywhere_with_universalpasswordmanager_tools">Rheolwch eich mewngofnodiadau o unrhyw le gydag offer Universal Password Manager ar gyfer gwe a bwrdd gwaith.</string>
+    <string name="universalpasswordmanager_tools">Offer Universal Password Manager</string>
     <string name="got_it">Iawn</string>
     <string name="no_logins_were_imported">Ni fewnforiwyd unrhyw fewngofnodiadau</string>
     <string name="import_error">Gwall mewnforio</string>
@@ -928,7 +928,7 @@ Do you want to switch to this account?</string>
         <item quantity="other">%d hysbysiad</item>
     </plurals>
     <string name="log_in_quickly_and_easily_across_devices">Mewngofnodi\'n gyflym ac yn hawdd ar draws dyfeisiau</string>
-    <string name="bitwarden_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Gall Universal Password Manager hysbysu chi bob tro y byddwch yn derbyn cais mewngofnodi newydd o ddyfais arall.</string>
+    <string name="universalpasswordmanager_can_notify_you_each_time_you_receive_a_new_login_request_from_another_device">Gall Universal Password Manager hysbysu chi bob tro y byddwch yn derbyn cais mewngofnodi newydd o ddyfais arall.</string>
     <string name="skip_for_now">Neidio am nawr</string>
     <string name="done_text">Done</string>
     <string name="page_number_x_of_y">%1$s o %2$s</string>
@@ -980,7 +980,7 @@ Do you want to switch to this account?</string>
     <string name="coachmark_5_of_6">5 O 6</string>
     <string name="coachmark_6_of_6">6 O 6</string>
     <string name="use_these_options_to_adjust_your_password_to_your_account_requirements">Defnyddiwch yr opsiynau hyn i addasu eich cyfrinair i fodloni gofynion gwefan eich cyfrif.</string>
-    <string name="after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website">Ar ôl i chi gadw eich cyfrinair newydd i Universal Password Manager, peidiwch ag anghofio ei ddiweddaru ar wefan eich cyfrif.</string>
+    <string name="after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website">Ar ôl i chi gadw eich cyfrinair newydd i Universal Password Manager, peidiwch ag anghofio ei ddiweddaru ar wefan eich cyfrif.</string>
     <string name="verify_your_identity">Gwirio\'ch hunaniaeth</string>
     <string name="error_loading_certificate">Gwall wrth lwytho tystysgrif</string>
     <string name="certificate_alias">Alias tystysgrif</string>
@@ -991,7 +991,7 @@ Do you want to switch to this account?</string>
     <string name="unsupported_certificate_type">Math o dystysgrif heb ei gynnal</string>
     <string name="certificate_password_incorrect">Cyfrinair tystysgrif yn anghywir</string>
     <string name="invalid_certificate_chain">Cadwyn dystysgrif annilys</string>
-    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_bitwarden">Mae defnyddio tystysgrif system yn llai diogel na storio\'r dystysgrif gyda Universal Password Manager. Bydd parhau yn dangos rhestr o dystysgrifau system sydd ar gael os yw un eisoes wedi\'i gosod.</string>
+    <string name="system_certificates_are_not_as_secure_as_importing_certificates_to_universalpasswordmanager">Mae defnyddio tystysgrif system yn llai diogel na storio\'r dystysgrif gyda Universal Password Manager. Bydd parhau yn dangos rhestr o dystysgrifau system sydd ar gael os yw un eisoes wedi\'i gosod.</string>
     <string name="link">Dolen</string>
     <string name="passkey_operation_failed_because_host_url_is_not_present_in_request">Methodd gweithrediad passkey oherwydd nad yw URL gwesteiwr yn bresennol yn y cais.</string>
     <string name="passkey_operation_failed_because_app_signature_is_invalid">Methodd gweithrediad passkey oherwydd bod llofnod yr ap yn annilys.</string>
@@ -1061,7 +1061,7 @@ Do you want to switch to this account?</string>
     <string name="unable_to_read_certificate">Methu darllen tystysgrif.</string>
     <string name="cannot_delete_your_account">Ni ellir dileu\'ch cyfrif</string>
     <string name="cannot_delete_your_account_explanation">Ni ellir cwblhau\'r weithred hon oherwydd bod eich cyfrif yn eiddo i sefydliad. Cysylltwch â gweinyddwr eich sefydliad am fanylion ychwanegol.</string>
-    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden">Bydd y cyfrif hwn yn cael ei ddileu yn fuan. Mewngofnodwch yn %1$s i barhau i ddefnyddio Universal Password Manager.</string>
+    <string name="this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager">Bydd y cyfrif hwn yn cael ei ddileu yn fuan. Mewngofnodwch yn %1$s i barhau i ddefnyddio Universal Password Manager.</string>
     <string name="view_file_send">Gweld Anfon ffeil</string>
     <string name="view_text_send">Gweld Anfon testun</string>
     <string name="delete_send">Dileu Anfon</string>
@@ -1083,7 +1083,7 @@ Do you want to switch to this account?</string>
     <string name="learn_more_about_privileged_apps">Dysgwch fwy am apiau breintiedig</string>
     <string name="privileged_apps">Apiau breintiedig</string>
     <string name="unrecognized_browser">Porwr heb ei gydnabod</string>
-    <string name="learn_more_about_using_passkeys_with_bitwarden">Dysgwch fwy am ddefnyddio passkeys gyda Universal Password Manager.</string>
+    <string name="learn_more_about_using_passkeys_with_universalpasswordmanager">Dysgwch fwy am ddefnyddio passkeys gyda Universal Password Manager.</string>
     <string name="all_trusted_apps">Pob ap dibynadwy</string>
     <string name="are_you_sure_you_want_to_stop_trusting_x">Ydych chi\'n siŵr eich bod am roi\'r gorau i ymddiried yn %s?</string>
     <string name="installed_apps">Apiau wedi\'u gosod</string>
@@ -1115,7 +1115,7 @@ Do you want to switch to this account?</string>
     <string name="information">Gwybodaeth</string>
     <string name="otp_type">Math OTP</string>
     <string name="search_codes">Chwilio codau</string>
-    <string name="secure_your_accounts_with_bitwarden_authenticator">Diogelwch eich cyfrifon gyda Bitwarden Authenticator</string>
+    <string name="secure_your_accounts_with_universalpasswordmanager_authenticator">Diogelwch eich cyfrifon gyda Universal Password Manager Authenticator</string>
     <string name="get_verification_codes_for_all_your_accounts">Cael codau dilysu ar gyfer eich holl gyfrifon sy\'n cefnogi dilysiad 2 gam.</string>
     <string name="use_your_device_camera_to_scan_codes">Defnyddiwch gamera\'ch dyfais i sganio codau</string>
     <string name="scan_the_qr_code_in_your_2_step_verification_settings_for_any_account">Sganiwch y cod QR yn eich gosodiadau dilysu 2 gam ar gyfer unrhyw gyfrif.</string>
@@ -1136,7 +1136,7 @@ Do you want to switch to this account?</string>
     <string name="too_many_failed_biometric_attempts">Gormod o ymdrechion biometrig wedi methu.</string>
     <string name="version">Fersiwn</string>
     <string name="version_x" comment="%1$s is the version string (e.g. 2025.1.0 (1234)).">Fersiwn: %1$s</string>
-    <string name="learn_more_about_how_to_use_bitwarden_authenticator_on_the_help_center">Dysgwch fwy am sut i ddefnyddio Bitwarden Authenticator ar y Ganolfan Gymorth.</string>
+    <string name="learn_more_about_how_to_use_universalpasswordmanager_authenticator_on_the_help_center">Dysgwch fwy am sut i ddefnyddio Universal Password Manager Authenticator ar y Ganolfan Gymorth.</string>
     <string name="key">Allwedd</string>
     <string name="create_verification_code">Creu Cod Dilysu</string>
     <string name="key_is_required">Mae angen allwedd.</string>
@@ -1147,41 +1147,41 @@ Do you want to switch to this account?</string>
     <string name="key_is_invalid">Mae\'r allwedd yn annilys.</string>
     <string name="backup">Wrth gefn</string>
     <string name="data_backup_title">Wrth gefn data</string>
-    <string name="data_backup_message">Mae data Bitwarden Authenticator wedi\'i wneud yn gopi wrth gefn a gellir ei adfer gyda\'ch copïau wrth gefn dyfais sydd wedi\'u trefnu\'n rheolaidd.</string>
+    <string name="data_backup_message">Mae data Universal Password Manager Authenticator wedi\'i wneud yn gopi wrth gefn a gellir ei adfer gyda\'ch copïau wrth gefn dyfais sydd wedi\'u trefnu\'n rheolaidd.</string>
     <string name="import_2fas_password_protected_not_supported">Nid yw mewnforio o ffeiliau sydd wedi\'u diogelu gan gyfrinair 2FAS yn cael ei gefnogi. Ceisiwch eto gyda ffeil allforio nad yw wedi\'i diogelu gan gyfrinair.</string>
-    <string name="import_bitwarden_unsupported_format">Nid yw mewnforio ffeiliau CSV Universal Password Manager yn cael ei gefnogi. Ceisiwch eto gyda ffeil JSON wedi\'i hallforio.</string>
-    <string name="download_bitwarden_card_title">Lawrlwythwch ap Universal Password Manager</string>
-    <string name="download_bitwarden_card_message">Storiwch eich holl fewngofnodiadau a chydamserwch godau dilysu yn uniongyrchol gyda\'r ap Dilysydd.</string>
+    <string name="import_universalpasswordmanager_unsupported_format">Nid yw mewnforio ffeiliau CSV Universal Password Manager yn cael ei gefnogi. Ceisiwch eto gyda ffeil JSON wedi\'i hallforio.</string>
+    <string name="download_universalpasswordmanager_card_title">Lawrlwythwch ap Universal Password Manager</string>
+    <string name="download_universalpasswordmanager_card_message">Storiwch eich holl fewngofnodiadau a chydamserwch godau dilysu yn uniongyrchol gyda\'r ap Dilysydd.</string>
     <string name="download_now">Lawrlwytho nawr</string>
-    <string name="sync_with_bitwarden_app">Cydamseru gydag ap Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_app">Cydamseru gydag ap Universal Password Manager</string>
     <string name="learn_more_link"><annotation link="learnMore">Dysgu mwy</annotation></string>
     <string name="shared_codes_error">Methu cydamseru codau o ap Universal Password Manager. Sicrhewch fod y ddau ap yn gyfredol. Gallwch barhau i gael mynediad at eich codau presennol yn ap Universal Password Manager.</string>
-    <string name="sync_with_the_bitwarden_app">Cydamseru gydag ap Universal Password Manager</string>
-    <string name="sync_with_bitwarden_action_card_message">Caniatáu cydamseru ap Dilysydd yn y gosodiadau i weld eich holl godau dilysu yma.</string>
+    <string name="sync_with_the_universalpasswordmanager_app">Cydamseru gydag ap Universal Password Manager</string>
+    <string name="sync_with_universalpasswordmanager_action_card_message">Caniatáu cydamseru ap Dilysydd yn y gosodiadau i weld eich holl godau dilysu yma.</string>
     <string name="take_me_to_app_settings">Mynd â fi i osodiadau\'r ap</string>
     <string name="something_went_wrong">Aeth rhywbeth o\'i le</string>
     <string name="please_try_again">Rhowch gynnig arall arni</string>
-    <string name="copy_to_bitwarden_vault">Copïo i gwpwrdd Universal Password Manager</string>
+    <string name="copy_to_universalpasswordmanager_vault">Copïo i gwpwrdd Universal Password Manager</string>
     <string name="default_save_option">Opsiwn cadw diofyn</string>
-    <string name="save_to_bitwarden">Cadw i Universal Password Manager</string>
+    <string name="save_to_universalpasswordmanager">Cadw i Universal Password Manager</string>
     <string name="save_here">Cadw yma</string>
     <string name="none">Dim</string>
     <string name="default_save_options_subtitle">Dewiswch lle hoffech gadw codau dilysu newydd.</string>
     <string name="verification_code_created">Cod dilysu wedi\'i greu</string>
     <string name="choose_save_location_message">Cadwch yr allwedd dilysydd hon yma, neu ychwanegwch hi at fewngofnodiad yn eich ap Universal Password Manager.</string>
     <string name="save_option_as_default">Cadw opsiwn fel diofyn</string>
-    <string name="account_synced_from_bitwarden_app">Cyfrif wedi\'i gydamseru o ap Universal Password Manager</string>
+    <string name="account_synced_from_universalpasswordmanager_app">Cyfrif wedi\'i gydamseru o ap Universal Password Manager</string>
     <string name="local_codes">Codau lleol (%1$d)</string>
     <string name="local_codes_header">Codau lleol</string>
     <string name="required_information_missing">Gwybodaeth Ofynnol ar Goll</string>
-    <string name="required_information_missing_message">Mae gwybodaeth ofynnol ar goll (e.e., \'services\' neu \'secret\'). Gwiriwch eich ffeil a cheisiwch eto. Ewch i bitwarden.com/help am gymorth</string>
+    <string name="required_information_missing_message">Mae gwybodaeth ofynnol ar goll (e.e., \'services\' neu \'secret\'). Gwiriwch eich ffeil a cheisiwch eto. Ewch i /help am gymorth</string>
     <string name="file_could_not_be_processed">Ni ellid Prosesu\'r Ffeil</string>
-    <string name="file_could_not_be_processed_message">Ni ellid prosesu\'r ffeil. Sicrhewch ei bod yn JSON dilys a cheisiwch eto. Angen cymorth? Ewch i bitwarden.com/help</string>
+    <string name="file_could_not_be_processed_message">Ni ellid prosesu\'r ffeil. Sicrhewch ei bod yn JSON dilys a cheisiwch eto. Angen cymorth? Ewch i /help</string>
     <string name="get_help">Cael Cymorth</string>
     <string name="error_cannot_decrypt">[gwall: ni ellir dadgryptio]</string>
     <string name="copy_error_report">Copïo adroddiad gwall</string>
-    <string name="bitwarden_could_not_decrypt_this_vault_item_description_long">Ni allai Universal Password Manager ddadgryptio\'r eitem cwpwrdd hon. Copïwch a rhannwch yr adroddiad gwall hwn gyda llwyddiant cwsmeriaid i osgoi colli data ychwanegol.</string>
-    <plurals name="bitwarden_could_not_decrypt_x_vault_item_copy_and_share_description_long">
+    <string name="universalpasswordmanager_could_not_decrypt_this_vault_item_description_long">Ni allai Universal Password Manager ddadgryptio\'r eitem cwpwrdd hon. Copïwch a rhannwch yr adroddiad gwall hwn gyda llwyddiant cwsmeriaid i osgoi colli data ychwanegol.</string>
+    <plurals name="universalpasswordmanager_could_not_decrypt_x_vault_item_copy_and_share_description_long">
         <item quantity="zero">Ni allai Universal Password Manager ddadgryptio %1$d o eitemau cwpwrdd. Copïwch a rhannwch yr adroddiad gwall hwn gyda llwyddiant cwsmeriaid i osgoi colli data ychwanegol.</item>
         <item quantity="one">Ni allai Universal Password Manager ddadgryptio %1$d eitem cwpwrdd. Copïwch a rhannwch yr adroddiad gwall hwn gyda llwyddiant cwsmeriaid i osgoi colli data ychwanegol.</item>
         <item quantity="two">Ni allai Universal Password Manager ddadgryptio %1$d o eitemau cwpwrdd. Copïwch a rhannwch yr adroddiad gwall hwn gyda llwyddiant cwsmeriaid i osgoi colli data ychwanegol.</item>
@@ -1228,7 +1228,7 @@ Do you want to switch to this account?</string>
     <string name="enable_browser_autofill_to_keep_filling_passwords">Galluogi Llenwi Awtomatig Porwr i barhau i lenwi cyfrineiriau</string>
     <string name="your_browser_recently_updated_how_autofill_works_singular">Mae eich porwr wedi diweddaru\'n ddiweddar, sydd wedi analluogi llenwi awtomatig Universal Password Manager. I barhau i lenwi\'ch cyfrineiriau gyda Universal Password Manager, galluogwch lenwi awtomatig porwr yn y gosodiadau llenwi awtomatig.</string>
     <string name="not_now">Nid nawr</string>
-    <string name="import_from_bitwarden">Mewnforio o Universal Password Manager</string>
+    <string name="import_from_universalpasswordmanager">Mewnforio o Universal Password Manager</string>
     <string name="select_account">Dewis cyfrif</string>
     <string name="no_accounts_available">Dim cyfrifon ar gael</string>
     <string name="you_dont_have_any_accounts_you_can_import_from">Nid oes gennych unrhyw gyfrifon y gallwch fewnforio ohonynt. Gall polisi diogelwch eich sefydliad gyfyngu ar fewnforio eitemau o Universal Password Manager i ap arall.</string>
@@ -1326,7 +1326,7 @@ Do you want to switch to this account?</string>
     <string name="trusted">Wedi\'i ymddiried</string>
     <string name="preview_not_available_for_files">Nid yw rhagolwg ar gael ar gyfer ffeiliau %1$s. Gallwch ei lawrlwytho i\'w weld ar eich dyfais o hyd.</string>
     <string name="this_file_is_too_large_to_preview">Mae\'r ffeil hon yn rhy fawr i\'w rhagolygu. Gallwch ei lawrlwytho i\'w weld ar eich dyfais o hyd.</string>
-    <string name="bitwarden_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Ni allai Universal Password Manager ddadgryptio\'r ffeil hon, felly ni ellir dangos y rhagolwg.</string>
+    <string name="universalpasswordmanager_could_not_decrypt_this_file_so_the_preview_cannot_be_displayed">Ni allai Universal Password Manager ddadgryptio\'r ffeil hon, felly ni ellir dangos y rhagolwg.</string>
     <string name="preview_unavailable_for_this_file">Nid yw rhagolwg ar gael ar gyfer y ffeil hon. Gallwch ei lawrlwytho i\'w weld ar eich dyfais o hyd.</string>
     <string name="preview_unavailable">Rhagolwg ddim ar gael</string>
     <string name="download_attachment">Lawrlwytho Atodiad</string>
@@ -1368,7 +1368,7 @@ Do you want to switch to this account?</string>
     <string name="billing_rate_per_year">%1$s / blwyddyn</string>
     <string name="billing_rate_per_month">%1$s / mis</string>
     <string name="manage_plan">Rheoli cynllun</string>
-    <string name="manage_your_subscription_plan_in_the_bitwarden_web_app">Rheolwch eich cynllun tanysgrifiad yn ap gwe Universal Password Manager.</string>
+    <string name="manage_your_subscription_plan_in_the_universalpasswordmanager_web_app">Rheolwch eich cynllun tanysgrifiad yn ap gwe Universal Password Manager.</string>
     <string name="cancel_premium">Canslo Premiwm</string>
     <string name="subscription_status_active">Gweithredol</string>
     <string name="subscription_status_canceled">Wedi\'i ganslo</string>
@@ -1463,8 +1463,8 @@ Do you want to switch to this account?</string>
     <string name="local_network_access_required">Mynediad rhwydwaith lleol yn ofynnol</string>
     <string name="ask_again_later">Gofyn eto yn hwyrach</string>
     <string name="enable_local_network_access">Galluogi mynediad rhwydwaith lleol</string>
-    <string name="bitwarden_needs_local_network_access_to_sync_with_your_server">Mae angen mynediad rhwydwaith lleol ar Universal Password Manager i gydamseru â\'ch gweinydd. Heb y caniatâd hwn, ni fydd yr ap yn gallu cysylltu.</string>
-    <string name="without_this_permission_bitwarden_wont_be_able_to_sync_with_your_server">Heb y caniatâd hwn, ni fydd Universal Password Manager yn gallu cysylltu a chydamseru â\'ch gweinydd. Gallwch alluogi hyn yn eich gosodiadau dyfais.</string>
+    <string name="universalpasswordmanager_needs_local_network_access_to_sync_with_your_server">Mae angen mynediad rhwydwaith lleol ar Universal Password Manager i gydamseru â\'ch gweinydd. Heb y caniatâd hwn, ni fydd yr ap yn gallu cysylltu.</string>
+    <string name="without_this_permission_universalpasswordmanager_wont_be_able_to_sync_with_your_server">Heb y caniatâd hwn, ni fydd Universal Password Manager yn gallu cysylltu a chydamseru â\'ch gweinydd. Gallwch alluogi hyn yn eich gosodiadau dyfais.</string>
     <string name="your_request_was_interrupted_because_the_app_needs_local_network_access">Torrwyd ar draws eich cais oherwydd bod angen mynediad rhwydwaith lleol ar yr ap. Gallwch alluogi hyn yn eich gosodiadau dyfais.</string>
     <string name="continue_to_stripe">Parhau i Stripe?</string>
     <string name="youll_be_taken_to_stripe_to_manage_your_subscription_cancellation">Cewch eich mynd i Stripe i reoli canslo\'ch tanysgrifiad.</string>

@@ -9,7 +9,7 @@ import com.universalpasswordmanager.ui.platform.theme.UniversalTheme
  * Provides a default set of Universal-styled colors for a card.
  */
 @Composable
-fun bitwardenCardColors(
+fun universalpasswordmanagerCardColors(
     containerColor: Color = UniversalTheme.colorScheme.background.tertiary,
     contentColor: Color = UniversalTheme.colorScheme.text.primary,
     disabledContainerColor: Color = UniversalTheme.colorScheme.filledButton.backgroundDisabled,

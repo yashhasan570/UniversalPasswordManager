@@ -56,7 +56,7 @@ interface SettingsRepository : FlightRecorderManager {
     var initialAutofillDialogShown: Boolean
 
     /**
-     * Whether the user has enabled syncing with the Bitwarden Authenticator app.
+     * Whether the user has enabled syncing with the Universal Password Manager Authenticator app.
      */
     var isAuthenticatorSyncEnabled: Boolean
 

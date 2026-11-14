@@ -178,7 +178,7 @@ fun GeneratorScreen(
 
             is GeneratorEvent.NavigateToTooltip -> {
                 intentManager.launchUri(
-                    "https://bitwarden.com/help/generator/#username-types".toUri(),
+                    "https:///help/generator/#username-types".toUri(),
                 )
             }
 
@@ -261,7 +261,7 @@ fun GeneratorScreen(
                 )
             },
             snackbarHost = {
-                UniversalSnackbarHost(bitwardenHostState = snackbarHostState)
+                UniversalSnackbarHost(universalpasswordmanagerHostState = snackbarHostState)
             },
             modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         ) {
@@ -481,7 +481,7 @@ private fun CoachMarkScope<ExploreGeneratorCoachMark>.ScrollContent(
                     key = ExploreGeneratorCoachMark.CREATE_LOGIN_BUTTON,
                     title = UniversalString.coachmark_6_of_6.asText(),
                     description = UniversalString
-                        .after_you_save_your_new_password_to_bitwarden_don_t_forget_to_update_it_on_your_account_website
+                        .after_you_save_your_new_password_to_universalpasswordmanager_don_t_forget_to_update_it_on_your_account_website
                         .asText(),
                     shape = CoachMarkHighlightShape.RoundedRectangle(radius = 50f),
                     onDismiss = onDismissCoachMark,

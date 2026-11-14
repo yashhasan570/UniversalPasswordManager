@@ -207,7 +207,7 @@ class LoginWithDeviceViewModel @AssistedInject constructor(
                     it.copy(
                         dialogState = LoginWithDeviceState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_is_not_a_recognized_bitwarden_server_you_may_need_to_check_with_your_provider_or_update_your_server
+                            message = UniversalString.this_is_not_a_recognized_universalpasswordmanager_server_you_may_need_to_check_with_your_provider_or_update_your_server
                                 .asText(),
                         ),
                     )
@@ -370,7 +370,7 @@ data class LoginWithDeviceState(
                     LoginWithDeviceType.SSO_OTHER_DEVICE,
                         -> {
                         UniversalString
-                            .approve_this_request_in_your_bitwarden_account_on_another_unlocked_device_or_in_the_web_app
+                            .approve_this_request_in_your_universalpasswordmanager_account_on_another_unlocked_device_or_in_the_web_app
                             .asText()
                     }
 

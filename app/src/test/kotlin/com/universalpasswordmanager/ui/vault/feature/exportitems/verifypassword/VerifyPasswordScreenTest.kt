@@ -91,7 +91,7 @@ class VerifyPasswordScreenTest : UniversalComposeTest() {
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithText("active@bitwarden.com")
+            .onNodeWithText("active@")
             .assertIsDisplayed()
 
         composeTestRule
@@ -358,7 +358,7 @@ private val DEFAULT_USER_STATE = UserState(
         UserState.Account(
             userId = "activeUserId",
             name = "Active User",
-            email = "active@bitwarden.com",
+            email = "active@",
             avatarColorHex = "#aa00aa",
             environment = Environment.Prod.Us,
             isPremium = true,

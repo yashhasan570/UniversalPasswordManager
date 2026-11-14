@@ -32,7 +32,7 @@ import com.universalpasswordmanager.ui.platform.components.button.UniversalFille
 import com.universalpasswordmanager.ui.platform.components.button.UniversalStandardIconButton
 import com.universalpasswordmanager.ui.platform.components.button.UniversalTextButton
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalButtonData
-import com.universalpasswordmanager.ui.platform.components.card.color.bitwardenCardColors
+import com.universalpasswordmanager.ui.platform.components.card.color.universalpasswordmanagerCardColors
 import com.universalpasswordmanager.ui.platform.components.util.rememberVectorPainter
 import com.universalpasswordmanager.ui.platform.resource.UniversalDrawable
 import com.universalpasswordmanager.ui.platform.resource.UniversalString
@@ -66,7 +66,7 @@ fun UniversalActionCard(
     Card(
         modifier = modifier,
         shape = UniversalTheme.shapes.actionCard,
-        colors = bitwardenCardColors(),
+        colors = universalpasswordmanagerCardColors(),
         elevation = CardDefaults.elevatedCardElevation(),
         border = BorderStroke(width = 1.dp, color = UniversalTheme.colorScheme.stroke.border),
     ) {

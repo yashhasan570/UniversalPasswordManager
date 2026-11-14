@@ -39,7 +39,7 @@ import com.universalpasswordmanager.ui.platform.base.util.nullableTestTag
 import com.universalpasswordmanager.ui.platform.base.util.tabNavigation
 import com.universalpasswordmanager.ui.platform.components.button.UniversalStandardIconButton
 import com.universalpasswordmanager.ui.platform.components.button.model.UniversalHelpButtonData
-import com.universalpasswordmanager.ui.platform.components.field.color.bitwardenTextFieldColors
+import com.universalpasswordmanager.ui.platform.components.field.color.universalpasswordmanagerTextFieldColors
 import com.universalpasswordmanager.ui.platform.components.field.label.UniversalTextFieldLabel
 import com.universalpasswordmanager.ui.platform.components.field.model.TextToolbarType
 import com.universalpasswordmanager.ui.platform.components.field.support.UniversalTextFieldSupportingContent
@@ -141,7 +141,7 @@ fun UniversalPasswordField(
                 .tabNavigation(),
         ) {
             TextField(
-                colors = bitwardenTextFieldColors(),
+                colors = universalpasswordmanagerTextFieldColors(),
                 textStyle = UniversalTheme.typography.sensitiveInfoSmall,
                 label = label?.let {
                     {

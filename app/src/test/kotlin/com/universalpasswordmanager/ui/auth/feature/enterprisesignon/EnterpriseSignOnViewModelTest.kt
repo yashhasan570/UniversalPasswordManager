@@ -185,7 +185,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     EnterpriseSignOnEvent.NavigateToSsoLogin(
                         uri = ssoUri,
                         authTabData = AuthTabData.HttpsScheme(
-                            host = "bitwarden.com",
+                            host = "",
                             path = "sso-callback",
                         ),
                     ),
@@ -387,7 +387,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "https://bitwarden.com/sso-callback",
+                    ssoRedirectUri = "https:///sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -453,7 +453,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "https://bitwarden.com/sso-callback",
+                    ssoRedirectUri = "https:///sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -471,12 +471,12 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
             environmentRepository.environment = Environment.SelfHosted(
                 environmentUrlData = EnvironmentUrlDataJson(
                     base = "",
-                    webVault = "vault.bitwarden.com",
+                    webVault = "vault.",
                 ),
             )
 
             val viewModel = createViewModel(
-                ssoData = DEFAULT_SSO_DATA.copy(redirectUri = "bitwarden://sso-callback"),
+                ssoData = DEFAULT_SSO_DATA.copy(redirectUri = "sso-callback"),
             )
             val ssoCallbackResult = SsoCallbackResult.Success(state = "abc", code = "lmn")
 
@@ -513,8 +513,8 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     DEFAULT_STATE.copy(
                         dialogState = EnterpriseSignOnState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden
-                                .asText("vault.bitwarden.com"),
+                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager
+                                .asText("vault."),
                         ),
                         orgIdentifierInput = orgIdentifier,
                     ),
@@ -527,7 +527,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "bitwarden://sso-callback",
+                    ssoRedirectUri = "sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -544,13 +544,13 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
 
             environmentRepository.environment = Environment.SelfHosted(
                 environmentUrlData = EnvironmentUrlDataJson(
-                    base = "base.bitwarden.com",
+                    base = "base.",
                     webVault = "",
                 ),
             )
 
             val viewModel = createViewModel(
-                ssoData = DEFAULT_SSO_DATA.copy(redirectUri = "bitwarden://sso-callback"),
+                ssoData = DEFAULT_SSO_DATA.copy(redirectUri = "sso-callback"),
             )
             val ssoCallbackResult = SsoCallbackResult.Success(state = "abc", code = "lmn")
 
@@ -587,8 +587,8 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     DEFAULT_STATE.copy(
                         dialogState = EnterpriseSignOnState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden
-                                .asText("base.bitwarden.com"),
+                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager
+                                .asText("base."),
                         ),
                         orgIdentifierInput = orgIdentifier,
                     ),
@@ -601,7 +601,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "bitwarden://sso-callback",
+                    ssoRedirectUri = "sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -624,7 +624,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
             )
 
             val viewModel = createViewModel(
-                ssoData = DEFAULT_SSO_DATA.copy(redirectUri = "bitwarden://sso-callback"),
+                ssoData = DEFAULT_SSO_DATA.copy(redirectUri = "sso-callback"),
             )
             val ssoCallbackResult = SsoCallbackResult.Success(state = "abc", code = "lmn")
 
@@ -661,8 +661,8 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     DEFAULT_STATE.copy(
                         dialogState = EnterpriseSignOnState.DialogState.Error(
                             title = UniversalString.an_error_has_occurred.asText(),
-                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_bitwarden
-                                .asText("vault.bitwarden.com"),
+                            message = UniversalString.this_account_will_soon_be_deleted_log_in_at_x_to_continue_using_universalpasswordmanager
+                                .asText("vault."),
                         ),
                         orgIdentifierInput = orgIdentifier,
                     ),
@@ -675,7 +675,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "bitwarden://sso-callback",
+                    ssoRedirectUri = "sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -741,7 +741,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "https://bitwarden.com/sso-callback",
+                    ssoRedirectUri = "https:///sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -794,7 +794,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "https://bitwarden.com/sso-callback",
+                    ssoRedirectUri = "https:///sso-callback",
                     organizationIdentifier = "Universal",
                 )
             }
@@ -850,7 +850,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "https://bitwarden.com/sso-callback",
+                    ssoRedirectUri = "https:///sso-callback",
                     organizationIdentifier = "Universal",
                 )
             }
@@ -862,7 +862,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
             val orgIdentifier = "Universal"
             coEvery {
                 authRepository.login(any(), any(), any(), any(), any())
-            } returns LoginResult.ConfirmKeyConnectorDomain("bitwarden.com")
+            } returns LoginResult.ConfirmKeyConnectorDomain("")
 
             val viewModel = createViewModel(
                 ssoData = DEFAULT_SSO_DATA,
@@ -901,7 +901,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                 assertEquals(
                     DEFAULT_STATE.copy(
                         dialogState = EnterpriseSignOnState.DialogState.KeyConnectorDomain(
-                            keyConnectorDomain = "bitwarden.com",
+                            keyConnectorDomain = "",
                         ),
                         orgIdentifierInput = orgIdentifier,
                     ),
@@ -914,7 +914,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     email = "test@gmail.com",
                     ssoCode = "lmn",
                     ssoCodeVerifier = "def",
-                    ssoRedirectUri = "https://bitwarden.com/sso-callback",
+                    ssoRedirectUri = "https:///sso-callback",
                     organizationIdentifier = orgIdentifier,
                 )
             }
@@ -1020,7 +1020,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                         .VerifiedOrganizationDomainSsoDetail(
                             organizationIdentifier = "Universal with SSO",
                             organizationName = "Universal",
-                            domainName = "bitwarden.com",
+                            domainName = "",
                         ),
                 ),
             )
@@ -1059,7 +1059,7 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
                     VerifiedOrganizationDomainSsoDetailsResponse.VerifiedOrganizationDomainSsoDetail(
                         organizationIdentifier = "Universal with SSO",
                         organizationName = "Universal",
-                        domainName = "bitwarden.com",
+                        domainName = "",
                     ),
                 ),
             )
@@ -1212,14 +1212,14 @@ class EnterpriseSignOnViewModelTest : BaseViewModelTest() {
 
                 viewModel.trySendAction(
                     EnterpriseSignOnAction.Internal.OnLoginResult(
-                        LoginResult.ConfirmKeyConnectorDomain("bitwarden.com"),
+                        LoginResult.ConfirmKeyConnectorDomain(""),
                     ),
                 )
 
                 assertEquals(
                     DEFAULT_STATE.copy(
                         dialogState = EnterpriseSignOnState.DialogState.KeyConnectorDomain(
-                            keyConnectorDomain = "bitwarden.com",
+                            keyConnectorDomain = "",
                         ),
                     ),
                     awaitItem(),
@@ -1278,7 +1278,7 @@ private val DEFAULT_STATE = EnterpriseSignOnState(
     emailAddress = DEFAULT_EMAIL,
 )
 private val DEFAULT_SSO_DATA = SsoResponseData(
-    redirectUri = "https://bitwarden.com/sso-callback",
+    redirectUri = "https:///sso-callback",
     state = "abc",
     codeVerifier = "def",
 )

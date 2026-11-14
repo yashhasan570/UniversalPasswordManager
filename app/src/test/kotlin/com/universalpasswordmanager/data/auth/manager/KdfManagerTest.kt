@@ -402,8 +402,8 @@ class KdfManagerTest {
 }
 
 private const val CONTAINED_KEY_ID = "mockContainedKeyId"
-private const val EMAIL = "test@bitwarden.com"
-private const val EMAIL_2 = "test2@bitwarden.com"
+private const val EMAIL = "test@"
+private const val EMAIL_2 = "test2@"
 private const val PASSWORD = "password"
 private const val USER_ID_1 = "2a135b23-e1fb-42c9-bec3-573857bc8181"
 private const val USER_ID_2 = "b9d32ec0-6497-4582-9798-b350f53bfa02"

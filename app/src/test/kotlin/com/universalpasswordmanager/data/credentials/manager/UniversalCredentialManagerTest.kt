@@ -77,7 +77,7 @@ import java.security.MessageDigest
 @Suppress("LargeClass")
 class UniversalCredentialManagerTest {
 
-    private lateinit var bitwardenCredentialManager: UniversalCredentialManager
+    private lateinit var universalpasswordmanagerCredentialManager: UniversalCredentialManager
 
     private val mutableDecryptCipherListResultStateFlow =
         MutableStateFlow<DataState<DecryptCipherListResult>>(DataState.Loading)
@@ -144,7 +144,7 @@ class UniversalCredentialManagerTest {
         every { MessageDigest.getInstance(any()) } returns mockMessageDigest
         every { Base64.encodeToString(any(), any()) } returns DEFAULT_APP_SIGNATURE
 
-        bitwardenCredentialManager = UniversalCredentialManagerImpl(
+        universalpasswordmanagerCredentialManager = UniversalCredentialManagerImpl(
             vaultSdkSource = mockVaultSdkSource,
             fido2CredentialStore = mockFido2CredentialStore,
             credentialEntryBuilder = mockCredentialEntryBuilder,
@@ -176,7 +176,7 @@ class UniversalCredentialManagerTest {
         runTest {
             assertEquals(
                 createMockPasskeyAttestationOptions(number = 1, relyingPartyId = DEFAULT_HOST),
-                bitwardenCredentialManager.getPasskeyAttestationOptionsOrNull(
+                universalpasswordmanagerCredentialManager.getPasskeyAttestationOptionsOrNull(
                     requestJson = DEFAULT_FIDO2_AUTH_REQUEST_JSON,
                 ),
             )
@@ -189,7 +189,7 @@ class UniversalCredentialManagerTest {
             json.decodeFromStringOrNull<PasskeyAttestationOptions>(any())
         } returns null
 
-        assertNull(bitwardenCredentialManager.getPasskeyAttestationOptionsOrNull(requestJson = ""))
+        assertNull(universalpasswordmanagerCredentialManager.getPasskeyAttestationOptionsOrNull(requestJson = ""))
     }
 
     @Suppress("MaxLineLength")
@@ -215,7 +215,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns createMockPublicKeyAttestationResponse(number = 1).asSuccess()
 
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = selectedCipherView,
@@ -266,7 +266,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockRegistrationResponse.asSuccess()
 
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = mockCipherView,
@@ -313,7 +313,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockRegistrationResponse.asSuccess()
 
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -344,7 +344,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockRegistrationResponse.asSuccess()
 
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = mockCipherView,
@@ -365,7 +365,7 @@ class UniversalCredentialManagerTest {
                 every { hasMultipleSigners() } returns true
             }
             every { mockCallingAppInfo.signingInfo } returns mockSigningInfo
-            val result = bitwardenCredentialManager.registerFido2Credential(
+            val result = universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -387,7 +387,7 @@ class UniversalCredentialManagerTest {
             }
             every { mockCallingAppInfo.signingInfo } returns mockSigningInfo
 
-            val result = bitwardenCredentialManager.registerFido2Credential(
+            val result = universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -421,7 +421,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockRegistrationResponse.asSuccess()
 
-            val result = bitwardenCredentialManager.registerFido2Credential(
+            val result = universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -466,7 +466,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockRegistrationResponse.asSuccess()
 
-            bitwardenCredentialManager.registerFido2Credential(
+            universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -490,7 +490,7 @@ class UniversalCredentialManagerTest {
         every { mockCallingAppInfo.isOriginPopulated() } returns false
         every { mockCreatePublicKeyCredentialRequest.origin } returns null
 
-        val result = bitwardenCredentialManager.registerFido2Credential(
+        val result = universalpasswordmanagerCredentialManager.registerFido2Credential(
             userId = "mockUserId",
             createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
             selectedCipherView = createMockCipherView(number = 1),
@@ -517,7 +517,7 @@ class UniversalCredentialManagerTest {
             every { mockCreatePublicKeyCredentialRequest.origin } returns null
             every { json.decodeFromStringOrNull<PasskeyAttestationOptions>(any()) } returns null
 
-            val result = bitwardenCredentialManager.registerFido2Credential(
+            val result = universalpasswordmanagerCredentialManager.registerFido2Credential(
                 userId = "mockUserId",
                 callingAppInfo = mockCallingAppInfo,
                 createPublicKeyCredentialRequest = mockCreatePublicKeyCredentialRequest,
@@ -533,14 +533,14 @@ class UniversalCredentialManagerTest {
     @Suppress("MaxLineLength")
     @Test
     fun `hasAuthenticationAttemptsRemaining returns true when authenticationAttempts is less than 5`() {
-        assertTrue(bitwardenCredentialManager.hasAuthenticationAttemptsRemaining())
+        assertTrue(universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining())
     }
 
     @Suppress("MaxLineLength")
     @Test
     fun `hasAuthenticationAttemptsRemaining returns false when authenticationAttempts is greater than 5`() {
-        bitwardenCredentialManager.authenticationAttempts = 6
-        assertFalse(bitwardenCredentialManager.hasAuthenticationAttemptsRemaining())
+        universalpasswordmanagerCredentialManager.authenticationAttempts = 6
+        assertFalse(universalpasswordmanagerCredentialManager.hasAuthenticationAttemptsRemaining())
     }
 
     @Suppress("MaxLineLength")
@@ -561,7 +561,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockSdkResponse.asSuccess()
 
-            bitwardenCredentialManager.authenticateFido2Credential(
+            universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = "activeUserId",
                 request = mockGetPublicKeyCredentialOption,
                 selectedCipherView = mockCipherView,
@@ -615,7 +615,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns mockSdkResponse.asSuccess()
 
-            bitwardenCredentialManager.authenticateFido2Credential(
+            universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = "activeUserId",
                 request = mockGetPublicKeyCredentialOption,
                 selectedCipherView = mockCipherView,
@@ -661,7 +661,7 @@ class UniversalCredentialManagerTest {
                 )
             } returns createMockPublicKeyAssertionResponse(number = 1).asSuccess()
 
-            bitwardenCredentialManager.authenticateFido2Credential(
+            universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = "activeUserId",
                 request = mockGetPublicKeyCredentialOption,
                 selectedCipherView = mockSelectedCipher,
@@ -700,7 +700,7 @@ class UniversalCredentialManagerTest {
             json.decodeFromStringOrNull<PasskeyAssertionOptions>(any())
         } returns null
 
-        val result = bitwardenCredentialManager.authenticateFido2Credential(
+        val result = universalpasswordmanagerCredentialManager.authenticateFido2Credential(
             userId = "activeUserId",
             request = mockGetPublicKeyCredentialOption,
             selectedCipherView = mockSelectedCipher,
@@ -742,7 +742,7 @@ class UniversalCredentialManagerTest {
             } returns mockSdkResponse.asSuccess()
             every { json.encodeToString(mockPublicKeyCredential) } returns "mockResponseJson"
 
-            val authResult = bitwardenCredentialManager.authenticateFido2Credential(
+            val authResult = universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = "activeUserId",
                 request = mockGetPublicKeyCredentialOption,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -785,7 +785,7 @@ class UniversalCredentialManagerTest {
             } returns mockSdkResponse.asSuccess()
             every { json.encodeToString(mockPublicKeyCredential) } throws SerializationException()
 
-            val authResult = bitwardenCredentialManager.authenticateFido2Credential(
+            val authResult = universalpasswordmanagerCredentialManager.authenticateFido2Credential(
                 userId = "activeUserId",
                 request = mockGetPublicKeyCredentialOption,
                 selectedCipherView = createMockCipherView(number = 1),
@@ -821,7 +821,7 @@ class UniversalCredentialManagerTest {
 
         assertEquals(
             UserVerificationRequirement.REQUIRED,
-            bitwardenCredentialManager.getUserVerificationRequirement(
+            universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                 request = mockCreatePublicKeyCredentialRequest,
                 fallbackRequirement = UserVerificationRequirement.PREFERRED,
             ),
@@ -837,7 +837,7 @@ class UniversalCredentialManagerTest {
 
         assertEquals(
             UserVerificationRequirement.PREFERRED,
-            bitwardenCredentialManager.getUserVerificationRequirement(
+            universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                 request = mockCreatePublicKeyCredentialRequest,
                 fallbackRequirement = UserVerificationRequirement.REQUIRED,
             ),
@@ -853,7 +853,7 @@ class UniversalCredentialManagerTest {
 
         assertEquals(
             UserVerificationRequirement.DISCOURAGED,
-            bitwardenCredentialManager.getUserVerificationRequirement(
+            universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                 request = mockCreatePublicKeyCredentialRequest,
                 fallbackRequirement = UserVerificationRequirement.PREFERRED,
             ),
@@ -868,7 +868,7 @@ class UniversalCredentialManagerTest {
         } returns null
         assertEquals(
             UserVerificationRequirement.PREFERRED,
-            bitwardenCredentialManager.getUserVerificationRequirement(
+            universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                 request = mockCreatePublicKeyCredentialRequest,
                 fallbackRequirement = UserVerificationRequirement.PREFERRED,
             ),
@@ -888,7 +888,7 @@ class UniversalCredentialManagerTest {
             )
             assertEquals(
                 UserVerificationRequirement.REQUIRED,
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = mockProviderGetCredentialRequest,
                     fallbackRequirement = UserVerificationRequirement.PREFERRED,
                 ),
@@ -903,7 +903,7 @@ class UniversalCredentialManagerTest {
             )
             assertEquals(
                 UserVerificationRequirement.REQUIRED,
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = mockProviderGetCredentialRequest,
                     fallbackRequirement = UserVerificationRequirement.PREFERRED,
                 ),
@@ -918,7 +918,7 @@ class UniversalCredentialManagerTest {
             )
             assertEquals(
                 UserVerificationRequirement.DISCOURAGED,
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = mockProviderGetCredentialRequest,
                     fallbackRequirement = UserVerificationRequirement.PREFERRED,
                 ),
@@ -934,7 +934,7 @@ class UniversalCredentialManagerTest {
             } returns emptyList()
             assertEquals(
                 UserVerificationRequirement.REQUIRED,
-                bitwardenCredentialManager.getUserVerificationRequirement(
+                universalpasswordmanagerCredentialManager.getUserVerificationRequirement(
                     request = mockProviderGetCredentialRequest,
                     fallbackRequirement = UserVerificationRequirement.REQUIRED,
                 ),
@@ -960,7 +960,7 @@ class UniversalCredentialManagerTest {
                     successes = emptyList(),
                 ),
             )
-            val result = bitwardenCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
+            val result = universalpasswordmanagerCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
             assertEquals(emptyList<CredentialEntry>(), result.getOrNull())
         }
 
@@ -1005,7 +1005,7 @@ class UniversalCredentialManagerTest {
             mutableDecryptCipherListResultStateFlow.value = DataState.Loaded(
                 createMockDecryptCipherListResult(number = 1),
             )
-            val result = bitwardenCredentialManager.getCredentialEntries(
+            val result = universalpasswordmanagerCredentialManager.getCredentialEntries(
                 getCredentialsRequest = mockGetCredentialsRequest,
             )
             assertTrue(result.isFailure)
@@ -1062,7 +1062,7 @@ class UniversalCredentialManagerTest {
                 ),
             )
 
-            val result = bitwardenCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
+            val result = universalpasswordmanagerCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
 
             assertTrue(result.exceptionOrNull() is GetCredentialUnknownException)
         }
@@ -1118,7 +1118,7 @@ class UniversalCredentialManagerTest {
                 ),
             )
 
-            val result = bitwardenCredentialManager
+            val result = universalpasswordmanagerCredentialManager
                 .getCredentialEntries(mockGetCredentialsRequest)
 
             assertTrue(
@@ -1194,7 +1194,7 @@ class UniversalCredentialManagerTest {
                 ),
             )
 
-            val result = bitwardenCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
+            val result = universalpasswordmanagerCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
             assertTrue(result.isSuccess)
             assertEquals(1, result.getOrNull()?.size)
             assertTrue(result.getOrNull()?.first() is PublicKeyCredentialEntry)
@@ -1252,7 +1252,7 @@ class UniversalCredentialManagerTest {
                 ),
             )
 
-            bitwardenCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
+            universalpasswordmanagerCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
 
             verify(exactly = 1) {
                 mockCredentialEntryBuilder.buildPasswordCredentialEntries(
@@ -1365,7 +1365,7 @@ class UniversalCredentialManagerTest {
                 ),
             )
 
-            bitwardenCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
+            universalpasswordmanagerCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
 
             verify {
                 mockCredentialEntryBuilder.buildPasswordCredentialEntries(
@@ -1477,7 +1477,7 @@ class UniversalCredentialManagerTest {
                 ),
             )
 
-            bitwardenCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
+            universalpasswordmanagerCredentialManager.getCredentialEntries(mockGetCredentialsRequest)
 
             verify {
                 mockCredentialEntryBuilder.buildPasswordCredentialEntries(
@@ -1495,7 +1495,7 @@ class UniversalCredentialManagerTest {
 private const val DEFAULT_PACKAGE_NAME = "com.universalpasswordmanager"
 private const val DEFAULT_APP_SIGNATURE = "0987654321ABCDEF"
 private const val DEFAULT_CERT_FINGERPRINT = "30:39:38:37:36:35:34:33:32:31:41:42:43:44:45:46"
-private const val DEFAULT_HOST = "bitwarden.com"
+private const val DEFAULT_HOST = ""
 private val DEFAULT_ANDROID_ORIGIN = Origin.Android(
     UnverifiedAssetLink(
         packageName = DEFAULT_PACKAGE_NAME,
@@ -1504,12 +1504,12 @@ private val DEFAULT_ANDROID_ORIGIN = Origin.Android(
         assetLinkUrl = "https://$DEFAULT_HOST/.well-known/assetlinks.json",
     ),
 )
-private val DEFAULT_WEB_ORIGIN = Origin.Web("https://bitwarden.com")
+private val DEFAULT_WEB_ORIGIN = Origin.Web("https://")
 private const val DEFAULT_FIDO2_AUTH_REQUEST_JSON = """
 {
   "allowCredentials": [],
   "challenge": "mockChallenge",
-  "rpId": "bitwarden.com",
+  "rpId": "",
   "userVerification": "preferred"
 }
 """

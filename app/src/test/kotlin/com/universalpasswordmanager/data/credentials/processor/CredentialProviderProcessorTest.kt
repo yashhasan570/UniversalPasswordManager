@@ -65,7 +65,7 @@ class CredentialProviderProcessorTest {
         every { userStateFlow } returns mutableUserStateFlow
     }
     private val credentialEntries = listOf(mockk<CredentialEntry>(relaxed = true))
-    private val bitwardenCredentialManager: UniversalCredentialManager = mockk {
+    private val universalpasswordmanagerCredentialManager: UniversalCredentialManager = mockk {
         coEvery { getCredentialEntries(any()) } returns credentialEntries.asSuccess()
     }
     private val pendingIntentManager: CredentialManagerPendingIntentManager = mockk()
@@ -79,7 +79,7 @@ class CredentialProviderProcessorTest {
         credentialProviderProcessor = CredentialProviderProcessorImpl(
             context = context,
             authRepository = authRepository,
-            bitwardenCredentialManager = bitwardenCredentialManager,
+            universalpasswordmanagerCredentialManager = universalpasswordmanagerCredentialManager,
             pendingIntentManager = pendingIntentManager,
             clock = clock,
             dispatcherManager = dispatcherManager,
@@ -612,7 +612,7 @@ class CredentialProviderProcessorTest {
             every { cancellationSignal.setOnCancelListener(any()) } just runs
             every { callback.onError(capture(captureSlot)) } just runs
             coEvery {
-                bitwardenCredentialManager.getCredentialEntries(any())
+                universalpasswordmanagerCredentialManager.getCredentialEntries(any())
             } returns Result.failure(Exception("Error decrypting credentials."))
 
             credentialProviderProcessor.processGetCredentialRequest(

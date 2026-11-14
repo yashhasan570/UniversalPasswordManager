@@ -23,7 +23,7 @@
     Note that each build type uses a different value for knownCerts.
 
     This in effect means that the only application that can connect to the debug/release/etc
-    variant AuthenticatorBridgeService is the debug/release/etc variant Bitwarden Authenticator
+    variant AuthenticatorBridgeService is the debug/release/etc variant Universal Password Manager Authenticator
     app. -->
     <permission
         android:name="${applicationId}.permission.AUTHENTICATOR_BRIDGE_SERVICE"
@@ -81,10 +81,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data android:scheme="https" />
-                <data android:host="*.bitwarden.com" />
-                <data android:host="*.bitwarden.eu" />
-                <data android:host="*.bitwarden.pw" />
-                <data android:host="*.bitwarden-gov.com" />
+                <data android:host="*." />
+                <data android:host="*." />
+                <data android:host="*." />
+                <data android:host="*." />
                 <data android:pathPattern="/redirect-connector.*" />
             </intent-filter>
             <intent-filter>
@@ -99,7 +99,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:scheme="bitwarden" />
+                <data android:scheme="universalpasswordmanager" />
             </intent-filter>
             <!-- Handle Credential Exchange transfer requests -->
             <intent-filter
@@ -170,10 +170,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data android:scheme="https" />
-                <data android:host="bitwarden.com" />
-                <data android:host="bitwarden.eu" />
-                <data android:host="bitwarden.pw" />
-                <data android:host="bitwarden-gov.com" />
+                <data android:host="" />
+                <data android:host="" />
+                <data android:host="" />
+                <data android:host="" />
                 <data android:pathPattern="/duo-callback" />
                 <data android:pathPattern="/sso-callback" />
                 <data android:pathPattern="/webauthn-callback" />
@@ -186,7 +186,7 @@
 
                 <data
                     android:host="duo-callback"
-                    android:scheme="bitwarden" />
+                    android:scheme="universalpasswordmanager" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -196,7 +196,7 @@
 
                 <data
                     android:host="sso-callback"
-                    android:scheme="bitwarden" />
+                    android:scheme="universalpasswordmanager" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -206,7 +206,7 @@
 
                 <data
                     android:host="webauthn-callback"
-                    android:scheme="bitwarden" />
+                    android:scheme="universalpasswordmanager" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -216,7 +216,7 @@
 
                 <data
                     android:host="sso-cookie-vendor"
-                    android:scheme="bitwarden" />
+                    android:scheme="universalpasswordmanager" />
             </intent-filter>
         </activity>
 
@@ -279,7 +279,7 @@
             android:name="com.universalpasswordmanager.Autofill.CredentialProviderService"
             android:enabled="true"
             android:exported="true"
-            android:label="@string/bitwarden"
+            android:label="@string/universalpasswordmanager"
             android:permission="android.permission.BIND_CREDENTIAL_PROVIDER_SERVICE"
             tools:ignore="MissingClass">
             <intent-filter>

@@ -299,11 +299,11 @@ class LandingScreenTest : UniversalComposeTest() {
             .onNodeWithText("Email address")
             .assertTextEquals("Email address", "")
 
-        mutableStateFlow.update { it.copy(emailInput = "test@bitwarden.com") }
+        mutableStateFlow.update { it.copy(emailInput = "test@") }
 
         composeTestRule
             .onNodeWithText("Email address")
-            .assertTextEquals("Email address", "test@bitwarden.com")
+            .assertTextEquals("Email address", "test@")
     }
 
     @Test
@@ -517,9 +517,9 @@ class LandingScreenTest : UniversalComposeTest() {
 private val ACTIVE_ACCOUNT_SUMMARY = AccountSummary(
     userId = "activeUserId",
     name = "Active User",
-    email = "active@bitwarden.com",
+    email = "active@",
     avatarColorHex = "#aa00aa",
-    environmentLabel = "bitwarden.com",
+    environmentLabel = "",
     isActive = true,
     isLoggedIn = true,
     isVaultUnlocked = true,

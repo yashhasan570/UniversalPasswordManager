@@ -71,7 +71,7 @@ fun LocalManagerProvider(
     biometricsManager: BiometricsManager = BiometricsManager.create(
         activity = activity,
         config = BiometricsConfig(
-            promptTitleRes = UniversalString.bitwarden,
+            promptTitleRes = UniversalString.universalpasswordmanager,
             biometricsPromptDescriptionRes = UniversalString.biometrics_direction,
             isDeviceCredentialAllowedForBiometrics = false,
         ),

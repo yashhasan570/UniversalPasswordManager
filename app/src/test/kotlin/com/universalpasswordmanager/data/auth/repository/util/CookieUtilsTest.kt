@@ -11,7 +11,7 @@ import org.junit.jupiter.api.assertNull
 class CookieUtilsTest {
 
     private val mockUri: Uri = mockk(relaxed = true) {
-        every { scheme } returns "bitwarden"
+        every { scheme } returns "universalpasswordmanager"
         every { host } returns "sso-cookie-vendor"
     }
 

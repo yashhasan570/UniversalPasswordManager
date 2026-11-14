@@ -616,7 +616,7 @@ private fun PremiumContent(
         UniversalTwoButtonDialog(
             title = stringResource(id = UniversalString.continue_to_web_app),
             message = stringResource(
-                id = UniversalString.manage_your_subscription_plan_in_the_bitwarden_web_app,
+                id = UniversalString.manage_your_subscription_plan_in_the_universalpasswordmanager_web_app,
             ),
             confirmButtonText = stringResource(id = UniversalString.continue_text),
             dismissButtonText = stringResource(id = UniversalString.cancel),
