@@ -6,7 +6,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.universalpasswordmanager.annotation"
+    namespace = ".annotation"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }

@@ -90,7 +90,7 @@ kover {
                     "androidx.compose.ui.tooling.preview.Preview",
                     "androidx.compose.ui.tooling.preview.PreviewScreenSizes",
                     // Manually excluded classes/files/etc.
-                    "com.universalpasswordmanager.annotation.OmitFromCoverage",
+                    ".annotation.OmitFromCoverage",
                     // Dagger modules
                     "dagger.Module",
                 )

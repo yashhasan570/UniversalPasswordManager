@@ -8,7 +8,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.universalpasswordmanager.network"
+    namespace = "com.work"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }

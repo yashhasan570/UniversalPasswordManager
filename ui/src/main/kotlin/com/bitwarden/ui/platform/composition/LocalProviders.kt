@@ -1,0 +1,51 @@
+package .ui.platform.composition
+
+import androidx.compose.runtime.ProvidableCompositionLocal
+import androidx.compose.runtime.compositionLocalOf
+import .ui.platform.feature.cardscanner.util.CardTextAnalyzer
+import .ui.platform.feature.qrcodescan.util.QrCodeAnalyzer
+import .ui.platform.manager.IntentManager
+import .ui.platform.manager.biometrics.BiometricsManager
+import .ui.platform.manager.exit.ExitManager
+import java.time.Clock
+
+/**
+ * Provides access to the biometrics manager throughout the app.
+ */
+val LocalBiometricsManager: ProvidableCompositionLocal<BiometricsManager> = compositionLocalOf {
+    error("CompositionLocal BiometricsManager not present")
+}
+
+/**
+ * Provides access to the exit manager throughout the app.
+ */
+val LocalExitManager: ProvidableCompositionLocal<ExitManager> = compositionLocalOf {
+    error("CompositionLocal ExitManager not present")
+}
+
+/**
+ * Provides access to the intent manager throughout the app.
+ */
+val LocalIntentManager: ProvidableCompositionLocal<IntentManager> = compositionLocalOf {
+    error("CompositionLocal LocalIntentManager not present")
+}
+
+/**
+ * Provides access to the Card Text Analyzer throughout the app.
+ */
+val LocalCardTextAnalyzer: ProvidableCompositionLocal<CardTextAnalyzer> =
+    compositionLocalOf {
+        error("CompositionLocal LocalCardTextAnalyzer not present")
+    }
+
+/**
+ * Provides access to the clock throughout the app.
+ */
+val LocalClock: ProvidableCompositionLocal<Clock> = compositionLocalOf { Clock.systemDefaultZone() }
+
+/**
+ * Provides access to the QR Code Analyzer throughout the app.
+ */
+val LocalQrCodeAnalyzer: ProvidableCompositionLocal<QrCodeAnalyzer> = compositionLocalOf {
+    error("CompositionLocal LocalQrCodeAnalyzer not present")
+}

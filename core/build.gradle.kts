@@ -9,7 +9,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.universalpasswordmanager.core"
+    namespace = ".core"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }

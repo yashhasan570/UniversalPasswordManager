@@ -1,0 +1,67 @@
+package com.x8bit.universalpasswordmanager.data.platform.util
+
+import .data.datasource.disk.model.EnvironmentUrlDataJson
+import .data.repository.model.Environment
+import .ui.platform.manager.intent.model.AuthTabData
+
+/**
+ * Creates the appropriate Duo [AuthTabData] for the given [EnvironmentUrlDataJson].
+ */
+val Environment.duoAuthTabData: AuthTabData get() = authTabData(kind = "duo")
+
+/**
+ * Creates the appropriate WebAuthn [AuthTabData] for the given [EnvironmentUrlDataJson].
+ */
+val Environment.webAuthnAuthTabData: AuthTabData get() = authTabData(kind = "webauthn")
+
+/**
+ * Creates the appropriate SSO [AuthTabData] for the given [EnvironmentUrlDataJson].
+ */
+val Environment.ssoAuthTabData: AuthTabData get() = authTabData(kind = "sso")
+
+private fun Environment.authTabData(
+    kind: String,
+): AuthTabData = when (this) {
+    is Environment.Prod.Us -> {
+        AuthTabData.HttpsScheme(
+            host = "",
+            path = "$kind-callback",
+        )
+    }
+
+    is Environment.Prod.Eu -> {
+        AuthTabData.HttpsScheme(
+            host = "",
+            path = "$kind-callback",
+        )
+    }
+
+    is Environment.Prod.FedRamp -> {
+        AuthTabData.HttpsScheme(
+            host = "",
+            path = "$kind-callback",
+        )
+    }
+
+    is Environment.SelfHosted -> {
+        if (this.isInternal) {
+            AuthTabData.HttpsScheme(
+                host = "",
+                path = "$kind-callback",
+            )
+        } else {
+            AuthTabData.CustomScheme(
+                callbackUrl = "$kind-callback",
+            )
+        }
+    }
+}
+
+/**
+ * Returns the scheme used for app-links within the app.
+ */
+val Environment.appLinksScheme: String
+    get() = when (this) {
+        is Environment.Prod -> "https"
+        is Environment.SelfHosted -> if (this.isInternal) "https" else "universalpasswordmanager"
+    }

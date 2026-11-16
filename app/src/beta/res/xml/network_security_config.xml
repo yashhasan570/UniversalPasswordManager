@@ -31,7 +31,7 @@
         <domain includeSubdomains="true"></domain>
         <domain includeSubdomains="true"></domain>
         <trust-anchors>
-            <!-- Only trust pre-installed CAs for Universal domains and all subdomains -->
+            <!-- Only trust pre-installed CAs for Universal Password Manager domains and all subdomains -->
             <certificates src="system" />
 
             <!-- Additionally trust user added CAs -->

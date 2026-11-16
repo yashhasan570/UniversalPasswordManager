@@ -9,8 +9,8 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="password_generator"
-            android:targetClass="com.universalpasswordmanager.MainActivity"
-            android:targetPackage="com.universalpasswordmanager.beta" />
+            android:targetClass="com.x8bit.universalpasswordmanager.MainActivity"
+            android:targetPackage="com.x8bit.universalpasswordmanager.beta" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -21,7 +21,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="my_vault"
-            android:targetClass="com.universalpasswordmanager.MainActivity"
-            android:targetPackage="com.universalpasswordmanager.beta" />
+            android:targetClass="com.x8bit.universalpasswordmanager.MainActivity"
+            android:targetPackage="com.x8bit.universalpasswordmanager.beta" />
     </shortcut>
 </shortcuts>

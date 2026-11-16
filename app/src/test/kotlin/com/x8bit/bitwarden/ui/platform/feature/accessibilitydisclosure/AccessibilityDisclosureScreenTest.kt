@@ -1,0 +1,85 @@
+package com.x8bit.universalpasswordmanager.ui.platform.feature.accessibilitydisclosure
+
+import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
+import .core.data.repository.util.bufferedMutableSharedFlow
+import .ui.platform.manager.exit.ExitManager
+import com.x8bit.universalpasswordmanager.ui.platform.base.Universal Password ManagerComposeTest
+import io.mockk.every
+import io.mockk.just
+import io.mockk.mockk
+import io.mockk.runs
+import io.mockk.verify
+import kotlinx.coroutines.flow.MutableStateFlow
+import org.junit.Assert.assertTrue
+import org.junit.Before
+import org.junit.Test
+
+class AccessibilityDisclosureScreenTest : Universal Password ManagerComposeTest() {
+
+    private var onDismissCalled = false
+    private val mutableEventFlow = bufferedMutableSharedFlow<AccessibilityDisclosureEvent>()
+    private val mutableStateFlow = MutableStateFlow(AccessibilityDisclosureState)
+    private val viewModel = mockk<AccessibilityDisclosureViewModel>(relaxed = true) {
+        every { eventFlow } returns mutableEventFlow
+        every { stateFlow } returns mutableStateFlow
+    }
+    private val exitManager = mockk<ExitManager> {
+        every { exitApplication() } just runs
+    }
+
+    @Before
+    fun setUp() {
+        setContent(exitManager = exitManager) {
+            AccessibilityDisclosureScreen(
+                onDismiss = { onDismissCalled = true },
+                viewModel = viewModel,
+            )
+        }
+    }
+
+    @Test
+    fun `i understand button click should send IUnderstandClick action`() {
+        composeTestRule
+            .onNodeWithText(text = "I understand")
+            .performScrollTo()
+            .performClick()
+        verify(exactly = 1) {
+            viewModel.trySendAction(AccessibilityDisclosureAction.IUnderstandClick)
+        }
+    }
+
+    @Test
+    fun `close app button click should send CloseAppClick action`() {
+        composeTestRule
+            .onNodeWithText(text = "Close app")
+            .performScrollTo()
+            .performClick()
+        verify(exactly = 1) {
+            viewModel.trySendAction(AccessibilityDisclosureAction.CloseAppClick)
+        }
+    }
+
+    @Test
+    fun `Dismiss event should call onDismiss`() {
+        mutableEventFlow.tryEmit(AccessibilityDisclosureEvent.Dismiss)
+        assertTrue(onDismissCalled)
+    }
+
+    @Test
+    fun `CloseApp event should exit the application`() {
+        mutableEventFlow.tryEmit(AccessibilityDisclosureEvent.CloseApp)
+        verify(exactly = 1) {
+            exitManager.exitApplication()
+        }
+    }
+
+    @Test
+    fun `system back should not dismiss the screen`() {
+        backDispatcher?.onBackPressed()
+        verify(exactly = 1) {
+            viewModel.trySendAction(AccessibilityDisclosureAction.CloseAppClick)
+        }
+    }
+}

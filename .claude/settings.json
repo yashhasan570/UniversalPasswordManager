@@ -1,0 +1,14 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "extraKnownMarketplaces": {
+    "universalpasswordmanager-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "universalpasswordmanager/ai-plugins"
+      }
+    }
+  }
+}

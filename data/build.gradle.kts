@@ -9,7 +9,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.universalpasswordmanager.data"
+    namespace = ".data"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }

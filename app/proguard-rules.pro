@@ -1,22 +1,22 @@
 ################################################################################
-# Universal SDK
+# Universal Password Manager SDK
 ################################################################################
 
 # We need to access the SDK using JNA and this makes it very easy to obfuscate away the SDK unless
 # we keep it here.
--keep class com.universalpasswordmanager.** { *; }
+-keep class .** { *; }
 
 # The Android Verifier component must be kept because it looks like dead code. Proguard is unable to
 # see any JNI usage, so our rules must manually opt into keeping it.
 -keep, includedescriptorclasses class org.rustls.platformverifier.** { *; }
 
 ################################################################################
-# Universal Models
+# Universal Password Manager Models
 ################################################################################
 
 # R8 currently has trouble with some Retrofit calls dealing with sealed classes.
 # For now we will keep all network layer models.
--keepclassmembers class com.universalpasswordmanager.**.network.model.** { *; }
+-keepclassmembers class com.x8bit.universalpasswordmanager.**.network.model.** { *; }
 
 # Keep all enums
 -keepclassmembers enum * { *; }
@@ -39,11 +39,11 @@
 
 # JsonElement serializers
 -keep,includedescriptorclasses class kotlinx.serialization.json.**$$serializer { *; }
--keep,includedescriptorclasses class com.universalpasswordmanager.**$$serializer { *; }
--keepclassmembers class com.universalpasswordmanager.** {
+-keep,includedescriptorclasses class com.x8bit.universalpasswordmanager.**$$serializer { *; }
+-keepclassmembers class com.x8bit.universalpasswordmanager.** {
     *** Companion;
 }
--keepclasseswithmembers class com.universalpasswordmanager.** {
+-keepclasseswithmembers class com.x8bit.universalpasswordmanager.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 

@@ -11,7 +11,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.universalpasswordmanager.cxf"
+    namespace = ".cxf"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }

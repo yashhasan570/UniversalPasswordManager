@@ -26,7 +26,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            name = "GitHubPackages (Universal)"
+            name = "GitHubPackages (Universal Password Manager)"
             url = uri("https://maven.pkg.")
             credentials {
                 username = ""
@@ -39,10 +39,11 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UniversalPasswordManager"
+rootProject.name = "Universal Password Manager"
 include(
     ":annotation",
     ":app",
+    ":authenticator",
     ":authenticatorbridge",
     ":core",
     ":cxf",

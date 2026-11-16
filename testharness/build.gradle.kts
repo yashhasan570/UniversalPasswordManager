@@ -12,13 +12,13 @@ plugins {
 }
 
 configure<ApplicationExtension> {
-    namespace = "com.universalpasswordmanager.testharness"
+    namespace = ".testharness"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }
 
     defaultConfig {
-        applicationId = "com.universalpasswordmanager.testharness"
+        applicationId = ".testharness"
         // API 29 - CredentialManager with Play Services support
         minSdk {
             version = release(libs.versions.minSdk.get().toInt())

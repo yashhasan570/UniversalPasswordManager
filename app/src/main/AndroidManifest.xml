@@ -28,14 +28,14 @@
     <permission
         android:name="${applicationId}.permission.AUTHENTICATOR_BRIDGE_SERVICE"
         android:knownCerts="@array/known_authenticator_app_certs"
-        android:label="Universal Bridge"
+        android:label="Universal Password Manager Bridge"
         android:protectionLevel="signature|knownSigner"
         tools:targetApi="s" />
 
     <application
-        android:name=".UniversalApplication"
+        android:name=".Universal Password ManagerApplication"
         android:allowBackup="false"
-        android:appComponentFactory="com.universalpasswordmanager.UniversalAppComponentFactory"
+        android:appComponentFactory="com.x8bit.universalpasswordmanager.Universal Password ManagerAppComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -133,11 +133,11 @@
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
-                <action android:name="com.universalpasswordmanager.credentials.ACTION_CREATE_PASSKEY" />
-                <action android:name="com.universalpasswordmanager.credentials.ACTION_GET_PASSKEY" />
-                <action android:name="com.universalpasswordmanager.credentials.ACTION_CREATE_PASSWORD" />
-                <action android:name="com.universalpasswordmanager.credentials.ACTION_GET_PASSWORD" />
-                <action android:name="com.universalpasswordmanager.credentials.ACTION_UNLOCK_ACCOUNT" />
+                <action android:name="com.x8bit.universalpasswordmanager.credentials.ACTION_CREATE_PASSKEY" />
+                <action android:name="com.x8bit.universalpasswordmanager.credentials.ACTION_GET_PASSKEY" />
+                <action android:name="com.x8bit.universalpasswordmanager.credentials.ACTION_CREATE_PASSWORD" />
+                <action android:name="com.x8bit.universalpasswordmanager.credentials.ACTION_GET_PASSWORD" />
+                <action android:name="com.x8bit.universalpasswordmanager.credentials.ACTION_UNLOCK_ACCOUNT" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -236,7 +236,7 @@
         -->
         <!--suppress AndroidDomInspection -->
         <service
-            android:name="com.universalpasswordmanager.Autofill.AutofillService"
+            android:name="com.x8bit.universalpasswordmanager.Autofill.AutofillService"
             android:exported="true"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_AUTOFILL_SERVICE"
@@ -256,7 +256,7 @@
         -->
         <!--suppress AndroidDomInspection -->
         <service
-            android:name="com.universalpasswordmanager.Accessibility.AccessibilityService"
+            android:name="com.x8bit.universalpasswordmanager.Accessibility.AccessibilityService"
             android:exported="true"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
@@ -276,7 +276,7 @@
         -->
         <!--suppress AndroidDomInspection -->
         <service
-            android:name="com.universalpasswordmanager.Autofill.CredentialProviderService"
+            android:name="com.x8bit.universalpasswordmanager.Autofill.CredentialProviderService"
             android:enabled="true"
             android:exported="true"
             android:label="@string/universalpasswordmanager"
@@ -307,7 +307,7 @@
         -->
         <!--suppress AndroidDomInspection -->
         <service
-            android:name="com.universalpasswordmanager.AutofillTileService"
+            android:name="com.x8bit.universalpasswordmanager.AutofillTileService"
             android:exported="true"
             android:icon="@drawable/ic_notification"
             android:label="@string/autofill_verb"
@@ -325,7 +325,7 @@
         -->
         <!--suppress AndroidDomInspection -->
         <service
-            android:name="com.universalpasswordmanager.GeneratorTileService"
+            android:name="com.x8bit.universalpasswordmanager.GeneratorTileService"
             android:exported="true"
             android:icon="@drawable/ic_generator"
             android:label="@string/password_generator"
@@ -343,7 +343,7 @@
         -->
         <!--suppress AndroidDomInspection -->
         <service
-            android:name="com.universalpasswordmanager.MyVaultTileService"
+            android:name="com.x8bit.universalpasswordmanager.MyVaultTileService"
             android:exported="true"
             android:icon="@drawable/ic_vault"
             android:label="@string/my_vault"
@@ -359,7 +359,7 @@
             android:resource="@xml/app_restrictions" />
 
         <service
-            android:name="com.universalpasswordmanager.data.platform.service.AuthenticatorBridgeService"
+            android:name="com.x8bit.universalpasswordmanager.data.platform.service.AuthenticatorBridgeService"
             android:exported="true"
             android:permission="${applicationId}.permission.AUTHENTICATOR_BRIDGE_SERVICE" />
 

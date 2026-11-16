@@ -14,10 +14,10 @@
 -keepclasseswithmembers class kotlinx.serialization.json.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
--keep,includedescriptorclasses class com.universalpasswordmanager.testharness.**$$serializer { *; }
--keepclassmembers class com.universalpasswordmanager.testharness.** {
+-keep,includedescriptorclasses class .testharness.**$$serializer { *; }
+-keepclassmembers class .testharness.** {
     *** Companion;
 }
--keepclasseswithmembers class com.universalpasswordmanager.testharness.** {
+-keepclasseswithmembers class .testharness.** {
     kotlinx.serialization.KSerializer serializer(...);
 }

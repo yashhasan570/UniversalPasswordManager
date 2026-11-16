@@ -1,0 +1,66 @@
+package .data.repository
+
+import .core.data.manager.dispatcher.DispatcherManager
+import .data.datasource.disk.ConfigDiskSource
+import .data.datasource.disk.model.ServerConfig
+import com.work.service.ConfigService
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.stateIn
+import java.time.Clock
+import java.time.Instant
+
+/**
+ * Primary implementation of [ServerConfigRepositoryImpl].
+ */
+internal class ServerConfigRepositoryImpl(
+    private val configDiskSource: ConfigDiskSource,
+    private val configService: ConfigService,
+    private val clock: Clock,
+    dispatcherManager: DispatcherManager,
+) : ServerConfigRepository {
+
+    private val unconfinedScope = CoroutineScope(dispatcherManager.unconfined)
+
+    // This must be a single, shared instance. It is kept hot (Eagerly) so the synchronous `value`
+    // is always current, which relies on every write going through `configDiskSource.serverConfig`.
+    override val serverConfigStateFlow: StateFlow<ServerConfig?> = configDiskSource
+        .serverConfigFlow
+        .stateIn(
+            scope = unconfinedScope,
+            started = SharingStarted.Eagerly,
+            initialValue = configDiskSource.serverConfig,
+        )
+
+    override suspend fun getServerConfig(forceRefresh: Boolean): ServerConfig? {
+        val localConfig = configDiskSource.serverConfig
+        val needsRefresh = localConfig == null ||
+            clock.instant().isAfter(
+                Instant
+                    .ofEpochMilli(localConfig.lastSync)
+                    .plusSeconds(MINIMUM_CONFIG_SYNC_INTERVAL_SEC),
+            )
+
+        if (needsRefresh || forceRefresh) {
+            configService
+                .getConfig()
+                .onSuccess { configResponse ->
+                    val serverConfig = ServerConfig(
+                        lastSync = clock.instant().toEpochMilli(),
+                        serverData = configResponse,
+                    )
+                    configDiskSource.serverConfig = serverConfig
+                    return serverConfig
+                }
+        }
+
+        // If we are unable to retrieve a configuration from the server,
+        // fall back to the local configuration.
+        return localConfig
+    }
+
+    private companion object {
+        private const val MINIMUM_CONFIG_SYNC_INTERVAL_SEC: Long = 60 * 60
+    }
+}

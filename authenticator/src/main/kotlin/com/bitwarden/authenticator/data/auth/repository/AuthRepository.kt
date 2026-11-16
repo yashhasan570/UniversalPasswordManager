@@ -1,0 +1,45 @@
+package .authenticator.data.auth.repository
+
+import .authenticator.data.platform.manager.BiometricsEncryptionManager
+import .authenticator.data.platform.manager.lock.model.AppLockState
+import .authenticator.data.platform.repository.model.BiometricsKeyResult
+import .authenticator.data.platform.repository.model.BiometricsUnlockResult
+import kotlinx.coroutines.flow.StateFlow
+import javax.crypto.Cipher
+
+/**
+ * Provides and API for modifying authentication state.
+ */
+interface AuthRepository : BiometricsEncryptionManager {
+
+    /**
+     * Whether biometric unlocking is enabled for the current user.
+     */
+    val isUnlockWithBiometricsEnabled: Boolean
+
+    /**
+     * Tracks whether biometric unlocking is enabled for the current user.
+     */
+    val isUnlockWithBiometricsEnabledFlow: StateFlow<Boolean>
+
+    /**
+     * Tracks the current state of the app lock.
+     */
+    val appLockStateFlow: StateFlow<AppLockState>
+
+    /**
+     * Stores the encrypted user key for biometrics, allowing it to be used to unlock the current
+     * user's vault.
+     */
+    suspend fun setupBiometricsKey(cipher: Cipher): BiometricsKeyResult
+
+    /**
+     * Attempt to unlock the vault using the stored biometric key.
+     */
+    suspend fun unlockWithBiometrics(cipher: Cipher): BiometricsUnlockResult
+
+    /**
+     * Updates the "last active time" for the current user.
+     */
+    fun updateLastActiveTime()
+}

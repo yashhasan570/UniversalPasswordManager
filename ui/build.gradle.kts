@@ -9,7 +9,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "com.universalpasswordmanager.ui"
+    namespace = ".ui"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt())
     }
