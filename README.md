@@ -277,7 +277,3 @@ The following is a list of additional third-party dependencies used as part of t
 ## Documentation
 
 Architecture, code style, and troubleshooting guides live in the [`docs/`](docs/README.md) folder.
-
-## Contact
-
-Questions, problem reports or feedback? Reach us on Telegram: [@johnconstantine570](https://t.me/johnconstantine570)
