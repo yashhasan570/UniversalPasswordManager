@@ -3,6 +3,7 @@ package com.x8bit.universalpasswordmanager.data.auth.manager.di
 import android.content.Context
 import .core.data.manager.dispatcher.DispatcherManager
 import .core.data.manager.toast.ToastManager
+import .data.manager.appstate.AppStateManager
 import com.work.service.AccountsService
 import com.work.service.AuthRequestsService
 import com.work.service.DevicesService
@@ -85,6 +86,7 @@ object AuthManagerModule {
         vaultSdkSource: VaultSdkSource,
         authDiskSource: AuthDiskSource,
         pushManager: PushManager,
+        appStateManager: AppStateManager,
     ): AuthRequestManager =
         AuthRequestManagerImpl(
             clock = clock,
@@ -94,6 +96,7 @@ object AuthManagerModule {
             vaultSdkSource = vaultSdkSource,
             authDiskSource = authDiskSource,
             pushManager = pushManager,
+            appStateManager = appStateManager,
         )
 
     @Provides
