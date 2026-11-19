@@ -2,22 +2,26 @@ package .ui.platform.components.navigation
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.material3.BadgedBox
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
+import .ui.platform.base.util.interactiveBorder
 import .ui.platform.components.badge.NotificationBadge
 import .ui.platform.components.navigation.color.universalpasswordmanagerNavigationRailItemColors
 import .ui.platform.components.util.rememberVectorPainter
 import .ui.platform.resource.Universal Password ManagerPlurals
+import .ui.platform.theme.Universal Password ManagerTheme
 
 /**
  * A custom Universal Password Manager-themed navigation rail item.
@@ -27,6 +31,8 @@ import .ui.platform.resource.Universal Password ManagerPlurals
  * @param isSelected Indicates that the navigation item is selected.
  * @param onClick The lambda to be invoked when the navigation item is clicked.
  * @param modifier A [Modifier] that you can use to apply custom modifications to the composable.
+ * @param interactionSource A [MutableInteractionSource] for observing and emitting interactions
+ * for this component.
  * @param notificationCount The notification count for the navigation item.
  */
 @Composable
@@ -36,6 +42,7 @@ fun ColumnScope.Universal Password ManagerNavigationRailItem(
     isSelected: Boolean,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
     notificationCount: Int = 0,
 ) {
     NavigationRailItem(
@@ -79,6 +86,10 @@ fun ColumnScope.Universal Password ManagerNavigationRailItem(
         selected = isSelected,
         onClick = onClick,
         colors = universalpasswordmanagerNavigationRailItemColors(),
-        modifier = modifier,
+        interactionSource = interactionSource,
+        modifier = modifier.interactiveBorder(
+            interactionSource = interactionSource,
+            shape = Universal Password ManagerTheme.shapes.button,
+        ),
     )
 }

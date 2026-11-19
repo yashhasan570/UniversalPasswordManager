@@ -1,5 +1,6 @@
 package .ui.platform.components.field
 
+import androidx.compose.foundation.hoverable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsFocusedAsState
 import androidx.compose.foundation.layout.Column
@@ -204,6 +205,7 @@ fun Universal Password ManagerPasswordField(
                 interactionSource = interactionSource,
                 modifier = Modifier
                     .nullableTestTag(tag = passwordFieldTestTag)
+                    .hoverable(interactionSource = interactionSource)
                     .fillMaxWidth()
                     .focusRequester(focusRequester = focusRequester),
             )
