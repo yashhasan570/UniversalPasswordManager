@@ -41,6 +41,7 @@ fun <T : Any> FlagKey<T>.ListItemContent(
     FlagKey.IdentityAutofill,
     FlagKey.SdkPinUnlock,
     FlagKey.SdkPreLogin,
+    FlagKey.UpdatedOnboardingFlow,
         -> {
         @Suppress("UNCHECKED_CAST")
         BooleanFlagItem(
@@ -109,4 +110,5 @@ private fun <T : Any> FlagKey<T>.getDisplayLabel(): String = when (this) {
     FlagKey.IdentityAutofill -> stringResource(Universal Password ManagerString.identity_autofill)
     FlagKey.SdkPinUnlock -> stringResource(Universal Password ManagerString.sdk_pin_unlock)
     FlagKey.SdkPreLogin -> stringResource(Universal Password ManagerString.sdk_pre_login)
+    FlagKey.UpdatedOnboardingFlow -> stringResource(Universal Password ManagerString.updated_onboarding_flow)
 }

@@ -140,7 +140,7 @@ private fun SetupBrowserAutofillContent(
     ) {
         Spacer(Modifier.height(height = 24.dp))
         Text(
-            text = stringResource(id = Universal Password ManagerString.turn_on_browser_autofill_integration),
+            text = state.heading(),
             style = Universal Password ManagerTheme.typography.titleMedium,
             color = Universal Password ManagerTheme.colorScheme.text.primary,
             textAlign = TextAlign.Center,
@@ -150,13 +150,7 @@ private fun SetupBrowserAutofillContent(
         )
         Spacer(Modifier.height(height = 8.dp))
         Text(
-            text = stringResource(
-                id = if (state.browserCount > 1) {
-                    Universal Password ManagerString.youre_using_a_browser_that_requires_special_permissions_plural
-                } else {
-                    Universal Password ManagerString.youre_using_a_browser_that_requires_special_permissions_singular
-                },
-            ),
+            text = state.description(),
             style = Universal Password ManagerTheme.typography.bodyMedium,
             color = Universal Password ManagerTheme.colorScheme.text.primary,
             textAlign = TextAlign.Center,
@@ -211,9 +205,11 @@ private fun SetupBrowserAutofillDialogs(
     when (dialogState) {
         SetupBrowserAutofillState.DialogState.TurnOnLaterDialog -> {
             Universal Password ManagerTwoButtonDialog(
-                title = stringResource(Universal Password ManagerString.turn_on_browser_autofill_integration_later),
+                title = stringResource(
+                    id = Universal Password ManagerString.turn_on_browser_autofill_integration_later,
+                ),
                 message = stringResource(
-                    id = Universal Password ManagerString.return_to_complete_this_step_anytime_in_settings,
+                    id = Universal Password ManagerString.we_were_unable_to_automatically_open_the_autofill_settings,
                 ),
                 confirmButtonText = stringResource(id = Universal Password ManagerString.confirm),
                 dismissButtonText = stringResource(id = Universal Password ManagerString.cancel),
@@ -236,9 +232,12 @@ private fun SetupBrowserAutofillContent_preview() {
                 dialogState = null,
                 isInitialSetup = true,
                 browserAutofillSettingsOptions = persistentListOf(
-                    BrowserAutofillSettingsOption.BraveStable(enabled = true),
-                    BrowserAutofillSettingsOption.ChromeStable(enabled = false),
-                    BrowserAutofillSettingsOption.ChromeBeta(enabled = true),
+                    BrowserAutofillSettingsOption.BraveStable(isEnabled = true, isDefault = false),
+                    BrowserAutofillSettingsOption.ChromeStable(
+                        isEnabled = false,
+                        isDefault = false,
+                    ),
+                    BrowserAutofillSettingsOption.ChromeBeta(isEnabled = true, isDefault = false),
                 ),
             ),
             onWhyIsThisStepRequiredClick = { },

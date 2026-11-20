@@ -1,6 +1,7 @@
 package com.x8bit.universalpasswordmanager.data.auth.manager.di
 
 import android.content.Context
+import .core.data.manager.biometrics.BiometricsSupportManager
 import .core.data.manager.dispatcher.DispatcherManager
 import .core.data.manager.toast.ToastManager
 import .data.manager.appstate.AppStateManager
@@ -33,6 +34,9 @@ import com.x8bit.universalpasswordmanager.data.auth.manager.UserLogoutManager
 import com.x8bit.universalpasswordmanager.data.auth.manager.UserLogoutManagerImpl
 import com.x8bit.universalpasswordmanager.data.auth.manager.UserStateManager
 import com.x8bit.universalpasswordmanager.data.auth.manager.UserStateManagerImpl
+import com.x8bit.universalpasswordmanager.data.auth.manager.onboarding.OnboardingManager
+import com.x8bit.universalpasswordmanager.data.auth.manager.onboarding.OnboardingManagerImpl
+import com.x8bit.universalpasswordmanager.data.autofill.manager.browser.BrowserThirdPartyAutofillEnabledManager
 import com.x8bit.universalpasswordmanager.data.platform.datasource.disk.PushDiskSource
 import com.x8bit.universalpasswordmanager.data.platform.datasource.disk.SettingsDiskSource
 import com.x8bit.universalpasswordmanager.data.platform.manager.CredentialExchangeRegistryManager
@@ -41,6 +45,7 @@ import com.x8bit.universalpasswordmanager.data.platform.manager.FirstTimeActionM
 import com.x8bit.universalpasswordmanager.data.platform.manager.PolicyManager
 import com.x8bit.universalpasswordmanager.data.platform.manager.PushManager
 import com.x8bit.universalpasswordmanager.data.platform.manager.policy.UserNotificationPolicyManager
+import com.x8bit.universalpasswordmanager.data.platform.repository.SettingsRepository
 import com.x8bit.universalpasswordmanager.data.tools.generator.datasource.disk.GeneratorDiskSource
 import com.x8bit.universalpasswordmanager.data.tools.generator.datasource.disk.PasswordHistoryDiskSource
 import com.x8bit.universalpasswordmanager.data.vault.datasource.disk.VaultDiskSource
@@ -60,6 +65,22 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AuthManagerModule {
+
+    @Provides
+    @Singleton
+    fun provideOnboardingManager(
+        authDiskSource: AuthDiskSource,
+        biometricsSupportManager: BiometricsSupportManager,
+        browserThirdPartyAutofillEnabledManager: BrowserThirdPartyAutofillEnabledManager,
+        settingsRepository: SettingsRepository,
+        featureFlagManager: FeatureFlagManager,
+    ): OnboardingManager = OnboardingManagerImpl(
+        authDiskSource = authDiskSource,
+        biometricsSupportManager = biometricsSupportManager,
+        browserThirdPartyAutofillEnabledManager = browserThirdPartyAutofillEnabledManager,
+        settingsRepository = settingsRepository,
+        featureFlagManager = featureFlagManager,
+    )
 
     @Provides
     @Singleton
