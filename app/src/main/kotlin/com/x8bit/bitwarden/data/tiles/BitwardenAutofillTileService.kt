@@ -13,8 +13,8 @@ import .core.util.isBuildVersionAtLeast
 import .ui.platform.resource.Universal Password ManagerString
 import com.x8bit.universalpasswordmanager.AccessibilityActivity
 import com.x8bit.universalpasswordmanager.data.autofill.accessibility.manager.AccessibilityAutofillManager
+import com.x8bit.universalpasswordmanager.data.autofill.accessibility.manager.AccessibilityEnabledManager
 import com.x8bit.universalpasswordmanager.data.autofill.accessibility.model.AccessibilityAction
-import com.x8bit.universalpasswordmanager.data.autofill.accessibility.util.isAccessibilityServiceEnabled
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -28,6 +28,9 @@ class Universal Password ManagerAutofillTileService : TileService() {
     @Inject
     lateinit var accessibilityAutofillManager: AccessibilityAutofillManager
 
+    @Inject
+    lateinit var accessibilityEnabledManager: AccessibilityEnabledManager
+
     override fun onClick() {
         if (isLocked) {
             unlockAndRun { launchAutofill() }
@@ -38,7 +41,7 @@ class Universal Password ManagerAutofillTileService : TileService() {
 
     @SuppressLint("StartActivityAndCollapseDeprecated")
     private fun launchAutofill() {
-        if (!applicationContext.isAccessibilityServiceEnabled) {
+        if (!accessibilityEnabledManager.isAccessibilityEnabledStateFlow.value) {
             showDialog(getAccessibilityServiceRequiredDialog())
             return
         }

@@ -41,6 +41,7 @@ fun <T : Any> FlagKey<T>.ListItemContent(
     FlagKey.IdentityAutofill,
     FlagKey.SdkPinUnlock,
     FlagKey.SdkPreLogin,
+    FlagKey.SdkCipherOperations,
     FlagKey.UpdatedOnboardingFlow,
         -> {
         @Suppress("UNCHECKED_CAST")
@@ -110,5 +111,6 @@ private fun <T : Any> FlagKey<T>.getDisplayLabel(): String = when (this) {
     FlagKey.IdentityAutofill -> stringResource(Universal Password ManagerString.identity_autofill)
     FlagKey.SdkPinUnlock -> stringResource(Universal Password ManagerString.sdk_pin_unlock)
     FlagKey.SdkPreLogin -> stringResource(Universal Password ManagerString.sdk_pre_login)
+    FlagKey.SdkCipherOperations -> stringResource(Universal Password ManagerString.sdk_cipher_operations)
     FlagKey.UpdatedOnboardingFlow -> stringResource(Universal Password ManagerString.updated_onboarding_flow)
 }
